@@ -1,0 +1,8 @@
+YOR_DIV_0_0 = {	name = "Yorkshire Infantry"
+	for_countries = { YOR }
+	can_use = { always = yes }
+	division_types = { 
+		"infantry" }
+	}
+	fallback_name = "%d. Yorkshire Infantry"
+}

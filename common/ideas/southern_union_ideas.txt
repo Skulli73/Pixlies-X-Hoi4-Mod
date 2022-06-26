@@ -1,0 +1,43 @@
+ideas = {
+	mobilization_laws = {
+}
+	economy = {
+}
+	political_advisor = {
+		confused_cyborg = {
+			allowed = {
+				tag = CSA
+			}
+			traits = { conservative_nationalist}
+			picture = "BRephnqU-166525"
+		}
+}
+	tank_manufacturer = {
+}
+	naval_manufacturer = {
+}
+	aircraft_manufacturer = {
+}
+	materiel_manufacturer = {
+}
+	industrial_concern = {
+}
+	theorist = {
+}
+	army_chief = {
+}
+	navy_chief = {
+}
+	air_chief = {
+}
+	high_command = {
+		confused_cyborg = {
+			allowed = {
+				tag = CSA
+			}
+			traits = { army_chief_drill_2 army_chief_reform_2 army_chief_offensive_2}
+			ledger = army
+			picture = "IaheQTBG-166524"
+		}
+}
+}

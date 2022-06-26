@@ -1,0 +1,43 @@
+﻿oob = "ALA_50"
+capital = 1
+set_research_slots = 3
+set_stability = 0.5
+set_war_support = 0.5
+set_convoys = 10
+
+
+add_ideas = {
+	disarmed_nation
+	civilian_economy
+}
+
+	recruit_character = nasaspaceshuttle
+	recruit_character = air_warfare
+	recruit_character = nasaspaceshuttle
+	recruit_character = nasaspaceshuttle
+	recruit_character = nasaspaceshuttle
+	recruit_character = nasaspaceshuttle
+
+
+#Politics for 50.1.1
+set_politics = {
+	ruling_party = democratic
+	last_election = "49.1.17"
+	election_frequency = 60
+	elections_allowed = yes
+}
+set_popularities = {
+	democratic = 80
+	fascism = 10
+	communism = 10
+	neutrality = 0
+}
+
+recruit_character = nasaspaceshuttle
+recruit_character = riderofblacc
+recruit_character = mckicks
+recruit_character = nasaspaceshuttle
+recruit_character = XxhfHiJa
+recruit_character = cNMHYrJn
+recruit_character = yWDpqgAv
+

@@ -1,0 +1,75 @@
+spriteTypes = { 
+	##Icon For: Trqlt
+	SpriteType = { 
+		name = "pcoUAvSz-153785"
+		texturefile = "gfx/interface/ideas/pcoUAvSz-153785.dds"
+	}
+
+	##Icon For: Scanian Tanks' Company
+	SpriteType = { 
+		name = "eRNnIMvg-1365"
+		texturefile = "gfx/interface/ideas/eRNnIMvg-1365.dds"
+	}
+
+	##Icon For: Scanian Ships' Company
+	SpriteType = { 
+		name = "sTakKRHD-1431"
+		texturefile = "gfx/interface/ideas/sTakKRHD-1431.dds"
+	}
+
+	##Icon For: Scanian Fighters' Company
+	SpriteType = { 
+		name = "yEWGFKus-1251"
+		texturefile = "gfx/interface/ideas/yEWGFKus-1251.dds"
+	}
+
+	##Icon For: Scanian Motorization Company
+	SpriteType = { 
+		name = "jvsVLnqu-1480"
+		texturefile = "gfx/interface/ideas/jvsVLnqu-1480.dds"
+	}
+
+	##Icon For: Scanian Electronics Company
+	SpriteType = { 
+		name = "jgrZDFGA-1449"
+		texturefile = "gfx/interface/ideas/jgrZDFGA-1449.dds"
+	}
+
+	##Icon For: AscarrBii
+	SpriteType = { 
+		name = "hAxLucWD-156034"
+		texturefile = "gfx/interface/ideas/hAxLucWD-156034.dds"
+	}
+
+	##Icon For: Trqlt
+	SpriteType = { 
+		name = "pcoUAvSz-153785"
+		texturefile = "gfx/interface/ideas/pcoUAvSz-153785.dds"
+	}
+
+	##Icon For: YOUREAKEK
+	SpriteType = { 
+		name = "qSkntdIx-153784"
+		texturefile = "gfx/interface/ideas/qSkntdIx-153784.dds"
+	}
+
+	##Icon For: YOUREAKEK
+	SpriteType = { 
+		name = "qSkntdIx-153784"
+		texturefile = "gfx/interface/ideas/qSkntdIx-153784.dds"
+	}
+
+	##Icon For: Trqlt
+	SpriteType = { 
+		name = "pcoUAvSz-153785"
+		texturefile = "gfx/interface/ideas/pcoUAvSz-153785.dds"
+	}
+
+	##Icon For: AscarrBii
+	SpriteType = { 
+		name = "hAxLucWD-156034"
+		texturefile = "gfx/interface/ideas/hAxLucWD-156034.dds"
+	}
+
+ 
+ }

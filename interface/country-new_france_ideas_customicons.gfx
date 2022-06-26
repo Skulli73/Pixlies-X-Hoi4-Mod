@@ -1,0 +1,75 @@
+spriteTypes = { 
+	##Icon For: KronosViikk
+	SpriteType = { 
+		name = "mRziJCWn-155690"
+		texturefile = "gfx/interface/ideas/mRziJCWn-155690.dds"
+	}
+
+	##Icon For: Tank Company of New France
+	SpriteType = { 
+		name = "MQpRvlyU-1365"
+		texturefile = "gfx/interface/ideas/MQpRvlyU-1365.dds"
+	}
+
+	##Icon For: New France's Ship Company
+	SpriteType = { 
+		name = "ZDdzFXqN-2078"
+		texturefile = "gfx/interface/ideas/ZDdzFXqN-2078.dds"
+	}
+
+	##Icon For: Neo french National Aircraft Company
+	SpriteType = { 
+		name = "GsvwiSIO-1043"
+		texturefile = "gfx/interface/ideas/GsvwiSIO-1043.dds"
+	}
+
+	##Icon For: New France's Artillery Company
+	SpriteType = { 
+		name = "mzCZpGrQ-1424"
+		texturefile = "gfx/interface/ideas/mzCZpGrQ-1424.dds"
+	}
+
+	##Icon For: Neo french Industrial Concern
+	SpriteType = { 
+		name = "bBQnmwXV-1467"
+		texturefile = "gfx/interface/ideas/bBQnmwXV-1467.dds"
+	}
+
+	##Icon For: Pickhead
+	SpriteType = { 
+		name = "HIeiRmsX-155872"
+		texturefile = "gfx/interface/ideas/HIeiRmsX-155872.dds"
+	}
+
+	##Icon For: KronosViikk
+	SpriteType = { 
+		name = "mRziJCWn-155690"
+		texturefile = "gfx/interface/ideas/mRziJCWn-155690.dds"
+	}
+
+	##Icon For: Pickhead
+	SpriteType = { 
+		name = "HIeiRmsX-155872"
+		texturefile = "gfx/interface/ideas/HIeiRmsX-155872.dds"
+	}
+
+	##Icon For: Playre3
+	SpriteType = { 
+		name = "XZjUOLoR-155800"
+		texturefile = "gfx/interface/ideas/XZjUOLoR-155800.dds"
+	}
+
+	##Icon For: KronosViikk
+	SpriteType = { 
+		name = "mRziJCWn-155690"
+		texturefile = "gfx/interface/ideas/mRziJCWn-155690.dds"
+	}
+
+	##Icon For: Pickhead
+	SpriteType = { 
+		name = "HIeiRmsX-155872"
+		texturefile = "gfx/interface/ideas/HIeiRmsX-155872.dds"
+	}
+
+ 
+ }

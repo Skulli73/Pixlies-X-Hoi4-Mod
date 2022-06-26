@@ -1,0 +1,35 @@
+#Create units
+division_template = {
+	name = "Infantry Division"
+	division_names_group = "UWU_DIV_0_0"
+	regiments = {
+		infantry = { x = 0 y = 0}
+		infantry = { x = 0 y = 1}
+		infantry = { x = 0 y = 2}
+		infantry = { x = 1 y = 0}
+		infantry = { x = 1 y = 1}
+		infantry = { x = 1 y = 2}
+	}
+	support = {
+	}
+
+}
+
+#Spawn units
+units = {
+	division= {
+		name = "1st Infantry Division"
+		location = 7638
+		division_template = "Infantry Division"
+	}
+	division= {
+		name = "2nd Infantry Division"
+		location = 10362
+		division_template = "Infantry Division"
+	}
+	division= {
+		name = "3rd Infantry Division"
+		location = 12396
+		division_template = "Infantry Division"
+	}
+}

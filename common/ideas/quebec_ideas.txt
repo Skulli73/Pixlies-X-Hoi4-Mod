@@ -1,0 +1,126 @@
+ideas = {
+	mobilization_laws = {
+}
+	economy = {
+}
+	political_advisor = {
+		wujii = {
+			allowed = {
+				tag = QUE
+			}
+			traits = { fascist_demagogue}
+			picture = "wghCJtTV-228717"
+		}
+		wujii = {
+			allowed = {
+				tag = QUE
+			}
+			traits = { captain_of_industry}
+			picture = "rQMtvOeJ-228720"
+		}
+}
+	tank_manufacturer = {
+		quebec_panzer_idea = {
+			allowed = {
+				tag = QUE
+			}
+			traits = { fast_tank_manufacturer}
+			picture = "PntRsWMq-1365"
+		}
+}
+	naval_manufacturer = {
+		quebecsnavy = {
+			allowed = {
+				tag = QUE
+			}
+			traits = { pacific_fleet_naval_manufacturer}
+			picture = "fRBqFsgk-1086"
+		}
+}
+	aircraft_manufacturer = {
+		navy_support = {
+			allowed = {
+				tag = QUE
+			}
+			traits = { naval_aircraft_manufacturer}
+			picture = "NJqXBLSD-1075"
+		}
+}
+	materiel_manufacturer = {
+		infantry_equipment = {
+			allowed = {
+				tag = QUE
+			}
+			traits = { infantry_equipment_manufacturer}
+			picture = "CTUuYRbd-1471"
+		}
+}
+	industrial_concern = {
+		industrial_concern = {
+			allowed = {
+				tag = QUE
+			}
+			traits = { industrial_concern}
+			picture = "EnrsUjXa-1750"
+		}
+}
+	theorist = {
+		le_general_dan = {
+			allowed = {
+				tag = QUE
+			}
+			traits = { military_theorist}
+			picture = "MbcSnpdt-228725"
+		}
+}
+	army_chief = {
+		le_general_dan = {
+			allowed = {
+				tag = QUE
+			}
+			traits = { army_chief_offensive_1}
+			picture = "wghCJtTV-228728"
+		}
+}
+	navy_chief = {
+		le_general_dan = {
+			allowed = {
+				tag = QUE
+			}
+			traits = { navy_chief_decisive_battle_1}
+			picture = "LXOfKIGF-228730"
+		}
+}
+	air_chief = {
+		le_general_dan = {
+			allowed = {
+				tag = QUE
+			}
+			traits = { air_chief_night_operations_1}
+			picture = "rQMtvOeJ-228733"
+		}
+}
+	high_command = {
+		le_general_dan = {
+			allowed = {
+				tag = QUE
+			}
+			traits = { army_logistics_1}
+			picture = "wghCJtTV-228763"
+		}
+		le_general_dan = {
+			allowed = {
+				tag = QUE
+			}
+			traits = { air_naval_strike_1}
+			picture = "LXOfKIGF-228766"
+		}
+		le_general_dan = {
+			allowed = {
+				tag = QUE
+			}
+			traits = { air_air_superiority_1}
+			picture = "rQMtvOeJ-228768"
+		}
+}
+}

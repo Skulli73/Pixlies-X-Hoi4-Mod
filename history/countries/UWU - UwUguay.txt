@@ -1,0 +1,38 @@
+﻿oob = "UWU_50"
+capital = 300
+set_research_slots = 3
+set_stability = 0.5
+set_war_support = 0.5
+set_convoys = 40
+
+
+add_ideas = {
+	volunteer_only
+	low_economic_mobilisation
+}
+
+	recruit_character = xolx
+	recruit_character = chomkii
+
+
+#Politics for 50.1.1
+set_politics = {
+	ruling_party = neutrality
+	last_election = "49.3.23"
+	election_frequency = 60
+	elections_allowed = no
+}
+set_popularities = {
+	democratic = 0
+	fascism = 40
+	communism = 0
+	neutrality = 60
+}
+
+recruit_character = xolx
+recruit_character = chomkii
+recruit_character = winterdontcare
+recruit_character = agreyv
+recruit_character = PmsbKjvN
+recruit_character = sKHkojVY
+

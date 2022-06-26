@@ -1,0 +1,119 @@
+ideas = {
+	mobilization_laws = {
+}
+	economy = {
+}
+	political_advisor = {
+		destroyer1181 = {
+			allowed = {
+				tag = ROC
+			}
+			traits = { captain_of_industry}
+			picture = "LxSFeisB-227683"
+		}
+		destroyer1181 = {
+			allowed = {
+				tag = ROC
+			}
+			traits = { monarchist_media_mogul}
+			picture = "xFyaKkYq-227685"
+		}
+}
+	tank_manufacturer = {
+		heavy_tank_idea = {
+			allowed = {
+				tag = ROC
+			}
+			traits = { heavy_tank_manufacturer}
+			picture = "bvHITGao-1751"
+		}
+}
+	naval_manufacturer = {
+		great_navy = {
+			allowed = {
+				tag = ROC
+			}
+			traits = { raiding_fleet_naval_manufacturer}
+			picture = "sFTDnuJV-1433"
+		}
+}
+	aircraft_manufacturer = {
+		air_support = {
+			allowed = {
+				tag = ROC
+			}
+			traits = { CAS_manufacturer}
+			picture = "frRInHOe-1043"
+		}
+}
+	materiel_manufacturer = {
+		canadian_artillery_program = {
+			allowed = {
+				tag = ROC
+			}
+			traits = { artillery_manufacturer}
+			picture = "JHZOukog-1426"
+		}
+}
+	industrial_concern = {
+		industry = {
+			allowed = {
+				tag = ROC
+			}
+			traits = { industrial_concern}
+			picture = "pZJStbkW-1467"
+		}
+}
+	theorist = {
+		industry = {
+			allowed = {
+				tag = ROC
+			}
+			traits = { close_air_support_proponent}
+			picture = "LxSFeisB-227686"
+		}
+}
+	army_chief = {
+		industry = {
+			allowed = {
+				tag = ROC
+			}
+			traits = { army_chief_organizational_2}
+			picture = "LxSFeisB-227689"
+		}
+		industry = {
+			allowed = {
+				tag = ROC
+			}
+			traits = { army_chief_offensive_1}
+			picture = "xFyaKkYq-227690"
+		}
+}
+	navy_chief = {
+		industry = {
+			allowed = {
+				tag = ROC
+			}
+			traits = { navy_chief_decisive_battle_1}
+			picture = "LxSFeisB-227692"
+		}
+}
+	air_chief = {
+		industry = {
+			allowed = {
+				tag = ROC
+			}
+			traits = { air_chief_ground_support_1}
+			picture = "xFyaKkYq-227693"
+		}
+}
+	high_command = {
+		industry = {
+			allowed = {
+				tag = ROC
+			}
+			traits = { army_infantry_1}
+			picture = "xFyaKkYq-227696"
+		}
+}
+}

@@ -1,0 +1,81 @@
+spriteTypes = { 
+	##Icon For: QTVNickBro
+	SpriteType = { 
+		name = "VmxpCtdX-231957"
+		texturefile = "gfx/interface/ideas/VmxpCtdX-231957.dds"
+	}
+
+	##Icon For: Zenetty
+	SpriteType = { 
+		name = "LXsIxhdC-231958"
+		texturefile = "gfx/interface/ideas/LXsIxhdC-231958.dds"
+	}
+
+	##Icon For: BbalChamp
+	SpriteType = { 
+		name = "mdVzPhHx-231959"
+		texturefile = "gfx/interface/ideas/mdVzPhHx-231959.dds"
+	}
+
+	##Icon For: Moving bunkers
+	SpriteType = { 
+		name = "CUAuojXy-1751"
+		texturefile = "gfx/interface/ideas/CUAuojXy-1751.dds"
+	}
+
+	##Icon For: Fleet
+	SpriteType = { 
+		name = "vHpYBDtw-1086"
+		texturefile = "gfx/interface/ideas/vHpYBDtw-1086.dds"
+	}
+
+	##Icon For: Air
+	SpriteType = { 
+		name = "PtVfaYCH-122165"
+		texturefile = "gfx/interface/ideas/PtVfaYCH-122165.dds"
+	}
+
+	##Icon For: Mausers
+	SpriteType = { 
+		name = "hecvlLRk-1472"
+		texturefile = "gfx/interface/ideas/hecvlLRk-1472.dds"
+	}
+
+	##Icon For: Fast Industry
+	SpriteType = { 
+		name = "OEGAMKIz-1467"
+		texturefile = "gfx/interface/ideas/OEGAMKIz-1467.dds"
+	}
+
+	##Icon For: Minepro3004
+	SpriteType = { 
+		name = "vjwoSbfg-231960"
+		texturefile = "gfx/interface/ideas/vjwoSbfg-231960.dds"
+	}
+
+	##Icon For: QTVNickBro
+	SpriteType = { 
+		name = "VmxpCtdX-231962"
+		texturefile = "gfx/interface/ideas/VmxpCtdX-231962.dds"
+	}
+
+	##Icon For: Crepite
+	SpriteType = { 
+		name = "CjYtzbsQ-231963"
+		texturefile = "gfx/interface/ideas/CjYtzbsQ-231963.dds"
+	}
+
+	##Icon For: __bing
+	SpriteType = { 
+		name = "sEModgfu-231965"
+		texturefile = "gfx/interface/ideas/sEModgfu-231965.dds"
+	}
+
+	##Icon For: QTVNickBro
+	SpriteType = { 
+		name = "VmxpCtdX-231966"
+		texturefile = "gfx/interface/ideas/VmxpCtdX-231966.dds"
+	}
+
+ 
+ }

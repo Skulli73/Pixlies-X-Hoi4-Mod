@@ -1,0 +1,81 @@
+spriteTypes = { 
+	##Icon For: Doom_Slayer125
+	SpriteType = { 
+		name = "LxSFeisB-227683"
+		texturefile = "gfx/interface/ideas/LxSFeisB-227683.dds"
+	}
+
+	##Icon For: Destroyer1181
+	SpriteType = { 
+		name = "xFyaKkYq-227685"
+		texturefile = "gfx/interface/ideas/xFyaKkYq-227685.dds"
+	}
+
+	##Icon For: Heavy Tank Idea
+	SpriteType = { 
+		name = "bvHITGao-1751"
+		texturefile = "gfx/interface/ideas/bvHITGao-1751.dds"
+	}
+
+	##Icon For: Great Navy
+	SpriteType = { 
+		name = "sFTDnuJV-1433"
+		texturefile = "gfx/interface/ideas/sFTDnuJV-1433.dds"
+	}
+
+	##Icon For: Air Support
+	SpriteType = { 
+		name = "frRInHOe-1043"
+		texturefile = "gfx/interface/ideas/frRInHOe-1043.dds"
+	}
+
+	##Icon For: Canadian Artillery Program
+	SpriteType = { 
+		name = "JHZOukog-1426"
+		texturefile = "gfx/interface/ideas/JHZOukog-1426.dds"
+	}
+
+	##Icon For: Industry
+	SpriteType = { 
+		name = "pZJStbkW-1467"
+		texturefile = "gfx/interface/ideas/pZJStbkW-1467.dds"
+	}
+
+	##Icon For: Doom_Slayer125
+	SpriteType = { 
+		name = "LxSFeisB-227686"
+		texturefile = "gfx/interface/ideas/LxSFeisB-227686.dds"
+	}
+
+	##Icon For: Doom_Slayer125
+	SpriteType = { 
+		name = "LxSFeisB-227689"
+		texturefile = "gfx/interface/ideas/LxSFeisB-227689.dds"
+	}
+
+	##Icon For: Destroyer1181
+	SpriteType = { 
+		name = "xFyaKkYq-227690"
+		texturefile = "gfx/interface/ideas/xFyaKkYq-227690.dds"
+	}
+
+	##Icon For: Doom_Slayer125
+	SpriteType = { 
+		name = "LxSFeisB-227692"
+		texturefile = "gfx/interface/ideas/LxSFeisB-227692.dds"
+	}
+
+	##Icon For: Destroyer1181
+	SpriteType = { 
+		name = "xFyaKkYq-227693"
+		texturefile = "gfx/interface/ideas/xFyaKkYq-227693.dds"
+	}
+
+	##Icon For: Destroyer1181
+	SpriteType = { 
+		name = "xFyaKkYq-227696"
+		texturefile = "gfx/interface/ideas/xFyaKkYq-227696.dds"
+	}
+
+ 
+ }

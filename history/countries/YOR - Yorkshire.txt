@@ -1,0 +1,44 @@
+﻿oob = "YOR_50"
+capital = 1
+set_research_slots = 3
+set_stability = 0.5
+set_war_support = 0.5
+set_convoys = 10
+
+
+add_ideas = {
+	disarmed_nation
+	civilian_economy
+}
+
+	recruit_character = sixdin0_
+	recruit_character = democratic_movement
+	recruit_character = calculord
+	recruit_character = calculord
+	recruit_character = sixdin0_
+	recruit_character = sixdin0_
+	recruit_character = sixdin0_
+	recruit_character = calculord
+	recruit_character = calculord
+
+
+#Politics for 50.1.1
+set_politics = {
+	ruling_party = neutrality
+	last_election = "49.8.5"
+	election_frequency = 60
+	elections_allowed = no
+}
+set_popularities = {
+	democratic = 10
+	fascism = 10
+	communism = 10
+	neutrality = 70
+}
+
+recruit_character = sixdin0
+recruit_character = sixdin0_
+recruit_character = calculord
+recruit_character = calculord
+recruit_character = OYudFKRk
+

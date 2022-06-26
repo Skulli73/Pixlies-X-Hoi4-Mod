@@ -1,0 +1,43 @@
+﻿oob = "NFA_50"
+capital = 1
+set_research_slots = 3
+set_stability = 0.5
+set_war_support = 0.5
+set_convoys = 0
+
+
+add_ideas = {
+	volunteer_only
+	civilian_economy
+}
+
+	recruit_character = kronosviikk
+	recruit_character = pickhead
+	recruit_character = kronosviikk
+	recruit_character = pickhead
+	recruit_character = playre3
+	recruit_character = kronosviikk
+	recruit_character = pickhead
+
+
+#Politics for 50.1.1
+set_politics = {
+	ruling_party = fascism
+	last_election = "49.2.25"
+	election_frequency = 60
+	elections_allowed = no
+}
+set_popularities = {
+	democratic = 25
+	fascism = 55
+	communism = 5
+	neutrality = 15
+}
+
+recruit_character = kronosviikk
+recruit_character = phinkleforb
+recruit_character = pickhead
+recruit_character = playre3
+recruit_character = TBabfrGx
+recruit_character = gOAmqPDt
+

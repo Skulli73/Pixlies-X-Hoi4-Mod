@@ -1,0 +1,126 @@
+ideas = {
+	mobilization_laws = {
+}
+	economy = {
+}
+	political_advisor = {
+		calculord = {
+			allowed = {
+				tag = YOR
+			}
+			traits = { silent_workhorse}
+			picture = "swXUkeIc-228695"
+		}
+		democratic_movement = {
+			allowed = {
+				tag = YOR
+			}
+			traits = { democratic_reformer}
+			picture = "omLhWQJR-122106"
+		}
+		democratic_movement = {
+			allowed = {
+				tag = YOR
+			}
+			traits = { fascist_demagogue propaganda_expert}
+			picture = "BTwOYoGK-228696"
+		}
+}
+	tank_manufacturer = {
+		mobile_tanks = {
+			allowed = {
+				tag = YOR
+			}
+			traits = { fast_tank_manufacturer}
+			picture = "TwrFOchU-1536"
+		}
+}
+	naval_manufacturer = {
+		fleet_managment = {
+			allowed = {
+				tag = YOR
+			}
+			traits = { atlantic_fleet_naval_manufacturer}
+			picture = "yDFnpCtA-1431"
+		}
+}
+	aircraft_manufacturer = {
+		bomber_focus = {
+			allowed = {
+				tag = YOR
+			}
+			traits = { heavy_aircraft_manufacturer}
+			picture = "JaNrVkgt-2146"
+		}
+}
+	materiel_manufacturer = {
+		yorks_trucks = {
+			allowed = {
+				tag = YOR
+			}
+			traits = { motorized_equipment_manufacturer}
+			picture = "PZfDLATm-1062"
+		}
+}
+	industrial_concern = {
+		our_oil = {
+			allowed = {
+				tag = YOR
+			}
+			traits = { refinery_concern}
+			picture = "tDMZsBiO-1532"
+		}
+}
+	theorist = {
+		our_oil = {
+			allowed = {
+				tag = YOR
+			}
+			traits = { military_theorist}
+			picture = "BTwOYoGK-228697"
+		}
+		our_oil = {
+			allowed = {
+				tag = YOR
+			}
+			traits = { sanation_militarist}
+			picture = "swXUkeIc-228698"
+		}
+}
+	army_chief = {
+		our_oil = {
+			allowed = {
+				tag = YOR
+			}
+			traits = { army_chief_defensive_1}
+			picture = "swXUkeIc-228699"
+		}
+}
+	navy_chief = {
+		our_oil = {
+			allowed = {
+				tag = YOR
+			}
+			traits = { navy_chief_maneuver_1}
+			picture = "swXUkeIc-228700"
+		}
+}
+	air_chief = {
+		our_oil = {
+			allowed = {
+				tag = YOR
+			}
+			traits = { air_chief_ground_support_1}
+			picture = "BTwOYoGK-228701"
+		}
+}
+	high_command = {
+		our_oil = {
+			allowed = {
+				tag = YOR
+			}
+			traits = { air_air_superiority_1}
+			picture = "BTwOYoGK-228702"
+		}
+}
+}

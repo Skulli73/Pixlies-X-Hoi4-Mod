@@ -1,0 +1,115 @@
+ideas = {
+	mobilization_laws = {
+}
+	economy = {
+}
+	political_advisor = {
+		ascarrbii = {
+			allowed = {
+				tag = SCU
+			}
+			traits = { dictator}
+			picture = "pcoUAvSz-153785"
+		}
+}
+	tank_manufacturer = {
+		scaniantankscompany = {
+			allowed = {
+				tag = SCU
+			}
+			traits = { infantry_tank_manufacturer tank_manufacturer}
+			picture = "eRNnIMvg-1365"
+		}
+}
+	naval_manufacturer = {
+		scanianshipscompany = {
+			allowed = {
+				tag = SCU
+			}
+			traits = { naval_manufacturer}
+			picture = "sTakKRHD-1431"
+		}
+}
+	aircraft_manufacturer = {
+		scanianfighterscompany = {
+			allowed = {
+				tag = SCU
+			}
+			traits = { light_aircraft_manufacturer aircraft_manufacturer}
+			picture = "yEWGFKus-1251"
+		}
+}
+	materiel_manufacturer = {
+		scanian_motorization_company = {
+			allowed = {
+				tag = SCU
+			}
+			traits = { motorized_equipment_manufacturer}
+			picture = "jvsVLnqu-1480"
+		}
+}
+	industrial_concern = {
+		scanian_electronics_company = {
+			allowed = {
+				tag = SCU
+			}
+			traits = { electronics_concern}
+			picture = "jgrZDFGA-1449"
+		}
+}
+	theorist = {
+		scanian_electronics_company = {
+			allowed = {
+				tag = SCU
+			}
+			traits = { military_theorist army_infantry_1}
+			ledger = army
+			picture = "hAxLucWD-156034"
+		}
+}
+	army_chief = {
+		scanian_electronics_company = {
+			allowed = {
+				tag = SCU
+			}
+			traits = { dictator army_infantry_2 grand_battle_plan_expert great_war_hero}
+			picture = "pcoUAvSz-153785"
+		}
+}
+	navy_chief = {
+		scanian_electronics_company = {
+			allowed = {
+				tag = SCU
+			}
+			traits = { warrior_code navy_chief_naval_aviation_1}
+			picture = "qSkntdIx-153784"
+		}
+}
+	air_chief = {
+		scanian_electronics_company = {
+			allowed = {
+				tag = SCU
+			}
+			traits = { air_chief_reform_1 warrior_code}
+			picture = "qSkntdIx-153784"
+		}
+}
+	high_command = {
+		scanian_electronics_company = {
+			allowed = {
+				tag = SCU
+			}
+			traits = { dictator great_war_hero grand_battle_plan_expert army_infantry_2}
+			ledger = army
+			picture = "pcoUAvSz-153785"
+		}
+		scanian_electronics_company = {
+			allowed = {
+				tag = SCU
+			}
+			traits = { military_theorist army_infantry_1}
+			ledger = army
+			picture = "hAxLucWD-156034"
+		}
+}
+}

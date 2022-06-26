@@ -1,0 +1,8 @@
+ALA_DIV_0_0 = {	name = "Alaskan National Guard"
+	for_countries = { ALA }
+	can_use = { always = yes }
+	division_types = { 
+		"infantry" }
+	}
+	fallback_name = "%d. Alaskan National Guard"
+}

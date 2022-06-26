@@ -1,0 +1,18 @@
+SCU = {
+	male = {
+		names = {
+			"afd69,dfq69,TomatenkopfPL" 
+		}
+	}
+	female = {
+		names = {
+			"humaann,IcyFile" 
+		}
+	}
+	surnames = {
+		"" 
+	}
+	callsigns = {
+		"" 
+	}
+}

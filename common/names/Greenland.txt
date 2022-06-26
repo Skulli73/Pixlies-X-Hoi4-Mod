@@ -1,0 +1,18 @@
+GRE = {
+	male = {
+		names = {
+			"halomshack,DockSquash,__Bing," 
+		}
+	}
+	female = {
+		names = {
+			"DarthGaber_07,irrucandjuuu" 
+		}
+	}
+	surnames = {
+		"" 
+	}
+	callsigns = {
+		"" 
+	}
+}

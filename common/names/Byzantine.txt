@@ -1,0 +1,18 @@
+BYZ = {
+	male = {
+		names = {
+			"" 
+		}
+	}
+	female = {
+		names = {
+			"" 
+		}
+	}
+	surnames = {
+		"" 
+	}
+	callsigns = {
+		"" 
+	}
+}

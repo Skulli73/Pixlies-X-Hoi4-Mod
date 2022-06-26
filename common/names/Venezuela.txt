@@ -1,0 +1,18 @@
+VEN = {
+	male = {
+		names = {
+			"omgbenji,indisputed,7Dlol" 
+		}
+	}
+	female = {
+		names = {
+			"Lucho_A,qawh,Grinnypig" 
+		}
+	}
+	surnames = {
+		"" 
+	}
+	callsigns = {
+		"" 
+	}
+}

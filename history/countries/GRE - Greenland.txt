@@ -1,0 +1,44 @@
+﻿oob = "GRE_50"
+capital = 101
+set_research_slots = 3
+set_stability = 0.5
+set_war_support = 0.5
+set_convoys = 20
+
+
+add_ideas = {
+	volunteer_only
+	low_economic_mobilisation
+}
+
+	recruit_character = qtvnickbro
+	recruit_character = zenetty
+	recruit_character = bbalchamp
+	recruit_character = minepro3004
+	recruit_character = qtvnickbro
+	recruit_character = crepite
+	recruit_character = bing
+	recruit_character = qtvnickbro
+
+
+#Politics for 50.1.1
+set_politics = {
+	ruling_party = democratic
+	last_election = "49.10.14"
+	election_frequency = 60
+	elections_allowed = yes
+}
+set_popularities = {
+	democratic = 70
+	fascism = 5
+	communism = 5
+	neutrality = 20
+}
+
+recruit_character = king_zenetty
+recruit_character = crepite
+recruit_character = qtvnickbro
+recruit_character = zenetty
+recruit_character = ZBTqKeMN
+recruit_character = fAUDkGNq
+

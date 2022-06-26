@@ -1,0 +1,19 @@
+bookmarks = {
+	bookmark = {
+		name = "start_name"
+		desc = "start_desc"
+		date = 50.1.1.12
+	picture = "start-1"
+		default_country = "GER"
+		default = yes
+		GER = {
+			ideology = democratic
+			history = GER_democratic
+		}
+		CSA = {
+			ideology = fascism
+			history = CSA_fascism
+		}
+	}
+}
+

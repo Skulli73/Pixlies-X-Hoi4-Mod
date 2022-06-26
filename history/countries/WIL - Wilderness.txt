@@ -1,0 +1,30 @@
+﻿oob = "WIL_50"
+capital = 1
+set_research_slots = 5
+set_stability = 0
+set_war_support = 0
+set_convoys = 0
+
+
+add_ideas = {
+	disarmed_nation
+	civilian_economy
+}
+
+
+
+#Politics for 50.1.1
+set_politics = {
+	ruling_party = neutrality
+	last_election = "49.4.25"
+	election_frequency = 60
+	elections_allowed = no
+}
+set_popularities = {
+	democratic = 0
+	fascism = 0
+	communism = 0
+	neutrality = 100
+}
+
+

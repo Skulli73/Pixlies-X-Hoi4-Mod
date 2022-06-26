@@ -1,0 +1,117 @@
+spriteTypes = { 
+	##Icon For: Magneten1 
+	SpriteType = { 
+		name = "rEXpahkG-149854"
+		texturefile = "gfx/interface/ideas/rEXpahkG-149854.dds"
+	}
+
+	##Icon For: Krakabom
+	SpriteType = { 
+		name = "XoxQbkCu-149856"
+		texturefile = "gfx/interface/ideas/XoxQbkCu-149856.dds"
+	}
+
+	##Icon For: Liborso
+	SpriteType = { 
+		name = "mtMzqWPy-149857"
+		texturefile = "gfx/interface/ideas/mtMzqWPy-149857.dds"
+	}
+
+	##Icon For: Monochromicality
+	SpriteType = { 
+		name = "QndizPEK-149865"
+		texturefile = "gfx/interface/ideas/QndizPEK-149865.dds"
+	}
+
+	##Icon For: Qdin04
+	SpriteType = { 
+		name = "urvQisSR-149874"
+		texturefile = "gfx/interface/ideas/urvQisSR-149874.dds"
+	}
+
+	##Icon For: Thefinaluptake
+	SpriteType = { 
+		name = "RsiDWKHt-149875"
+		texturefile = "gfx/interface/ideas/RsiDWKHt-149875.dds"
+	}
+
+	##Icon For: Banana vehicles
+	SpriteType = { 
+		name = "KACxEuNm-1139"
+		texturefile = "gfx/interface/ideas/KACxEuNm-1139.dds"
+	}
+
+	##Icon For: Banana ship builder
+	SpriteType = { 
+		name = "fuKsXckh-1534"
+		texturefile = "gfx/interface/ideas/fuKsXckh-1534.dds"
+	}
+
+	##Icon For: Medium air company
+	SpriteType = { 
+		name = "XeMxmjiS-1384"
+		texturefile = "gfx/interface/ideas/XeMxmjiS-1384.dds"
+	}
+
+	##Icon For: Heavy air company
+	SpriteType = { 
+		name = "mqwEobMc-1314"
+		texturefile = "gfx/interface/ideas/mqwEobMc-1314.dds"
+	}
+
+	##Icon For: Light air company
+	SpriteType = { 
+		name = "VMXEamjd-1382"
+		texturefile = "gfx/interface/ideas/VMXEamjd-1382.dds"
+	}
+
+	##Icon For: Materiel producer
+	SpriteType = { 
+		name = "ClunitRL-1132"
+		texturefile = "gfx/interface/ideas/ClunitRL-1132.dds"
+	}
+
+	##Icon For: Industrial buildup
+	SpriteType = { 
+		name = "TSCMmoXZ-1429"
+		texturefile = "gfx/interface/ideas/TSCMmoXZ-1429.dds"
+	}
+
+	##Icon For: Liborso
+	SpriteType = { 
+		name = "mtMzqWPy-149904"
+		texturefile = "gfx/interface/ideas/mtMzqWPy-149904.dds"
+	}
+
+	##Icon For: Magneten1
+	SpriteType = { 
+		name = "FpXtJBso-149909"
+		texturefile = "gfx/interface/ideas/FpXtJBso-149909.dds"
+	}
+
+	##Icon For: Thefinaluptake
+	SpriteType = { 
+		name = "RsiDWKHt-149888"
+		texturefile = "gfx/interface/ideas/RsiDWKHt-149888.dds"
+	}
+
+	##Icon For: Qdin
+	SpriteType = { 
+		name = "lnpVYgBL-150391"
+		texturefile = "gfx/interface/ideas/lnpVYgBL-150391.dds"
+	}
+
+	##Icon For: Liborso
+	SpriteType = { 
+		name = "mtMzqWPy-149902"
+		texturefile = "gfx/interface/ideas/mtMzqWPy-149902.dds"
+	}
+
+	##Icon For: Magneten1
+	SpriteType = { 
+		name = "FpXtJBso-149920"
+		texturefile = "gfx/interface/ideas/FpXtJBso-149920.dds"
+	}
+
+ 
+ }

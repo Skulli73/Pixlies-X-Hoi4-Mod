@@ -1,0 +1,23 @@
+#Create units
+division_template = {
+	name = "Yorkshire Infantry"
+	division_names_group = "YOR_DIV_0_0"
+	regiments = {
+		infantry = { x = 0 y = 0}
+		infantry = { x = 0 y = 1}
+		infantry = { x = 0 y = 2}
+		infantry = { x = 0 y = 3}
+	}
+	support = {
+	}
+
+}
+
+#Spawn units
+units = {
+	division= {
+		name = "1st Yorkshire Infantry"
+		location = 10605
+		division_template = "Yorkshire Infantry"
+	}
+}

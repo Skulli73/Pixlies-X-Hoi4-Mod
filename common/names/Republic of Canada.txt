@@ -1,0 +1,18 @@
+ROC = {
+	male = {
+		names = {
+			"" 
+		}
+	}
+	female = {
+		names = {
+			"" 
+		}
+	}
+	surnames = {
+		"" 
+	}
+	callsigns = {
+		"" 
+	}
+}

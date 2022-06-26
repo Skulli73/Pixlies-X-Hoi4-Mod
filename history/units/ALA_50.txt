@@ -1,0 +1,25 @@
+#Create units
+division_template = {
+	name = "Alaskan National Guard"
+	division_names_group = "ALA_DIV_0_0"
+	regiments = {
+		infantry = { x = 0 y = 0}
+		infantry = { x = 0 y = 1}
+		infantry = { x = 0 y = 2}
+		infantry = { x = 1 y = 0}
+		infantry = { x = 1 y = 1}
+	}
+	support = {
+		engineer = { x = 0 y = 0}
+	}
+
+}
+
+#Spawn units
+units = {
+	division= {
+		name = "1st Alaskan National Guard"
+		location = 10679
+		division_template = "Alaskan National Guard"
+	}
+}

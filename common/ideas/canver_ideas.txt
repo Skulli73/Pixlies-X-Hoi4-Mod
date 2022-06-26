@@ -1,0 +1,112 @@
+ideas = {
+	mobilization_laws = {
+}
+	economy = {
+}
+	political_advisor = {
+		alex_horne = {
+			allowed = {
+				tag = CAN
+			}
+			traits = { the_king_of_the_castle}
+			picture = "ZGADrQyP-229999"
+		}
+		alex_horne = {
+			allowed = {
+				tag = CAN
+			}
+			traits = { fascist_demagogue}
+			picture = "FeaVjfAB-230000"
+		}
+}
+	tank_manufacturer = {
+		tank = {
+			allowed = {
+				tag = CAN
+			}
+			traits = { tank_manufacturer}
+			picture = "nLQgeEbm-1365"
+		}
+}
+	naval_manufacturer = {
+		ships = {
+			allowed = {
+				tag = CAN
+			}
+			traits = { naval_manufacturer}
+			picture = "cGzetnwd-1481"
+		}
+}
+	aircraft_manufacturer = {
+		fighter_fabric = {
+			allowed = {
+				tag = CAN
+			}
+			traits = { light_aircraft_manufacturer}
+			picture = "XuDbJCda-1292"
+		}
+}
+	materiel_manufacturer = {
+		artilerija = {
+			allowed = {
+				tag = CAN
+			}
+			traits = { artillery_manufacturer}
+			picture = "jksrHUzf-1426"
+		}
+}
+	industrial_concern = {
+		factory34 = {
+			allowed = {
+				tag = CAN
+			}
+			traits = { industrial_concern}
+			picture = "AlaFIYhr-1467"
+		}
+}
+	theorist = {
+		factory34 = {
+			allowed = {
+				tag = CAN
+			}
+			traits = { military_theorist}
+			picture = "FeaVjfAB-230001"
+		}
+}
+	army_chief = {
+		factory34 = {
+			allowed = {
+				tag = CAN
+			}
+			traits = { army_chief_defensive_1}
+			picture = "ZGADrQyP-230002"
+		}
+}
+	navy_chief = {
+		factory34 = {
+			allowed = {
+				tag = CAN
+			}
+			traits = { navy_chief_old_guard}
+			picture = "ZGADrQyP-230003"
+		}
+}
+	air_chief = {
+		factory34 = {
+			allowed = {
+				tag = CAN
+			}
+			traits = { air_chief_reform_1}
+			picture = "FeaVjfAB-230004"
+		}
+}
+	high_command = {
+		factory34 = {
+			allowed = {
+				tag = CAN
+			}
+			traits = { army_infantry_2}
+			picture = "FeaVjfAB-230006"
+		}
+}
+}

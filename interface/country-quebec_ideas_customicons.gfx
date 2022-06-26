@@ -1,0 +1,87 @@
+spriteTypes = { 
+	##Icon For: Geek_Gamer374
+	SpriteType = { 
+		name = "wghCJtTV-228717"
+		texturefile = "gfx/interface/ideas/wghCJtTV-228717.dds"
+	}
+
+	##Icon For: Wujii
+	SpriteType = { 
+		name = "rQMtvOeJ-228720"
+		texturefile = "gfx/interface/ideas/rQMtvOeJ-228720.dds"
+	}
+
+	##Icon For: Quebec Panzer Idea
+	SpriteType = { 
+		name = "PntRsWMq-1365"
+		texturefile = "gfx/interface/ideas/PntRsWMq-1365.dds"
+	}
+
+	##Icon For: Quebec's Navy
+	SpriteType = { 
+		name = "fRBqFsgk-1086"
+		texturefile = "gfx/interface/ideas/fRBqFsgk-1086.dds"
+	}
+
+	##Icon For: Navy support
+	SpriteType = { 
+		name = "NJqXBLSD-1075"
+		texturefile = "gfx/interface/ideas/NJqXBLSD-1075.dds"
+	}
+
+	##Icon For: Infantry Equipment
+	SpriteType = { 
+		name = "CTUuYRbd-1471"
+		texturefile = "gfx/interface/ideas/CTUuYRbd-1471.dds"
+	}
+
+	##Icon For: Industrial Concern
+	SpriteType = { 
+		name = "EnrsUjXa-1750"
+		texturefile = "gfx/interface/ideas/EnrsUjXa-1750.dds"
+	}
+
+	##Icon For: Le General Dan
+	SpriteType = { 
+		name = "MbcSnpdt-228725"
+		texturefile = "gfx/interface/ideas/MbcSnpdt-228725.dds"
+	}
+
+	##Icon For: Geek_Gamer374
+	SpriteType = { 
+		name = "wghCJtTV-228728"
+		texturefile = "gfx/interface/ideas/wghCJtTV-228728.dds"
+	}
+
+	##Icon For: Dylanou29
+	SpriteType = { 
+		name = "LXOfKIGF-228730"
+		texturefile = "gfx/interface/ideas/LXOfKIGF-228730.dds"
+	}
+
+	##Icon For: Wujii
+	SpriteType = { 
+		name = "rQMtvOeJ-228733"
+		texturefile = "gfx/interface/ideas/rQMtvOeJ-228733.dds"
+	}
+
+	##Icon For: Geek_Gamer374
+	SpriteType = { 
+		name = "wghCJtTV-228763"
+		texturefile = "gfx/interface/ideas/wghCJtTV-228763.dds"
+	}
+
+	##Icon For: Dylanou29
+	SpriteType = { 
+		name = "LXOfKIGF-228766"
+		texturefile = "gfx/interface/ideas/LXOfKIGF-228766.dds"
+	}
+
+	##Icon For: Wujii
+	SpriteType = { 
+		name = "rQMtvOeJ-228768"
+		texturefile = "gfx/interface/ideas/rQMtvOeJ-228768.dds"
+	}
+
+ 
+ }

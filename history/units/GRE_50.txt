@@ -1,0 +1,45 @@
+#Create units
+division_template = {
+	name = "Infantry Division"
+	division_names_group = "GRE_DIV_0_0"
+	regiments = {
+		infantry = { x = 0 y = 0}
+		infantry = { x = 0 y = 1}
+		infantry = { x = 1 y = 0}
+		infantry = { x = 1 y = 1}
+		infantry = { x = 2 y = 0}
+		infantry = { x = 2 y = 1}
+	}
+	support = {
+	}
+
+}
+
+#Spawn units
+units = {
+	division= {
+		name = "1st Infantry Division"
+		location = 10245
+		division_template = "Infantry Division"
+	}
+	division= {
+		name = "2nd Infantry Division"
+		location = 10636
+		division_template = "Infantry Division"
+	}
+	division= {
+		name = "3rd Infantry Division"
+		location = 12512
+		division_template = "Infantry Division"
+	}
+	division= {
+		name = "4th Infantry Division"
+		location = 13058
+		division_template = "Infantry Division"
+	}
+	division= {
+		name = "5th Infantry Division"
+		location = 13066
+		division_template = "Infantry Division"
+	}
+}

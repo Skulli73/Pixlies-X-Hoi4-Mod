@@ -1,0 +1,46 @@
+﻿oob = "QUE_50"
+capital = 468
+set_research_slots = 3
+set_stability = 0.5
+set_war_support = 0.5
+set_convoys = 20
+
+
+add_ideas = {
+	volunteer_only
+	low_economic_mobilisation
+}
+
+	recruit_character = geek_gamer374
+	recruit_character = wujii
+	recruit_character = le_general_dan
+	recruit_character = geek_gamer374
+	recruit_character = dylanou29
+	recruit_character = wujii
+	recruit_character = geek_gamer374
+	recruit_character = dylanou29
+	recruit_character = wujii
+
+
+#Politics for 50.1.1
+set_politics = {
+	ruling_party = fascism
+	last_election = "49.7.24"
+	election_frequency = 60
+	elections_allowed = no
+}
+set_popularities = {
+	democratic = 0
+	fascism = 100
+	communism = 0
+	neutrality = 0
+}
+
+recruit_character = geek_gamer374
+recruit_character = geek_gamer374
+recruit_character = wujii
+recruit_character = amest_iii
+recruit_character = dUVmOPoq
+recruit_character = pWcfovTP
+recruit_character = dylanou29
+

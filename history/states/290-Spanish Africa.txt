@@ -1,12 +1,19 @@
-state = {
-	id = 290
-	name = "STATE_290"
-	manpower = 744000
+
+state={
+	id=290
+	name="STATE_290"
+	manpower = 0# = 744000
+	
+	
 	state_category = rural
-	resources = {
-		steel = 23
+	
+	resources={
+		steel=23 # was: 20 . Changed to 23 (from 15) due to Portugal Setup
 	}
-	history = {
+
+	history={
+		owner = WIL# = SPR
+		# = MOR
 		victory_points = {
 			9945 3
 		}
@@ -21,9 +28,10 @@ state = {
 			}
 		}
 	}
-	provinces = {
+
+	provinces={
 		4199 7215 9945 10113 12087 12100 
 	}
-	local_supplies = 0.0
 
+	local_supplies=0.0 
 }

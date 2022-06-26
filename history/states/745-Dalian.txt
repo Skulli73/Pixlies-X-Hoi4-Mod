@@ -1,16 +1,21 @@
-state = {
-	id = 745
-	name = "STATE_745"
-	provinces = {
+state={
+	id=745
+	name="STATE_745"
+	provinces={
 		1150 6851 
 	}
 	state_category = large_town
-	history = {
+	history=
+	{
+		owner = WIL# = JAP
+		# = CHI
+		# = MAN
+		# = PRC
 		victory_points = {
 			1150 1 
 		}
 		buildings = {
-			infrastructure = 3 
+			infrastructure = 3 #was: 5
 			air_base = 1
 			industrial_complex = 1
 			1150 = {
@@ -18,12 +23,11 @@ state = {
 				coastal_bunker = 1
 			}
 		}
-		add_core_of = JAP
-		owner = JAP
-		controller = JAP
-	}
-	manpower = 1000000
-	buildings_max_level_factor = 1.000
-	local_supplies = 0.0
 
+	
+	}
+	manpower = 0#=1000000
+	buildings_max_level_factor=1.000
+
+	local_supplies=0.0 
 }

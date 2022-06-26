@@ -1,7 +1,9 @@
-state = {
-	id = 739
-	name = "STATE_739"
-	history = {
+state={
+	id=739
+	name="STATE_739"
+
+	history={
+		owner = WIL# = CAN
 		buildings = {
 			infrastructure = 1
 
@@ -12,13 +14,15 @@ state = {
 
 
 		}
+		# = CAN
 	}
-	provinces = {
+
+	provinces={
 		1869
 	}
-	manpower = 12684
-	buildings_max_level_factor = 1
-	state_category = "small_island"
-	local_supplies = 0.0
+	manpower = 0#=12684
+	buildings_max_level_factor=1	
+	state_category="small_island"
 
+	local_supplies=0.0 
 }

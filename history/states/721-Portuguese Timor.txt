@@ -1,9 +1,13 @@
-state = {
-	id = 721
-	name = "STATE_721"
-	manpower = 455604
+
+state={
+	id=721
+	name="STATE_721"
+	manpower = 0# = 455604
+	
 	state_category = pastoral
-	history = {
+
+	history={
+		owner = WIL# = POR
 		buildings = {
 			infrastructure = 2
 			12190 ={
@@ -11,9 +15,10 @@ state = {
 			}
 		}
 	}
-	provinces = {
+
+	provinces={
 		1326 12178 12190 12206 13001 
 	}
-	local_supplies = 0.0
 
+	local_supplies=0.0 
 }

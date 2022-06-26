@@ -1,23 +1,31 @@
-state = {
-	id = 151
-	name = "STATE_151"
-	manpower = 1854711
+
+state={
+	id=151
+	name="STATE_151"
+	manpower = 0# = 1854711
+	
+	
 	state_category = city
-	resources = {
-		aluminium = 15
+	
+	resources={
+		aluminium=15 # was: 24
 	}
-	history = {
+
+	history={
+		owner = WIL# = SWI
 		buildings = {
-			infrastructure = 3 
+			infrastructure = 3 #was: 6
 			industrial_complex = 3
 		}
 		victory_points = {
 			663 10 
 		}
+		# = SWI
 	}
-	provinces = {
+
+	provinces={
 		658 661 663 3641 3660 3662 9600 11601 11623 
 	}
-	local_supplies = 0.0
 
+	local_supplies=0.0 
 }

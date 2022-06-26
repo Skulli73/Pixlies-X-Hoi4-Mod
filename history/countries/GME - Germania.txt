@@ -1,0 +1,30 @@
+﻿oob = "GER_50"
+capital = 51
+set_research_slots = 5
+set_stability = 0.12
+set_war_support = 0.2
+set_convoys = 0
+
+
+add_ideas = {
+	volunteer_only
+	civilian_economy
+}
+
+
+
+#Politics for 50.1.1
+set_politics = {
+	ruling_party = fascism
+	last_election = "49.10.25"
+	election_frequency = 60
+	elections_allowed = no
+}
+set_popularities = {
+	democratic = 50
+	fascism = 15
+	communism = 10
+	neutrality = 25
+}
+
+

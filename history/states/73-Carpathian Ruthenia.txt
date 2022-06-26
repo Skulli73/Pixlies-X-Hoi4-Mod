@@ -1,31 +1,34 @@
-state = {
-	id = 73
-	name = "STATE_73"
-	manpower = 854300
+state={
+	id=73
+	name="STATE_73"
+	manpower = 0# = 854300
+	
 	state_category = rural
-	history = {
+	
+	history={
 		victory_points = {
 			3548 1 
 		}
+		owner = WIL# = CZE
 		buildings = {
 			infrastructure = 3
 		}
+		# = CZE
 		add_claim_by = HUN
 		add_claim_by = UKR
+
 		1939.3.14 = {
-			#owner = HUN
-			#controller = HUN
+			owner = WIL# = HUN
+			controller = WIL# = HUN
 			remove_claim_by = HUN
-			#add_core_of = HUN
-			#add_core_of = SLO
+			# = HUN
+			# = SLO
 		}
-		add_core_of = CAR
-		owner = CAR
-		controller = CAR
 	}
-	provinces = {
+
+	provinces={
 		3548 6571 9563 11536 11691 
 	}
-	local_supplies = 0.0
 
+	local_supplies=0.0 
 }

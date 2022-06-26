@@ -1,9 +1,13 @@
-state = {
-	id = 2
-	name = "STATE_2"
-	manpower = 2781971
+state= {
+	id=2
+	name="STATE_2" # Latium
+	manpower = 0# = 2781971
+	
 	state_category = city
-	history = {
+
+	history=
+	{
+		owner = WIL# = ITA
 		victory_points = { 9904 40 }
 		victory_points = { 11846 5 }
 		buildings = {
@@ -18,19 +22,18 @@ state = {
 				naval_base = 2
 			}
 		}
+		# = ITA
 		1939.1.1 = {
 			buildings = {
 				arms_factory = 2
 				industrial_complex = 5
 			}
 		}
-		add_core_of = CAR
-		owner = CAR
-		controller = CAR
 	}
-	provinces = {
+
+	provinces= {
 		923 6862 9794 9904 11751 11846 11882
  	}
-	local_supplies = 0.0
 
+	local_supplies=0.0 
 }

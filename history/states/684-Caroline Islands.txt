@@ -1,9 +1,13 @@
-state = {
-	id = 684
-	name = "STATE_684"
-	manpower = 42357
+
+state={
+	id=684
+	name="STATE_684"
+	manpower = 0#=42357
 	state_category = small_island
-	history = {
+
+	history={
+		owner = WIL# = JAP
+		# = FSM
 		buildings = {
 			infrastructure = 2
 			air_base = 3
@@ -39,10 +43,12 @@ state = {
 		victory_points = {
 			13028 1 
 		}
+
 	}
-	provinces = {
+
+	provinces={
 		2489 13027 13028 13029 13030 13031 13032 13033 13034 13035 13036 
 	}
-	local_supplies = 0.0
 
+	local_supplies=0.0 
 }

@@ -1,9 +1,14 @@
-state = {
-	id = 311
-	name = "STATE_311"
-	manpower = 51000
+state=
+{
+	id=311
+	name="STATE_311"
+	manpower = 0# = 51000
+	
 	state_category = pastoral
-	history = {
+	history=
+	{
+		# = BLZ
+		owner = WIL# = ENG
 		victory_points = {
 			2077 1 
 		}
@@ -13,9 +18,8 @@ state = {
 				naval_base = 1
 			}
 		}
-		add_core_of = BS
 	}
-	provinces = { 2077 }
-	local_supplies = 0.0
+	provinces= { 2077 }
 
+	local_supplies=0.0 
 }

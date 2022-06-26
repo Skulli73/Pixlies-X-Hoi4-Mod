@@ -1,1 +1,12 @@
-﻿
+﻿l_english: #germania normal names
+GER:0 "Germania"
+GER_DEF:0 "Germania"
+GER_ADJ:0 "Germanic"
+GER_neutrality:0 "Germanic Empire"
+GER_neutrality_DEF:0 "the Germanic Empire"
+GER_fascism:0 "National State of Germania"
+GER_fascism_DEF:0 "the National State of Germania"
+GER_democratic:0 "Germanic Empire"
+GER_democratic_DEF:0 "the Germanic Empire"
+GER_communism:0 "Worker's Republic of Central Europe"
+GER_communism_DEF:0 "The Worker's Republic of Central Europe"

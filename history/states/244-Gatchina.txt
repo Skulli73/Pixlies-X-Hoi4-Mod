@@ -1,19 +1,25 @@
-state = {
-	id = 244
-	name = "STATE_244"
-	manpower = 195325
+
+state={
+	id=244
+	name="STATE_244" # Volkhov
+	manpower = 0# = 195325
+	
 	state_category = rural
-	history = {
+
+	history={
+		owner = WIL# = SOV
 		buildings = {
-			infrastructure = 3 
+			infrastructure = 3 #was: 5
 		}
+		# = SOV
 		victory_points = {
 			9197 1
 		}
 	}
-	provinces = {
+
+	provinces={
 		70 3072 3110 6035 6095 9164 9197 11174 
 	}
-	local_supplies = 0.0
 
+	local_supplies=0.0 
 }

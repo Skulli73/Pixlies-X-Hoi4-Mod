@@ -1,7 +1,9 @@
-state = {
-	id = 169
-	name = "STATE_169"
-	history = {
+state={
+	id=169
+	name="STATE_169"
+
+	history={
+		owner = WIL# = SPR
 		victory_points = {
 			1048 3
 		}
@@ -9,7 +11,7 @@ state = {
 			7183 10
 		}
 		buildings = {
-			infrastructure = 3 
+			infrastructure = 3 #was: 6
 			industrial_complex = 1
 			arms_factory = 1
 			air_base = 3
@@ -19,13 +21,16 @@ state = {
 			}
 
 		}
+		# = SPR
+
 	}
-	provinces = {
+
+	provinces={
 		1048 1178 3940 4080 4182 7098 7183 9815 9891 10094 11749 12070 13228 13231 
 	}
-	manpower = 1746650
-	buildings_max_level_factor = 1.000
-	state_category = large_town
-	local_supplies = 7.0
+	manpower = 0#=1746650
+	buildings_max_level_factor=1.000
+	state_category=large_town
 
+	local_supplies=7.0 
 }

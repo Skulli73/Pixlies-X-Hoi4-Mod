@@ -1,16 +1,21 @@
-state = {
-	id = 625
-	name = "STATE_625"
-	manpower = 1138724
+state=
+{
+	id=625
+	name="STATE_625"
+	manpower = 0# = 1138724
+	
 	state_category = rural
-	history = {
+	history=
+	{
+		owner = WIL# = PHI
 		buildings = {
 			infrastructure = 2
 		}
+		# = PHI
 	}
-	provinces = {
+	provinces={
 		1224 1311 1340 4269 4373 
 	}
-	local_supplies = 0.0
 
+	local_supplies=0.0 
 }

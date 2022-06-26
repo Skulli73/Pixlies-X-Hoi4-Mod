@@ -1,23 +1,31 @@
-state = {
-	id = 39
-	name = "STATE_39"
-	manpower = 641650
+
+state={
+	id=39
+	name="STATE_39" # South Tyrol
+	manpower = 0# = 641650
+	
 	state_category = town
-	resources = {
-		aluminium = 14
+	
+	resources={
+		aluminium=14 # was: 22
 	}
-	history = {
+
+	history={
 		victory_points = {
 			11598 1
 		}
+		owner = WIL# = ITA
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 1
 		}
+		# = ITA
+		# = AUS
 	}
-	provinces = {
+
+	provinces={
 		656 6631 6675 9598 9630 11598 11615 
 	}
-	local_supplies = 0.0
 
+	local_supplies=0.0 
 }

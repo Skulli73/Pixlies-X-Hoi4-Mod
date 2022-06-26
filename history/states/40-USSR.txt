@@ -1,13 +1,19 @@
-state = {
-	id = 40
-	name = "STATE_40"
-	manpower = 2107451
+
+state={
+	id=40
+	name="STATE_40" # Barnaul
+	manpower = 0# = 2107451
+	
 	state_category = large_town
-	history = {
+
+	history={
+		owner = WIL# = SOV
 		buildings = {
 			infrastructure = 1
 			industrial_complex = 1
 		}
+		# = SOV
+		# = ALT #Could be a claim too
 		1939.1.1 = {
 			buildings = {
 				industrial_complex = 2
@@ -17,9 +23,10 @@ state = {
 			1794 1
 		}
 	}
-	provinces = {
+
+	provinces={
 		1297 1779 1794 1797 4803 7680 10537 10546 11410 12515 12528 12613 
 	}
-	local_supplies = 5.0
 
+	local_supplies=5.0 
 }

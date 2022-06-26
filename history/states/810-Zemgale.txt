@@ -1,12 +1,15 @@
-state = {
-	id = 810
-	name = "STATE_810"
-	history = {
+
+state={
+	id=810
+	name="STATE_810"
+
+	history={
+		owner = WIL# = LAT
 		victory_points = {
-			6222 3 
+			6222 3 #Jelgava
 		}
 		victory_points = {
-			3255 1 
+			3255 1 #Jekabpils
 		}
 		buildings = {
 			infrastructure = 2
@@ -19,12 +22,14 @@ state = {
 			}
 
 		}
+		# = LAT
+
 	}
-	provinces = {
+
+	provinces={
 		222 310 319 341 3298 6459 7482 9275 11222 
 	}
-	manpower = 600250
-	buildings_max_level_factor = 1.000
-	state_category = town
-
+	manpower = 0#=600250
+	buildings_max_level_factor=1.000
+	state_category=town
 }

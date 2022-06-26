@@ -1,9 +1,14 @@
-state = {
-	id = 450
-	name = "STATE_450"
-	manpower = 82535
+
+state={
+	id=450
+	name="STATE_450"
+	manpower = 0# = 82535
+	
 	state_category = enclave
-	history = {
+
+	history={
+		owner = WIL# = ITA
+		
 		victory_points = {
 			11954 3 
 		}
@@ -14,10 +19,12 @@ state = {
 				naval_base = 1
 			}
 		}
+		# = LBA
 	}
-	provinces = {
+
+	provinces={
 		1127 4120 10123 11954 
 	}
-	local_supplies = 0.0
 
+	local_supplies=0.0 
 }

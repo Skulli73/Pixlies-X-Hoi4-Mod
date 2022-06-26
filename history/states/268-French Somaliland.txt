@@ -1,9 +1,14 @@
-state = {
-	id = 268
-	name = "STATE_268"
-	manpower = 85232
+state={
+	id=268
+	name="STATE_268"
+	manpower = 0# = 85232
+
+
 	state_category = enclave
-	history = {
+
+	history={
+		owner = WIL# = FRA
+		# = DJI
 		victory_points = {
 			8124 1
 		}
@@ -14,13 +19,11 @@ state = {
 				naval_base = 2
 			}
 		}
-		add_core_of = BS
-		owner = BS
-		controller = BS
+
 	}
-	provinces = {
+	provinces={
 		4985 8124
  	}
-	local_supplies = 0.0
 
+	local_supplies=0.0 
 }

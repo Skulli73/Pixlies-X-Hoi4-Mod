@@ -1,12 +1,16 @@
-state = {
-	id = 293
-	name = "STATE_293"
-	manpower = 2489500
+
+state={
+	id=293
+	name="STATE_293"
+	manpower = 0# = 2489500
+	
 	state_category = rural
-	resources = {
-		oil = 1
+	
+	resources={
+		oil=1 # was: 1
 	}
-	history = {
+	history={
+		owner = WIL# = YEM
 		buildings = {
 			infrastructure = 2
 			arms_factory = 1
@@ -18,10 +22,12 @@ state = {
 		victory_points = {
 			10840 3 
 		}
+		# = YEM
 	}
-	provinces = {
+
+	provinces={
 		1920 1973 4924 10752 10840 
 	}
-	local_supplies = 0.0
 
+	local_supplies=0.0 
 }

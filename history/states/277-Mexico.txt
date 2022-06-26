@@ -1,18 +1,24 @@
-state = {
-	id = 277
-	name = "STATE_277"
-	manpower = 3424403
+
+state={
+	id=277
+	name="STATE_277"
+	manpower = 0# = 3424403
+	
 	state_category = city
-	resources = {
-		steel = 6
+
+	resources={
+		steel=6 #was 2 before Mexican steel production was centralized to allow oil concessions
 	}
-	history = {
+	
+	history={
+		owner = WIL# = MEX
 		buildings = {
-			infrastructure = 3 
+			infrastructure = 3 #was: 5
 			arms_factory = 2
 			industrial_complex = 4
 			air_base = 3
 		}
+		# = MEX
 		victory_points = {
 			1965 25
 		}
@@ -20,9 +26,11 @@ state = {
 			2008 10
 		}
 	}
-	provinces = {
+
+	provinces={
 		1965 2008 2011 7913 12755 
 	}
-	local_supplies = 0.0
+	
 
+	local_supplies=0.0 
 }

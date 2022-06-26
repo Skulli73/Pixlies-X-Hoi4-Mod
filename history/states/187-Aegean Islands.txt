@@ -1,12 +1,17 @@
-state = {
-	id = 187
-	name = "STATE_187"
-	manpower = 322600
+
+state={
+	id=187
+	name="STATE_187"
+	manpower = 0# = 322600
+	
 	state_category = small_island
-	resources = {
-		chromium = 7
+	
+	resources={
+		chromium=7 # was: 10
 	}
-	history = {
+
+	history={
+		owner = WIL# = GRE
 		buildings = {
 			infrastructure = 1
 			dockyard = 1
@@ -23,14 +28,12 @@ state = {
 		victory_points = {
 			8435 1
 		}
-		add_core_of = CAR
-		add_core_of = BYZ
-		owner = CAR
-		controller = CAR
+		# = GRE
 	}
-	provinces = {
+
+	provinces={
 		3401 6550 8435 
 	}
-	local_supplies = 9.0
 
+	local_supplies=9.0 
 }

@@ -1,16 +1,21 @@
-state = {
-	id = 48
-	name = "STATE_48"
-	manpower = 1685989
-	resources = {
+
+state={
+	id=48
+	name="STATE_48"
+	manpower = 0# = 1685989
+	resources={
 		aluminium = 2
 	}
+	
+	
 	state_category = city
-	history = {
-		victory_points = { 
+
+	history={
+		owner = WIL# = BUL
+		victory_points = { #Sofia
 			949 15 
 		}
-		victory_points = { 
+		victory_points = { #Vidin
 			9771 1
 		}
 		buildings = {
@@ -18,13 +23,12 @@ state = {
 			industrial_complex = 6
 			air_base = 3
 		}
-		add_core_of = CAR
-		owner = CAR
-		controller = CAR
+		# = BUL
 	}
-	provinces = {
+
+	provinces={
 		793 935 949 965 3908 3971 9771 11754 
 	}
-	local_supplies = 0.0
 
+	local_supplies=0.0 
 }

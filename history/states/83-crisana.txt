@@ -1,9 +1,13 @@
-state = {
-	id = 83
-	name = "STATE_83"
-	manpower = 632900
+
+state={
+	id=83
+	name="STATE_83"
+	manpower = 0# = 632900
+	
 	state_category = town
-	history = {
+
+	history={
+		owner = WIL# = ROM
 		buildings = {
 			infrastructure = 3
 			arms_factory = 1
@@ -12,13 +16,13 @@ state = {
 		victory_points = {
 			6682 1 
 		}
-		add_core_of = CAR
-		owner = CAR
-		controller = CAR
+		# = ROM
+		# = TRA
 	}
-	provinces = {
+
+	provinces={
 		696 6682 6697 9640 
 	}
-	local_supplies = 0.0
 
+	local_supplies=0.0 
 }

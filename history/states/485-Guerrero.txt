@@ -1,12 +1,18 @@
-state = {
-	id = 485
-	name = "STATE_485"
-	manpower = 1598311
+
+state={
+	id=485
+	name="STATE_485"
+	manpower = 0# = 1598311
+	
 	state_category = rural
-	resources = {
-		steel = 4
+
+	resources={
+		steel=4 #was 2
 	}
-	history = {
+
+
+	history={
+		owner = WIL# = MEX
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1
@@ -14,6 +20,7 @@ state = {
 				naval_base = 3
 			}
 		}
+		# = MEX
 		victory_points = {
 			10730 5
 		}
@@ -24,9 +31,11 @@ state = {
 			8032 1
 		}
 	}
-	provinces = {
+
+	provinces={
 		4887 5066 8032 10730 10832 
 	}
-	local_supplies = 0.0
+	
 
+	local_supplies=0.0 
 }

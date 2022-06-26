@@ -1,9 +1,13 @@
-state = {
-	id = 455
-	name = "STATE_455"
-	manpower = 932000
+
+state={
+	id=455
+	name="STATE_455"
+	manpower = 0# = 932000
+	
 	state_category = rural
-	history = {
+
+	history={
+		owner = WIL# = ENG
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1
@@ -14,10 +18,13 @@ state = {
 		victory_points = {
 			11976 1 
 		}
+
+		# = JOR
 	}
-	provinces = {
+
+	provinces={
 		1544 4017 4115 4440 4562 4574 4591 4603 7001 7151 7170 10089 11976 
 	}
-	local_supplies = 0.0
 
+	local_supplies=0.0 
 }

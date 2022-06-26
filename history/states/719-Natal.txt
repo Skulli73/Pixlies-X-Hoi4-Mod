@@ -1,14 +1,18 @@
-state = {
-	id = 719
-	name = "STATE_719"
-	manpower = 3962157
-	resources = {
-		chromium = 60
+state={
+	id=719
+	name="STATE_719" # Natal
+	manpower = 0# = 3962157
+	resources={
+		chromium=60 # was: 116
 	}
+	
 	state_category = city
-	history = {
+
+
+	history={
+		owner = WIL# = SAF
 		buildings = {
-			infrastructure = 3 
+			infrastructure = 3 #was: 5
 			industrial_complex = 2
 			air_base = 1
 			1468 = {
@@ -24,13 +28,12 @@ state = {
 		victory_points = {
 			4696 1 
 		}
-		add_core_of = UOA
-		owner = UOA
-		controller = UOA
+		# = SAF
 	}
-	provinces = {
+
+	provinces={
 		1468 1494 1833 4556 4584 4696 7576 7900 8178 
 	}
-	local_supplies = 0.0
 
+	local_supplies=0.0 
 }

@@ -1,12 +1,16 @@
-state = {
-	id = 343
-	name = "STATE_343"
-	manpower = 1298543
-	resources = {
-		chromium = 25
+
+state={
+	id=343
+	name="STATE_343" # Afyon
+	manpower = 0# = 1298543
+	resources={
+		chromium=25 # was: 32
 	}
+	
 	state_category = rural
-	history = {
+
+	history={
+		owner = WIL# = TUR
 		victory_points = {
 			10041 1 
 		}
@@ -20,13 +24,12 @@ state = {
 			infrastructure = 2
 			industrial_complex = 1
 		}
-		add_core_of = BYZ
-		owner = BYZ
-		controller = BYZ
+		# = TUR
 	}
-	provinces = {
+
+	provinces={
 		856 981 3856 3983 6877 6945 9878 10041 11796 11831 11907 
 	}
-	local_supplies = 0.0
 
+	local_supplies=0.0 
 }

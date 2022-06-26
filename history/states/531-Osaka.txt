@@ -1,14 +1,18 @@
-state = {
-	id = 531
-	name = "STATE_531"
-	manpower = 11015000
+
+state={
+	id=531
+	name="STATE_531" # Kansai
+	manpower = 0# = 11015000
 	state_category = metropolis
-	resources = {
-		aluminium = 3
+	resources={
+		aluminium=3 # was: 6
 	}
-	history = {
+
+	history={
+		owner = WIL# = JAP
+		# = JAP
 		buildings = {
-			infrastructure = 4 
+			infrastructure = 4 #was: 8
 			arms_factory = 2
 			industrial_complex = 4
 			dockyard = 2
@@ -31,13 +35,12 @@ state = {
 				industrial_complex = 5
 			}
 		}
-		add_core_of = JAP
-		owner = JAP
-		controller = JAP
+
 	}
-	provinces = {
+
+	provinces={
 		1051 1067 1133 1136 4054 4142 7072 7113 9985 11960 12031 
 	}
-	local_supplies = 9.0
 
+	local_supplies=9.0 
 }

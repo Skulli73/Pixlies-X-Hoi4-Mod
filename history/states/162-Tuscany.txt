@@ -1,9 +1,13 @@
-state = {
-	id = 162
-	name = "STATE_162"
-	manpower = 3084933
+
+state={
+	id=162
+	name="STATE_162"
+	manpower = 0# = 3084933
+	
 	state_category = large_city
-	history = {
+
+	history={
+		owner = WIL# = ITA
 		victory_points = {
 			9907 3 
 		}
@@ -14,7 +18,7 @@ state = {
 			11833 1 
 		}
 		buildings = {
-			infrastructure = 4 
+			infrastructure = 4 #was: 8
 			arms_factory = 1
 			industrial_complex = 1
 			dockyard = 3
@@ -26,19 +30,18 @@ state = {
 				naval_base = 4
 			}
 		}
+		# = ITA
 		1939.1.1 = {
 			buildings = {
 				arms_factory = 2
 				industrial_complex = 2
 			}
 		}
-		add_core_of = CAR
-		owner = CAR
-		controller = CAR
 	}
-	provinces = {
+
+	provinces={
 		910 1616 3885 6875 6946 6973 9750 9879 9907 11833 11889 
 	}
-	local_supplies = 0.0
 
+	local_supplies=0.0 
 }

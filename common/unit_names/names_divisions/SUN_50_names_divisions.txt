@@ -1,8 +1,0 @@
-SUN_DIV_0_0 = {	name = "Infantry"
-	for_countries = { SUN }
-	can_use = { always = yes }
-	division_types = { 
-		"infantry" "artillery_brigade" }
-	}
-	fallback_name = "%d. Infantry"
-}

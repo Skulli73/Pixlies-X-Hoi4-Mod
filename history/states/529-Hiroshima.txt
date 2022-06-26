@@ -1,11 +1,15 @@
-state = {
-	id = 529
-	name = "STATE_529"
-	manpower = 5341000
+
+state={
+	id=529
+	name="STATE_529" # Chugoku
+	manpower = 0# = 5341000
 	state_category = large_city
-	history = {
+
+	history={
+		owner = WIL# = JAP
+		# = JAP
 		buildings = {
-			infrastructure = 4 
+			infrastructure = 4 #was: 7
 			air_base = 3
 			dockyard = 2
 			arms_factory = 2
@@ -15,6 +19,7 @@ state = {
 
 			}
 		}
+		
 		victory_points = {
 			1092 30
 		}
@@ -25,13 +30,12 @@ state = {
 				industrial_complex = 3
 			}
 		}
-		add_core_of = JAP
-		owner = JAP
-		controller = JAP
+
 	}
-	provinces = {
+
+	provinces={
 		1092 1167 1191 4197 7050 7145 7212 9968 10052 10055 11946 11985 
 	}
-	local_supplies = 0.0
 
+	local_supplies=0.0 
 }

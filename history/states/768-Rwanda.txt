@@ -1,8 +1,12 @@
-state = {
-	id = 768
-	name = "STATE_768"
+state={
+	id=768
+	name="STATE_768" # Rwanda
+	
 	state_category = pastoral
-	history = {
+
+	history={
+		owner = WIL# = BEL
+		# = RWA
 		victory_points = {
 			9962 1
 		}
@@ -11,11 +15,12 @@ state = {
 
 		}
 	}
-	provinces = {
+
+	provinces={
 		9962
 	}
-	manpower = 1716564
-	buildings_max_level_factor = 1.000
-	local_supplies = 1.0
+	manpower = 0#=1716564
+	buildings_max_level_factor=1.000
 
+	local_supplies=1.0 
 }

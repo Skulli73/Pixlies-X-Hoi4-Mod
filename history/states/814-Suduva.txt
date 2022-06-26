@@ -1,9 +1,12 @@
-state = {
-	id = 814
-	name = "STATE_814"
-	history = {
+
+state={
+	id=814
+	name="STATE_814"
+
+	history={
+		owner = WIL# = LIT
 		victory_points = {
-			11312 1 
+			11312 1 #Marijampole
 		}
 		buildings = {
 			infrastructure = 2
@@ -12,12 +15,14 @@ state = {
 			air_base = 4
 
 		}
+		# = LIT
+
 	}
-	provinces = {
+
+	provinces={
 		3272 6281 6407 11312 
 	}
-	manpower = 219740
-	buildings_max_level_factor = 1.000
-	state_category = town
-
+	manpower = 0#=219740
+	buildings_max_level_factor=1.000
+	state_category=town
 }

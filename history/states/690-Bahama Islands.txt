@@ -1,9 +1,13 @@
-state = {
-	id = 690
-	name = "STATE_690"
-	manpower = 40000
+state={
+	id=690
+	name="STATE_690"
+	manpower = 0# = 40000
+	
 	state_category = tiny_island
-	history = {
+
+	history={
+		# = BAH
+		owner = WIL# = ENG
 		victory_points = {
 			10254 1
 		}
@@ -19,13 +23,12 @@ state = {
 				naval_base = 1
 			}
 		}
-		add_core_of = CSA
-		owner = CSA
-		controller = CSA
 	}
-	provinces = {
+
+	provinces={
 		4647 7245 10254 
 	}
-	local_supplies = 0.0
+	
 
+	local_supplies=0.0 
 }

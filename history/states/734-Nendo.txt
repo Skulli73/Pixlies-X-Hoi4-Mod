@@ -1,9 +1,12 @@
-state = {
-	id = 734
-	name = "STATE_734"
-	manpower = 5167
+state={
+	id=734
+	name="STATE_734"
+	manpower = 0# = 5167
 	state_category = tiny_island
-	history = {
+
+	history={
+		owner = WIL# = FRA
+		# = TAH
 		buildings = {
 			infrastructure = 2
 			7390 = {
@@ -11,10 +14,12 @@ state = {
 			}
 		}
 	}
-	buildings_max_level_factor = 1.000
-	provinces = {
+
+	buildings_max_level_factor=1.000
+
+	provinces={
 		7390 
 	}
-	local_supplies = 0.0
 
+	local_supplies=0.0 
 }

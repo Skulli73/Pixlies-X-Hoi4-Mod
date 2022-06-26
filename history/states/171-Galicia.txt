@@ -1,9 +1,14 @@
-state = {
-	id = 171
-	name = "STATE_171"
-	manpower = 2295085
+
+state={
+	id=171
+	name="STATE_171"
+	manpower = 0# = 2295085
+	
 	state_category = city
-	history = {
+
+	history={
+		owner = WIL# = SPR
+		# = GLC
 		victory_points = {
 			758 5
 		}
@@ -11,7 +16,7 @@ state = {
 			6734 3
 		}
 		buildings = {
-			infrastructure = 3 
+			infrastructure = 3 #was: 6
 			dockyard = 2
 			arms_factory = 1
 			air_base = 2
@@ -19,10 +24,12 @@ state = {
 				naval_base = 6
 			}
 		}
+		# = SPR
 	}
-	provinces = {
+
+	provinces={
 		729 758 3761 6734 6764 6955 9686 9689 11675 11677 11692 11710 11840 
 	}
-	local_supplies = 0.0
 
+	local_supplies=0.0 
 }

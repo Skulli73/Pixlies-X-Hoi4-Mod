@@ -1,27 +1,31 @@
-state = {
-	id = 364
-	name = "STATE_364"
-	manpower = 1738764
+
+state={
+	id=364
+	name="STATE_364"
+	manpower = 0# = 1738764
+	
 	state_category = city
-	history = {
+
+	history={
+		owner = WIL# = USA
 		buildings = {
-			infrastructure = 3 
+			infrastructure = 3 #was: 5
 			industrial_complex = 2
 			7202 = {
 				naval_base = 2
 
 			}
 		}
+		# = USA
 		victory_points = {
 			7202 1 
 		}
-		add_core_of = CSA
-		owner = CSA
-		controller = CSA
+
 	}
-	provinces = {
+
+	provinces={
 		1485 1547 3994 4491 4653 7012 7134 7202 7527 10029 10047 11927 
 	}
-	local_supplies = 0.0
 
+	local_supplies=0.0 
 }

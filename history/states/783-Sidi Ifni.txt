@@ -1,12 +1,18 @@
-state = {
-	id = 783
-	name = "STATE_783"
-	manpower = 11043
+
+state={
+	id=783
+	name="STATE_783" # Sidi Ifni
+	manpower = 0# = 11043
+	
 	state_category = pastoral
-	history = {
+
+	history={
 		victory_points = {
 			12857 1
 		}
+
+		owner = WIL# = SPR
+		# = MOR
 		buildings = {
 			infrastructure = 1
 			12857 = {
@@ -14,9 +20,10 @@ state = {
 			}
 		}
 	}
-	provinces = {
+
+	provinces={
 		12857
 	}
-	local_supplies = 0.0
 
+	local_supplies=0.0 
 }

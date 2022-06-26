@@ -1,9 +1,11 @@
 state = {
-	id = 182
-	name = "STATE_182"
-	manpower = 387900
+	id=182
+	name="STATE_182"
+	manpower = 0# = 387900
+	
 	state_category = town
 	history = {
+		owner = WIL# = GRE
 		victory_points = {
 			9940 5
 		}
@@ -20,14 +22,11 @@ state = {
 				naval_base = 3
 			}
 		}
-		add_core_of = CAR
-		add_core_of = BYZ
-		owner = CAR
-		controller = CAR
+		# = GRE
 	}
 	provinces = {
 		1164 4170 9940 12058
 	}
-	local_supplies = 0.0
 
+	local_supplies=0.0 
 }

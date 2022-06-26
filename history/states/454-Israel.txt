@@ -1,11 +1,15 @@
-state = {
-	id = 454
-	name = "STATE_454"
-	manpower = 933142
+
+state={
+	id=454
+	name="STATE_454" #Palestine
+	manpower = 0# = 933142
+	
 	state_category = rural
-	history = {
+
+	history={
+		owner = WIL# = ENG
 		buildings = {
-			infrastructure = 3 
+			infrastructure = 3 #was: 5
 			industrial_complex = 1
 			air_base = 2
 			4206 = {
@@ -21,11 +25,13 @@ state = {
 		victory_points = {
 			1065 1 
 		}
-		add_core_of = BYZ
+		# = PAL
+		# = ISR
 	}
-	provinces = {
+
+	provinces={
 		1015 1065 1086 1201 4088 4206 7107 7176 11970 1
 	}
-	local_supplies = 0.0
 
+	local_supplies=0.0 
 }

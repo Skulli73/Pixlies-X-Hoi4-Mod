@@ -1,11 +1,16 @@
-state = {
-	id = 500
-	name = "STATE_500"
-	manpower = 6665500
+
+state={
+	id=500
+	name="STATE_500"
+	manpower = 0# = 6665500
+	
 	state_category = large_city
-	history = {
+	
+	history={
+		owner = WIL# = BRA
+		# = BRA
 		buildings = {
-			infrastructure = 3 
+			infrastructure = 3 #was: 6
 			arms_factory = 2
 			industrial_complex = 4
 			dockyard = 2
@@ -17,13 +22,11 @@ state = {
 		victory_points = {
 			10980 10
 		}
-		add_core_of = SCU
-		owner = SCU
-		controller = SCU
 	}
-	provinces = {
+
+	provinces={
 		5172 8190 10980 12996 
 	}
-	local_supplies = 0.0
 
+	local_supplies=0.0 
 }

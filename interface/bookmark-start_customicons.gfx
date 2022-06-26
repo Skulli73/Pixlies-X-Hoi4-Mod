@@ -1,7 +1,0 @@
-spriteTypes = { 
-	##Icon For: Start
-	SpriteType = { 
-		name = "start-1"
-		texturefile = "gfx/interface/bookmarks/start-bookmark/start-1.dds"
-	}
-

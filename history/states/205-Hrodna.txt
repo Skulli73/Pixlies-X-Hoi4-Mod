@@ -1,19 +1,25 @@
-state = {
-	id = 205
-	name = "STATE_205"
-	manpower = 1121004
+
+state={
+	id=205
+	name="STATE_205" # Kaluga
+	manpower = 0# = 1121004
+	
 	state_category = town
-	history = {
+
+	history={
+		owner = WIL# = SOV
 		buildings = {
-			infrastructure = 3 
+			infrastructure = 3 #was: 5
 		}
+		# = SOV
 		victory_points = {
 			382 1
 		}
 	}
-	provinces = {
+
+	provinces={
 		246 274 352 382 3263 3308 3345 3377 6252 6365 9261 9301 11235 11284 11300 11369 
 	}
-	local_supplies = 10.0
 
+	local_supplies=10.0 
 }

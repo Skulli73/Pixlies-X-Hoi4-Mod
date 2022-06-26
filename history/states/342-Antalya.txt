@@ -1,12 +1,15 @@
-state = {
-	id = 342
-	name = "STATE_342"
-	manpower = 362689
-	resources = {
-		chromium = 35
+
+state={
+	id=342
+	name="STATE_342" # Antalya
+	manpower = 0# = 362689
+	resources={
+		chromium=35 # was: 46
 	}
 	state_category = rural
-	history = {
+
+	history={
+		owner = WIL# = TUR
 		victory_points = {
 			1005 5 
 		}
@@ -17,13 +20,12 @@ state = {
 				naval_base = 4
 			}
 		}
-		add_core_of = BYZ
-		owner = BYZ
-		controller = BYZ
+		# = TUR
 	}
-	provinces = {
+
+	provinces={
 		1005 1119 9941 10122 11917 12013 12016 12096 
 	}
-	local_supplies = 7.0
 
+	local_supplies=7.0 
 }

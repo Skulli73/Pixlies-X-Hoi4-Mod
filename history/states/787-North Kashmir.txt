@@ -1,19 +1,26 @@
-state = {
-	id = 787
-	name = "STATE_787"
-	manpower = 1415800
+state={
+	id=787
+	name="STATE_787" # Northern Kashmir
+	manpower = 0# = 1415800
+	
 	state_category = rural
-	history = {
+
+	history={
 		victory_points = {
 			1910 1
 		}
+		owner = WIL# = RAJ
 		buildings = {
 			infrastructure = 1
 		}
+		# = PAK
+		# = RAJ
+
 	}
-	provinces = {
+
+	provinces={
 		1910 2041 2084 10821 
 	}
-	local_supplies = 0.0
 
+	local_supplies=0.0 
 }

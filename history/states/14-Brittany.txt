@@ -1,9 +1,13 @@
-state = {
-	id = 14
-	name = "STATE_14"
-	manpower = 2396600
+
+state={
+	id=14
+	name="STATE_14"
+	manpower = 0# = 2396600
+	
 	state_category = city
-	history = {
+
+	history={
+		owner = WIL# = FRA
 		victory_points = {
 			3552 20
 		}
@@ -29,15 +33,18 @@ state = {
 				naval_base = 1
 			}
 		}
+		# = FRA
+		# = BRI
 		1939.1.1 = {
 			buildings = {
 				dockyard = 5
 			}
 		}
 	}
-	provinces = {
+
+	provinces={
 		542 3552 3758 6536 6548 6572 9495 9510 9525 11508 
 	}
-	local_supplies = 0.0
 
+	local_supplies=0.0 
 }

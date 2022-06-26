@@ -1,0 +1,2 @@
+WIL = "countries/Wilderness.txt"
+GME = "countries/Germania.txt"

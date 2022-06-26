@@ -1,12 +1,15 @@
-state = {
-	id = 798
-	name = "STATE_798"
-	provinces = {
+state={
+	id=798
+	name="STATE_798"
+	provinces={
 		919 3807 3862 3964 11826 11844 
 	}
-	manpower = 531172
+	manpower = 0# = 531172
+	
 	state_category = rural
-	history = {
+
+	history= {
+		owner = WIL# = TUR
 		victory_points = {
 			3862 3
 		}
@@ -16,10 +19,8 @@ state = {
 		buildings = {
 			infrastructure = 2
 		}
-		add_core_of = BYZ
-		owner = BYZ
-		controller = BYZ
+		# = TUR
 	}
-	local_supplies = 0.0
 
+	local_supplies=0.0 
 }

@@ -1,12 +1,17 @@
-state = {
-	id = 65
-	name = "STATE_65"
-	manpower = 5592576
-	resources = {
-		steel = 53
+
+state={
+	id=65
+	name="STATE_65"
+	manpower = 0# = 5592576
+	resources={
+		steel=53 # was: 90
 	}
+
 	state_category = metropolis
-	history = {
+
+
+	history={
+		owner = WIL# = GER
 		buildings = {
 			infrastructure = 4
 			arms_factory = 2
@@ -18,6 +23,7 @@ state = {
 		victory_points = {
 			3535 5 
 		}
+		# = GER
 		1939.1.1 = {
 			buildings = {
 				synthetic_refinery = 2
@@ -26,9 +32,10 @@ state = {
 			}
 		}
 	}
-	provinces = {
+
+	provinces={
 		514 573 3514 3535 6441 6559 9441 9471 9535 11481 11545 
 	}
-	local_supplies = 0.0
 
+	local_supplies=0.0 
 }

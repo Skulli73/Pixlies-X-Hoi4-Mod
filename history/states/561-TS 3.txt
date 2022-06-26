@@ -1,17 +1,24 @@
-state = {
+
+state={
 	id = 561
-	name = "STATE_561"
-	manpower = 454281
+	name = "STATE_561" # Amur
+	manpower = 0# = 454281
+	
 	state_category = rural
+
 	history = {
+		owner = WIL# = SOV
 		buildings = {
 			infrastructure = 2
 			arms_factory = 1
 		}
+		# = SOV
+		# = FER
 	}
+
 	provinces = {
 		1730 1739 1845 4731 4847 7691 7754 7785 7851 10678 12543 12591 12657 12660 
 	}
-	local_supplies = 6.0
 
+	local_supplies = 6.0 
 }

@@ -1,8 +1,0 @@
-ROC_DIV_0_0 = {	name = "Canadian Infantry Division"
-	for_countries = { ROC }
-	can_use = { always = yes }
-	division_types = { 
-		"infantry" }
-	}
-	fallback_name = "%d. Canadian Infantry Division"
-}

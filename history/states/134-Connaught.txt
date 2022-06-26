@@ -1,21 +1,29 @@
-state = {
-	id = 134
-	name = "STATE_134"
-	manpower = 667100
+
+state=
+{
+	id=134
+	name="STATE_134"
+	manpower = 0# = 667100
+	
 	state_category = town
-	history = {
+
+	history= {
+		owner = WIL# = IRE
 		victory_points = {
-			9303 3 
+			9303 3 #Galway
 		}
 		victory_points = {
-			11371 1 
+			11371 1 #Sligo
 		}
 		buildings = {
-			infrastructure = 3 
+			infrastructure = 3 #was: 6
 		}
+		# = IRE
 	}
-	provinces = {
-337 3396 9255 9303 9321 9369 11238 11287 11371 	}
-	local_supplies = 13.0
 
+	provinces=
+	{
+337 3396 9255 9303 9321 9369 11238 11287 11371 	}
+
+	local_supplies=13.0 
 }

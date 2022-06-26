@@ -1,9 +1,14 @@
-state = {
-	id = 310
-	name = "STATE_310"
-	manpower = 47341
+
+state={
+	id=310
+	name="STATE_310"
+	manpower = 0# = 47341
+
 	state_category = pastoral
-	history = {
+
+	history={
+		owner = WIL# = FRA
+		# = CAY
 		buildings = {
 			infrastructure = 1
 			12885 = {
@@ -14,9 +19,10 @@ state = {
 			12885 1 
 		}
 	}
-	provinces = {
+
+	provinces={
 		4934 12885 
 	}
-	local_supplies = 0.0
 
+	local_supplies=0.0 
 }

@@ -1,9 +1,15 @@
-state = {
-	id = 555
-	name = "STATE_555"
-	manpower = 15000
+
+state={
+	id=555
+	name="STATE_555" #Kuril Islands
+	manpower = 0# = 15000 
+	
 	state_category = tiny_island
-	history = {
+
+	history={
+		owner = WIL# = JAP
+		## = JAP
+		#add_claim_by = SOV # Removed because of too much aggression
 		buildings = {
 			infrastructure = 2
 			1399 = {
@@ -12,13 +18,12 @@ state = {
 			}
 
 		}
-		add_core_of = JAP
-		owner = JAP
-		controller = JAP
+
 	}
-	provinces = {
+
+	provinces={
 		1399 1515 13037 
 	}
-	local_supplies = 0.0
 
+	local_supplies=0.0 
 }

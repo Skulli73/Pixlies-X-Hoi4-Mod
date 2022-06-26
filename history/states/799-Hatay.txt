@@ -1,26 +1,29 @@
-state = {
-	id = 799
-	name = "STATE_799"
-	provinces = {
+state={
+	id=799
+	name="STATE_799"
+	provinces={
 		12029 
 	}
-	manpower = 234379
+	manpower = 0# = 234379
+	
 	state_category = enclave
-	history = {
+
+	history= {
+		owner = WIL# = FRA
+		# = TUR
+		# = SYR
 		victory_points = {
 			12029 1
 		}
 		buildings = {
 			infrastructure = 1
 		}
-		1938.9.30 = {
-			#owner = TUR
-			#controller = TUR
-		}
-		add_core_of = BYZ
-		owner = BYZ
-		controller = BYZ
-	}
-	local_supplies = 0.0
 
+		1938.9.30 = {
+			owner = WIL# = TUR
+			controller = WIL# = TUR
+		}
+	}
+
+	local_supplies=0.0 
 }

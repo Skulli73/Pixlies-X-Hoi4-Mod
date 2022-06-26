@@ -1,9 +1,13 @@
-state = {
-	id = 1
-	name = "STATE_1"
-	manpower = 322900
+
+state={
+	id=1
+	name="STATE_1" # Corsica
+	manpower = 0# = 322900
+	
 	state_category = town
-	history = {
+
+	history={
+		owner = WIL# = FRA
 		victory_points = { 3838 1 }
 		buildings = {
 			infrastructure = 2
@@ -13,13 +17,13 @@ state = {
 				naval_base = 3
 			}
 		}
-		add_core_of = CAR
-		owner = CAR
-		controller = CAR
+		# = COR
+		# = FRA
 	}
-	provinces = {
+
+	provinces={
 		3838 9851 11804 
 	}
-	local_supplies = 0.0
 
+	local_supplies=0.0 
 }

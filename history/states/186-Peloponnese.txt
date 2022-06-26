@@ -1,9 +1,12 @@
-state = {
-	id = 186
-	name = "STATE_186"
-	manpower = 945000
+
+state={
+	id=186
+	name="STATE_186"
+	manpower = 0#=945000
+	
 	state_category = town
-	history = {
+
+	history={
 		victory_points = {
 			7211 5
 		}
@@ -13,6 +16,7 @@ state = {
 		victory_points = {
 			11965 1
 		}
+		owner = WIL# = GRE
 		buildings = {
 			infrastructure = 2
 			arms_factory = 1
@@ -26,14 +30,13 @@ state = {
 			}
 
 		}
-		add_core_of = CAR
-		add_core_of = BYZ
-		owner = CAR
-		controller = CAR
+		# = GRE
+
 	}
+
 	provinces = {
 		1173 4078 4178 4193 7096 7211 11965 
 	}
-	local_supplies = 0.0
 
+	local_supplies=0.0 
 }

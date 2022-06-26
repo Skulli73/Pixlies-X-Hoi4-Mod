@@ -1,9 +1,15 @@
-state = {
-	id = 550
-	name = "STATE_550"
-	manpower = 600600
+state=
+{
+	id=550
+	name="STATE_550"
+	manpower = 0# = 600600
+	
 	state_category = rural
-	history = {
+	
+	history=
+	{
+		owner = WIL# = ITA
+		# = ERI
 		victory_points = {
 			12766 1
 		}
@@ -15,9 +21,9 @@ state = {
 			}
 		}
 	}
-	provinces = {
+	provinces={
 		5017 5047 5091 8043 12723 12766
 	}
-	local_supplies = 0.0
 
+	local_supplies=0.0 
 }

@@ -7,12 +7,12 @@ state = {
 	state_category = pastoral
 
 	history = {
-		victory_points = {
+		#victory_points = {
 			4859 1
 		}
 		owner = WIL# = SOV
 		buildings = {
-			infrastructure = 1
+			#infrastructure = 1
 		}
 		# = SOV
 		# = TAY

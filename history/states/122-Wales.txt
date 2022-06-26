@@ -13,16 +13,16 @@ state= {
 	history=
 	{
 		owner = WIL# = ENG
-		victory_points = {
+		#victory_points = {
 			407 3 #Swansea
 		}
-		victory_points = {
+		#victory_points = {
 			311 1 #Wrexham
 		}
-		victory_points = { 377 5 }
+		#victory_points = { 377 5 }
 		buildings = {
-			infrastructure = 3
-			industrial_complex = 1
+			#infrastructure = 3
+			#industrial_complex = 1
 			377 = {
 				naval_base = 3
 			}

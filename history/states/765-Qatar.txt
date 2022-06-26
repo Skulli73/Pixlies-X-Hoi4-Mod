@@ -8,11 +8,11 @@ state={
 	history={
 		# = QAT
 		owner = WIL# = ENG
-		victory_points = {
+		#victory_points = {
 			8051 1
 		}
 		buildings = {
-			infrastructure = 1
+			#infrastructure = 1
 			8051 = {
 				naval_base = 2
 			}

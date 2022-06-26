@@ -10,14 +10,7 @@ state={
 	state_category = city
 
 	history={
-		victory_points = {
-			3473 1
-		}
-		owner = WIL# = GER
-		buildings = {
-			infrastructure = 3
-			industrial_complex = 1
-		}
+		owner = WIL
 		# = GER
 	}
 

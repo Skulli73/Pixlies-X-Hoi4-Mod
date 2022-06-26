@@ -12,18 +12,19 @@ state={
 	state_category = large_city
 
 	history={
-		owner = WIL# = GER
-		victory_points = { 3561 5 }
-		victory_points = { 425 3 }
+		owner = GME
+		add_core_of = GME
+		#victory_points = { 3561 5 }
+		#victory_points = { 425 3 }
 		buildings = {
-			infrastructure = 3
-			industrial_complex = 1
+			#infrastructure = 3
+			#industrial_complex = 1
 		}
 		# = GER
 		1939.1.1 = {
 			buildings = {
 				synthetic_refinery = 3
-				arms_factory = 2
+				#arms_factory = 2
 			}
 		}
 	}

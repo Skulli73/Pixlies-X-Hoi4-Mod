@@ -9,10 +9,10 @@ state=
 	history = {
 		owner = WIL# = ENG
 		buildings = {
-			infrastructure = 1
+			#infrastructure = 1
 		}
 
-		victory_points = {
+		#victory_points = {
 			12002 1
 		}
 

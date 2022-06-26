@@ -9,10 +9,10 @@ state={
 	history={
 		owner = WIL# = YUG
 		buildings = {
-			infrastructure = 3
-			industrial_complex = 3
+			#infrastructure = 3
+			#industrial_complex = 3
 		}
-		victory_points = {
+		#victory_points = {
 			11581 3 
 		}
 		# = YUG

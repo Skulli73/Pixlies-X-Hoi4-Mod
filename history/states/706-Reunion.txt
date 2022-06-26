@@ -9,7 +9,7 @@ state={
 		owner = WIL# = FRA
 		# = MAD
 		buildings = {
-			infrastructure = 2
+			#infrastructure = 2
 			13017 = {
 				naval_base = 1
 			}

@@ -9,8 +9,8 @@ state={
 		# = FIN
 		# = KAR
 		buildings = {
-			infrastructure = 3 #was: 5
-			industrial_complex = 2
+			#infrastructure = 3 #was: 5
+			#industrial_complex = 2
 
 			#Mannerheim Line
 			9100 = {
@@ -23,7 +23,7 @@ state={
 				coastal_bunker = 1
 			}
 		}
-		victory_points = {
+		#victory_points = {
 			9206 3 
 		}
 		

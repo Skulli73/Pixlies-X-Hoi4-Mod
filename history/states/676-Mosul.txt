@@ -13,15 +13,15 @@ state={
 	history={
 		owner = WIL# = IRQ
 		buildings = {
-			infrastructure = 2
+			#infrastructure = 2
 		}
-		victory_points = {
+		#victory_points = {
 			10106 5 
 		}
-		victory_points = {
+		#victory_points = {
 			3916 3 
 		}
-		victory_points = {
+		#victory_points = {
 			6826 1
 		}
 		# = IRQ

@@ -8,12 +8,12 @@ state={
 	history={
 		owner = WIL# = MON
 		buildings = {
-			infrastructure = 1
+			#infrastructure = 1
 		}
-		victory_points = {
+		#victory_points = {
 			1791 1 #Darkhan
 		}
-		victory_points = {
+		#victory_points = {
 			1834 1 #Erdenet
 		}
 		# = MON

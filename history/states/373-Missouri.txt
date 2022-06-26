@@ -14,17 +14,17 @@ state={
 	history={
 		owner = WIL# = USA
 		buildings = {
-			infrastructure = 3 #was: 5
-			industrial_complex = 5
+			#infrastructure = 3 #was: 5
+			#industrial_complex = 5
 		}
 		# = USA
-		victory_points = {
+		#victory_points = {
 			4569 10 
 		}
-		victory_points = {
+		#victory_points = {
 			10717 10 
 		}
-		victory_points = {
+		#victory_points = {
 			10370 1 
 		}
 

@@ -10,8 +10,8 @@ state={
 		owner = WIL# = JAP
 		# = FSM
 		buildings = {
-			infrastructure = 2
-			air_base = 2
+			#infrastructure = 2
+			#air_base = 2
 			13040 = {
 				naval_base = 1
 
@@ -38,10 +38,10 @@ state={
 				naval_base = 1
 			}
 		}
-		victory_points = {
+		#victory_points = {
 			13041 3 
 		}
-		victory_points = {
+		#victory_points = {
 			13046 1 
 		}
 

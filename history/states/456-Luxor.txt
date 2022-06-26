@@ -7,18 +7,18 @@ state=
 	state_category = rural
 	
 	history = {
-		victory_points = {
+		#victory_points = {
 			11999 1
 		}
 		owner = WIL# = ENG
 		buildings = {
-			infrastructure = 2
+			#infrastructure = 2
 		}
 
-		victory_points = {
+		#victory_points = {
 			12071 3
 		}
-		victory_points = {
+		#victory_points = {
 			11974 1
 		}
 

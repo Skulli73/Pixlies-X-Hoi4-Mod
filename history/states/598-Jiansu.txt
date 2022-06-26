@@ -10,7 +10,7 @@ state={
 		# = CHI
 		# = PRC
 		buildings = {
-			infrastructure = 2
+			#infrastructure = 2
 
 		}
 

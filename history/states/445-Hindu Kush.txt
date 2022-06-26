@@ -7,13 +7,13 @@ state={
 	state_category = wasteland
 
 	history={
-		victory_points = {
+		#victory_points = {
 			5105 1
 		}
 		owner = WIL# = RAJ
 		buildings = {
-			infrastructure = 2
-			air_base = 4
+			#infrastructure = 2
+			#air_base = 4
 		}
 		# = PAK
 	}

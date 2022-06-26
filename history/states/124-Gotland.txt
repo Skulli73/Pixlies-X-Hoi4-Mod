@@ -8,10 +8,10 @@ state=
 	
 	history=
 	{
-		owner = WIL# = SWE
-		# = SWE
+		owner = GME
+		add_core_of = GME
 		buildings = {
-			infrastructure = 3 #was: 6
+			#infrastructure = 3 #was: 6
 			408 = {
 				naval_base = 1
 			}

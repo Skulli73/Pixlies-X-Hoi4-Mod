@@ -6,19 +6,19 @@ state={
 		owner = WIL# = SOV
 		# = KAZ
 		buildings = {
-			infrastructure = 2
-			industrial_complex = 1
+			#infrastructure = 2
+			#industrial_complex = 1
 
 		}
 		# = SOV
 		1939.1.1 = {
 			buildings = {
-				industrial_complex = 1
+				#industrial_complex = 1
 
 			}
 
 		}
-		victory_points = {
+		#victory_points = {
 			1668 1
 		}
 	}

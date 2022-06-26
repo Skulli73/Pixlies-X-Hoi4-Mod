@@ -8,11 +8,11 @@ state=
 	history=
 	{
 		owner = WIL# = USA
-		victory_points = {
+		#victory_points = {
 			13067 1 
 		}
 		buildings = {
-			infrastructure = 1
+			#infrastructure = 1
 			13067 = {
 				naval_base = 1
 			}

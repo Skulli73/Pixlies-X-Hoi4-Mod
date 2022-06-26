@@ -3,23 +3,11 @@ state={
 	name="STATE_36"
 
 	history={
-		owner = WIL# = HOL
-		# = HOL
-		victory_points = {
-			6241 5 
-		}
-		victory_points = {
-			9363 1 
-		}
-		victory_points = {
-			9335 3 
-		}
-		victory_points = {
-			6336 1 
-		}
+		owner = GME
+		add_core_of = GME
 		buildings = {
-			infrastructure = 3
-			industrial_complex = 2
+			#infrastructure = 3
+			#industrial_complex = 2
 			6336 = {
 				naval_base = 3
 

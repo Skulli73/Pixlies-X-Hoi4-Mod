@@ -11,15 +11,15 @@ state={
 		# = TIB
 		# = PRC
 		buildings = {
-			infrastructure = 1
+			#infrastructure = 1
 
 		}
-		victory_points = {
+		#victory_points = {
 			10856 1
 		}
 		1939.1.1 = {
 			buildings = {
-				infrastructure = 1
+				#infrastructure = 1
 
 			}
 

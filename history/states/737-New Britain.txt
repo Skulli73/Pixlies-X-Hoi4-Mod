@@ -6,8 +6,8 @@ state={
 		# = PNG
 		owner = WIL# = AST
 		buildings = {
-			infrastructure = 1
-			air_base = 1
+			#infrastructure = 1
+			#air_base = 1
 			7251 = {
 				naval_base = 5
 
@@ -23,7 +23,7 @@ state={
 
 		}
 		
-		victory_points = {
+		#victory_points = {
 			7251 5 
 		}
 		

@@ -6,11 +6,11 @@ state={
 	history={
 		owner = WIL# = AST
 		buildings = {
-			infrastructure = 3 #was: 6
-			arms_factory = 2
-			industrial_complex = 4
+			#infrastructure = 3 #was: 6
+			#arms_factory = 2
+			#industrial_complex = 4
 			dockyard = 2
-			air_base = 5
+			#air_base = 5
 			12406 = {
 				naval_base = 6
 				coastal_bunker = 2
@@ -26,13 +26,13 @@ state={
 			}
 
 		}
-		victory_points = {
+		#victory_points = {
 			7859 30 
 		}
-		victory_points = {
+		#victory_points = {
 			12406 20.0 
 		}
-		victory_points = {
+		#victory_points = {
 			7520 1 
 		}
 		# = AST

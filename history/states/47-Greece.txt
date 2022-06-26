@@ -14,32 +14,32 @@ state={
 
 	history={
 		owner = WIL# = GRE
-		victory_points = {
+		#victory_points = {
 			4109 20 
 		}
-		victory_points = {
+		#victory_points = {
 			3973 3
 		}
-		#victory_points = {
+		##victory_points = {
 		#	863 1
 		#}
-		#victory_points = {
+		##victory_points = {
 		#	3864 3
 		#}
-		#victory_points = {
+		##victory_points = {
 		#	976 1
 		#}
-		victory_points = {
+		#victory_points = {
 			7127 3
 		}
-		victory_points = {
+		#victory_points = {
 			3988 1
 		}
 		buildings = {
-			infrastructure = 2
-			industrial_complex = 3
+			#infrastructure = 2
+			#industrial_complex = 3
 			dockyard = 1
-			air_base = 4
+			#air_base = 4
 			4109 = {
 				naval_base = 9
 

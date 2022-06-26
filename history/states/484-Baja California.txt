@@ -7,8 +7,8 @@ state = {
 	history={
 		owner = WIL# = MEX
 		buildings = {
-			infrastructure = 2
-			air_base = 3
+			#infrastructure = 2
+			#air_base = 3
 			1892 = {
 				naval_base = 2
 			}
@@ -18,16 +18,16 @@ state = {
 		}
 		# = MEX
 
-		victory_points = {
+		#victory_points = {
 			12461 10
 		}
-		#victory_points = {
+		##victory_points = {
 		#	12736 3
 		#}
-		#victory_points = {
+		##victory_points = {
 		#	1892 3
 		#}
-		#victory_points = {
+		##victory_points = {
 		#	13215 5
 		#}
 

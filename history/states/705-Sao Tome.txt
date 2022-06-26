@@ -7,7 +7,7 @@ state={
 	history={
 		owner = WIL# = POR
 		buildings = {
-			infrastructure = 1
+			#infrastructure = 1
 			13015 ={
 				naval_base = 1
 			}

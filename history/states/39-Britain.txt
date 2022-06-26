@@ -11,13 +11,13 @@ state={
 	}
 
 	history={
-		victory_points = {
+		#victory_points = {
 			11598 1
 		}
 		owner = WIL# = ITA
 		buildings = {
-			infrastructure = 3
-			industrial_complex = 1
+			#infrastructure = 3
+			#industrial_complex = 1
 		}
 		# = ITA
 		# = AUS

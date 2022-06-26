@@ -11,19 +11,14 @@ state={
 
 
 	history={
-		owner = WIL# = SWE
-		victory_points = {
-			11114 1 
-		}
-		victory_points = {
-			383 10 
-		}
+		owner = GME
+		add_core_of = GME
 		buildings = {
-			infrastructure = 3 #was: 6
-			arms_factory = 1
-			industrial_complex = 1
+			#infrastructure = 3 #was: 6
+			#arms_factory = 1
+			#industrial_complex = 1
 			dockyard = 1
-			air_base = 1
+			#air_base = 1
 			383 = {
 				naval_base = 5
 				coastal_bunker = 5

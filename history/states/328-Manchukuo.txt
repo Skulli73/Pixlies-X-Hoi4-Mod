@@ -16,13 +16,13 @@ state={
 		# = MAN
 		# = PRC
 		buildings = {
-			infrastructure = 2
-			#industrial_complex = 1
+			#infrastructure = 2
+			##industrial_complex = 1
 		}
-		victory_points = {
+		#victory_points = {
 			4572 1
 		}
-		victory_points = {
+		#victory_points = {
 			10433 1 
 		}
 

@@ -9,11 +9,11 @@ state=
 	{
 		owner = WIL# = PHI
 		buildings = {
-			infrastructure = 2
-			industrial_complex = 1
+			#infrastructure = 2
+			#industrial_complex = 1
 		}
 		
-		victory_points = {
+		#victory_points = {
 			4288 1 
 		}
 		# = PHI

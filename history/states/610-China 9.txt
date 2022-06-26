@@ -12,7 +12,7 @@ state={
 		# = MAN
 		# = PRC
 		buildings = {
-			infrastructure = 2
+			#infrastructure = 2
 		}
 
 	}

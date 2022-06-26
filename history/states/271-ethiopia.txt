@@ -13,18 +13,18 @@ state=
 	{
 		owner = WIL# = ETH
 		buildings = {
-			infrastructure = 2
-			arms_factory = 2
-			industrial_complex = 2
-			air_base = 1
+			#infrastructure = 2
+			#arms_factory = 2
+			#industrial_complex = 2
+			#air_base = 1
 		}
-		victory_points = { 
+		#victory_points = { 
 			5010 5 
 		}
-		victory_points = { 
+		#victory_points = { 
 			1984 1.0 
 		}
-		victory_points = { 
+		#victory_points = { 
 			7980 1.0 
 		}
 		# = ETH

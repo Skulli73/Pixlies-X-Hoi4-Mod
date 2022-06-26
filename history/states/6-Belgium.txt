@@ -10,17 +10,18 @@ state={
 	state_category = metropolis
 
 	history={
-		owner = WIL# = BEL
-		victory_points = { 516 30 }
-		victory_points = { 6598 30 }
-		victory_points = { 6560 5 }
-		victory_points = { 13068 1 }
-		victory_points = { 3576 1 }
+		owner = GME
+		add_core_of = GME
+		#victory_points = { 516 30 }
+		#victory_points = { 6598 30 }
+		#victory_points = { 6560 5 }
+		#victory_points = { 13068 1 }
+		#victory_points = { 3576 1 }
 		buildings = {
-			infrastructure = 3 #was: 5
-			arms_factory = 5
-			industrial_complex = 7
-			air_base = 3
+			#infrastructure = 3 #was: 5
+			#arms_factory = 5
+			#industrial_complex = 7
+			#air_base = 3
 			6560 = {
 				naval_base = 3
 			}

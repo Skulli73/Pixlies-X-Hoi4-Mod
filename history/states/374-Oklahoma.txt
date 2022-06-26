@@ -15,18 +15,18 @@ state={
 	history={
 		owner = WIL# = USA
 		buildings = {
-			infrastructure = 2
-			industrial_complex = 2
-			air_base = 2
+			#infrastructure = 2
+			#industrial_complex = 2
+			#air_base = 2
 		}
 		# = USA
-		victory_points = {
+		#victory_points = {
 			1806 1 
 		}
 
 		1939.1.1 = {
 			buildings = {
-				industrial_complex = 3
+				#industrial_complex = 3
 			}
 		}
 

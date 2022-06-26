@@ -12,15 +12,8 @@ state={
 	}
 
 	history={
-		owner = WIL# = SWI
-		buildings = {
-			infrastructure = 3 #was: 6
-			industrial_complex = 3
-		}
-		victory_points = {
-			663 10 
-		}
-		# = SWI
+		owner = GME
+		add_core_of = GME
 	}
 
 	provinces={

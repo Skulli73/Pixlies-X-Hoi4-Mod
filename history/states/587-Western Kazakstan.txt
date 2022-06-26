@@ -6,9 +6,9 @@ state={
 		owner = WIL# = SOV
 		# = KAZ
 		buildings = {
-			infrastructure = 1
+			#infrastructure = 1
 		}
-		victory_points = {
+		#victory_points = {
 			1517 1 
 		}
 		# = SOV

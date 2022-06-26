@@ -14,12 +14,12 @@ state={
 	history={
 		owner = WIL# = SAF
 		buildings = {
-			infrastructure = 3 #was: 5
-			arms_factory = 1
-			industrial_complex = 5
-			air_base = 3
+			#infrastructure = 3 #was: 5
+			#arms_factory = 1
+			#industrial_complex = 5
+			#air_base = 3
 		}
-		victory_points = {
+		#victory_points = {
 			10400 10
 		}
 		# = SAF

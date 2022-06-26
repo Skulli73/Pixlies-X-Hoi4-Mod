@@ -10,13 +10,13 @@ state={
 	state_category = rural
 
 	history={
-		victory_points = {
+		#victory_points = {
 			9606 3
 		}
 		owner = WIL# = ROM
 		buildings = {
-			infrastructure = 3
-			industrial_complex = 2
+			#infrastructure = 3
+			#industrial_complex = 2
 		}
 		# = ROM
 		# = TRA

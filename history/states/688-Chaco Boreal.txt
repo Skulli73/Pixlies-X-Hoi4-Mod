@@ -13,7 +13,7 @@ state={
 	history={
 		owner = WIL# = PAR
 		buildings = {
-			infrastructure = 1
+			#infrastructure = 1
 		}
 		# = PAR
 		# = BOL

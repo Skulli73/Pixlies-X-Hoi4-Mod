@@ -10,10 +10,10 @@ state={
 	history={
 		owner = WIL# = NIC
 		buildings = {
-			infrastructure = 2
-			arms_factory = 1
-			industrial_complex = 2
-			air_base = 1
+			#infrastructure = 2
+			#arms_factory = 1
+			#industrial_complex = 2
+			#air_base = 1
 			12738 = {
 				naval_base = 1
 
@@ -21,7 +21,7 @@ state={
 
 		}
 		# = NIC
-		victory_points = {
+		#victory_points = {
 			12738 3
 		}
 

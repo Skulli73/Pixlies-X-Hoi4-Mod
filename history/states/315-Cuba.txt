@@ -12,10 +12,10 @@ state= {
 	history= {
 		owner = WIL# = CUB
 		buildings = {
-			infrastructure = 2
-			arms_factory = 1
-			industrial_complex = 3
-			air_base = 1
+			#infrastructure = 2
+			#arms_factory = 1
+			#industrial_complex = 3
+			#air_base = 1
 			7622 = {
 				naval_base = 3
 			}
@@ -24,10 +24,10 @@ state= {
 			}
 		}
 		# = CUB
-		victory_points = {
+		#victory_points = {
 			7622 5 
 		}
-		victory_points = {
+		#victory_points = {
 			7590 1
 		}
 

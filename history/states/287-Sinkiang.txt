@@ -8,10 +8,10 @@ state={
 		# = CHI
 		# = PRC
 		buildings = {
-			infrastructure = 1
+			#infrastructure = 1
 
 		}
-		victory_points = {
+		#victory_points = {
 			4973 1
 		}
 	}

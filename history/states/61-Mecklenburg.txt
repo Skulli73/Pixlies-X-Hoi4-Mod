@@ -7,22 +7,8 @@ state={
 	state_category = town
 
 	history={
-		owner = WIL# = GER
-		victory_points = {
-			321 5
-		}
-		victory_points = {
-			11305 3
-		}
-		buildings = {
-			infrastructure = 3
-			arms_factory = 3
-			321 = {
-				naval_base = 6
-
-			}
-			air_base = 3
-		}
+		owner = GME
+		add_core_of = GME
 		# = GER
 	}
 

@@ -11,8 +11,8 @@ state = {
 		# = FER
 		add_claim_by = JAP
 		buildings = {
-			infrastructure = 2
-			air_base = 1
+			#infrastructure = 2
+			#air_base = 1
 		}
 	}
 

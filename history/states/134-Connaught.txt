@@ -9,14 +9,14 @@ state=
 
 	history= {
 		owner = WIL# = IRE
-		victory_points = {
+		#victory_points = {
 			9303 3 #Galway
 		}
-		victory_points = {
+		#victory_points = {
 			11371 1 #Sligo
 		}
 		buildings = {
-			infrastructure = 3 #was: 6
+			#infrastructure = 3 #was: 6
 		}
 		# = IRE
 	}

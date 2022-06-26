@@ -13,12 +13,12 @@ state={
 	history={
 		owner = WIL# = HUN
 		buildings = {
-			infrastructure = 3
-			arms_factory = 4
-			industrial_complex = 4
-			air_base = 4
+			#infrastructure = 3
+			#arms_factory = 4
+			#industrial_complex = 4
+			#air_base = 4
 		}
-		victory_points = {
+		#victory_points = {
 			9660 20 
 		}
 		# = HUN

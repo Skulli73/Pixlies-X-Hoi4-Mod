@@ -6,17 +6,17 @@ state={
 	state_category = town
 
 	history={
-		victory_points = {
+		#victory_points = {
 			6375 3
 		}
-		#victory_points = {
+		##victory_points = {
 		#	11386 1
 		#}
 		owner = WIL# = GER
 		controller = WIL# = GER
 		
 		buildings = {
-			infrastructure = 3
+			#infrastructure = 3
 		}
 		# = GER
 	}

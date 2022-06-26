@@ -16,18 +16,18 @@ state={
 	{
 		owner = WIL# = INS
 		# = INS
-		victory_points = {
+		#victory_points = {
 			4652 1 
 		}
 		
-		victory_points = {
+		#victory_points = {
 			12268 1 
 		}
 
 		buildings = {
-			infrastructure = 2
-			industrial_complex = 1
-			air_base = 1
+			#infrastructure = 2
+			#industrial_complex = 1
+			#air_base = 1
 			4652 = {
 				naval_base = 3
 			}

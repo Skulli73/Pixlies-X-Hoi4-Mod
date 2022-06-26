@@ -11,9 +11,9 @@ state={
 		# = CHI
 		# = PRC
 		buildings = {
-			infrastructure = 3 #was: 5
-			industrial_complex = 1
-			air_base = 6
+			#infrastructure = 3 #was: 5
+			#industrial_complex = 1
+			#air_base = 6
 			dockyard = 1
 			7014 = {
 				naval_base = 6
@@ -21,13 +21,13 @@ state={
 				bunker = 1
 			}
 		}
-		victory_points = {
+		#victory_points = {
 			11913 20 
 		}
-		victory_points = {
+		#victory_points = {
 			7014 5
 		}
-		victory_points = {
+		#victory_points = {
 			10076 3
 		}
 

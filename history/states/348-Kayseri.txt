@@ -9,11 +9,11 @@ state={
 
 	history={
 		owner = WIL# = TUR
-		victory_points = {
+		#victory_points = {
 			3870 5 
 		}
 		buildings = {
-			infrastructure = 2
+			#infrastructure = 2
 
 		}
 		# = TUR

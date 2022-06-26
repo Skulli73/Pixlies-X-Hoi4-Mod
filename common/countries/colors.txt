@@ -5,6 +5,6 @@ WIL = {
 	color_ui = rgb { 0 0 0 }
 }
 GME = {
-	color = rgb { 33 33 33 }
-	color_ui = rgb { 33 33 33 }
+	color = rgb { 70 70 70 }
+	color_ui = rgb { 70 70 70 }
 }

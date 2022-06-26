@@ -12,10 +12,10 @@ state={
 	history={
 		owner = WIL# = GUA
 		buildings = {
-			infrastructure = 2
-			arms_factory = 1
-			industrial_complex = 2 
-			air_base = 1
+			#infrastructure = 2
+			#arms_factory = 1
+			#industrial_complex = 2 
+			#air_base = 1
 			10886 = {
 				naval_base = 1
 			}
@@ -24,7 +24,7 @@ state={
 			}
 		}
 		# = GUA
-		victory_points = {
+		#victory_points = {
 			10886 3 
 		}
 

@@ -11,13 +11,13 @@ state={
 	}
 
 	history={
-		victory_points = {
+		#victory_points = {
 			721 1
 		}
 		owner = WIL# = SOV
 		buildings = {
-			infrastructure = 3 #was: 5
-			air_base = 3
+			#infrastructure = 3 #was: 5
+			#air_base = 3
 		}
 		# = SOV
 		# = UKR

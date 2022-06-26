@@ -7,13 +7,13 @@ state={
 	
 	history=
 	{
-		victory_points = {
+		#victory_points = {
 			577 1 
 		}
 		owner = WIL# = ROM
 		buildings = {
-			infrastructure = 3
-			arms_factory = 1
+			#infrastructure = 3
+			#arms_factory = 1
 		}
 		# = ROM
 		add_claim_by = UKR

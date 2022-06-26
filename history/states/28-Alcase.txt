@@ -10,15 +10,16 @@ state={
 	}
 
 	history={
-		owner = WIL# = FRA
-		#victory_points = { 6529 1 }
-		#victory_points = { 549 1 }
-		victory_points = { 678 5 }
-		victory_points = { 9503 5 }
-		victory_points = { 9559 10 }
+		owner = GME
+		add_core_of = GME
+		##victory_points = { 6529 1 }
+		##victory_points = { 549 1 }
+		#victory_points = { 678 5 }
+		#victory_points = { 9503 5 }
+		#victory_points = { 9559 10 }
 		buildings = {
-			infrastructure = 4
-			industrial_complex = 3
+			#infrastructure = 4
+			#industrial_complex = 3
 			549 = {
 				bunker = 10
 
@@ -47,14 +48,14 @@ state={
 				bunker = 10
 
 			}
-			anti_air_building = 5
-			air_base = 5
+			#anti_air_building = 5
+			#air_base = 5
 
 		}
 		# = FRA
 		1939.1.1 = {
 			buildings = {
-				industrial_complex = 4
+				#industrial_complex = 4
 			}
 		}
 	}

@@ -11,20 +11,20 @@ state=
 	}
 	
 	history={
-		victory_points = {
+		#victory_points = {
 			3585 3
 		}
-		#victory_points = {
+		##victory_points = {
 		#	11432 1
 		#}
-		victory_points = {
+		#victory_points = {
 			11401 3
 		}
 		owner = WIL# = CZE
 		buildings = {
-			infrastructure = 4
-			industrial_complex = 2
-			anti_air_building = 1
+			#infrastructure = 4
+			#industrial_complex = 2
+			#anti_air_building = 1
 			424 =
 			{
 				bunker = 1

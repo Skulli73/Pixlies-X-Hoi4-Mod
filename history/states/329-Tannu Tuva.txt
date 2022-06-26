@@ -12,11 +12,11 @@ state={
 	history={
 		owner = WIL# = TAN
 		buildings = {
-			infrastructure = 1
-			arms_factory = 1
-			industrial_complex = 1
+			#infrastructure = 1
+			#arms_factory = 1
+			#industrial_complex = 1
 		}
-		victory_points = {
+		#victory_points = {
 			10627 3
 		}
 		# = TAN

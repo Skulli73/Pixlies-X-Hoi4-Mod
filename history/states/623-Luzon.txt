@@ -12,8 +12,8 @@ state= {
 	history= {
 		owner = WIL# = PHI
 		buildings = {
-			infrastructure = 2
-			industrial_complex = 1
+			#infrastructure = 2
+			#industrial_complex = 1
 			12213 = {
 				naval_base = 1
 			}
@@ -22,10 +22,10 @@ state= {
 			}
 		}
 		
-		victory_points = {
+		#victory_points = {
 			1415 1 
 		}
-		victory_points = {
+		#victory_points = {
 			12213 1 
 		}
 		# = PHI

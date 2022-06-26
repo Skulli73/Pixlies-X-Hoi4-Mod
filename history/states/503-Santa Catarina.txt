@@ -9,8 +9,8 @@ state={
 	history={
 		owner = WIL# = BRA
 		buildings = {
-			infrastructure = 3 #was: 5
-			air_base = 1
+			#infrastructure = 3 #was: 5
+			#air_base = 1
 		}
 		# = BRA
 	}

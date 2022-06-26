@@ -11,13 +11,13 @@ state=
 		owner = WIL# = CHI
 		# = CHI
 		# = PRC
-		victory_points = {
+		#victory_points = {
 			10000 5 
 		}
 		buildings = {
-			infrastructure = 3 #was: 5
-			industrial_complex = 1
-			air_base = 1
+			#infrastructure = 3 #was: 5
+			#industrial_complex = 1
+			#air_base = 1
 			10000 = {
 				naval_base = 5
 				coastal_bunker = 1

@@ -9,14 +9,14 @@ state = {
 	history = {
 		owner = WIL# = SOV
 		buildings = {
-			infrastructure = 3 #was: 5
-			industrial_complex = 1
+			#infrastructure = 3 #was: 5
+			#industrial_complex = 1
 
 		}
-		victory_points = {
+		#victory_points = {
 			1278 5
 		}
-		victory_points = {
+		#victory_points = {
 			4354 1 
 		}
 		# = SOV

@@ -13,16 +13,16 @@ state=
 	{
 		owner = WIL# = ELS
 		buildings = {
-			infrastructure = 2
-			arms_factory = 1
-			industrial_complex = 2 
-			air_base = 1
+			#infrastructure = 2
+			#arms_factory = 1
+			#industrial_complex = 2 
+			#air_base = 1
 			12823 = {
 				naval_base = 1
 			}
 		}
 		# = ELS
-		victory_points = {
+		#victory_points = {
 			12823 3
 		}
 

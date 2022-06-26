@@ -15,19 +15,19 @@ state={
 
 	history={
 		owner = WIL# = MAL
-		victory_points = {
+		#victory_points = {
 			12299 10
 		}
-		victory_points = {
+		#victory_points = {
 			7329 1 
 		}
-		victory_points = {
+		#victory_points = {
 			10297 1 
 		}
 		buildings = {
-			infrastructure = 2
-			industrial_complex = 1
-			air_base = 6
+			#infrastructure = 2
+			#industrial_complex = 1
+			#air_base = 6
 			12299 = {
 				naval_base = 8
 				coastal_bunker = 3

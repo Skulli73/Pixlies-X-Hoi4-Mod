@@ -12,13 +12,13 @@ state=
 		# = SHX
 		# = CHI
 		# = PRC
-		victory_points = {
+		#victory_points = {
 			1519 3 
 		}
 		buildings = {
-			infrastructure = 2
-			arms_factory = 2
-			industrial_complex = 2
+			#infrastructure = 2
+			#arms_factory = 2
+			#industrial_complex = 2
 		}
 
 		1938.10.25 = {

@@ -6,13 +6,13 @@ state={
 	history={
 		owner = WIL# = YUG
 		buildings = {
-			infrastructure = 3
-			arms_factory = 3
-			industrial_complex = 4
-			air_base = 5
+			#infrastructure = 3
+			#arms_factory = 3
+			#industrial_complex = 4
+			#air_base = 5
 
 		}
-		victory_points = {
+		#victory_points = {
 			11586 15 
 		}
 		# = YUG

@@ -13,7 +13,7 @@ state={
 	history={
 		owner = WIL# = BRA
 		buildings = {
-			infrastructure = 0
+			#infrastructure = 0
 
 		}
 		# = BRA

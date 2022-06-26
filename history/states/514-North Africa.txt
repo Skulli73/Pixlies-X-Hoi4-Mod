@@ -11,7 +11,7 @@ state={
 		owner = WIL# = FRA
 		# = ALG
 		buildings = {
-			infrastructure = 0
+			#infrastructure = 0
 		}
 	}
 

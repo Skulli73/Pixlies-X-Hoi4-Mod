@@ -11,20 +11,12 @@ state={
 	}
 
 	history={
-		owner = WIL# = FRA
-		victory_points = {
-			575 5
-		}
-		victory_points = {
-			11483 10
-		}
-		victory_points = {
-			11548 15
-		}
+		owner = GME
+		add_core_of = GME
 		buildings = {
-			infrastructure = 4
-			industrial_complex = 3
-			air_base = 10
+			#infrastructure = 4
+			#industrial_complex = 3
+			#air_base = 10
 			575 = {
 				naval_base = 6
 			}
@@ -32,7 +24,7 @@ state={
 		# = FRA
 		1939.1.1 = {
 			buildings = {
-				industrial_complex = 6
+				#industrial_complex = 6
 			}
 		}
 	}

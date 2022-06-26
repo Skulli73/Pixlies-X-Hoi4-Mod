@@ -12,11 +12,12 @@ state={
 	}
 
 	history={
-		owner = WIL# = NOR
+		owner = GME
+		add_core_of = GME
 		buildings = {
-			infrastructure = 3 #was: 5
-			industrial_complex = 2
-			air_base = 1
+			#infrastructure = 3 #was: 5
+			#industrial_complex = 2
+			#air_base = 1
 			9296 = {
 				naval_base = 3
 				coastal_bunker = 1
@@ -30,13 +31,13 @@ state={
 				coastal_bunker = 2
 			}
 		}
-		victory_points = {
+		#victory_points = {
 			9296 1
 		}
-		victory_points = {
+		#victory_points = {
 			53 1
 		}
-		victory_points = {
+		#victory_points = {
 			122 3
 		}
 		# = NOR

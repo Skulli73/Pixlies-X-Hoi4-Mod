@@ -9,8 +9,8 @@ state= {
 		# = CHI
 		# = PRC
 		buildings = {
-			infrastructure = 2
-			industrial_complex = 1
+			#infrastructure = 2
+			#industrial_complex = 1
 			7071 = {
 				naval_base = 1
 				coastal_bunker = 1
@@ -22,10 +22,10 @@ state= {
 				bunker = 1
 			}
 		}
-		victory_points = { 
+		#victory_points = { 
 			4196 3 
 		}
-		victory_points = { 
+		#victory_points = { 
 			7071 1 
 		}
 

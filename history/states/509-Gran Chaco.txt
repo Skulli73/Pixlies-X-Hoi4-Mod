@@ -14,8 +14,8 @@ state={
 	history={
 		owner = WIL# = ARG
 		buildings = {
-			infrastructure = 2
-			industrial_complex = 1
+			#infrastructure = 2
+			#industrial_complex = 1
 		}
 		# = ARG
 	}

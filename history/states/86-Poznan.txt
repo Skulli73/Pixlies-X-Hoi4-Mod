@@ -7,12 +7,12 @@ state={
 	state_category = city
 	history={
 		owner = WIL# = POL
-		victory_points = {
+		#victory_points = {
 			6558 10
 		}
 		buildings = {
-			infrastructure = 3
-			industrial_complex = 1
+			#infrastructure = 3
+			#industrial_complex = 1
 			11232 = {
 				bunker = 1
 
@@ -25,7 +25,7 @@ state={
 				bunker = 1
 
 			}
-			air_base = 3
+			#air_base = 3
 		}
 		# = POL
 		1938.3.12 = {

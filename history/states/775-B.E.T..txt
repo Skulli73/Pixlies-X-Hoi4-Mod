@@ -9,7 +9,7 @@ state={
 		owner = WIL# = FRA
 		# = CHA
 		buildings = {
-			infrastructure = 0
+			#infrastructure = 0
 		}
 	}
 

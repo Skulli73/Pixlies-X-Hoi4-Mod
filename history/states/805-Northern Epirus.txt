@@ -14,11 +14,11 @@ state={
 
 	history= {
 		owner = WIL# = ALB
-		victory_points = {
+		#victory_points = {
 			914 3
 		}
 		buildings = {
-			infrastructure = 1
+			#infrastructure = 1
 		}
 		# = ALB
 		add_claim_by = GRE

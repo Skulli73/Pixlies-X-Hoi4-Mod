@@ -13,22 +13,22 @@ state={
 		# = JAP
 		buildings = {
 		
-			arms_factory = 1
-			industrial_complex = 2
+			#arms_factory = 1
+			#industrial_complex = 2
 			fuel_silo = 1
-			infrastructure = 2
-			air_base = 6
+			#infrastructure = 2
+			#air_base = 6
 			9859 = {
 				naval_base = 6
 
 			}
 		}
 		
-		victory_points = {
+		#victory_points = {
 			6994 5
 		}
 		
-		victory_points = {
+		#victory_points = {
 			7169 15
 		}
 

@@ -13,19 +13,19 @@ state=
 	{
 		owner = WIL# = DOM
 		buildings = {
-			infrastructure = 2
-			arms_factory = 1
-			industrial_complex = 3
-			air_base = 1
+			#infrastructure = 2
+			#arms_factory = 1
+			#industrial_complex = 3
+			#air_base = 1
 			7660 = {
 				naval_base = 2
 			}
 		}
 		# = DOM
-		victory_points = {
+		#victory_points = {
 			7660 5 
 		}
-		victory_points = {
+		#victory_points = {
 			4598 1 
 		}
 

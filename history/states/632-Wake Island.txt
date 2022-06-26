@@ -9,12 +9,12 @@ state={
 		owner = WIL# = USA
 		# = GUM
 		buildings = {
-			infrastructure = 2
+			#infrastructure = 2
 			13047 = {
 				naval_base = 1
 			}
 		}
-		victory_points = {
+		#victory_points = {
 			13047 1 
 		}
 

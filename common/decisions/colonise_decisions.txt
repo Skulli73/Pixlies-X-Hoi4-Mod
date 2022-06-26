@@ -146,5 +146,17 @@ colonise = {
 	advertise_for_members_in_state = {
 		state_target = yes
 		on_map_mode = map_and_decisions_view
+		cost = 100
+		available = {
+			FROM = {
+				industrial_complex > var:FROM.state_population
+			}
+		}
+		target_trigger = {
+			FROM = {
+				is_owned_by = ROOT
+				is_controlled_by = ROOT
+			}
+		}
 	}
 }

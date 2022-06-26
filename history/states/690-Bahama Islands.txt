@@ -6,8 +6,8 @@ state={
 	state_category = tiny_island
 
 	history={
-		# = BAH
-		owner = WIL# = ENG
+		owner = CSA
+		add_core_of = CSA
 		#victory_points = {
 			10254 1
 		}

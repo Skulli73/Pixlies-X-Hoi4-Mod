@@ -2,7 +2,7 @@
 state={
 	id=57
 	name="STATE_57"
-	manpower = 0# = 5109333
+	manpower = 3# = 5109333
 	state_category = large_city
 
 	history={
@@ -12,9 +12,9 @@ state={
 			495 5 
 		}
 		buildings = {
-			#infrastructure = 4
-			#arms_factory = 3
-			#industrial_complex = 1
+			infrastructure = 5
+			arms_factory = 1
+			industrial_complex = 3
 			#air_base = 3
 
 		}

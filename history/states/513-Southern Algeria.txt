@@ -7,8 +7,8 @@ state={
 	state_category = wasteland
 
 	history={
-		owner = WIL# = FRA
-		# = ALG
+		owner = CSA
+		add_core_of = CSA
 		#victory_points = {
 			12034 1 
 		}

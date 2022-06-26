@@ -9,8 +9,8 @@ state={
 	}
 
 	history={
-		owner = WIL# = FRA
-		# = TUN
+		owner = CSA
+		add_core_of = CSAq
 		#victory_points = {
 			11969 10 
 		}

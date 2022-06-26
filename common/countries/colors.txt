@@ -8,3 +8,7 @@ GME = {
 	color = rgb { 70 70 70 }
 	color_ui = rgb { 70 70 70 }
 }
+CSA = {
+	color = rgb {180 180 180}
+	color_ui = rgb {180 180 180}
+}

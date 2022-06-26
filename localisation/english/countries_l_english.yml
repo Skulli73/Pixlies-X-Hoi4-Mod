@@ -11,3 +11,25 @@ GME_democratic:0 "Germanic Empire"
 GME_democratic_DEF:0 "the Germanic Empire"
 GME_communism:0 "Worker's Republic of Central Europe"
 GME_communism_DEF:0 "The Worker's Republic of Central Europe"
+
+#special germania names
+GME_REPUBLIC_democratic:0 "Germanic Republic"
+GME_REPUBLIC_democratic_DEF:0 "the Germanic Republic"
+
+
+#su normal names
+CSA:0 "Dixie"
+CSA_DEF:0 "Dixie"
+CSA_ADJ:0 "Dixie"
+CSA_fascism:0 "Southern Union"
+CSA_fascism_DEF:0 "the Southern Union"
+CSA_fascism_ADJ:0 "SU-"
+CSA_neutraltiy:0 "Southern Union"
+CSA_neutraltiy_DEF:0 "the Southern Union"
+CSA_neutraltiy_ADJ:0 "SU-"
+CSA_democratic:0 "United States of America"
+CSA_democratic_DEF:0 "the United States of America"
+CSA_democratic_ADJ:0 "American"
+CSA_communism:0 "Communist States of America"
+CSA_communism_DEF:0 "the Communist States of America"
+CSA_communism_ADJ:0 "American"

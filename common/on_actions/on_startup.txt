@@ -1,0 +1,9 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			GME = {
+				set_cosmetic_tag = GME_REPUBLIC
+			}
+		}
+	}
+}

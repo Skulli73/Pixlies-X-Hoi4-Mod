@@ -17,8 +17,60 @@ defined_text = {
 		localization_key = ENG_PRIME_MINISTER_TITLE
 	}
 	text = {
+		trigger = {
+			OR = {
+				tag = GME
+				tag = FGE
+			}
+			has_government = fascism
+		}
+		localization_key = "Führer"
+	}
+	text = {
+		trigger = {
+			OR = {
+				tag = GME
+				tag = FGE
+			}
+			has_government = neutrality
+		}
+		localization_key = "Kaiser"
+	}
+	text = {
+		trigger = {
+			OR = {
+				tag = GME
+				tag = FGE
+			}
+			has_government = democratic
+		}
+		localization_key = "Prime Minister"
+	}
+	text = {
+		trigger = {
+			OR = {
+				tag = GME
+				tag = FGE
+			}
+			has_government = communism
+		}
+		localization_key = "General Secretary"
+	}
+	text = {
+		trigger = {
+			original_tag = CSA
+			OR = {
+				has_government = fascism
+				has_government = neutrality
+			}
+		}
+		localization_key = "President for Life"
+	}
+	text = {
 		localization_key = DEFAULT_FIRST_TITLE
 	}
+
+	
 }
 
 defined_text = {
@@ -36,6 +88,72 @@ defined_text = {
 			has_government = democratic
 		}
 		localization_key = ENG_KING_TITLE
+	}
+	text = {
+		trigger = {
+			OR = {
+				tag = GME
+				tag = FGE
+			}
+			has_government = fascism
+			is_subject = no
+		}
+		localization_key = "Deputy-Führer"
+	}
+	text = {
+		trigger = {
+			OR = {
+				tag = GME
+				tag = FGE
+			}
+			has_government = fascism
+			is_subject = yes
+		}
+		localization_key = "Overseeer"
+	}
+	text = {
+		trigger = {
+			OR = {
+				tag = GME
+				tag = FGE
+			}
+			has_government = neutrality
+		}
+		localization_key = "Prime Minister"
+	}
+	text = {
+		trigger = {
+			OR = {
+				tag = GME
+				tag = FGE
+			}
+			has_government = democratic
+			NOT = {
+				has_cosmetic_tag = GME_REPUBLIC
+			}
+		}
+		localization_key = "Kaiser"
+	}
+	text = {
+		trigger = {
+			OR = {
+				tag = GME
+				tag = FGE
+			}
+			has_government = democratic
+			has_cosmetic_tag = GME_REPUBLIC
+		}
+		localization_key = "President"
+	}
+	text = {
+		trigger = {
+			OR = {
+				tag = GME
+				tag = FGE
+			}
+			has_government = communism
+		}
+		localization_key = "President"
 	}
 }
 
@@ -56,6 +174,41 @@ defined_text = {
 			}
 		}
 		localization_key = ENG_GEORGE_V
+	}
+	text = {
+		trigger = {
+			original_tag = GME
+			NOT = {
+				has_global_flag = alternis_coup_failed
+			}
+			is_subject_of = CSA
+		}
+		localization_key = "Alternis"
+	}
+	text = {
+		trigger = {
+			original_tag = GME
+			has_global_flag = alternis_coup_failed
+			is_subject_of = CSA
+		}
+		localization_key = "NeedlessMeming"
+	}
+	text = {
+		trigger = {
+			OR = {
+				tag = GME
+				tag = FGE
+			}
+			OR = {
+				AND = {
+					has_government = democratic
+					has_cosmetic_tag = GME_REPUBLIC
+				}
+				has_government = neutrality
+			}
+			has_cosmetic_tag = GME_REPUBLIC
+		}
+		localization_key = "Skulli"
 	}
 	text = {
 		localization_key = DEFAULT_TITLE
@@ -79,6 +232,40 @@ defined_text = {
 			}
         }
         localization_key = "GFX_ENG_George_V"
+	}
+	text = {
+		trigger = {
+			original_tag = GME
+			NOT = {
+				has_global_flag = alternis_coup_failed
+			}
+			is_subject_of = CSA
+		}
+		localization_key = "GFX_GME_alternis"
+	}
+	text = {
+		trigger = {
+			original_tag = GME
+			has_global_flag = alternis_coup_failed
+			is_subject_of = CSA
+		}
+		localization_key = "GFX_GME_needless"
+	}
+	text = {
+		trigger = {
+			OR = {
+				tag = GME
+				tag = FGE
+			}
+			OR = {
+				AND = {
+					has_government = democratic
+					has_cosmetic_tag = GME_REPUBLIC
+				}
+				has_government = neutrality
+			}
+		}
+		localization_key = "GFX_GME_skulli73"
 	}
 	text = {
 		localization_key = "GFX_portrait_bg_blank"

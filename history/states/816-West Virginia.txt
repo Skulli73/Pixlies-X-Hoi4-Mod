@@ -3,15 +3,13 @@ state={
 	name="STATE_816"
 	state_category = town
 	history={
-		owner = WIL# = USA
+		owner = CSA# = USA
 		# = USA
+		add_core_of = CSA
 		buildings = {
 			#industrial_complex = 2
 			#infrastructure = 3
 			#air_base = 3
-		}
-		#victory_points = {
-			7588 3
 		}
 	}
 	provinces={

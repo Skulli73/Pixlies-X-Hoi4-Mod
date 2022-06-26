@@ -1,7 +1,7 @@
 state= {
 	id=99
 	name="STATE_99"
-	manpower = 0# = 1672235
+	manpower = 1# = 1672235
 	resources={
 		aluminium=6 # was: 10
 	}
@@ -14,7 +14,8 @@ state= {
 		add_core_of = GME
 		buildings = {
 			#infrastructure = 4
-			#industrial_complex = 3
+			industrial_complex = 2
+			arms_factory = 2
 			#air_base = 2
 			394 = {
 				naval_base = 3

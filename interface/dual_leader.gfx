@@ -48,4 +48,19 @@ spriteTypes = {
 		name = "GFX_ROM_Carol_II"
 		texturefile = "gfx/dual_leaders/ROM/ROM_Carol_II.dds"
 	}
+
+	spriteType = {
+		name = GFX_GME_skulli73
+		texturefile = "gfx/leaders/GME/skulli.dds"
+	}
+
+	spriteType = {
+		name = GFX_GME_alternis
+		texturefile = "gfx/leaders/GME/alternis.dds"
+	}
+
+	spriteType = {
+		name = GFX_GME_needless
+		texturefile = "gfx/leaders/CSA/needless.dds"
+	}
 }

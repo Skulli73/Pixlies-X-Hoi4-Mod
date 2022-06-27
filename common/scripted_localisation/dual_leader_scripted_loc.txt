@@ -67,10 +67,18 @@ defined_text = {
 		localization_key = "President for Life"
 	}
 	text = {
+		trigger = {
+			original_tag = ESP
+			OR = {
+				has_government = democratic
+				has_government = neutrality
+			}
+		}
+		localization_key = "President"
+	}
+	text = {
 		localization_key = DEFAULT_FIRST_TITLE
 	}
-
-	
 }
 
 defined_text = {
@@ -158,6 +166,16 @@ defined_text = {
 		}
 		localization_key = "President"
 	}
+	text = {
+		trigger = {
+			original_tag = ESP
+			OR = {
+				has_government = democratic
+				has_government = neutrality
+			}
+		}
+		localization_key = "Prime Mininister"
+	}
 }
 
 defined_text = {
@@ -207,6 +225,12 @@ defined_text = {
 			has_idea = katz_head_of_state
 		}
 		localization_key = "Kätz"
+	}
+	text = {
+		trigger = {
+			has_idea = birb_head_of_state
+		}
+		localization_key = "Karl"
 	}
 	text = {
 		localization_key = DEFAULT_TITLE
@@ -260,6 +284,12 @@ defined_text = {
 			has_idea = katz_head_of_state
 		}
 		localization_key = "GFX_GME_katz"
+	}
+	text = {
+		trigger = {
+			has_idea = birb_head_of_state
+		}
+		localization_key = "GFX_ESP_birb"
 	}
 	text = {
 		localization_key = "GFX_portrait_bg_blank"

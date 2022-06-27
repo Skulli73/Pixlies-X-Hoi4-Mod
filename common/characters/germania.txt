@@ -26,7 +26,7 @@ characters = {
 				has_government = democratic
 			}
 			available = {
-				has_ideas = skulli_head_of_state
+				has_idea = skulli_head_of_state
 			}
 			traits = {
 				exiled_revolutionary
@@ -89,7 +89,7 @@ characters = {
 				}
 			}
 			available = {
-				has_ideas = katz_head_of_state
+				has_idea = katz_head_of_state
 			}
 			traits = {
 				constitutional_monarch

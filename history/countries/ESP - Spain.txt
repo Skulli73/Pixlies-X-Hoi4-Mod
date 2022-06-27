@@ -24,9 +24,8 @@ set_popularities = {
 	democratic = 75
 	neutrality = 25
 }
-recruit_character = skulli73
-recruit_character = katz
-promote_character = skulli73
-promote_character = katz
-add_ideas = katz_head_of_state
+recruit_character = maurice
+promote_character = maurice
+recruit_character = birb
+add_ideas = birb_head_of_state
 inherit_technology = CSA

@@ -7,7 +7,7 @@ set_convoys = 0
 
 
 add_ideas = {
-	volunteer_only
+	partial_economic_mobilisation
 	extensive_conscription
 }
 

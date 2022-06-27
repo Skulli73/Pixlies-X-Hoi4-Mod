@@ -29,7 +29,7 @@ set_popularities = {
 create_country_leader = {
 	name = "Gryn"
 	ideology = nazism
-	picture = ""
+	picture = "gryn.dds"
 }
 create_country_leader = {
 	name = "ItzSamHD"

@@ -179,4 +179,14 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 1913;7622;sea;170;-1;-1;-1;-1;;Florida-Cuba Bridge
 7590;1594;sea;53;-1;-1;-1;-1;;Cuba-Haiti Bridge
 7660;1440;sea;53;-1;-1;-1;-1;;Dominica-Puerto Rico Bridge
+12299;12168;sea;72;-1;-1;-1;-1;;Malaya-Sumatra
+4211;4409;sea;72;-1;-1;-1;-1;;Borneo-Sumatra
+10181;1098;sea;80;-1;-1;-1;-1;;Borneo-Sulawesi
+10153;1419;sea;93;-1;-1;-1;-1;;Moluccas-North Sulawesi
+4493;7369;sea;93;-1;-1;-1;-1;;Moluccas-Central Sulawesi
+10409;12386;sea;91;-1;-1;-1;-1;;Moluccas-Papua 1
+10141;4468;sea;84;-1;-1;-1;-1;;Moluccas-Papua 2
+12457;1410;sea;82;-1;-1;-1;-1;;Papua-Australia
+10219;13001;sea;93;-1;-1;-1;-1;;Timur-Sundra
+10276;12178;sea;91;-1;-1;-1;-1;;Timur-Australia
 -1;-1;;-1;-1;-1;-1;-1;-1

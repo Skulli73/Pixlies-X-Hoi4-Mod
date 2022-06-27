@@ -4,11 +4,19 @@ bookmarks = {
 		desc = "start_desc"
 		date = 50.1.1.12
 	picture = "start-1"
-		default_country = "GER"
+		default_country = "CSA"
 		default = yes
-		GER = {
+		GME = {
 			ideology = fascism
-			history = GER_fascism
+			history = GME_fascism
+		}
+		CSA = {
+			ideology = fascism
+			history = GME_fascism
+		}
+		FGE = {
+			ideology = fascism
+			history = GME_fascism
 		}
 	}
 }

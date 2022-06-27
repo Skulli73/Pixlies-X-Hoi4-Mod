@@ -7,8 +7,8 @@ state={
 		owner = CSA
 		add_core_of = CSA
 		buildings = {
-			#infrastructure = 3 #was: 6
-			#industrial_complex = 2
+			infrastructure = 1
+			industrial_complex = 5
 			dockyard = 4
 			#air_base = 6
 			fuel_silo = 1
@@ -16,7 +16,12 @@ state={
 				naval_base = 10
 
 			}
-
+			873 = {
+				fort = 3
+			}
+			951 = {
+				fort = 3
+			}
 		}
 		1939.1.1 = {
 			buildings = {
@@ -26,6 +31,9 @@ state={
 			}
 
 		}
+		victory_points = {
+			10412 25
+		}
 
 	}
 
@@ -34,7 +42,7 @@ state={
 	}
 
 	local_supplies=11.0
-	manpower = 0#=2249080
+	manpower = 7#=2249080
 	buildings_max_level_factor=1.000
 	state_category=large_city
 }

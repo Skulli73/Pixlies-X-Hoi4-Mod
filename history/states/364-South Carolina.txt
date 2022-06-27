@@ -2,7 +2,7 @@
 state={
 	id=364
 	name="STATE_364"
-	manpower = 0# = 1738764
+	manpower = 4# = 1738764
 	
 	state_category = city
 
@@ -10,8 +10,8 @@ state={
 		owner = CSA
 		add_core_of = CSA
 		buildings = {
-			#infrastructure = 3 #was: 5
-			#industrial_complex = 2
+			infrastructure = 2 #was: 5
+			industrial_complex = 4
 			7202 = {
 				naval_base = 2
 

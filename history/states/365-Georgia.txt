@@ -2,26 +2,23 @@
 state={
 	id=365
 	name="STATE_365"
-	manpower = 0# = 2908504
+	manpower = 10# = 2908504
 	
-	state_category = city
+	state_category = metropolis
 
 	history={
 		owner = CSA
 		add_core_of = CSA
 		buildings = {
-			#infrastructure = 3 #was: 6
-			#industrial_complex = 3
-			#air_base = 2
+			infrastructure = 4
+			industrial_complex = 7
+			arms_factory = 5
 			11975 = {
 				naval_base = 1
 			}
 		}
-
-		1939.1.1 = {
-			buildings = {
-				#industrial_complex = 4
-			}
+		victory_points = {
+			12384 50
 		}
 
 	}

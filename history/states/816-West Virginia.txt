@@ -10,6 +10,12 @@ state={
 			#industrial_complex = 2
 			#infrastructure = 3
 			#air_base = 3
+			11888 = {
+				fort = 3
+			}
+			6958 = {
+				fort = 3
+			}
 		}
 	}
 	provinces={

@@ -1,7 +1,7 @@
 state= {
 	id=315
 	name="STATE_315"
-	manpower = 0# = 3607919
+	manpower = 5# = 3607919
 	resources={
 		steel=3 # was: 4
 		chromium=90 # was: 160
@@ -13,9 +13,9 @@ state= {
 		owner = CSA
 		add_core_of = CSA
 		buildings = {
-			#infrastructure = 2
-			#arms_factory = 1
-			#industrial_complex = 3
+			infrastructure = 2
+			arms_factory = 2
+			industrial_complex = 5
 			#air_base = 1
 			7622 = {
 				naval_base = 3
@@ -24,12 +24,8 @@ state= {
 				naval_base = 1
 			}
 		}
-		# = CUB
-		#victory_points = {
+		victory_points = {
 			7622 5 
-		}
-		#victory_points = {
-			7590 1
 		}
 
 	}

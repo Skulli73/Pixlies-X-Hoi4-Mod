@@ -176,4 +176,7 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 4391;12526;impassable;-1;-1;-1;-1;-1;;pamir mountains
 3314;6336;sea;2752;2885;1578;2890;1581;;Afsluitdijk
 394;14;sea;2455;-1;-1;-1;-1;;Denmark-Norway Bridge
+1913;7622;sea;170;-1;-1;-1;-1;;Florida-Cuba Bridge
+7590;1594;sea;53;-1;-1;-1;-1;;Cuba-Haiti Bridge
+7660;1440;sea;53;-1;-1;-1;-1;;Dominica-Puerto Rico Bridge
 -1;-1;;-1;-1;-1;-1;-1;-1

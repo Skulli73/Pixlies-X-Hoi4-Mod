@@ -1,18 +1,16 @@
 state={
 	id=669
 	name="STATE_669"
-	manpower = 0# = 314300
+	manpower = 1# = 314300
 
 	state_category = pastoral
 
 	history= {
-		owner = WIL# = INS
-		# = INS
-		#victory_points = {
-			12371 1 
-		}
+		owner = FGE
+		add_core_of = FGE
 		buildings = {
-			#infrastructure = 1
+			infrastructure = 1
+			industrial_complex = 1
 			12371 = {
 				naval_base = 2
 			}

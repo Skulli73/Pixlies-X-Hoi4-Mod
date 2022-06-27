@@ -6,10 +6,10 @@ state={
 	}
 
 	history={
-		owner = WIL# = INS
-		# = INS
+		owner = FGE
+		add_core_of = FGE
 		buildings = {
-			#infrastructure = 2
+			infrastructure = 1
 			1355 = {
 				naval_base = 1
 

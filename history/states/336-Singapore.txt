@@ -2,7 +2,7 @@
 state={
 	id=336
 	name="STATE_336"
-	manpower = 0# = 2893200
+	manpower = 1# = 2893200
 	
 	state_category = large_town
 	
@@ -14,19 +14,11 @@ state={
 	}
 
 	history={
-		owner = WIL# = MAL
-		#victory_points = {
-			12299 10
-		}
-		#victory_points = {
-			7329 1 
-		}
-		#victory_points = {
-			10297 1 
-		}
+		owner = FGE
+		add_core_of = FGE
 		buildings = {
-			#infrastructure = 2
-			#industrial_complex = 1
+			infrastructure = 1
+			industrial_complex = 1
 			#air_base = 6
 			12299 = {
 				naval_base = 8

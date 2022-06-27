@@ -3,10 +3,10 @@ state={
 	name="STATE_738"
 
 	history={
-		owner = WIL# = INS
-		# = INS
+		owner = FGE
+		add_core_of = FGE
 		buildings = {
-			#infrastructure = 1
+			infrastructure = 1
 
 			4579 = {
 				naval_base = 1

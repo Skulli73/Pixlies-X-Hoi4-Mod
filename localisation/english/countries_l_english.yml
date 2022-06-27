@@ -33,3 +33,17 @@ CSA_democratic_ADJ:0 "American"
 CSA_communism:0 "Communist States of America"
 CSA_communism_DEF:0 "the Communist States of America"
 CSA_communism_ADJ:0 "American"
+
+#special SU names
+
+
+#free germania normal names
+FGE:0 "Germanic Government in Exile"
+FGE_DEF:0 "the Germanic Government in Exile"
+FGE_ADJ:0 "Free Germanic"
+
+#special free germania names
+
+FGE_SULAWESI:0 "Sulawesi"
+FGE_SULAWESI_DEF:0 "Sulawesi"
+FGE_SULAWESI_ADJ:0 "Sulawesi"

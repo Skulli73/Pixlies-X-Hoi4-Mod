@@ -1,7 +1,7 @@
 state= {
 	id=334
 	name="STATE_334"
-	manpower = 0# = 2168600
+	manpower = 2# = 2168600
 	resources={
 		rubber=75 # was: 138
 		oil=5 # was: 10
@@ -10,14 +10,12 @@ state= {
 	state_category = rural
 
 	history= {
-		owner = WIL# = INS
-		# = INS
-		#victory_points = {
-			10237 1 
-		}
+		owner = FGE
+		add_core_of = FGE
 
 		buildings = {
-			#infrastructure = 1
+			industrial_complex = 1
+			infrastructure = 1
 			10237 = {
 				naval_base = 3
 			}

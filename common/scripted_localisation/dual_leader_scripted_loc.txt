@@ -141,7 +141,10 @@ defined_text = {
 				tag = FGE
 			}
 			has_government = democratic
-			has_cosmetic_tag = GME_REPUBLIC
+			OR = {
+				has_cosmetic_tag = GME_REPUBLIC
+				has_cosmetic_tag = FGE_REPUBLIC
+			}
 		}
 		localization_key = "President"
 	}
@@ -195,20 +198,15 @@ defined_text = {
 	}
 	text = {
 		trigger = {
-			OR = {
-				tag = GME
-				tag = FGE
-			}
-			OR = {
-				AND = {
-					has_government = democratic
-					has_cosmetic_tag = GME_REPUBLIC
-				}
-				has_government = neutrality
-			}
-			has_cosmetic_tag = GME_REPUBLIC
+			has_idea = skulli_head_of_state
 		}
 		localization_key = "Skulli"
+	}
+	text = {
+		trigger = {
+			has_idea = katz_head_of_state
+		}
+		localization_key = "Kätz"
 	}
 	text = {
 		localization_key = DEFAULT_TITLE
@@ -253,19 +251,15 @@ defined_text = {
 	}
 	text = {
 		trigger = {
-			OR = {
-				tag = GME
-				tag = FGE
-			}
-			OR = {
-				AND = {
-					has_government = democratic
-					has_cosmetic_tag = GME_REPUBLIC
-				}
-				has_government = neutrality
-			}
+			has_idea = skulli_head_of_state
 		}
 		localization_key = "GFX_GME_skulli73"
+	}
+	text = {
+		trigger = {
+			has_idea = katz_head_of_state
+		}
+		localization_key = "GFX_GME_katz"
 	}
 	text = {
 		localization_key = "GFX_portrait_bg_blank"

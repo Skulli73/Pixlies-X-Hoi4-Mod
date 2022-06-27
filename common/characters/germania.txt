@@ -1,0 +1,112 @@
+characters = {
+	skulli73 = {
+		name = "Skulli73"
+		portraits = {
+			civillian = {
+				large = "gfx/leaders/GME/skulli.dds"
+			}
+			army = {
+				large = "gfx/leaders/GME/skulli.dds"
+				small = "gfx/interface/ideas/GME/skulli.dds"
+			}
+		}
+		advisor = {
+			slot = head_of_state
+			idea_token = skulli_head_of_state
+			name = "Skulli73"
+			cost = 75
+			removal_cost = -1
+			allowed = {
+				OR = {
+					original_tag = GME
+					original_tag = FGE
+				}
+			}
+			allowed_civil_war = {
+				has_government = democratic
+			}
+			available = {
+				has_ideas = skulli_head_of_state
+			}
+			traits = {
+				exiled_revolutionary
+				exiled
+				economic_reformer
+				staunch_constitutionalist
+				world_war_one_trauma
+				great_war_hero
+				figurehead_president
+			}
+		}
+		country_leader = {
+			ideology = liberalism
+			traits = {
+				exiled_revolutionary
+				exiled
+				cabinet_crisis
+				economic_reformer
+				staunch_constitutionalist
+				world_war_one_trauma
+				great_war_hero
+			}
+			desc = SKULLI_LEADER_DESC
+		}
+		field_marshal = {
+			skill = 1
+			attack_skill = 2
+			defense_skill = 5
+			planning_skill = 2
+			logistics_skill = 3
+			visible = {
+				OR = {
+					has_country_leader = "Skulli73"
+					has_ideas = skulli_head_of_state
+				}
+			}
+		}
+	}
+	katz = {
+		name = "Kätz"
+		portraits = {
+			civillian = {
+				large = "gfx/leaders/GME/katz.dds"
+			}
+			army = {
+				large = "gfx/leaders/GME/katz.dds"
+				small = "gfx/interface/ideas/GME/katz.dds"
+			}
+		}
+		advisor = {
+			slot = head_of_state
+			idea_token = katz_head_of_state
+			name = "Emperor Kätz"
+			cost = 150
+			removal_cost = -1
+			allowed = {
+				OR = {
+					original_tag = GME
+					original_tag = FGE
+				}
+			}
+			available = {
+				has_ideas = katz_head_of_state
+			}
+			traits = {
+				constitutional_monarch
+				staunch_monarchist
+				exile_king
+				great_war_hero
+			}
+		}
+		country_leader = {
+			ideology = centrism
+			traits = {
+				constitutional_monarch
+				staunch_monarchist
+				exile_king
+				great_war_hero
+			}
+			desc = KATZ_LEADER_DESC
+		}
+	}
+}

@@ -12,3 +12,7 @@ CSA = {
 	color = rgb {180 180 180}
 	color_ui = rgb {180 180 180}
 }
+FGE = {
+	color = rgb { 150 139 84 }
+	color_ui = rgb { 150 139 84 }
+}

@@ -1,5 +1,5 @@
-﻿oob = "GER_50"
-capital = 51
+﻿oob = "FGE_50"
+capital = 673
 set_research_slots = 5
 set_stability = 0.12
 set_war_support = 0.2
@@ -8,40 +8,26 @@ set_convoys = 0
 
 add_ideas = {
 	volunteer_only
-	civilian_economy
+	extensive_conscription
 }
 
 
 
 #Politics for 50.1.1
 set_politics = {
-	ruling_party = fascism
+	ruling_party = democratic
 	last_election = "49.10.25"
 	election_frequency = 60
-	elections_allowed = no
+	elections_allowed = yes
 }
 set_popularities = {
-	democratic = 50
-	fascism = 15
-	communism = 10
+	democratic = 75
 	neutrality = 25
 }
 create_country_leader = {
 	name = "Gryn"
 	ideology = nazism
 	picture = ""
-}
-create_country_leader = {
-	name = "ItzSamHD"
-	ideology = liberalism
-	picture = "sam.dds"
-	traits = {
-		silent_workhorse
-		exiled_revolutionary
-		imperial_connections
-		staunch_constitutionalist
-		great_war_hero
-	}
 }
 create_country_leader = {
 	name = "Kätz"
@@ -54,5 +40,9 @@ create_country_leader = {
 		great_war_hero
 	}
 }
-
+recruit_character = skulli73
+recruit_character = katz
+promote_character = skulli73
+promote_character = katz
+add_ideas = katz_head_of_state
 inherit_technology = CSA

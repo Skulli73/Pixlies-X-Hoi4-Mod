@@ -3,10 +3,10 @@ state={
 	name="STATE_523"
 
 	history={
-		# = PNG
-		owner = WIL# = AST
+		owner = FGE
+		add_core_of = FGE
 		buildings = {
-			#infrastructure = 1
+			infrastructure = 1
 			#air_base = 3
 
 			4329 = {
@@ -26,12 +26,6 @@ state={
 
 			}
 
-		}
-		#victory_points = {
-			4329 3 
-		}
-		#victory_points = {
-			12237 1 
 		}
 
 	}

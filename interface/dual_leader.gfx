@@ -63,4 +63,9 @@ spriteTypes = {
 		name = GFX_GME_needless
 		texturefile = "gfx/leaders/CSA/needless.dds"
 	}
+
+	spriteType = {
+		name = GFX_GME_katz
+		texturefile = "gfx/leaders/GME/katz.dds"
+	}
 }

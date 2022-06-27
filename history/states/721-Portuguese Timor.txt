@@ -7,9 +7,10 @@ state={
 	state_category = pastoral
 
 	history={
-		owner = WIL# = POR
+		owner = FGE
+		add_core_of = FGE
 		buildings = {
-			#infrastructure = 2
+			infrastructure = 1
 			12190 ={
 				naval_base = 1
 			}

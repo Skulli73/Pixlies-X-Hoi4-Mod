@@ -1,7 +1,7 @@
 state={
 	id=672
 	name="STATE_672"
-	manpower = 0# = 8254900
+	manpower = 2# = 8254900
 	
 	state_category = town
 	
@@ -14,19 +14,13 @@ state={
 
 	history=
 	{
-		owner = WIL# = INS
-		# = INS
-		#victory_points = {
-			4652 1 
-		}
-		
-		#victory_points = {
-			12268 1 
-		}
+		owner = FGE
+		add_core_of = FGE
 
 		buildings = {
-			#infrastructure = 2
-			#industrial_complex = 1
+			infrastructure = 2
+			industrial_complex = 1
+			arms_factory = 1
 			#air_base = 1
 			4652 = {
 				naval_base = 3

@@ -68,4 +68,9 @@ spriteTypes = {
 		name = GFX_GME_katz
 		texturefile = "gfx/leaders/GME/katz.dds"
 	}
+
+	spriteType = {
+		name = GFX_ESP_birb
+		texturefile = "gfx/leaders/ESP/birb.dds"
+	}
 }

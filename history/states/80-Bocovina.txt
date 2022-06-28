@@ -7,16 +7,12 @@ state={
 	
 	history=
 	{
-		#victory_points = {
-			577 1 
-		}
-		owner = WIL# = ROM
+		owner = TRL
+		add_core_of = TRL
 		buildings = {
 			#infrastructure = 3
 			#arms_factory = 1
 		}
-		# = ROM
-		add_claim_by = UKR
 	}
 	provinces={
 		577 9548

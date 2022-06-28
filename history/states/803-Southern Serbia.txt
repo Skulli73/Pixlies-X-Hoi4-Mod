@@ -4,17 +4,12 @@ state={
 	name="STATE_803"
 
 	history={
-		#victory_points = {
-			11857 1 
-		}
-		owner = WIL# = YUG
+		owner = TRL
+		add_core_of = TRL
 		buildings = {
 			#infrastructure = 2
 
 		}
-		# = YUG
-		# = SER
-		add_claim_by = BUL
 
 	}
 

@@ -7,10 +7,8 @@ state={
 	}
 
 	history={
-		#victory_points = {
-			9602 3 
-		}
-		owner = WIL# = YUG
+		owner = TRL
+		add_core_of = TRL
 		buildings = {
 			#infrastructure = 2
 

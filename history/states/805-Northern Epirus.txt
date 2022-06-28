@@ -13,10 +13,8 @@ state={
 	state_category = pastoral
 
 	history= {
-		owner = WIL# = ALB
-		#victory_points = {
-			914 3
-		}
+		owner = TRL
+		add_core_of = TRL
 		buildings = {
 			#infrastructure = 1
 		}

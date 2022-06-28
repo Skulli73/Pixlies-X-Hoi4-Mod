@@ -20,3 +20,7 @@ ESP = {
 	color = rgb { 188 157 0 }
 	color_ui = rgb { 188 157 0 }
 }
+TRL = {
+	color = rgb {127 0	0}
+	color_ui = rgb {127 0 0}
+}

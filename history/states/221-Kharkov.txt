@@ -11,10 +11,8 @@ state={
 	}
 
 	history={
-		owner = WIL# = SOV
-		#victory_points = {
-			418 10
-		}
+		owner = TRL
+		add_core_of = TRL
 		buildings = {
 			#infrastructure = 4 #was: 7
 			#arms_factory = 1

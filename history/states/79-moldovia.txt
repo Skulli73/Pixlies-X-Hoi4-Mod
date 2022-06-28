@@ -8,17 +8,12 @@ state=
 	
 	history=
 	{
-		owner = WIL# = ROM
+		owner = TRL
+		add_core_of = TRL
 		buildings = {
 			#infrastructure = 3
 			#industrial_complex = 1
 			#air_base = 2
-		}
-		#victory_points = {
-			9716 1 
-		}
-		#victory_points = {
-			6706 1 
 		}
 		# = ROM
 	}

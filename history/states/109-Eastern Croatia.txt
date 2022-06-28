@@ -7,16 +7,12 @@ state={
 	state_category = large_town
 
 	history={
-		owner = WIL# = YUG
+		owner = TRL
+		add_core_of = TRL
 		buildings = {
 			#infrastructure = 3
 			#industrial_complex = 3
 		}
-		#victory_points = {
-			11581 3 
-		}
-		# = YUG
-		# = CRO
 	}
 
 	provinces={

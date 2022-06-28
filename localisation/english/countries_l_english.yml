@@ -57,3 +57,16 @@ ESP_fascism:0 "Spanish State"
 ESP_fascism_DEF:0 "the Spanish State"
 ESP_communism:0 "Spanish Commune"
 ESP_communism_DEF:0 "the Spanish Commune"
+
+#special spain names
+
+
+#normal Turul names
+
+TRL:0 "Turulia"
+TRL_DEF:0 "Turulia"
+TRL_ADJ:0 "Turul"
+TRL_fascism:0 "Turul Empire"
+TRL_fascism_DEF:0 "the Turul Empire"
+TRL_neutrality:0 "Turul Empire"
+TRL_neutrality_DEF:0 "the Turul Empire"

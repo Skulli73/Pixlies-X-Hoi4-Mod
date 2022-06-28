@@ -7,19 +7,14 @@ state={
 	}
 
 	history={
-		owner = WIL# = YUG
+		owner = TRL
+		add_core_of = TRL
 		buildings = {
 			#infrastructure = 2
 			#industrial_complex = 1
 			#air_base = 2
 
 		}
-		#victory_points = {
-			3882 5
-		}
-		# = YUG
-		# = MAC
-		add_claim_by = BUL
 	}
 
 	provinces={

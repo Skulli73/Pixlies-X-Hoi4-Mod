@@ -7,16 +7,8 @@ state={
 	state_category = large_city
 
 	history={
-		owner = WIL# = ITA
-		#victory_points = {
-			9907 3 
-		}
-		#victory_points = {
-			6973 1 
-		}
-		#victory_points = {
-			11833 1 
-		}
+		owner = TRL
+		add_core_of = TRL
 		buildings = {
 			#infrastructure = 4 #was: 8
 			#arms_factory = 1

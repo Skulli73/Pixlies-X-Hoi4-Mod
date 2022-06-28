@@ -6,14 +6,8 @@ state={
 	state_category = town
 
 	history={
-		owner = WIL# = SOV
-		#victory_points = {
-			11405 1
-		}
-		buildings = {
-			#infrastructure = 3 #was: 5
-			#air_base = 3
-		}
+		owner = TRL
+		add_core_of = TRL
 		# = SOV
 		# = UKR
 		1939.1.1 = {

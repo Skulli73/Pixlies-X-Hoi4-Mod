@@ -190,4 +190,6 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 10219;13001;sea;93;-1;-1;-1;-1;;Timur-Sundra
 10276;12178;sea;91;-1;-1;-1;-1;;Timur-Australia
 4135;9945;sea;68;-1;-1;-1;-1;;Gibraltar
+6979;11767;sea;168;-1;-1;-1;-1;;Albania-Italy
+925;3943;sea;168;-1;-1;-1;-1;;Zara-Italy
 -1;-1;;-1;-1;-1;-1;-1;-1

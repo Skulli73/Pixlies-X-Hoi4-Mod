@@ -6,13 +6,8 @@ state={
 	state_category=rural
 
 	history={
-		owner = WIL# = BUL
-		#victory_points = { #Ruse
-			9612 3
-		}
-		#victory_points = { #Pleven
-			3796 3
-		}
+		owner = TRL
+		add_core_of = TRL
 		buildings = {
 			#infrastructure = 2
 			#industrial_complex =1

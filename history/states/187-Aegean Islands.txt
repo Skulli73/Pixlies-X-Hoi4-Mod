@@ -11,7 +11,8 @@ state={
 	}
 
 	history={
-		owner = WIL# = GRE
+		owner = TRL
+		add_core_of = TRL
 		buildings = {
 			#infrastructure = 1
 			dockyard = 1
@@ -22,13 +23,6 @@ state={
 				naval_base = 1
 			}
 		}
-		#victory_points = {
-			6550 1
-		}
-		#victory_points = {
-			8435 1
-		}
-		# = GRE
 	}
 
 	provinces={

@@ -47,3 +47,13 @@ FGE_ADJ:0 "Free Germanic"
 FGE_SULAWESI:0 "Sulawesi"
 FGE_SULAWESI_DEF:0 "Sulawesi"
 FGE_SULAWESI_ADJ:0 "Sulawesi"
+
+#normal spain names
+
+ESP:0 "Spain"
+ESP_DEF:0 "Spain"
+ESP_ADJ:0 "Spanish"
+ESP_fascism:0 "Spanish State"
+ESP_fascism_DEF:0 "the Spanish State"
+ESP_communism:0 "Spanish Commune"
+ESP_communism_DEF:0 "the Spanish Commune"

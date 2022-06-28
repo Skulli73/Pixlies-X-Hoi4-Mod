@@ -35,6 +35,12 @@ characters = {
 			}
 			desc = "The Atomic Maurice cannot move it move it"
 		}
+		country_leader = {
+			ideology = centrism
+			traits = {
+			}
+			desc = "The Atomic Maurice cannot move it move it"
+		}
 		field_marshal = {
 			skill = 0
 			attack_skill = 0

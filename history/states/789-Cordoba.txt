@@ -3,10 +3,8 @@ state={
 	name="STATE_789"
 
 	history={
-		owner = WIL# = SPR
-		#victory_points = {
-			875 3
-		}
+		owner = ESP
+		add_core_of = ESP
 		buildings = {
 			#infrastructure = 3 #was: 6
 			#industrial_complex = 1

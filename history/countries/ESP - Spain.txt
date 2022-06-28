@@ -1,6 +1,6 @@
-﻿oob = "FGE_50"
-capital = 673
-set_research_slots = 5
+﻿oob = "ESP_50"
+capital = 41
+set_research_slots = 4
 set_stability = 0.12
 set_war_support = 0.2
 set_convoys = 0
@@ -15,14 +15,14 @@ add_ideas = {
 
 #Politics for 50.1.1
 set_politics = {
-	ruling_party = democratic
+	ruling_party = neutrality
 	last_election = "49.10.25"
 	election_frequency = 60
 	elections_allowed = yes
 }
 set_popularities = {
-	democratic = 75
-	neutrality = 25
+	democratic = 50
+	neutrality = 50
 }
 recruit_character = maurice
 promote_character = maurice

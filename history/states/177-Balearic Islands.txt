@@ -8,10 +8,8 @@ state=
 	
 	history=
 	{
-		#victory_points = {
-			9793 1
-		}
-		owner = WIL# = SPR
+		owner = ESP
+		add_core_of = ESP
 		buildings = {
 			#infrastructure = 3 #was: 6
 			#air_base = 1

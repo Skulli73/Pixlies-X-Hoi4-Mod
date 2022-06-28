@@ -7,14 +7,8 @@ state={
 	state_category = city
 
 	history={
-		owner = WIL# = SPR
-		# = GLC
-		#victory_points = {
-			758 5
-		}
-		#victory_points = {
-			6734 3
-		}
+		owner = ESP
+		add_core_of = ESP
 		buildings = {
 			#infrastructure = 3 #was: 6
 			dockyard = 2

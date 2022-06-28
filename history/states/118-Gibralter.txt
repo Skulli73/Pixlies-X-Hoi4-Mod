@@ -6,8 +6,8 @@ state=
 	
 	state_category = enclave
 	history={
-		owner = WIL# = ENG
-		#victory_points = { 4135 10 }
+		owner = ESP
+		add_core_of = ESP
 		buildings = {
 			#infrastructure = 3
 			#air_base = 2

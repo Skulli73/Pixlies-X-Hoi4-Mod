@@ -2,11 +2,8 @@ state={
 	id=741
 	name="STATE_741"
 	history = {
-		# = CAM
-		owner = WIL# = FRA
-		#victory_points = {
-			7376 1
-		}
+		owner = JPN
+		add_core_of = JPN
 		buildings = {
 			#infrastructure = 1
 			7432 = {

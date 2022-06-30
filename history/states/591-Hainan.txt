@@ -5,14 +5,8 @@ state={
 	state_category = town
 
 	history={
-		owner = WIL# = GXC
-		# = GXC
-		# = CHI
-		# = PRC
-		
-		#victory_points = {
-			1070 1 
-		}
+		owner = JPN
+		add_core_of = JPN
 		
 		buildings = {
 			#infrastructure = 1

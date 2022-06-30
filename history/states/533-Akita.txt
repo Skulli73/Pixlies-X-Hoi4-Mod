@@ -9,8 +9,8 @@ state={
 	}
 
 	history={
-		owner = WIL# = JAP
-		# = JAP
+		owner = JPN
+		add_core_of = JPN
 		buildings = {
 		
 			#arms_factory = 1
@@ -22,14 +22,6 @@ state={
 				naval_base = 6
 
 			}
-		}
-		
-		#victory_points = {
-			6994 5
-		}
-		
-		#victory_points = {
-			7169 15
 		}
 
 	}

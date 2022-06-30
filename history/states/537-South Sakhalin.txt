@@ -9,8 +9,8 @@ state= {
 	state_category = rural
 
 	history= {
-		owner = WIL# = JAP
-		# = JAP
+		owner = JPN
+		add_core_of = JPN
 		
 		buildings = {
 			#infrastructure = 2
@@ -19,10 +19,6 @@ state= {
 
 			}
 		}
-		#victory_points = {
-			12446 1
-		}
-
 	}
 	provinces=
 	{

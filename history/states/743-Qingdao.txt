@@ -8,12 +8,8 @@ state=
 	
 	history=
 	{
-		owner = WIL# = CHI
-		# = CHI
-		# = PRC
-		#victory_points = {
-			10000 5 
-		}
+		owner = JPN
+		add_core_of = JPN
 		buildings = {
 			#infrastructure = 3 #was: 5
 			#industrial_complex = 1

@@ -6,12 +6,8 @@ state={
 	state_category = enclave
 	
 	history={
-		owner = WIL# = POR
-		# = CHI
-		# = PRC
-		#victory_points = {
-			4189 1 
-		}
+		owner = JPN
+		add_core_of = JPN
 		buildings = {
 			#infrastructure = 2
 			4189 = {

@@ -118,3 +118,16 @@ ILY_CSA_autonomy_puppet:0 "National State of Northern Italy"
 ILY_CSA_autonomy_puppet_DEF:0 "the National State of Northern Italy"
 ILY_fascism:0 "National State of Italy"
 ILY_fascism_DEF:0 "the National State of Italy"
+
+#special italy names
+
+
+#normal japan names
+
+JPN:0 "Japan"
+JPN_DEF:0 "Japan"
+JPN_ADJ:0 "Japanese"
+JPN_neutrality:0 "Japanese Empire"
+JPN_neutrality_DEF:0 "the Japanese Empire"
+JPN_fascism:0 "Japanese Empire"
+JPN_fascism_DEF:0 "the Japanese Empire"

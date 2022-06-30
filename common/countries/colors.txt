@@ -36,3 +36,7 @@ ILY = {
 	color = rgb {22 76 0}
 	color_ui = rgb {22 76 0}
 }
+JPN = {
+	color = rgb {255 170 128}
+	color_ui = rgb {255 170 128}
+}

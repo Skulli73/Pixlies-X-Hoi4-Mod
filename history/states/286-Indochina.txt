@@ -6,11 +6,8 @@ state={
 	}
 
 	history={
-		# = VIN
-		owner = WIL# = FRA
-		#victory_points = {
-			4401 3 
-		}
+		owner = JPN
+		add_core_of = JPN
 		buildings = {
 			#infrastructure = 2
 			#industrial_complex = 1

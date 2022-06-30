@@ -196,4 +196,6 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 3501;11548;sea;18;-1;-1;-1;-1;;English Channel 2
 3379;6350;sea;43;-1;-1;-1;-1;;Irish Sea 1
 285;11361;sea;43;-1;-1;-1;-1;;Irish Sea 2
+10011;1054;sea;76;-1;-1;-1;-1;;Japan-Korea
+1104;1150;sea;77;-1;-1;-1;-1;;Manchuria-China
 -1;-1;;-1;-1;-1;-1;-1;-1

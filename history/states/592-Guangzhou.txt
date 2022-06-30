@@ -10,10 +10,8 @@ state={
 	}
 
 	history={
-		owner = WIL# = GXC
-		# = GXC
-		# = CHI
-		# = PRC
+		owner = JPN
+		add_core_of = JPN
 		
 		buildings = {
 			#infrastructure = 2
@@ -26,9 +24,6 @@ state={
 				bunker = 1
 			}
 
-		}
-		#victory_points = {
-			1047 5
 		}
 
 		1938.10.25 = {

@@ -11,7 +11,8 @@ state={
 
 
 	history={
-		owner = WIL# = SIA
+		owner = FGE
+		add_core_of = FGE
 		buildings = {
 			#infrastructure = 2
 		}

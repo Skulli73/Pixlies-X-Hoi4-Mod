@@ -12,11 +12,8 @@ state={
 	}
 
 	history={
-		# = BRM
-		owner = WIL# = RAJ
-		#victory_points = {
-			1330 5 
-		}
+		owner = JPN
+		add_core_of = JPN
 		buildings = {
 			#infrastructure = 2
 			#industrial_complex = 1

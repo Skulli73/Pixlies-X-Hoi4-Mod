@@ -6,11 +6,8 @@ state={
 	state_category = pastoral
 
 	history={
-		owner = WIL# = FRA
-		# = LAO
-		#victory_points = {
-			1464 1
-		}
+		owner = JPN
+		add_core_of = JPN
 		buildings = {
 			#infrastructure = 1
 		}

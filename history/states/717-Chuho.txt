@@ -5,10 +5,8 @@ state={
 	state_category = pastoral
 
 	history={
-		owner = WIL# = MAN
-		# = CHI
-		# = MAN
-		# = PRC
+		owner = JPN
+		add_core_of = JPN
 		buildings = {
 			#infrastructure = 2
 

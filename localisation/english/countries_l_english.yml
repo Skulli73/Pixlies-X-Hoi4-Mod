@@ -18,20 +18,20 @@ GME_REPUBLIC_democratic_DEF:0 "the Germanic Republic"
 
 
 #su normal names
-CSA:0 "Dixie"
-CSA_DEF:0 "Dixie"
+CSA:0 "Southern Union"
+CSA_DEF:0 "The Union of the South"
 CSA_ADJ:0 "Dixie"
 CSA_fascism:0 "Southern Union"
 CSA_fascism_DEF:0 "the Southern Union"
 CSA_fascism_ADJ:0 "SU-"
 CSA_neutraltiy:0 "Southern Union"
-CSA_neutraltiy_DEF:0 "the Southern Union"
+CSA_neutraltiy_DEF:0 "Unitary State of the Southern Union"
 CSA_neutraltiy_ADJ:0 "SU-"
-CSA_democratic:0 "United States of America"
-CSA_democratic_DEF:0 "the United States of America"
+CSA_democratic:0 "Federation of the Southern Union"
+CSA_democratic_DEF:0 "the Federation of the Southern Union"
 CSA_democratic_ADJ:0 "American"
-CSA_communism:0 "Communist States of America"
-CSA_communism_DEF:0 "the Communist States of America"
+CSA_communism:0 "Workers commune of the Southern Union"
+CSA_communism_DEF:0 "the Workers commune of the Southern Union"
 CSA_communism_ADJ:0 "American"
 
 #special SU names

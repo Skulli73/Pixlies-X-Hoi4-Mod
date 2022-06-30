@@ -1,39 +1,33 @@
-
 state={
-	id=307
-	name="STATE_307" # Miranda
-	
-	state_category = city
-	
-	manpower = 0# = 1335010
-	resources={
-		oil=41 # was: 58
-	}
+    id=307
+    name="STATE_307" 
 
-	history={
-		owner = WIL# = VEN
-		buildings = {
-			#infrastructure = 2
-			#arms_factory = 1
-			#industrial_complex = 5
-			#air_base = 2
-			8113 = {
-				naval_base = 3
-			}
-			10912 = {
-				naval_base = 2
-			}
-		}
-		# = VEN
-		#victory_points = {
-			8113 5 
-		}
+    state_category = city
 
-	}
+    manpower = 3
+    resources={
+        oil=41 
+    }
 
-	provinces={
-		4942 7968 8024 8080 8113 10767 10823 10912 5056 4892 5000
-	}
+    history={
+        owner = VNZ
+        add_core_of = VNZ
+        buildings = {
+            #infrastructure = 2
+            #arms_factory = 1
+            #industrial_complex = 6
 
-	local_supplies=0.0 
+        }
+
+        victory_points = {
+            8113 10 
+        }
+
+    }
+
+    provinces={
+        4942 7968 8024 8080 8113 10767 10823 10912 5056 4892 5000
+    }
+
+    local_supplies=0.0 
 }

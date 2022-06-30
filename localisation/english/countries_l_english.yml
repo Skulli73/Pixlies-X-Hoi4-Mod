@@ -169,3 +169,18 @@ RUS_democratic_DEF:0 "the Russian Federation"
  ARM:0 "Armenia"
  ARM_DEF:0 "Armenia"
  ARM_ADJ:0 "Armenian"
+
+#normal venezuela names
+VNZ:0 "Venezuela"
+VNZ_DEF:0 "Venezuela"
+VNZ_ADJ:0 "Venezuelan"
+VNZ_communism:0 "Venezuelan Internationalist State"
+VNZ_communism_DEF:0 "the Internationalist State of Venezuela"
+VNZ_fascism:0 "Venezuelan State"
+VNZ_fascism_DEF:0 "the Venezuelan State"
+VNZ_neutrality:0 "Venezuelan Republic"
+VNZ_neutrality_DEF:0 "the Venezuelan Republic"
+VNZ_democratic:0 "Free Venezuela"
+VNZ_democratic_DEF:0 "the Free Nation of Venezuela"
+
+#special venezuela names

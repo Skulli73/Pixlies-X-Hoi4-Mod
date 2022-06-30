@@ -12,13 +12,9 @@ state={
 	}
 
 	history={
-		owner = WIL# = FRA
-		buildings = {
-			#infrastructure = 2
-		}
-		#victory_points = {
-			3768 1 
-		}
+		owner = ILY
+		add_core_of = ILY
+		add_core_of = FGE
 		# = OCC
 		# = FRA
 	}

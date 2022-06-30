@@ -11,10 +11,8 @@ state={
 	}
 	state_category = city
 	history={
-		#victory_points = {
-			6464 5
-		}
-		owner = WIL# = POL
+		owner = ZAP
+		add_core_of = ZAP
 		buildings = {
 			#infrastructure = 3 #was: 6
 			#industrial_complex = 1

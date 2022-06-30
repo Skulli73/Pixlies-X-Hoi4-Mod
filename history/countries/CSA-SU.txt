@@ -42,3 +42,8 @@ set_autonomy = {
 	target = GME
 	autonomy_state = autonomy_satellite
 }
+puppet = ILY
+set_autonomy = {
+	target = ILY
+	autonomy_state = autonomy_satellite
+}

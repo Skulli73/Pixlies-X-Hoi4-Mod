@@ -10,8 +10,8 @@ state={
 	state_category = city
 
 	history={
-		owner = WIL
-		# = GER
+		owner = ZAP
+		add_core_of = ZAP
 	}
 
 	provinces={

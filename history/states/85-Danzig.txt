@@ -5,12 +5,8 @@ state={
 	
 	state_category = city
 	history={
-		owner = WIL# = POL
-		#victory_points = {
-			362 10
-		}
-		
-		set_demilitarized_zone = yes
+		owner = ZAP
+		add_core_of = ZAP
 		
 		buildings = {
 			#infrastructure = 3

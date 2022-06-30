@@ -11,16 +11,8 @@ state={
 	state_category = city
 	
 	history={
-		owner = WIL# = IRE
-		#victory_points = {
-			285 1 #Wexford
-		}
-		#victory_points = {
-			303 1 #Tullamore
-		}
-		#victory_points = {
-			11293 10 #Dublin
-		}
+		owner = BRT
+		add_core_of = BRT
 		buildings = {
 			#infrastructure = 4
 			#arms_factory = 1

@@ -12,18 +12,8 @@ state= {
 	}
 
 	history= {
-		# = SCO
-		owner = WIL# = ENG
-		#victory_points = {
-			6062 1 #Skye/Stornoway
-		}
-		#victory_points = {
-			284 1 #Oban
-		}
-		#victory_points = {
-			9075 1 #Inverness
-		}
-		#victory_points = { 11064 1 }
+		owner = BRT
+		add_core_of = BRT
 		buildings = {
 			#infrastructure = 2
 			#anti_air_building = 2

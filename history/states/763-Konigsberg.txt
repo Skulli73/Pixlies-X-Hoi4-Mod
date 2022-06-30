@@ -6,12 +6,8 @@ state={
 	state_category = city
 
 	history={
-		owner = WIL# = GER
-		controller = WIL# = GER
-		
-		#victory_points = {
-			6332 10 
-		}
+		owner = ZAP
+		add_core_of = ZAP
 
 		buildings = {
 			#infrastructure = 3 #was: 6

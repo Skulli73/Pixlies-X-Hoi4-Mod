@@ -6,8 +6,10 @@ state={
 	state_category = metropolis
 
 	history={
-		owner = WIL# = ITA
-		#victory_points = {
+		owner = ILY
+		add_core_of = ILY
+		add_core_of = FGE
+		victory_points = {
 			3780 15 
 		}
 		buildings = {

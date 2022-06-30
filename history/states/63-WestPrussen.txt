@@ -11,13 +11,8 @@ state={
 	state_category = town
 
 	history={
-		owner = WIL# = GER
-		#victory_points = {
-			6282 5
-		}
-		#victory_points = {
-			11372 3
-		}
+		owner = ZAP
+		add_core_of = ZAP
 		buildings = {
 			#infrastructure = 3
 			#industrial_complex = 1

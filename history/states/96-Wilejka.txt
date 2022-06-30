@@ -6,10 +6,8 @@ state={
 	state_category = rural
 	
 	history={
-		#victory_points = {
-			406 1
-		}
-		owner = WIL# = POL
+		owner = ZAP
+		add_core_of = ZAP
 		buildings = {
 			#infrastructure = 2
 		}

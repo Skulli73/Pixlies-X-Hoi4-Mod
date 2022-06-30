@@ -5,15 +5,9 @@ state={
 	state_category = town
 
 	history={
-		owner = WIL# = FRA
-		# = OCC
-		# = FRA
-		#victory_points = {
-			778 1 
-		}
-		#victory_points = {
-			9909 5 
-		}
+		owner = ILY
+		add_core_of = ILY
+		add_core_of = FGE
 		buildings = {
 			#infrastructure = 2
 			9909 = {

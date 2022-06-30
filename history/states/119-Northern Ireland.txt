@@ -4,13 +4,8 @@ state={
 	name="STATE_119"
 
 	history={
-		owner = WIL# = ENG
-		#victory_points = {
-			3379 5 
-		}
-		#victory_points = {
-			385 1 # Londonderry
-		}
+		owner = BRT
+		add_core_of = BRT
 		buildings = {
 			#infrastructure = 3
 			#arms_factory = 1

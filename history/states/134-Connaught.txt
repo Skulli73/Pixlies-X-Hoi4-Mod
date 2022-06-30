@@ -8,13 +8,8 @@ state=
 	state_category = town
 
 	history= {
-		owner = WIL# = IRE
-		#victory_points = {
-			9303 3 #Galway
-		}
-		#victory_points = {
-			11371 1 #Sligo
-		}
+		owner = BRT
+		add_core_of = BRT
 		buildings = {
 			#infrastructure = 3 #was: 6
 		}

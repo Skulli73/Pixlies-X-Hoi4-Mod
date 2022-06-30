@@ -10,13 +10,9 @@ state={
 	state_category = city
 
 	history={
-		owner = WIL# = FRA
-		#victory_points = {
-			911 1 
-		}
-		#victory_points = {
-			11834 10
-		}
+		owner = ILY
+		add_core_of = ILY
+		add_core_of = FGE
 		buildings = {
 			#infrastructure = 3
 			#industrial_complex = 1

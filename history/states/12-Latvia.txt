@@ -10,10 +10,8 @@ state={
 	state_category = rural
 	
 	history={
-		owner = WIL# = LAT
-		#victory_points = {
-			10493 1 #Valmiera
-		}
+		owner = ZAP
+		add_core_of = ZAP
 		buildings = {
 			#infrastructure = 3
 			#industrial_complex = 1

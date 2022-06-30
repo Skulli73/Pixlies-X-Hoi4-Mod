@@ -11,10 +11,8 @@ state={
 	}
 
 	history={
-		#victory_points = {
-			11598 1
-		}
-		owner = WIL# = ITA
+		owner = ILY
+		add_core_of = FGE
 		buildings = {
 			#infrastructure = 3
 			#industrial_complex = 1

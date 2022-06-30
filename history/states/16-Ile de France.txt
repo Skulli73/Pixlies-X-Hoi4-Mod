@@ -8,9 +8,10 @@ state={
 	
 
 	history={
-		owner = WIL# = FRA
-		#victory_points = {
-			11506 50 
+		owner = BRT
+		add_core_of = BRT
+		victory_points = {
+			11506 1 
 		}
 		buildings = {
 			#infrastructure = 4

@@ -12,14 +12,8 @@ state= {
 
 	history=
 	{
-		owner = WIL# = ENG
-		#victory_points = {
-			407 3 #Swansea
-		}
-		#victory_points = {
-			311 1 #Wrexham
-		}
-		#victory_points = { 377 5 }
+		owner = BRT
+		add_core_of = BRT
 		buildings = {
 			#infrastructure = 3
 			#industrial_complex = 1

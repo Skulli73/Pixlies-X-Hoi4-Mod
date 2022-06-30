@@ -6,13 +6,8 @@ state={
 	state_category = rural
 	
 	history={
-		#victory_points = {
-			9262 3
-		}
-		#victory_points = {
-			3296 1 #Ventspils
-		}
-		owner = WIL# = LAT
+		owner = ZAP
+		add_core_of = ZAP
 		buildings = {
 			#infrastructure = 3 #was: 5
 			9262 = {

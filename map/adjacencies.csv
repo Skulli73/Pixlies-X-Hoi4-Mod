@@ -192,4 +192,8 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 4135;9945;sea;68;-1;-1;-1;-1;;Gibraltar
 6979;11767;sea;168;-1;-1;-1;-1;;Albania-Italy
 925;3943;sea;168;-1;-1;-1;-1;;Zara-Italy
+9458;6449;sea;18;-1;-1;-1;-1;;English Channel 1
+3501;11548;sea;18;-1;-1;-1;-1;;English Channel 2
+3379;6350;sea;43;-1;-1;-1;-1;;Irish Sea 1
+285;11361;sea;43;-1;-1;-1;-1;;Irish Sea 2
 -1;-1;;-1;-1;-1;-1;-1;-1

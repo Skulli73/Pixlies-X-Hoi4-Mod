@@ -70,3 +70,51 @@ TRL_fascism:0 "Turul Empire"
 TRL_fascism_DEF:0 "the Turul Empire"
 TRL_neutrality:0 "Turul Empire"
 TRL_neutrality_DEF:0 "the Turul Empire"
+
+#special turul names
+
+#normal zapadoslavia names
+
+ZAP:0 "Zapadoslavia"
+ZAP_DEF:0 "Zapadoslavia"
+ZAP_ADJ:0 "Zapadoslav"
+ZAP_neutrality:0 "Kingdom of Zapadoslavia"
+ZAP_neutrality_DEF:0 "the Kingdom of Zapadoslavia"
+ZAP_democratic:0 "Kingdom of Zapadoslavia"
+ZAP_democratic_DEF:0 "the Kingdom of Zapadoslavia"
+ZAP_communism:0 "People's Republic of Zapadoslavia"
+ZAP_communism_DEF:0 "the People's Republic of Zapadoslavia"
+ZAP_fascism:0 "Zapadoslav State"
+ZAP_fascism_DEF:0 "the Zapadoslav State"
+
+#normal britain names
+
+BRT:0 "Great Britain"
+BRT_DEF:0 "Great Britain"
+BRT_ADJ:0 "British"
+BRT_neutrality:0 "United Kingdom"
+BRT_neutrality_DEF:0 "the United Kingdom"
+BRT_communism:0 "Union of Britain"
+BRT_communism_DEF:0 "the Union of Britain"
+BRT_democratic:0 "United Kingdom"
+BRT_democratic_DEF:0 "the United Kingdom"
+BRT_fascism:0 "British Empire"
+BRT_fascism_DEF:0 "the British Empire"
+
+#special britain names
+
+BRT_ENGLAND:0 "England"
+BRT_ENGLAND_DEF:0 "England"
+BRT_ENGLAND_ADJ:0 "English"
+
+#normal italy names
+
+ILY:0 "Italy"
+ILY_DEF:0 "Italy"
+ILY_ADJ:0 "Italian"
+ILY_CSA_autonomy_satellite:0 "National State of Northern Italy"
+ILY_CSA_autonomy_satellite_DEF:0 "the National State of Northern Italy"
+ILY_CSA_autonomy_puppet:0 "National State of Northern Italy"
+ILY_CSA_autonomy_puppet_DEF:0 "the National State of Northern Italy"
+ILY_fascism:0 "National State of Italy"
+ILY_fascism_DEF:0 "the National State of Italy"

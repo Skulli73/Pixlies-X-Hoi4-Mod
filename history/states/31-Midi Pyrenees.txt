@@ -4,10 +4,8 @@ state={
 	name="STATE_31"
 
 	history={
-		owner = WIL# = FRA
-		#victory_points = {
-			6766 5 
-		}
+		owner = BRT
+		add_core_of = BRT
 		buildings = {
 			#infrastructure = 3
 			#arms_factory = 1

@@ -4,13 +4,8 @@ state={
 	name="STATE_191"
 
 	history={
-		owner = WIL# = EST
-		#victory_points = {
-			9221 1 
-		}
-		#victory_points = {
-			592 1 #Voru
-		}
+		owner = ZAP
+		add_core_of = ZAP
 		buildings = {
 			#infrastructure = 3 #was: 5
 

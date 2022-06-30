@@ -11,10 +11,8 @@ state={
 	}
 
 	history={
-		owner = WIL# = FRA
-		#victory_points = {
-			6657 5
-		}
+		owner = BRT
+		add_core_of = BRT
 		buildings = {
 			#infrastructure = 3
 			#industrial_complex = 1

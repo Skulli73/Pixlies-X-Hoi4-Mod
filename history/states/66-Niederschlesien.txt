@@ -11,16 +11,8 @@ state={
 	state_category = large_city
 
 	history={
-		owner = WIL# = GER
-		#victory_points = {
-			9570 10 
-		}
-		##victory_points = {
-		#	552 1
-		#}
-		##victory_points = {
-		#	3545 1
-		#}
+		owner = ZAP
+		add_core_of = ZAP
 		buildings = {
 			#infrastructure = 3
 			#industrial_complex = 1

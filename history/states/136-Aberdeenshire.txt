@@ -11,14 +11,8 @@ state={
 	}
 
 	history={
-		# = SCO
-		owner = WIL# = ENG
-		#victory_points = {
-			200 5 #Aberdeen
-		}
-		#victory_points = {
-			3150 1 #Dundee
-		}
+		owner = BRT
+		add_core_of = BRT
 		buildings = {
 			#infrastructure = 3 #was: 6
 			dockyard = 2

@@ -7,10 +7,8 @@ state={
 	}
 
 	history={
-		owner = WIL# = LAT
-		#victory_points = {
-			9340 5 
-		}
+		owner = ZAP
+		add_core_of = ZAP
 		buildings = {
 			#infrastructure = 3 #was: 5
 			#arms_factory = 1

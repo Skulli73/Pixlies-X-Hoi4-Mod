@@ -149,13 +149,21 @@ colonise = {
 		cost = 100
 		available = {
 			FROM = {
-				industrial_complex > var:FROM.state_population
+				OR = {
+					industrial_complex > var:FROM.state_population
+					industrial_complex = var:FROM.state_population
+				}
 			}
 		}
 		target_trigger = {
 			FROM = {
 				is_owned_by = ROOT
 				is_controlled_by = ROOT
+			}
+		}
+		complete_effect = {
+			FROM = {
+				add_manpower = 1
 			}
 		}
 	}

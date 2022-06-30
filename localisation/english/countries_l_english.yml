@@ -148,3 +148,24 @@ RUS_neutrality:0 "Russian Empire"
 RUS_neutrality_DEF:0 "the Russian Empire"
 RUS_democratic:0 "Russian Federation"
 RUS_democratic_DEF:0 "the Russian Federation"
+
+#special russia names
+
+
+#normal armenia names
+
+ ARM_fascism:0 "Greater Armenia"
+ ARM_fascism_DEF:0 "Greater Armenia"
+ ARM_democratic:0 "Kingdom of Armenia"
+ ARM_democratic_DEF:0 "the Kingdom of Armenia"
+ ARM_neutrality:0 "Kingdom of Armenia"
+ ARM_neutrality_DEF:0 "the Kingdom of Armenia"
+ ARM_communism:1 "Armenian Socialist Republic"
+ ARM_communism_DEF:1 "the Armenian Socialist Republic"
+ ARM_fascism_ADJ:0 "Armenian"
+ ARM_democratic_ADJ:0 "Armenian"
+ ARM_neutrality_ADJ:0 "Armenian"
+ ARM_communism_ADJ:0 "Armenian"
+ ARM:0 "Armenia"
+ ARM_DEF:0 "Armenia"
+ ARM_ADJ:0 "Armenian"

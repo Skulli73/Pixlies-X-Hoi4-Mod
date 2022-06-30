@@ -6,13 +6,8 @@ state={
 	}
 
 	history={
-		owner = WIL# = RUS
-		#victory_points = {
-			7661 10 
-		}
-		#victory_points = {
-			11674 1 
-		}
+		owner = ARM
+		add_core_of = ARM
 		buildings = {
 			#infrastructure = 2
 			#industrial_complex = 1

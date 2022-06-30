@@ -1,8 +1,8 @@
-﻿oob = "ILY_50"
-capital = 59
+﻿oob = "ARM_50"
+capital = 230
 set_research_slots = 3
-set_stability = 0.25
-set_war_support = 0.3
+set_stability = 0.75
+set_war_support = 0.5
 set_convoys = 0
 
 
@@ -15,14 +15,13 @@ add_ideas = {
 
 #Politics for 50.1.1
 set_politics = {
-	ruling_party = fascism
+	ruling_party = democratic
 	last_election = "49.10.25"
 	election_frequency = 60
 	elections_allowed = no
 }
 set_popularities = {
-	fascism = 34
-	democratic = 33
-	neutrality = 33
+	democratic = 50
+	neutrality = 50
 }
 inherit_technology = CSA

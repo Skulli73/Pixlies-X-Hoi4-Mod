@@ -3,12 +3,10 @@ state={
 	name="STATE_230"
 
 	history={
-		owner = WIL# = RUS
-		#victory_points = {
-			12320 3
-		}
-		#victory_points = {
-			12441 1
+		owner = ARM
+		add_core_of = ARM
+		victory_points = {
+			12320 10
 		}
 		buildings = {
 			#infrastructure = 2

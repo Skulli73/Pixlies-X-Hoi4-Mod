@@ -47,3 +47,5 @@ set_autonomy = {
 	target = ILY
 	autonomy_state = autonomy_satellite
 }
+create_faction = "Fascist Unity Pact"
+add_to_faction = TRL

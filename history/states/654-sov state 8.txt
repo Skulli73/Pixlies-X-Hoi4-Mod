@@ -7,11 +7,11 @@ state={
 	state_category = wasteland
 
 	history={
-		owner = WIL# = SOV
+		owner = WIL# = RUS
 		buildings = {
 			#infrastructure = 1
 		}
-		# = SOV
+		# = RUS
 		# = ALT
 		#victory_points = {
 			4800 1 #Oyrot-Tura/Gorno-Altaysk

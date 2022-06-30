@@ -3,13 +3,13 @@ state={
 	name="STATE_583"
 
 	history={
-		owner = WIL# = SOV
+		owner = WIL# = RUS
 		# = KAZ
 		buildings = {
 			#infrastructure = 2
 
 		}
-		# = SOV
+		# = RUS
 		#victory_points = {
 			10312 1
 		}

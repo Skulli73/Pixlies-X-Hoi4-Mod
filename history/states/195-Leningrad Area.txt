@@ -7,9 +7,10 @@ state={
 	state_category = metropolis
 
 	history={
-		owner = WIL# = SOV
-		#victory_points = {
-			3151 30.0
+		owner = RUS
+		add_core_of = RUS
+		victory_points = {
+			3151 5
 		}
 		buildings = {
 			#infrastructure = 4 #was: 7
@@ -22,7 +23,7 @@ state={
 				coastal_bunker = 5
 			}
 		}
-		# = SOV
+		# = RUS
 		1939.1.1 = {
 			buildings = {
 				#arms_factory = 7

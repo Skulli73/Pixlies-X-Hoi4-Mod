@@ -1,0 +1,28 @@
+﻿oob = "ILY_50"
+capital = 59
+set_research_slots = 3
+set_stability = 0.25
+set_war_support = 0.3
+set_convoys = 0
+
+
+add_ideas = {
+	extensive_conscription
+	partial_economic_mobilisation
+}
+
+
+
+#Politics for 50.1.1
+set_politics = {
+	ruling_party = fascism
+	last_election = "49.10.25"
+	election_frequency = 60
+	elections_allowed = no
+}
+set_popularities = {
+	fascism = 34
+	democratic = 33
+	neutrality = 33
+}
+inherit_technology = CSA

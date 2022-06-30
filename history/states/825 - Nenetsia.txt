@@ -14,7 +14,7 @@ state = {
 		#victory_points = {
 			105 1 
 		}
-		owner = WIL# = SOV
+		owner = WIL# = RUS
 		buildings = {
 			#infrastructure = 1
 			12530 = {
@@ -22,7 +22,7 @@ state = {
 			}
 
 		}
-		# = SOV
+		# = RUS
 		# = NEN
 	}
 

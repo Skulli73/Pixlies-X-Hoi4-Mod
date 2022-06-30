@@ -10,11 +10,11 @@ state={
 	}
 
 	history={
-		owner = WIL# = SOV
+		owner = WIL# = RUS
 		buildings = {
 			#infrastructure = 2
 		}
-		# = SOV
+		# = RUS
 	}
 
 	provinces={

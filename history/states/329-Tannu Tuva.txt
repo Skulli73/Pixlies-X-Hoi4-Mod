@@ -20,7 +20,7 @@ state={
 			10627 3
 		}
 		# = TAN
-		# = SOV
+		# = RUS
 	}
 
 	provinces={

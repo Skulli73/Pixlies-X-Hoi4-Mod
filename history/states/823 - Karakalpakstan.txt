@@ -9,14 +9,14 @@ state = {
 			1614 1
 		}
 		
-		owner = WIL# = SOV
+		owner = WIL# = RUS
 		
 		buildings = {
 			#infrastructure = 2
 
 		}
 		
-		# = SOV
+		# = RUS
 		# = UZB
 		# = KKP
 		

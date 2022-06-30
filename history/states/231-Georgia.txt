@@ -3,7 +3,7 @@ state = {
 	name = "STATE_231"
 
 	history = {
-		owner = WIL# = SOV
+		owner = WIL# = RUS
 		#victory_points = {
 			1599 5 
 		}
@@ -21,7 +21,7 @@ state = {
 			}
 
 		}
-		# = SOV
+		# = RUS
 		# = GEO
 		1939.1.1 = {
 			buildings = {

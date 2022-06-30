@@ -6,7 +6,7 @@ state = {
 
 	history = {
 	
-		owner = WIL# = SOV
+		owner = WIL# = RUS
 		
 		#victory_points = {
 			1573 2 
@@ -21,7 +21,7 @@ state = {
 			#air_base = 1
 		}
 		
-		# = SOV
+		# = RUS
 		# = UZB
 		# = BUK
 

@@ -7,11 +7,11 @@ state={
 	state_category = wasteland
 
 	history={
-		owner = WIL# = SOV
+		owner = WIL# = RUS
 		buildings = {
 			#infrastructure = 1
 		}
-		# = SOV
+		# = RUS
 		# = KAZ
 		#victory_points = {
 			3618 1

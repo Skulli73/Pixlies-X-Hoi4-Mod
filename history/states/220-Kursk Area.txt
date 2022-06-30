@@ -6,15 +6,13 @@ state={
 	state_category = city
 
 	history={
-		owner = WIL# = SOV
-		#victory_points = {
-			3580 5
-		}
+		owner = RUS
+		add_core_of = RUS
 		buildings = {
 			#infrastructure = 3 #was: 5
 			#air_base = 1
 		}
-		# = SOV
+		# = RUS
 	}
 
 	provinces={

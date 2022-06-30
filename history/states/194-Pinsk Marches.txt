@@ -9,7 +9,7 @@ state={
 	history={
 		owner = TRL
 		add_core_of = TRL
-		# = SOV
+		# = RUS
 		# = BLR
 	}
 

@@ -6,8 +6,8 @@ state = {
 	
 	state_category = pastoral
 	history = {
-		owner = WIL# = SOV
-		# = SOV
+		owner = WIL# = RUS
+		# = RUS
 		# = FER
 		add_claim_by = JAP
 		buildings = {

@@ -40,3 +40,7 @@ JPN = {
 	color = rgb {255 170 128}
 	color_ui = rgb {255 170 128}
 }
+RUS = {
+	color = rgb {198 43 43}
+	color_ui = rgb {198 43 43}
+}

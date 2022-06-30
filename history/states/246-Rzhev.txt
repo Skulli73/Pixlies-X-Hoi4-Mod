@@ -10,14 +10,12 @@ state={
 	}
 
 	history={
-		owner = WIL# = SOV
-		#victory_points = {
-			11349 1
-		}
+		owner = RUS
+		add_core_of = RUS
 		buildings = {
 			#infrastructure = 3 #was: 5
 		}
-		# = SOV
+		# = RUS
 	}
 
 	provinces={

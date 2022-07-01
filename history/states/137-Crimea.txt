@@ -7,16 +7,8 @@ state={
 	state_category = city
 
 	history={
-		owner = WIL# = RUS
-		#victory_points = {
-			3686 20
-		}
-		#victory_points = {
-			9680 1
-		}
-		#victory_points = {
-			6704 1
-		}
+		owner = BYZ
+		add_core_of = BYZ
 		buildings = {
 			#infrastructure = 3
 			dockyard = 1

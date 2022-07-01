@@ -10,14 +10,8 @@ state={
 	state_category = large_town
 
 	history={
-		owner = WIL# = TUR
-		
-		#victory_points = {
-			4112 15
-		}
-		#victory_points = {
-			928 5
-		}
+		owner = BYZ
+		add_core_of = BYZ
 		buildings = {
 			#infrastructure = 2
 			#industrial_complex = 1

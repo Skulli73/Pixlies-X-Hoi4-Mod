@@ -11,19 +11,8 @@ state={
 	}
 
 	history={
-		owner = WIL# = IRQ
-		#victory_points = {
-			2097 10
-		}
-		#victory_points = {
-			7994 1
-		}
-		#victory_points = {
-			8001 3
-		}
-		#victory_points = {
-			2089 5 
-		}
+		owner = BYZ
+		add_core_of = BYZ
 		buildings = {
 			#infrastructure = 3 #was: 5
 			#arms_factory = 1
@@ -33,8 +22,6 @@ state={
 				naval_base = 1
 			}
 		}
-		# = IRQ
-		add_claim_by = KUR
 	}
 
 	provinces={

@@ -8,7 +8,8 @@ state=
 
 	history=
 	{
-		owner = WIL# = ENG
+		owner = BYZ
+		add_core_of = BYZ
 		buildings = {
 			#infrastructure = 3 #was: 5
 			#industrial_complex = 1
@@ -16,22 +17,6 @@ state=
 			12049 = {
 				naval_base = 2
 			}
-		}
-		
-		#victory_points = {
-			7011 20
-		}
-		#victory_points = {
-			12049 5
-		}
-		#victory_points = {
-			3996 5
-		}
-		#victory_points = {
-			4073 3
-		}
-		#victory_points = {
-			1068 3
 		}
 
 		# = EGY

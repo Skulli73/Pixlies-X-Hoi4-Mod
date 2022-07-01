@@ -13,8 +13,9 @@ state={
 	state_category = city
 
 	history= {
-		owner = WIL# = TUR
-		#victory_points = {
+		owner = BYZ
+		add_core_of = BYZ
+		victory_points = {
 			9833 25
 		}
 		buildings = {
@@ -25,11 +26,6 @@ state={
 			9833 = {
 				naval_base = 8
 			}
-		}
-		# = TUR
-		if = {
-			limit = { has_dlc = "Battle for the Bosporus"}
-			set_demilitarized_zone = yes
 		}
 		
 		1936.11.9 = {

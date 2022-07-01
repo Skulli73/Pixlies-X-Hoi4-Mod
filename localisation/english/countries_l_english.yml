@@ -184,3 +184,19 @@ VNZ_democratic:0 "Free Venezuela"
 VNZ_democratic_DEF:0 "the Free Nation of Venezuela"
 
 #special venezuela names
+
+
+#normal byzantium names
+
+BYZ:0 "Byzantium"
+BYZ_DEF:0 "Byzantium"
+BYZ_ADJ:0 "Byzantine"
+BYZ_neutrality:0 "Byzantine Empire"
+BYZ_neutrality_DEF:0 "the Byzantine Empire"
+BYZ_fascism:0 "Byzantine Empire"
+BYZ_fascism_DEF:0 "the Byzantine Empire"
+BYZ_democratic:0 "Byzantine Empire"
+BYZ_democratic_DEF:0 "the Byzantine Empire"
+BYZ_communism:0 "People's Republic of Greece"
+BYZ_communism_DEF:0 "the People's Republic of Grece"
+BYZ_communism_ADJ:0 "Greek"

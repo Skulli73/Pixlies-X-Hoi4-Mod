@@ -7,7 +7,8 @@ state={
 	state_category = rural
 
 	history={
-		owner = WIL# = ENG
+		owner = BYZ
+		add_core_of = BYZ
 		buildings = {
 			#infrastructure = 3 #was: 5
 			#industrial_complex = 1
@@ -16,14 +17,8 @@ state={
 				naval_base = 3
 			}
 		}
-		#victory_points = {
-			1086 1 
-		}
-		#victory_points = {
-			4206 1 
-		}
-		#victory_points = {
-			1065 1 
+		victory_points = {
+			1086 5 
 		}
 		# = PAL
 		# = ISR

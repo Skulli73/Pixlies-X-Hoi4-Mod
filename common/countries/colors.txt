@@ -48,7 +48,11 @@ ARM = {
 	color = rgb {104 82 39}
 	color_ui = rgb {104 82 39}
 }
-VZN = {
+BYZ = {
+	color = rgb {109 31 145}
+	color_ui = rgb {109 31 145}
+}
+VNZ = {
 	color = rgb {255 204 66}
 	color_ui = rgb {255 204 66}
 }

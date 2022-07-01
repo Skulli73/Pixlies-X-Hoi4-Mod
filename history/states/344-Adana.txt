@@ -7,19 +7,8 @@ state={
 	state_category = town
 
 	history={
-		owner = WIL# = TUR
-		#victory_points = {
-			9893 15
-		}
-		#victory_points = {
-			7620 10
-		}
-		#victory_points = {
-			6813 3
-		}
-		#victory_points = {
-			11746 5 
-		}
+		owner = BYZ
+		add_core_of = BYZ
 		buildings = {
 			#infrastructure = 2
 			#industrial_complex = 1
@@ -27,8 +16,6 @@ state={
 				naval_base = 3
 			}
 		}
-		# = TUR
-		add_claim_by = KUR
 	}
 
 	provinces={

@@ -1,0 +1,54 @@
+### search_filters = {FOCUS_FILTER_POLITICAL}
+### search_filters = {FOCUS_FILTER_RESEARCH}
+### search_filters = {FOCUS_FILTER_INDUSTRY}
+### search_filters = {FOCUS_FILTER_STABILITY}
+### search_filters = {FOCUS_FILTER_WAR_SUPPORT}
+### search_filters = {FOCUS_FILTER_MANPOWER}
+### search_filters = {FOCUS_FILTER_ANNEXATION}
+### search_filters = {FOCUS_FILTER_CSA_CONGRESS}
+
+focus_tree = {
+	id = ILY_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = ILY
+		}
+	}
+	continuous_focus_position = { x = 50 y = 1600 }
+	default = no
+
+
+	focus = {
+		id = ILY_Recover_From_The_War
+		icon = GFX_goal_generic_amphibious_assault
+		x = 0
+		y = 1
+		cost = 10
+		#ai_will_do = {
+		#	factor = 4000
+		#}
+
+		available_if_capitulated = yes
+
+		bypass = { always
+		}
+
+		cost = 10
+
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		completion_reward = {
+			add_political_power = 100
+			 
+			}
+		}
+	}
+
+	
+
+
+	
+}

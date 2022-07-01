@@ -16,6 +16,78 @@ on_actions = {
 					mil_fac_ratio_auto = 0.3
 				}
 			}
+			ARM = {
+				set_temp_variable = {
+					population_auto = 14
+				}
+				set_temp_variable = {
+					mil_fac_ratio_auto = 0.15
+				}
+			}
+			BYZ = {
+				set_temp_variable = {
+					population_auto = 15
+				}
+				set_temp_variable = {
+					mil_fac_ratio_auto = 0.1
+				}
+			}
+			ESP = {
+				set_temp_variable = {
+					population_auto = 18
+				}
+				set_temp_variable = {
+					mil_fac_ratio_auto = 0.1
+				}
+			}
+			TRL = {
+				set_temp_variable = {
+					population_auto = 27
+				}
+				set_temp_variable = {
+					mil_fac_ratio_auto = 0.7
+				}
+			}
+			BRT = {
+				set_temp_variable = {
+					population_auto = 17
+				}
+				set_temp_variable = {
+					mil_fac_ratio_auto = 0.15
+				}
+			}
+			RUS = {
+				set_temp_variable = {
+					population_auto = 20
+				}
+				set_temp_variable = {
+					mil_fac_ratio_auto = 0.15
+				}
+			}
+			VNZ = {
+				set_temp_variable = {
+					population_auto = 10
+				}
+				set_temp_variable = {
+					mil_fac_ratio_auto = 0.35
+				}
+			}
+			ZAP = {
+				set_temp_variable = {
+					population_auto = 21
+				}
+				set_temp_variable = {
+					mil_fac_ratio_auto = 0.25
+				}
+			}
+			ILY = {
+				set_temp_variable = {
+					population_auto = 5
+				}
+				set_temp_variable = {
+					mil_fac_ratio_auto = 0.1a5
+				}
+			}
 
 			every_country = {
 				limit = {

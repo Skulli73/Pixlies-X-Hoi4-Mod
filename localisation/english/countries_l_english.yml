@@ -200,3 +200,12 @@ BYZ_democratic_DEF:0 "the Byzantine Empire"
 BYZ_communism:0 "People's Republic of Greece"
 BYZ_communism_DEF:0 "the People's Republic of Grece"
 BYZ_communism_ADJ:0 "Greek"
+
+#special byzantium names
+
+
+
+#normal portugal names
+PRT:0 "Portugal"
+PRT_DEF:0 "Portugal"
+PRT_ADJ:0 "Portugese"

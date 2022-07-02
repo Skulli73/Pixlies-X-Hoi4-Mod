@@ -3,19 +3,8 @@ state={
 	name="STATE_179"
 
 	history={
-		owner = WIL# = POR
-		#victory_points = {
-			3790 1
-		}
-		#victory_points = {
-			6880 1
-		}
-		#victory_points = {
-			6933 1
-		}
-		#victory_points = {
-			970 1
-		}
+		owner = PRT
+		add_core_of = PRT
 		buildings = {
 			#infrastructure = 3 #was: 5
 			#industrial_complex = 3

@@ -88,6 +88,14 @@ on_actions = {
 					mil_fac_ratio_auto = 0.15
 				}
 			}
+			PRT = {
+				set_variable = {
+					population_auto = 8
+				}
+				set_variable = {
+					mil_fac_ratio_auto = 0.2
+				}
+			}
 
 			every_country = {
 				limit = {

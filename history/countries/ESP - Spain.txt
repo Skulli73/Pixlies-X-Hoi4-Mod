@@ -28,4 +28,5 @@ recruit_character = maurice
 promote_character = maurice
 recruit_character = birb
 add_ideas = birb_head_of_state
+give_guarantee = PRT
 inherit_technology = CSA

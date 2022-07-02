@@ -9,134 +9,127 @@ on_actions = {
 
 			#stuff for automatic factories etc.
 			JPN = {
-				set_temp_variable = {
+				set_variable = {
 					population_auto = 25
 				}
-				set_temp_variable = {
+				set_variable = {
 					mil_fac_ratio_auto = 0.3
 				}
 			}
 			ARM = {
-				set_temp_variable = {
+				set_variable = {
 					population_auto = 14
 				}
-				set_temp_variable = {
+				set_variable = {
 					mil_fac_ratio_auto = 0.15
 				}
 			}
 			BYZ = {
-				set_temp_variable = {
+				set_variable = {
 					population_auto = 15
 				}
-				set_temp_variable = {
+				set_variable = {
 					mil_fac_ratio_auto = 0.1
 				}
 			}
 			ESP = {
-				set_temp_variable = {
+				set_variable = {
 					population_auto = 18
 				}
-				set_temp_variable = {
+				set_variable = {
 					mil_fac_ratio_auto = 0.1
 				}
 			}
 			TRL = {
-				set_temp_variable = {
+				set_variable = {
 					population_auto = 27
 				}
-				set_temp_variable = {
+				set_variable = {
 					mil_fac_ratio_auto = 0.7
 				}
 			}
 			BRT = {
-				set_temp_variable = {
+				set_variable = {
 					population_auto = 17
 				}
-				set_temp_variable = {
+				set_variable = {
 					mil_fac_ratio_auto = 0.15
 				}
 			}
 			RUS = {
-				set_temp_variable = {
+				set_variable = {
 					population_auto = 20
 				}
-				set_temp_variable = {
+				set_variable = {
 					mil_fac_ratio_auto = 0.15
 				}
 			}
 			VNZ = {
-				set_temp_variable = {
+				set_variable = {
 					population_auto = 10
 				}
-				set_temp_variable = {
+				set_variable = {
 					mil_fac_ratio_auto = 0.35
 				}
 			}
 			ZAP = {
-				set_temp_variable = {
+				set_variable = {
 					population_auto = 21
 				}
-				set_temp_variable = {
+				set_variable = {
 					mil_fac_ratio_auto = 0.25
 				}
 			}
 			ILY = {
-				set_temp_variable = {
+				set_variable = {
 					population_auto = 5
 				}
-				set_temp_variable = {
-					mil_fac_ratio_auto = 0.1a5
+				set_variable = {
+					mil_fac_ratio_auto = 0.15
 				}
 			}
 
 			every_country = {
 				limit = {
-					has_temp_variable = population_auto
-					has_temp_variable = mil_fac_ratio_auto
+					has_variable = population_auto
 				}
-				set_temp_variable = {
+				set_variable = {
 					amount_civs_auto = 1
 				}
-				subtract_from_temp_variable = {
+				subtract_from_variable = {
 					amount_civs_auto = mil_fac_ratio_auto
 				}
-				multiply_temp_variable = {
+				multiply_variable = {
 					amount_civs_auto = population_auto
 				}
-				multiply_temp_variable = {
-					amount_civs_auto = 1.5
-				}
-				round_temp_variable = amount_civs_auto
+				round_variable = amount_civs_auto
 
-				set_temp_variable = {
+				set_variable = {
 					amount_mils_auto = mil_fac_ratio_auto
 				}
-				multiply_temp_variable = {
+				multiply_variable = {
 					amount_mils_auto = population_auto
 				}
-				multiply_temp_variable = {
-					amount_mils_auto = 1.5
-				}
-				round_temp_variable = amount_mils_auto
+				round_variable = amount_mils_auto
 
 
-				set_temp_variable = {
+				set_variable = {
 					civs_in_capital = amount_civs_auto
 				}
-				divide_temp_variable = {
+				divide_variable = {
 					civs_in_capital = 2
 				}
-				round_temp_variable = civs_in_capital
+				round_variable = civs_in_capital
+				set_variable = {capital_population = civs_in_capital}
 				CAPITAL_SCOPE = {
-					add_extra_state_shared_building_slots = civs_in_capital
+					add_extra_state_shared_building_slots = PREV.civs_in_capital
 					add_building_construction = {
 						type = industrial_complex
-						level = civs_in_capital
+						level = PREV.civs_in_capital
 						instant_build = yes
 					}
-					set_variable = {capital_population = civs_in_capital}
-					multiply_variable = {capital_population = 0.67}
-					add_manpower = capital_population
+					
+					add_manpower = PREV.capital_population
 				}
 				set_variable = {n = 0}
 				while_loop_effect = {
@@ -147,12 +140,7 @@ on_actions = {
 						limit = {
 							is_in_home_area = yes
 						}
-						random_list = {
-							2 = {
-								add_manpower = 1
-							}
-							1 = {}
-						}
+						add_manpower = 1
 						add_building_construction = {
 							type = industrial_complex
 							level = 1
@@ -161,23 +149,23 @@ on_actions = {
 					}
 				}
 
-				set_temp_variable = {
-					mils_in_capital = amount_civs_auto
+				set_variable = {
+					mils_in_capital = amount_mils_auto
 				}
-				divide_temp_variable = {
+				divide_variable = {
 					mils_in_capital = 2
 				}
-				round_temp_variable = mils_in_capital
+				round_variable = mils_in_capital
+				set_variable = {capital_population = mils_in_capital}
 				CAPITAL_SCOPE = {
-					add_extra_state_shared_building_slots = mils_in_capital
+					add_extra_state_shared_building_slots = PREV.mils_in_capital
 					add_building_construction = {
 						type = arms_factory
-						level = mils_in_capital
+						level = PREV.mils_in_capital
 						instant_build = yes
 					}
-					set_variable = {capital_population = mils_in_capital}
-					multiply_variable = {capital_population = 0.67}
-					add_manpower = capital_population
+					
+					add_manpower = PREV.capital_population
 				}
 				set_variable = {n = 0}
 				while_loop_effect = {
@@ -188,12 +176,7 @@ on_actions = {
 						limit = {
 							is_in_home_area = yes
 						}
-						random_list = {
-							2 = {
-								add_manpower = 1
-							}
-							1 = {}
-						}
+						add_manpower = 1
 						add_building_construction = {
 							type = arms_factory
 							level = 1

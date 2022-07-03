@@ -60,3 +60,11 @@ PRT = {
 	color = rgb {55 127 55}
 	color_ui = rgb {55 127 55}
 }
+FIJ = {
+	color = rgb {104 147 255}
+	color_ui = rgb {104 147 255}
+}
+IND = {
+	color = rgb {105 173 112}
+	color_ui = rgb {105 173 112}
+}

@@ -198,4 +198,7 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 285;11361;sea;43;-1;-1;-1;-1;;Irish Sea 2
 10011;1054;sea;76;-1;-1;-1;-1;;Japan-Korea
 1104;1150;sea;77;-1;-1;-1;-1;;Manchuria-China
+1088;11984;sea;69;-1;-1;-1;-1;;Cyprus-Levant 1
+1108;11984;sea;69;-1;-1;-1;-1;;Cyprus-Levant 2
+7193;4008;sea;69;-1;-1;-1;-1;;Cyprus-Anatolia
 -1;-1;;-1;-1;-1;-1;-1;-1

@@ -96,6 +96,22 @@ on_actions = {
 					mil_fac_ratio_auto = 0.2
 				}
 			}
+			FIJ = {
+				set_variable = {
+					population_auto = 4
+				}
+				set_variable = {
+					mil_fac_ratio_auto = 0.4
+				}
+			}
+			IND = {
+				set_variable = {
+					population_auto = 5
+				}
+				set_variable = {
+					mil_fac_ratio_auto = 0.3
+				}
+			}
 
 			every_country = {
 				limit = {
@@ -136,7 +152,11 @@ on_actions = {
 						level = PREV.civs_in_capital
 						instant_build = yes
 					}
-					
+					add_building_construction = {
+						type = infrastructure
+						level = 4
+						instant_build = yes
+					}
 					add_manpower = PREV.capital_population
 				}
 				set_variable = {n = 0}
@@ -151,6 +171,11 @@ on_actions = {
 						add_manpower = 1
 						add_building_construction = {
 							type = industrial_complex
+							level = 1
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = infrastructure
 							level = 1
 							instant_build = yes
 						}
@@ -172,7 +197,11 @@ on_actions = {
 						level = PREV.mils_in_capital
 						instant_build = yes
 					}
-					
+					add_building_construction = {
+						type = infrastructure
+						level = 4
+						instant_build = yes
+					}
 					add_manpower = PREV.capital_population
 				}
 				set_variable = {n = 0}
@@ -187,6 +216,11 @@ on_actions = {
 						add_manpower = 1
 						add_building_construction = {
 							type = arms_factory
+							level = 1
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = infrastructure
 							level = 1
 							instant_build = yes
 						}

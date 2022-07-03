@@ -209,3 +209,20 @@ BYZ_communism_ADJ:0 "Greek"
 PRT:0 "Portugal"
 PRT_DEF:0 "Portugal"
 PRT_ADJ:0 "Portugese"
+
+#special portugal names
+
+
+
+#normal fiji names
+FIJ:0 "Fiji"
+FIJ_DEF:0 "Fiji"
+FIJ_DEF:0 "Fijian"
+
+#special fiji names
+
+
+#normal roi names
+IND:0 "India"
+IND_DEF:0 "India"
+IND_ADJ:0 "Indian"

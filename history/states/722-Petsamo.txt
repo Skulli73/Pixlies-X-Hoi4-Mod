@@ -6,7 +6,8 @@ state={
 	state_category = enclave
 
 	history={
-		owner = WIL# = FIN
+		owner = FNL
+		add_core_of = FNL
 		buildings = {
 			#infrastructure = 2
 			9140 = {

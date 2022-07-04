@@ -68,3 +68,7 @@ IND = {
 	color = rgb {105 173 112}
 	color_ui = rgb {105 173 112}
 }
+FNL = {
+	color = rgb {255 255 255}
+	color_ui = rgb {255 255 255}
+}

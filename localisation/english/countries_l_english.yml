@@ -226,3 +226,10 @@ FIJ_DEF:0 "Fijian"
 IND:0 "India"
 IND_DEF:0 "India"
 IND_ADJ:0 "Indian"
+
+#special roi names
+
+#normal finland names
+FNL:0 "Finland"
+FNL_DEF:0 "Finland"
+FNL_ADJ:0 "Finnish"

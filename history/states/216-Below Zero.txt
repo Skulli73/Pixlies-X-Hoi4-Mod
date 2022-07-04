@@ -5,17 +5,8 @@ state={
 	state_category = rural
 
 	history={
-		owner = WIL# = RUS
-		#victory_points = {
-			11159 1 
-		}
-		buildings = {
-			#infrastructure = 2
-			#air_base = 3
-
-		}
-		# = RUS
-		# = KAR
+		owner = FNL
+		add_core_of = FNL
 	}
 
 	provinces={

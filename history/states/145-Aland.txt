@@ -8,7 +8,8 @@ state=
 	
 	history=
 	{
-		owner = WIL# = FIN
+		owner = FNL
+		add_core_of = FNL
 		buildings = {
 			#infrastructure = 3 #was: 5
 			9228 = {

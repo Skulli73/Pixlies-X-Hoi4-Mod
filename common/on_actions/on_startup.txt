@@ -112,6 +112,14 @@ on_actions = {
 					mil_fac_ratio_auto = 0.3
 				}
 			}
+			FNL = {
+				set_variable = {
+					population_auto = 10
+				}
+				set_variable = {
+					mil_fac_ratio_auto = 0.3
+				}
+			}
 
 			every_country = {
 				limit = {

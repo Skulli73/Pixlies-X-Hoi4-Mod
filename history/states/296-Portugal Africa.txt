@@ -9,11 +9,8 @@ state={
 		rubber=1 # was: 1
 	}
 	history={
-		owner = WIL# = POR
-		# = GNB
-		#victory_points = {
-			12891 1
-		}
+		owner = FGE
+		add_core_of = FGE
 		buildings = {
 			#infrastructure = 1
 			12891 ={

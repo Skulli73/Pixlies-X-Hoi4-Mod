@@ -6,11 +6,8 @@ state={
 	
 	state_category = pastoral
 	history={
-		owner = WIL# = FRA
-		# = GNA
-		#victory_points = {
-			1909 1 
-		}
+		owner = FGE
+		add_core_of = FGE
 		buildings = {
 			#infrastructure = 2
 			1909 = {

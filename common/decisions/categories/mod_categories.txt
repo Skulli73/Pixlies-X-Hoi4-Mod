@@ -1,0 +1,3 @@
+brt_collapse = {
+	priority = 100
+}

@@ -1,0 +1,63 @@
+﻿add_namespace = brt 
+
+# collapse of britain
+country_event = {
+	id = brt.1
+	title = brt.1.t
+	desc = brt.1.d
+	picture = GFX_report_event_crowd_in_prague
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = brt.1.a	
+		set_cosmetic_tag = ENG_england
+		every_owned_controlled_state = {
+			limit = {
+				NOT = {
+					region = 1
+					region = 2
+				}
+			}
+			set_temp_variable = {
+				neg_population = state_population
+			}
+			multiply_temp_variable = {
+				neg_population = -1
+			}
+			add_manpower = neg_population
+			WIL = {
+				transfer_state = PREV
+			}
+		}
+		start_civil_war = {
+			ideology = fascism
+		}
+	}
+	option = {
+		name = brt.1.a	
+		set_cosmetic_tag = ENG_england
+		every_owned_controlled_state = {
+			limit = {
+				NOT = {
+					region = 1
+					region = 2
+				}
+			}
+			set_temp_variable = {
+				neg_population = state_population
+			}
+			multiply_temp_variable = {
+				neg_population = -1
+			}
+			add_manpower = neg_population
+			WIL = {
+				transfer_state = PREV
+			}
+		}
+		start_civil_war = {
+			ideology = neutrality
+			ruling_party = fascism
+		}
+	}
+}

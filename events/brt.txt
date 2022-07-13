@@ -12,7 +12,7 @@ country_event = {
 	option = {
 		name = brt.1.a	
 		set_cosmetic_tag = ENG_england
-		every_owned_controlled_state = {
+		every_owned_state = {
 			limit = {
 				NOT = {
 					region = 1
@@ -26,18 +26,22 @@ country_event = {
 				neg_population = -1
 			}
 			add_manpower = neg_population
-			WIL = {
-				transfer_state = PREV
-			}
+			transfer_state_to = WIL
 		}
 		start_civil_war = {
 			ideology = fascism
 		}
+		FGE = {
+			country_event = {
+				id = brt.2
+				days = 5
+			}
+		}
 	}
 	option = {
-		name = brt.1.a	
+		name = brt.1.b	
 		set_cosmetic_tag = ENG_england
-		every_owned_controlled_state = {
+		every_owned_state = {
 			limit = {
 				NOT = {
 					region = 1
@@ -58,6 +62,65 @@ country_event = {
 		start_civil_war = {
 			ideology = neutrality
 			ruling_party = fascism
+		}
+		FGE = {
+			country_event = {
+				id = brt.2
+				days = 5
+			}
+		}
+	}
+}
+country_event = {
+	id = brt.2
+	title = brt.2.t
+	desc = brt.2.d
+	is_triggered_only = yes
+	option = {
+		name = brt.2.a
+		every_state = {
+			limit = {
+				is_core_of = BRT
+				OR = {
+					region = 20
+					state = 23
+				}
+			}
+			transfer_state_to = ROOT 
+		}
+		GME = {
+			country_event = {
+				id = brt.3
+				days = 5
+			}
+		}
+	}
+}
+country_event = {
+	id = brt.3
+	title = brt.3.t
+	desc = brt.3.d
+	is_triggered_only = yes
+	option = {
+		name = brt.3.a
+		every_state = {
+			limit = {
+				OR = {
+					AND = {
+						is_core_of = BRT
+						OR = {
+							region = 19
+							region = 208
+						}
+						NOT = {
+							is_owned_by = FGE
+						}
+					}
+					state = 144
+					state = 143
+				}
+			}
+			transfer_state_to = ROOT 
 		}
 	}
 }

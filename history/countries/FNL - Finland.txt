@@ -1,4 +1,4 @@
-﻿oob = "ZAP_50"
+﻿oob = "GENERIC"
 capital = 10
 set_research_slots = 2
 set_stability = 0.4

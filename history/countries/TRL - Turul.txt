@@ -1,4 +1,4 @@
-﻿oob = "TRL_50"
+﻿oob = "GENERIC"
 capital = 43
 set_research_slots = 3
 set_stability = 0.5

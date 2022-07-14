@@ -235,6 +235,21 @@ on_actions = {
 					}
 				}
 			}
+			every_state = {
+				limit = {
+					arms_factory > 0
+				}
+				set_variable = {n = 0}
+				while_loop_effect = {
+					break = a
+					limit = {check_variable = {building_level@arms_factory > n}}
+					add_to_variable = {n = 1}
+					create_unit = {
+						division = "name = \"Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.3 start_equipment_factor = 0.8 start_manpower_factor = 0.5"
+						owner = this.owner
+					}
+				}
+			}
 		}
 	}
 }

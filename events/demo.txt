@@ -74,6 +74,7 @@ country_event = { # assasination attempt on matt - su
 			remove_ideas = alternis_head_of_state
 			add_ideas = needless_head_of_state
 		}
+		set_country_flag = matt_failed_assasination
 	}
 }
 news_event = { # assasination attempt on matt - news

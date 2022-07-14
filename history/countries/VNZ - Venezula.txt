@@ -1,6 +1,6 @@
 ﻿capital = 307
 
-oob = "VNZ_1936"
+oob = "GENERIC"
 
 # Starting tech
 set_technology = {

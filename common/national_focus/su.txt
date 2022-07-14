@@ -25,9 +25,9 @@ focus_tree = {
 	focus = {
 		id = CSA_New_dawn_in_the_Souther_Union
 		icon = GFX_goal_generic_amphibious_assault
-		x = 0
-		y = 1
-		relative_position_id = CSA_expand_the_USMC
+		bypass = { has_completed_focus = CSA_Matt_Dies_Tragically_JK }
+		x = 1
+		y = 0
 		cost = 10
 		#ai_will_do = {
 		#	factor = 1
@@ -38,19 +38,206 @@ focus_tree = {
 		bypass = {	
 		}
 
-		prerequisite = { focus = CSA_expand_the_USMC }
+		prerequisite = { }
 		cost = 10
 
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
 			add_political_power = 100
 			 
+		
+		}
+	}
+
+	focus = {
+		id = CSA_Convene_the_Southern_Union_Cabinet
+		icon = GFX_goal_generic_army_artillery2
+		prerequisite = { focus = CSA_New_dawn_in_the_Souther_Union }
+		bypass = { has_completed_focus = CSA_Matt_Dies_Tragically_JK }
+		x = 0
+		y = 1
+		relative_position_id = CSA_New_dawn_in_the_Souther_Union
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = AST_royal_australian_artillery
+				bonus = 1.0
+				uses = 1
+				category = artillery
+			}
+		}
+	}
+	
+	focus = {
+		id = CSA_Asess_Our_Foreign_Policy
+		icon = GFX_goal_generic_army_artillery2
+		prerequisite = { focus = CSA_Convene_the_Southern_Union_Cabinet }
+		bypass = { has_completed_focus = CSA_Matt_Dies_Tragically_JK }
+		x = -1
+		y = 1
+		relative_position_id = CSA_Convene_the_Southern_Union_Cabinet
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = AST_royal_australian_artillery
+				bonus = 1.0
+				uses = 1
+				category = artillery
+			}
+		}
+	}
+	
+	focus = {
+		id = CSA_Asess_Our_Internal_Policy
+		icon = GFX_goal_generic_army_artillery2
+		prerequisite = { focus = CSA_Convene_the_Southern_Union_Cabinet }
+		bypass = { has_completed_focus = CSA_Matt_Dies_Tragically_JK }
+		x = 1
+		y = 1
+		relative_position_id = CSA_Convene_the_Southern_Union_Cabinet
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = AST_royal_australian_artillery
+				bonus = 1.0
+				uses = 1
+				category = artillery
+			}
+		}
+	}	
+
+	focus = {
+		id = CSA_Bussinsess_as_Usual
+		icon = GFX_goal_generic_army_artillery2
+		prerequisite = { focus = CSA_Asess_Our_Foreign_Policy }
+		prerequisite = { focus = CSA_Asess_Our_Internal_Policy}
+		bypass = { has_completed_focus = CSA_Matt_Dies_Tragically_JK }
+		x = 0
+		y = 2
+		relative_position_id = CSA_Convene_the_Southern_Union_Cabinet
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = AST_royal_australian_artillery
+				bonus = 1.0
+				uses = 1
+				category = artillery
 			}
 		}
 	}
 
-	
+	focus = {
+		id = CSA_Matt_Dies_Tragically_JK
+		icon = GFX_goal_generic_army_artillery2
+		prerequisite = { focus = CSA_Bussinsess_as_Usual }
+		available = { has_country_flag = matt_failed_assassination }
+		bypass = { has_country_flag = matt_failed_assassination }
+		x = 0
+		y = 1
+		relative_position_id = CSA_Bussinsess_as_Usual
 
+		cost = 10
 
-	
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = AST_royal_australian_artillery
+				bonus = 1.0
+				uses = 1
+				category = artillery
+			}
+		}
+	}
 }

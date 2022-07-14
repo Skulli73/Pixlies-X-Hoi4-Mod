@@ -75,6 +75,7 @@ country_event = { # assasination attempt on matt - su
 			add_ideas = needless_head_of_state
 		}
 		set_country_flag = matt_failed_assasination
+		complete_national_focus = CSA_Matt_Dies_Tragically_JK
 	}
 }
 news_event = { # assasination attempt on matt - news

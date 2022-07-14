@@ -31,6 +31,9 @@ create_country_leader = {
 	ideology = nazism
 	picture = "gryn.dds"
 }
+recruit_character = needless
+recruit_character = alternis
+add_ideas = alternis_head_of_state
 create_country_leader = {
 	name = "ItzSamHD"
 	ideology = liberalism

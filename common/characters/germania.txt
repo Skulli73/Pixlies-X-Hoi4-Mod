@@ -109,4 +109,67 @@ characters = {
 			desc = KATZ_LEADER_DESC
 		}
 	}
+	alternis = {
+		name = "Alternis"
+		portraits = {
+			civillian = {
+				large = "gfx/leaders/GME/alternis.dds"
+			}
+			army = {
+				large = "gfx/leaders/GME/alternis.dds"
+				small = "gfx/interface/ideas/GME/alternis.dds"
+			}
+		}
+		advisor = {
+			slot = head_of_state
+			idea_token = alternis_head_of_state
+			name = "Alternis"
+			cost = 150
+			removal_cost = -1
+			allowed = {
+				OR = {
+					original_tag = GME
+				}
+			}
+			available = {
+				has_idea = alternis_head_of_state
+			}
+			traits = {
+				the_foreign_connection
+				fascist_orchestrator
+			}
+		}
+	}
+	needless = {
+		name = "NeedlessMeming"
+		portraits = {
+			civillian = {
+				large = "gfx/leaders/CSA/needless.dds"
+			}
+			army = {
+				large = "gfx/leaders/CSA/needless.dds"
+				small = "gfx/interface/ideas/CSA/needless.dds"
+			}
+		}
+		advisor = {
+			slot = head_of_state
+			idea_token = needless_head_of_state
+			name = "NeedlessMeming"
+			cost = 150
+			removal_cost = -1
+			allowed = {
+				OR = {
+					original_tag = GME
+					original_tag = CSA
+				}
+			}
+			available = {
+				has_idea = needless_head_of_state
+			}
+			traits = {
+				the_foreign_connection
+				incompetent_leader
+			}
+		}
+	}
 }

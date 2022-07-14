@@ -198,19 +198,13 @@ defined_text = {
 	}
 	text = {
 		trigger = {
-			original_tag = GME
-			NOT = {
-				has_global_flag = alternis_coup_failed
-			}
-			is_subject_of = CSA
+			has_idea = alternis_head_of_state
 		}
 		localization_key = "Alternis"
 	}
 	text = {
 		trigger = {
-			original_tag = GME
-			has_global_flag = alternis_coup_failed
-			is_subject_of = CSA
+			has_idea = needless_head_of_state
 		}
 		localization_key = "NeedlessMeming"
 	}
@@ -257,19 +251,13 @@ defined_text = {
 	}
 	text = {
 		trigger = {
-			original_tag = GME
-			NOT = {
-				has_global_flag = alternis_coup_failed
-			}
-			is_subject_of = CSA
+			has_idea = alternis_head_of_state
 		}
 		localization_key = "GFX_GME_alternis"
 	}
 	text = {
 		trigger = {
-			original_tag = GME
-			has_global_flag = alternis_coup_failed
-			is_subject_of = CSA
+			has_idea = needless_head_of_state
 		}
 		localization_key = "GFX_GME_needless"
 	}

@@ -24,6 +24,14 @@ set_popularities = {
 	democratic = 75
 	neutrality = 25
 }
+create_country_leader = {
+	name = "Vacant Prime Ministry"
+	ideology = liberalism
+	picture = "gfx/leaders/GME/National Assembly.dds"
+	traits = {
+		cabinet_crisiss
+	}
+}
 recruit_character = skulli73
 recruit_character = katz
 promote_character = skulli73

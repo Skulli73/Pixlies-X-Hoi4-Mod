@@ -1,0 +1,10 @@
+focus_tree = {
+	id = germanic_government_in_exile_focus
+	country = {
+		factor = 0
+		modifier = {
+			add = 20
+			original_tag = FGE
+		}
+	}
+}

@@ -1,0 +1,30 @@
+add_namespace = gge
+country_event = { #national assembly convenes
+	id = gge.2
+	title = gge.2.t
+	desc = gge.2.d
+	picture = GFX_report_event_generic_parliament
+	is_triggered_only = yes
+	option = {
+		name = gge.2.a
+		country_event = {
+			id = gge.3
+			days = 1
+		}
+	}
+}
+country_event = { #national assembly convenes
+	id = gge.3
+	title = gge.3.t
+	desc = gge.3.d
+	picture = GFX_report_event_generic_parliament
+	is_triggered_only = yes
+	option = {
+		name = gge.3.a
+		remove_country_leader_trait = cabinet_crisis
+	}
+	option = {
+		name = gge.3.b 
+		retire_character = skulli73
+	}
+}

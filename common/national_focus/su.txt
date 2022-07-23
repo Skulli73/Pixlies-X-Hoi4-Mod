@@ -21,11 +21,12 @@ focus_tree = {
 	continuous_focus_position = { x = 50 y = 1600 }
 	default = no
 
+	### STARTING FOCUS ###
 
 	focus = {
 		id = CSA_New_dawn_in_the_Souther_Union
 		icon = GFX_goal_generic_amphibious_assault
-		bypass = { has_completed_focus = CSA_Matt_Dies_Tragically_JK }
+		bypass = { has_country_flag = matt_failed_assasination }
 		x = 1
 		y = 0
 		cost = 10
@@ -53,7 +54,7 @@ focus_tree = {
 		id = CSA_Convene_the_Southern_Union_Cabinet
 		icon = GFX_goal_generic_army_artillery2
 		prerequisite = { focus = CSA_New_dawn_in_the_Souther_Union }
-		bypass = { has_completed_focus = CSA_Matt_Dies_Tragically_JK }
+		bypass = { has_country_flag = matt_failed_assasination }
 		x = 0
 		y = 1
 		relative_position_id = CSA_New_dawn_in_the_Souther_Union
@@ -91,7 +92,7 @@ focus_tree = {
 		id = CSA_Asess_Our_Foreign_Policy
 		icon = GFX_goal_generic_army_artillery2
 		prerequisite = { focus = CSA_Convene_the_Southern_Union_Cabinet }
-		bypass = { has_completed_focus = CSA_Matt_Dies_Tragically_JK }
+		bypass = { has_country_flag = matt_failed_assasination }
 		x = -1
 		y = 1
 		relative_position_id = CSA_Convene_the_Southern_Union_Cabinet
@@ -129,7 +130,7 @@ focus_tree = {
 		id = CSA_Asess_Our_Internal_Policy
 		icon = GFX_goal_generic_army_artillery2
 		prerequisite = { focus = CSA_Convene_the_Southern_Union_Cabinet }
-		bypass = { has_completed_focus = CSA_Matt_Dies_Tragically_JK }
+		bypass = { has_country_flag = matt_failed_assasination }
 		x = 1
 		y = 1
 		relative_position_id = CSA_Convene_the_Southern_Union_Cabinet
@@ -168,7 +169,7 @@ focus_tree = {
 		icon = GFX_goal_generic_army_artillery2
 		prerequisite = { focus = CSA_Asess_Our_Foreign_Policy }
 		prerequisite = { focus = CSA_Asess_Our_Internal_Policy}
-		bypass = { has_completed_focus = CSA_Matt_Dies_Tragically_JK }
+		bypass = { has_country_flag = matt_failed_assasination }
 		x = 0
 		y = 2
 		relative_position_id = CSA_Convene_the_Southern_Union_Cabinet
@@ -206,8 +207,12 @@ focus_tree = {
 		id = CSA_Matt_Dies_Tragically_JK
 		icon = GFX_goal_generic_army_artillery2
 		prerequisite = { focus = CSA_Bussinsess_as_Usual }
-		available = { has_country_flag = matt_failed_assassination }
-		bypass = { has_country_flag = matt_failed_assassination }
+		prerequisite = { has_country_flag = matt_failed_assasination }
+		available = { 
+			has_country_flag = matt_failed_assasination }
+		bypass = { 
+			has_country_flag = matt_failed_assasination }
+
 		x = 0
 		y = 1
 		relative_position_id = CSA_Bussinsess_as_Usual
@@ -240,4 +245,316 @@ focus_tree = {
 			}
 		}
 	}
+
+	focus = {
+		id =  CSA_Convene_the_Conference_of_Governors
+		icon = GFX_goal_generic_army_artillery2
+		prerequisite = { focus = CSA_Matt_Dies_Tragically_JK }
+		x = 0
+		y = 1
+		relative_position_id = CSA_Matt_Dies_Tragically_JK
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = AST_royal_australian_artillery
+				bonus = 1.0
+				uses = 1
+				category = artillery
+			}
+		}
+	}
+
+	focus = {
+		id =  CSA_Let_the_Debates_Start
+		icon = GFX_goal_generic_army_artillery2
+		prerequisite = { focus = CSA_Convene_the_Conference_of_Governors }
+		x = 0
+		y = 1
+		relative_position_id = CSA_Convene_the_Conference_of_Governors
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = AST_royal_australian_artillery
+				bonus = 1.0
+				uses = 1
+				category = artillery
+			}
+		}
+	}
+
+	### CONGRESS FOCUS ###
+
+	focus = {
+		id =  CSA_the_Congress_Debates
+		icon = GFX_goal_generic_army_artillery2
+		available = {
+			if = {
+				has_completed_focus = CSA_Let_the_Debates_Start
+				}
+		 }
+		x = 7
+		y = 0
+		relative_position_id = CSA_New_dawn_in_the_Souther_Union
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = AST_royal_australian_artillery
+				bonus = 1.0
+				uses = 1
+				category = artillery
+			}
+		}
+	}
+
+	focus = {
+		id =  CSA_Congress_The_Economy
+		icon = GFX_goal_generic_army_artillery2
+		prerequisite = { focus = CSA_the_Congress_Debates }
+		x = 0
+		y = 1
+		relative_position_id = CSA_the_Congress_Debates
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = AST_royal_australian_artillery
+				bonus = 1.0
+				uses = 1
+				category = artillery
+			}
+		}
+	}
+
+	focus = {
+		id =  CSA_Congress_The_Economy_Option1
+		icon = GFX_CSA_Based_Liberalism
+		prerequisite = { focus = CSA_Congress_The_Economy }
+		mutually_exclusive = { focus = CSA_Congress_The_Economy_Option2 }
+		mutually_exclusive = { focus = CSA_Congress_The_Economy_Option3 }
+		x = -2
+		y = 1
+		relative_position_id = CSA_Congress_The_Economy
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = AST_royal_australian_artillery
+				bonus = 1.0
+				uses = 1
+				category = artillery
+			}
+		}
+	}
+
+	focus = {
+		id =  CSA_Congress_The_Economy_Option2
+		icon = GFX_CSA_EconPopulism
+		prerequisite = { focus = CSA_Congress_The_Economy }
+		mutually_exclusive = { focus = CSA_Congress_The_Economy_Option1 }
+		mutually_exclusive = { focus = CSA_Congress_The_Economy_Option3 }
+		x = 0
+		y = 1
+		relative_position_id = CSA_Congress_The_Economy
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = AST_royal_australian_artillery
+				bonus = 1.0
+				uses = 1
+				category = artillery
+			}
+		}
+	}
+
+	focus = {
+		id =  CSA_Congress_The_Economy_Option3
+		icon = GFX_CSA_South_African_Economy_corrupt
+		prerequisite = { focus = CSA_Congress_The_Economy }
+		mutually_exclusive = { focus = CSA_Congress_The_Economy_Option1 }
+		mutually_exclusive = { focus = CSA_Congress_The_Economy_Option2 }
+		x = 2
+		y = 1
+		relative_position_id = CSA_Congress_The_Economy
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = AST_royal_australian_artillery
+				bonus = 1.0
+				uses = 1
+				category = artillery
+			}
+		}
+	}
+	focus = {
+		id =  CSA_Congress_Governance
+		icon = GFX_goal_generic_army_artillery2
+		prerequisite = { 
+			focus = CSA_Congress_The_Economy_Option1
+			 focus = CSA_Congress_The_Economy_Option2 
+			 focus = CSA_Congress_The_Economy_Option3 }
+		x = 0
+		y = 2
+		relative_position_id = CSA_Congress_The_Economy
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = AST_royal_australian_artillery
+				bonus = 1.0
+				uses = 1
+				category = artillery
+			}
+		}
+	}
+
+
 }

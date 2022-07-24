@@ -39,10 +39,22 @@ country_event = { #vote of no confidence
 	is_triggered_only = yes
 	option = {
 		name = gge.3.a
+		hidden_effect = {
+			country_event = {
+				id = gge.6
+				days = 1
+			}
+		}
+		ai_chance = {
+			factor = 50
+		}
 	}
 	option = {
 		name = gge.3.b 
 		retire_character = skulli73
+		ai_chance = {
+			factor = 50
+		}
 	}
 }
 news_event = {
@@ -67,7 +79,7 @@ news_event = {
 		name = gge.5.a
 	}
 }
-country_event = { #day 3, skulli proposes new cabinet
+country_event = { #day 3, skulli proposes to create smaller ministries
 	id = gge.6
 	title = gge.6.t
 	desc = gge.6.d
@@ -75,5 +87,21 @@ country_event = { #day 3, skulli proposes new cabinet
 	is_triggered_only = yes
 	option = {
 		name = gge.6.a
+		hidden_effect = {
+			country_event = {
+				id = gge.7
+				hours = 12
+			}
+		}
+	}
+}
+country_event = {
+	id = gge.7
+	title = gge.7.t
+	desc = gge.7.d
+	picture = GFX_report_event_generic_parliament
+	is_triggered_only = yes
+	option = {
+		name = gge.7.a
 	}
 }

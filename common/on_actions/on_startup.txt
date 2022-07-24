@@ -250,6 +250,18 @@ on_actions = {
 					}
 				}
 			}
-		}
+			every_state = {
+				limit = {
+					is_core_of = GME
+				}
+				add_core_of = FGE
+			}
+			FGE = {
+				country_event = {
+					id = gge.1
+					days = 15
+				}
+			}
+		} #effect bracket close
 	}
 }

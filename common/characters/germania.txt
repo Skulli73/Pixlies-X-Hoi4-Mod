@@ -30,12 +30,32 @@ characters = {
 			}
 			traits = {
 				exiled_revolutionary
-				exiled
-				economic_reformer
 				staunch_constitutionalist
 				world_war_one_trauma
-				great_war_hero
 				figurehead_president
+			}
+		}
+		advisor = {
+			slot = minister_of_internal_affairs
+			idea_token = skulli_minister_of_internal_affairs
+			name = "Skulli73"
+			cost = 75
+			removal_cost = -1
+			allowed = {
+				OR = {
+					original_tag = GME
+					original_tag = FGE
+				}
+			}
+			allowed_civil_war = {
+				has_government = democratic
+			}
+			available = {
+				has_idea = skulli_head_of_state
+			}
+			traits = {
+				staunch_constitutionalist
+				democratic_crusader
 			}
 		}
 		country_leader = {
@@ -43,7 +63,7 @@ characters = {
 			traits = {
 				exiled_revolutionary
 				exiled
-				cabinet_crisis
+				
 				economic_reformer
 				staunch_constitutionalist
 				world_war_one_trauma
@@ -169,6 +189,69 @@ characters = {
 			traits = {
 				the_foreign_connection
 				incompetent_leader
+			}
+		}
+	}
+	ace = {
+		name = "Ace"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/GME/ace.dds"
+			}
+			army = {
+				large = "gfx/leaders/GME/ace.dds"
+				small = "gfx/interface/ideas/GME/ace.dds"
+			}
+		}
+		advisor = {
+			slot = minister_of_foreign_affairs
+			idea_token = ace_minister_of_foreign_affairs
+			name = "Ace"
+			cost = 150
+			removal_cost = -1
+			allowed = {
+				OR = {
+					original_tag = GME
+					original_tag = FGE
+				}
+			}
+			available = {
+				has_idea = ace_minister_of_foreign_affairs
+			}
+			traits = {
+				tenacious_negotiator
+				liberal_democratic_paragon
+			}
+		}
+	}
+	sam = {
+		name = "ItzSam"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/GME/sam.dds"
+			}
+			army = {
+				large = "gfx/leaders/GME/sam.dds"
+				small = "gfx/interface/ideas/GME/sam.dds"
+			}
+		}
+		advisor = {
+			slot = minister_of_internal_affairs
+			idea_token = sam_minister_of_internal_affairs
+			name = "ItzSam"
+			cost = 150
+			removal_cost = -1
+			allowed = {
+				OR = {
+					original_tag = GME
+					original_tag = FGE
+				}
+			}
+			available = {
+				has_idea = sam_minister_of_internal_affairs
+			}
+			traits = {
+				silent_workhorse
 			}
 		}
 	}

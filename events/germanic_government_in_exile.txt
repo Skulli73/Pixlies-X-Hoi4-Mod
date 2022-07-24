@@ -1,4 +1,20 @@
 add_namespace = gge
+country_event = {
+	id = gge.1
+	title = gge.1.t
+	desc = gge.1.d
+	is_triggered_only = yes
+	option = {
+		name = gge.1.a
+		add_country_leader_trait = cabinet_crisis
+		hidden_effect = {
+			country_event = {
+				id = gge.2
+				days = 30
+			}
+		}
+	}
+}
 country_event = { #national assembly convenes
 	id = gge.2
 	title = gge.2.t
@@ -7,13 +23,15 @@ country_event = { #national assembly convenes
 	is_triggered_only = yes
 	option = {
 		name = gge.2.a
-		country_event = {
-			id = gge.3
-			days = 1
+		hidden_effect = {
+			country_event = {
+				id = gge.3
+				days = 1
+			}
 		}
 	}
 }
-country_event = { #national assembly convenes
+country_event = { #vote of no confidence
 	id = gge.3
 	title = gge.3.t
 	desc = gge.3.d
@@ -21,10 +39,41 @@ country_event = { #national assembly convenes
 	is_triggered_only = yes
 	option = {
 		name = gge.3.a
-		remove_country_leader_trait = cabinet_crisis
 	}
 	option = {
 		name = gge.3.b 
 		retire_character = skulli73
+	}
+}
+news_event = {
+	id = gge.4
+	title = gge.4.t
+	desc = gge.4.d
+	picture = GFX_news_event_generic_parliament
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = gge.4.a
+	}
+}
+news_event = {
+	id = gge.5
+	title = gge.5.t
+	desc = gge.5.d
+	picture = GFX_news_event_generic_parliament
+	major = yes
+	is_triggered_only = yes
+	option = {
+		name = gge.5.a
+	}
+}
+country_event = { #day 3, skulli proposes new cabinet
+	id = gge.6
+	title = gge.6.t
+	desc = gge.6.d
+	picture = GFX_report_event_generic_parliament
+	is_triggered_only = yes
+	option = {
+		name = gge.6.a
 	}
 }

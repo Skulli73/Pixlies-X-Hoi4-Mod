@@ -223,6 +223,49 @@ characters = {
 				liberal_democratic_paragon
 			}
 		}
+		country_leader = {
+			ideology = liberalism
+			traits = {
+				
+			}
+		}
+	}
+	atalius = {
+		name = "Atalius"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/GME/atalius.dds"
+			}
+			army = {
+				large = "gfx/leaders/GME/atalius.dds"
+				small = "gfx/interface/ideas/GME/atalius.dds"
+			}
+		}
+		advisor = {
+			slot = minister_of_foreign_affairs
+			idea_token = atalius_minister_of_foreign_affairs
+			name = "Ace"
+			cost = 150
+			removal_cost = -1
+			allowed = {
+				OR = {
+					original_tag = GME
+					original_tag = FGE
+				}
+			}
+			available = {
+				has_idea = atalius_minister_of_foreign_affairs
+			}
+			traits = {
+				conservative_nationalist
+			}
+		}
+		country_leader = {
+			ideology = conservatism
+			traits = {
+				
+			}
+		}
 	}
 	sam = {
 		name = "ItzSam"
@@ -252,6 +295,46 @@ characters = {
 			}
 			traits = {
 				silent_workhorse
+			}
+			
+		}
+		country_leader = {
+			name = "ItzSamHD"
+			ideology = liberalism
+			traits = {
+				silent_workhorse
+				exiled_revolutionary
+				imperial_connections
+				staunch_constitutionalist
+				great_war_hero
+			}
+		}
+	}
+	fortressia = {
+		name = "Fortressia"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/GME/fortressia.dds"
+			}
+			army = {
+				large = "gfx/leaders/GME/fortressia.dds"
+				small = "gfx/interface/ideas/GME/fortressia.dds"
+			}
+		}
+		country_leader = {
+			name = "Fortressia"
+			ideology = conservatism
+			traits = {
+				staunch_monarchist
+				monarchist_puppet
+			}
+		}
+		advisor = {
+			slot = head_of_state
+			idea_token = fortressia_head_of_state
+			traits = {
+				staunch_monarchist
+				monarchist_puppet
 			}
 		}
 	}

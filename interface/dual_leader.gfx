@@ -73,4 +73,8 @@ spriteTypes = {
 		name = GFX_ESP_birb
 		texturefile = "gfx/leaders/ESP/birb.dds"
 	}
+	spriteType = {
+		name = GFX_GME_fortressia
+		texturefile = "gfx/leaders/GME/fortressia.dds"
+	}
 }

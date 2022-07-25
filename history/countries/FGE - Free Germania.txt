@@ -42,4 +42,6 @@ add_ideas = sam_minister_of_internal_affairs
 promote_character = skulli73
 recruit_character = ace
 add_ideas = ace_minister_of_foreign_affairs
+recruit_character = atalius
+recruit_character = fortressia
 inherit_technology = CSA

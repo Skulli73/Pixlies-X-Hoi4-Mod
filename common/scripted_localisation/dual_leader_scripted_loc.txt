@@ -227,6 +227,12 @@ defined_text = {
 		localization_key = "Karl"
 	}
 	text = {
+		trigger = {
+			has_idea = fortressia_head_of_state
+		}
+		localization_key = "Fortressia"
+	}
+	text = {
 		localization_key = DEFAULT_TITLE
 	}
 }
@@ -278,6 +284,12 @@ defined_text = {
 			has_idea = birb_head_of_state
 		}
 		localization_key = "GFX_ESP_birb"
+	}
+	text = {
+		trigger = {
+			has_idea = fortressia_head_of_state
+		}
+		localization_key = "GFX_GME_fortressia"
 	}
 	text = {
 		localization_key = "GFX_portrait_bg_blank"

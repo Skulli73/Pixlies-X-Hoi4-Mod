@@ -7,4 +7,82 @@ focus_tree = {
 			original_tag = FGE
 		}
 	}
+	focus = {
+		id = FGE_bypass_the_national_assembly
+		icon = GFX_focus_usa_voter_registration_act
+		cost = 10
+		x = 5
+		y = 0
+		available = {
+			has_country_flag = FGE_smaller_ministries_denied
+		}
+		completion_reward = {
+			add_stability = 0.1
+		}
+	}
+	focus = {
+		id = FGE_royal_prerogative
+		icon = GFX_focus_generic_monarchy_1
+		cost = 10
+		x = -1
+		y = 1
+		relative_position_id = FGE_bypass_the_national_assembly
+		prerequisite = {
+			focus = FGE_bypass_the_national_assembly
+		}
+		completion_reward = {
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.2
+			}
+			FGE_decrease_inefficient_government = yes
+		}
+	}
+	focus = {
+		id = FGE_assemble_an_emergency_committee
+		icon = GFX_focus_generic_military_academy
+		cost = 10
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = FGE_bypass_the_national_assembly
+		}
+		relative_position_id = FGE_bypass_the_national_assembly
+		completion_reward = {
+			FGE_decrease_inefficient_government = yes
+		}
+	}
+	focus = {
+		id = FGE_cabinet_skulli_three
+		icon = GFX_focus_eng_concessions_to_the_trade_unions
+		cost = 10
+		x = 0
+		y = 2
+		prerequisite = {
+			focus = FGE_assemble_an_emergency_committee
+		}
+		prerequisite = {
+			focus = FGE_royal_prerogative
+		}
+		relative_position_id = FGE_bypass_the_national_assembly
+		completion_reward = {
+			add_political_power = 200
+			add_stability = 0.2
+		}
+	}
+	focus = {
+		id = FGE_rule_by_decree
+		icon = GFX_goal_generic_forceful_treaty
+		cost = 10
+		x = 0
+		y = 3
+		prerequisite = {
+			focus = FGE_cabinet_skulli_three
+		}
+		relative_position_id = FGE_bypass_the_national_assembly
+		completion_reward = {
+			FGE_decrease_inefficient_government = yes
+			add_country_leader_trait = emergency_powers
+		}
+	}
 }

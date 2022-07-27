@@ -133,6 +133,9 @@ country_event = { #day 3, prime minister election or reelection
 			}
 		}
 		promote_character = sam
+		ai_chance = {
+			factor = 40
+		}
 	}
 	option = {
 		name = gge.8.b
@@ -142,6 +145,9 @@ country_event = { #day 3, prime minister election or reelection
 				days = 10
 			}
 		}
+		ai_chance = {
+			factor = 40
+		}
 	}
 	option = {
 		name = gge.8.c
@@ -150,6 +156,9 @@ country_event = { #day 3, prime minister election or reelection
 				id = gge.11
 				hours = 12
 			}
+		}
+		ai_chance = {
+			factor = 20
 		}
 	}
 }
@@ -180,6 +189,9 @@ country_event = { #election
 		}
 		promote_character = ace
 		add_ideas = atalius_minister_of_foreign_affairs
+		ai_chance = {
+			factor = 50
+		}
 	}
 	option = {
 		name = gge.10.b
@@ -190,6 +202,9 @@ country_event = { #election
 			}
 		}
 		promote_character = sam
+		ai_chance = {
+			factor = 50
+		}
 	}
 }
 country_event = { #emperor appoints new pm
@@ -211,5 +226,38 @@ country_event = { #emperor appoints new pm
 			elections_allowed = yes
 		}
 		add_ideas = fortressia_head_of_state
+	}
+}
+news_event = {
+	id = gge.12
+	title = gge.12.t
+	desc = gge.12.d
+	picture = GFX_news_event_election_vote
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = gge.12.a
+	}
+}
+news_event = {
+	id = gge.13
+	title = gge.13.t
+	desc = gge.13.d
+	picture = GFX_news_event_election_vote
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = gge.13.a
+	}
+}
+news_event = {
+	id = gge.14
+	title = gge.14.t
+	desc = gge.14.d
+	picture = GFX_news_event_generic_read_write
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = gge.14.a
 	}
 }

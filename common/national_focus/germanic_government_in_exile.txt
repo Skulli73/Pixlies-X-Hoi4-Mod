@@ -16,6 +16,9 @@ focus_tree = {
 		available = {
 			has_country_flag = FGE_smaller_ministries_denied
 		}
+		mutually_exclusive = {
+			focus = FGE_new_pm
+		}
 		completion_reward = {
 			add_stability = 0.1
 		}
@@ -83,6 +86,227 @@ focus_tree = {
 		completion_reward = {
 			FGE_decrease_inefficient_government = yes
 			add_country_leader_trait = emergency_powers
+		}
+	}
+
+	focus = {
+		id = FGE_new_pm
+		icon = GFX_goal_generic_propaganda
+		cost = 2
+		x = 35
+		y = 0
+		available = {
+			NOT = {
+				has_country_leader = {
+					character = skulli73
+					ruling_only = yes
+				}
+				has_country_leader = {
+					name = "Vacant Prime Ministry"
+					ruling_only = yes
+				}
+			}
+		}
+		mutually_exclusive = {
+			focus = FGE_bypass_the_national_assembly
+		}
+		completion_reward = {
+			add_popularity = {
+				ideology = democratic
+				popularity = .05
+			}
+		}
+	}
+	focus = {
+		id = FGE_imperial_cooperation
+		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		cost = 5
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = FGE_new_pm
+		}
+		mutually_exclusive = {
+			focus = FGE_abolish_the_monarchy
+		}
+		available = {
+			OR = {
+				has_country_leader = {
+					character = fortressia
+					ruling_only = yes
+				}
+				has_country_leader = {
+					character = katz
+					ruling_only = yes
+				}
+				has_country_leader = {
+					character = ace
+					ruling_only = yes
+				}
+			}
+		}
+		relative_position_id = FGE_new_pm
+		completion_reward = {
+			add_popularity = {
+				ideology = neutrality
+				popularity = .1
+			}
+			add_stability = .1
+		}
+	}
+	focus = {
+		id = FGE_abolish_the_monarchy
+		icon = GFX_focus_rom_abdicate
+		cost = 10
+		x = 3
+		y = 1
+		prerequisite = {
+			focus = FGE_new_pm
+		}
+		available = {
+			has_country_leader = {
+				character = sam
+				ruling_only = yes
+			}
+		}
+		relative_position_id = FGE_new_pm
+		mutually_exclusive = {
+			focus = FGE_imperial_cooperation
+		}
+		completion_reward = {
+			remove_ideas = katz_head_of_state
+			set_cosmetic_tag = GME_REPUBLIC
+			add_popularity = {
+				ideology = neutrality
+				popularity = -.3
+			}
+			hidden_effect = {
+				news_event = {
+					id = gge.15
+					hours = 6
+				}
+			}
+		}
+	}
+	focus = {
+		id = FGE_empower_the_emperor
+		icon = GFX_focus_generic_monarchy_2
+		cost = 10
+		x = 0
+		y = 1
+		available = {
+			has_country_leader = {
+				character = fortressia
+				ruling_only = yes
+			}
+		}
+		prerequisite = {
+			focus = FGE_imperial_cooperation
+		}
+		prerequisite = {
+			focus = FGE_cabinet_new_pm
+		}
+		mutually_exclusive = {
+			focus = FGE_repeal_emergency_powers
+		}
+		relative_position_id = FGE_imperial_cooperation
+		completion_reward = {
+			set_politics = {
+				ruling_party = neutrality
+				elections_allowed = yes
+			}
+			add_ideas = fortressia_head_of_state
+			FGE_decrease_inefficient_government = yes
+		}
+	}
+	focus = {
+		id = FGE_cabinet_new_pm
+		icon = GFX_focus_eng_concessions_to_the_trade_unions
+		cost = 5
+		x = -1
+		y = 1
+		relative_position_id = FGE_new_pm
+		prerequisite = {
+			focus = FGE_new_pm
+		}
+		completion_reward = {
+			IF = {
+				limit = {
+					has_country_leader = {
+						character = ace
+						ruling_only = yes
+					}
+				}
+				add_ideas = atalius_minister_of_foreign_affairs
+			}
+			add_ideas = atalius_minister_of_defense
+			add_ideas = phantom_minister_of_economy
+			add_political_power = 200
+			add_stability = .2
+			FGE_decrease_inefficient_government = yes
+		}
+	}
+	focus = {
+		id = FGE_repeal_emergency_powers
+		icon = GFX_focus_renounce_the_treaty_of_trianon
+		cost = 7.5
+		x = -1
+		y = 1
+		relative_position_id = FGE_cabinet_new_pm
+		prerequisite = {
+			focus = FGE_cabinet_new_pm
+		}
+		mutually_exclusive = {
+			focus = FGE_empower_the_emperor
+		}
+		available = {
+			NOT = {
+				OR = {
+					has_country_leader = {
+						character = fortressia
+						ruling_only = yes
+					}
+					has_country_leader = {
+						character = katz
+						ruling_only = yes
+					}
+				}
+			}
+		}
+		completion_reward = {
+			add_popularity = {
+				ideology = democratic
+				popularity = .2
+			}
+		}
+	}
+	focus = {
+		id = FGE_abolish_unnecessary_bureaocracy
+		icon = GFX_focus_hol_the_foundations_of_defense
+		cost = 7.5
+		x = 0
+		y = 1
+		relative_position_id = FGE_repeal_emergency_powers
+		prerequisite = {
+			focus = FGE_repeal_emergency_powers
+		}
+		completion_reward = {
+			FGE_decrease_inefficient_government = yes
+		}
+	}
+	focus = {
+		id = FGE_efficient_law_making_progress
+		icon = GFX_focus_hol_the_foundations_of_defense
+		cost = 10
+		x = 2
+		y = 1
+		relative_position_id = FGE_abolish_unnecessary_bureaocracy
+		prerequisite = {
+			focus = FGE_abolish_unnecessary_bureaocracy
+			focus = FGE_empower_the_emperor
+		}
+		completion_reward = {
+			FGE_decrease_inefficient_government = yes
 		}
 	}
 }

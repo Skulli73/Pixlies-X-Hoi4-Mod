@@ -242,9 +242,28 @@ characters = {
 			}
 		}
 		advisor = {
+			slot = minister_of_defense
+			idea_token = atalius_minister_of_defense
+			name = "Ataliuzs"
+			cost = 150
+			removal_cost = -1
+			allowed = {
+				OR = {
+					original_tag = GME
+					original_tag = FGE
+				}
+			}
+			available = {
+				has_idea = atalius_minister_of_defense
+			}
+			traits = {
+				conservative_nationalist
+			}
+		}
+		advisor = {
 			slot = minister_of_foreign_affairs
 			idea_token = atalius_minister_of_foreign_affairs
-			name = "Ace"
+			name = "Atalius"
 			cost = 150
 			removal_cost = -1
 			allowed = {
@@ -335,6 +354,26 @@ characters = {
 			traits = {
 				staunch_monarchist
 				monarchist_puppet
+			}
+		}
+	}
+	phantom = {
+		name = "Mr. Phat0m"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/GME/phantom.dds"
+			}
+			army = {
+				large = "gfx/leaders/GME/phantom.dds"
+				small = "gfx/interface/ideas/GME/phantom.dds"
+			}
+		}
+		advisor = {
+			slot = minister_of_economy
+			idea_token = phantom_minister_of_economy
+			traits = {
+				technocrat
+				german_technological_patron
 			}
 		}
 	}

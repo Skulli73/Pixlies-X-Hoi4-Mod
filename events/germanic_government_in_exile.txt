@@ -188,7 +188,7 @@ country_event = { #election
 			}
 		}
 		promote_character = ace
-		add_ideas = atalius_minister_of_foreign_affairs
+		remove_ideas = ace_minister_of_foreign_affairs
 		ai_chance = {
 			factor = 50
 		}
@@ -221,11 +221,7 @@ country_event = { #emperor appoints new pm
 				hours = 12
 			}
 		}
-		set_politics = {
-			ruling_party = neutrality
-			elections_allowed = yes
-		}
-		add_ideas = fortressia_head_of_state
+		promote_character = fortressia
 	}
 }
 news_event = {
@@ -259,5 +255,16 @@ news_event = {
 	major = yes
 	option = {
 		name = gge.14.a
+	}
+}
+news_event = {
+	id = gge.15
+	title = gge.15.t
+	desc = gge.15.d
+	picture = GFX_news_event_generic_parliament
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = gge.15.a
 	}
 }

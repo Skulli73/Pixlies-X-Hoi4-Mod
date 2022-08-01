@@ -1,3 +1,6 @@
 brt_collapse = {
 	priority = 100
 }
+demo = {
+	priority = 50
+}

@@ -1,0 +1,27 @@
+demo = {
+	TRL_wargoal_CSA = {
+		available = {
+			date > 53.01.26
+		}
+		allowed = {
+			tag = TRL
+		}
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 100000
+		}
+		days_remove = 100
+		war_with_on_remove = CSA
+		war_with_on_remove = GME
+		complete_effect = {
+			create_wargoal = {
+				target = GME
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = CSA
+				type = puppet_wargoal_focus
+			}
+		}
+	}
+}

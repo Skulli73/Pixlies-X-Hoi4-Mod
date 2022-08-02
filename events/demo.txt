@@ -11,6 +11,7 @@ country_event = { #turuls unally su - turuls
 	option = {
 		name = demo.01.a
 		leave_faction = yes
+		create_faction = "Turul Sphere"
 		CSA = {
 			country_event = {
 				id = demo.02

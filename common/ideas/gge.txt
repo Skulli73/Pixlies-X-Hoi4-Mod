@@ -30,5 +30,16 @@ ideas = {
 				production_speed_arms_factory_factor = -0.15
 			}
 		}
+		FGE_isolate_the_empire = {
+			name = FGE_isolate_the_empire
+			picture = generic_democratic_opposition
+			modifier = {
+				improve_relations_maintain_cost_factor = -.5
+				opinion_gain_monthly_factor = 2.5
+				opinion_gain_monthly_same_ideology_factor = 2.5
+				diplomatic_pressure_mission_factor = 2
+				boost_ideology_mission_factor = 2
+			}
+		}
 	}
 }

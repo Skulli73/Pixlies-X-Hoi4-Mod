@@ -1,0 +1,119 @@
+FGE_GME_resistance = {
+	contact_rebels = {
+		cost = 150
+		state_target = yes
+		visible = {
+			FROM = {
+				is_owned_by = GME
+				is_core_of = GME
+				is_core_of = FGE
+			}
+			has_completed_focus = FGE_coordinate_resistance
+		}
+		allowed = {
+			tag = FGE
+		}
+		available = {
+			has_equipment = {
+				infantry_equipment > 1000
+			}
+		}
+		days_remove = 30
+		remove_effect = {
+			FROM = {
+				set_demilitarized_zone = yes
+				remove_core_of = OWNER
+				start_resistance = FGE
+			}
+		}
+		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -1000
+			}
+		}
+		ai_will_do = {
+			factor = 50
+		}
+		on_map_mode = map_only
+	}
+	support_rebels = {
+		cost = 150
+		state_target = yes
+		visible = {
+			FROM = {
+				is_owned_by = GME
+				NOT = {is_core_of = GME}
+				is_core_of = FGE
+			}
+			has_completed_focus = FGE_coordinate_resistance
+		}
+		allowed = {
+			tag = FGE
+		}
+		available = {
+			has_equipment = {
+				infantry_equipment > 500
+			}
+		}
+		days_remove = 30
+		remove_effect = {
+			FROM = {
+				hidden_effect = {
+					set_demilitarized_zone = yes
+				}
+				add_resistance = .05
+			}
+		}
+		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -500
+			}
+			FROM = {
+				add_resistance = .05
+			}
+		}
+		ai_will_do = {
+			factor = 50
+		}
+	}
+	fight_rebels = {
+		cost = 50
+		state_target = yes
+		visible = {
+			FROM = {
+				is_owned_by = GME
+				NOT = {is_core_of = GME}
+				is_core_of = FGE
+			}
+		}
+		allowed = {
+			tag = GME
+		}
+		available = {
+			has_equipment = {
+				infantry_equipment > 200
+			}
+			FROM = {
+				compliance > .5
+			}
+		}
+		days_remove = 30
+		remove_effect = {
+			FROM = {
+				set_demilitarized_zone = no
+				add_core_of = ROOT
+			}
+		}
+		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -200
+			}
+		}
+		ai_will_do = {
+			factor = 50
+		}
+	}
+}

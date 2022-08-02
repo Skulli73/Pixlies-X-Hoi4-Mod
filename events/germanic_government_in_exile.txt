@@ -268,3 +268,195 @@ news_event = {
 		name = gge.15.a
 	}
 }
+country_event = {
+	id = gge.16
+	title = gge.16.t
+	desc = gge.16.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+	option = {
+		name = gge.16.a
+		diplomatic_relation = {
+			country = FGE
+			relation = non_aggression_pact
+		}
+		set_global_flag = FGE_TRL_pact
+		every_country = {
+			limit = {
+				is_in_faction_with = FGE
+			}
+			news_event = {
+				id = gge.17
+				hours = 12
+			}
+		}
+		ai_chance = {
+			factor = 100
+		}
+	}
+	option = {
+		name = gge.16.b
+	}
+}
+news_event = {
+	id = gge.17
+	title = gge.17.t
+	desc = gge.17.d
+	picture = GFX_news_event_generic_read_write
+	is_triggered_only = yes
+	option = {
+		name = gge.17.a
+		ai_chance = {
+			factor = 50
+		}
+	}
+	option = {
+		name = gge.17.b
+		leave_faction = yes
+		trigger = {
+			tag = ZAP
+		}
+		ai_chance = {
+			factor = 50
+		}
+	}
+}
+country_event = {
+	id = gge.18
+	title = gge.18.t
+	desc = gge.18.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+	option = {
+		name = gge.18.a
+		every_state = {
+			limit = {
+				is_owned_and_controlled_by = FGE
+				OR = {
+					region = 188
+					region = 187
+					state = 333
+				}
+			}
+			transfer_state_to = ROOT
+		}
+		set_global_flag = FGE_JPN_deal
+		add_popularity = {
+			ideology = neutrality
+			popularity = 0.5
+		}
+		IF = {
+			limit = {
+				is_in_faction_with = CSA
+			}
+			leave_faction = yes
+		}
+		ai_chance = {
+			factor = 75
+		}
+		hidden_effect = {
+			news_event = {
+				id = gge.19
+				days = 1
+			}
+		}
+	}
+	option = {
+		name = gge.18.b
+		ai_chance = {
+			factor = 25
+		}
+		FGE = {
+			country_event = {
+				id = gge.20
+		 		hours = 6
+			}
+		}
+	}
+}
+news_event = {
+	id = gge.19
+	title = gge.19.t
+	desc = gge.19.d
+	picture = GFX_news_event_generic_read_write
+	is_triggered_only = yes
+	major = yes 
+	option = { 
+		name = gge.19.a
+	}
+}
+country_event = {   
+	id = gge.20
+	title = gge.20.t
+	desc = gge.20.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+	option = {
+		name = gge.20.a
+	}
+}
+country_event = {   
+	id = gge.21
+	title = gge.21.t
+	desc = gge.21.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+	option = {
+		name = gge.21.a
+		ai_chance = {
+			factor = 100
+		}
+		leave_faction = yes
+		set_politics = {
+			ruling_party = neutrality
+		}
+		add_popularity = {
+			popularity = 1
+			ideology = neutrality
+		}
+		news_event = {
+			id = gge.23
+		}
+	}
+	option = {
+		name = gge.21.b
+	}
+}
+country_event = {   
+	id = gge.22
+	title = gge.21.t
+	desc = gge.22.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+	option = {
+		name = gge.22.a
+		ai_chance = {
+			factor = 100
+		}
+		leave_faction = yes
+		set_politics = {
+			ruling_party = neutrality
+		}
+		add_popularity = {
+			popularity = 1
+			ideology = neutrality
+		}
+		news_event = {
+			id = gge.23
+		}
+	}
+	option = {
+		name = gge.22.b
+	}
+}
+news_event = {
+	id = gge.23
+	title = gge.23.t
+	desc = gge.23.d
+	picture = GFX_news_event_generic_read_write
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = gge.23.a
+	}
+}

@@ -325,4 +325,255 @@ focus_tree = {
 			FGE_decrease_inefficient_government = yes
 		}
 	}
+	focus = {
+		id = FGE_coordinate_resistance
+		icon = GFX_goal_generic_demand_territory
+		cost = 5
+		x = 15
+		y = 1
+		prerequisite = {
+			focus = FGE_bypass_the_national_assembly
+			focus = FGE_new_pm
+		}
+		available = {
+			NOT = {
+				OR = {
+					has_idea = inefficient_government_1
+					has_idea = inefficient_government_2
+					has_idea = inefficient_government_3
+				}
+			}
+		}
+		relative_position_id = FGE_bypass_the_national_assembly
+		completion_reward = {
+			unlock_decision_category_tooltip = FGE_GME_resistance
+		}
+	}
+	focus = {
+		id = FGE_isolate_the_empire
+		icon = GFX_goal_generic_defence
+		cost = 7.5
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = FGE_coordinate_resistance
+		}
+		relative_position_id = FGE_coordinate_resistance
+		completion_reward = {
+			add_ideas = FGE_isolate_the_empire
+		}
+	}
+	focus = {
+		id = FGE_restore_the_ofn
+		icon = GFX_focus_generic_treaty
+		cost = 10
+		x = -3
+		y = 1
+		relative_position_id = FGE_coordinate_resistance
+		prerequisite = {
+			focus = FGE_coordinate_resistance
+		}
+		completion_reward = {
+			set_rule = {
+				can_create_factions = yes
+			}
+			create_faction = "Organization of Free Nations"
+		}
+	}
+	focus = {
+		id = FGE_middle_eastern_and_caucasian_connections
+		icon = GFX_focus_generic_diplomatic_treaty
+		cost = 7.5
+		x = 0
+		y = 1
+		relative_position_id = FGE_restore_the_ofn
+		prerequisite = {
+			focus = FGE_restore_the_ofn
+		}
+		completion_reward = {
+			ARM = {
+				country_event = {
+					id = generic.5
+					hours = 12
+				}
+			}
+			BYZ = {
+				country_event = {
+					id = generic.5
+					hours = 12
+				}
+			}
+		}
+	}
+	focus = {
+		id = FGE_ally_zapadoslavia
+		icon = GFX_focus_generic_polish_deal
+		cost = 5
+		x = -2
+		y = 1
+		relative_position_id = FGE_restore_the_ofn
+		prerequisite = {
+			focus = FGE_restore_the_ofn
+		}
+		available = {
+			NOT = {
+				has_global_flag = FGE_TRL_pact
+			}
+		}
+		completion_reward = {
+			ZAP = {
+				country_event = {
+					id = generic.5
+					hours = 12
+				}
+			}
+		}
+	}
+	focus = {
+		id = FGE_gather_spanish_support
+		icon = GFX_focus_intervention_spain_republic
+		cost = 7.5
+		x = 0
+		y = 1
+		relative_position_id = FGE_ally_zapadoslavia
+		prerequisite = {
+			focus = FGE_ally_zapadoslavia
+		}
+		prerequisite = {
+			focus = FGE_middle_eastern_and_caucasian_connections
+		}
+		mutually_exclusive = {
+			focus = FGE_deal_with_the_devil
+		}
+		available = {
+			ESP = {
+				has_government = democratic
+			}
+		}
+		completion_reward = {
+			ESP = {
+				country_event = {
+					id = generic.5
+					hours = 12
+				}
+			}
+		}
+	}
+	focus = {
+		id = FGE_deal_with_the_devil
+		icon = GFX_goal_generic_dangerous_deal
+		cost = 10
+		x = 0
+		y = 1
+		relative_position_id = FGE_middle_eastern_and_caucasian_connections
+		prerequisite = {
+			focus = FGE_middle_eastern_and_caucasian_connections
+		}
+		completion_reward = {
+			TRL = {
+				country_event = {
+					id = gge.16
+					hours = 12
+				}
+			}
+			custom_effect_tooltip = may_anger_zap_tt
+		}
+	}
+	focus = {
+		id = FGE_deal_with_japan
+		icon = GFX_focus_chi_collaboration_with_the_japanese
+		cost = 10
+		x = -1
+		y = 1
+		relative_position_id = FGE_isolate_the_empire
+		prerequisite = {
+			focus = FGE_isolate_the_empire
+		}
+		available = {
+			JPN = {
+				NOT = {
+					has_government = fascism
+				}
+			}
+		}
+		completion_reward = {
+			JPN = {
+				country_event = {
+					id = gge.18
+					hours = 6
+				}
+			}
+		}
+	}
+	focus = {
+		id = FGE_guarantee_fijian_neutrality
+		icon = GFX_focus_secret_rearmament
+		cost = 5
+		x = 1
+		y = 1
+		relative_position_id = FGE_isolate_the_empire
+		prerequisite = {
+			focus = FGE_isolate_the_empire
+		}
+		available = {
+			OR = {
+				FIJ = {
+					has_opinion = {
+						target = ROOT
+						value > 60
+					}
+				}
+				AND = {
+					owns_state = 284
+					owns_state = 635
+					owns_state = 726
+					owns_state = 643
+				}
+			}
+		}
+		completion_reward = {
+			IF = {
+				limit = {
+					FIJ = {
+						has_opinion = {
+							target = ROOT
+							value > 60
+						}
+					}
+				}
+				FIJ = {
+					country_event = {
+						id = gge.21
+						hours = 6
+					}
+				}
+				else_if = {
+					limit = {
+						owns_state = 284
+						owns_state = 635
+						owns_state = 726
+						owns_state = 643
+					}
+					FIJ = {
+						country_event = {
+							id = gge.22
+							hours = 6
+						}
+					}
+					else = {
+						FIJ = {
+							leave_faction = yes
+							set_politics = {
+								ruling_party = neutrality
+							}
+							add_popularity = {
+								popularity = 1
+								ideology = neutrality
+							}
+						}
+					}
+				}
+			}
+		}
+	}
 }

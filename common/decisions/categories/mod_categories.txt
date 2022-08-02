@@ -4,3 +4,18 @@ brt_collapse = {
 demo = {
 	priority = 50
 }
+FGE_GME_resistance = {
+	priority = 75
+	visible_when_empty = yes
+	allowed = {
+		OR = {
+			tag = FGE
+			tag = GME
+		}
+	}
+	visible = {
+		FGE = {
+			has_completed_focus = FGE_coordinate_resistance
+		}
+	}
+}

@@ -13,6 +13,12 @@ focus_tree = {
 		cost = 10
 		x = 5
 		y = 0
+		allow_branch = {
+			NOT = {
+				has_war_with = GME
+				has_global_flag = FGE_returned_home
+			}
+		}
 		available = {
 			has_country_flag = FGE_smaller_ministries_denied
 		}
@@ -93,8 +99,14 @@ focus_tree = {
 		id = FGE_new_pm
 		icon = GFX_goal_generic_propaganda
 		cost = 2
-		x = 35
+		x = 25
 		y = 0
+		allow_branch = {
+			NOT = {
+				has_war_with = GME
+				has_global_flag = FGE_returned_home
+			}
+		}
 		available = {
 			NOT = {
 				has_country_leader = {
@@ -300,7 +312,7 @@ focus_tree = {
 		id = FGE_abolish_unnecessary_bureaocracy
 		icon = GFX_focus_hol_the_foundations_of_defense
 		cost = 7.5
-		x = 0
+		x = 1
 		y = 1
 		relative_position_id = FGE_repeal_emergency_powers
 		prerequisite = {
@@ -314,7 +326,7 @@ focus_tree = {
 		id = FGE_efficient_law_making_progress
 		icon = GFX_focus_hol_the_foundations_of_defense
 		cost = 10
-		x = 2
+		x = 1
 		y = 1
 		relative_position_id = FGE_abolish_unnecessary_bureaocracy
 		prerequisite = {
@@ -329,7 +341,7 @@ focus_tree = {
 		id = FGE_coordinate_resistance
 		icon = GFX_goal_generic_demand_territory
 		cost = 5
-		x = 15
+		x = 10
 		y = 1
 		prerequisite = {
 			focus = FGE_bypass_the_national_assembly
@@ -612,6 +624,102 @@ focus_tree = {
 					every_owned_state = {
 						remove_core_of = FGE
 					}
+				}
+			}
+		}
+	}
+	focus = {
+		id = FGE_operation_broken_star
+		icon = GFX_focus_ger_bulwark_against_bolshevism
+		cost = 10
+		x = 3
+		y = 1
+		relative_position_id = FGE_coordinate_resistance
+		prerequisite = {
+			focus = FGE_coordinate_resistance
+		}
+		completion_reward = {
+			effect_tooltip = {
+				activate_decision = FGE_invade_national_state
+			}
+		}
+	}
+	focus = {
+		id = FGE_behind_enemy_lines
+		icon = GFX_goal_generic_demand_territory
+		cost = 7.5
+		x = 0
+		y = 1
+		relative_position_id = FGE_operation_broken_star
+		prerequisite = {
+			focus = FGE_operation_broken_star
+		}
+		completion_reward = {
+			custom_effect_tooltip = FGE_1_unit_rebel_tt
+		}
+	}
+	focus = {
+		id = FGE_promise_pardons
+		icon = GFX_focus_hol_the_foundations_of_defense
+		cost = 7.5
+		x = 0
+		y = 1
+		relative_position_id = FGE_behind_enemy_lines
+		prerequisite = {
+			focus = FGE_behind_enemy_lines
+		}
+		completion_reward = {
+			custom_effect_tooltip = FGE_2_unit_rebel_tt
+		}
+	}
+	focus = {
+		id = FGE_fortify_france
+		icon = GFX_goal_generic_fortify_city
+		cost = 5
+		x = 2
+		y = 1
+		relative_position_id = FGE_operation_broken_star
+		prerequisite = {
+			focus = FGE_operation_broken_star
+		}
+		completion_reward = {
+			every_controlled_state = {
+				limit = {
+					any_neighbor_state = {
+						is_owned_by = GME
+					}
+				}
+				add_building_construction = {
+					type = bunker
+					level = 5
+					instant_build = yes
+					province = {
+						all_provinces = yes
+						limit_to_border = yes
+					}
+				}
+			}
+		}
+	}
+	focus = {
+		id = FGE_guarantee_supplies
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 5
+		x = 4
+		y = 1
+		relative_position_id = FGE_operation_broken_star
+		prerequisite = {
+			focus = FGE_operation_broken_star
+		}
+		completion_reward = {
+			every_controlled_state = {
+				limit = {
+					is_core_of = BRT
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
 				}
 			}
 		}

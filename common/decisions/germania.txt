@@ -9,6 +9,11 @@ FGE_GME_resistance = {
 				is_core_of = FGE
 			}
 			has_completed_focus = FGE_coordinate_resistance
+			NOT = {
+				limit = {
+					has_war_with = GME
+				}
+			}
 		}
 		allowed = {
 			tag = FGE
@@ -38,7 +43,7 @@ FGE_GME_resistance = {
 		on_map_mode = map_only
 	}
 	support_rebels = {
-		cost = 150
+		cost = 25
 		state_target = yes
 		visible = {
 			FROM = {
@@ -118,6 +123,23 @@ FGE_GME_resistance = {
 	}
 }
 FGE_return_home = {
+	FGE_invade_national_state = {
+		fire_only_once = yes
+		allowed = {
+			tag = FGE
+		}
+		visible = {
+			has_completed_focus = FGE_operation_broken_star
+		}
+		days_remove = 25
+		war_with_on_remove = FGE
+		remove_effect = {
+			declare_war_on = {
+				target = GME
+				type = annex_everything
+			}
+		}
+	}
 	FGE_return_home_decision = {
 		fire_only_once = yes
 		available = {
@@ -140,7 +162,7 @@ FGE_return_home = {
 				set_cosmetic_tag = GME
 			}
 			add_political_power = 300
-			set_country_flag = FGE_returned_home
+			set_global_flag = FGE_returned_home
 			IF = {
 				limit = {
 					NOT = {

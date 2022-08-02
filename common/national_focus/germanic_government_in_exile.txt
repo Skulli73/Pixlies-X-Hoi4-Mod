@@ -576,4 +576,44 @@ focus_tree = {
 			}
 		}
 	}
+	focus = {
+		id = FGE_deal_with_italy
+		icon = GFX_focus_befriend_italy
+		cost = 7.5
+		x = 0
+		y = 2
+		relative_position_id = FGE_isolate_the_empire
+		prerequisite = {
+			focus = FGE_isolate_the_empire
+		}
+		completion_reward = {
+			ILY = {
+				country_event = {
+					id = gge.24
+					hours = 8
+				}
+			}
+			custom_effect_tooltip = FGE_deal_with_italy_tt
+			effect_tooltip = {
+				ILY = {
+					OVERLORD = {
+						end_puppet = ILY
+					}
+					set_politics = {
+						ruling_party = democratic
+						elections_allowed = yes
+					}
+					declare_war_on = {
+						target = OVERLORD
+					}
+					declare_war_on = {
+						target = GME
+					}
+					every_owned_state = {
+						remove_core_of = FGE
+					}
+				}
+			}
+		}
+	}
 }

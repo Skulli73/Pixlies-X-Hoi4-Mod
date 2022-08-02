@@ -460,3 +460,97 @@ news_event = {
 		name = gge.23.a
 	}
 }
+country_event = {
+	id = gge.24
+	title = gge.24.t
+	desc = gge.24.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+	option = {
+		name = gge.24.a
+		set_global_flag = FGE_ILY_pact
+		FGE = {
+			country_event = {
+				id = gge.25
+				hours = 6
+			}
+		}
+		ai_chance = {
+			factor = 100
+		}
+	}
+	option = {
+		name = gge.24.b
+		FGE = {
+			country_event = {
+				id = gge.26
+				hours = 6
+			}
+		}
+	}
+}
+country_event = {
+	id = gge.25
+	title = gge.25.t
+	desc = gge.25.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+	option = {
+		name = gge.25.a
+	}
+}
+country_event = {
+	id = gge.26
+	title = gge.26.t
+	desc = gge.26.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+	option = {
+		name = gge.26.a
+	}
+}
+news_event = { #return of the germanic government in exile
+	id = gge.27
+	title = gge.27.t
+	desc = gge.27.d
+	picture = GFX_news_event_germania_liberation
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = gge.27.a
+		trigger = {
+			tag = FGE
+		}
+	}
+	option = {
+		name = gge.27.b
+		trigger = {
+			is_in_faction_with = FGE
+			NOT = {
+				tag = FGE
+			}
+		}
+	}
+	option = {
+		name = gge.27.c
+		trigger = {
+			is_in_faction_with = CSA
+		}
+	}
+}
+country_event = {
+	id = gge.28
+	title = gge.28.t
+	desc = gge.28.d
+	is_triggered_only = yes
+	option = {
+		name = gge.28.a
+		ILY = {
+			leave_faction = yes
+			set_rule = {
+				can_join_factions = no
+			}
+			white_peace = CSA
+		}
+	}
+}

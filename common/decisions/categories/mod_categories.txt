@@ -19,3 +19,9 @@ FGE_GME_resistance = {
 		}
 	}
 }
+FGE_return_home = {
+	priority = 200
+	allowed = {
+		tag = FGE
+	}
+}

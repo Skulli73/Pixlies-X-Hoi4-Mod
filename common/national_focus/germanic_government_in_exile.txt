@@ -977,4 +977,55 @@ focus_tree = {
 			}
 		}
 	}
+
+	focus = {
+		id = FGE_new_army_doctrine
+		icon = GFX_goal_generic_axis_build_infantry
+		cost = 10
+		x = 42
+		y = 0
+		completion_reward = {
+			army_experience = 20
+		}
+	}
+	focus = {
+		id = FGE_keep_old_doctrines
+		icon = GFX_goal_generic_fortify_city
+		cost = 5
+		x = -1
+		y = 1
+		relative_position_id = FGE_new_army_doctrine
+		prerequisite = {
+			focus = FGE_new_army_doctrine
+		}
+		mutually_exclusive = {
+			focus = FGE_adopt_new_doctrines
+		}
+		completion_reward = {
+			add_ideas = FGE_keep_old_doctrines
+		}
+	}
+	focus = {
+		id = FGE_adopt_new_doctrines
+		icon = GFX_goal_generic_army_doctrines
+		cost = 5
+		x = 1
+		y = 1
+		relative_position_id = FGE_new_army_doctrine
+		prerequisite = {
+			focus = FGE_new_army_doctrine
+		}
+		mutually_exclusive = {
+			focus = FGE_keep_old_doctrines
+		}
+		completion_reward = {
+			army_experience = 30
+			add_tech_bonus = {
+				name = FGE_adopt_new_doctrines
+				bonus = 1
+				uses = 2
+				category = land_doctrine
+			}
+		}
+	}
 }

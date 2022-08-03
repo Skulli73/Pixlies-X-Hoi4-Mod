@@ -57,5 +57,13 @@ ideas = {
 				production_factory_efficiency_gain_factor = 0.3
 			}
 		}
+		FGE_keep_old_doctrines = {
+			name = FGE_keep_old_doctrines
+			picture = generic_fortify_city
+			modifier = {
+				defence = 0.3
+				production_speed_bunker_factor = 1
+			}
+		}
 	}
 }

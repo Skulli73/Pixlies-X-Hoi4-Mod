@@ -216,6 +216,15 @@ defined_text = {
 	}
 	text = {
 		trigger = {
+			OR = {
+				has_idea = fortressia_head_of_state
+				has_idea = fortressia2_head_of_state
+			}
+		}
+		localization_key = "Fortressia"
+	}
+	text = {
+		trigger = {
 			has_idea = katz_head_of_state
 		}
 		localization_key = "Kätz"
@@ -225,12 +234,6 @@ defined_text = {
 			has_idea = birb_head_of_state
 		}
 		localization_key = "Karl"
-	}
-	text = {
-		trigger = {
-			has_idea = fortressia_head_of_state
-		}
-		localization_key = "Fortressia"
 	}
 	text = {
 		localization_key = DEFAULT_TITLE
@@ -287,7 +290,10 @@ defined_text = {
 	}
 	text = {
 		trigger = {
-			has_idea = fortressia_head_of_state
+			OR = {
+				has_idea = fortressia_head_of_state
+				has_idea = fortressia2_head_of_state
+			}
 		}
 		localization_key = "GFX_GME_fortressia"
 	}

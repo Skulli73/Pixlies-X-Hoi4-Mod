@@ -1,3 +1,10 @@
 ﻿l_english:
 colonise:0 "Colonization"
 has_x_population:0 "Has at least a population of [?ROOT.num_owned_states]"
+contact_rebels:0 "Contact Rebels in [FROM.GetName]"
+support_rebels:0 "Support Rebels in [FROM.GetName]"
+fight_rebels:0 "Fight Rebels in [FROM.GetName]"
+FGE_return_home:0 "Return Home"
+FGE_return_home_desc:0 "Since we have been exiled to these islands it has always been seen as nothing more but a temporary solution until we can liberate our homeland. We need to liberate our homeland from the fascist occupiers!"
+FGE_return_home_decision:0 "Return Home!"
+FGE_invade_national_state:0 "Take back the homeland"

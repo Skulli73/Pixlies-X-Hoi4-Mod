@@ -222,6 +222,7 @@ FGE_return_home = {
 						days = 10
 					}
 				}
+				mark_focus_tree_layout_dirty = yes
 			}
 		}
 	}

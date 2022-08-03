@@ -41,5 +41,21 @@ ideas = {
 				boost_ideology_mission_factor = 2
 			}
 		}
+		FGE_every_man_his_own_farm = {
+			name = FGE_every_man_his_own_farm
+			picture = LIT_invested_in_farms
+			modifier = {
+				local_resources_factor = 0.6
+				monthly_population = 0.5
+			}
+		}
+		FGE_automized_gun_production = {
+			name = FGE_automized_gun_production
+			picture = generic_infantry_equipment_manufacturer_2
+			modifier = {
+				conscription_factor = 0.3
+				production_factory_efficiency_gain_factor = 0.3
+			}
+		}
 	}
 }

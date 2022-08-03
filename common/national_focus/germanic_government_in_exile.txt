@@ -724,4 +724,257 @@ focus_tree = {
 			}
 		}
 	}
+
+
+
+	focus = {
+		id = FGE_build_up_a_new_factory
+		icon = GFX_goal_generic_construct_civilian
+		cost = 10
+		x = 35
+		y = 0
+		completion_reward = {
+			capital_scope = {
+				add_extra_state_shared_building_slots = 5
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = FGE_expand_the_factories
+		icon = GFX_goal_generic_construct_civilian
+		cost = 10
+		x = -2
+		y = 1
+		relative_position_id = FGE_build_up_a_new_factory
+		prerequisite = {
+			focus = FGE_build_up_a_new_factory
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = FGE_every_man_his_own_farm
+		icon = GFX_focus_generic_industry_1
+		cost = 7
+		x = 2
+		y = 1
+		relative_position_id = FGE_build_up_a_new_factory
+		prerequisite = {
+			focus = FGE_build_up_a_new_factory
+		}
+		completion_reward = {
+			add_ideas = FGE_every_man_his_own_farm
+		}
+	}
+	focus = {
+		id = FGE_expand_mining
+		icon = GFX_focus_generic_steel
+		cost = 7
+		x = 0
+		y = 1
+		relative_position_id = FGE_every_man_his_own_farm
+		prerequisite = {
+			focus = FGE_every_man_his_own_farm
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = FGE_expand_mining
+				bonus = 0.5
+				uses = 2
+				category = excavation_tech
+			}
+		}
+	}
+	focus = {
+		id = FGE_synthetic_research
+		icon = GFX_goal_generic_oil_refinery
+		cost = 7
+		x = 2
+		y = 1
+		relative_position_id = FGE_every_man_his_own_farm
+		prerequisite = {
+			focus = FGE_every_man_his_own_farm
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = FGE_synthetic_research
+				bonus = 0.5
+				uses = 2
+				category = synth_resources
+			}
+		}
+	}
+	focus = {
+		id = FGE_nuclear_reactors
+		icon = GFX_focus_wonderweapons
+		cost = 10
+		x = 1
+		y = 1
+		relative_position_id = FGE_expand_mining
+		prerequisite = {
+			focus = FGE_expand_mining
+			focus = FGE_synthetic_research
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = FGE_nuclear_reactors
+				bonus = 1
+				uses = 3
+				category = nuclear
+			}
+		}
+	}
+	focus = {
+		id = FGE_expand_arms_production
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 10
+		x = 2
+		y = 1
+		relative_position_id = FGE_expand_the_factories
+		prerequisite = {
+			focus = FGE_expand_the_factories
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = FGE_automized_gun_production
+		icon = GFX_goal_generic_small_arms
+		cost = 10
+		x = 1
+		y = 1
+		relative_position_id = FGE_expand_arms_production
+		prerequisite = {
+			focus = FGE_expand_arms_production
+		}
+		mutually_exclusive = {
+			focus = FGE_massive_arms_production
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			add_ideas = FGE_automized_gun_production
+		}
+	}
+	focus = {
+		id = FGE_massive_arms_production
+		icon = GFX_goal_generic_construction2
+		cost = 10
+		x = -1
+		y = 1
+		relative_position_id = FGE_expand_arms_production
+		prerequisite = {
+			focus = FGE_expand_arms_production
+		}
+		mutually_exclusive = {
+			focus = FGE_automized_gun_production
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = arms_factory
+					level = 4
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = FGE_expand_construction
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 10
+		x = -2
+		y = 1
+		relative_position_id = FGE_expand_the_factories
+		prerequisite = {
+			focus = FGE_expand_the_factories
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = FGE_centralize_industry
+		icon = GFX_focus_generic_industry_3
+		cost = 10
+		x = 1
+		y = 1
+		relative_position_id = FGE_expand_construction
+		prerequisite = {
+			focus = FGE_expand_construction
+		}
+		mutually_exclusive = {
+			focus = FGE_decentralize_industry
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = FGE_centralize_industry
+				bonus = 0.75
+				uses = 3
+				category = concentrated_industry_category
+			}
+		}
+	}
+	focus = {
+		id = FGE_decentralize_industry
+		icon = GFX_focus_generic_industry_3
+		cost = 10
+		x = -1
+		y = 1
+		relative_position_id = FGE_expand_construction
+		prerequisite = {
+			focus = FGE_expand_construction
+		}
+		mutually_exclusive = {
+			focus = FGE_centralize_industry
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = FGE_decentralize_industry
+				bonus = 0.75
+				uses = 3
+				category = dispersed_industry_category
+			}
+		}
+	}
 }

@@ -25,7 +25,7 @@ focus_tree = {
 	focus = {
 		id = ILY_Recover_From_The_War
 		icon = GFX_goal_generic_amphibious_assault
-		x = 0
+		x = 35
 		y = 1
 		cost = 10
 		#ai_will_do = {
@@ -48,111 +48,23 @@ focus_tree = {
 	}
 
 	focus = {
-		id = ILY_Support_From_All_The_Parties
+		id = ILY_With_The_Union
 		icon = GFX_focus_generic_monarchy_1
 		cost = 10
-		x = 0
-		y = -1
+		x = 33
+		y = -2
 		relative_position_id = ILY_Recover_From_The_War
 		prerequisite = {
 			focus = ILY_Recover_From_The_War
 		}
 		completion_reward = {
 			add_stability = 0.5
-			
-		}
-	}
-	focus = {
-		id = ILY_Monarchy_Ruled-And_Monarchy_Will_Rule
-		icon = GFX_focus_generic_military_academy
-		cost = 10
-		x = 1
-		y = -3
-        prerequisite = {
-			focus = ILY_Support_From_All_The_Parties
-		}
-		completion_reward = {
-			add_popularity = 
-				ideology = neutrality
-				popularity = .1
-                }
-    }	
-    focus = {
-		id = ILY_Stay_With_The_Opposition
-		icon = GFX_goal_generic_propaganda
-		cost = 2
-		x = -1
-		y = -3
-		prerequisite = {
-			focus = ILY_Support_From_All_The_Parties
-		}
-		mutually_exclusive = {
-			focus = ILY_Monarchy_Ruled-And_Monarchy_Will_Rule
-		}
-		completion_reward = {
-			add_popularity = {
-				ideology = democratic
-				popularity = .1
-			}
-		}
-	}
-	focus = {
-		id = ILY_Bandiera_Rossa_Alla_Riscossa
-		icon = GFX_goal_generic_join_comintern
-		cost = 5
-		x = -1
-		y = -5
-		prerequisite = {
-			focus = ILY_Stay_With_The_Opposition
-		}
-		completion_reward = {
-			add_popularity = {
-				ideology = communism
-				popularity = .1
-			}
-			add_stability = .1
-		}
-	}
-	focus = {
-		id = ILY_Al_Mio_Popolo_Fedele
-		icon = GFX_focus_generic_italy_first
-		cost = 10
-		x = -3
-		y = -5
-		prerequisite = {
-			focus = ILY_Stay_With_The_Opposition
-		}
-		completion_reward = {
-			add_popularity = {
-				ideology = fascism
-				popularity = .1
-			}
-	    }
-	}
-	focus = {
-		id = ILY_Potere_Al_Popolo
-		icon = GFX_focus_generic_the_giant_wakes
-		cost = 10
-		x = -5
-		y = -5
-		prerequisite = {
-			focus = ILY_Stay_With_The_Opposition
-		}
-		mutually_exclusive = {
-			focus = ILY_Bandiera_Rossa_Alla_Riscossa
-		}
-		mutually_exclusive = {
-			focus = ILY_Al_Mio_Popolo_Fedele
-		}
-		completion_reward = {
-			add_popularity = {
-			ideology = democratic
-			popularity = .1
+			ILY = {
+				country_event = {
+					id = generic.29
+					hours = 6
+				}
 			}
 		}
 	}
 	
-
-
-	
-

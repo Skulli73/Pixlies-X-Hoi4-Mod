@@ -57,12 +57,14 @@ focus_tree = {
 		prerequisite = {
 			focus = ILY_Recover_From_The_War
 		}
-		mutually_exclusive = {
-			focus = ILY_Recover_From_The_War
-		}
 		completion_reward = {
 			add_stability = 0.5
-			
+			ILY = {
+				country_event = {
+					id = generic.29
+					hours = 6
+				}
+			}
 		}
 	}
 	

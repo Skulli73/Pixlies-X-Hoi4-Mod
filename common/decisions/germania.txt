@@ -139,6 +139,20 @@ FGE_return_home = {
 				type = annex_everything
 			}
 		}
+		ai_will_do = {
+			factor = 100000
+			modifier = {
+				factor = 0
+				NOT = {
+					TRL = {
+						OR = {
+							has_war_with = GME
+							has_war_with = CSA
+						}
+					}
+				}
+			}
+		}
 	}
 	FGE_return_home_decision = {
 		fire_only_once = yes
@@ -224,6 +238,133 @@ FGE_return_home = {
 				}
 				mark_focus_tree_layout_dirty = yes
 			}
+		}
+	}
+}
+FGE_destroy_CSA = {
+	FGE_expand_south_american_claims = {
+		fire_only_once = yes
+		cost = 50
+		ai_will_do = {
+			factor = 10000
+		}
+		days_remove = 15
+		remove_effect = {
+			every_state = {
+				limit = {
+					OR = {
+						state = 489
+						state = 493
+						state = 306
+						state = 695
+					}
+					is_owned_by = WIL
+				}
+				transfer_state_to = ROOT
+			}
+		}
+	}
+	FGE_go_through_VNZ = {
+		fire_only_once = yes
+		cost = 50
+		ai_will_do = {
+			factor = 100000
+		}
+		days_remove = 50
+		war_with_on_remove = VNZ
+		remove_effect = {
+			declare_war_on = {
+				target = VNZ
+				type = puppet_wargoal_focus
+			}
+		}
+		available = {
+			any_owned_state = {
+				any_neighbor_state = {
+					is_owned_by = VNZ
+				}
+			}
+		}
+	}
+	FGE_force_CSA_surrender = {
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 10000
+		}
+		complete_effect = {
+			373 = {
+				transfer_state_to = WIL
+			}
+			CSA = {
+				release = VIR
+				release = GRG
+				release = TEX
+				IF = {
+					limit = {
+						has_war_with = TRL
+					}
+					TRL = {
+						puppet = TEX
+						set_autonomy = {
+							target = TEX
+							autonomy_state = autonomy_integrated_puppet
+						}
+					}
+					ELSE = {
+						ROOT = {
+							puppet = TEX
+							set_autonomy = {
+								target = TEX
+								autonomy_state = autonomy_integrated_puppet
+							} 
+						}
+					}
+				}
+			}
+			puppet = VIR
+			set_autonomy = {
+				target = VIR
+				autonomy_state = autonomy_integrated_puppet
+			}	
+			VIR = {
+				set_cosmetic_tag = VIR_KAT
+			}
+			puppet = GRG
+			set_autonomy = {
+				target = GRG
+				autonomy_state = autonomy_integrated_puppet
+			}
+			GRG = {
+				set_cosmetic_tag = GRG_SHE
+			}
+			annex_country = {
+				target = CSA
+			}		
+			every_owned_state = {
+				limit = {
+					OR = {
+						region = 170
+					region = 53
+					}
+				}
+				add_core_of = CUB
+			}
+			release_puppet = CUB
+			set_autonomy = {
+				target = CUB
+				autonomy_state = autonomy_integrated_puppet
+			}
+		}
+		available = {
+			CSA = {
+				surrender_progress > .5
+			}
+			365 = {
+				is_controlled_by = ROOT
+			}
+		}
+		visible = {
+			has_war_with = CSA
 		}
 	}
 }

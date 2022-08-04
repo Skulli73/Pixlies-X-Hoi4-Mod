@@ -1,0 +1,32 @@
+on_actions = {
+	on_state_control_changed = {
+		effect = {
+			IF = {
+				limit = {
+					FGE = {
+						has_war_with = FROM
+					}
+					ROOT = {
+						is_in_faction_with = FGE
+					}
+					FROM = {
+						original_tag = CSA
+					}
+					FROM.FROM = {
+						state = 365
+					}
+					NOT = {
+						has_global_flag = atlanta_fall_FGE
+					}
+				}
+				FGE = {
+					news_event = {
+						id = gge.31
+						hours = 18
+					}
+				}
+				set_global_flag = atlanta_fall_FGE
+			}
+		}
+	}
+}

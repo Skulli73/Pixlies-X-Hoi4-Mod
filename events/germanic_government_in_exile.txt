@@ -133,6 +133,7 @@ country_event = { #day 3, prime minister election or reelection
 			}
 		}
 		promote_character = sam
+		mark_focus_tree_layout_dirty = yes
 		ai_chance = {
 			factor = 40
 		}
@@ -188,6 +189,7 @@ country_event = { #election
 			}
 		}
 		promote_character = ace
+		mark_focus_tree_layout_dirty = yes
 		remove_ideas = ace_minister_of_foreign_affairs
 		ai_chance = {
 			factor = 50
@@ -202,6 +204,7 @@ country_event = { #election
 			}
 		}
 		promote_character = sam
+		mark_focus_tree_layout_dirty = yes
 		ai_chance = {
 			factor = 50
 		}
@@ -222,6 +225,7 @@ country_event = { #emperor appoints new pm
 			}
 		}
 		promote_character = fortressia
+		mark_focus_tree_layout_dirty = yes
 	}
 }
 news_event = {
@@ -552,5 +556,101 @@ country_event = {
 			}
 			white_peace = CSA
 		}
+	}
+}
+country_event = {
+	id = gge.29
+	title = gge.29.t
+	desc = gge.29.d
+	is_triggered_only = yes
+	option = {
+		name = gge.29.a
+		ai_chance = {
+			factor = 1000
+		}
+		IF = {
+			limit = {
+				FGE = {
+					has_war_with = ILY
+				}
+			}
+			ILY = {
+				every_owned_state= {
+					limit = {
+						is_controlled_by = TRL
+					}
+					transfer_state_to = TRL
+				}
+			}
+			FGE = {
+				annex_country = {
+					target = ILY
+					transfer_troops = no
+				}
+			}
+		} 
+		every_country = {
+			limit = {
+				is_in_faction_with = ROOT
+			}
+			leave_faction = yes
+		}
+		every_country = {
+			limit = {
+				is_subject_of = ROOT
+				OR = {
+					tag = IND
+				}
+			}
+			ROOT = {
+				end_puppet = PREV
+			}
+			FGE = {
+				puppet = PREV
+			}
+		}
+		every_owned_state = {
+			limit = {
+				NOT = {
+					is_on_continent = north_america
+					is_on_continent = south_america
+				}
+			}
+			transfer_state_to = FGE
+		}
+		white_peace = FGE
+		news_event = {
+			id = gge.30
+			days = 1
+		}
+	}
+	option = {
+		name = gge.29.b
+		FGE = {
+			complete_national_focus = FGE_destroy_the_southern_union
+		}
+		set_global_flag = CSA_denied_peace
+	}
+}
+news_event = {
+	id = gge.30
+	title = gge.30.t
+	desc = gge.30.d
+	is_triggered_only = yes
+	major = yes
+	picture = GFX_news_event_generic_sign_treaty1
+	option = {
+		name = gge.30.a
+	}
+}
+news_event = {
+	id = gge.31
+	title = gge.31.t
+	desc = gge.31.d
+	is_triggered_only = yes
+	major = yes
+	picture = GFX_news_event_su_flag_burn
+	option = {
+		name = gge.31.a
 	}
 }

@@ -1,11 +1,11 @@
-add_namespace = gge
+add_namespace = ily
 country_event = {
-	id = gge.29
-	title = gge.29.t
-	desc = gge.29.d
-	is_triggered_only = yes
+	id = ily.29
+	title = ily.29.t
+	desc = ily.29.d
+	is_triilyred_only = yes
 	option = {
-		name = gge.29.a
+		name = ily.29.a
 		diplomatic_relation = {
 				country = CSA
 				relation = guarantee
@@ -15,12 +15,12 @@ country_event = {
 		}
 	}
 country_event = {
-	id = gge.32
-	title = gge.32.t
-	desc = gge.32.d
-	is_triggered_only = yes
+	id = ily.32
+	title = ily.32.t
+	desc = ily.32.d
+	is_triilyred_only = yes
 	option = {
-		name = gge.32.a
+		name = ily.32.a
 		diplomatic_relation = {
 				country = CSA
 				relation = puppet

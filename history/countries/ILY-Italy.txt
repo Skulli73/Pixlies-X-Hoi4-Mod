@@ -9,6 +9,7 @@ set_convoys = 0
 add_ideas = {
 	extensive_conscription
 	partial_economic_mobilisation
+	A_disunited_Italy_1
 }
 
 
@@ -24,5 +25,14 @@ set_popularities = {
 	fascism = 30
 	democratic = 20
 	neutrality = 50
+}
+create_country_leader = {
+	name = "Nikiblago08"
+	ideology = neutrality
+	picture = "niki.dds"
+	traits = {
+		constitutional_monarch
+		exile_king
+	}
 }
 inherit_technology = CSA

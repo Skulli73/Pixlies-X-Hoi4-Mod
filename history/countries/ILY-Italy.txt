@@ -15,14 +15,14 @@ add_ideas = {
 
 #Politics for 50.1.1
 set_politics = {
-	ruling_party = fascism
+	ruling_party = neutrality
 	last_election = "49.10.25"
 	election_frequency = 60
 	elections_allowed = no
 }
 set_popularities = {
-	fascism = 34
-	democratic = 33
-	neutrality = 33
+	fascism = 30
+	democratic = 20
+	neutrality = 50
 }
 inherit_technology = CSA

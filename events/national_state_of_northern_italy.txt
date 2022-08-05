@@ -29,3 +29,13 @@ country_event = {
 			}
 		}
 	}
+news_event = {
+	id = ily.33
+	title = ily.33.t
+	desc = ily.33.d
+	picture = GFX_news_event_italian_civil_war
+	is_triggered_only = yes
+	option = {
+		name = ily.33.a			
+	}
+}

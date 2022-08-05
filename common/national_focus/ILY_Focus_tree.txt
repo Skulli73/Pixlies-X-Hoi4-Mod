@@ -46,12 +46,11 @@ focus_tree = {
 			}
 		}
 	}
-
-	focus = {
+    focus = {
 		id = ILY_With_The_Union
 		icon = GFX_focus_POL_beck_ribbentrop
 		cost = 10
-		x = 16
+		x = 15
 		y = 1
 		prerequisite = {
 			focus = ILY_Recover_From_The_War
@@ -88,3 +87,32 @@ focus_tree = {
 			}
 		}
 	}
+	focus = {
+		id = ILY_A_Imminent_Civil_War
+		icon = GFX_focus_generic_italy_first
+		cost = 10
+		x = 19
+		y = 1
+		prerequisite = {
+			focus = ILY_For_The_Independence
+		}
+		completion_reward = {
+			add_stability = 0.5
+			ILY = {
+				country_event = {
+					id = ily.33
+					hours = 6
+				}
+				start_civil_war = {
+                    ideology = fascism
+                    size = 0.3
+                    capital = 158
+                     states = {
+						158 735
+                    }
+                }
+            }
+		}	
+	}
+
+	

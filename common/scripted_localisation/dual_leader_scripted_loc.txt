@@ -198,19 +198,13 @@ defined_text = {
 	}
 	text = {
 		trigger = {
-			original_tag = GME
-			NOT = {
-				has_global_flag = alternis_coup_failed
-			}
-			is_subject_of = CSA
+			has_idea = alternis_head_of_state
 		}
 		localization_key = "Alternis"
 	}
 	text = {
 		trigger = {
-			original_tag = GME
-			has_global_flag = alternis_coup_failed
-			is_subject_of = CSA
+			has_idea = needless_head_of_state
 		}
 		localization_key = "NeedlessMeming"
 	}
@@ -219,6 +213,15 @@ defined_text = {
 			has_idea = skulli_head_of_state
 		}
 		localization_key = "Skulli"
+	}
+	text = {
+		trigger = {
+			OR = {
+				has_idea = fortressia_head_of_state
+				has_idea = fortressia2_head_of_state
+			}
+		}
+		localization_key = "Fortressia"
 	}
 	text = {
 		trigger = {
@@ -257,19 +260,13 @@ defined_text = {
 	}
 	text = {
 		trigger = {
-			original_tag = GME
-			NOT = {
-				has_global_flag = alternis_coup_failed
-			}
-			is_subject_of = CSA
+			has_idea = alternis_head_of_state
 		}
 		localization_key = "GFX_GME_alternis"
 	}
 	text = {
 		trigger = {
-			original_tag = GME
-			has_global_flag = alternis_coup_failed
-			is_subject_of = CSA
+			has_idea = needless_head_of_state
 		}
 		localization_key = "GFX_GME_needless"
 	}
@@ -278,6 +275,15 @@ defined_text = {
 			has_idea = skulli_head_of_state
 		}
 		localization_key = "GFX_GME_skulli73"
+	}
+	text = {
+		trigger = {
+			OR = {
+				has_idea = fortressia_head_of_state
+				has_idea = fortressia2_head_of_state
+			}
+		}
+		localization_key = "GFX_GME_fortressia"
 	}
 	text = {
 		trigger = {

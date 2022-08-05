@@ -1,0 +1,47 @@
+TRL_war_CSA = {
+	allowed = {
+		tag = TRL
+	}
+	enable = {
+		date > 53.01.26
+		NOT = {
+			NOT = { country_exists = CSA }
+			CSA = {
+				is_subject_of = TRL
+			}
+			is_subject_of = CSA
+			is_in_faction_with = CSA
+		}
+	}
+	abort = {
+		OR = {
+			NOT = { country_exists = CSA }
+			CSA = {
+				is_subject_of = TRL
+			}
+			is_subject_of = CSA
+			is_in_faction_with = CSA
+		}
+	}
+
+	ai_strategy = {
+		type = antagonize
+		id = "GME"			
+		value = 200000 
+	}
+	ai_strategy = {
+		type = declare_war
+		id = "GME"			
+		value = 200000
+	}
+	ai_strategy = {
+		type = invade
+		id = "GME"			
+		value = 200000 
+	}
+	ai_strategy = {
+		type = prepare_for_war
+		id = "GME"			
+		value = 200000 
+	}
+}

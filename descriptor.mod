@@ -6,6 +6,6 @@ tags={
 	"Military"
 	"Map"
 }
-replace_path = "gfx/flags"
 name="Pixlies X Hoi4 Mod"
+replace_path = "gfx/loadingscreens"
 supported_version="1.11.12"

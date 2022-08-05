@@ -5,13 +5,8 @@ state={
 		chromium=20.000 #added due to portugal setup
 	}
 	history={
-		owner = WIL# = POR
-		#victory_points = {
-			9869 1 
-		}
-		#victory_points = {
-			924 1 
-		}
+		owner = PRT
+		add_core_of = PRT
 		buildings = {
 			#infrastructure = 3 #was: 6
 			#industrial_complex = 2

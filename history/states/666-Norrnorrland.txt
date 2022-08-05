@@ -12,10 +12,8 @@ state={
 	state_category = rural
 
 	history={
-		owner = WIL# = SWE
-		#victory_points = {
-			9108 1 
-		}
+		owner = GME
+		add_core_of = GME
 		buildings = {
 			#infrastructure = 2
 			#industrial_complex = 1

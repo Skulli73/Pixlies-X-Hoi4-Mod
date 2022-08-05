@@ -1,4 +1,4 @@
-﻿oob = "CSA_50"
+﻿oob = "GENERIC"
 capital = 365
 set_research_slots = 5
 set_stability = 0.31
@@ -47,5 +47,11 @@ set_autonomy = {
 	target = ILY
 	autonomy_state = autonomy_satellite
 }
+puppet = IND
+set_autonomy = {
+	target = IND
+	autonomy_state = autonomy_satellite
+}
 create_faction = "Fascist Unity Pact"
 add_to_faction = TRL
+add_to_faction = FIJ

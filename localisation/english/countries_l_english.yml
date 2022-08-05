@@ -36,7 +36,6 @@ CSA_communism_ADJ:0 "American"
 
 #special SU names
 
-
 #free germania normal names
 FGE:0 "Germanic Government in Exile"
 FGE_DEF:0 "the Germanic Government in Exile"
@@ -200,3 +199,114 @@ BYZ_democratic_DEF:0 "the Byzantine Empire"
 BYZ_communism:0 "People's Republic of Greece"
 BYZ_communism_DEF:0 "the People's Republic of Grece"
 BYZ_communism_ADJ:0 "Greek"
+
+#special byzantium names
+
+
+
+#normal portugal names
+PRT:0 "Portugal"
+PRT_DEF:0 "Portugal"
+PRT_ADJ:0 "Portugese"
+
+#special portugal names
+
+
+
+#normal fiji names
+FIJ:0 "Fiji"
+FIJ_DEF:0 "Fiji"
+FIJ_DEF:0 "Fijian"
+
+#special fiji names
+
+
+#normal roi names
+IND:0 "India"
+IND_DEF:0 "India"
+IND_ADJ:0 "Indian"
+
+#special roi names
+
+#normal finland names
+FNL:0 "Finland"
+FNL_DEF:0 "Finland"
+FNL_ADJ:0 "Finnish"
+
+
+#special finland names
+
+
+#normal Virginia names
+VIR:0 "Virginia"
+VIR_DEF:0 "Virginia"
+VIR_ADJ:0 "Virginian"
+
+#special Virginia names
+VIR_KAT:0 "Kätzylvania"
+VIR_KAT_DEF:0 "Kätzylvania"
+VIR_KAT_ADJ:0 "Kätzylvanian"
+VIR_KAT_FGE_autonomy_integrated_puppet:0 "Special Administrative Zone of Kätzylvania"
+VIR_KAT_FGE_autonomy_integrated_puppet_DEF:0 "Special Administrative Zone of Kätzylvania"
+VIR_KAT_FGE_autonomy_puppet:0 "Province of Kätzylvania"
+VIR_KAT_FGE_autonomy_puppet_DEF:0 "Province of Kätzylvania"
+VIR_KAT_FGE_autonomy_colony:0 "Colony of Kätzylvania"
+VIR_KAT_FGE_autonomy_colony_DEF:0 "Colony of Kätzylvania"
+VIR_KAT_FGE_autonomy_dominion:0 "Dominion of Kätzylvania"
+VIR_KAT_FGE_autonomy_dominion_DEF:0 "Dominion of Kätzylvania"
+VIR_KAT_FGE_autonomy_supervised_state:0 "Dominion of Kätzylvania"
+VIR_KAT_FGE_autonomy_supervised_state_DEF:0 "Dominion of Kätzylvania"
+
+#normal Virginia names
+GRG:0 "Georgia"
+GRG_DEF:0 "Georgia"
+GRG_ADJ:0 "Georgia"
+
+#special Virginia names
+GRG_SHE:0 "Shermania"
+GRG_SHE_DEF:0 "Shermania"
+GRG_SHE_ADJ:0 "Shermania"
+GRG_SHE_FGE_autonomy_integrated_puppet:0 "Special Administrative Zone of Shermania"
+GRG_SHE_FGE_autonomy_integrated_puppet_DEF:0 "Special Administrative Zone of Shermania"
+GRG_SHE_FGE_autonomy_puppet:0 "Province of Shermania"
+GRG_SHE_FGE_autonomy_puppet_DEF:0 "Province of Shermania"
+GRG_SHE_FGE_autonomy_colony:0 "Colony of Shermania"
+GRG_SHE_FGE_autonomy_colony_DEF:0 "Colony of Shermania"
+GRG_SHE_FGE_autonomy_dominion:0 "Dominion of Shermania"
+GRG_SHE_FGE_autonomy_dominion_DEF:0 "Dominion of Shermania"
+GRG_SHE_FGE_autonomy_supervised_state:0 "Dominion of Shermania"
+GRG_SHE_FGE_autonomy_supervised_state_DEF:0 "Dominion of Shermania"
+
+#normal Texas names
+TEX:0 "Texas"
+TEX_DEF:0 "Texas"
+TEX_ADJ:0 "Texan"
+
+#special Texas names
+TEX_FGE_autonomy_integrated_puppet:0 "Special Administrative Zone of Texas"
+TEX_FGE_autonomy_integrated_puppet_DEF:0 "Special Administrative Zone of Texas"
+TEX_FGE_autonomy_puppet:0 "Province of Texas"
+TEX_FGE_autonomy_puppet_DEF:0 "Province of Texas"
+TEX_FGE_autonomy_colony:0 "Colony of Texas"
+TEX_FGE_autonomy_colony_DEF:0 "Colony of Texas"
+TEX_FGE_autonomy_dominion:0 "Dominion of Texas"
+TEX_FGE_autonomy_dominion_DEF:0 "Dominion of Texas"
+TEX_FGE_autonomy_supervised_state:0 "Dominion of Texas"
+TEX_FGE_autonomy_supervised_state_DEF:0 "Dominion of Texas"
+
+#normal Texas names
+CUB:0 "Cuba"
+CUB_DEF:0 "Cuba"
+CUB_ADJ:0 "Cuban"
+
+#special Texas names
+CUB_FGE_autonomy_integrated_puppet:0 "Special Administrative Zone of Cuba"
+CUB_FGE_autonomy_integrated_puppet_DEF:0 "Special Administrative Zone of Cuba"
+CUB_FGE_autonomy_puppet:0 "Province of Cuba"
+CUB_FGE_autonomy_puppet_DEF:0 "Province of Cuba"
+CUB_FGE_autonomy_colony:0 "Colony of Cuba"
+CUB_FGE_autonomy_colony_DEF:0 "Colony of Cuba"
+CUB_FGE_autonomy_dominion:0 "Dominion of Cuba"
+CUB_FGE_autonomy_dominion_DEF:0 "Dominion of Cuba"
+CUB_FGE_autonomy_supervised_state:0 "Dominion of Cuba"
+CUB_FGE_autonomy_supervised_state_DEF:0 "Dominion of Cuba"

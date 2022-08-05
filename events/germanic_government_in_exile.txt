@@ -1,0 +1,678 @@
+add_namespace = gge
+country_event = {
+	id = gge.1
+	title = gge.1.t
+	desc = gge.1.d
+	is_triggered_only = yes
+	option = {
+		name = gge.1.a
+		add_country_leader_trait = cabinet_crisis
+		hidden_effect = {
+			country_event = {
+				id = gge.2
+				days = 30
+			}
+		}
+	}
+}
+country_event = { #national assembly convenes
+	id = gge.2
+	title = gge.2.t
+	desc = gge.2.d
+	picture = GFX_report_event_generic_parliament
+	is_triggered_only = yes
+	option = {
+		name = gge.2.a
+		hidden_effect = {
+			country_event = {
+				id = gge.3
+				days = 1
+			}
+		}
+	}
+}
+country_event = { #vote of no confidence
+	id = gge.3
+	title = gge.3.t
+	desc = gge.3.d
+	picture = GFX_report_event_generic_parliament
+	is_triggered_only = yes
+	option = {
+		name = gge.3.a
+		hidden_effect = {
+			country_event = {
+				id = gge.6
+				days = 1
+			}
+		}
+		ai_chance = {
+			factor = 50
+		}
+	}
+	option = {
+		name = gge.3.b 
+		retire_character = skulli73
+		ai_chance = {
+			factor = 50
+		}
+		hidden_effect = {
+			country_event = {
+				id = gge.8
+				days = 1
+			}
+		}
+	}
+}
+news_event = {
+	id = gge.4
+	title = gge.4.t
+	desc = gge.4.d
+	picture = GFX_news_event_generic_parliament
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = gge.4.a
+	}
+}
+news_event = {
+	id = gge.5
+	title = gge.5.t
+	desc = gge.5.d
+	picture = GFX_news_event_generic_parliament
+	major = yes
+	is_triggered_only = yes
+	option = {
+		name = gge.5.a
+	}
+}
+country_event = { #day 3, skulli proposes to create smaller ministries
+	id = gge.6
+	title = gge.6.t
+	desc = gge.6.d
+	picture = GFX_report_event_generic_parliament
+	is_triggered_only = yes
+	option = {
+		name = gge.6.a
+		hidden_effect = {
+			country_event = {
+				id = gge.7
+				hours = 12
+			}
+		}
+	}
+}
+country_event = { #day 3,  motion denied
+	id = gge.7
+	title = gge.7.t
+	desc = gge.7.d
+	picture = GFX_report_event_generic_parliament
+	is_triggered_only = yes
+	option = {
+		name = gge.7.a
+		set_country_flag = FGE_smaller_ministries_denied
+		add_political_power = -200
+		add_stability = -0.4
+		add_popularity = {
+			ideology = democratic
+			popularity = -0.3
+		}
+	}
+}
+country_event = { #day 3, prime minister election or reelection
+	id = gge.8
+	title = gge.8.t
+	desc = gge.8.d
+	picture = GFX_report_event_generic_parliament
+	is_triggered_only = yes
+	option = {
+		name = gge.8.a
+		hidden_effect = {
+			news_event = {
+				id = gge.9
+				hours = 12
+			}
+		}
+		promote_character = sam
+		mark_focus_tree_layout_dirty = yes
+		ai_chance = {
+			factor = 40
+		}
+	}
+	option = {
+		name = gge.8.b
+		hidden_effect = {
+			country_event = {
+				id = gge.10
+				days = 10
+			}
+		}
+		ai_chance = {
+			factor = 40
+		}
+	}
+	option = {
+		name = gge.8.c
+		hidden_effect = {
+			country_event = {
+				id = gge.11
+				hours = 12
+			}
+		}
+		ai_chance = {
+			factor = 20
+		}
+	}
+}
+news_event = { #day 3 new prime minister elected
+	id = gge.9
+	title = gge.9.t
+	desc = gge.9.d
+	picture = GFX_report_event_generic_parliament
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = gge.9.a
+	}
+}
+country_event = { #election
+	id = gge.10
+	title = gge.10.t
+	desc = gge.10.d
+	picture = GFX_report_event_generic_parliament
+	is_triggered_only = yes
+	option = {
+		name = gge.10.a
+		hidden_effect = {
+			news_event = {
+				id = gge.12
+				hours = 12
+			}
+		}
+		promote_character = ace
+		mark_focus_tree_layout_dirty = yes
+		remove_ideas = ace_minister_of_foreign_affairs
+		ai_chance = {
+			factor = 50
+		}
+	}
+	option = {
+		name = gge.10.b
+		hidden_effect = {
+			news_event = {
+				id = gge.13
+				hours = 12
+			}
+		}
+		promote_character = sam
+		mark_focus_tree_layout_dirty = yes
+		ai_chance = {
+			factor = 50
+		}
+	}
+}
+country_event = { #emperor appoints new pm
+	id = gge.11
+	title = gge.11.t
+	desc = gge.11.d
+	picture = GFX_report_event_generic_parliament
+	is_triggered_only = yes
+	option = {
+		name = gge.11.a
+		hidden_effect = {
+			news_event = {
+				id = gge.14
+				hours = 12
+			}
+		}
+		promote_character = fortressia
+		mark_focus_tree_layout_dirty = yes
+	}
+}
+news_event = {
+	id = gge.12
+	title = gge.12.t
+	desc = gge.12.d
+	picture = GFX_news_event_election_vote
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = gge.12.a
+	}
+}
+news_event = {
+	id = gge.13
+	title = gge.13.t
+	desc = gge.13.d
+	picture = GFX_news_event_election_vote
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = gge.13.a
+	}
+}
+news_event = {
+	id = gge.14
+	title = gge.14.t
+	desc = gge.14.d
+	picture = GFX_news_event_generic_read_write
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = gge.14.a
+	}
+}
+news_event = {
+	id = gge.15
+	title = gge.15.t
+	desc = gge.15.d
+	picture = GFX_news_event_generic_parliament
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = gge.15.a
+	}
+}
+country_event = {
+	id = gge.16
+	title = gge.16.t
+	desc = gge.16.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+	option = {
+		name = gge.16.a
+		diplomatic_relation = {
+			country = FGE
+			relation = non_aggression_pact
+		}
+		set_global_flag = FGE_TRL_pact
+		every_country = {
+			limit = {
+				is_in_faction_with = FGE
+			}
+			news_event = {
+				id = gge.17
+				hours = 12
+			}
+		}
+		ai_chance = {
+			factor = 100
+		}
+	}
+	option = {
+		name = gge.16.b
+	}
+}
+news_event = {
+	id = gge.17
+	title = gge.17.t
+	desc = gge.17.d
+	picture = GFX_news_event_generic_read_write
+	is_triggered_only = yes
+	option = {
+		name = gge.17.a
+		ai_chance = {
+			factor = 50
+		}
+	}
+	option = {
+		name = gge.17.b
+		leave_faction = yes
+		trigger = {
+			tag = ZAP
+		}
+		ai_chance = {
+			factor = 50
+		}
+	}
+}
+country_event = {
+	id = gge.18
+	title = gge.18.t
+	desc = gge.18.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+	option = {
+		name = gge.18.a
+		every_state = {
+			limit = {
+				is_owned_and_controlled_by = FGE
+				OR = {
+					region = 188
+					region = 187
+					state = 333
+				}
+			}
+			transfer_state_to = ROOT
+		}
+		set_global_flag = FGE_JPN_deal
+		add_popularity = {
+			ideology = neutrality
+			popularity = 0.5
+		}
+		IF = {
+			limit = {
+				is_in_faction_with = CSA
+			}
+			leave_faction = yes
+		}
+		ai_chance = {
+			factor = 75
+		}
+		hidden_effect = {
+			news_event = {
+				id = gge.19
+				days = 1
+			}
+		}
+	}
+	option = {
+		name = gge.18.b
+		ai_chance = {
+			factor = 25
+		}
+		FGE = {
+			country_event = {
+				id = gge.20
+		 		hours = 6
+			}
+		}
+	}
+}
+news_event = {
+	id = gge.19
+	title = gge.19.t
+	desc = gge.19.d
+	picture = GFX_news_event_generic_read_write
+	is_triggered_only = yes
+	major = yes 
+	option = { 
+		name = gge.19.a
+	}
+}
+country_event = {   
+	id = gge.20
+	title = gge.20.t
+	desc = gge.20.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+	option = {
+		name = gge.20.a
+	}
+}
+country_event = {   
+	id = gge.21
+	title = gge.21.t
+	desc = gge.21.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+	option = {
+		name = gge.21.a
+		ai_chance = {
+			factor = 100
+		}
+		leave_faction = yes
+		set_politics = {
+			ruling_party = neutrality
+		}
+		add_popularity = {
+			popularity = 1
+			ideology = neutrality
+		}
+		news_event = {
+			id = gge.23
+		}
+	}
+	option = {
+		name = gge.21.b
+	}
+}
+country_event = {   
+	id = gge.22
+	title = gge.21.t
+	desc = gge.22.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+	option = {
+		name = gge.22.a
+		ai_chance = {
+			factor = 100
+		}
+		leave_faction = yes
+		set_politics = {
+			ruling_party = neutrality
+		}
+		add_popularity = {
+			popularity = 1
+			ideology = neutrality
+		}
+		news_event = {
+			id = gge.23
+		}
+	}
+	option = {
+		name = gge.22.b
+	}
+}
+news_event = {
+	id = gge.23
+	title = gge.23.t
+	desc = gge.23.d
+	picture = GFX_news_event_generic_read_write
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = gge.23.a
+	}
+}
+country_event = {
+	id = gge.24
+	title = gge.24.t
+	desc = gge.24.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+	option = {
+		name = gge.24.a
+		set_global_flag = FGE_ILY_pact
+		FGE = {
+			country_event = {
+				id = gge.25
+				hours = 6
+			}
+		}
+		ai_chance = {
+			factor = 100
+		}
+	}
+	option = {
+		name = gge.24.b
+		FGE = {
+			country_event = {
+				id = gge.26
+				hours = 6
+			}
+		}
+	}
+}
+country_event = {
+	id = gge.25
+	title = gge.25.t
+	desc = gge.25.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+	option = {
+		name = gge.25.a
+	}
+}
+country_event = {
+	id = gge.26
+	title = gge.26.t
+	desc = gge.26.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+	option = {
+		name = gge.26.a
+	}
+}
+news_event = { #return of the germanic government in exile
+	id = gge.27
+	title = gge.27.t
+	desc = gge.27.d
+	picture = GFX_news_event_germania_liberation
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = gge.27.a
+		trigger = {
+			tag = FGE
+		}
+	}
+	option = {
+		name = gge.27.b
+		trigger = {
+			is_in_faction_with = FGE
+			NOT = {
+				tag = FGE
+			}
+		}
+	}
+	option = {
+		name = gge.27.c
+		trigger = {
+			is_in_faction_with = CSA
+		}
+	}
+}
+country_event = {
+	id = gge.28
+	title = gge.28.t
+	desc = gge.28.d
+	is_triggered_only = yes
+	option = {
+		name = gge.28.a
+		ILY = {
+			leave_faction = yes
+			set_rule = {
+				can_join_factions = no
+			}
+			white_peace = CSA
+		}
+	}
+}
+country_event = {
+	id = gge.29
+	title = gge.29.t
+	desc = gge.29.d
+	is_triggered_only = yes
+	option = {
+		name = gge.29.a
+		ai_chance = {
+			factor = 1000
+		}
+		IF = {
+			limit = {
+				FGE = {
+					has_war_with = ILY
+				}
+			}
+			ILY = {
+				every_owned_state= {
+					limit = {
+						is_controlled_by = TRL
+					}
+					transfer_state_to = TRL
+				}
+			}
+			FGE = {
+				annex_country = {
+					target = ILY
+					transfer_troops = no
+				}
+			}
+		} 
+		every_country = {
+			limit = {
+				is_in_faction_with = ROOT
+			}
+			leave_faction = yes
+		}
+		every_country = {
+			limit = {
+				is_subject_of = ROOT
+				OR = {
+					tag = IND
+				}
+			}
+			ROOT = {
+				end_puppet = PREV
+			}
+			FGE = {
+				puppet = PREV
+			}
+		}
+		every_owned_state = {
+			limit = {
+				NOT = {
+					is_on_continent = north_america
+					is_on_continent = south_america
+				}
+			}
+			transfer_state_to = FGE
+		}
+		white_peace = FGE
+		news_event = {
+			id = gge.30
+			days = 1
+		}
+	}
+	option = {
+		name = gge.29.b
+		FGE = {
+			complete_national_focus = FGE_destroy_the_southern_union
+		}
+		set_global_flag = CSA_denied_peace
+	}
+}
+news_event = {
+	id = gge.30
+	title = gge.30.t
+	desc = gge.30.d
+	is_triggered_only = yes
+	major = yes
+	picture = GFX_news_event_generic_sign_treaty1
+	option = {
+		name = gge.30.a
+	}
+}
+news_event = {
+	id = gge.31
+	title = gge.31.t
+	desc = gge.31.d
+	is_triggered_only = yes
+	major = yes
+	picture = GFX_news_event_su_flag_burn
+	option = {
+		name = gge.31.a
+	}
+}
+news_event = {
+	id = gge.32
+	title = gge.32.t
+	desc = gge.32.d
+	is_triggered_only = yes
+	major = yes
+	picture = GFX_news_event_su_flag_burn
+	option = {
+		name = gge.32.a
+		trigger = {
+			tag = FGE
+		}
+	}
+	option = {
+		name = gge.32.b
+		trigger = {
+			NOT = {
+				tag = FGE
+			}
+		}
+	}
+}

@@ -1,0 +1,80 @@
+ideas = {
+	country = {
+		inefficient_government_1 = {
+			name = "Inefficient Government"
+			picture = prc_low_popular_support3
+			modifier = {
+				political_power_factor = -0.75
+				political_advisor_cost_factor = 3
+				production_speed_industrial_complex_factor = -0.5
+				production_speed_arms_factory_factor = -0.5
+			}
+		}
+		inefficient_government_2 = {
+			name = "Inefficient Government"
+			picture = prc_low_popular_support2
+			modifier = {
+				political_power_factor = -0.5
+				political_advisor_cost_factor = 2
+				production_speed_industrial_complex_factor = -0.3
+				production_speed_arms_factory_factor = -0.3
+			}
+		}
+		inefficient_government_3 = {
+			name = "Inefficient Government"
+			picture = generic_disjointed_gov
+			modifier = {
+				political_power_factor = -0.25
+				political_advisor_cost_factor = 1
+				production_speed_industrial_complex_factor = -0.15
+				production_speed_arms_factory_factor = -0.15
+			}
+		}
+		FGE_isolate_the_empire = {
+			name = FGE_isolate_the_empire
+			picture = generic_democratic_opposition
+			modifier = {
+				improve_relations_maintain_cost_factor = -.5
+				opinion_gain_monthly_factor = 2.5
+				opinion_gain_monthly_same_ideology_factor = 2.5
+				diplomatic_pressure_mission_factor = 2
+				boost_ideology_mission_factor = 2
+			}
+		}
+		FGE_every_man_his_own_farm = {
+			name = FGE_every_man_his_own_farm
+			picture = LIT_invested_in_farms
+			modifier = {
+				local_resources_factor = 0.6
+				monthly_population = 0.5
+			}
+		}
+		FGE_automized_gun_production = {
+			name = FGE_automized_gun_production
+			picture = generic_infantry_equipment_manufacturer_2
+			modifier = {
+				conscription_factor = 0.3
+				production_factory_efficiency_gain_factor = 0.3
+			}
+		}
+		FGE_keep_old_doctrines = {
+			name = FGE_keep_old_doctrines
+			picture = generic_fortify_city
+			modifier = {
+				defence = 0.3
+				production_speed_bunker_factor = 1
+			}
+		}
+		FGE_destroy_the_southern_union = {
+			name = FGE_destroy_the_southern_union
+			picture = spr_anti_fascist_crusade
+			modifier = {
+				
+			}
+			targeted_modifier = {
+				tag = CSA
+				attack_bonus_against = 0.3
+			}
+		}
+	}
+}

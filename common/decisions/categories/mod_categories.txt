@@ -1,0 +1,36 @@
+brt_collapse = {
+	priority = 100
+}
+demo = {
+	priority = 50
+}
+FGE_GME_resistance = {
+	priority = 75
+	visible_when_empty = yes
+	allowed = {
+		OR = {
+			tag = FGE
+			tag = GME
+		}
+	}
+	visible = {
+		FGE = {
+			has_completed_focus = FGE_coordinate_resistance
+		}
+	}
+}
+FGE_return_home = {
+	priority = 200
+	allowed = {
+		tag = FGE
+	}
+}
+FGE_destroy_CSA = {
+	priority = 150
+	allowed = {
+		tag = FGE
+	}
+	visible = {
+		has_completed_focus = FGE_destroy_the_southern_union
+	}
+}

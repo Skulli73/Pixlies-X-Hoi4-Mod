@@ -1,0 +1,406 @@
+FGE_GME_resistance = {
+	contact_rebels = {
+		cost = 150
+		state_target = yes
+		visible = {
+			FROM = {
+				is_owned_by = GME
+				is_core_of = GME
+				is_core_of = FGE
+			}
+			has_completed_focus = FGE_coordinate_resistance
+			NOT = {
+				limit = {
+					has_war_with = GME
+				}
+			}
+		}
+		allowed = {
+			tag = FGE
+		}
+		available = {
+			has_equipment = {
+				infantry_equipment > 1000
+			}
+		}
+		days_remove = 30
+		remove_effect = {
+			FROM = {
+				set_demilitarized_zone = yes
+				remove_core_of = OWNER
+				start_resistance = FGE
+			}
+		}
+		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -1000
+			}
+		}
+		ai_will_do = {
+			factor = 50
+		}
+		on_map_mode = map_only
+	}
+	support_rebels = {
+		cost = 25
+		state_target = yes
+		visible = {
+			FROM = {
+				is_owned_by = GME
+				NOT = {is_core_of = GME}
+				is_core_of = FGE
+			}
+			has_completed_focus = FGE_coordinate_resistance
+		}
+		allowed = {
+			tag = FGE
+		}
+		available = {
+			has_equipment = {
+				infantry_equipment > 500
+			}
+		}
+		days_remove = 30
+		remove_effect = {
+			FROM = {
+				hidden_effect = {
+					set_demilitarized_zone = yes
+				}
+				add_resistance = .05
+			}
+		}
+		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -500
+			}
+			FROM = {
+				add_resistance = .05
+			}
+		}
+		ai_will_do = {
+			factor = 50
+		}
+	}
+	fight_rebels = {
+		cost = 50
+		state_target = yes
+		visible = {
+			FROM = {
+				is_owned_by = GME
+				NOT = {is_core_of = GME}
+				is_core_of = FGE
+			}
+		}
+		allowed = {
+			tag = GME
+		}
+		available = {
+			has_equipment = {
+				infantry_equipment > 200
+			}
+			FROM = {
+				compliance > .5
+			}
+		}
+		days_remove = 30
+		remove_effect = {
+			FROM = {
+				set_demilitarized_zone = no
+				add_core_of = ROOT
+			}
+		}
+		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -200
+			}
+		}
+		ai_will_do = {
+			factor = 50
+		}
+	}
+}
+FGE_return_home = {
+	FGE_invade_national_state = {
+		fire_only_once = yes
+		allowed = {
+			tag = FGE
+		}
+		visible = {
+			has_completed_focus = FGE_operation_broken_star
+		}
+		days_remove = 25
+		war_with_on_remove = FGE
+		remove_effect = {
+			declare_war_on = {
+				target = GME
+				type = annex_everything
+			}
+		}
+		ai_will_do = {
+			factor = 100000
+			modifier = {
+				factor = 0
+				NOT = {
+					TRL = {
+						OR = {
+							has_war_with = GME
+							has_war_with = CSA
+						}
+					}
+				}
+			}
+		}
+	}
+	FGE_return_home_decision = {
+		fire_only_once = yes
+		available = {
+			OR = {
+				GME = {
+					exists = no
+				}
+				GME = {
+					has_capitulated = yes
+				}
+			}
+		}
+		complete_effect = {
+			IF = {
+				limit = {
+					NOT = {
+						has_cosmetic_tag = GME_REPUBLIC
+					}
+				}
+				set_cosmetic_tag = GME
+			}
+			add_political_power = 300
+			set_global_flag = FGE_returned_home
+			IF = {
+				limit = {
+					NOT = {
+						has_global_flag = FGE_TRL_pact
+					}
+				}
+				every_state = {
+					limit = {
+						is_owned_by = GME
+						is_controlled_by = TRL
+					}
+					transfer_state_to = TRL
+				}
+				ELSE_IF = {
+					limit = {
+						TRL = {
+							has_war_with = GME
+						}
+					}
+					every_state = {
+						limit = {
+							OR = {
+								state = 153
+								state = 152
+								state =52
+								state = 53
+								state = 54
+								state = 151
+								state = 3
+								state =50
+							}
+						}
+						transfer_state_to = TRL
+					}
+				}
+			}
+			annex_country = {
+				target = GME
+				transfer_troops = yes
+			}
+			set_capital = {
+				state = 51
+			}
+			news_event = {
+				id = gge.27
+				hours = 1
+			}
+			hidden_effect = {
+				IF = {
+					limit = {
+						ILY = {
+							has_government = fascism
+						}
+					}
+					country_event = {
+						id = gge.28
+						days = 10
+					}
+				}
+				mark_focus_tree_layout_dirty = yes
+			}
+		}
+	}
+}
+FGE_destroy_CSA = {
+	FGE_expand_south_american_claims = {
+		fire_only_once = yes
+		cost = 50
+		ai_will_do = {
+			factor = 10000
+		}
+		days_remove = 15
+		remove_effect = {
+			every_state = {
+				limit = {
+					OR = {
+						state = 489
+						state = 493
+						state = 306
+						state = 695
+					}
+					is_owned_by = WIL
+				}
+				transfer_state_to = ROOT
+			}
+		}
+	}
+	FGE_go_through_VNZ = {
+		fire_only_once = yes
+		cost = 50
+		ai_will_do = {
+			factor = 100000
+		}
+		days_remove = 50
+		war_with_on_remove = VNZ
+		remove_effect = {
+			declare_war_on = {
+				target = VNZ
+				type = puppet_wargoal_focus
+			}
+		}
+		available = {
+			any_owned_state = {
+				any_neighbor_state = {
+					is_owned_by = VNZ
+				}
+			}
+		}
+	}
+	FGE_force_CSA_surrender = {
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 10000
+		}
+		complete_effect = {
+			373 = {
+				transfer_state_to = WIL
+			}
+			CSA = {
+				release = VIR
+				release = GRG
+				release = TEX
+				every_country = {
+					limit = {
+						is_in_faction_with = CSA
+					}
+					leave_faction = yes
+				}
+				IF = {
+					limit = {
+						has_war_with = TRL
+					}
+					TRL = {
+						puppet = TEX
+						set_autonomy = {
+							target = TEX
+							autonomy_state = autonomy_integrated_puppet
+						}
+					}
+					ELSE = {
+						ROOT = {
+							puppet = TEX
+							set_autonomy = {
+								target = TEX
+								autonomy_state = autonomy_integrated_puppet
+							} 
+						}
+					}
+				}
+			}
+			puppet = VIR
+			set_autonomy = {
+				target = VIR
+				autonomy_state = autonomy_integrated_puppet
+			}	
+			VIR = {
+				set_cosmetic_tag = VIR_KAT
+			}
+			puppet = GRG
+			set_autonomy = {
+				target = GRG
+				autonomy_state = autonomy_integrated_puppet
+			}
+			GRG = {
+				set_cosmetic_tag = GRG_SHE
+			}
+			annex_country = {
+				target = CSA
+			}		
+			every_owned_state = {
+				limit = {
+					OR = {
+						region = 170
+					region = 53
+					}
+				}
+				add_core_of = CUB
+			}
+			release_puppet = CUB
+			set_autonomy = {
+				target = CUB
+				autonomy_state = autonomy_integrated_puppet
+			}
+			IF = {
+				limit = {
+					IND = {
+						has_war_with = ROOT
+					}
+				}
+				white_peace = IND
+				puppet = IND
+				set_autonomy = {
+					target = IND
+					autonomy_state = autonomy_supervised_state
+				}
+			}
+			IF = {
+				limit = {
+					FIJ = {
+						has_capitulated = yes
+					}
+				}
+				annex_country = {
+					target = FIJ
+				}
+				ELSE = {
+					white_peace = FIJ
+				}
+			}
+			news_event = {
+				id = gge.32
+				hours = 6
+			}
+		}
+		available = {
+			CSA = {
+				surrender_progress > .5
+			}
+			365 = {
+				is_controlled_by = ROOT
+			}
+		}
+		visible = {
+			has_war_with = CSA
+		}
+	}
+}

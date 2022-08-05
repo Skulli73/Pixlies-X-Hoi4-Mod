@@ -98,6 +98,15 @@ colonise = {
 					}
 				}
 			}
+			modifier = {
+				factor = 0
+				ROOT = {
+					OR = {
+						original_tag = CSA
+						original_tag = VNZ
+					}
+				}
+			}
 		}
 	}
 	cheat_population = {

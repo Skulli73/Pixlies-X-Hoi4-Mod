@@ -56,3 +56,31 @@ VNZ = {
 	color = rgb {255 204 66}
 	color_ui = rgb {255 204 66}
 }
+PRT = {
+	color = rgb {55 127 55}
+	color_ui = rgb {55 127 55}
+}
+FIJ = {
+	color = rgb {104 147 255}
+	color_ui = rgb {104 147 255}
+}
+IND = {
+	color = rgb {105 173 112}
+	color_ui = rgb {105 173 112}
+}
+FNL = {
+	color = rgb {255 255 255}
+	color_ui = rgb {255 255 255}
+}
+VIR = {
+	color = rgb {0 0 170}
+	color_ui = rgb {0 0 170}
+}
+GRG = {
+	color = rgb {252 140 3}
+	color_ui = rgb {252 140 3}
+}
+TEX = {
+	color = rgb {150 0 0}
+	color_ui = rgb {150 0 0}
+}

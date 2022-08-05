@@ -88,6 +88,38 @@ on_actions = {
 					mil_fac_ratio_auto = 0.15
 				}
 			}
+			PRT = {
+				set_variable = {
+					population_auto = 8
+				}
+				set_variable = {
+					mil_fac_ratio_auto = 0.2
+				}
+			}
+			FIJ = {
+				set_variable = {
+					population_auto = 4
+				}
+				set_variable = {
+					mil_fac_ratio_auto = 0.4
+				}
+			}
+			IND = {
+				set_variable = {
+					population_auto = 5
+				}
+				set_variable = {
+					mil_fac_ratio_auto = 0.3
+				}
+			}
+			FNL = {
+				set_variable = {
+					population_auto = 10
+				}
+				set_variable = {
+					mil_fac_ratio_auto = 0.3
+				}
+			}
 
 			every_country = {
 				limit = {
@@ -128,7 +160,11 @@ on_actions = {
 						level = PREV.civs_in_capital
 						instant_build = yes
 					}
-					
+					add_building_construction = {
+						type = infrastructure
+						level = 4
+						instant_build = yes
+					}
 					add_manpower = PREV.capital_population
 				}
 				set_variable = {n = 0}
@@ -143,6 +179,11 @@ on_actions = {
 						add_manpower = 1
 						add_building_construction = {
 							type = industrial_complex
+							level = 1
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = infrastructure
 							level = 1
 							instant_build = yes
 						}
@@ -164,7 +205,11 @@ on_actions = {
 						level = PREV.mils_in_capital
 						instant_build = yes
 					}
-					
+					add_building_construction = {
+						type = infrastructure
+						level = 4
+						instant_build = yes
+					}
 					add_manpower = PREV.capital_population
 				}
 				set_variable = {n = 0}
@@ -182,9 +227,41 @@ on_actions = {
 							level = 1
 							instant_build = yes
 						}
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
 					}
 				}
 			}
-		}
+			every_state = {
+				limit = {
+					arms_factory > 0
+				}
+				set_variable = {n = 0}
+				while_loop_effect = {
+					break = a
+					limit = {check_variable = {building_level@arms_factory > n}}
+					add_to_variable = {n = 1}
+					create_unit = {
+						division = "name = \"Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.3 start_equipment_factor = 0.8 start_manpower_factor = 0.5"
+						owner = this.owner
+					}
+				}
+			}
+			every_state = {
+				limit = {
+					is_core_of = GME
+				}
+				add_core_of = FGE
+			}
+			FGE = {
+				country_event = {
+					id = gge.1
+					days = 15
+				}
+			}
+		} #effect bracket close
 	}
 }

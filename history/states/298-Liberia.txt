@@ -11,7 +11,8 @@ state=
 	
 
 	history= {
-		owner = WIL# = LIB
+		owner = FGE
+		add_core_of = FGE
 		buildings = {
 			#infrastructure = 1
 			#arms_factory = 1

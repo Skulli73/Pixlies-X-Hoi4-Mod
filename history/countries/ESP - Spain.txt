@@ -1,4 +1,4 @@
-﻿oob = "ESP_50"
+﻿oob = "GENERIC"
 capital = 41
 set_research_slots = 4
 set_stability = 0.12
@@ -28,4 +28,5 @@ recruit_character = maurice
 promote_character = maurice
 recruit_character = birb
 add_ideas = birb_head_of_state
+give_guarantee = PRT
 inherit_technology = CSA

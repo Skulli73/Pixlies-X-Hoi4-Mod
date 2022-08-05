@@ -22,9 +22,8 @@ country_event = {
 	option = {
 		name = ily.32.a
 		diplomatic_relation = {
-				country = CSA
-				relation = puppet
-				active = no
+				release_puppet = ILY
+				remove_from_faction = ILY
 			
 			}
 		}

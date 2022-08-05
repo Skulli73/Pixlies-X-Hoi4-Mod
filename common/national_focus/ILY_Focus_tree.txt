@@ -92,7 +92,7 @@ focus_tree = {
 		icon = GFX_focus_generic_italy_first
 		cost = 10
 		x = 19
-		y = 1
+		y = 3
 		prerequisite = {
 			focus = ILY_For_The_Independence
 		}

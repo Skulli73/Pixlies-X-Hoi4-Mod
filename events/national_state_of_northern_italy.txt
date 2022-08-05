@@ -1,0 +1,31 @@
+add_namespace = gge
+country_event = {
+	id = gge.29
+	title = gge.29.t
+	desc = gge.29.d
+	is_triggered_only = yes
+	option = {
+		name = gge.29.a
+		diplomatic_relation = {
+				country = CSA
+				relation = guarantee
+				active = yes
+			
+			}
+		}
+	}
+country_event = {
+	id = gge.32
+	title = gge.32.t
+	desc = gge.32.d
+	is_triggered_only = yes
+	option = {
+		name = gge.32.a
+		diplomatic_relation = {
+				country = CSA
+				relation = puppet
+				active = no
+			
+			}
+		}
+	}

@@ -65,5 +65,16 @@ ideas = {
 				production_speed_bunker_factor = 1
 			}
 		}
+		FGE_destroy_the_southern_union = {
+			name = FGE_destroy_the_southern_union
+			picture = spr_anti_fascist_crusade
+			modifier = {
+				
+			}
+			targeted_modifier = {
+				tag = CSA
+				attack_bonus_against = 0.3
+			}
+		}
 	}
 }

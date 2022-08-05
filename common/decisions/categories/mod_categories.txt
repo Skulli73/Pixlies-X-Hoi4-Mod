@@ -25,3 +25,12 @@ FGE_return_home = {
 		tag = FGE
 	}
 }
+FGE_destroy_CSA = {
+	priority = 150
+	allowed = {
+		tag = FGE
+	}
+	visible = {
+		has_completed_focus = FGE_destroy_the_southern_union
+	}
+}

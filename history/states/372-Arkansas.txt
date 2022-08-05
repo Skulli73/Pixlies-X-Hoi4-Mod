@@ -14,6 +14,7 @@ state={
 	history={
 		owner = CSA
 		add_core_of = CSA
+		add_core_of = TEX
 		buildings = {
 			#infrastructure = 2
 			#industrial_complex = 2

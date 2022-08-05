@@ -6,6 +6,7 @@ state={
 		owner = CSA# = USA
 		# = USA
 		add_core_of = CSA
+		add_core_of = VIR
 		buildings = {
 			#industrial_complex = 2
 			#infrastructure = 3

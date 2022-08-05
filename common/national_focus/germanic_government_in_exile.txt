@@ -1028,4 +1028,44 @@ focus_tree = {
 			}
 		}
 	}
+
+
+	focus = {
+		id = FGE_destroy_the_southern_union
+		icon = GFX_focus_generic_anti_fascist_diplomacy
+		cost = 10
+		x = 4
+		y = 0
+		allow_branch = {
+			has_global_flag = FGE_returned_home
+		}
+		mutually_exclusive = {
+			focus = FGE_force_su_to_sue_for_peace
+		}
+		completion_reward = {
+			add_ideas = FGE_destroy_the_southern_union
+			unlock_decision_category_tooltip = FGE_destroy_CSA
+		}
+	}
+	focus = {
+		id = FGE_force_su_to_sue_for_peace
+		icon = GFX_goal_generic_forceful_treaty
+		cost = 10
+		x = 6
+		y = 0
+		allow_branch = {
+			has_global_flag = FGE_returned_home
+		}
+		mutually_exclusive = {
+			focus = FGE_destroy_the_southern_union
+		}
+		completion_reward = {
+			CSA = {
+				country_event = {
+					id = gge.29
+					hours = 2
+				}
+			}
+		}
+	}
 }

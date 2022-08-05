@@ -201,4 +201,5 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 1088;11984;sea;69;-1;-1;-1;-1;;Cyprus-Levant 1
 1108;11984;sea;69;-1;-1;-1;-1;;Cyprus-Levant 2
 7193;4008;sea;69;-1;-1;-1;-1;;Cyprus-Anatolia
+13012;11106;sea;53;-1;-1;-1;-1;;Trinidad-Windward
 -1;-1;;-1;-1;-1;-1;-1;-1

@@ -654,3 +654,25 @@ news_event = {
 		name = gge.31.a
 	}
 }
+news_event = {
+	id = gge.32
+	title = gge.32.t
+	desc = gge.32.d
+	is_triggered_only = yes
+	major = yes
+	picture = GFX_news_event_su_flag_burn
+	option = {
+		name = gge.32.a
+		trigger = {
+			tag = FGE
+		}
+	}
+	option = {
+		name = gge.32.b
+		trigger = {
+			NOT = {
+				tag = FGE
+			}
+		}
+	}
+}

@@ -1,6 +1,6 @@
-﻿oob = "GENERIC"
-capital = 180
-set_research_slots =2
+﻿oob = "PRT_50"
+capital = 112
+set_research_slots = 2
 set_stability = 0.5
 set_war_support = 0.3
 set_convoys = 0
@@ -21,7 +21,7 @@ set_politics = {
 	elections_allowed = no
 }
 set_popularities = {
-	democratic = 40
-	neutrality = 60
+	democratic = 33
+	neutrality = 67
 }
 inherit_technology = CSA

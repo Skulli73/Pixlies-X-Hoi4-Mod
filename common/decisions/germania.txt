@@ -299,6 +299,12 @@ FGE_destroy_CSA = {
 				release = VIR
 				release = GRG
 				release = TEX
+				every_country = {
+					limit = {
+						is_in_faction_with = CSA
+					}
+					leave_faction = yes
+				}
 				IF = {
 					limit = {
 						has_war_with = TRL
@@ -353,6 +359,36 @@ FGE_destroy_CSA = {
 			set_autonomy = {
 				target = CUB
 				autonomy_state = autonomy_integrated_puppet
+			}
+			IF = {
+				limit = {
+					IND = {
+						has_war_with = ROOT
+					}
+				}
+				white_peace = IND
+				puppet = IND
+				set_autonomy = {
+					target = IND
+					autonomy_state = autonomy_supervised_state
+				}
+			}
+			IF = {
+				limit = {
+					FIJ = {
+						has_capitulated = yes
+					}
+				}
+				annex_country = {
+					target = FIJ
+				}
+				ELSE = {
+					white_peace = FIJ
+				}
+			}
+			news_event = {
+				id = gge.32
+				hours = 6
 			}
 		}
 		available = {

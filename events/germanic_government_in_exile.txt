@@ -676,3 +676,78 @@ news_event = {
 		}
 	}
 }
+country_event = {
+	id = gge.33
+	title = gge.33.t
+	desc = gge.33.d
+	is_triggered_only = yes
+	option = {
+		name = gge.33.a
+		every_country = {
+			limit = {
+				is_in_faction_with = FGE
+			}
+			every_state = {
+				limit = {
+					is_owned_by = ROOT
+					OR = {
+						is_core_of = PREV
+						is_claimed_by = PREV
+					}
+				}
+				transfer_state_to = PREV
+			}
+		}
+		news_event = {
+			id = gge.34
+		}
+	}
+	option = {
+		name = gge.33.b
+		FGE = {
+			create_wargoal = {
+				target = ROOT
+				type = puppet_wargoal_focus
+			}
+		}
+		news_event = {
+			id = gge.35
+		}
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+news_event = {
+	id = gge.34
+	title = gge.34.t
+	desc = gge.34.d
+	is_triggered_only = yes
+	major = yes
+	picture = GFX_news_event_generic_sign_treaty1
+	option = {
+		name = gge.34.a
+	}
+}
+news_event = {
+	id = gge.35
+	title = gge.35.t
+	desc = gge.35.d
+	is_triggered_only = yes
+	major = yes
+	picture = GFX_news_event_generic_sign_treaty1
+	option = {
+		name = gge.35.a
+		trigger = {
+			tag = FGE
+		}
+	}
+	option = {
+		name = gge.35.b
+		trigger = {
+			NOT = {
+				tag = FGE
+			}
+		}
+	}
+}

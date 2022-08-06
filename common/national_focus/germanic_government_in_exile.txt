@@ -1068,4 +1068,227 @@ focus_tree = {
 			}
 		}
 	}
+	focus = {
+		id = FGE_oppose_the_turuls
+		icon = GFX_goal_support_democracy
+		cost = 5
+		x = 1
+		y = 1
+		relative_position_id = FGE_destroy_the_southern_union
+		prerequisite = {
+			focus = FGE_destroy_the_southern_union
+			focus = FGE_force_su_to_sue_for_peace
+		}
+		completion_reward = {
+			TRL = {
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = large_decrease
+				}
+			}
+			add_opinion_modifier = {
+				target = TRL
+				modifier = large_decrease
+			}
+			IF = {
+				limit = {
+					has_non_aggression_pact_with = TRL
+				}
+				diplomatic_relation = {
+					country = TRL
+					relation = non_aggression_pact
+					active = no
+				}
+				TRL = {
+					diplomatic_relation = {
+						country = ROOT
+						relation = non_aggression_pact
+						active = no
+					}
+				}
+			}
+		}
+	}
+	focus = {
+		id = FGE_invite_zapadoslavia
+		icon = GFX_focus_POL_plan_west
+		cost = 5
+		x = -2
+		y = 1
+		relative_position_id = FGE_oppose_the_turuls
+		prerequisite = {
+			focus = FGE_oppose_the_turuls
+		}
+		allow_branch = {
+			OR = {
+				ZAP = {
+					is_in_faction = no
+				}
+				has_completed_focus = FGE_invite_zapadoslavia
+			}
+		}
+		completion_reward = {
+			ZAP = {
+				country_event = {
+					id = generic.5
+					days = 1
+				}
+			}
+		}
+	}
+	focus = {
+		id = FGE_invite_spain
+		icon = GFX_focus_intervention_spain_republic
+		cost = 5
+		x = 2
+		y = 1
+		relative_position_id = FGE_oppose_the_turuls
+		prerequisite = {
+			focus = FGE_oppose_the_turuls
+		}
+		allow_branch = {
+			OR = {
+				ESP = {
+					is_in_faction = no
+				}
+				has_completed_focus = FGE_invite_spain
+			}
+		}
+		completion_reward = {
+			ESP = {
+				country_event = {
+					id = generic.5
+					days = 1
+				}
+			}
+		}
+	}
+	focus = {
+		id = FGE_invite_soviets
+		icon = GFX_focus_chi_mission_to_the_soviet_union
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = FGE_oppose_the_turuls
+		prerequisite = {
+			focus = FGE_oppose_the_turuls
+		}
+		bypass = {
+			RUS = {
+				is_in_faction = yes
+			}
+		}
+		completion_reward = {
+			RUS = {
+				country_event = {
+					id = generic.5
+					days = 1
+				}
+			}
+		}
+	}
+	focus = {
+		id = FGE_demand_territorial_concessions
+		icon = GFX_goal_generic_territory_or_war
+		cost = 10
+		x = 0
+		y = 1
+		relative_position_id = FGE_invite_soviets
+		prerequisite = {
+			focus = FGE_invite_soviets
+		}
+		completion_reward = {
+			TRL = {
+				IF = {
+					limit = {
+						ILY = {
+							is_in_faction_with = ROOT
+						}
+					}
+					every_owned_state = {
+						limit = {
+							OR = {
+								region = 21
+								region = 23
+								region = 169
+								state = 736
+							}
+						}
+						add_core_of = ILY
+					}
+					ELSE = {
+						every_owned_state = {
+							limit = {
+								OR = {
+									region = 21
+									region = 23
+									region = 169
+									state = 102
+									state = 736
+								}
+								NOT = {
+									state = 156
+									state = 115
+									state = 117
+								}
+							}
+							add_claim_by = FGE
+						}
+						every_owned_state = {
+							limit = {
+								OR = {
+									state = 156
+									state = 115
+									state = 117
+								}
+							}
+							add_claim_by = BYZ
+						}
+					}
+				}
+				every_owned_state = {
+					limit = {
+						OR = {
+							region = 25
+							region = 202
+							state = 211
+							state = 212
+							state = 48
+							state = 801
+							state = 77
+							state = 106
+							state = 803
+							state = 802
+							state = 108
+							state = 805
+							state = 44
+							state = 105
+						}
+					}
+					add_core_of = BYZ
+				}
+				every_owned_state = {
+					limit = {
+						OR = {
+							region = 22
+							state = 73
+						}
+					}
+					add_core_of = ZAP
+				}
+				every_owned_state = {
+					limit = {
+						OR = {
+							region = 130
+						}
+					}
+					add_core_of = RUS
+				}
+				country_event = {
+					id = gge.33
+					hours = 6
+				}
+			}
+		}
+	}
 }

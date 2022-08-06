@@ -751,3 +751,116 @@ news_event = {
 		}
 	}
 }
+country_event = {
+	id = gge.36
+	title = gge.36.t
+	desc = gge.36.d
+	is_triggered_only = yes
+	# trigger = {
+	# 	OR = {
+	# 		AND = {
+	# 			has_completed_focus = FGE_destroy_the_southern_union
+	# 			OR = {
+	# 				VIR = {
+	# 					exists = yes
+	# 					is_subject_of = ROOT
+	# 				}
+	# 				GRG = {
+	# 					exists = yes
+	# 					is_subject_of = ROOT
+	# 				}
+	# 				TEX = {
+	# 					exists = yes
+	# 					is_subject_of = ROOT
+	# 				}
+	# 				CUB = {
+	# 					exists = yes
+	# 					is_subject_of = ROOT
+	# 				}
+	# 			}
+	# 		}
+	# 		AND = {
+	# 			has_completed_focus = FGE_force_su_to_sue_for_peace
+	# 			460 = {
+	# 				is_owned_by = ROOT
+	# 			}
+	# 		}
+	# 	}
+	# 	has_country_leader = {
+	# 		character = skulli73
+	# 		ruling_only = yes
+	# 	}
+	# 	NOT = {
+	# 		any_core_state = {
+	# 			is_owned_by = TRL
+	# 		}
+	# 	}
+	# }
+	option = {
+		name = gge.36.a
+		hidden_effect = {
+			country_event = {
+				id = gge.37
+				days = 10
+			}
+		}
+	}
+}
+country_event = {
+	id = gge.37
+	title = gge.37.t
+	desc = gge.37.d
+	is_triggered_only = yes
+	option = {
+		name = gge.37.a
+		hidden_effect = {
+			country_event = {
+				id = gge.38
+				days = 10
+			}
+		}
+	}
+}
+country_event = {
+	id = gge.38
+	title = gge.38.t
+	desc = gge.38.d
+	is_triggered_only = yes
+	option = {
+		name = gge.38.a
+		hidden_effect = {
+			country_event = {
+				id = gge.38
+				days = 2
+			}
+		}
+	}
+}
+country_event = {
+	id = gge.39
+	title = gge.39.t
+	desc = gge.39.d
+	is_triggered_only = yes
+	option = {
+		name = gge.39.a
+		hidden_effect = {
+			news_event = {
+				id = gge.40
+				days = 10
+			}
+		}
+		kill_country_leader = yes
+		promote_character = sam
+	}
+}
+news_event = {
+	id = gge.40
+	title = gge.40.t
+	desc = gge.40.d
+	is_triggered_only = yes
+	major = yes
+	picture = GFX_news_event_generic_sign_treaty1
+	option = {
+		name = gge.40.a
+	}
+}

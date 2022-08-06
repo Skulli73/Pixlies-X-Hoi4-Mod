@@ -45,6 +45,7 @@ focus_tree = {
 				popularity = 0.2
 			}
 			FGE_decrease_inefficient_government = yes
+			set_global_flag = GME_skulli
 		}
 	}
 	focus = {
@@ -127,6 +128,7 @@ focus_tree = {
 				ideology = democratic
 				popularity = .05
 			}
+			set_global_flag = GME_new_pm
 		}
 	}
 	focus = {
@@ -1280,6 +1282,7 @@ focus_tree = {
 					limit = {
 						OR = {
 							region = 130
+							state = 194
 						}
 					}
 					add_core_of = RUS

@@ -1,0 +1,37 @@
+on_actions = {
+	on_capitulation_immediate = {
+		effect = {
+			IF = {
+				limit = {
+					ROOT = {
+						original_tag = TRL
+					}
+					FROM = {
+						is_in_faction_with = FGE
+					}
+				}
+				every_country = {
+					limit = {
+						is_in_faction_with = FGE
+					}
+					every_state = {
+						limit = {
+							is_owned_by = ROOT
+							OR = {
+								is_core_of = PREV
+								is_claimed_by = PREV
+							}
+						}
+						transfer_state_to = PREV
+					}
+				}
+				FGE = {
+					country_event = {
+						id = gge.36
+						days = 2
+					}
+				}
+			}
+		}
+	}
+}

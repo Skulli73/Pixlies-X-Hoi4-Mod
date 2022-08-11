@@ -16,19 +16,19 @@ add_ideas = {
 
 #Politics for 50.1.1
 set_politics = {
-	ruling_party = neutrality
+	ruling_party = fascism
 	last_election = "49.10.25"
 	election_frequency = 60
 	elections_allowed = no
 }
 set_popularities = {
-	fascism = 30
+	fascism = 50
 	democratic = 20
-	neutrality = 50
+	neutrality = 30
 }
 create_country_leader = {
 	name = "Nikiblago08"
-	ideology = neutrality
+	ideology = fascism_ideology
 	picture = "niki.dds"
 	traits = {
 		constitutional_monarch

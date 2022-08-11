@@ -132,6 +132,11 @@ country_event = { #day 3, prime minister election or reelection
 				hours = 12
 			}
 		}
+		set_party_name = {
+			ideology = democratic
+			long_name = FGE_democratic_party_rep_long
+			name = FGE_democratic_party_rep
+		}
 		promote_character = sam
 		mark_focus_tree_layout_dirty = yes
 		ai_chance = {
@@ -202,6 +207,11 @@ country_event = { #election
 				id = gge.13
 				hours = 12
 			}
+		}
+		set_party_name = {
+			ideology = democratic
+			long_name = FGE_democratic_party_rep_long
+			name = FGE_democratic_party_rep
 		}
 		promote_character = sam
 		mark_focus_tree_layout_dirty = yes
@@ -830,7 +840,7 @@ country_event = {
 		name = gge.38.a
 		hidden_effect = {
 			country_event = {
-				id = gge.38
+				id = gge.39
 				days = 2
 			}
 		}
@@ -850,7 +860,22 @@ country_event = {
 			}
 		}
 		kill_country_leader = yes
+		set_party_name = {
+			ideology = democratic
+			long_name = FGE_democratic_party_rep_long
+			name = FGE_democratic_party_rep
+		}
 		promote_character = sam
+		add_country_leader_trait = acting_pm
+		set_country_flag = acting_pm
+		set_global_flag = skulli_suicide
+		mark_focus_tree_layout_dirty = yes
+		hidden_effect = {
+			country_event = {
+				id = gge.41
+				days = 3
+			}
+		}
 	}
 }
 news_event = {
@@ -862,5 +887,418 @@ news_event = {
 	picture = GFX_news_event_generic_sign_treaty1
 	option = {
 		name = gge.40.a
+	}
+}
+country_event = {
+	id = gge.41
+	title = gge.41.t
+	desc = gge.41.d
+	is_triggered_only = yes
+	picture = GFX_report_event_election_vote
+	option = {
+		name = gge.41.a
+		hidden_effect = {
+			country_event = {
+				id = gge.42
+				days = 3
+			}
+		}
+	}
+}
+country_event = {
+	id = gge.42
+	title = gge.42.t
+	desc = gge.42.d
+	is_triggered_only = yes
+	picture = GFX_report_event_election_vote
+	option = {
+		name = gge.42.a
+		clr_country_flag = acting_pm
+		remove_country_leader_trait = acting_pm
+		news_event = {
+			id = gge.43
+			hours = 12
+		}
+	}
+	option = {
+		name = gge.42.b
+		set_politics = {
+			ruling_party = neutrality
+			elections_allowed = yes
+		}
+		add_popularity = {
+			ideology = neutrality
+			popularity = 0.4
+		}
+		promote_character = atalius
+		clr_country_flag = acting_pm
+		remove_country_leader_trait = acting_pm
+		news_event = {
+			id = gge.44
+			hours = 12
+		}
+	}
+}
+news_event = {
+	id = gge.43
+	title = gge.43.t
+	desc = gge.43.d
+	is_triggered_only = yes
+	major = yes
+	picture = GFX_news_event_election_vote
+	option = {
+		name = gge.43.a
+	}
+}
+news_event = {
+	id = gge.44
+	title = gge.44.t
+	desc = gge.44.d
+	is_triggered_only = yes
+	major = yes
+	picture = GFX_news_event_election_vote
+	option = {
+		name = gge.44.a
+	}
+}
+country_event = {
+	id = gge.45
+	title = gge.45.t
+	desc = gge.45.d
+	is_triggered_only = yes
+	option = {
+		name = gge.45.a
+		every_country = {
+			limit = {
+				is_in_faction_with = FGE
+			}
+			set_country_flag = ofn_state_temp
+		}
+		every_country = {
+			limit = {
+				has_country_flag = ofn_state_temp
+			}
+			leave_faction = yes
+		}
+		set_cosmetic_tag = GME_REPUBLIC
+		effect_tooltip = {
+			start_civil_war = {
+				ideology = neutrality
+			}
+		}
+		hidden_effect = {
+			country_event = {
+				id = gge.47 
+				days = 5
+			}
+			create_dynamic_country = {
+				original_tag = ROOT
+				set_cosmetic_tag = FGE_monarchist_civil_war
+				inherit_technology = ROOT
+				set_politics = {
+					ruling_party = neutrality
+					elections_allowed = yes
+				}
+				set_popularities = {
+					democratic = 30
+					neutrality = 70
+				}
+				recruit_character = fortressia
+				recruit_character = atalius
+				promote_character = atalius
+				recruit_character = katz
+				recruit_character = phantom
+				every_state = {
+					limit = {
+						is_owned_by = prev.prev
+						NOT = {
+							state = 51
+							state = 7
+							state = 36
+							state = 35
+							state = 6
+							state = 34
+							state = 57
+							state = 56
+							region = 19
+							region = 20
+							region = 208
+							region = 8
+							state = 42
+							state = 8
+							state = 59
+							is_core_of = ILY
+							region = 23
+						}
+						is_on_continent = europe
+					}
+					transfer_state_to = prev
+				}
+				prev = {
+					transfer_units_fraction = {
+						target = PREV
+						size = 0.3
+					}
+				}
+			}
+		}
+	}
+}
+country_event = {
+	id = gge.46
+	title = gge.46.t
+	desc = gge.46.d
+	is_triggered_only = yes
+	option = {
+		name = gge.46.a
+		every_country = {
+			limit = {
+				is_in_faction_with = FGE
+			}
+			set_country_flag = ofn_state_temp
+		}
+		every_country = {
+			limit = {
+				has_country_flag = ofn_state_temp
+			}
+			leave_faction = yes
+		}
+		set_cosmetic_tag = FGE_monarchist_civil_war
+		effect_tooltip = {
+			start_civil_war = {
+				ideology = democratic
+			}
+		}
+		hidden_effect = {
+			country_event = {
+				id = gge.47 
+				days = 5
+			}
+			create_dynamic_country = {
+				original_tag = ROOT
+				set_cosmetic_tag = FGE_republican_civil_war
+				inherit_technology = ROOT
+				set_politics = {
+					ruling_party = democratic
+					elections_allowed = yes
+				}
+				set_popularities = {
+					democratic = 65
+					communism = 5
+					neutrality = 30
+				}
+				recruit_character = sam
+				recruit_character = ace
+				every_state = {
+					limit = {
+						is_owned_by = prev.prev
+						OR = {
+							state = 51
+							state = 7
+							state = 36
+							state = 35
+							state = 6
+							state = 34
+							state = 57
+							state = 56
+							region = 19
+							region = 20
+							region = 208
+							state = 42
+							state = 8
+							state = 59
+						}
+					}
+					transfer_state_to = prev
+				}
+				prev = {
+					transfer_units_fraction = {
+						target = PREV
+						size = 0.3
+					}
+				}
+			}
+		}
+	}
+}
+country_event = {
+	id = gge.47
+	title = gge.47.t
+	desc = gge.47.d
+	is_triggered_only = yes
+	option = {
+		name = gge.47.a
+		effect_tooltip = {
+			start_civil_war = {
+				ideology = fascism
+			}
+		}
+		hidden_effect = {
+			create_dynamic_country = {
+				original_tag = ROOT
+				set_cosmetic_tag = FGE_nsu_civil_war
+				inherit_technology = ROOT
+				set_politics = {
+					ruling_party = fascism
+					elections_allowed = no
+				}
+				set_popularities = {
+					fascism = 100
+				}
+				every_state = {
+					limit = {
+						is_owned_by = prev.prev
+						region = 8
+					}
+					transfer_state_to = prev
+				}
+				prev = {
+					transfer_units_fraction = {
+						target = PREV
+						size = 0.15
+					}
+				}
+			}
+			hidden_effect = {
+				IF = {
+					limit = {
+						ILY = {
+							exists = no
+						}
+					}
+					country_event = {
+						id = gge.49
+						days = 27
+					}
+					ELSE = {
+						country_event = {
+							id = gge.48
+							days = 7
+						}
+					}
+				}
+			}
+		}
+	}
+}
+country_event = {
+	id = gge.48
+	title = gge.48.t
+	desc = gge.48.d
+	is_triggered_only = yes
+	option = {
+		name = gge.48.a
+		every_owned_state = {
+			limit = {
+				OR = {
+					is_core_of = ILY
+					region = 23
+				}
+			}
+			transfer_state_to = ILY
+			teleport_armies = {
+				to_state_array = owned_controlled_states
+			}
+		}
+		ILY = {
+			set_politics = {
+				ruling_party = neutrality
+				elections_allowed = yes
+			}
+			division_template = {
+				name = "Italian Partisans"
+				regiments = {
+					infantry = {x = 0 y = 0}
+					infantry = {x = 0 y = 1}
+					infantry = {x = 0 y = 2}
+					infantry = {x = 0 y = 3}
+					artillery_brigade = {x = 0 y = 4}
+					infantry = {x = 1 y = 0}
+					infantry = {x = 1 y = 1}
+					infantry = {x = 1 y = 2}
+					artillery_brigade = {x = 1 y = 3}
+				}
+				is_locked = yes
+			}
+			every_owned_state = {
+				create_unit = {
+					division = "name = \"Italian Partisans\" division_template = \"Italian Partisans\" start_experience_factor = 0.05"
+					owner = ILY
+				}
+			}
+			set_cosmetic_tag = ILY_partisans_civil_war
+		}
+		hidden_effect = {
+			country_event = {
+				id = gge.49
+				days = 20
+			}
+		}
+	}
+	option = {
+		name = gge.48.b
+		every_owned_state = {
+			limit = {
+				region = 23
+			}
+			add_core_of = ILY
+		}
+		release = ILY
+		ILY = {
+			set_politics = {
+				ruling_party = democratic
+				elections_allowed = yes
+			}
+			division_template = {
+				name = "Italian Infantry Division"
+				regiments = {
+					infantry = {x = 0 y = 0}
+					infantry = {x = 0 y = 1}
+					infantry = {x = 0 y = 2}
+					infantry = {x = 0 y = 3}
+					artillery_brigade = {x = 0 y = 4}
+					infantry = {x = 1 y = 0}
+					infantry = {x = 1 y = 1}
+					infantry = {x = 1 y = 2}
+					artillery_brigade = {x = 1 y = 3}
+				}
+			}
+			every_owned_state = {
+				create_unit = {
+					division = "name = \"Infantry Division\" division_template = \"Italian Infantry Division\" start_experience_factor = 0.2"
+					owner = ILY
+				}
+			}
+		}
+		hidden_effect = {
+			country_event = {
+				id = gge.49
+				days = 20
+			}
+		}
+	}
+}
+country_event = {
+	id = gge.49
+	title = gge.49.t
+	desc = gge.49.d
+	is_triggered_only = yes
+	option = {
+		name = gge.49
+		every_other_country = {
+			limit = {
+				OR = {
+					AND = {
+						original_tag = ILY
+						has_cosmetic_tag = ILY_partisans_civil_war
+					}
+					original_tag = FGE
+				}
+			}
+			declare_war_on = {
+				target = PREV
+				type = civil_war
+			}
+		}
 	}
 }

@@ -800,3 +800,15 @@ SOV_ROME = {
 	color = rgb { 128 0 128 }
 	color_ui = rgb { 128 0 128 }
 }
+FGE_republican_civil_war = {
+	color = rgb { 150 139 84 }
+	color_ui = rgb { 150 139 84 }
+}
+FGE_monarchist_civil_war = {
+	color = rgb { 100 100 100 }
+	color_ui = rgb { 100 100 100 }
+}
+FGE_nsu_civil_war = {
+	color = rgb { 40 40 40 }
+	color_ui = rgb { 40 40 40 }
+}

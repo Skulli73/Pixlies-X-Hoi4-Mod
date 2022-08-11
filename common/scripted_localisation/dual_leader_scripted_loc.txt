@@ -43,8 +43,22 @@ defined_text = {
 				tag = FGE
 			}
 			has_government = democratic
+			NOT = {
+				has_country_flag = acting_pm
+			}
 		}
 		localization_key = "Prime Minister"
+	}
+	text = {
+		trigger = {
+			OR = {
+				tag = GME
+				tag = FGE
+			}
+			has_government = democratic
+			has_country_flag = acting_pm
+		}
+		localization_key = "Acting Prime Minister"
 	}
 	text = {
 		trigger = {

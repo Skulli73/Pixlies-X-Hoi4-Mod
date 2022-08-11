@@ -732,7 +732,7 @@ focus_tree = {
 	focus = {
 		id = FGE_build_up_a_new_factory
 		icon = GFX_goal_generic_construct_civilian
-		cost = 10
+		cost = 5
 		x = 35
 		y = 0
 		completion_reward = {
@@ -754,7 +754,7 @@ focus_tree = {
 	focus = {
 		id = FGE_expand_the_factories
 		icon = GFX_goal_generic_construct_civilian
-		cost = 10
+		cost = 5
 		x = -2
 		y = 1
 		relative_position_id = FGE_build_up_a_new_factory
@@ -847,7 +847,7 @@ focus_tree = {
 	focus = {
 		id = FGE_expand_arms_production
 		icon = GFX_goal_generic_construct_mil_factory
-		cost = 10
+		cost = 5
 		x = 2
 		y = 1
 		relative_position_id = FGE_expand_the_factories
@@ -868,7 +868,7 @@ focus_tree = {
 	focus = {
 		id = FGE_automized_gun_production
 		icon = GFX_goal_generic_small_arms
-		cost = 10
+		cost = 5
 		x = 1
 		y = 1
 		relative_position_id = FGE_expand_arms_production
@@ -893,7 +893,7 @@ focus_tree = {
 	focus = {
 		id = FGE_massive_arms_production
 		icon = GFX_goal_generic_construction2
-		cost = 10
+		cost = 5
 		x = -1
 		y = 1
 		relative_position_id = FGE_expand_arms_production
@@ -917,7 +917,7 @@ focus_tree = {
 	focus = {
 		id = FGE_expand_construction
 		icon = GFX_goal_generic_construct_civ_factory
-		cost = 10
+		cost = 5
 		x = -2
 		y = 1
 		relative_position_id = FGE_expand_the_factories
@@ -938,7 +938,7 @@ focus_tree = {
 	focus = {
 		id = FGE_centralize_industry
 		icon = GFX_focus_generic_industry_3
-		cost = 10
+		cost = 5
 		x = 1
 		y = 1
 		relative_position_id = FGE_expand_construction
@@ -960,7 +960,7 @@ focus_tree = {
 	focus = {
 		id = FGE_decentralize_industry
 		icon = GFX_focus_generic_industry_3
-		cost = 10
+		cost = 5
 		x = -1
 		y = 1
 		relative_position_id = FGE_expand_construction
@@ -1040,6 +1040,9 @@ focus_tree = {
 		y = 0
 		allow_branch = {
 			has_global_flag = FGE_returned_home
+			NOT = {
+				has_global_flag = skulli_suicide
+			}
 		}
 		mutually_exclusive = {
 			focus = FGE_force_su_to_sue_for_peace
@@ -1057,6 +1060,9 @@ focus_tree = {
 		y = 0
 		allow_branch = {
 			has_global_flag = FGE_returned_home
+			NOT = {
+				has_global_flag = skulli_suicide
+			}
 		}
 		mutually_exclusive = {
 			focus = FGE_destroy_the_southern_union
@@ -1080,6 +1086,11 @@ focus_tree = {
 		prerequisite = {
 			focus = FGE_destroy_the_southern_union
 			focus = FGE_force_su_to_sue_for_peace
+		}
+		available = {
+			NOT = {
+				has_war_with = CSA
+			}
 		}
 		completion_reward = {
 			TRL = {
@@ -1128,6 +1139,10 @@ focus_tree = {
 				}
 				has_completed_focus = FGE_invite_zapadoslavia
 			}
+			has_global_flag = FGE_returned_home
+			NOT = {
+				has_global_flag = skulli_suicide
+			}
 		}
 		completion_reward = {
 			ZAP = {
@@ -1149,12 +1164,16 @@ focus_tree = {
 			focus = FGE_oppose_the_turuls
 		}
 		allow_branch = {
+			NOT = {
+				has_global_flag = skulli_suicide
+			}
 			OR = {
 				ESP = {
 					is_in_faction = no
 				}
 				has_completed_focus = FGE_invite_spain
 			}
+			has_global_flag = FGE_returned_home
 		}
 		completion_reward = {
 			ESP = {
@@ -1195,6 +1214,7 @@ focus_tree = {
 		cost = 10
 		x = 0
 		y = 1
+		will_lead_to_war_with = TRL
 		relative_position_id = FGE_invite_soviets
 		prerequisite = {
 			focus = FGE_invite_soviets

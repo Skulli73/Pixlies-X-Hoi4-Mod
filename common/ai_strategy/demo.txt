@@ -45,3 +45,16 @@ TRL_war_CSA = {
 		value = 200000 
 	}
 }
+FGE_war_TRL = {
+	allowed = {
+		tag = FGE
+	}
+	enable = {
+		has_wargoal_against = TRL
+	}
+	ai_strategy = {
+		type = declare_war
+		id = "TRL"			
+		value = 1000
+	}
+}

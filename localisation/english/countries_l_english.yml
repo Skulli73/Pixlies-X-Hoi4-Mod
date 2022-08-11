@@ -47,6 +47,22 @@ FGE_SULAWESI:0 "Sulawesi"
 FGE_SULAWESI_DEF:0 "Sulawesi"
 FGE_SULAWESI_ADJ:0 "Sulawesi"
 
+FGE_monarchist_civil_war:0 "Germania"
+FGE_monarchist_civil_war_DEF:0 "Germania"
+FGE_monarchist_civil_war_ADJ:0 "Germanic"
+FGE_monarchist_civil_war_neutrality:0 "Kätz Loyalists"
+FGE_monarchist_civil_war_neutrality_DEF:0 "the Kätz Loyalists"
+FGE_nsu_civil_war:0 "Germania"
+FGE_nsu_civil_war_DEF:0 "Germania"
+FGE_nsu_civil_war_ADJ:0 "Germanic"
+FGE_nsu_civil_war_fascism:0 "National Corporatist Underground"
+FGE_nsu_civil_war_fascism_DEF:0 "the National Corporatist Underground"
+FGE_republican_civil_war:0 "Germania"
+FGE_republican_civil_war_DEF:0 "Germania"
+FGE_republican_civil_war_ADJ:0 "Germanic"
+FGE_republican_civil_war_democratic:0 "Republican Front of Germania"
+FGE_republican_civil_war_democratic_DEF:0 "the Republican Front of Germania"
+
 #normal spain names
 
 ESP:0 "Spain"
@@ -120,6 +136,8 @@ ILY_fascism_DEF:0 "the National State of Italy"
 
 #special italy names
 
+ILY_partisans_civil_war:0 "Italian Partisans"
+ILY_partisans_civil_war_DEF:0 "the Italian Partisans"
 
 #normal japan names
 

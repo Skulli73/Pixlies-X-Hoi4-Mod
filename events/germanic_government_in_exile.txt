@@ -919,6 +919,12 @@ country_event = {
 			id = gge.43
 			hours = 12
 		}
+		hidden_effect = {
+			country_event = {
+				id = gge.45
+				days = 20
+			}
+		}
 	}
 	option = {
 		name = gge.42.b
@@ -936,6 +942,12 @@ country_event = {
 		news_event = {
 			id = gge.44
 			hours = 12
+		}
+		hidden_effect = {
+			country_event = {
+				id = gge.46
+				days = 20
+			}
 		}
 	}
 }

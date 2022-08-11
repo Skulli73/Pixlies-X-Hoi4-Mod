@@ -968,6 +968,7 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = gge.45.a
+		remove_ideas = katz_head_of_state
 		every_country = {
 			limit = {
 				is_in_faction_with = FGE

@@ -70,11 +70,7 @@ country_event = { # assasination attempt on matt - su
 		name = demo.04.a
 		news_event = demo.05
 		add_country_leader_trait = recent_assasination_attempt
-		add_stability = -.5
-		GME = {
-			remove_ideas = alternis_head_of_state
-			add_ideas = needless_head_of_state
-		}
+		add_stability = -0.5
 		set_country_flag = matt_failed_assasination
 		complete_national_focus = CSA_Matt_Dies_Tragically_JK
 	}

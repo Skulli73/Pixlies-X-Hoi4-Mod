@@ -1315,3 +1315,31 @@ country_event = {
 		}
 	}
 }
+
+
+
+operative_leader_event = { #geo still alive
+	id = gge.100
+	title = gge.100.t
+	desc = gge.100.d
+	is_triggered_only = yes
+	option = {
+		name = gge.100.a
+		custom_effect_tooltip = gge.100.a.tt
+		hidden_effect = {
+			# FGE = {
+			# 	random_character = {
+			# 		limit = { is_character = geo }
+			# 		set_nationality = CSA
+			# 	}
+			# }
+			# CSA = {
+			# 	promote_character = geo
+			# }
+			geo_temp_1 = {
+				retire_character = yes
+			}
+		}
+		set_country_flag = geo_still_alive
+	}
+}

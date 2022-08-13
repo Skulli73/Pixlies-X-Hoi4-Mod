@@ -47,4 +47,42 @@ demo = {
 			}
 		}
 	}
+	WIL_cause_geo_info = {
+		visible = {
+			tag = WIL
+		}
+		available = {
+			FGE = {
+				network_strength = {
+					target = CSA
+					value > 50 
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1000000
+		}
+		fire_only_once = yes
+		complete_effect = { 
+			# CSA = {
+			# 	random_character = {
+			# 		limit = { is_character = geo }
+			# 		set_nationality = FGE
+			# 		operative_leader_event = {
+			# 			id = gge.100
+			# 			hours = 2
+			# 		}
+			# 	}
+			# }
+			FGE = {
+				recruit_character = geo_temp_1
+				geo_temp_1 = {
+					operative_leader_event = {
+						id = gge.100
+						hours = 2
+					}
+				}
+			}
+		}
+	}
 }

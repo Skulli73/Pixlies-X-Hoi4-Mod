@@ -3062,6 +3062,10 @@ FGE_operation_free_geo = { ### 0 1/35
 		 ROOT = {
 			clr_country_flag = geo_still_alive
 			set_country_flag = geo_freed
+			news_event = {
+				id = gge.101
+				days = 1
+		   }
 		 }
 	}
 
@@ -3082,6 +3086,10 @@ FGE_operation_free_geo = { ### 0 1/35
 		ROOT = {
 		   clr_country_flag = geo_still_alive
 		   set_country_flag = geo_freed
+		   news_event = {
+			id = gge.101
+			days = 1
+	   }
 		}
 	}
 

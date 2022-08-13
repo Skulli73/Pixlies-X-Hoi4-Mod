@@ -27,6 +27,42 @@ on_actions = {
 				}
 				set_global_flag = atlanta_fall_FGE
 			}
+		
+
+			IF = {
+				limit = {
+					FGE = {
+						has_war_with = FROM
+					}
+					ROOT = {
+						is_in_faction_with = FGE
+					}
+					FROM = {
+						original_tag = CSA
+					}
+					FROM.FROM = {
+						state = 315
+					}
+					has_country_flag = geo_still_alive
+				}
+				CSA = {
+					random_character = {
+						limit = { is_character = geo }
+						set_nationality = FGE
+					}
+				}
+				geo = {
+				
+				}
+				ROOT = {
+				clr_country_flag = geo_still_alive
+				set_country_flag = geo_freed
+				news_event = {
+						id = gge.101
+						days = 1
+				}
+				}
+			}
 		}
 	}
 }

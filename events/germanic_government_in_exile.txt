@@ -1343,3 +1343,33 @@ operative_leader_event = { #geo still alive
 		set_country_flag = geo_still_alive
 	}
 }
+
+news_event = {
+	id = gge.101
+	title = gge.101.t
+	desc = gge.101.d
+	is_triggered_only = yes
+	major = yes
+	picture = GFX_news_events_geo_speech_germania
+	option = {
+		name = gge.101.a
+		trigger = {
+			tag = FGE
+		}
+	}
+	option = {
+		name = gge.101.b
+		trigger = {
+			tag = CSA
+		}
+	}
+	option = {
+		name = gge.101.c
+		trigger = {
+			NOT = {
+				tag = FGE
+				tag = CSA
+			}
+		}
+	}
+}

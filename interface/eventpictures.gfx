@@ -3036,4 +3036,9 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_news_event_su_flag_burn"
 		texturefile = "gfx/event_pictures/news_event_su_flag_burn.dds"
+	}
+	spriteType = {
+		name = "GFX_news_events_geo_speech_germania"
+		texturefile = "gfx/event_pictures/news_events_geo_speech_germania.dds"
+	}
 }

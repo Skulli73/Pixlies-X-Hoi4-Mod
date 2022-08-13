@@ -6,16 +6,17 @@ state= {
 	state_category = enclave
 	
 	history= 	{
-		owner = WIL# = ENG
+		owner = BGA
+		add_core_of = BGA 
 		buildings = {
-			#infrastructure = 1
+			#infrastructure = 2
 			12960 = {
-				naval_base = 1
+				naval_base = 2
 			}
 		}
-		add_claim_by = ARG
+		add_claim_by = BYZ
 	}
 	provinces= { 12960 }
 
-	local_supplies=0.0 
+	local_supplies=1.0 
 }

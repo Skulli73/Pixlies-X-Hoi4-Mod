@@ -8,18 +8,19 @@ state=
 	
 	history=
 	{
-		owner = WIL# = DEN
+		owner = GEN
+		add_core_of = GEN
 		buildings = {
-			#infrastructure = 1
+			#infrastructure = 2
 			12512 ={
-				naval_base = 1
+				naval_base = 3
 			}
 		}
-		# = DEN
+		# = GEN
 	}
 	provinces=
 	{
 10245 10636 12512 13058 13066 	}
 
-	local_supplies=0.0 
+	local_supplies=1.0 
 }

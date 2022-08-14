@@ -84,3 +84,10 @@ TEX = {
 	color = rgb {150 0 0}
 	color_ui = rgb {150 0 0}
 }
+GEN= {
+	color = rgb {108 255 118}
+	color_ui = rgb {108 255 118}
+}
+BGA = {
+	color = rgb {109 31 145}
+	color_ui = rgb {109 31 145}

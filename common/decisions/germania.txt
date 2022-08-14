@@ -276,18 +276,21 @@ FGE_destroy_CSA = {
 		ai_will_do = {
 			factor = 100000
 		}
+		targets = {
+			VNZ
+		}
 		days_remove = 50
-		war_with_on_remove = VNZ
+		war_with_on_remove = FROM
 		remove_effect = {
 			declare_war_on = {
-				target = VNZ
+				target = FROM
 				type = puppet_wargoal_focus
 			}
 		}
 		available = {
 			any_owned_state = {
 				any_neighbor_state = {
-					is_owned_by = VNZ
+					is_owned_by = FROM
 				}
 			}
 		}
@@ -300,17 +303,20 @@ FGE_destroy_CSA = {
 		ai_will_do = {
 			factor = 10000
 		}
+		targets = {
+			CSA
+		}
 		complete_effect = {
 			373 = {
 				transfer_state_to = WIL
 			}
-			CSA = {
+			FROM = {
 				release = VIR
 				release = GRG
 				release = TEX
 				every_country = {
 					limit = {
-						is_in_faction_with = CSA
+						is_in_faction_with = FROM
 					}
 					leave_faction = yes
 				}
@@ -344,31 +350,66 @@ FGE_destroy_CSA = {
 			VIR = {
 				set_cosmetic_tag = VIR_KAT
 			}
-			puppet = GRG
-			set_autonomy = {
-				target = GRG
-				autonomy_state = autonomy_integrated_puppet
-			}
-			GRG = {
-				set_cosmetic_tag = GRG_SHE
-			}
-			annex_country = {
-				target = CSA
-			}		
-			every_owned_state = {
+			IF = {
 				limit = {
-					OR = {
-						region = 170
-					region = 53
+					NOT = {
+						GRG = {
+							exists = yes
+							has_character = geo
+						}
 					}
 				}
-				add_core_of = CUB
+				puppet = GRG
+				set_autonomy = {
+					target = GRG
+					autonomy_state = autonomy_colony
+				}
+				GRG = {
+					set_cosmetic_tag = GRG_SHE
+				}
+				ELSE = {
+					every_state = {
+						limit = {
+							is_owned_by = CSA
+							OR = {
+								is_core_of = GRG
+								region = 170
+								region = 53
+							}
+						}
+						add_core_of = GRG
+						transfer_state_to = GRG
+					}
+				}
 			}
-			release_puppet = CUB
-			set_autonomy = {
-				target = CUB
-				autonomy_state = autonomy_integrated_puppet
+			annex_country = {
+				target = FROM
+			}		
+			IF = {
+				limit = {
+					NOT = {
+						GRG = {
+							exists = yes
+							has_character = geo
+						}
+					}
+				}
+				every_owned_state = {
+					limit = {
+						OR = {
+							region = 170
+							region = 53
+						}
+					}
+					add_core_of = CUB
+				}
+				release_puppet = CUB
+				set_autonomy = {
+					target = CUB
+					autonomy_state = autonomy_integrated_puppet
+				}
 			}
+			
 			IF = {
 				limit = {
 					IND = {
@@ -401,8 +442,8 @@ FGE_destroy_CSA = {
 			}
 		}
 		available = {
-			CSA = {
-				surrender_progress > .5
+			FROM = {
+				surrender_progress > .8
 			}
 			365 = {
 				CONTROLLER = {
@@ -411,7 +452,138 @@ FGE_destroy_CSA = {
 			}
 		}
 		visible = {
-			has_war_with = CSA
+			has_war_with = FROM
+		}
+	}
+	FGE_establish_counter_government = {
+		ai_will_do = {
+			factor = 10000
+		}
+		available = {
+			315 = {
+				is_controlled_by = ROOT
+			}
+		}
+		allowed = {
+			tag = FGE
+		}
+		fire_only_once = yes
+		days_remove = 10
+		remove_effect = {
+			every_controlled_state = {
+				limit = {
+					is_owned_by = CSA
+					OR = {
+						is_on_continent = north_america
+						is_on_continent = south_america
+					}
+					NOT = {
+						is_core_of = VIR
+						is_core_of = TEX
+					}
+				}
+				transfer_state_to = GRG
+				add_core_of = GRG
+			}
+			puppet = GRG
+			set_autonomy = {
+				target = GRG
+				autonomy_state = autonomy_dominion
+			}
+			random_character = {
+				limit = {
+					is_character = geo
+				}
+				set_nationality = GRG
+			}
+			GRG = {
+				set_politics = {
+					ruling_party = democratic
+					elections_allowed = yes
+				}
+				promote_character = {
+					character = geo
+					ideology = socialism
+				}
+				promote_character = {
+					character = geo
+					ideology = marxism
+				}
+				set_cosmetic_tag = CSA
+				division_template = {
+					name = "Democratic Partisans"
+					regiments = {
+						infantry = {x = 0 y = 0}
+						infantry = {x = 0 y = 1}
+						infantry = {x = 0 y = 3}
+						infantry = {x = 0 y = 4}
+					}
+					is_locked = yes
+				}
+			}
+		}
+	}
+	FGE_support_democratic_su_rebels = {
+		ai_will_do = {
+			factor = 100
+		}
+		visible = {
+			GRG = {
+				has_character = geo
+			}
+			GRG = {
+				OR = {
+					is_in_faction_with = ROOT
+					is_subject_of = ROOT
+				}
+			}
+			FROM = {
+				is_owned_by = CSA
+				is_controlled_by = CSA
+				state_population < 4
+			}
+		}
+		available = {
+			has_equipment = {
+				infantry_equipment > 999
+			}
+		}
+		allowed = {
+			tag = FGE
+		}
+		days_remove = 15
+		state_target = yes
+		cost = 100
+		on_map_mode = map_and_decisions_view
+		remove_effect = {
+			hidden_effect = {
+				GRG = {
+					set_state_controller = FROM
+				}
+			}
+			FROM = {
+				create_unit = {
+					division = "name = \"Democratic [FROM.GetName]n Partisans\" division_template = \"Democratic Partisans\" start_experience_factor = 0.05"
+					owner = GRG
+				}
+				create_unit = {
+					division = "name = \"Democratic [FROM.GetName]n Partisans\" division_template = \"Democratic Partisans\" start_experience_factor = 0.05"
+					owner = GRG
+				}
+				create_unit = {
+					division = "name = \"Democratic [FROM.GetName]n Partisans\" division_template = \"Democratic Partisans\" start_experience_factor = 0.05"
+					owner = GRG
+				}
+			}
+			hidden_effect = {
+				CSA = {
+					set_state_controller = FROM
+				}
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -1000
+			}
 		}
 	}
 }

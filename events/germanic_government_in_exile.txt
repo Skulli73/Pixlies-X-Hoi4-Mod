@@ -1339,8 +1339,14 @@ operative_leader_event = { #geo still alive
 			geo_temp_1 = {
 				retire_character = yes
 			}
+			ROOT = {
+				random_character = {
+					limit = {is_character = geo_temp_1}
+					retire_character = yes
+				}
+			}
 		}
-		set_country_flag = geo_still_alive
+		ROOT = {set_country_flag = geo_still_alive}
 	}
 }
 

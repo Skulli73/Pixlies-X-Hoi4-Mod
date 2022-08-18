@@ -25,10 +25,19 @@ on_actions = {
 						transfer_state_to = PREV
 					}
 				}
-				FGE = {
-					country_event = {
-						id = gge.36
-						days = 2
+				IF = {
+					limit = {
+						FGE = {
+							has_country_leader = {
+								character = skulli73
+							}
+						}
+					}
+					FGE = {
+						country_event = {
+							id = gge.36
+							days = 2
+						}
 					}
 				}
 			}

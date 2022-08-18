@@ -232,6 +232,7 @@ FGE_return_home = {
 					limit = {
 						ILY = {
 							has_government = fascism
+							is_in_faction_with = ROOT
 						}
 					}
 					country_event = {
@@ -460,8 +461,13 @@ FGE_destroy_CSA = {
 			factor = 10000
 		}
 		available = {
-			315 = {
-				is_controlled_by = ROOT
+			OR = {
+				315 = {
+					is_controlled_by = ROOT
+				}
+				365 = {
+					is_controlled_by = ROOT
+				}
 			}
 		}
 		allowed = {
@@ -528,8 +534,11 @@ FGE_destroy_CSA = {
 			factor = 100
 		}
 		visible = {
-			GRG = {
-				has_character = geo
+			OR = {
+				GRG = {
+					has_character = geo
+				}
+				has_global_flag = debug_grg_has_geo
 			}
 			GRG = {
 				OR = {

@@ -46,12 +46,5 @@ characters = {
 				small = "gfx/interface/ideas/CSA/geo.dds"
 			}
 		}
-		corps_commander = {
-			skill = 0
-			attack_skill = 0
-			defense_skill = 0
-			planning_skill = 0
-			logistics_skill = 0
-		}
 	}
 }

@@ -24,7 +24,7 @@ focus_tree = {
 	### STARTING FOCUS ###
 
 	focus = {
-		id = CSA_New_dawn_in_the_Souther_Union
+		id = CSA_New_dawn_SU
 		icon = GFX_goal_generic_amphibious_assault
 		bypass = { has_country_flag = matt_failed_assasination }
 		x = 1
@@ -51,128 +51,13 @@ focus_tree = {
 	}
 
 	focus = {
-		id = CSA_Convene_the_Southern_Union_Cabinet
-		icon = GFX_goal_generic_army_artillery2
-		prerequisite = { focus = CSA_New_dawn_in_the_Souther_Union }
-		bypass = { has_country_flag = matt_failed_assasination }
-		x = 0
-		y = 1
-		relative_position_id = CSA_New_dawn_in_the_Souther_Union
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-		search_filters = { FOCUS_FILTER_RESEARCH }
-
-		completion_reward = {
-			add_tech_bonus = {
-				name = AST_royal_australian_artillery
-				bonus = 1.0
-				uses = 1
-				category = artillery
-			}
-		}
-	}
-	
-	focus = {
-		id = CSA_Asess_Our_Foreign_Policy
-		icon = GFX_goal_generic_army_artillery2
-		prerequisite = { focus = CSA_Convene_the_Southern_Union_Cabinet }
-		bypass = { has_country_flag = matt_failed_assasination }
-		x = -1
-		y = 1
-		relative_position_id = CSA_Convene_the_Southern_Union_Cabinet
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-		search_filters = { FOCUS_FILTER_RESEARCH }
-
-		completion_reward = {
-			add_tech_bonus = {
-				name = AST_royal_australian_artillery
-				bonus = 1.0
-				uses = 1
-				category = artillery
-			}
-		}
-	}
-	
-	focus = {
-		id = CSA_Asess_Our_Internal_Policy
-		icon = GFX_goal_generic_army_artillery2
-		prerequisite = { focus = CSA_Convene_the_Southern_Union_Cabinet }
-		bypass = { has_country_flag = matt_failed_assasination }
-		x = 1
-		y = 1
-		relative_position_id = CSA_Convene_the_Southern_Union_Cabinet
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-		search_filters = { FOCUS_FILTER_RESEARCH }
-
-		completion_reward = {
-			add_tech_bonus = {
-				name = AST_royal_australian_artillery
-				bonus = 1.0
-				uses = 1
-				category = artillery
-			}
-		}
-	}	
-
-	focus = {
 		id = CSA_Bussinsess_as_Usual
 		icon = GFX_goal_generic_army_artillery2
-		prerequisite = { focus = CSA_Asess_Our_Foreign_Policy }
-		prerequisite = { focus = CSA_Asess_Our_Internal_Policy}
+		prerequisite = { focus = CSA_New_dawn_SU }
 		bypass = { has_country_flag = matt_failed_assasination }
 		x = 0
-		y = 2
-		relative_position_id = CSA_Convene_the_Southern_Union_Cabinet
+		y = 1
+		relative_position_id = CSA_New_dawn_SU
 
 		cost = 10
 
@@ -330,7 +215,7 @@ focus_tree = {
 				has_completed_focus = CSA_Let_the_Debates_Start
 				}
 		 }
-		x = 7
+		x = 9
 		y = 0
 		relative_position_id = CSA_New_dawn_in_the_Souther_Union
 
@@ -364,7 +249,7 @@ focus_tree = {
 	}
 
 	focus = {
-		id =  CSA_Congress_The_Economy
+		id =  CSA_Congress_Who_won_Debates
 		icon = GFX_goal_generic_army_artillery2
 		prerequisite = { focus = CSA_the_Congress_Debates }
 		x = 0
@@ -399,16 +284,15 @@ focus_tree = {
 			}
 		}
 	}
-
+ #REFORMIST BRANCH#
 	focus = {
-		id =  CSA_Congress_The_Economy_Option1
+		id =  CSA_Congress_Side_With_the_Reformist
 		icon = GFX_CSA_Based_Liberalism
-		prerequisite = { focus = CSA_Congress_The_Economy }
-		mutually_exclusive = { focus = CSA_Congress_The_Economy_Option2 }
-		mutually_exclusive = { focus = CSA_Congress_The_Economy_Option3 }
+		prerequisite = { focus = CSA_Congress_Who_won_Debates }
+		mutually_exclusive = { focus = CSA_Congress_Side_With_the_Conservatives }
 		x = -2
 		y = 1
-		relative_position_id = CSA_Congress_The_Economy
+		relative_position_id = CSA_Congress_Who_won_Debates
 
 		cost = 10
 
@@ -438,55 +322,15 @@ focus_tree = {
 			}
 		}
 	}
-
+	#CONSERVATIVE BRANCH#
 	focus = {
-		id =  CSA_Congress_The_Economy_Option2
-		icon = GFX_CSA_EconPopulism
-		prerequisite = { focus = CSA_Congress_The_Economy }
-		mutually_exclusive = { focus = CSA_Congress_The_Economy_Option1 }
-		mutually_exclusive = { focus = CSA_Congress_The_Economy_Option3 }
-		x = 0
-		y = 1
-		relative_position_id = CSA_Congress_The_Economy
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-		search_filters = { FOCUS_FILTER_RESEARCH }
-
-		completion_reward = {
-			add_tech_bonus = {
-				name = AST_royal_australian_artillery
-				bonus = 1.0
-				uses = 1
-				category = artillery
-			}
-		}
-	}
-
-	focus = {
-		id =  CSA_Congress_The_Economy_Option3
+		id =  CSA_Congress_Side_With_the_Conservatives
 		icon = GFX_CSA_South_African_Economy_corrupt
-		prerequisite = { focus = CSA_Congress_The_Economy }
-		mutually_exclusive = { focus = CSA_Congress_The_Economy_Option1 }
-		mutually_exclusive = { focus = CSA_Congress_The_Economy_Option2 }
+		prerequisite = { focus = CSA_Congress_Who_won_Debates }
+		mutually_exclusive = { focus = CSA_Congress_Side_With_the_Reformist }
 		x = 2
 		y = 1
-		relative_position_id = CSA_Congress_The_Economy
+		relative_position_id = CSA_Congress_Who_won_Debates
 
 		cost = 10
 
@@ -516,16 +360,14 @@ focus_tree = {
 			}
 		}
 	}
+
 	focus = {
-		id =  CSA_Congress_Governance
-		icon = GFX_goal_generic_army_artillery2
-		prerequisite = { 
-			focus = CSA_Congress_The_Economy_Option1
-			 focus = CSA_Congress_The_Economy_Option2 
-			 focus = CSA_Congress_The_Economy_Option3 }
+		id =  CSA_Con_Reorganize_Party
+		icon = GFX_CSA_South_African_Economy_corrupt
+		prerequisite = { focus = CSA_Congress_Side_With_the_Conservatives }
 		x = 0
-		y = 2
-		relative_position_id = CSA_Congress_The_Economy
+		y = 1
+		relative_position_id = CSA_Congress_Side_With_the_Conservatives
 
 		cost = 10
 
@@ -554,7 +396,42 @@ focus_tree = {
 				category = artillery
 			}
 		}
-	}
+	}	
+		
+	focus = {
+		id =  CSA_Continue_Economic_Policy
+		icon = GFX_CSA_South_African_Economy_corrupt
+		prerequisite = { focus = CSA_Congress_Side_With_the_Conservatives }
+		x = 2
+		y = 1
+		relative_position_id = CSA_Congress_Side_With_the_Conservatives
 
+		cost = 10
 
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = AST_royal_australian_artillery
+				bonus = 1.0
+				uses = 1
+				category = artillery
+			}
+		}
+	}	
 }

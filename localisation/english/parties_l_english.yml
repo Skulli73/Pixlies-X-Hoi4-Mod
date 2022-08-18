@@ -939,3 +939,12 @@
  FGE_democratic_party_rep_long:0 "Republican Front"
  FGE_neutrality_party:0 "GNVP"
  FGE_neutrality_party_long:0 "Germanic National People's Party"
+
+ CSA_democratic_party:0 "Disorganized Opposition"
+ CSA_democratic_party_long:0 "Disorganized Opposition and Dissidents of the Southern Union"
+ CSA_communism_party:0 "Villager Liberation Front"
+ CSA_communism_party_long:0 "Villager Liberation Front and other Marxist Groups"
+ CSA_neutrality_party:0 "SUPP (Reformist)"
+ CSA_neutrality_party_long:0 "Souther Union Patriot Party (Reformist Faction)"
+ CSA_fascism_party:0 "SUPP (Conservative)"
+ CSA_fascism_party_long:0 "Souther Union Patriot Party (Conservative and Reactionary Faction)"

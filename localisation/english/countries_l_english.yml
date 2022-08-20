@@ -347,6 +347,29 @@ CUB_FGE_autonomy_dominion_DEF:0 "Dominion of the Carribean"
 CUB_FGE_autonomy_supervised_state:0 "Dominion of the Carribean"
 CUB_FGE_autonomy_supervised_state_DEF:0 "Dominion of the Carribean"
 
+#normal France names
+FRA:0 "France"
+FRA_DEF:0 "France"
+FRA_ADJ:0 "French"
+
+#special France names
+FRA_GME_REPUBLIC_autonomy_colony:0 "Autonomous Province of France"
+FRA_GME_REPUBLIC_autonomy_colony_DEF:0 "the Autonomous Province of of France"
+FRA_GME_REPUBLIC_autonomy_dominion:0 "French Republic"
+FRA_GME_REPUBLIC_autonomy_dominion_DEF:0 "the French Republic"
+FRA_GME_REPUBLIC_autonomy_supervised_state:0 "France"
+FRA_GME_REPUBLIC_autonomy_supervised_state_DEF:0 "France"
+
+FRA_FGE_autonomy_integrated_puppet:0 "Occupied France"
+FRA_FGE_autonomy_integrated_puppet_DEF:0 "Occupied France"
+FRA_FGE_autonomy_puppet:0 "Special Administrative Zone of France"
+FRA_FGE_autonomy_puppet_DEF:0 "the Special Administrative Zone of France"
+FRA_FGE_autonomy_colony:0 "Duchy of France"
+FRA_FGE_autonomy_colony_DEF:0 "the Duchy of France"
+FRA_FGE_autonomy_dominion:0 "Kingdom of France"
+FRA_FGE_autonomy_dominion_DEF:0 "the Kingdom of France"
+
+
 #normal Greenland names
 
 GRE:0 "Greenland"
@@ -380,3 +403,10 @@ BGA_communism_DEF:0 "The Southern Commune"
 BGA_communism_ADJ:0 "Southern Commune"
 
 #speacial Byzantine Antarctica names
+
+#normal sulawesi names
+INS:0 "Sulawesi"
+INS_DEF:0 "Sulawesi"
+INS_ADJ:0 "Sulawesian"
+INS_subject:0 "$OVERLORDADJ$ Sulawesi"
+INS_subject_DEF:0 "$OVERLORDADJ$ Sulawesi"

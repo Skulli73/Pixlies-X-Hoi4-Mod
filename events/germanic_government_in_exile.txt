@@ -1400,3 +1400,118 @@ state_event = {
 		}
 	}
 }
+
+country_event = {
+	id = gge.300
+	title = gge.300.t
+	desc = gge.300.d
+	is_triggered_only = yes
+	option = {
+		name = gge.300.a
+		every_owned_state = {
+			limit = {
+				OR = {
+					is_on_continent = asia
+					is_on_continent = australia
+				}
+			}
+			add_core_of = INS
+		}
+		release_puppet = INS
+		set_autonomy = {
+			target = INS
+			autonomy_state = autonomy_colony
+		}
+		INS = {
+			set_capital = {
+				state = 673
+			}
+		}
+		IF = {
+			limit = {
+				NOT = {
+					has_country_leader = sam
+				}
+			}
+			random_character = {
+				limit = { is_character = sam }
+				set_nationality = INS
+			}
+			INS = {
+				promote_character = sam
+			}
+		}
+		hidden_effect = {
+			country_event = {
+				id = gge.301
+				days = 20
+			}
+		}
+	}
+}
+country_event = {
+	id = gge.301
+	title = gge.301.t
+	desc = gge.301.d
+	is_triggered_only = yes
+	option = {
+		name = gge.301.a
+		ai_chance = {
+			factor = 50
+		}
+		add_political_power = 200
+		hidden_effect = {
+			create_dynamic_country = {
+				original_tag = FRA
+				set_variable = {FGE.france = THIS}
+				inherit_technology = FGE
+				every_state = {
+					limit = {
+						is_core_of = BRT
+						NOT = {
+							is_core_of = ROOT
+						}
+						is_owned_by = ROOT
+					}
+					add_core_of = PREV
+					transfer_state_to = PREV
+				}
+				set_capital = {
+					state = 16
+				}
+				set_cosmetic_tag = FRA
+			}
+			puppet = var:FGE.france
+			set_autonomy = {
+				target = var:FGE.france
+				autonomy_state = autonomy_colony
+			}
+		}
+		effect_tooltip = {
+			release_puppet = FRA
+		}
+	}
+	option = {
+		name = gge.302.b
+		ai_chance = {
+			factor = 50
+		}
+	}
+	option = {
+		name = gge.303.c
+		ai_chance = {
+			factor = 0
+		}
+		every_state = {
+			limit = {
+				is_core_of = BRT
+				NOT = {
+					is_core_of = ROOT
+				}
+				is_owned_by = ROOT
+			}
+			add_core_of = WIL
+			transfer_state_to = WIL
+		}
+	}
+}

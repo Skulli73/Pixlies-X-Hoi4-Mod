@@ -91,3 +91,12 @@ GEN= {
 BGA = {
 	color = rgb {109 31 145}
 	color_ui = rgb {109 31 145}
+}
+INS = {
+	color = rgb {40 99 13}
+	color_ui = rgb {40 99 13}
+}
+FRA = {
+	color = rgb {13 27 99}
+	color_ui = rgb {13 27 99}
+}

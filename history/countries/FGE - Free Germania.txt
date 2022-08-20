@@ -15,7 +15,7 @@ add_ideas = {
 
 
 #Politics for 50.1.1
-set_politics = { 
+set_politics = {  
 	ruling_party = democratic
 	last_election = "49.10.25"
 	election_frequency = 60

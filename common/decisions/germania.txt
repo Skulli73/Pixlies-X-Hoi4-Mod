@@ -67,7 +67,7 @@ FGE_GME_resistance = {
 				hidden_effect = {
 					set_demilitarized_zone = yes
 				}
-				add_resistance = .05
+				add_resistance = 5
 			}
 		}
 		complete_effect = {

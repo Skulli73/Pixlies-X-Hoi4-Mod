@@ -202,3 +202,6 @@ gge.101.d:0 "Today, GeoDoesGames was freed from the prison in Guantanamo Bay by 
 gge.101.a:0 "They shall soon be liberated!"
 gge.101.b:0 "Fuck!"
 gge.101.c:0 "He's still alive?"
+gge.200.t:0 "Nationalist Retreat leaves [FROM.FROM.GetName] devestated"
+gge.200.d:0 "As our brave troops are taking [FROM.FROM.GetName], Nationalist forces are "evacuating" the equipment and materials of infrastructure there leaving the place devestated. This is in an effort to limit the moral of our troops as they see their homeland devestated and attack our supplies far into the National State."
+gge.200.a:0 "Fascist Scum!"

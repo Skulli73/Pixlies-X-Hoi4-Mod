@@ -1334,6 +1334,7 @@ country_event = {
 				type = civil_war
 			}
 		}
+		set_global_flag = FGE_civil_war
 	}
 }
 
@@ -1534,5 +1535,87 @@ country_event = {
 			add_core_of = WIL
 			transfer_state_to = WIL
 		}
+	}
+}
+
+country_event = {
+	id = gge.400
+	title = gge.400.t
+	desc = gge.400.d
+	is_triggered_only = yes
+	option = {
+		name = gge.400.a
+	}
+}
+country_event = {
+	id = gge.401
+	title = gge.401.t
+	desc = gge.401.d
+	is_triggered_only = yes
+	option = {
+		name = gge.401.a
+	}
+}
+country_event = {
+	id = gge.402
+	title = gge.402.t
+	desc = gge.402.d
+	is_triggered_only = yes
+	option = {
+		name = gge.402.a
+	}
+}
+country_event = {
+	id = gge.403
+	title = gge.403.t
+	desc = gge.403.d
+	is_triggered_only = yes
+	option = {
+		name = gge.403.a
+	}
+}
+
+country_event = {
+	id = gge.404
+	title = gge.404.t
+	desc = gge.404.d
+	trigger = {
+		original_tag = FGE
+		NOT = {
+			any_other_country = {
+				original_tag = FGE
+			}
+		}
+		has_global_flag = FGE_civil_war
+		has_government = democratic
+	}
+	fire_only_once = yes
+	option = {
+		name = gge.404.a
+		clr_global_flag = FGE_civil_war
+		set_global_flag = FGE_civil_war_over
+		mark_focus_tree_layout_dirty = yes
+	}
+}
+country_event = {
+	id = gge.405
+	title = gge.405.t
+	desc = gge.405.d
+	trigger = {
+		original_tag = FGE
+		NOT = {
+			any_other_country = {
+				original_tag = FGE
+			}
+		}
+		has_global_flag = FGE_civil_war
+		has_government = neutrality
+	}
+	fire_only_once = yes
+	option = {
+		name = gge.405.a
+		clr_global_flag = FGE_civil_war
+		set_global_flag = FGE_civil_war_over
+		mark_focus_tree_layout_dirty = yes
 	}
 }

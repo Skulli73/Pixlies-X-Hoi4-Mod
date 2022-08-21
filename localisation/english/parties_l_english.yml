@@ -939,6 +939,8 @@
  FGE_democratic_party_rep_long:0 "Republican Front"
  FGE_neutrality_party:0 "GNVP"
  FGE_neutrality_party_long:0 "Germanic National People's Party"
+ FGE_fascism_party:0 "§RNCP (BANNED)§!"
+ FGE_fascism_party_long:0 "§RNational-Corporatist Party (Banned)§!"
 
  CSA_democratic_party:0 "Disorganized Opposition"
  CSA_democratic_party_long:0 "Disorganized Opposition and Dissidents of the Southern Union"

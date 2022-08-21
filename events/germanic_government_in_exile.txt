@@ -1018,11 +1018,21 @@ country_event = {
 					democratic = 30
 					neutrality = 70
 				}
-				recruit_character = fortressia
-				recruit_character = atalius
+				PREV = {
+					every_character = {
+						limit = {
+							OR = {
+								is_character = fortressia
+								is_character = atalius
+								is_character = katz
+								is_character = phantom
+							}
+						}
+						set_nationality = PREV.PREV
+					}
+				}
 				promote_character = atalius
-				recruit_character = katz
-				recruit_character = phantom
+				add_ideas = katz_head_of_state
 				every_state = {
 					limit = {
 						is_owned_by = prev.prev
@@ -1102,8 +1112,17 @@ country_event = {
 					communism = 5
 					neutrality = 30
 				}
-				recruit_character = sam
-				recruit_character = ace
+				PREV = {
+					every_character = {
+						limit = {
+							OR = {
+								is_character = sam
+								is_character = ace
+							}
+						}
+						set_nationality = PREV.PREV
+					}
+				}
 				every_state = {
 					limit = {
 						is_owned_by = prev.prev
@@ -1182,13 +1201,13 @@ country_event = {
 						}
 					}
 					country_event = {
-						id = gge.49
-						days = 27
+						id = gge.48
+						days = 7
 					}
 					ELSE = {
 						country_event = {
-							id = gge.48
-							days = 7
+							id = gge.49
+							days = 27
 						}
 					}
 				}
@@ -1299,7 +1318,7 @@ country_event = {
 	desc = gge.49.d
 	is_triggered_only = yes
 	option = {
-		name = gge.49
+		name = gge.49.a
 		every_other_country = {
 			limit = {
 				OR = {

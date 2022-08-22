@@ -1,0 +1,24 @@
+characters = {
+	nikiblago08 = {
+		name = "nikiblago08"
+		portraits = {
+			civillian = {
+				large = "gfx/leaders/ILY/niki.dds"
+			}
+		}
+        country_leader={
+            ideology=neutrality
+            traits = { dictator }
+            expire=
+            characters = {
+	nikiblago08 = {
+		name = "nikiblago08"
+		portraits = {
+			civillian = {
+				large = "gfx/leaders/ILY/niki.dds"
+			}
+		}
+        country_leader={
+            ideology=fascism
+            traits = { dictator }
+            expire=

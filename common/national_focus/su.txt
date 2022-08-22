@@ -322,6 +322,383 @@ focus_tree = {
 			}
 		}
 	}
+
+	#LibPol#
+	
+	focus = {
+		id = CSA_Negotiate_with_Everyone
+		icon = GFX_CSA_South_African_Economy_corrupt
+		prerequisite = { focus = CSA_Congress_Side_With_the_Reformist }
+		x = -2
+		y = 1
+		relative_position_id = CSA_Congress_Side_With_the_Reformist
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = AST_royal_australian_artillery
+				bonus = 1.0
+				uses = 1
+				category = artillery
+			}
+		}
+	}	
+		
+	focus = {
+		id =  CSA_Reasure_and_Advise_Matt
+		icon = GFX_CSA_South_African_Economy_corrupt
+		prerequisite = { focus = CSA_Negotiate_with_Everyone }
+		x = 0
+		y = 1
+		relative_position_id = CSA_Negotiate_with_Everyone
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = AST_royal_australian_artillery
+				bonus = 1.0
+				uses = 1
+				category = artillery
+			}
+		}
+	}	
+		
+	focus = {
+		id =  CSA_Announce_Intra_Party_Democracy
+		icon = GFX_CSA_South_African_Economy_corrupt
+		prerequisite = { focus = CSA_Reasure_and_Advise_Matt }
+		x = 0
+		y = 1
+		relative_position_id = CSA_Reasure_and_Advise_Matt
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = AST_royal_australian_artillery
+				bonus = 1.0
+				uses = 1
+				category = artillery
+			}
+		}
+	}	
+
+	#Con Econ Tree#
+
+	focus = {
+		id =  CSA_Liberal_Economic_Policy
+		icon = GFX_CSA_South_African_Economy_corrupt
+		prerequisite = { focus = CSA_Congress_Side_With_the_Reformist }
+		available = {
+			if = {
+				has_completed_focus = CSA_Announce_Intra_Party_Democracy
+				}
+		 }
+		x = 0
+		y = 1
+		relative_position_id = CSA_Congress_Side_With_the_Reformist
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = AST_royal_australian_artillery
+				bonus = 1.0
+				uses = 1
+				category = artillery
+			}
+		}
+	}	
+
+	focus = {
+		id =  CSA_Liberalise_the_Economy
+		icon = GFX_CSA_South_African_Economy_corrupt
+		prerequisite = { focus = CSA_Liberal_Economic_Policy }
+		x = 0
+		y = 1
+		relative_position_id = CSA_Liberal_Economic_Policy
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = AST_royal_australian_artillery
+				bonus = 1.0
+				uses = 1
+				category = artillery
+			}
+		}
+	}	
+
+	focus = {
+		id =  CSA_New_And_Improved_Economy
+		icon = GFX_CSA_South_African_Economy_corrupt
+		prerequisite = { focus = CSA_Liberalise_the_Economy }
+		x = 0
+		y = 1
+		relative_position_id = CSA_Liberalise_the_Economy
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = AST_royal_australian_artillery
+				bonus = 1.0
+				uses = 1
+				category = artillery
+			}
+		}
+	}	
+
+	focus = {
+		id =  CSA_The_Final_Touches
+		icon = GFX_CSA_South_African_Economy_corrupt
+		prerequisite = { focus = CSA_New_And_Improved_Economy }
+		prerequisite = { focus = CSA_Announce_Intra_Party_Democracy }
+		x = -1
+		y = 1
+		relative_position_id = CSA_New_And_Improved_Economy
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = AST_royal_australian_artillery
+				bonus = 1.0
+				uses = 1
+				category = artillery
+			}
+		}
+	}	
+
+	focus = {
+		id =  CSA_New_rail_codes
+		icon = GFX_CSA_South_African_Economy_corrupt
+		prerequisite = { focus = CSA_The_Final_Touches }
+		x = 0
+		y = 1
+		relative_position_id = 	CSA_The_Final_Touches
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = AST_royal_australian_artillery
+				bonus = 1.0
+				uses = 1
+				category = artillery
+			}
+		}
+	}	
+
+	focus = {
+		id =  CSA_A_Celebration_to_the_SU
+		icon = GFX_CSA_South_African_Economy_corrupt
+		prerequisite = { focus = CSA_New_rail_codes }
+		x = 0
+		y = 1
+		relative_position_id = CSA_New_rail_codes
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = AST_royal_australian_artillery
+				bonus = 1.0
+				uses = 1
+				category = artillery
+			}
+		}
+	}	
+
+	focus = {
+		id =  CSA_Economy_fixed?
+		icon = GFX_CSA_South_African_Economy_corrupt
+		prerequisite = { focus = CSA_If_not_bad_y_change_it }
+		x = 0
+		y = 1
+		relative_position_id = CSA_If_not_bad_y_change_it
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = AST_royal_australian_artillery
+				bonus = 1.0
+				uses = 1
+				category = artillery
+			}
+		}
+	}	
+
 	#CONSERVATIVE BRANCH#
 	focus = {
 		id =  CSA_Congress_Side_With_the_Conservatives
@@ -361,47 +738,13 @@ focus_tree = {
 		}
 	}
 
+	#No COUPVersion#
+	
 	focus = {
-		id =  CSA_Con_Reorganize_Party
+		id = CSA_Negotiate_with_Reformists
 		icon = GFX_CSA_South_African_Economy_corrupt
 		prerequisite = { focus = CSA_Congress_Side_With_the_Conservatives }
-		x = 0
-		y = 1
-		relative_position_id = CSA_Congress_Side_With_the_Conservatives
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-		search_filters = { FOCUS_FILTER_RESEARCH }
-
-		completion_reward = {
-			add_tech_bonus = {
-				name = AST_royal_australian_artillery
-				bonus = 1.0
-				uses = 1
-				category = artillery
-			}
-		}
-	}	
-		
-	focus = {
-		id =  CSA_Continue_Economic_Policy
-		icon = GFX_CSA_South_African_Economy_corrupt
-		prerequisite = { focus = CSA_Congress_Side_With_the_Conservatives }
+		mutually_exclusive = { focus= CSA_Purge_Reformists }
 		x = 2
 		y = 1
 		relative_position_id = CSA_Congress_Side_With_the_Conservatives
@@ -434,4 +777,495 @@ focus_tree = {
 			}
 		}
 	}	
+		
+	focus = {
+		id =  CSA_Negotiate_with_matt
+		icon = GFX_CSA_South_African_Economy_corrupt
+		prerequisite = { focus = CSA_Negotiate_with_Reformists }
+		x = 0
+		y = 1
+		relative_position_id = CSA_Negotiate_with_Reformists
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = AST_royal_australian_artillery
+				bonus = 1.0
+				uses = 1
+				category = artillery
+			}
+		}
+	}	
+		
+	focus = {
+		id =  CSA_Con_Reorganize_Party
+		icon = GFX_CSA_South_African_Economy_corrupt
+		prerequisite = { focus = CSA_Negotiate_with_matt }
+		x = 0
+		y = 1
+		relative_position_id = CSA_Negotiate_with_matt
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = AST_royal_australian_artillery
+				bonus = 1.0
+				uses = 1
+				category = artillery
+			}
+		}
+	}	
+		
+	#COUPVersion#
+	
+	focus = {
+		id =  CSA_Purge_Reformists
+		icon = GFX_CSA_South_African_Economy_corrupt
+		prerequisite = { focus = CSA_Congress_Side_With_the_Conservatives }
+		x = 4
+		y = 1
+		relative_position_id = CSA_Congress_Side_With_the_Conservatives
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = AST_royal_australian_artillery
+				bonus = 1.0
+				uses = 1
+				category = artillery
+			}
+		}
+	}	
+		
+	focus = {
+		id =  CSA_Prepare_Full_Take_Over
+		icon = GFX_CSA_South_African_Economy_corrupt
+		prerequisite = { focus = CSA_Purge_Reformists }
+		x = 0
+		y = 1
+		relative_position_id = CSA_Purge_Reformists
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = AST_royal_australian_artillery
+				bonus = 1.0
+				uses = 1
+				category = artillery
+			}
+		}
+	}	
+		
+	focus = {
+		id =  CSA_The_Liberal_Revolt
+		icon = GFX_CSA_South_African_Economy_corrupt
+		prerequisite = { focus = CSA_Put_Matt_Under_House_Arrest }
+		x = 0
+		y = 1
+		relative_position_id = CSA_Put_Matt_Under_House_Arrest
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = AST_royal_australian_artillery
+				bonus = 1.0
+				uses = 1
+				category = artillery
+			}
+		}
+	}	
+		
+	focus = {
+		id =  CSA_Put_Matt_Under_House_Arrest
+		icon = GFX_CSA_South_African_Economy_corrupt
+		prerequisite = { focus = CSA_Prepare_Full_Take_Over }
+		x = 0
+		y = 1
+		relative_position_id = CSA_Prepare_Full_Take_Over
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = AST_royal_australian_artillery
+				bonus = 1.0
+				uses = 1
+				category = artillery
+			}
+		}
+	}	
+
+	#Con Econ Tree#
+
+	focus = {
+		id =  CSA_Continue_Economic_Policy
+		icon = GFX_CSA_South_African_Economy_corrupt
+		prerequisite = { focus = CSA_Congress_Side_With_the_Conservatives }
+		available = {
+			if = {
+				has_completed_focus = CSA_Con_Reorganize_Party
+				}
+		 }
+		x = 0
+		y = 1
+		relative_position_id = CSA_Congress_Side_With_the_Conservatives
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = AST_royal_australian_artillery
+				bonus = 1.0
+				uses = 1
+				category = artillery
+			}
+		}
+	}	
+
+	focus = {
+		id =  CSA_If_not_bad_y_change_it
+		icon = GFX_CSA_South_African_Economy_corrupt
+		prerequisite = { focus = CSA_Continue_Economic_Policy }
+		x = 0
+		y = 1
+		relative_position_id = CSA_Continue_Economic_Policy
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = AST_royal_australian_artillery
+				bonus = 1.0
+				uses = 1
+				category = artillery
+			}
+		}
+	}	
+
+	focus = {
+		id =  CSA_Economy_fixed?
+		icon = GFX_CSA_South_African_Economy_corrupt
+		prerequisite = { focus = CSA_If_not_bad_y_change_it }
+		x = 0
+		y = 1
+		relative_position_id = CSA_If_not_bad_y_change_it
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = AST_royal_australian_artillery
+				bonus = 1.0
+				uses = 1
+				category = artillery
+			}
+		}
+	}	
+
+	focus = {
+		id =  CSA_we_are_almost_done
+		icon = GFX_CSA_South_African_Economy_corrupt
+		prerequisite = { focus = CSA_Economy_fixed? }
+		prerequisite = { focus = CSA_Con_Reorganize_Party }
+		x = 1
+		y = 1
+		relative_position_id = CSA_Economy_fixed?
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = AST_royal_australian_artillery
+				bonus = 1.0
+				uses = 1
+				category = artillery
+			}
+		}
+	}	
+
+	focus = {
+		id =  CSA_Simplify_rail_codes
+		icon = GFX_CSA_South_African_Economy_corrupt
+		prerequisite = { focus = CSA_we_are_almost_done }
+		x = 0
+		y = 1
+		relative_position_id = CSA_we_are_almost_done
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = AST_royal_australian_artillery
+				bonus = 1.0
+				uses = 1
+				category = artillery
+			}
+		}
+	}	
+
+	focus = {
+		id =  CSA_A_Celebration_to_All_of_US
+		icon = GFX_CSA_South_African_Economy_corrupt
+		prerequisite = { focus = CSA_Simplify_rail_codes }
+		x = 0
+		y = 1
+		relative_position_id = CSA_Simplify_rail_codes
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = AST_royal_australian_artillery
+				bonus = 1.0
+				uses = 1
+				category = artillery
+			}
+		}
+	}	
+
+	#Foreign  Tree#
+
+focus = {
+		id =  CSA_The_World_Ahead_of_Us
+		icon = GFX_CSA_South_African_Economy_corrupt
+		prerequisite = { focus = CSA_A_Celebration_to_All_of_US
+		focus = CSA_A_Celebration_to_the_SU }
+		x = -3
+		y = 1
+		relative_position_id = CSA_A_Celebration_to_All_of_US
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = AST_royal_australian_artillery
+				bonus = 1.0
+				uses = 1
+				category = artillery
+			}
+		}
+	}	
+
 }

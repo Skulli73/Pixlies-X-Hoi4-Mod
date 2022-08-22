@@ -925,6 +925,7 @@ country_event = {
 				days = 20
 			}
 		}
+		complete_national_focus = FGE_federal_election
 	}
 	option = {
 		name = gge.42.b
@@ -949,6 +950,7 @@ country_event = {
 				days = 20
 			}
 		}
+		complete_national_focus = FGE_federal_election
 	}
 }
 news_event = {
@@ -1016,11 +1018,21 @@ country_event = {
 					democratic = 30
 					neutrality = 70
 				}
-				recruit_character = fortressia
-				recruit_character = atalius
+				PREV = {
+					every_character = {
+						limit = {
+							OR = {
+								is_character = fortressia
+								is_character = atalius
+								is_character = katz
+								is_character = phantom
+							}
+						}
+						set_nationality = PREV.PREV
+					}
+				}
 				promote_character = atalius
-				recruit_character = katz
-				recruit_character = phantom
+				add_ideas = katz_head_of_state
 				every_state = {
 					limit = {
 						is_owned_by = prev.prev
@@ -1100,8 +1112,17 @@ country_event = {
 					communism = 5
 					neutrality = 30
 				}
-				recruit_character = sam
-				recruit_character = ace
+				PREV = {
+					every_character = {
+						limit = {
+							OR = {
+								is_character = sam
+								is_character = ace
+							}
+						}
+						set_nationality = PREV.PREV
+					}
+				}
 				every_state = {
 					limit = {
 						is_owned_by = prev.prev
@@ -1180,13 +1201,13 @@ country_event = {
 						}
 					}
 					country_event = {
-						id = gge.49
-						days = 27
+						id = gge.48
+						days = 7
 					}
 					ELSE = {
 						country_event = {
-							id = gge.48
-							days = 7
+							id = gge.49
+							days = 27
 						}
 					}
 				}
@@ -1297,7 +1318,7 @@ country_event = {
 	desc = gge.49.d
 	is_triggered_only = yes
 	option = {
-		name = gge.49
+		name = gge.49.a
 		every_other_country = {
 			limit = {
 				OR = {
@@ -1313,6 +1334,7 @@ country_event = {
 				type = civil_war
 			}
 		}
+		set_global_flag = FGE_civil_war
 	}
 }
 
@@ -1377,5 +1399,223 @@ news_event = {
 				tag = CSA
 			}
 		}
+	}
+}
+state_event = {
+	id = gge.200
+	title = gge.200.t
+	desc = gge.200.d
+	is_triggered_only = yes
+	option = {
+		name = gge.200.a
+		damage_building = {
+			type = industrial_complex
+			damage = 0.5
+		}
+		damage_building = {
+			type = arms_factory
+			damage = 0.5
+		}
+		damage_building = {
+			type = infrastructure
+			damage = 0.5
+		}
+	}
+}
+
+country_event = {
+	id = gge.300
+	title = gge.300.t
+	desc = gge.300.d
+	is_triggered_only = yes
+	option = {
+		name = gge.300.a
+		every_owned_state = {
+			limit = {
+				OR = {
+					is_on_continent = asia
+					is_on_continent = australia
+				}
+			}
+			add_core_of = INS
+		}
+		release_puppet = INS
+		set_autonomy = {
+			target = INS
+			autonomy_state = autonomy_colony
+		}
+		INS = {
+			set_capital = {
+				state = 673
+			}
+		}
+		IF = {
+			limit = {
+				NOT = {
+					has_country_leader = sam
+				}
+			}
+			random_character = {
+				limit = { is_character = sam }
+				set_nationality = INS
+			}
+			INS = {
+				promote_character = sam
+			}
+		}
+		hidden_effect = {
+			country_event = {
+				id = gge.301
+				days = 20
+			}
+		}
+	}
+}
+country_event = {
+	id = gge.301
+	title = gge.301.t
+	desc = gge.301.d
+	is_triggered_only = yes
+	option = {
+		name = gge.301.a
+		ai_chance = { 
+			factor = 50
+		}
+		add_political_power = 200
+		hidden_effect = {
+			create_dynamic_country = {
+				original_tag = FRA
+				set_variable = {FGE.france = THIS}
+				inherit_technology = FGE
+				every_state = {
+					limit = {
+						is_core_of = BRT
+						NOT = {
+							is_core_of = ROOT
+						}
+						is_owned_by = ROOT
+					}
+					add_core_of = PREV
+					transfer_state_to = PREV
+				}
+				set_capital = {
+					state = 16
+				}
+				set_cosmetic_tag = FRA
+			}
+			puppet = var:FGE.france
+			set_autonomy = {
+				target = var:FGE.france
+				autonomy_state = autonomy_colony
+			}
+		}
+		effect_tooltip = {
+			release_puppet = FRA
+		}
+	}
+	option = {
+		name = gge.302.b
+		ai_chance = {
+			factor = 50
+		}
+	}
+	option = {
+		name = gge.303.c
+		ai_chance = {
+			factor = 0
+		}
+		every_state = {
+			limit = {
+				is_core_of = BRT
+				NOT = {
+					is_core_of = ROOT
+				}
+				is_owned_by = ROOT
+			}
+			add_core_of = WIL
+			transfer_state_to = WIL
+		}
+	}
+}
+
+country_event = {
+	id = gge.400
+	title = gge.400.t
+	desc = gge.400.d
+	is_triggered_only = yes
+	option = {
+		name = gge.400.a
+	}
+}
+country_event = {
+	id = gge.401
+	title = gge.401.t
+	desc = gge.401.d
+	is_triggered_only = yes
+	option = {
+		name = gge.401.a
+	}
+}
+country_event = {
+	id = gge.402
+	title = gge.402.t
+	desc = gge.402.d
+	is_triggered_only = yes
+	option = {
+		name = gge.402.a
+	}
+}
+country_event = {
+	id = gge.403
+	title = gge.403.t
+	desc = gge.403.d
+	is_triggered_only = yes
+	option = {
+		name = gge.403.a
+	}
+}
+
+country_event = {
+	id = gge.404
+	title = gge.404.t
+	desc = gge.404.d
+	trigger = {
+		original_tag = FGE
+		NOT = {
+			any_other_country = {
+				original_tag = FGE
+			}
+		}
+		has_global_flag = FGE_civil_war
+		has_government = democratic
+	}
+	fire_only_once = yes
+	option = {
+		name = gge.404.a
+		clr_global_flag = FGE_civil_war
+		set_global_flag = FGE_civil_war_over
+		mark_focus_tree_layout_dirty = yes
+	}
+}
+country_event = {
+	id = gge.405
+	title = gge.405.t
+	desc = gge.405.d
+	trigger = {
+		original_tag = FGE
+		NOT = {
+			any_other_country = {
+				original_tag = FGE
+			}
+		}
+		has_global_flag = FGE_civil_war
+		has_government = neutrality
+	}
+	fire_only_once = yes
+	option = {
+		name = gge.405.a
+		clr_global_flag = FGE_civil_war
+		set_global_flag = FGE_civil_war_over
+		mark_focus_tree_layout_dirty = yes
 	}
 }

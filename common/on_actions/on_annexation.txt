@@ -1,0 +1,18 @@
+on_actions = {
+	on_annex = {
+		effect = {
+			IF = {
+				limit = {
+					FROM = {
+						original_tag = ROOT
+					}
+				}
+				FROM = {
+					every_character = {
+						set_nationality = ROOT
+					}
+				}
+			}
+		}
+	}
+}

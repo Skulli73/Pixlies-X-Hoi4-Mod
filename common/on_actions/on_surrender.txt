@@ -32,12 +32,85 @@ on_actions = {
 								character = skulli73
 							}
 						}
+						NOT = {
+							has_global_flag = fge_trl_win
+						}
 					}
 					FGE = {
 						country_event = {
 							id = gge.36
 							days = 2
 						}
+					}
+					set_global_flag = fge_trl_win
+				}
+			}
+			IF = {
+				limit = {
+					ROOT = {
+						original_tag = FGE
+						has_government = neutrality
+					}
+					FROM = {
+						original_tag = FGE
+						has_government = democratic
+					}
+					has_global_flag = FGE_civil_war
+				}
+				ROOT = {
+					country_event = {
+						id = gge.400
+					}
+				}
+			}
+			IF = {
+				limit = {
+					ROOT = {
+						original_tag = FGE
+						has_government = fascism
+					}
+					FROM = {
+						original_tag = FGE
+					}
+					has_global_flag = FGE_civil_war
+				}
+				ROOT = {
+					country_event = {
+						id = gge.401
+					}
+				}
+			}
+			IF = {
+				limit = {
+					ROOT = {
+						original_tag = ILY
+					}
+					FROM = {
+						original_tag = FGE
+					}
+					has_global_flag = FGE_civil_war
+				}
+				ROOT = {
+					country_event = {
+						id = gge.402
+					}
+				}
+			}
+			IF = {
+				limit = {
+					ROOT = {
+						original_tag = FGE
+						has_government = democratic
+					}
+					FROM = {
+						original_tag = FGE
+						has_government = neutrality
+					}
+					has_global_flag = FGE_civil_war
+				}
+				ROOT = {
+					country_event = {
+						id = gge.403
 					}
 				}
 			}

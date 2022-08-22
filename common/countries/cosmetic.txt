@@ -812,3 +812,7 @@ FGE_nsu_civil_war = {
 	color = rgb { 40 40 40 }
 	color_ui = rgb { 40 40 40 }
 }
+FRA = {
+	color = rgb {13 27 99}
+	color_ui = rgb {13 27 99}
+}

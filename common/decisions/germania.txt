@@ -241,6 +241,9 @@ FGE_return_home = {
 					}
 				}
 				mark_focus_tree_layout_dirty = yes
+				country_event = {
+					id = gge.300
+				}
 			}
 		}
 	}

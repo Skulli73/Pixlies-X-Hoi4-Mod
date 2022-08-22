@@ -64,6 +64,30 @@ on_actions = {
 					}
 				}
 			}
+
+			IF = {
+				limit = {
+					FGE = {
+						has_war_with = FROM
+					}
+					ROOT = {
+						is_in_faction_with = FGE
+					}
+					FROM = {
+						original_tag = GME
+					}
+					FROM.FROM = {
+						is_core_of = FGE
+					}
+				}
+				FROM.FROM = {
+					state_event = {
+						id = gge.200
+						trigger_for = controller
+						days = 1
+					}
+				}
+			}
 		}
 	}
 }

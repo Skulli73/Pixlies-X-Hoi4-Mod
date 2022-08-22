@@ -2977,4 +2977,8 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/focus_SOV_approach_semyonov.dds"
 	}
 
+	SpriteType = { 
+		name = "GFX_focus_generic_election"
+		texturefile = "gfx/interface/goals/focus_generic_election.dds"
+	}
 }

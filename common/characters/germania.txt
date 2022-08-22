@@ -357,6 +357,11 @@ characters = {
 				staunch_monarchist
 				monarchist_puppet
 			}
+			available = {
+				ROOT = {
+					has_ideas = fortressia_head_of_state
+				}
+			}
 		}
 	}
 	phantom = {

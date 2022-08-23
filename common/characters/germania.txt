@@ -74,15 +74,17 @@ characters = {
 			desc = SKULLI_LEADER_DESC
 		}
 		field_marshal = {
-			skill = 1
+			skill = 2
 			attack_skill = 2
 			defense_skill = 5
 			planning_skill = 2
 			logistics_skill = 3
 			visible = {
 				OR = {
-					has_country_leader = "Skulli73"
-					has_ideas = skulli_head_of_state
+					has_country_leader = {
+						character = skulli73
+					}
+					has_idea = skulli_head_of_state
 				}
 			}
 		}
@@ -129,6 +131,21 @@ characters = {
 				great_war_hero
 			}
 			desc = KATZ_LEADER_DESC
+		}
+		field_marshal = {
+			skill = 1
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 1
+			visible = {
+				OR = {
+					has_country_leader = {
+						character = katz
+					}
+					has_idea = katz_head_of_state
+				}
+			}
 		}
 	}
 	alternis = {
@@ -281,6 +298,13 @@ characters = {
 				conservative_nationalist
 			}
 		}
+		field_marshal = {
+			skill = 1
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 1
+		}
 		country_leader = {
 			ideology = centrism
 			traits = {
@@ -330,6 +354,13 @@ characters = {
 				great_war_hero
 			}
 		}
+		corps_commander = {
+			skill = 1
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 4
+			logistics_skill = 4
+		}
 	}
 	fortressia = {
 		name = "Fortressia"
@@ -359,7 +390,7 @@ characters = {
 			}
 			available = {
 				ROOT = {
-					has_ideas = fortressia_head_of_state
+					has_idea = fortressia_head_of_state
 				}
 			}
 		}

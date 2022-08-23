@@ -1502,6 +1502,9 @@ focus_tree = {
 		available = {
 			always = no
 		}
+		allow_branch = {
+			has_global_flag = skulli_suicide
+		}
 	}
 	focus = {
 		id = FGE_republican_agenda

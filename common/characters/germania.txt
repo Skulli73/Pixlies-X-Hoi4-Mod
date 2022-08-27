@@ -242,6 +242,26 @@ characters = {
 				liberal_democratic_paragon
 			}
 		}
+		advisor = {
+			slot = head_of_state
+			idea_token = ace_head_of_state
+			name = "Ace"
+			cost = 150
+			removal_cost = -1
+			allowed = {
+				OR = {
+					original_tag = GME
+					original_tag = FGE
+				}
+			}
+			available = {
+				has_idea = ace_head_of_state
+			}
+			traits = {
+				tenacious_negotiator
+				liberal_democratic_paragon
+			}
+		}
 		country_leader = {
 			ideology = liberalism
 			traits = {

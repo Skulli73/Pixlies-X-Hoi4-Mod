@@ -34,3 +34,21 @@ FGE_destroy_CSA = {
 		has_completed_focus = FGE_destroy_the_southern_union
 	}
 }
+FGE_eu_decisions = {
+	priority = 100
+	allowed = {
+		tag = FGE
+	}
+	visible = {
+		has_completed_focus = FGE_form_eu
+	}
+}
+FGE_enforce_republicanism = {
+	priority = 80
+	allowed = {
+		tag = FGE
+	}
+	visible = {
+		has_completed_focus = FGE_enforce_republicanism
+	}
+}

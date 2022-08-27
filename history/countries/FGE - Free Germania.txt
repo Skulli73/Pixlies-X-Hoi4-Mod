@@ -46,3 +46,4 @@ recruit_character = atalius
 recruit_character = fortressia
 recruit_character = phantom
 inherit_technology = CSA
+recruit_character = geo_temp_1

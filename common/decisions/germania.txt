@@ -599,3 +599,125 @@ FGE_destroy_CSA = {
 		}
 	}
 }
+
+FGE_eu_decisions = {
+	FGE_invite_nation = {
+		cost = 75
+		target_trigger = {
+			NOT = {
+				tag = WIL
+			}
+			FROM = {
+				CAPITAL_SCOPE = {
+					is_on_continent = europe
+				}
+				OR = {
+					has_government = democratic
+					AND = {
+						OR = {
+							tag = ESP
+							tag = PRT
+						}
+						has_government = neutrality
+					}
+				}
+				NOT = {
+					AND = {
+						tag = ZAP
+						NOT = {
+							has_country_flag = ZAP_republic
+						}
+					}
+				}
+				NOT = {
+					is_in_faction_with = ROOT
+				}
+			}
+		}
+		visible = {
+			FROM = {
+				NOT = {
+					is_in_faction_with = ROOT
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		complete_effect = {
+			FROM = {
+				country_event = {
+					id = generic.5
+					days = 1
+				}
+			}
+		}
+	}
+}
+FGE_enforce_republicanism = {
+	FGE_enforce_republicanism_decision = {
+		cost = 75
+		days_remove = 25
+		target_trigger = {
+			NOT = {
+				tag = WIL
+			}
+			FROM = {
+				CAPITAL_SCOPE = {
+					is_on_continent = europe
+				}
+				OR = {
+					NOT = {
+						has_government = democratic
+						AND = {
+							OR = {
+								tag = ESP
+								tag = PRT
+							}
+							has_government = neutrality
+						}
+					}
+					AND = {
+						tag = ZAP
+						NOT = {
+							has_country_flag = ZAP_republic
+						}
+					}
+				}
+				NOT = {
+					is_in_faction_with = ROOT
+				}
+			}
+		}
+		war_with_on_remove = FROM
+		visible = {
+			FROM = {
+				NOT = {
+					is_in_faction_with = ROOT
+				}
+			}
+			NOT = {
+				has_wargoal_against = FROM
+			}
+		}
+		ai_will_do = {
+			factor = 100
+			modifier = {
+				factor = 0
+				NOT = {
+					any_controlled_state = {
+						any_neighbor_state = {
+							is_owned_by = FROM
+						}
+					}
+				}
+			}
+		}
+		remove_effect = {
+			create_wargoal = {
+				target = FROM
+				type = topple_government
+			}
+		}
+	}
+}

@@ -46,5 +46,13 @@ characters = {
 				small = "gfx/interface/ideas/CSA/geo.dds"
 			}
 		}
+		country_leader = {
+			ideology = marxism
+			traits = {
+				snuggler
+				social_revolutionary
+			}
+		}
+		
 	}
 }

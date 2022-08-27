@@ -72,6 +72,13 @@ FGE_republican_civil_war_ADJ:0 "Germanic"
 FGE_republican_civil_war_democratic:0 "Republican Front of Germania"
 FGE_republican_civil_war_democratic_DEF:0 "the Republican Front of Germania"
 
+FGE_FRANKISH_EMPIRE:0 "Francia"
+FGE_FRANKISH_EMPIRE_DEF:0 "Francia"
+FGE_FRANKISH_EMPIRE_ADJ:0 "Frankish"
+FGE_FRANKISH_EMPIRE_neutrality:0 "Frankish Empire"
+FGE_FRANKISH_EMPIRE_neutrality_DEF:0 "the Frankish Empire"
+FGE_FRANKISH_EMPIRE_neutrality_ADJ:0 "Frankish"
+
 #normal spain names
 
 ESP:0 "Spain"

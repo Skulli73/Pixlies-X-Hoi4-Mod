@@ -63,7 +63,8 @@ demo = {
 			factor = 1000000
 		}
 		fire_only_once = yes
-		complete_effect = { 
+		days_remove = 5
+		remove_effect = { 
 			# CSA = {
 			# 	random_character = {
 			# 		limit = { is_character = geo }
@@ -75,12 +76,9 @@ demo = {
 			# 	}
 			# }
 			FGE = {
-				recruit_character = geo_temp_1
-				geo_temp_1 = {
-					operative_leader_event = {
-						id = gge.100
-						hours = 2
-					}
+				country_event = {
+					id = gge.100
+					hours = 2
 				}
 			}
 		}

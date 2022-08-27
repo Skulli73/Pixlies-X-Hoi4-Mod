@@ -85,5 +85,12 @@ ideas = {
 				industry_free_repair_factor = 0.2
 			}
 		}
+		FGE_ensure_germanic_dominance = {
+			name = FGE_ensure_germanic_dominance
+			picture = generic_infantry_equipment_manufacturer_2
+			modifier = {
+				justify_war_goal_time = -0.5
+			}
+		}
 	}
 }

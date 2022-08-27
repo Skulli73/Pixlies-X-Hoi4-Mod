@@ -1532,6 +1532,218 @@ focus_tree = {
 		}
 	}
 	focus = {
+		id = FGE_reaffirm_existing_alliances
+		icon = GFX_focus_generic_diplomatic_treaty
+		cost = 10
+		x = 0
+		y = 2
+		relative_position_id = FGE_federal_election
+		prerequisite = {
+			focus = FGE_conservative_agenda
+			focus = FGE_republican_agenda
+		}
+		available = {
+			NOT = {
+				has_global_flag = FGE_civil_war
+			}
+		}
+		completion_reward = {
+			every_country = {
+				limit = {
+					has_country_flag = ofn_state_temp
+				}
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = large_increase
+				}
+				ROOT = {
+					add_opinion_modifier = {
+						target = PREV
+						modifier = large_increase
+					}
+				}
+			}
+		}
+	}
+	focus = {
+		id = FGE_restore_the_ofn_2
+		icon = GFX_focus_generic_treaty
+		cost = 10
+		x = 0
+		y = 1
+		relative_position_id = FGE_reaffirm_existing_alliances
+		prerequisite = {
+			focus = FGE_reaffirm_existing_alliances
+		}
+		prerequisite = {
+			focus = FGE_elect_a_president
+			focus = FGE_legitimize_the_emperor
+		}
+		available = {
+			NOT = {
+				has_global_flag = FGE_civil_war
+			}
+		}
+		mutually_exclusive = {
+			focus = FGE_form_eu
+			focus = FGE_ensure_germanic_dominance
+		}
+		completion_reward = {
+			create_faction = "Organization of Free Nations"
+			every_country = {
+				limit = {
+					has_country_flag = ofn_state_temp
+				}
+				country_event = {
+					id = generic.5
+					days = 1
+				}
+			}
+		}
+	}
+	focus = {
+		id = FGE_war_with_japan
+		icon = GFX_focus_attack_japan
+		cost = 10
+		x = 0
+		y = 1
+		relative_position_id = FGE_restore_the_ofn_2
+		prerequisite = {
+			focus = FGE_restore_the_ofn_2
+		}
+		available = {
+			NOT = {
+				has_global_flag = FGE_civil_war
+			}
+		}
+		completion_reward = {
+			create_wargoal = {
+				target = JPN
+				type = puppet_wargoal_focus
+			}
+		}
+	}
+	focus = {
+		id = FGE_elect_a_president
+		icon = GFX_focus_generic_election
+		cost = 10
+		x = -1
+		y = 1
+		relative_position_id = FGE_republican_agenda
+		prerequisite = {
+			focus = FGE_republican_agenda
+		}
+		available = {
+			NOT = {
+				has_global_flag = FGE_civil_war
+			}
+		}
+		completion_reward = {
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.2
+			}
+			add_ideas = ace_head_of_state
+		}
+	}
+	focus = {
+		id = FGE_form_eu
+		icon = GFX_focus_usa_focus_on_europe
+		cost = 10
+		x = 0
+		y = 1
+		relative_position_id = FGE_elect_a_president
+		prerequisite = {
+			focus = FGE_elect_a_president
+		}
+		prerequisite = {
+			focus = FGE_reaffirm_existing_alliances
+		}
+		mutually_exclusive = {
+			focus = FGE_restore_the_ofn_2
+			focus = FGE_ensure_germanic_dominance
+		}
+		available = {
+			NOT = {
+				has_global_flag = FGE_civil_war
+			}
+		}
+		completion_reward = {
+			create_faction = "European Union"
+			unlock_decision_category_tooltip = eu_expansion
+		}
+	}
+	focus = {
+		id = FGE_enforce_republicanism
+		icon = GFX_focus_rom_abdicate
+		cost = 10
+		x = 0
+		y = 1
+		relative_position_id = FGE_form_eu
+		prerequisite = {
+			focus = FGE_form_eu
+		}
+		available = {
+			NOT = {
+				has_global_flag = FGE_civil_war
+			}
+		}
+		completion_reward = {
+			unlock_decision_category_tooltip = enforce_republicanism
+		}
+	}
+	focus = {
+		id = FGE_unite_eu
+		icon = GFX_goal_anschluss
+		cost = 10
+		x = 0
+		y = 1
+		relative_position_id = FGE_enforce_republicanism
+		prerequisite = {
+			focus = FGE_enforce_republicanism
+		}
+		available = {
+			OR = {
+				10 = {
+					OWNER = {
+						is_in_faction_with = ROOT
+					}
+				}
+				797 = {
+					OWNER = {
+						is_in_faction_with = ROOT
+					}
+				}
+				219 = {
+					OWNER = {
+						is_in_faction_with = ROOT
+					}
+				}
+			}
+		}
+		completion_reward = {
+			every_state = {
+				limit = {
+					is_on_continent = europe
+				}
+				add_core_of = ROOT
+			}
+			set_cosmetic_tag = EUR_UNIFIED
+			every_other_country = {
+				limit = {
+					is_in_faction_with = ROOT
+					CAPITAL_SCOPE = {
+						is_on_continent = europe
+					}
+				}
+				country_event = {
+					id = gge.500
+					days = 1
+				}
+			}
+		}
+	}
+	focus = {
 		id = FGE_conservative_agenda
 		icon = GFX_goal_generic_neutrality_focus
 		x = 4
@@ -1553,6 +1765,132 @@ focus_tree = {
 			add_popularity = {
 				popularity = 0.2
 				ideology = neutrality
+			}
+		}
+	}
+	focus = {
+		id = FGE_legitimize_the_emperor
+		icon = GFX_focus_generic_monarchy_2
+		x = 1
+		y = 1
+		cost = 10
+		relative_position_id = FGE_conservative_agenda
+		prerequisite = {
+			focus = FGE_conservative_agenda
+		}
+		available = {
+			has_country_leader = {
+				character = atalius
+			}
+		}
+		completion_reward = {
+			add_popularity = {
+				popularity = 0.2
+				ideology = neutrality
+			}
+		}
+	}
+	focus = {
+		id = FGE_ensure_germanic_dominance
+		icon = GFX_focus_usa_focus_on_europe
+		cost = 10
+		x = 0
+		y = 1
+		relative_position_id = FGE_legitimize_the_emperor
+		prerequisite = {
+			focus = FGE_legitimize_the_emperor
+		}
+		mutually_exclusive = {
+			focus = FGE_restore_the_ofn_2
+			focus = FGE_form_eu
+		}
+		completion_reward = {
+			add_war_support = 0.2
+			create_faction = "Germanic Sphere"
+			add_ideas = FGE_ensure_germanic_dominance
+		}
+	}
+	focus = {
+		id = FGE_demand_eastern_land
+		icon = GFX_goal_generic_demand_territory
+		cost = 10
+		x = 0
+		y = 1
+		relative_position_id = FGE_ensure_germanic_dominance
+		prerequisite = {
+			focus = FGE_ensure_germanic_dominance
+		}
+		completion_reward = {
+			every_owned_state = {
+				limit = {
+					OR = {
+						state = 9
+						state = 75
+						state = 74
+						state = 69
+						state = 67
+						state = 66
+						state = 762
+						state = 68
+						state = 86
+						state = 63
+						state = 807
+						state = 85
+						state = 5
+						state = 763
+						state = 72
+					}
+				}
+				add_claim_by = ROOT
+			}
+			ZAP = {
+				country_event = {
+					id = gge.502
+					days = 1
+				}
+			}
+		}
+	}
+	focus = {
+		id = FGE_dei_gratia
+		icon = GFX_focus_POL_habsburg
+		cost = 10
+		x = -2
+		y = 1
+		relative_position_id = FGE_ensure_germanic_dominance
+		prerequisite = {
+			focus = FGE_ensure_germanic_dominance
+			focus = FGE_restore_the_ofn_2
+		}
+		prerequisite = {
+			focus = FGE_conservative_agenda
+		}
+		completion_reward = {
+			IF = {
+				limit = {
+					has_global_flag = FGE_kept_france
+				}
+				set_cosmetic_tag = FGE_FRANKISH_EMPIRE
+				every_owned_state = {
+					limit = {
+						OR = {
+							region = 19
+							region = 20
+							region = 208
+						}
+					}
+					add_core_of = ROOT
+				}
+				ELSE = {
+					set_cosmetic_tag = HRE_UNIFIED
+					every_owned_state = {
+						limit = {
+							region = 23
+							region = 21
+						}
+						add_core_of = ROOT
+					}
+				}
 			}
 		}
 	}

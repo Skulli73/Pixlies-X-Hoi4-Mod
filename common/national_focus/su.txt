@@ -363,7 +363,7 @@ focus_tree = {
 	}	
 		
 	focus = {
-		id =  CSA_Reasure_and_Advise_Matt
+		id =  CSA_Negotiate_with_matt
 		icon = GFX_CSA_South_African_Economy_corrupt
 		prerequisite = { focus = CSA_Negotiate_with_Everyone }
 		x = 0
@@ -402,10 +402,10 @@ focus_tree = {
 	focus = {
 		id =  CSA_Announce_Intra_Party_Democracy
 		icon = GFX_CSA_South_African_Economy_corrupt
-		prerequisite = { focus = CSA_Reasure_and_Advise_Matt }
+		prerequisite = { focus = CSA_Negotiate_with_matt }
 		x = 0
 		y = 1
-		relative_position_id = CSA_Reasure_and_Advise_Matt
+		relative_position_id = CSA_Negotiate_with_matt
 
 		cost = 10
 
@@ -626,7 +626,7 @@ focus_tree = {
 	}	
 
 	focus = {
-		id =  CSA_A_Celebration_to_the_SU
+		id =  CSA_A_Celebration_to_All_of_US
 		icon = GFX_CSA_South_African_Economy_corrupt
 		prerequisite = { focus = CSA_New_rail_codes }
 		x = 0
@@ -779,7 +779,7 @@ focus_tree = {
 	}	
 		
 	focus = {
-		id =  CSA_Negotiate_with_matt
+		id =  CSA_Reasure_and_Advise_Matt
 		icon = GFX_CSA_South_African_Economy_corrupt
 		prerequisite = { focus = CSA_Negotiate_with_Reformists }
 		x = 0
@@ -818,10 +818,10 @@ focus_tree = {
 	focus = {
 		id =  CSA_Con_Reorganize_Party
 		icon = GFX_CSA_South_African_Economy_corrupt
-		prerequisite = { focus = CSA_Negotiate_with_matt }
+		prerequisite = { focus = CSA_Reasure_and_Advise_Matt }
 		x = 0
 		y = 1
-		relative_position_id = CSA_Negotiate_with_matt
+		relative_position_id = CSA_Reasure_and_Advise_Matt
 
 		cost = 10
 
@@ -1192,7 +1192,7 @@ focus_tree = {
 	}	
 
 	focus = {
-		id =  CSA_A_Celebration_to_All_of_US
+		id =  CSA_A_Celebration_to_the_SU
 		icon = GFX_CSA_South_African_Economy_corrupt
 		prerequisite = { focus = CSA_Simplify_rail_codes }
 		x = 0
@@ -1228,16 +1228,85 @@ focus_tree = {
 		}
 	}	
 
-	#Foreign  Tree#
+	#LiberalPol#
 
 focus = {
-		id =  CSA_The_World_Ahead_of_Us
+		id =  CSA_Tyrants_No_More
 		icon = GFX_CSA_South_African_Economy_corrupt
-		prerequisite = { focus = CSA_A_Celebration_to_All_of_US
-		focus = CSA_A_Celebration_to_the_SU }
-		x = -3
+		x = 12
+		y = 0
+		relative_position_id = CSA_the_Congress_Debates
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {			
+			if = {
+				has_completed_focus = CSA_The_Liberal_Revolt
+				}
+		}		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = AST_royal_australian_artillery
+				bonus = 1.0
+				uses = 1
+				category = artillery
+			}
+		}
+	}	
+	focus = {
+		id = CSA_Purge_Conservatives
+		icon = GFX_CSA_South_African_Economy_corrupt
+		prerequisite = { focus = CSA_Tyrants_No_More }
+		x = -2
 		y = 1
-		relative_position_id = CSA_A_Celebration_to_All_of_US
+		relative_position_id = CSA_Tyrants_No_More
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		}		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = AST_royal_australian_artillery
+				bonus = 1.0
+				uses = 1
+				category = artillery
+			}
+		}
+	}	
+
+	focus = {
+		id =  CSA_A_new_Gov
+		icon = GFX_CSA_South_African_Economy_corrupt
+		prerequisite = { focus = CSA_Tyrants_No_More }
+		x = 0
+		y = 1
+		relative_position_id = CSA_Tyrants_No_More
 
 		cost = 10
 
@@ -1269,3 +1338,5 @@ focus = {
 	}	
 
 }
+
+	#Foreign  Tree#

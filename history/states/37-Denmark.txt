@@ -21,15 +21,12 @@ state= {
 			3325 = {
 				naval_base = 3
 			}
-			6361 = {
-				naval_base = 1
-			}
 		}
 		# = DEN
 	}
 
 	provinces= {
-		3260 3305 3325 3374 6287 6361 6393 
+		3260 3305 3325 3374 6287 6393 
 	}
 
 	local_supplies=15.0 

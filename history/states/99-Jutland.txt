@@ -24,6 +24,9 @@ state= {
 				naval_base = 1
 			}
 		}
+		victory_points = {
+			6364 5
+		}
 		# = DEN
 	}
 	provinces=

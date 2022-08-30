@@ -20,7 +20,9 @@ state={
 
 		}
 		# = GER
-
+		victory_points = {
+			6521 5
+		}
 		1939.1.1 = {
 			buildings = {
 				#air_base = 10

@@ -24,6 +24,9 @@ state={
 				coastal_bunker = 3
 			}
 		}
+		victory_points = {
+			6115 5
+		}
 		# = NOR
 	}
 

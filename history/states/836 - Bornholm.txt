@@ -1,10 +1,10 @@
 
 state = {
 	id = 836
-	name = "STATE_836"
+	name = "Bornholm"
 	manpower = 0# = 183748
 	
-	state_category = rular
+	state_category = rural
 
 	history = {
 		owner = GME

@@ -123,6 +123,75 @@ FGE_GME_resistance = {
 	}
 }
 FGE_return_home = {
+	FGE_growing_discontent = {
+		days_mission_timeout = 1
+		activation = {
+			original_tag = FGE
+			has_war_with = GME
+			NOT = {
+				GME = {
+					has_capitulated = yes
+				}
+			}
+		}
+		is_good = no
+		available = {
+			OR = {
+				NOT = {
+					has_war_with = GME
+				}
+				GME = {
+					has_capitulated = yes
+				}
+			}
+		}
+		timeout_effect = {
+			add_war_support = -0.2
+			add_stability = -0.2
+			IF = {
+				limit = {
+					OR = {
+						has_stability < 0.15
+						has_war_support < 0.15
+					}
+				}
+				every_owned_state = {
+					limit = {
+						OR = {
+							is_on_continent = asia
+							state = 298
+							state = 490
+						}
+						NOT = {
+							state = 668
+							state = 724
+							state = 336
+						}
+					}
+					set_state_owner_to = INS
+					set_state_controller_to = INS
+				}
+				every_core_state = {
+					limit = {
+						NOT = {
+							is_on_continent = europe
+						}
+					}
+					add_core_of = INS
+				}
+				declare_war_on = {
+					target = INS
+					type = civil_war
+				}
+				transfer_units_fraction = {
+					target = INS
+					size = 0.75
+				}
+			}
+			custom_effect_tooltip = FGE_growing_discontent_tt
+		}
+	}
+	
 	FGE_invade_national_state = {
 		fire_only_once = yes
 		allowed = {

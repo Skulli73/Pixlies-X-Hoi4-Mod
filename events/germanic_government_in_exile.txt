@@ -604,6 +604,13 @@ country_event = {
 				is_in_faction_with = ROOT
 			}
 			leave_faction = yes
+			set_country_flag = was_in_fup
+		}
+		every_country = {
+			limit = {
+				has_country_flag = was_in_fup
+			}
+			white_peace = FGE
 		}
 		every_country = {
 			limit = {
@@ -628,7 +635,6 @@ country_event = {
 			}
 			transfer_state_to = FGE
 		}
-		white_peace = FGE
 		news_event = {
 			id = gge.30
 			days = 1
@@ -1042,6 +1048,10 @@ country_event = {
 				}
 				promote_character = atalius
 				add_ideas = katz_head_of_state
+				uncomplete_national_focus = {
+					focus = FGE_republican_agenda
+				}
+				complete_national_focus = FGE_conservative_agenda
 				every_state = {
 					limit = {
 						is_owned_by = prev.prev
@@ -1072,6 +1082,9 @@ country_event = {
 					transfer_units_fraction = {
 						target = PREV
 						size = 0.3
+						keep_unit_leaders_trigger = {
+							always = yes
+						}
 					}
 				}
 			}
@@ -1133,6 +1146,11 @@ country_event = {
 						set_nationality = PREV.PREV
 					}
 				}
+				promote_character = sam
+				uncomplete_national_focus = {
+					focus = FGE_conservative_agenda
+				}
+				complete_national_focus = FGE_republican_agenda
 				every_state = {
 					limit = {
 						is_owned_by = prev.prev
@@ -1159,6 +1177,9 @@ country_event = {
 					transfer_units_fraction = {
 						target = PREV
 						size = 0.3
+						keep_unit_leaders_trigger = {
+							always = yes
+						}
 					}
 				}
 			}
@@ -1200,6 +1221,9 @@ country_event = {
 					transfer_units_fraction = {
 						target = PREV
 						size = 0.15
+						keep_unit_leaders_trigger = {
+							always = yes
+						}
 					}
 				}
 			}
@@ -1329,7 +1353,7 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = gge.49.a
-		every_other_country = {
+		every_country = {
 			limit = {
 				OR = {
 					AND = {
@@ -1339,9 +1363,24 @@ country_event = {
 					original_tag = FGE
 				}
 			}
-			declare_war_on = {
-				target = PREV
-				type = civil_war
+			every_other_country = {
+				limit = {
+					OR = {
+						AND = {
+							original_tag = ILY
+							has_cosmetic_tag = ILY_partisans_civil_war
+						}
+						original_tag = FGE
+					}
+				}
+				declare_war_on = {
+					target = PREV
+					type = civil_war
+				}
+			}
+			set_rule = {
+				can_create_factions = no
+				can_join_factions = no
 			}
 		}
 		set_global_flag = FGE_civil_war
@@ -1585,6 +1624,10 @@ country_event = {
 	fire_only_once = yes
 	option = {
 		name = gge.404.a
+		set_rule = {
+			can_create_factions = yes
+			can_join_factions = yes
+		}
 		clr_global_flag = FGE_civil_war
 		set_global_flag = FGE_civil_war_over
 		mark_focus_tree_layout_dirty = yes
@@ -1606,7 +1649,7 @@ country_event = {
 	trigger = {
 		original_tag = FGE
 		NOT = {
-			any_other_country = {
+			any_other_country = { 
 				original_tag = FGE
 			}
 		}
@@ -1616,6 +1659,11 @@ country_event = {
 	fire_only_once = yes
 	option = {
 		name = gge.405.a
+		set_rule = {
+			can_create_factions = yes
+			can_join_factions = yes
+		}
+		set_cosmetic_tag = GME
 		clr_global_flag = FGE_civil_war
 		set_global_flag = FGE_civil_war_over
 		mark_focus_tree_layout_dirty = yes

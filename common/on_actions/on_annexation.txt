@@ -3,13 +3,51 @@ on_actions = {
 		effect = {
 			IF = {
 				limit = {
-					FROM = {
-						original_tag = ROOT
+					OR = {
+						FROM = {
+							original_tag = ROOT
+						}
+						AND = {
+							FROM = {
+								original_tag = INS
+							}
+							ROOT = {
+								original_tag = FGE
+							}
+						}
+						AND = {
+							FROM = {
+								original_tag = FGE
+							}
+							ROOT = {
+								original_tag = INS
+							}
+						}
 					}
 				}
 				FROM = {
 					every_character = {
 						set_nationality = ROOT
+					}
+				}
+				IF = {
+					limit = {
+						AND = {
+							FROM = {
+								original_tag = INS
+							}
+							ROOT = {
+								original_tag = FGE
+							}
+						}
+						AND = {
+							FROM = {
+								original_tag = FGE
+							}
+							ROOT = {
+								original_tag = INS
+							}
+						}
 					}
 				}
 			}

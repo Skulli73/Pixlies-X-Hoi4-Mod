@@ -15,7 +15,6 @@ focus_tree = {
 		y = 0
 		allow_branch = {
 			NOT = {
-				has_war_with = GME
 				has_global_flag = FGE_returned_home
 			}
 		}
@@ -104,7 +103,6 @@ focus_tree = {
 		y = 0
 		allow_branch = {
 			NOT = {
-				has_war_with = GME
 				has_global_flag = FGE_returned_home
 			}
 		}
@@ -393,6 +391,9 @@ focus_tree = {
 			}
 			create_faction = "Organization of Free Nations"
 		}
+		ai_will_do = {
+			factor = 1000
+		}
 	}
 	focus = {
 		id = FGE_middle_eastern_and_caucasian_connections
@@ -644,6 +645,9 @@ focus_tree = {
 			effect_tooltip = {
 				activate_decision = FGE_invade_national_state
 			}
+		}
+		ai_will_do = {
+			factor = 500
 		}
 	}
 	focus = {
@@ -1782,6 +1786,9 @@ focus_tree = {
 			has_country_leader = {
 				character = atalius
 			}
+			NOT = {
+				has_global_flag = FGE_civil_war
+			}
 		}
 		completion_reward = {
 			add_popularity = {
@@ -1868,7 +1875,9 @@ focus_tree = {
 		completion_reward = {
 			IF = {
 				limit = {
-					has_global_flag = FGE_kept_france
+					NOT = {
+						has_global_flag = FGE_kept_france
+					}
 				}
 				set_cosmetic_tag = FGE_FRANKISH_EMPIRE
 				every_owned_state = {

@@ -9,14 +9,12 @@ FGE_GME_resistance = {
 	visible_when_empty = yes
 	allowed = {
 		OR = {
-			tag = FGE
-			tag = GME
+			original_tag = FGE
+			original_tag = GME
 		}
 	}
 	visible = {
-		FGE = {
-			has_completed_focus = FGE_coordinate_resistance
-		}
+		has_completed_focus = FGE_coordinate_resistance
 	}
 }
 FGE_return_home = {
@@ -37,7 +35,7 @@ FGE_destroy_CSA = {
 FGE_eu_decisions = {
 	priority = 100
 	allowed = {
-		tag = FGE
+		original_tag = FGE
 	}
 	visible = {
 		has_completed_focus = FGE_form_eu
@@ -46,9 +44,16 @@ FGE_eu_decisions = {
 FGE_enforce_republicanism = {
 	priority = 80
 	allowed = {
-		tag = FGE
+		original_tag = FGE
 	}
 	visible = {
 		has_completed_focus = FGE_enforce_republicanism
+	}
+}
+FGE_debug = {
+	priority = -10
+	allowed = {
+		original_tag = FGE
+		is_debug = yes
 	}
 }

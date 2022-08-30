@@ -19,8 +19,8 @@ defined_text = {
 	text = {
 		trigger = {
 			OR = {
-				tag = GME
-				tag = FGE
+				original_tag = GME
+				original_tag = FGE
 			}
 			has_government = fascism
 		}
@@ -29,20 +29,35 @@ defined_text = {
 	text = {
 		trigger = {
 			OR = {
-				tag = GME
-				tag = FGE
+				original_tag = GME
+				original_tag = FGE
 			}
-			has_government = neutrality
+			AND = {
+				has_government = neutrality
+				has_country_leader = {
+					character = katz
+				}
+			}
 		}
 		localization_key = "Kaiser"
 	}
 	text = {
 		trigger = {
 			OR = {
-				tag = GME
-				tag = FGE
+				original_tag = GME
+				original_tag = FGE
 			}
-			has_government = democratic
+			OR = {
+				has_government = democratic
+				AND = {
+					has_government = neutrality
+					NOT = {
+						has_country_leader = {
+							character = katz
+						}
+					}
+				}
+			}
 			NOT = {
 				has_country_flag = acting_pm
 			}
@@ -52,8 +67,8 @@ defined_text = {
 	text = {
 		trigger = {
 			OR = {
-				tag = GME
-				tag = FGE
+				original_tag = GME
+				original_tag = FGE
 			}
 			has_government = democratic
 			has_country_flag = acting_pm
@@ -63,8 +78,8 @@ defined_text = {
 	text = {
 		trigger = {
 			OR = {
-				tag = GME
-				tag = FGE
+				original_tag = GME
+				original_tag = FGE
 			}
 			has_government = communism
 		}
@@ -114,8 +129,8 @@ defined_text = {
 	text = {
 		trigger = {
 			OR = {
-				tag = GME
-				tag = FGE
+				original_tag = GME
+				original_tag = FGE
 			}
 			has_government = fascism
 			is_subject = no
@@ -125,8 +140,8 @@ defined_text = {
 	text = {
 		trigger = {
 			OR = {
-				tag = GME
-				tag = FGE
+				original_tag = GME
+				original_tag = FGE
 			}
 			has_government = fascism
 			is_subject = yes
@@ -136,20 +151,35 @@ defined_text = {
 	text = {
 		trigger = {
 			OR = {
-				tag = GME
-				tag = FGE
+				original_tag = GME
+				original_tag = FGE
 			}
-			has_government = neutrality
+			AND = {
+				has_government = neutrality
+				has_country_leader = {
+					character = katz
+				}
+			}
 		}
 		localization_key = "Prime Minister"
 	}
 	text = {
 		trigger = {
 			OR = {
-				tag = GME
-				tag = FGE
+				original_tag = GME
+				original_tag = FGE
 			}
-			has_government = democratic
+			OR = {
+				has_government = democratic
+				AND = {
+					has_government = neutrality
+					NOT = {
+						has_country_leader = {
+							character = katz
+						}
+					}
+				}
+			}
 			NOT = {
 				has_cosmetic_tag = GME_REPUBLIC
 			}
@@ -159,8 +189,8 @@ defined_text = {
 	text = {
 		trigger = {
 			OR = {
-				tag = GME
-				tag = FGE
+				original_tag = GME
+				original_tag = FGE
 			}
 			has_government = democratic
 			OR = {
@@ -173,8 +203,8 @@ defined_text = {
 	text = {
 		trigger = {
 			OR = {
-				tag = GME
-				tag = FGE
+				original_tag = GME
+				original_tag = FGE
 			}
 			has_government = communism
 		}

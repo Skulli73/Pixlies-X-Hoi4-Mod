@@ -83,4 +83,32 @@ demo = {
 			}
 		}
 	}
+	INS_surrender = {
+		allowed = {
+			original_tag = INS
+		}
+		visible = {
+			has_war_with = FGE
+		}
+		ai_will_do = {
+			factor = 1000
+			modifier = {
+				factor = 0
+				GME = {
+					exists = yes
+				}
+			}
+		}
+		complete_effect = {
+			every_core_state = {
+				remove_core_of = ROOT
+			}
+			FGE = {
+				annex_country = {
+					target = ROOT
+					transfer_troops = yes
+				}
+			}
+		}
+	} 
 }

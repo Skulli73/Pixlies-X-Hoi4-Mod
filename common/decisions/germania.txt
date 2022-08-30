@@ -79,9 +79,6 @@ FGE_GME_resistance = {
 				add_resistance = .05
 			}
 		}
-		ai_will_do = {
-			factor = 50
-		}
 	}
 	fight_rebels = {
 		cost = 50
@@ -123,8 +120,9 @@ FGE_GME_resistance = {
 	}
 }
 FGE_return_home = {
+	
 	FGE_growing_discontent = {
-		days_mission_timeout = 1
+		days_mission_timeout = 100
 		activation = {
 			original_tag = FGE
 			has_war_with = GME
@@ -146,13 +144,13 @@ FGE_return_home = {
 			}
 		}
 		timeout_effect = {
-			add_war_support = -0.2
-			add_stability = -0.2
+			add_war_support = -0.05
+			add_stability = -0.05
 			IF = {
 				limit = {
 					OR = {
-						has_stability < 0.15
-						has_war_support < 0.15
+						has_stability < 0.05
+						has_war_support < 0.05
 					}
 				}
 				every_owned_state = {
@@ -186,6 +184,9 @@ FGE_return_home = {
 				transfer_units_fraction = {
 					target = INS
 					size = 0.75
+					keep_unit_leaders_trigger = {
+						always = yes
+					}
 				}
 			}
 			custom_effect_tooltip = FGE_growing_discontent_tt
@@ -312,6 +313,7 @@ FGE_return_home = {
 				mark_focus_tree_layout_dirty = yes
 				country_event = {
 					id = gge.300
+					days = 5
 				}
 			}
 		}
@@ -787,6 +789,13 @@ FGE_enforce_republicanism = {
 				target = FROM
 				type = topple_government
 			}
+		}
+	}
+}
+FGE_debug = {
+	FGE_add_katz = {
+		complete_effect = {
+			add_ideas = katz_head_of_state
 		}
 	}
 }

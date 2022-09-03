@@ -198,6 +198,10 @@ focus_tree = {
 					hours = 6
 				}
 			}
+			custom_effect_tooltip = FGE_warning_do_not_choose_tt
+		}
+		ai_will_do = {
+			factor = -100
 		}
 	}
 	focus = {
@@ -245,6 +249,10 @@ focus_tree = {
 				elections_allowed = yes
 			}
 			FGE_decrease_inefficient_government = yes
+			custom_effect_tooltip = FGE_warning_do_not_choose_tt
+		}
+		ai_will_do = {
+			factor = -100
 		}
 	}
 	focus = {

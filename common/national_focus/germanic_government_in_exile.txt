@@ -641,7 +641,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FGE_operation_broken_star
-		icon = GFX_focus_ger_bulwark_against_bolshevism
+		icon = GFX_focus_liberate_germania
 		cost = 10
 		x = 3
 		y = 1
@@ -1046,7 +1046,7 @@ focus_tree = {
 
 	focus = {
 		id = FGE_destroy_the_southern_union
-		icon = GFX_focus_generic_anti_fascist_diplomacy
+		icon = GFX_focus_liberate_germania
 		cost = 10
 		x = 4
 		y = 0

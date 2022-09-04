@@ -1,0 +1,17 @@
+ideas = {
+	country = {
+		GME_placate_the_su = {
+			name = GME_placate_the_su
+			picture = chi_wargaming_division
+			modifier = {
+				autonomy_gain = 1
+				autonomy_gain_trade_factor = 1
+				autonomy_gain_ll_to_overlord_factor = 1
+				autonomy_manpower_share = 0.5
+				cic_to_overlord_factor = 0.3
+				mic_to_overlord_factor = 0.3
+				extra_trade_to_overlord_factor = 0.3
+			}
+		}
+	}
+}

@@ -435,4 +435,40 @@ characters = {
 			}
 		}
 	}
+
+
+	#national state
+	gryn = {
+		name = "Gryn"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/GME/gryn.dds"
+			}
+			army = {
+				large = "gfx/leaders/GME/gryn.dds"
+				small = "gfx/interface/ideas/GME/gryn.dds"
+			}
+		}
+		country_leader = {
+			ideology = nazism
+			traits = {
+				eager_collaborator
+				anti_democrat
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			traits = {
+				resistance_artist
+				anti_democrat
+			}
+		}
+		field_marshal = {
+			skill = 2
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
 }

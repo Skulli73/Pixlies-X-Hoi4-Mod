@@ -262,6 +262,72 @@ on_actions = {
 					days = 15
 				}
 			}
+
+
+			GME = {
+				every_owned_state = {
+					limit = {
+						OR = {
+							steel > 10
+							oil > 0
+							aluminium > 10
+							tungsten > 0
+							chromium > 0
+						}
+					}
+					GME = {
+						give_resource_rights = {
+							receiver = CSA
+							state = PREV
+						}
+					}
+				}
+			}
+
+
+			every_country = {
+				limit = {
+					is_in_faction_with = GME
+				}
+				add_to_array = {
+					array = global.recognizes_gme
+					value = THIS
+				}
+			}
+			every_country = {
+				limit = {
+					OR = {
+						tag = FGE
+						tag = ESP
+						tag = ZAP
+						tag = BYZ
+						tag = ARM
+					}
+				}
+				add_to_array = {
+					array = global.recognizes_fge
+					value = THIS
+				}
+			}
+			every_country = {
+				limit = {
+					NOT = {
+						is_in_array = {
+							array = global.recognizes_fge
+							value = THIS
+						}
+						is_in_array = {
+							array = global.recognizes_gme
+							value = THIS
+						}
+						original_tag = WIL
+					}
+				}
+				add_to_array = {
+					array = global.recognizes_fge_and_gme
+					value = THIS
+				}
+			}
 		} #effect bracket close
 	}
 }

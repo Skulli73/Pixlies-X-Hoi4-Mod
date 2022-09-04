@@ -26,36 +26,11 @@ set_popularities = {
 	communism = 10
 	neutrality = 25
 }
-create_country_leader = {
-	name = "Gryn"
+recruit_character = gryn
+promote_character = {
+	character = gryn
 	ideology = nazism
-	picture = "gryn.dds"
 }
-recruit_character = needless
 recruit_character = alternis
 add_ideas = alternis_head_of_state
-create_country_leader = {
-	name = "ItzSamHD"
-	ideology = liberalism
-	picture = "sam.dds"
-	traits = {
-		silent_workhorse
-		exiled_revolutionary
-		imperial_connections
-		staunch_constitutionalist
-		great_war_hero
-	}
-}
-create_country_leader = {
-	name = "Kätz"
-	ideology = centrism
-	picture = "katz.dds"
-	traits = {
-		constitutional_monarch
-		staunch_monarchist
-		exile_king
-		great_war_hero
-	}
-}
-
 inherit_technology = CSA

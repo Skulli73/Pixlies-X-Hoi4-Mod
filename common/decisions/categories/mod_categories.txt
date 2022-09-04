@@ -57,3 +57,24 @@ FGE_debug = {
 		is_debug = yes
 	}
 }
+FGE_GME_recognition = {
+	priority = 250
+	allowed = {
+		OR = {
+			original_tag = FGE
+			original_tag = GME
+		}
+	}
+	visible = {
+		AND = {
+			FGE = {
+				exists = yes
+			}
+			GME = {
+				exists = yes
+			}
+		}
+	}
+	visible_when_empty = yes
+	scripted_gui = recognize_fge_gme_gui
+}

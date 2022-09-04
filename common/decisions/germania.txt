@@ -798,4 +798,23 @@ FGE_debug = {
 			add_ideas = katz_head_of_state
 		}
 	}
+	FGE_make_recognize_us = {
+		target_trigger = {
+			always = yes
+		}
+		complete_effect = {
+			remove_from_array = {
+				array = global.recognizes_gme
+				value = FROM
+			}
+			remove_from_array = {
+				array = global.recognizes_fge_and_gme
+				value = FROM
+			}
+			add_to_array = {
+				array = global.recognizes_fge
+				value = FROM
+			}
+		}
+	}
 }

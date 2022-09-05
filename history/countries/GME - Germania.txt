@@ -9,6 +9,7 @@ set_convoys = 0
 add_ideas = {
 	volunteer_only
 	civilian_economy
+	gme_germania_recognition3
 }
 
 

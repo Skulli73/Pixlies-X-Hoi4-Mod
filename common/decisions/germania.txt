@@ -809,3 +809,143 @@ FGE_debug = {
 		}
 	}
 }
+FGE_GME_recognition = {
+	recognize_FGE = {
+		visible = {
+			NOT = {
+				is_in_array = {
+					array = global.recognizes_fge
+					value = ROOT
+				}
+			}
+		}
+		available = {
+			NOT = {
+				has_war_with = FGE
+				is_in_faction_with = GME
+				original_tag = GME
+			}
+		}
+		targets = {
+			FGE
+		}
+		complete_effect = {
+			ROOT = {
+				recognize_fge_effect = yes
+				set_variable = {
+					germania_opinion = -0.5
+				}
+			}
+			
+		}
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				add = 1000
+				is_in_array = {
+					array = global.recognizes_fge_and_gme
+					value = ROOT
+				}
+				check_variable = {
+					germania_opinion > 1
+				}
+			}
+		}
+	}
+	recognize_GME = {
+		visible = {
+			NOT = {
+				is_in_array = {
+					array = global.recognizes_gme
+					value = ROOT
+				}
+				
+			}
+		}
+		available = {
+			NOT = {
+				is_in_faction_with = FGE
+				has_war_with = GME
+				original_tag = FGE
+			}
+		}
+		targets = {
+			GME
+		}
+		complete_effect = {
+			ROOT = {
+				recognize_gme_effect = yes
+				set_variable = {
+					germania_opinion = 0.5
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				add = 1000
+				is_in_array = {
+					array = global.recognizes_fge_and_gme
+					value = ROOT
+				}
+				check_variable = {
+					germania_opinion < -1
+				}
+			}
+		}
+	}
+	become_neutral = {
+		visible = {
+			NOT = {
+				is_in_array = {
+					array = global.recognizes_fge_and_gme
+					value = ROOT
+				}
+				
+			}
+		}
+		available = {
+			NOT = {
+				is_in_faction_with = FGE
+				has_war_with = GME
+				original_tag = FGE
+				has_war_with = FGE
+				is_in_faction_with = GME
+				original_tag = GME
+			}
+		}
+		complete_effect = {
+			ROOT = {
+				recognize_fge_and_gme_effect = yes
+				set_variable = {
+					germania_opinion = 0
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				add = 1000
+				is_in_array = {
+					array = global.recognizes_fge
+					value = ROOT
+				}
+				check_variable = {
+					germania_opinion < -1
+				}
+			}
+			modifier = {
+				add = 1000
+				is_in_array = {
+					array = global.recognizes_gme
+					value = ROOT
+				}
+				check_variable = {
+					germania_opinion > 1
+				}
+			}
+		}
+	}
+
+	
+}

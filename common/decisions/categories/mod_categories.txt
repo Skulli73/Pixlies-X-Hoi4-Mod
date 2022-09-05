@@ -59,12 +59,6 @@ FGE_debug = {
 }
 FGE_GME_recognition = {
 	priority = 250
-	allowed = {
-		OR = {
-			original_tag = FGE
-			original_tag = GME
-		}
-	}
 	visible = {
 		AND = {
 			FGE = {

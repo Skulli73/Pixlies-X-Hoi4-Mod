@@ -1755,3 +1755,198 @@ country_event = {
 		}
 	}
 }
+
+news_event = {
+	id = gge.1000 #fall of paris
+	title = gge.1000.t
+	desc = gge.1000.d
+	is_triggered_only = yes
+	picture = GFX_news_event_gge_flag
+	immediate = {
+		set_global_flag = paris_fall	
+	}
+	major = yes
+	option = {
+		name = gge.1000.a
+		trigger = {
+			is_in_faction_with = FGE
+		}
+		IF = {
+			limit = {
+				original_tag = FGE
+			}
+			every_country = {
+				custom_effect_tooltip = shift_towards_gge_tt
+				set_temp_variable = {
+					random_temp = random
+				}
+				divide_variable = {
+					random_temp = 2
+				}
+				add_to_variable = {
+					germania_opinion = var:random_temp
+				}
+			}
+			add_war_support = 0.1
+		}
+	}
+	option = {
+		name = gge.1000.b
+		trigger = {
+			is_in_faction_with = GME
+		}
+	}
+	option = {
+		name = gge.1000.c
+		trigger = {
+			NOT = {
+				is_in_faction_with = FGE
+				is_in_faction_with = GME
+			}
+		}
+	}
+}
+news_event = {
+	id = gge.1003 #fall of aachen
+	title = gge.1003.t
+	desc = gge.1003.d
+	is_triggered_only = yes
+	picture = GFX_news_event_germania_liberation
+	immediate = {
+		set_global_flag = aachen_fall	
+	}
+	major = yes
+	option = {
+		name = gge.1003.a
+		trigger = {
+			is_in_faction_with = FGE
+		}
+		IF = {
+			limit = {
+				original_tag = FGE
+			}
+			every_country = {
+				custom_effect_tooltip = shift_towards_gge_tt
+				add_to_variable = {
+					germania_opinion = random
+				}
+			}
+			add_war_support = 0.25
+		}
+	}
+	option = {
+		name = gge.1003.b
+		trigger = {
+			is_in_faction_with = GME
+		}
+	}
+	option = {
+		name = gge.1003.c
+		trigger = {
+			NOT = {
+				is_in_faction_with = FGE
+				is_in_faction_with = GME
+			}
+		}
+	}
+}
+news_event = {
+	id = gge.1004 #fall of amsterdam
+	title = gge.1004.t
+	desc = gge.1004.d
+	is_triggered_only = yes
+	picture = GFX_news_event_gge_flag
+	immediate = {
+		set_global_flag = amsterdam_fall	
+	}
+	major = yes
+	option = {
+		name = gge.1004.a
+		trigger = {
+			is_in_faction_with = FGE
+		}
+		IF = {
+			limit = {
+				original_tag = FGE
+			}
+			every_country = {
+				custom_effect_tooltip = shift_towards_gge_tt
+				set_temp_variable = {
+					random_temp = random
+				}
+				divide_variable = {
+					random_temp = 2
+				}
+				add_to_variable = {
+					germania_opinion = var:random_temp
+				}
+			}
+			add_war_support = 0.125
+		}
+	}
+	option = {
+		name = gge.1004.b
+		trigger = {
+			is_in_faction_with = GME
+		}
+	}
+	option = {
+		name = gge.1004.c
+		trigger = {
+			NOT = {
+				is_in_faction_with = FGE
+				is_in_faction_with = GME
+			}
+		}
+	}
+}
+news_event = {
+	id = gge.1005 #fall of ruhrstadt
+	title = gge.1005.t
+	desc = gge.1005.d
+	is_triggered_only = yes
+	picture = GFX_news_event_gge_flag
+	immediate = {
+		set_global_flag = ruhrstadt_fall	
+	}
+	major = yes
+	option = {
+		name = gge.1004.a
+		trigger = {
+			is_in_faction_with = FGE
+		}
+		IF = {
+			limit = {
+				original_tag = FGE
+			}
+			every_country = {
+				custom_effect_tooltip = shift_towards_gge_tt
+				set_temp_variable = {
+					random_temp = random
+				}
+				divide_variable = {
+					random_temp = 2
+				}
+				add_to_variable = {
+					germania_opinion = var:random_temp
+				}
+			}
+			add_war_support = 0.125
+		}
+	}
+	option = {
+		name = gge.1004.b
+		trigger = {
+			is_in_faction_with = GME
+		}
+	}
+	option = {
+		name = gge.1004.c
+		trigger = {
+			NOT = {
+				is_in_faction_with = FGE
+				is_in_faction_with = GME
+			}
+		}
+	}
+}

@@ -21,6 +21,10 @@ country_event = { #turuls unally su - turuls
 			id = demo.03
 			days = 1
 		}
+		recognize_fge_and_gme_effect = yes
+		JPN = {
+			recognize_fge_and_gme_effect = yes
+		}  
 	}
 }
 country_event = { # turuls unally su - su
@@ -36,10 +40,6 @@ country_event = { # turuls unally su - su
 				id = demo.04
 				days = 30
 			}
-		}
-		recognize_fge_and_gme_effect = yes
-		JPN = {
-			recognize_fge_and_gme_effect = yes
 		}
 	}
 }

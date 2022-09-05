@@ -287,7 +287,11 @@ on_actions = {
 
 			every_country = {
 				limit = {
-					is_in_faction_with = GME
+					OR = {
+						is_in_faction_with = GME
+						tag = VNZ
+						tag = JPN
+					}
 				}
 				add_to_array = {
 					array = global.recognizes_gme
@@ -302,6 +306,9 @@ on_actions = {
 						tag = ZAP
 						tag = BYZ
 						tag = ARM
+						tag = PRT
+						tag = BRT
+						tag = BGA
 					}
 				}
 				add_to_array = {

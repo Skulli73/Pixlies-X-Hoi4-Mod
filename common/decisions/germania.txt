@@ -803,18 +803,7 @@ FGE_debug = {
 			always = yes
 		}
 		complete_effect = {
-			remove_from_array = {
-				array = global.recognizes_gme
-				value = FROM
-			}
-			remove_from_array = {
-				array = global.recognizes_fge_and_gme
-				value = FROM
-			}
-			add_to_array = {
-				array = global.recognizes_fge
-				value = FROM
-			}
+			recognize_fge_effect = yes
 		}
 	}
 }

@@ -1659,3 +1659,71 @@ on_daily = {
 #	# you can specify an on daily action for a specific country
 #}
 
+recognize_fge_effect = {
+	custom_effect_tooltip = recognize_fge_effect_tt
+	hidden_effect = {
+		remove_from_array = {
+			array = global.recognizes_gme
+			value = THIS
+		}
+		remove_from_array = {
+			array = global.recognizes_fge_and_gme
+			value = THIS
+		}
+		add_to_array = {
+			array = global.recognizes_fge 
+			value = THIS
+		}
+	}	
+}
+recognize_gme_effect = {
+	custom_effect_tooltip = recognize_gme_effect_tt
+	hidden_effect = {
+		remove_from_array = {
+			array = global.recognizes_fge
+			value = THIS
+		}
+		remove_from_array = {
+			array = global.recognizes_fge_and_gme
+			value = THIS
+		}
+		add_to_array = {
+			array = global.recognizes_gme
+			value = THIS
+		}
+	}	
+}
+recognize_fge_and_gme_effect = {
+	IF = {
+		limit = {
+			is_in_array = {
+				array = global.recognizes_fge
+				value = THIS
+			}
+		}
+		custom_effect_tooltip = recognize_fge_and_gme_effect_tt1
+		ELSE_IF = {
+			limit = {
+				is_in_array = {
+					array = global.recognizes_gme
+					value = THIS
+				}
+			}
+			custom_effect_tooltip = recognize_fge_and_gme_effect_tt2
+		}
+	}
+	hidden_effect = {
+		remove_from_array = {
+			array = global.recognizes_fge
+			value = THIS
+		}
+		remove_from_array = {
+			array = global.recognizes_gme
+			value = THIS
+		}
+		add_to_array = {
+			array = global.recognizes_fge_and_gme
+			value = THIS
+		}
+	}	
+}

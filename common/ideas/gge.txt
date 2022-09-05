@@ -92,5 +92,114 @@ ideas = {
 				justify_war_goal_time = -0.5
 			}
 		}
+
+
+		fge_germania_recognition1 = {
+			name = germania_recognition1
+			picture = germania_recognition1
+			available = {
+				check_variable = {
+					global.recognizes_fge_percentage > 0.64
+				}
+				GME = {
+					exists = yes
+				}
+			}
+			on_remove = {
+				add_ideas = fge_germania_recognition2
+			}
+			modifier = {
+				political_power_gain_factor = 0.3
+				conscription_factor = 0.3
+				army_core_attack_factor = 0.3
+				army_core_defence_factor = 0.3
+			}
+			targeted_modifier = {
+				tag =  GME
+				attack_bonus_against = 0.3
+				defense_bonus_against = 0.3
+			}
+		}
+		fge_germania_recognition2 = {
+			name = germania_recognition2
+			picture = germania_recognition2
+			available = {
+				check_variable = {
+					global.recognizes_fge_percentage < 0.65
+				}
+				OR = {
+					check_variable = {
+						global.recognizes_fge_percentage > 0.5
+					}
+					check_variable = {
+						global.recognizes_fge_percentage > global.recognizes_gme_percentage
+					}
+				}
+				GME = {
+					exists = yes
+				}
+			}
+			on_remove = {
+				IF = {
+					limit = {
+						check_variable = {
+							global.recognizes_fge_percentage > 0.64
+						}
+						GME = {
+							exists = yes
+						}
+					}
+					add_ideas = fge_germania_recognition1
+					ELSE_IF = {
+						limit = {
+							GME = {
+								exists = yes
+							}
+						}
+						add_ideas = fge_germania_recognition2
+					}
+				}
+			}
+			modifier = {
+				army_core_attack_factor = 0.15
+				army_core_defence_factor = 0.15
+			}
+			targeted_modifier = {
+				tag =  GME
+				attack_bonus_against = 0.15
+				defense_bonus_against = 0.15
+			}
+		}
+		fge_germania_recognition3 = {
+			name = germania_recognition3
+			picture = germania_recognition3
+			available = {
+				NOT = {
+					check_variable = {
+						global.recognizes_fge_percentage > 0.50
+					}
+					check_variable = {
+						global.recognizes_fge_percentage > global.recognizes_gme_percentage
+					}
+				}
+				GME = {
+					exists = yes
+				}
+			}
+			on_remove = {
+				add_ideas = fge_germania_recognition2
+			}
+			modifier = {
+				political_power_gain_factor = -0.3
+				conscription_factor = -0.3
+				army_core_attack_factor = -0.15
+				army_core_defence_factor = -0.15
+			}
+			targeted_modifier = {
+				tag =  GME
+				attack_bonus_against = -0.15
+				defense_bonus_against = -0.15
+			}
+		}
 	}
 }

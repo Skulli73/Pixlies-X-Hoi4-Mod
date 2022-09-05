@@ -3017,4 +3017,18 @@ spriteTypes = {
 		}
 		legacy_lazy_load = no
 	}
+
+	SpriteType = {
+		name = "GFX_idea_germania_recognition1"
+		texturefile = "gfx/interface/ideas/idea_germania_legitimacy1.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_germania_recognition2"
+		texturefile = "gfx/interface/ideas/idea_germania_legitimacy2.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_germania_recognition3"
+		texturefile = "gfx/interface/ideas/idea_germania_legitimacy3.dds"
+	}
+	
 }

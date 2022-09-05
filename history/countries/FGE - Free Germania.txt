@@ -10,6 +10,7 @@ add_ideas = {
 	partial_economic_mobilisation
 	extensive_conscription
 	inefficient_government_1
+	fge_germania_recognition3
 }
 
 

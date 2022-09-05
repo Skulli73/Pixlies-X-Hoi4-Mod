@@ -803,7 +803,9 @@ FGE_debug = {
 			always = yes
 		}
 		complete_effect = {
-			recognize_fge_effect = yes
+			FROM = {
+				recognize_fge_effect = yes
+			}
 		}
 	}
 }

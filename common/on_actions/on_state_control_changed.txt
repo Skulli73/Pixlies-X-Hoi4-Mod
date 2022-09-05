@@ -90,89 +90,138 @@ on_actions = {
 			}
 			IF = {
 				limit = {
-					FGE = {
-						has_war_with = FROM
+					NOT = {has_country_flag = no_fall_events}
+				}
+				IF = {
+					limit = {
+						FGE = {
+							has_war_with = FROM
+						}
+						ROOT = {
+							is_in_faction_with = FGE
+						}
+						FROM = {
+							original_tag = GME
+						}
+						FROM.FROM = {
+							state = 16
+						}
 					}
 					ROOT = {
-						is_in_faction_with = FGE
-					}
-					FROM = {
-						original_tag = GME
-					}
-					FROM.FROM = {
-						state = 16
+						news_event = {
+							id = gge.1000
+							hours = 6
+						}
 					}
 				}
-				ROOT = {
-					news_event = {
-						id = gge.1000
-						hours = 6
-					}
-				}
-			}
-			IF = {
-				limit = {
-					FGE = {
-						has_war_with = FROM
+				IF = {
+					limit = {
+						FGE = {
+							has_war_with = FROM
+						}
+						ROOT = {
+							is_in_faction_with = FGE
+						}
+						FROM = {
+							original_tag = GME
+						}
+						FROM.FROM = {
+							state = 51
+						}
 					}
 					ROOT = {
-						is_in_faction_with = FGE
-					}
-					FROM = {
-						original_tag = GME
-					}
-					FROM.FROM = {
-						state = 51
+						news_event = {
+							id = gge.1003
+							hours = 6
+						}
 					}
 				}
-				ROOT = {
-					news_event = {
-						id = gge.1003
-						hours = 6
-					}
-				}
-			}
-			IF = {
-				limit = {
-					FGE = {
-						has_war_with = FROM
+				IF = {
+					limit = {
+						FGE = {
+							has_war_with = FROM
+						}
+						ROOT = {
+							is_in_faction_with = FGE
+						}
+						FROM = {
+							original_tag = GME
+						}
+						FROM.FROM = {
+							state = 7
+						}
 					}
 					ROOT = {
-						is_in_faction_with = FGE
-					}
-					FROM = {
-						original_tag = GME
-					}
-					FROM.FROM = {
-						state = 7
+						news_event = {
+							id = gge.1004
+							hours = 6
+						}
 					}
 				}
-				ROOT = {
-					news_event = {
-						id = gge.1004
-						hours = 6
-					}
-				}
-			}
-			IF = {
-				limit = {
-					FGE = {
-						has_war_with = FROM
+				IF = {
+					limit = {
+						FGE = {
+							has_war_with = FROM
+						}
+						ROOT = {
+							is_in_faction_with = FGE
+						}
+						FROM = {
+							original_tag = GME
+						}
+						FROM.FROM = {
+							state = 57
+						}
 					}
 					ROOT = {
-						is_in_faction_with = FGE
-					}
-					FROM = {
-						original_tag = GME
-					}
-					FROM.FROM = {
-						state = 57
+						news_event = {
+							id = gge.1005
+							hours = 6
+						}
 					}
 				}
-				ROOT = {
-					news_event = {
-						id = gge.1005
-						hours = 6
+				IF = {
+					limit = {
+						FGE = {
+							has_war_with = FROM
+						}
+						ROOT = {
+							is_in_faction_with = FGE
+						}
+						FROM = {
+							original_tag = GME
+						}
+						FROM.FROM = {
+							state = 64
+						}
+					}
+					ROOT = {
+						news_event = {
+							id = gge.1006
+							hours = 6
+						}
+					}
+				}
+				IF = {
+					limit = {
+						FGE = {
+							has_war_with = FROM
+						}
+						ROOT = {
+							is_in_faction_with = FGE
+						}
+						FROM = {
+							original_tag = GME
+						}
+						FROM.FROM = {
+							state = 99
+						}
+					}
+					ROOT = {
+						news_event = {
+							id = gge.1007
+							hours = 6
+						}
 					}
 				}
 			}

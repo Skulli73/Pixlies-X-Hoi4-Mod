@@ -146,6 +146,18 @@ FGE_return_home = {
 		timeout_effect = {
 			add_war_support = -0.05
 			add_stability = -0.05
+			every_country = {
+				custom_effect_tooltip = shift_towards_ns_tt
+				set_temp_variable = {
+					random_temp = random
+				}
+				divide_variable = {
+					random_temp = 2
+				}
+				add_to_variable = {
+					germania_opinion = var:random_temp
+				}
+			}
 			IF = {
 				limit = {
 					OR = {
@@ -824,6 +836,7 @@ FGE_GME_recognition = {
 				has_war_with = FGE
 				is_in_faction_with = GME
 				original_tag = GME
+				is_subject = yes
 			}
 		}
 		targets = {
@@ -836,7 +849,12 @@ FGE_GME_recognition = {
 					germania_opinion = -0.5
 				}
 			}
-			
+			every_country = {
+				limit = {
+					is_subject_of = ROOT
+				}
+				recognize_fge_effect = yes
+			}		
 		}
 		ai_will_do = {
 			factor = 0
@@ -868,6 +886,7 @@ FGE_GME_recognition = {
 				has_war_with = GME
 				original_tag = FGE
 			}
+			is_subject = no
 		}
 		targets = {
 			GME
@@ -879,6 +898,12 @@ FGE_GME_recognition = {
 					germania_opinion = 0.5
 				}
 			}
+			every_country = {
+				limit = {
+					is_subject_of = ROOT
+				}
+				recognize_gme_effect = yes
+			}	
 		}
 		ai_will_do = {
 			factor = 0
@@ -901,6 +926,7 @@ FGE_GME_recognition = {
 					array = global.recognizes_fge_and_gme
 					value = ROOT
 				}
+				is_subject = yes
 				
 			}
 		}
@@ -921,6 +947,12 @@ FGE_GME_recognition = {
 					germania_opinion = 0
 				}
 			}
+			every_country = {
+				limit = {
+					is_subject_of = ROOT
+				}
+				recognize_fge_and_gme_effect = yes
+			}	
 		}
 		ai_will_do = {
 			factor = 0
@@ -947,5 +979,47 @@ FGE_GME_recognition = {
 		}
 	}
 
-	
+	switch_sides = {
+		visible = {
+			has_war_with = FGE
+			is_in_faction_with = GME
+			NOT = {
+				original_tag = CSA
+				original_tag = GME
+				capital_scope = {
+					is_on_continent = europe
+				}
+			}
+		}
+		complete_effect = {
+			leave_faction = yes
+			white_peace = FGE
+			IF = {
+				limit = {
+					is_subject = yes
+				}
+				OVERLORD = {
+					end_puppet = ROOT
+				}
+			}
+			FGE = {
+				puppet = ROOT
+			}
+			add_to_war = {
+				targeted_alliance = FGE
+				enemy = GME
+			}
+			recognize_fge_effect = yes
+		}
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				add = 1000
+				check_variable = {
+					germania_opinion > 2
+				}
+				is_major = no
+			}
+		}
+	}
 }

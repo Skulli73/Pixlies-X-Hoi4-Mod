@@ -304,6 +304,7 @@ country_event = {
 				hours = 12
 			}
 		}
+		recognize_fge_effect = yes
 		ai_chance = {
 			factor = 100
 		}
@@ -1911,7 +1912,7 @@ news_event = {
 	}
 	major = yes
 	option = {
-		name = gge.1004.a
+		name = gge.1005.a
 		trigger = {
 			is_in_faction_with = FGE
 		}
@@ -1935,13 +1936,113 @@ news_event = {
 		}
 	}
 	option = {
-		name = gge.1004.b
+		name = gge.1005.b
 		trigger = {
 			is_in_faction_with = GME
 		}
 	}
 	option = {
-		name = gge.1004.c
+		name = gge.1005.c
+		trigger = {
+			NOT = {
+				is_in_faction_with = FGE
+				is_in_faction_with = GME
+			}
+		}
+	}
+}
+news_event = {
+	id = gge.1006 #fall of berlin
+	title = gge.1006.t
+	desc = gge.1006.d
+	is_triggered_only = yes
+	picture = GFX_news_event_gge_flag
+	immediate = {
+		set_global_flag = berlin_fall	
+	}
+	major = yes
+	option = {
+		name = gge.1006.a
+		trigger = {
+			is_in_faction_with = FGE
+		}
+		IF = {
+			limit = {
+				original_tag = FGE
+			}
+			every_country = {
+				custom_effect_tooltip = shift_towards_gge_tt
+				set_temp_variable = {
+					random_temp = random
+				}
+				divide_variable = {
+					random_temp = 2
+				}
+				add_to_variable = {
+					germania_opinion = var:random_temp
+				}
+			}
+			add_war_support = 0.125
+		}
+	}
+	option = {
+		name = gge.1006.b
+		trigger = {
+			is_in_faction_with = GME
+		}
+	}
+	option = {
+		name = gge.1006.c
+		trigger = {
+			NOT = {
+				is_in_faction_with = FGE
+				is_in_faction_with = GME
+			}
+		}
+	}
+}
+news_event = {
+	id = gge.1007 #fall of aarhus
+	title = gge.1007.t
+	desc = gge.1007.d
+	is_triggered_only = yes
+	picture = GFX_news_event_gge_flag
+	immediate = {
+		set_global_flag = aarhus_fall	
+	}
+	major = yes
+	option = {
+		name = gge.1007.a
+		trigger = {
+			is_in_faction_with = FGE
+		}
+		IF = {
+			limit = {
+				original_tag = FGE
+			}
+			every_country = {
+				custom_effect_tooltip = shift_towards_gge_tt
+				set_temp_variable = {
+					random_temp = random
+				}
+				divide_variable = {
+					random_temp = 2
+				}
+				add_to_variable = {
+					germania_opinion = var:random_temp
+				}
+			}
+			add_war_support = 0.125
+		}
+	}
+	option = {
+		name = gge.1007.b
+		trigger = {
+			is_in_faction_with = GME
+		}
+	}
+	option = {
+		name = gge.1007.c
 		trigger = {
 			NOT = {
 				is_in_faction_with = FGE

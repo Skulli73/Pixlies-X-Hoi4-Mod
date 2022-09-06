@@ -344,6 +344,7 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = gge.18.a
+		recognize_fge_effect = yes
 		every_state = {
 			limit = {
 				is_owned_and_controlled_by = FGE
@@ -421,6 +422,7 @@ country_event = {
 		ai_chance = {
 			factor = 100
 		}
+		recognize_fge_effect = yes
 		leave_faction = yes
 		set_politics = {
 			ruling_party = neutrality
@@ -448,6 +450,7 @@ country_event = {
 		ai_chance = {
 			factor = 100
 		}
+		recognize_fge_and_gme_effect = yes
 		leave_faction = yes
 		set_politics = {
 			ruling_party = neutrality

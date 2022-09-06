@@ -979,7 +979,7 @@ FGE_GME_recognition = {
 		}
 	}
 
-	switch_sides = {
+	switch_sides_to_fge = {
 		visible = {
 			has_war_with = FGE
 			is_in_faction_with = GME
@@ -1020,6 +1020,138 @@ FGE_GME_recognition = {
 				}
 				is_major = no
 			}
+		}
+	}
+	switch_sides_to_gme = {
+		visible = {
+			has_war_with = GME
+			is_in_faction_with = FGE
+			NOT = {
+				original_tag = FGE
+				original_tag = GME
+			}
+		}
+		complete_effect = {
+			every_owned_state = {
+				limit = {
+					OR = {
+						is_claimed_by = GME
+						is_core_of = GME
+					}
+				}
+				set_state_owner_to = GME
+			}
+			every_country = {
+				limit = {
+					is_in_faction_with = GME
+				}
+				every_state = {
+					limit = {
+						is_owned_by = ROOT
+						OR = {
+							is_core_of = PREV
+							is_claimed_by = PREV
+						}
+					}
+					set_state_owner_to = PREV
+				}
+			}
+			leave_faction = yes
+			every_country = {
+				limit = {
+					OR = {
+						is_in_faction_with = GME
+						original_tag = GME
+					}
+				}
+				white_peace = ROOT
+			}
+			IF = {
+				limit = {
+					is_subject = yes
+				}
+				OVERLORD = {
+					end_puppet = ROOT
+				}
+			}
+			IF = {
+				limit = {
+					GME = {
+						is_subject = yes
+					}
+				}
+				GME = {
+					OVERLORD = {
+						puppet = ROOT
+					}
+				}
+				ELSE = {
+					GME = {
+						puppet = ROOT
+					}
+				}
+			}
+			add_to_war = {
+				targeted_alliance = GME
+				enemy = FGE
+			}
+			set_variable = {
+				germania_opinion = 0
+			}
+			recognize_gme_effect = yes
+		}
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				add = 1000
+				surrender_progress > 0.6
+				is_major = no
+			}
+		}
+	}
+
+
+	GME_claim_prussia = {
+		targets = {
+			ZAP
+		}
+		allowed = {
+			original_tag = GME
+		}
+		available = {
+			FROM = {
+				is_in_faction_with = FGE
+			}
+		}
+		fire_only_once = yes
+		cost = 25
+		complete_effect = {
+			every_state = {
+				limit = {
+					is_owned_by = FROM
+					OR = {
+						state = 66
+						state = 67
+						state = 762
+						state = 68
+						state = 86
+						state = 63
+						state = 807
+						state = 85
+						state = 5
+						state = 763
+						state = 188
+						state = 74
+						state = 75
+						state = 9
+						state = 69
+					}
+				}
+				add_claim_by = ROOT
+			}
+		}
+		ai_will_do = {
+			factor = 1000
 		}
 	}
 }

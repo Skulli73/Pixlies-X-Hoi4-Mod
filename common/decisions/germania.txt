@@ -260,6 +260,39 @@ FGE_return_home = {
 				}
 				set_cosmetic_tag = GME
 			}
+			hidden_effect = {
+				every_core_state = {
+					remove_core_of = GME
+				}
+				IF = {
+					limit = {
+						has_war_with = GME
+					}
+					GME = {
+						every_state = {
+							limit = {
+								AND = {
+									NOT = {is_controlled_by = FGE}
+									is_owned_by = GME
+								}
+							}
+							set_state_owner_to = FGE
+							set_state_controller_to = CSA
+						}
+						every_state = {
+							limit = {
+								OR = {
+									is_controlled_by = GME
+									AND = {
+										NOT = {is_controlled_by = FGE}
+										is_owned_by = GME
+									}
+								}
+							}
+						}
+					}
+				}
+			}
 			add_political_power = 300
 			set_global_flag = FGE_returned_home
 			IF = {
@@ -1153,5 +1186,62 @@ FGE_GME_recognition = {
 		ai_will_do = {
 			factor = 1000
 		}
+	}
+
+
+	CSA_occupy_gme = {
+		visible = {
+			GME = {
+				has_war_with = FGE
+				surrender_progress > 0.4
+				exists = yes
+				is_subject_of = CSA
+			}
+		}
+		available = {
+			GME = {
+				has_war_with = FGE
+				surrender_progress > 0.65
+			}
+		}
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				add = 100
+				surrender_progress > 0.74
+			}
+		}
+		complete_effect = {
+			every_state = {
+				limit = {
+					is_controlled_by = GME
+				}
+				set_state_province_controller = {
+					controller = CSA
+					limit = {
+						original_tag = GME
+					}
+				}
+			}
+			every_state = {
+				limit = {
+					is_controlled_by = GME
+				}
+				transfer_state_to = FGE
+				set_state_province_controller = {
+					controller = CSA
+				}
+			}
+			GME = {
+				transfer_units_fraction = {
+					target = CSA
+					size = 1
+					keep_unit_leaders_trigger = {
+						always = yes
+					}
+				}
+			}
+		}
+		fire_only_once = yes
 	}
 }

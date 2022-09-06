@@ -5,6 +5,9 @@ state={
 	history={
 		owner = PRT
 		add_core_of = PRT
+		victory_points = {
+			6933 5
+		}
 		buildings = {
 			#infrastructure = 3 #was: 5
 			#industrial_complex = 3

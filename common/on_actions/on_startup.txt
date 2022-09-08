@@ -262,6 +262,154 @@ on_actions = {
 					days = 15
 				}
 			}
+
+
+			GME = {
+				every_owned_state = {
+					limit = {
+						OR = {
+							steel > 10
+							oil > 0
+							aluminium > 10
+							tungsten > 0
+							chromium > 0
+						}
+					}
+					GME = {
+						give_resource_rights = {
+							receiver = CSA
+							state = PREV
+						}
+					}
+				}
+			}
+
+
+			every_country = {
+				limit = {
+					OR = {
+						is_in_faction_with = GME
+						tag = VNZ
+						tag = JPN
+					}
+				}
+				add_to_array = {
+					array = global.recognizes_gme
+					value = THIS
+				}
+			}
+			every_country = {
+				limit = {
+					OR = {
+						tag = FGE
+						tag = ESP
+						tag = ZAP
+						tag = BYZ
+						tag = ARM
+						tag = PRT
+						tag = BGA
+					}
+				}
+				add_to_array = {
+					array = global.recognizes_fge
+					value = THIS
+				}
+			}
+			every_country = {
+				limit = {
+					NOT = {
+						is_in_array = {
+							array = global.recognizes_fge
+							value = THIS
+						}
+						is_in_array = {
+							array = global.recognizes_gme
+							value = THIS
+						}
+						original_tag = WIL
+					}
+				}
+				add_to_array = {
+					array = global.recognizes_fge_and_gme
+					value = THIS
+				}
+			}
+
+
+
+			every_state = {
+                limit = {
+                    NOT = {
+                        is_owned_by = WIL
+                    }
+                }
+                add_to_temp_variable = {
+                    global.total_states = 1
+                }
+            }
+            every_state = { 
+                limit = {
+                    is_in_array = {
+                        array = global.recognizes_fge
+                        value = OWNER
+                    }
+                }
+                add_to_temp_variable = {
+                    global.fge_states = 1
+                }
+            }
+            set_variable = {
+                global.recognizes_fge_percentage = global.fge_states
+            }
+            divide_variable = {
+                global.recognizes_fge_percentage = global.total_states
+            }
+            every_state = { 
+                limit = {
+                    is_in_array = {
+                        array = global.recognizes_gme
+                        value = OWNER
+                    }
+                }
+                add_to_temp_variable = {
+                    global.gme_states = 1
+                }
+            }
+            set_variable = {
+                global.recognizes_gme_percentage = global.gme_states
+            }
+            divide_variable = {
+                global.recognizes_gme_percentage = global.total_states
+            }
+
+            set_variable = {
+                global.recognizes_gme_amount = 0
+            }
+            every_country = {
+                limit = {
+                    is_in_array = {
+                        array = global.recognizes_gme
+                        value = THIS
+                    }
+                }
+                add_to_variable = {
+                    global.recognizes_gme_amount = 1
+                }
+            }
+            set_variable = {
+                global.recognizes_fge_amount = 0
+            }
+            every_country = {
+                limit = {
+                    is_in_array = {
+                        array = global.recognizes_fge
+                        value = THIS
+                    }
+                }
+                add_to_variable = {
+                    global.recognizes_fge_amount = 1
+                }
+            }
 		} #effect bracket close
 	}
 }

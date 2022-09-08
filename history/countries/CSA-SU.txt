@@ -40,12 +40,12 @@ create_country_leader = {
 puppet = GME
 set_autonomy = {
 	target = GME
-	autonomy_state = autonomy_satellite
+	autonomy_state = autonomy_reichsprotectorate
 }
 puppet = ILY
 set_autonomy = {
 	target = ILY
-	autonomy_state = autonomy_satellite
+	autonomy_state = autonomy_reichsprotectorate
 }
 puppet = IND
 set_autonomy = {

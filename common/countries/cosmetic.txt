@@ -808,6 +808,10 @@ FGE_monarchist_civil_war = {
 	color = rgb { 100 100 100 }
 	color_ui = rgb { 100 100 100 }
 }
+FGE_FRANKISH_EMPIRE = {
+	color = rgb { 100 100 100 }
+	color_ui = rgb { 100 100 100 }
+}
 FGE_nsu_civil_war = {
 	color = rgb { 40 40 40 }
 	color_ui = rgb { 40 40 40 }

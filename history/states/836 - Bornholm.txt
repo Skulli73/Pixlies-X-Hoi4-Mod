@@ -1,0 +1,31 @@
+
+state = {
+	id = 836
+	name = "Bornholm"
+	manpower = 0# = 183748
+	
+	state_category = rural
+
+	history = {
+		owner = GME
+		add_core_of = GME
+		buildings = {
+		
+			#infrastructure = 2
+						}
+			6361 = {
+				naval_base = 1
+		}
+		# = ZAP
+		50.1.1 = {
+			buildings = {
+			}
+		}
+	}
+
+	provinces = {
+		6361
+	}
+
+	local_supplies = 6.0 
+}

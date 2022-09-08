@@ -63,7 +63,8 @@ demo = {
 			factor = 1000000
 		}
 		fire_only_once = yes
-		complete_effect = { 
+		days_remove = 5
+		remove_effect = { 
 			# CSA = {
 			# 	random_character = {
 			# 		limit = { is_character = geo }
@@ -75,14 +76,39 @@ demo = {
 			# 	}
 			# }
 			FGE = {
-				recruit_character = geo_temp_1
-				geo_temp_1 = {
-					operative_leader_event = {
-						id = gge.100
-						hours = 2
-					}
+				country_event = {
+					id = gge.100
+					hours = 2
 				}
 			}
 		}
 	}
+	INS_surrender = {
+		allowed = {
+			original_tag = INS
+		}
+		visible = {
+			has_war_with = FGE
+		}
+		ai_will_do = {
+			factor = 1000
+			modifier = {
+				factor = 0
+				GME = {
+					exists = yes
+				}
+			}
+		}
+		complete_effect = {
+			every_core_state = {
+				remove_core_of = ROOT
+			}
+			FGE = {
+				annex_country = {
+					target = ROOT
+					transfer_troops = yes
+				}
+			}
+		}
+	} 
 }

@@ -28,8 +28,16 @@ country_event = {
 			add_manpower = neg_population
 			transfer_state_to = WIL
 		}
+		recognize_fge_effect = yes
+		add_popularity = {
+			ideology = democratic
+			elections_allowed = yes
+		}
 		start_civil_war = {
+			ruling_party = democratic
 			ideology = fascism
+			size = 0.5
+			recognize_gme_effect = yes
 		}
 		FGE = {
 			country_event = {
@@ -59,9 +67,12 @@ country_event = {
 				transfer_state = PREV
 			}
 		}
+		recgonize_gme_effect = yes 
 		start_civil_war = {
-			ideology = neutrality
+			ideology = democratic
 			ruling_party = fascism
+			size = 0.5
+			recognize_fge_effect = yes
 		}
 		FGE = {
 			country_event = {

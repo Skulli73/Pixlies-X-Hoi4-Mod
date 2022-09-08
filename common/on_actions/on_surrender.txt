@@ -43,6 +43,22 @@ on_actions = {
 						}
 					}
 					set_global_flag = fge_trl_win
+					ELSE_IF = {
+						limit = {
+							NOT = {
+								has_cosmetic_tag = FGE_REPUBLIC
+								has_government = neutrality
+							}
+						}
+						set_global_flag = skulli_suicide
+						FGE = {
+							country_event = {
+								id = gge.42
+								days = 15
+							}
+						}
+						mark_focus_tree_layout_dirty = yes
+					}
 				}
 			}
 			IF = {

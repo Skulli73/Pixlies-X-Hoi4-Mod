@@ -55,6 +55,115 @@ FGE_war_TRL = {
 	ai_strategy = {
 		type = declare_war
 		id = "TRL"			
+		value = 10000
+	}
+	ai_strategy = {
+		type = prepare_for_war
+		id = "TRL"			
+		value = 10000
+	}
+	ai_strategy = {
+		type = antagonize
+		id = "TRL"			
+		value = 10000
+	}
+}
+TRL_war_ILY = {
+	allowed = {
+		tag = TRL
+	}
+	enable = {
+		has_wargoal_against = ILY
+	}
+	ai_strategy = {
+		type = declare_war
+		id = "ILY"			
+		value = 1000
+	}
+	ai_strategy = {
+		type = prepare_for_war
+		id = "ILY"			
+		value = 1000
+	}
+	ai_strategy = {
+		type = antagonize
+		id = "ILY"			
+		value = 1000
+	}
+}
+FGE_focus_europe = {
+	allowed = {
+		tag = FGE
+	}
+	enable = {
+		GME = {
+			exists = yes
+		}
+		any_owned_state = {
+			is_on_continent = europe
+		}
+	}
+	abort = {
+		GME = {
+			exists = no
+		}
+	}
+	ai_strategy = {
+		type = area_priority
+		id = europe
+		value = 100
+	}
+	ai_strategy = {
+		type = prepare_for_war
+		id = GME
+		value = 100
+	}
+}
+FGE_invade_GME = {
+	allowed = {
+		tag = FGE
+	}
+	enable = {
+		has_war_with = GME
+		has_war_support < 0.25
+	}
+	abort = {
+		NOT = {
+			has_war_with = GME
+		}
+	}
+	ai_strategy = {
+		type = invade
+		id = GME
+		value = 100
+	}
+	ai_strategy = {
+		type = front_control
+		tag = GME
+		ordertype = front
+		execution_type = rush_weak
+		execute_order = yes
+		manual_attack = yes
+	}
+}
+FGE_invade_CSA = {
+	allowed = {
+		tag = FGE
+	}
+	enable = {
+		NOT = {
+			has_war_with = FGE
+		}
+		has_war_with = CSA
+	}
+	abort = {
+		NOT = {
+			has_war_with = CSA
+		}
+	}
+	ai_strategy = {
+		type = invade
+		id = CSA
 		value = 1000
 	}
 }

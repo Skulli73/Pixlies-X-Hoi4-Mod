@@ -3041,4 +3041,13 @@ spriteTypes = {
 		name = "GFX_news_events_geo_speech_germania"
 		texturefile = "gfx/event_pictures/news_events_geo_speech_germania.dds"
 	}
+	spriteType = {
+		name = "GFX_news_events_sam_speech_germania"
+		texturefile = "gfx/event_pictures/news_events_sam_speech_germania.dds"
+		
+	}
+	spriteType = {
+		name = "GFX_news_event_gge_flag"
+		texturefile = "gfx/event_pictures/news_event_gge_flag.dds"
+	}
 }

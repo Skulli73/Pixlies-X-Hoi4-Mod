@@ -1,0 +1,40 @@
+focus_tree = {
+	id = national_state_focus
+	country = {
+		factor = 0
+		modifier = {
+			add = 20
+			original_tag = GME
+		}
+	}
+	focus = {
+		id = GME_placate_the_su
+		icon = GFX_focus_CZE_german_puppet
+		cost = 10
+		x = 5
+		y = 0
+		mutually_exclusive = {
+			focus = GME_resist_the_su
+		}
+		completion_reward = {
+			add_ideas = GME_placate_the_su
+		}
+	}
+
+	focus = {
+		id = GME_resist_the_su
+		icon = GFX_focus_liberate_germania
+		cost = 10
+		x = 15
+		y = 0
+		mutually_exclusive = {
+			focus = GME_placate_the_su
+		}
+		completion_reward = {
+			promote_character = {
+				character = gryn
+				ideology = despotism
+			}
+		}
+	}
+}

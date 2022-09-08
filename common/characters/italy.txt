@@ -1,5 +1,5 @@
 characters = {
-	nikiblago08 = {
+     nikiblago08 = {
 		name = "nikiblago08"
 		portraits = {
 			civillian = {
@@ -9,16 +9,36 @@ characters = {
         country_leader={
             ideology=neutrality
             traits = { dictator }
-            expire=
-            characters = {
-	nikiblago08 = {
-		name = "nikiblago08"
+		}	
+	}
+    zacx1492 = {
+		name = "Zacx1492"
 		portraits = {
-			civillian = {
-				large = "gfx/leaders/ILY/niki.dds"
+			army = {
+				small = "gfx/interface/ideas/ILY/zacx1492.dds"
 			}
 		}
-        country_leader={
-            ideology=fascism
-            traits = { dictator }
-            expire=
+		advisor={
+			slot = theorist
+			idea_token = zacx1492
+			ledger = army
+            traits = { military_theorist }
+			cost = 100
+		}
+	}
+	cangus3to = {
+		name = "cangus3to"
+		portraits = {
+			army = {
+				small = "gfx/interface/ideas/ILY/cangus3to.dds"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = cangus3to
+			ledger = army
+            traits = { military_theorist }
+			cost = 100
+		}
+	}
+}

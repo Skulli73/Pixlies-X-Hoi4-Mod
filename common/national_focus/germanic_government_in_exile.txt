@@ -1888,12 +1888,16 @@ focus_tree = {
 					}
 				}
 				set_cosmetic_tag = FGE_FRANKISH_EMPIRE
-				every_owned_state = {
+				every_state = {
 					limit = {
 						OR = {
 							region = 19
 							region = 20
 							region = 208
+						}
+						OR = {
+							is_controlled_by = ROOT
+							is_owned_by = ROOT
 						}
 					}
 					add_core_of = ROOT

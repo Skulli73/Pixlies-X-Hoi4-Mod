@@ -970,6 +970,12 @@ country_event = {
 		}
 		complete_national_focus = FGE_federal_election
 	}
+	option = {
+		name = "DEBUG"
+		trigger = {
+			is_debug = yes
+		}
+	}
 }
 news_event = {
 	id = gge.43

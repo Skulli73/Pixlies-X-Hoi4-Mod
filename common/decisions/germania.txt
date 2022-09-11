@@ -1244,4 +1244,22 @@ FGE_GME_recognition = {
 		}
 		fire_only_once = yes
 	}
+
+	FGE_intervene_in_uk = {
+		ai_will_do = {
+			factor = 1000
+		}
+		fire_only_once = yes
+		allowed = {
+			tag = FGE
+		}
+		visible = {
+			BRT = {
+				has_civil_war = yes
+			}
+		}
+		complete_effect = {
+			add_ideas = FGE_intervene_in_uk
+		}
+	}
 }

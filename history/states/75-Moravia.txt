@@ -10,7 +10,7 @@ state={
 	state_category = city
 
 	history={
-		owner = ZAP
+		owner = SVK
 		add_core_of = ZAP
 		buildings = {
 			#infrastructure = 4

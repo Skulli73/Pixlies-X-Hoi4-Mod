@@ -18,7 +18,7 @@ state=
 			#industrial_complex = 2
 			#anti_air_building = 1
 		# = CZE
-
+		}
 		1938.9.30 = {
 			owner = WIL# = GER
 			controller = WIL# = GER
@@ -29,4 +29,5 @@ state=
 424 469 543 557 3418 3585 5283 6470 7857 9555 11401 11414 11432 11525 	}
 
 	local_supplies=0.0 
+
 }

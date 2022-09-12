@@ -417,3 +417,21 @@ INS_DEF:0 "Sulawesi"
 INS_ADJ:0 "Sulawesian"
 INS_subject:0 "$OVERLORDADJ$ Sulawesi"
 INS_subject_DEF:0 "$OVERLORDADJ$ Sulawesi"
+
+
+#normal ecuador
+ECD:0 "Ecuador"
+ECD_DEF:0 "Ecuador"
+ECD_ADJ:0 "Ecuadorian"
+
+
+#normal slovakia
+SVK:0 "Slovakia"
+SVK_DEF:0 "Slovakia"
+SVK_ADJ:0 "Slovakian"
+
+
+#normal yugoslavia
+YGO:0 "Yugoslavia"
+YGO_DEF:0 "Yugoslavia"
+YGO_ADJ:0 "Yugoslav"

@@ -1,27 +1,27 @@
-﻿oob = "GENERIC"
-capital = 101
+oob = "GENERIC"
+capital = 107
 set_research_slots = 2
-set_stability = 0.6
-set_war_support = 0.15
+set_stability = 0.24
+set_war_support = 0.7
 set_convoys = 0
 
 
 add_ideas = {
-	disarmed_nation
 	civilian_economy
+	volunteer_only
 }
 
 
 
 #Politics for 50.1.1
 set_politics = {
-	ruling_party = fascism
+	ruling_party = neutrality
 	last_election = "49.10.25"
 	election_frequency = 60
-	elections_allowed = no
+	elections_allowed = yes
 }
 set_popularities = {
-	fascism = 50
-	neutrality = 50
+	neutrality = 100
 }
+
 inherit_technology = CSA

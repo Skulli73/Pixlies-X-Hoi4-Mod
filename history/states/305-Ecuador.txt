@@ -12,6 +12,7 @@ state={
 	history={
 		owner = FGE
 		add_core_of = FGE
+		add_core_of = ECD
 		buildings = {
 			#infrastructure = 2
 			arms_factory =3
@@ -22,14 +23,12 @@ state={
 			}
 		}
 		# = ECU
-		victory_points = {
-			12798 5
-		}
+		
 
 	}
 
 	provinces={
-		5051 5120 8047 8075 8252 10888 11020 12798 
+		  8047  8252    
 	}
 
 	local_supplies=0.0 

@@ -100,3 +100,11 @@ FRA = {
 	color = rgb {13 27 99}
 	color_ui = rgb {13 27 99}
 }
+ECD = {
+	color = rgb {225 136 75}
+	color_ui = rgb {225 136 75}
+}
+SVK = {
+	color = rgb {83 89 124}
+	color_ui = rgb {83 89 124}
+}

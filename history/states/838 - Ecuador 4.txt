@@ -1,15 +1,15 @@
 
 state={
-	id=490
-	name="STATE_490"
+	id=838
+	name="Southern Coastal Ecuador"
 	manpower = 0# = 70020
 	
 	state_category = pastoral
 
 	history={
-		owner = ECD
-		add_core_of = ECD
+		owner = FGE
 		add_core_of = FGE
+		add_core_of = ECD
 		buildings = {
 			#infrastructure = 2
 			#industrial_complex = 1
@@ -19,7 +19,7 @@ state={
 	}
 
 	provinces={
-		 10942 
+		5051 11020 5120
 	}
 
 	local_supplies=6.0 

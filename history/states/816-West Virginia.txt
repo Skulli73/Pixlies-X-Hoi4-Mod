@@ -12,10 +12,10 @@ state={
 			#infrastructure = 3
 			#air_base = 3
 			11888 = {
-				fort = 3
+				bunker = 3
 			}
 			6958 = {
-				fort = 3
+				bunker = 3
 			}
 		}
 	}

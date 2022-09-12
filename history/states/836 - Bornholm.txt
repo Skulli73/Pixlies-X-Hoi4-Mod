@@ -12,13 +12,9 @@ state = {
 		buildings = {
 		
 			#infrastructure = 2
-						}
+						
 			6361 = {
 				naval_base = 1
-		}
-		# = ZAP
-		50.1.1 = {
-			buildings = {
 			}
 		}
 	}

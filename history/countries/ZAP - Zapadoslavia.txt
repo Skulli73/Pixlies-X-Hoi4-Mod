@@ -12,7 +12,10 @@ add_ideas = {
 }
 
 
-
+declare_war_on = {
+	target = SVK
+	type = annex_everything
+}
 #Politics for 50.1.1
 set_politics = {
 	ruling_party = democratic

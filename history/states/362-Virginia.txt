@@ -18,10 +18,10 @@ state={
 
 			}
 			873 = {
-				fort = 3
+				bunker = 3
 			}
 			951 = {
-				fort = 3
+				bunker = 3
 			}
 		}
 		1939.1.1 = {

@@ -14,9 +14,6 @@ state={
 		owner = WIL# = ARG
 		buildings = {
 			#infrastructure = 2
-			10953 = {
-				naval_base = 1
-			}
 		}
 		# = ARG
 	}

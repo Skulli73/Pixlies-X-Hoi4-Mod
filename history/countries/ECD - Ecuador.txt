@@ -1,14 +1,14 @@
 ﻿oob = "GENERIC"
-capital = 101
-set_research_slots = 2
-set_stability = 0.6
-set_war_support = 0.15
+capital = 305
+set_research_slots = 4
+set_stability = 0.3
+set_war_support = 0.6
 set_convoys = 0
 
 
 add_ideas = {
-	disarmed_nation
-	civilian_economy
+	tot_economic_mobilisation
+	all_adults_serve
 }
 
 
@@ -21,7 +21,8 @@ set_politics = {
 	elections_allowed = no
 }
 set_popularities = {
-	fascism = 50
-	neutrality = 50
+	fascism = 40
+	democratic = 30
+	neutrality = 30
 }
 inherit_technology = CSA

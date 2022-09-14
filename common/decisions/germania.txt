@@ -152,7 +152,7 @@ FGE_return_home = {
 					random_temp = random
 				}
 				divide_variable = {
-					random_temp = 2
+					random_temp = -2
 				}
 				add_to_variable = {
 					germania_opinion = var:random_temp
@@ -220,6 +220,7 @@ FGE_return_home = {
 				target = GME
 				type = annex_everything
 			}
+			add_threat = 70
 		}
 		ai_will_do = {
 			factor = 100000
@@ -388,6 +389,34 @@ FGE_destroy_CSA = {
 		}
 		ai_will_do = {
 			factor = 1000000
+		}
+	}
+	FGE_claim_central_america = {
+		fire_only_once = yes
+		cost = 800
+		ai_will_do = {
+			factor = 1000000
+		}
+		days_remove = 365
+		remove_effect = {
+			every_state = {
+				limit = {
+					is_owned_and_controlled_by = WIL
+					OR = {
+						region = 34
+						region = 205
+						region = 123
+						region = 204
+					}
+				}
+				transfer_state_to = ROOT
+				add_core_of = HON
+			}
+			release_puppet = HON
+			set_autonomy = {
+				target = HON
+				autonomy_state = autonomy_colony
+			}
 		}
 	}
 	FGE_go_through_VNZ = {
@@ -588,6 +617,7 @@ FGE_destroy_CSA = {
 					is_controlled_by = ROOT
 				}
 			}
+			has_character = geo
 		}
 		allowed = {
 			tag = FGE
@@ -1197,6 +1227,7 @@ FGE_GME_recognition = {
 				exists = yes
 				is_subject_of = CSA
 			}
+			original_tag = CSA
 		}
 		available = {
 			GME = {
@@ -1260,6 +1291,139 @@ FGE_GME_recognition = {
 		}
 		complete_effect = {
 			add_ideas = FGE_intervene_in_uk
+		}
+	}
+}
+FGE_ecuador_conflict = {
+	FGE_take_state = {
+		allowed = {
+			original_tag = FGE
+		}
+		available = {
+			NOT = {
+				has_country_flag = FGE_ECD_border_war_prep
+			}
+		}
+		cost = 50
+		state_target = yes
+		target_trigger = {
+			FROM = {
+				is_owned_and_controlled_by = ECD
+				any_neighbor_state = {
+					is_owned_and_controlled_by = ROOT
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 100
+			modifier = {
+				factor = 100
+				has_country_flag = FGE_returned_home
+			}
+		}
+		days_remove = 50
+		complete_effect = {
+			ROOT = {
+				set_country_flag = {
+					flag = FGE_ECD_border_war_prep
+					value = 1
+					days = 50
+				}
+			}
+		}
+		remove_effect = {
+			FROM = {
+				random_neighbor_state = {
+					limit = {
+						is_owned_and_controlled_by = ROOT
+					}
+					start_border_war = {
+						change_state_after_war = no
+						attacker = {
+							state = THIS
+							num_provinces = 4
+							on_win = wtt_border_conflict_won_attacker.1
+							on_lose = wtt_border_conflict_lost_attacker.1
+							on_cancel = wtt_border_conflict_canceled_attacker.1
+						}
+						defender = {
+							state = FROM
+							num_provinces = 4
+							on_win = wtt_border_conflict_won_defender.1
+							on_lose = wtt_border_conflict_lost_defender.1
+							on_cancel = wtt_border_conflict_canceled_defender.1
+						}
+					}
+				}
+			}
+		}
+	}
+	ECD_take_state = {
+		allowed = {
+			original_tag = ECD
+		}
+		available = {
+			NOT = {
+				has_country_flag = FGE_ECD_border_war_prep
+			}
+		}
+		cost = 50
+		state_target = yes
+		target_trigger = {
+			FROM = {
+				is_owned_and_controlled_by = FGE
+				any_neighbor_state = {
+					is_owned_and_controlled_by = ROOT
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 100
+			modifier = {
+				factor = 100
+				FGE = {
+					has_war = yes
+				}
+			}
+		}
+		days_remove = 50
+		complete_effect = {
+			ROOT = {
+				set_country_flag = {
+					flag = FGE_ECD_border_war_prep
+					value = 1
+					days = 50
+				}
+			}
+		}
+		remove_effect = {
+			ROOT = {
+				clr_country_flag = FGE_ECD_border_war_prep
+			}
+			FROM = {
+				random_neighbor_state = {
+					limit = {
+						is_owned_and_controlled_by = ROOT
+					}
+					start_border_war = {
+						change_state_after_war = no
+						attacker = {
+							state = THIS
+							num_provinces = 4
+							on_win = wtt_border_conflict_won_attacker.1
+							on_lose = wtt_border_conflict_lost_attacker.1
+							on_cancel = wtt_border_conflict_canceled_attacker.1
+						}
+						defender = {
+							state = FROM
+							num_provinces = 4
+							on_win = wtt_border_conflict_won_defender.1
+							on_lose = wtt_border_conflict_lost_defender.1
+							on_cancel = wtt_border_conflict_canceled_defender.1
+						}
+					}
+				}
+			}
 		}
 	}
 }

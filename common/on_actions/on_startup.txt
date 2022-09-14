@@ -120,6 +120,22 @@ on_actions = {
 					mil_fac_ratio_auto = 0.3
 				}
 			}
+			SVK = {
+				set_variable = {
+					population_auto = 7
+				}
+				set_variable = {
+					mil_fac_ratio_auto = 0.6
+				}
+			}
+			ECD = {
+				set_variable = {
+					population_auto = 5
+				}
+				set_variable = {
+					mil_fac_ratio_auto = 0.5
+				}
+			}
 
 			every_country = {
 				limit = {

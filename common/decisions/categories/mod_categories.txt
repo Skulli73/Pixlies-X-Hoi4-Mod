@@ -72,3 +72,14 @@ FGE_GME_recognition = {
 	visible_when_empty = yes
 	scripted_gui = recognize_fge_gme_gui
 }
+FGE_ecuador_conflict = {
+	priority = 70
+	allowed = {
+		OR = {
+			original_tag = FGE
+			original_tag = ECD
+		}
+	}
+	visible = {
+	}
+}

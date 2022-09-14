@@ -34,6 +34,24 @@ colonise = {
 				}
 			}
 		}
+		available = {
+			IF = {
+				limit = {
+					original_tag = ECD
+				}
+				OR = {
+					every_state = {
+						limit = {
+							is_core_of = ECD
+						}
+						is_owned_by = ECD
+					}
+					ECD = {
+						has_war_with = FGE
+					}
+				}
+			}
+		}
 		complete_effect = {
 			transfer_state = FROM
 			set_temp_variable = {

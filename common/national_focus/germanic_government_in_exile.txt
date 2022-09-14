@@ -518,6 +518,9 @@ focus_tree = {
 					has_government = fascism
 				}
 			}
+				NOT = {
+					has_war_with = JPN
+				}
 		}
 		completion_reward = {
 			JPN = {
@@ -537,6 +540,11 @@ focus_tree = {
 		relative_position_id = FGE_isolate_the_empire
 		prerequisite = {
 			focus = FGE_isolate_the_empire
+		}
+		available = {
+			NOT = {
+				has_war_with = FIJ
+			}
 		}
 		available = {
 			OR = {
@@ -608,6 +616,11 @@ focus_tree = {
 		relative_position_id = FGE_isolate_the_empire
 		prerequisite = {
 			focus = FGE_isolate_the_empire
+		}
+		available = {
+			NOT = {
+				has_war_with = ILY
+			}
 		}
 		completion_reward = {
 			ILY = {
@@ -1086,6 +1099,9 @@ focus_tree = {
 					hours = 2
 				}
 			}
+		}
+		ai_will_do = {
+			factor = 100000
 		}
 	}
 	focus = {

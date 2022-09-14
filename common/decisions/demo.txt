@@ -22,6 +22,7 @@ demo = {
 				target = CSA
 				type = puppet_wargoal_focus
 			}
+			add_threat = 50
 		}
 	}
 	TRL_wargoal_ILY = {

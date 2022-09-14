@@ -131,6 +131,22 @@ on_actions = {
 					}
 				}
 			}
+			IF = {
+				limit = {
+					ROOT = {
+						original_tag = SVK
+					}
+					FROM  = {
+						original_tag = ZAP
+					}
+				}
+				FROM = {
+					annex_country = {
+						target = ZAP
+						transfer_troops = yes
+					}
+				}
+			}
 		}
 	}
 }

@@ -108,3 +108,7 @@ SVK = {
 	color = rgb {83 89 124}
 	color_ui = rgb {83 89 124}
 }
+HON = {
+	color = rgb {255 204 0}
+	color_ui = rgb {255 204 0}
+}

@@ -15,6 +15,7 @@ GME_communism_DEF:0 "The Worker's Republic of Central Europe"
 #special germania names
 GME_REPUBLIC_democratic:0 "Germanic Republic"
 GME_REPUBLIC_democratic_DEF:0 "the Germanic Republic"
+GME_REPUBLIC_ADJ:0 "Germanic"
 
 
 #su normal names
@@ -435,3 +436,23 @@ SVK_ADJ:0 "Slovakian"
 YGO:0 "Yugoslavia"
 YGO_DEF:0 "Yugoslavia"
 YGO_ADJ:0 "Yugoslav"
+
+
+#normal central america
+HON:0 "Central America"
+HON_DEF:0 "Central America"
+HON_ADJ:0 "Central American"
+HON_democratic:0 "United States of Central America"
+HON_democratic_DEF:0 "United States of Central America"
+
+#special central america names
+HON_FGE_autonomy_integrated_puppet:0 "$OVERLORDADJ$ Occupied Central America"
+HON_FGE_autonomy_integrated_puppet_DEF:0 "$OVERLORDADJ$ Occupied Central America"
+HON_FGE_autonomy_puppet:0 "Special Administrative Zone of Central America"
+HON_FGE_autonomy_puppet_DEF:0 "the Special Administrative Zone of Central America"
+HON_FGE_autonomy_colony:0 "$OVERLORDADJ$ Central America"
+HON_FGE_autonomy_colony_DEF:0 "$OVERLORDADJ$ Central America"
+HON_FGE_autonomy_dominion:0 "Dominion of Central America"
+HON_FGE_autonomy_dominion_DEF:0 "the Dominion of Central America"
+HON_FGE_autonomy_supervised_state:0 "Dominion of Central America"
+HON_FGE_autonomy_supervised_state_DEF:0 "the Dominion of Central America"

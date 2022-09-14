@@ -167,3 +167,65 @@ FGE_invade_CSA = {
 		value = 1000
 	}
 }
+ECD_join_CSA = {
+	allowed = {
+		tag = ECD
+	}
+	enable = {
+		CSA = {
+			has_war_with = FGE
+		}
+	}
+	ai_strategy = {
+		type = alliance
+		id = CSA
+		value = 10000
+	}
+	ai_strategy = {
+		type = befriend
+		id = CSA
+		value = 10000
+	}
+}
+BRT_join_CSA = {
+	allowed = {
+		original_tag = BRT
+	}
+	enable = {
+		CSA = {
+			has_war_with = FGE
+		}
+		has_government = fascism
+	}
+	ai_strategy = {
+		type = alliance
+		id = CSA
+		value = 10000
+	}
+	ai_strategy = {
+		type = befriend
+		id = CSA
+		value = 10000
+	}
+}
+BRT_join_FGE = {
+	allowed = {
+		original_tag = BRT
+	}
+	enable = {
+		FGE = {
+			has_war_with = CSA
+		}
+		has_government = democratic
+	}
+	ai_strategy = {
+		type = alliance
+		id = FGE
+		value = 10000
+	}
+	ai_strategy = {
+		type = befriend
+		id = FGE
+		value = 10000
+	}
+}

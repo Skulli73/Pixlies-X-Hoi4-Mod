@@ -1727,3 +1727,102 @@ recognize_fge_and_gme_effect = {
 		}
 	}	
 }
+
+GME_remove_5_authority = {
+	custom_effect_tooltip = GME_remove_5_authority
+	add_to_variable = {
+		authority = -0.05
+	}
+}
+GME_remove_10_authority = {
+	custom_effect_tooltip = GME_remove_10_authority
+	add_to_variable = {
+		authority = -0.10
+	}
+}
+GME_remove_15_authority = {
+	custom_effect_tooltip = GME_remove_15_authority
+	add_to_variable = {
+		authority = -0.15
+	}
+}
+GME_remove_20_authority = {
+	custom_effect_tooltip = GME_remove_20_authority
+	add_to_variable = {
+		authority = -0.20
+	}
+}
+GME_add_5_authority = {
+	custom_effect_tooltip = GME_add_5_authority
+	add_to_variable = {
+		authority = 0.05
+	}
+}
+GME_add_10_authority = {
+	custom_effect_tooltip = GME_add_10_authority
+	add_to_variable = {
+		authority = 0.10
+	}
+}
+GME_add_15_authority = {
+	custom_effect_tooltip = GME_add_15_authority
+	add_to_variable = {
+		authority = 0.15
+	}
+}
+GME_add_20_authority = {
+	custom_effect_tooltip = GME_add_20_authority
+	add_to_variable = {
+		authority = 0.20
+	}
+}
+
+
+GME_remove_5_csa_trust = {
+	custom_effect_tooltip = GME_remove_5_csa_trust
+	add_to_variable = {
+		csa_trust = -0.05
+	}
+}
+GME_remove_10_csa_trust = {
+	custom_effect_tooltip = GME_remove_10_csa_trust
+	add_to_variable = {
+		csa_trust = -0.10
+	}
+}
+GME_remove_15_csa_trust = {
+	custom_effect_tooltip = GME_remove_15_csa_trust
+	add_to_variable = {
+		csa_trust = -0.15
+	}
+}
+GME_remove_20_csa_trust = {
+	custom_effect_tooltip = GME_remove_20_csa_trust
+	add_to_variable = {
+		csa_trust = -0.20
+	}
+}
+GME_add_5_csa_trust = {
+	custom_effect_tooltip = GME_add_5_csa_trust
+	add_to_variable = {
+		csa_trust = 0.05
+	}
+}
+GME_add_10_csa_trust = {
+	custom_effect_tooltip = GME_add_10_csa_trust
+	add_to_variable = {
+		csa_trust = 0.10
+	}
+}
+GME_add_15_csa_trust = {
+	custom_effect_tooltip = GME_add_15_csa_trust
+	add_to_variable = {
+		csa_trust = 0.15
+	}
+}
+GME_add_20_csa_trust = {
+	custom_effect_tooltip = GME_add_20_csa_trust
+	add_to_variable = {
+		csa_trust = 0.20
+	}
+}

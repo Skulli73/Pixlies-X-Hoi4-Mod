@@ -1,6 +1,6 @@
 FGE_GME_resistance = {
 	contact_rebels = {
-		cost = 150
+		cost = ROOT.take_states_cost
 		state_target = yes
 		visible = {
 			FROM = {

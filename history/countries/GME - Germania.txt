@@ -11,6 +11,8 @@ add_ideas = {
 	civilian_economy
 	gme_germania_recognition3
 	GME_harsh_quotas
+	GME_su_distrust
+	GME_low_authority
 }
 
 

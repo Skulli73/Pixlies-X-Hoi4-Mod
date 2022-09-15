@@ -83,3 +83,13 @@ FGE_ecuador_conflict = {
 	visible = {
 	}
 }
+GME_state_of_the_national_state = {
+	priority = 200
+	visible_when_empty = yes
+	allowed = {
+		original_tag = GME
+	}
+	visible = {
+		is_subject_of = CSA
+	}
+}

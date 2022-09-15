@@ -18,6 +18,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_ideas = GME_placate_the_su
+			GME_add_5_csa_trust = yes
 		}
 	}
 
@@ -38,6 +39,7 @@ focus_tree = {
 				character = gryn
 				ideology = despotism
 			}
+			GME_remove_5_csa_trust = yes
 		}
 	}
 	focus = {
@@ -71,6 +73,7 @@ focus_tree = {
 					level = 2
 				}
 			}
+			GME_add_5_csa_trust = yes
 		}
 	}
 	focus = {
@@ -95,6 +98,7 @@ focus_tree = {
 					}
 				}
 			}
+			GME_add_5_csa_trust = yes
 			add_autonomy_score = {
 				value = 200
 			}
@@ -118,6 +122,7 @@ focus_tree = {
 				remove_idea = GME_harsh_quotas
 				add_idea = GME_furfilled_quotas
 			}
+			GME_add_10_csa_trust = yes
 			add_autonomy_score = {
 				value = 200
 			}
@@ -143,6 +148,8 @@ focus_tree = {
 			focus = GME_placate_the_su
 		}
 		completion_reward = {
+			GME_add_5_csa_trust = yes
+			GME_remove_5_authority = yes
 			51 = {
 				add_manpower = -3
 			}
@@ -174,6 +181,8 @@ focus_tree = {
 			focus = GME_placate_the_su
 		}
 		completion_reward = {
+			GME_add_5_csa_trust = yes
+			GME_add_5_authority = yes
 			51 = {
 				add_manpower = -2
 			}

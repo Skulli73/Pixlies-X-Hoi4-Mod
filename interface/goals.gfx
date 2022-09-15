@@ -3030,5 +3030,18 @@ spriteTypes = {
 		name = "GFX_idea_germania_recognition3"
 		texturefile = "gfx/interface/ideas/idea_germania_legitimacy3.dds"
 	}
+
+	SpriteType = {
+		name = "GFX_idea_gme_trust1"
+		texturefile = "gfx/interface/ideas/idea_gme_trust1.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_gme_trust2"
+		texturefile = "gfx/interface/ideas/idea_gme_trust2.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_gme_trust3"
+		texturefile = "gfx/interface/ideas/idea_gme_trust3.dds"
+	}
 	
 }

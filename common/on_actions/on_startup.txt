@@ -426,6 +426,15 @@ on_actions = {
                     global.recognizes_fge_amount = 1
                 }
             }
+
+			GME = {
+				set_variable = {
+					csa_trust = 0.25
+				}
+				set_variable = {
+					authority = 0.35
+				}
+			}
 		} #effect bracket close
 	}
 }

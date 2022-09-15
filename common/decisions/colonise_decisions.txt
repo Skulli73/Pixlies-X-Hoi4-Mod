@@ -51,8 +51,20 @@ colonise = {
 					}
 				}
 			}
+			ROOT = {
+				NOT = {
+					has_country_flag = recently_colonized
+				}
+			}
 		}
 		complete_effect = {
+			ROOT = {
+				set_country_flag = {
+					flag = recently_colonized
+					value = 1
+					days = 25
+				}
+			}
 			transfer_state = FROM
 			set_temp_variable = {
 				colonize_cost_negative = colonize_cost
@@ -122,6 +134,35 @@ colonise = {
 					OR = {
 						original_tag = CSA
 						original_tag = VNZ
+					}
+				}
+			}
+			modifier = {
+				factor = 0
+				ROOT = {
+					original_tag = TEX
+				}
+				FROM = {
+					NOT = {
+						state = 373
+						state = 383
+						state = 382
+						state = 376
+						state = 377
+						state = 380
+					}
+				}
+			}
+			modifier = {
+				factor = 0
+				ROOT = {
+					original_tag = VIR
+				}
+				FROM = {
+					NOT = {
+						region = 117
+						region = 197
+						region = 213
 					}
 				}
 			}

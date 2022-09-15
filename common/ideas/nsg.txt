@@ -1,8 +1,51 @@
 ideas = {
 	country = {
+		GME_interrupted_quotas = {
+			name = GME_interrupted_quotas
+			picture = chi_war_of_resistance
+			modifier = {
+				cic_to_overlord_factor = 0.15
+				mic_to_overlord_factor = 0.15
+				extra_trade_to_overlord_factor = 0.15
+				consumer_goods_factor = 0.05
+			}
+			available = {
+				is_subject_of = CSA
+			}
+		}
+		GME_harsh_quotas = {
+			name = GME_harsh_quotas
+			picture = generic_central_management
+			modifier = {
+				cic_to_overlord_factor = 0.3
+				mic_to_overlord_factor = 0.3
+				extra_trade_to_overlord_factor = 0.3
+				consumer_goods_factor = 0.1
+			}
+			available = {
+				is_subject_of = CSA
+			}
+		}
+		GME_furfilled_quotas = {
+			name = GME_furfilled_quotas
+			picture = generic_central_management
+			modifier = {
+				cic_to_overlord_factor = 0.5
+				mic_to_overlord_factor = 0.5
+				extra_trade_to_overlord_factor = 0.5
+				consumer_goods_factor = 0.15
+				autonomy_gain = 0.5
+			}
+			available = {
+				is_subject_of = CSA
+			}
+		}
 		GME_placate_the_su = {
 			name = GME_placate_the_su
 			picture = chi_wargaming_division
+			available = {
+				is_subject_of = CSA
+			}
 			modifier = {
 				autonomy_gain = 1
 				autonomy_gain_trade_factor = 1
@@ -11,6 +54,17 @@ ideas = {
 				cic_to_overlord_factor = 0.3
 				mic_to_overlord_factor = 0.3
 				extra_trade_to_overlord_factor = 0.3
+			}
+		}
+		GME_help_in_construction_of_atlanta = {
+			name = GME_help_in_construction_of_atlanta
+			picture = generic_production_bonus
+			available = {
+				is_subject_of = CSA
+			}
+			modifier = {
+				autonomy_gain = 0.5
+				consumer_goods_factor = 0.1
 			}
 		}
 	}

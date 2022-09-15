@@ -9,6 +9,7 @@ state={
 	history={
 		owner = CSA
 		add_core_of = CSA
+		add_core_of = VIR
 		#victory_points = {
 			3957 40 
 		}

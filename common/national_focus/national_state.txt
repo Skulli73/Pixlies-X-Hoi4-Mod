@@ -27,6 +27,9 @@ focus_tree = {
 		cost = 10
 		x = 15
 		y = 0
+		available = {
+			is_subject_of = CSA
+		}
 		mutually_exclusive = {
 			focus = GME_placate_the_su
 		}
@@ -34,6 +37,148 @@ focus_tree = {
 			promote_character = {
 				character = gryn
 				ideology = despotism
+			}
+		}
+	}
+	focus = {
+		id = GME_help_in_construction_of_atlanta
+		icon = GFX_goal_generic_construct_civilian
+		cost = 7.5
+		x = -5
+		y = 1
+		available = {
+			is_subject_of = CSA
+			365 = {
+				is_controlled_by = CSA
+			}
+		}
+		relative_position_id = GME_placate_the_su
+		prerequisite = {
+			focus = GME_placate_the_su
+		}
+		completion_reward = {
+			add_timed_idea = {
+				idea = GME_help_in_construction_of_atlanta
+				days = 365
+			}
+			add_autonomy_score = {
+				value = 200
+			}
+			365 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+				}
+			}
+		}
+	}
+	focus = {
+		id = GME_expand_su_resource_rights
+		icon = GFX_focus_generic_steel
+		cost = 4
+		x = -3
+		y = 1
+		available = {
+			is_subject_of = CSA
+		}
+		relative_position_id = GME_placate_the_su
+		prerequisite = {
+			focus = GME_placate_the_su
+		}
+		completion_reward = {
+			every_controlled_state = {
+				ROOT = {
+					give_resource_rights = {
+						receiver = CSA
+						state = PREV
+					}
+				}
+			}
+			add_autonomy_score = {
+				value = 200
+			}
+		}
+	}
+	focus = {
+		id = GME_expand_su_quotas
+		icon = GFX_goal_generic_trade
+		cost = 8
+		x = -1
+		y = 1
+		available = {
+			is_subject_of = CSA
+		}
+		relative_position_id = GME_placate_the_su
+		prerequisite = {
+			focus = GME_placate_the_su
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = GME_harsh_quotas
+				add_idea = GME_furfilled_quotas
+			}
+			add_autonomy_score = {
+				value = 200
+			}
+		}
+	}
+	focus = {
+		id = GME_send_political_prisoners_to_su
+		icon = GFX_goal_generic_production
+		cost = 8
+		x = -2
+		y = 2
+		available = {
+			is_subject_of = CSA
+			51 = {
+				is_controlled_by = ROOT
+			}
+			365 = {
+				is_controlled_by = CSA
+			}
+		}
+		relative_position_id = GME_placate_the_su
+		prerequisite = {
+			focus = GME_placate_the_su
+		}
+		completion_reward = {
+			51 = {
+				add_manpower = -3
+			}
+			365 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+				}
+			}
+			add_autonomy_score = {
+				value = 200
+			}
+		}
+	}
+	focus = {
+		id = GME_harsh_punishment_for_partisans
+		icon = GFX_goal_generic_small_arms
+		cost = 8
+		x = -4
+		y = 2
+		available = {
+			is_subject_of = CSA
+			51 = {
+				is_controlled_by = ROOT
+			}
+		}
+		relative_position_id = GME_placate_the_su
+		prerequisite = {
+			focus = GME_placate_the_su
+		}
+		completion_reward = {
+			51 = {
+				add_manpower = -2
+			}
+			add_autonomy_score = {
+				value = 200
 			}
 		}
 	}

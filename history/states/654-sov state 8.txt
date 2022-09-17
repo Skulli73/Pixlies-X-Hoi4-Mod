@@ -13,9 +13,9 @@ state={
 		}
 		# = RUS
 		# = ALT
-		#victory_points = {
-			4800 1 #Oyrot-Tura/Gorno-Altaysk
-		}
+		# #victory_points = {
+		# 	4800 1 #Oyrot-Tura/Gorno-Altaysk
+		# }
 	}
 
 	provinces={

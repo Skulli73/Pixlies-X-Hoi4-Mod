@@ -16,9 +16,9 @@ state={
 
 		}
 		# = RUS
-		#victory_points = {
-			12594 1
-		}
+		# #victory_points = {
+		# 	12594 1
+		# }
 	}
 
 	provinces={

@@ -7,9 +7,9 @@ state = {
 	state_category = pastoral
 
 	history = {
-		#victory_points = {
-			4859 1
-		}
+		# #victory_points = {
+		# 	4859 1
+		# }
 		owner = WIL# = RUS
 		buildings = {
 			#infrastructure = 1

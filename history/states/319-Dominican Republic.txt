@@ -23,12 +23,12 @@ state=
 			}
 		}
 		# = DOM
-		#victory_points = {
-			7660 5 
-		}
-		#victory_points = {
-			4598 1 
-		}
+		# #victory_points = {
+		# 	7660 5 
+		# }
+		# #victory_points = {
+		# 	4598 1 
+		# }
 
 	}
 	provinces={

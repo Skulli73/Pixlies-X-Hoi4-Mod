@@ -9,9 +9,9 @@ state=
 		owner = WIL# = ENG
 		# = CHI
 		# = PRC
-		#victory_points = {
-			10062 3 
-		}
+		# #victory_points = {
+		# 	10062 3 
+		# }
 		buildings = {
 			#infrastructure = 3 #was: 5
 			#air_base = 1

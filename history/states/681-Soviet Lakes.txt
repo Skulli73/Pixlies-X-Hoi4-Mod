@@ -16,9 +16,9 @@ state={
 				naval_base = 4
 			}
 		}
-		#victory_points = {
-			12589 10 
-		}
+		# #victory_points = {
+		# 	12589 10 
+		# }
 		# = SAF
 	}
 

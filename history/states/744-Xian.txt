@@ -9,9 +9,9 @@ state={
 		owner = WIL# = CHI
 		# = PRC
 		# = CHI
-		#victory_points = {
-			7418 1 
-		}
+		# #victory_points = {
+		# 	7418 1 
+		# }
 		buildings = {
 			#infrastructure = 2
 		}

@@ -10,9 +10,9 @@ state=
 	{
 		owner = WIL# = SPR
 		# = EQG
-		#victory_points = {
-			1903 1 
-		}
+		# #victory_points = {
+		# 	1903 1 
+		# }
 		buildings = {
 			#infrastructure = 1
 			1903 = {

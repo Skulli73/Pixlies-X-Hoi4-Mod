@@ -11,9 +11,9 @@ state={
 		buildings = {
 			#infrastructure = 2
 		}
-		#victory_points = {
-			4879 1
-		}
+		# #victory_points = {
+		# 	4879 1
+		# }
 		# = SAF
 		# = NMB
 	}

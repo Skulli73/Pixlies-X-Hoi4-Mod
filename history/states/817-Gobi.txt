@@ -10,9 +10,9 @@ state={
 		buildings = {
 			#infrastructure = 1
 		}
-		#victory_points = {
-			12612 1 #Sainshand
-		}
+		# #victory_points = {
+		# 	12612 1 #Sainshand
+		# }
 		# = MON
 	}
 	manpower = 0#=11000

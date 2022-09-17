@@ -1427,3 +1427,250 @@ FGE_ecuador_conflict = {
 		}
 	}
 }
+GME_state_of_the_national_state = {
+	GME_factory_strike = {
+		state_target = yes
+		cost = 25
+		days_remove = 25
+		target_array = owned_controlled_states
+		modifier = {
+			local_factories = -1
+		}
+		allowed = {
+			original_tag = GME
+		}
+		visible = {
+			is_subject_of = CSA
+			has_completed_focus = GME_strike_in_the_factories
+		}
+		available = {
+			OR = {
+				FROM = {
+					industrial_complex > 0
+				}
+				FROM = {
+					arms_factory > 0
+				}
+				
+			}
+			FROM = {
+				state_population > 0
+			}
+		}
+		on_map_mode = map_only
+		remove_effect = {
+			random_list = {
+				2 = {
+					add_popularity = {
+						ideology = neutrality
+						popularity = 0.0025
+					}
+					GME_remove_5_authority = yes
+				}
+				2 = {
+					add_popularity = {
+						ideology = neutrality
+						popularity = 0.0025
+					}
+					GME_remove_5_csa_trust = yes
+					GME_remove_5_authority = yes
+				}
+				4 = {
+					add_popularity = {
+						ideology = neutrality
+						popularity = 0.0013
+					}
+					FROM = {
+						add_manpower = -1
+					}
+				}
+			}
+		}
+	}
+	GME_refuse_resource_extraction = {
+		state_target = yes
+		cost = 25
+		days_remove = 25
+		target_array = owned_controlled_states
+		modifier = {
+			local_factories = -1
+		}
+		allowed = { 
+			original_tag = GME
+		}
+		visible = {
+			is_subject_of = CSA
+			has_completed_focus = GME_refuse_extraction_collaboration
+				
+					
+		}
+		available = {
+			
+		}
+		target_trigger = {
+			FROM = {
+				OR = {
+					has_resources_amount = {
+						resource = oil
+						amount > 0
+						delivered = no
+					}
+					has_resources_amount = {
+						resource = aluminium
+						amount > 0
+						delivered = no
+					}
+					has_resources_amount = {
+						resource = chromium
+						amount > 0
+						delivered = no
+					}
+					has_resources_amount = {
+						resource = rubber
+						amount > 0
+						delivered = no
+					}
+					has_resources_amount = {
+						resource = steel
+						amount > 0
+						delivered = no
+					}
+					has_resources_amount = {
+						resource = tungsten
+						amount > 0 
+						delivered = no
+					} 
+				}
+				has_state_flag = CSA_resource_rights
+			}
+		}
+		on_map_mode = map_only
+		remove_effect = {
+			random_list = {
+				2 = {
+					add_popularity = {
+						ideology = neutrality
+						popularity = 0.0025
+					}
+					GME_remove_5_authority = yes
+				}
+				2 = {
+					add_popularity = {
+						ideology = neutrality
+						popularity = 0.0025
+					}
+					GME_remove_5_csa_trust = yes
+					GME_remove_5_authority = yes
+				}
+				4 = {
+					add_popularity = {
+						ideology = neutrality
+						popularity = 0.0013
+					}
+					FROM = {
+						add_manpower = -1
+					}
+				}
+			}
+		}
+	}
+	GME_take_control_over_resources = {
+		state_target = yes
+		cost = 50
+		days_remove = 25
+		target_array = owned_controlled_states
+		allowed = { 
+			original_tag = GME
+		}
+		visible = {
+			is_subject_of = CSA
+			has_completed_focus = GME_take_control_over_resources
+				
+					
+		}
+		available = {
+			
+		}
+		target_trigger = {
+			FROM = {
+				OR = {
+					has_resources_amount = {
+						resource = oil
+						amount > 0
+						delivered = no
+					}
+					has_resources_amount = {
+						resource = aluminium
+						amount > 0
+						delivered = no
+					}
+					has_resources_amount = {
+						resource = chromium
+						amount > 0
+						delivered = no
+					}
+					has_resources_amount = {
+						resource = rubber
+						amount > 0
+						delivered = no
+					}
+					has_resources_amount = {
+						resource = steel
+						amount > 0
+						delivered = no
+					}
+					has_resources_amount = {
+						resource = tungsten
+						amount > 0 
+						delivered = no
+					} 
+				}
+				has_state_flag = CSA_resource_rights
+			}
+		}
+		on_map_mode = map_only
+		remove_effect = {
+			random_list = {
+				2 = {
+					add_popularity = {
+						ideology = neutrality
+						popularity = 0.10
+					}
+					GME_remove_5_csa_trust = yes
+					GME_remove_15_authority = yes
+					CSA = {
+						remove_resource_rights = FROM
+					}
+					FROM = {
+						clr_state_flag = CSA_resource_rights
+					}
+				}
+				2 = {
+					add_popularity = {
+						ideology = neutrality
+						popularity = 0.05
+					}
+					GME_remove_5_csa_trust = yes
+					GME_remove_10_authority = yes
+					CSA = {
+						remove_resource_rights = FROM
+					}
+					FROM = {
+						clr_state_flag = CSA_resource_rights
+					}
+				}
+				4 = {
+					GME_remove_10_csa_trust = yes
+					GME_remove_5_authority = yes
+					add_popularity = {
+						ideology = neutrality
+						popularity = 0.025
+					}
+					FROM = {
+						add_manpower = -1
+					}
+				}
+			}
+		}
+	}
+}

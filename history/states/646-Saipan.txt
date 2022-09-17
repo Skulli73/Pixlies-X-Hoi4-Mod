@@ -20,9 +20,9 @@ state=
 				naval_base = 1
 			}
 		}	
-		#victory_points = {
-			3995 1
-		 }
+		# #victory_points = {
+		# 	3995 1
+		#  }
 
 	}
 	provinces={

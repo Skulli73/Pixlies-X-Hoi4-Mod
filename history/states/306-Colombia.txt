@@ -15,9 +15,9 @@ state={
 			#air_base = 2
 		}
 		# = COL
-		#victory_points = {
-			10747 10
-		}
+		# #victory_points = {
+		# 	10747 10
+		# }
 
 	}
 

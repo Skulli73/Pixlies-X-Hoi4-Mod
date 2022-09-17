@@ -97,6 +97,7 @@ focus_tree = {
 						state = PREV
 					}
 				}
+				set_state_flag = CSA_resource_rights
 			}
 			GME_add_5_csa_trust = yes
 			add_autonomy_score = {
@@ -189,6 +190,101 @@ focus_tree = {
 			add_autonomy_score = {
 				value = 200
 			}
+		}
+	}
+
+	focus = {
+		id = GME_passive_resistance
+		icon = GFX_goal_continuous_boost_freedom
+		cost = 10
+		x = -2
+		y = 1
+		relative_position_id = GME_resist_the_su
+		prerequisite = {
+			focus = GME_resist_the_su
+		}
+		completion_reward = {
+			GME_remove_5_csa_trust = yes
+			GME_remove_5_authority = yes
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.05
+			}
+		}
+	}
+	focus = {
+		id = GME_active_resistance
+		icon = GFX_focus_generic_support_the_left_right
+		cost = 10
+		x = 2
+		y = 1
+		relative_position_id = GME_resist_the_su
+		prerequisite = {
+			focus = GME_resist_the_su
+		}
+		completion_reward = {
+			GME_remove_10_csa_trust = yes
+			GME_remove_5_authority = yes
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.05
+			}
+		}
+	}
+	focus = {
+		id = GME_strike_in_the_factories
+		icon = GFX_goal_generic_demand_territory
+		cost = 10
+		x = -1
+		y = 1
+		relative_position_id = GME_passive_resistance
+		prerequisite = {
+			focus = GME_passive_resistance
+		}
+		completion_reward = {
+			custom_effect_tooltip = GME_strike_in_the_factories_tt
+		}
+	}
+	focus = {
+		id = GME_refuse_extraction_collaboration
+		icon = GFX_focus_spr_the_anti_fascist_workers_revolution
+		cost = 10
+		x = 1
+		y = 1
+		relative_position_id = GME_passive_resistance
+		prerequisite = {
+			focus = GME_passive_resistance
+		}
+		completion_reward = {
+			custom_effect_tooltip = GME_refuse_extraction_collaboration_tt
+		}
+	}
+	focus = {
+		id = GME_take_control_over_resources
+		icon = GFX_focus_generic_steel
+		cost = 10
+		x = -1
+		y = 1
+		relative_position_id = GME_active_resistance
+		prerequisite = {
+			focus = GME_active_resistance
+		}
+		completion_reward = {
+			custom_effect_tooltip = GME_take_control_over_resources_tt
+		}
+	}
+	focus = {
+		id = GME_attack_occupying_forces
+		icon = GFX_focus_generic_manpower
+		cost = 10
+		x = 1
+		y = 1
+		relative_position_id = GME_active_resistance
+		prerequisite = {
+			focus = GME_active_resistance
+		}
+		completion_reward = {
+			custom_effect_tooltip = GME_attack_occupying_forces_tt
 		}
 	}
 }

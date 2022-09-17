@@ -16,9 +16,9 @@ state={
 
 		}
 		# = PRU
-		#victory_points = {
-			2210 1 
-		}
+		# #victory_points = {
+		# 	2210 1 
+		# }
 
 	}
 

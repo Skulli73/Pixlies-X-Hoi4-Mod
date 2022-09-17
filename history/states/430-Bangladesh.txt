@@ -5,9 +5,9 @@ state={
 	history={
 		# = BAN
 		owner = WIL# = RAJ
-		#victory_points = {
-			11929 1 
-		}
+		# #victory_points = {
+		# 	11929 1 
+		# }
 		buildings = {
 			#infrastructure = 3 #was: 5
 			#industrial_complex = 2

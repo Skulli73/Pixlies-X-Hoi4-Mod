@@ -9,12 +9,12 @@ state={
 	history={
 		owner = CSA
 		add_core_of = CSA
-		#victory_points = {
-			7081 1 
-		}
-		#victory_points = {
-			12051 3 
-		}
+		# #victory_points = {
+		# 	7081 1 
+		# }
+		# #victory_points = {
+		# 	12051 3 
+		# }
 		buildings = {
 			infrastructure = 1
 			industrial_complex = 2

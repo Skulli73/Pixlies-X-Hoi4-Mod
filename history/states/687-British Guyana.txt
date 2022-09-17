@@ -12,9 +12,9 @@ state={
 	history={
 		# = GYA
 		owner = WIL# = ENG
-		#victory_points = {
-			4982 1
-		}
+		# #victory_points = {
+		# 	4982 1
+		# }
 		buildings = {
 			#infrastructure = 1
 			4982 = {

@@ -22,10 +22,10 @@ state=
 				naval_base = 3
 			}
 		}
-		# = HAI
-		#victory_points = {
-			4641 5 
-		}
+		# # = HAI
+		# #victory_points = {
+		# 	4641 5 
+		# }
 
 	}
 	provinces={

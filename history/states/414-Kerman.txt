@@ -11,12 +11,12 @@ state={
 		buildings = {
 			#infrastructure = 1
 		}
-		#victory_points = {
-			10913 1 
-		}
-		#victory_points = {
-			7990 1 
-		}
+		# #victory_points = {
+		# 	10913 1 
+		# }
+		# #victory_points = {
+		# 	7990 1 
+		# }
 		# = PER
 	}
 

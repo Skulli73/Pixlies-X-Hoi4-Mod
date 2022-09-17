@@ -21,9 +21,9 @@ state={
 			}
 
 		}
-		#victory_points = {
-			7798 20 
-		}
+		# #victory_points = {
+		# 	7798 20 
+		# }
 		# = AST
 
 	}

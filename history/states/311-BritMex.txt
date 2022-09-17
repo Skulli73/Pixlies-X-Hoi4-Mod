@@ -9,9 +9,9 @@ state=
 	{
 		# = BLZ
 		owner = WIL# = ENG
-		#victory_points = {
-			2077 1 
-		}
+		# #victory_points = {
+		# 	2077 1 
+		# }
 		buildings = {
 			#infrastructure = 2
 			2077 = {

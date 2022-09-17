@@ -19,12 +19,12 @@ state={
 			}
 		}
 		# = USA
-		#victory_points = {
-			1690 1 
-		}
-		#victory_points = {
-			7315 10 
-		}
+		# #victory_points = {
+		# 	1690 1 
+		# }
+		# #victory_points = {
+		# 	7315 10 
+		# }
 	}
 
 	provinces={

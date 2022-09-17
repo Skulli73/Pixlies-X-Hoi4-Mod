@@ -24,12 +24,12 @@ state={
 			}
 		}
 		# = PAN
-		#victory_points = {
-			7630 5 
-		}
-		#victory_points = {
-			4611 1
-		}
+		# #victory_points = {
+		# 	7630 5 
+		# }
+		# #victory_points = {
+		# 	4611 1
+		# }
 
 	}
 

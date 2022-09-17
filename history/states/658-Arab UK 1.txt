@@ -13,9 +13,9 @@ state={
 	history={
 		# = UAE
 		owner = WIL# = ENG
-		#victory_points = {
-			7960 1 
-		}
+		# #victory_points = {
+		# 	7960 1 
+		# }
 		buildings = {
 			#infrastructure = 1
 			7960 = {

@@ -12,9 +12,9 @@ state={
 		# = YUN
 		# = CHI
 		# = PRC
-		#victory_points = {
-			7965 3 
-		}
+		# #victory_points = {
+		# 	7965 3 
+		# }
 		buildings = {
 			#infrastructure = 2
 		}

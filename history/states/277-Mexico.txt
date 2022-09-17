@@ -19,12 +19,12 @@ state={
 			#air_base = 3
 		}
 		# = MEX
-		#victory_points = {
-			1965 25
-		}
-		#victory_points = {
-			2008 10
-		}
+		# #victory_points = {
+		# 	1965 25
+		# }
+		# #victory_points = {
+		# 	2008 10
+		# }
 	}
 
 	provinces={

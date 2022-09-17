@@ -7,9 +7,6 @@ state=
 	history= {
 		owner = WIL# = ENG
 		# = MLT
-		#victory_points = {
-			12003 5 
-		}
 		buildings = {
 			#infrastructure = 2
 			#air_base = 3

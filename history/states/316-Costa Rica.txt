@@ -22,9 +22,9 @@ state={
 			}
 		}
 		# = COS
-		#victory_points = {
-			13087 3
-		}
+		# #victory_points = {
+		# 	13087 3
+		# }
 
 	}
 

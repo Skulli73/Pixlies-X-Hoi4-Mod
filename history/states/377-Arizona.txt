@@ -20,9 +20,9 @@ state={
 			#air_base = 2
 		}
 		# = USA
-		#victory_points = {
-			853 3 
-		}
+		# #victory_points = {
+		# 	853 3 
+		# }
 
 	}
 

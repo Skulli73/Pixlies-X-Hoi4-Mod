@@ -12,9 +12,9 @@ state={
 			#industrial_complex = 5
 		}
 		# = USA
-		#victory_points = {
-			1595 5 
-		}
+		# #victory_points = {
+		# 	1595 5 
+		# }
 
 	}
 

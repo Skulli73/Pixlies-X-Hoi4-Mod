@@ -14,13 +14,13 @@ state={
 			#industrial_complex = 4
 			#air_base = 5
 		}
-		# = CAN
-		#victory_points = {
-			3778 20 
-		}
-		#victory_points = {
-			3775 10
-		}
+		# # = CAN
+		# #victory_points = {
+		# 	3778 20 
+		# }
+		# #victory_points = {
+		# 	3775 10
+		# }
 
 	}
 

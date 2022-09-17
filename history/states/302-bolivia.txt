@@ -18,9 +18,9 @@ state={
 
 		}
 		# = BOL
-		#victory_points = {
-			5230 5 
-		}
+		# #victory_points = {
+		# 	5230 5 
+		# }
 
 	}
 

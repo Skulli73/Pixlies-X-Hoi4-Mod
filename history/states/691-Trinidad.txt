@@ -13,9 +13,9 @@ state={
 		# = TRI
 		owner = CSA# = ENG
 		add_core_of = CSA
-		#victory_points = {
-			3284 1
-		}
+		# #victory_points = {
+		# 	3284 1
+		# }
 		buildings = {
 			#infrastructure = 2
 			3284 = {

@@ -14,24 +14,9 @@ state={
 		buildings = {
 			#infrastructure = 2
 		}
-		#victory_points = {
-			12019 1
-		}
-		
-		1938.10.25 = {
-			controller = WIL# = JAP
-			CHI = {
-				set_province_controller = WIL# = 1125
-				set_province_controller = WIL# = 7104
-				set_province_controller = WIL# = 12019
-
-			}
-			buildings = {
-				#infrastructure = 3 #was: 6
-				#air_base = 1
-			}
-
-		}
+		# #victory_points = {
+		# 	12019 1
+		# }
 
 	}
 

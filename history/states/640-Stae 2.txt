@@ -15,12 +15,12 @@ state={
 			#infrastructure = 2
 			#air_base = 1
 		}
-		#victory_points = {
-			1492 1 
-		}
-		#victory_points = {
-			4425 1 
-		}
+		# #victory_points = {
+		# 	1492 1 
+		# }
+		# #victory_points = {
+		# 	4425 1 
+		# }
 
 	}
 	

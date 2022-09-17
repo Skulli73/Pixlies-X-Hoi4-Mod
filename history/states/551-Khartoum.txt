@@ -14,12 +14,12 @@ state={
 				naval_base = 3
 			}
 		}
-		#victory_points = {
-			12806 3
-		}
-		#victory_points = {
-			12725 1
-		}
+		# #victory_points = {
+		# 	12806 3
+		# }
+		# #victory_points = {
+		# 	12725 1
+		# }
 
 		# = SUD
 	}

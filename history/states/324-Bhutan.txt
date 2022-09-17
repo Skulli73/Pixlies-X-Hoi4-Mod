@@ -18,9 +18,9 @@ state={
 			#arms_factory = 1
 			#industrial_complex = 2 
 		}
-		#victory_points = {
-			8010 3 
-		}
+		# #victory_points = {
+		# 	8010 3 
+		# }
 		# = BHU
 	}
 

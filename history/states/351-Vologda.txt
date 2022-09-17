@@ -12,9 +12,9 @@ state={
 			#infrastructure = 2
 		}
 		# = RUS
-		#victory_points = {
-			9131 3
-		}
+		# #victory_points = {
+		# 	9131 3
+		# }
 	}
 
 	provinces={

@@ -12,9 +12,9 @@ state={
 		# = XSM
 		# = CHI
 		# = PRC
-		#victory_points = {
-			2045 1 
-		}
+		# #victory_points = {
+		# 	2045 1 
+		# }
 		buildings = {
 			#infrastructure = 2
 

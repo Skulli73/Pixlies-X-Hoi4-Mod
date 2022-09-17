@@ -6,9 +6,9 @@ state={
 	state_category = rural
 
 	history={
-		#victory_points = {
-			1910 1
-		}
+		# #victory_points = {
+		# 	1910 1
+		# }
 		owner = WIL# = RAJ
 		buildings = {
 			#infrastructure = 1

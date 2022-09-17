@@ -1,4 +1,3 @@
-
 state={
 	id=474
 	name="STATE_474"
@@ -22,9 +21,9 @@ state={
 		##victory_points = {
 		#	12715 3
 		#}
-		#victory_points = {
-			4904 1
-		}
+		# #victory_points = {
+		# 	4904 1
+		# }
 		##victory_points = {
 		#	4965 5
 		#}

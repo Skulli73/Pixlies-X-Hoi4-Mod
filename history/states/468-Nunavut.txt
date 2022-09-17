@@ -22,12 +22,12 @@ state={
 			}
 		}
 		# = CAN
-		#victory_points = {
-			4345 20
-		}
-		#victory_points = {
-			12149 3
-		}
+		# #victory_points = {
+		# 	4345 20
+		# }
+		# #victory_points = {
+		# 	12149 3
+		# }
 
 	}
 

@@ -16,9 +16,9 @@ state={
 			}
 		}
 		# = MEX
-		#victory_points = {
-			7921 10
-		}
+		# #victory_points = {
+		# 	7921 10
+		# }
 		##victory_points = {
 		#	8057 10
 		#}

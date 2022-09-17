@@ -16,9 +16,9 @@ state={
 			#industrial_complex = 3
 
 		}
-		#victory_points = {
-			1591 3 
-		}
+		# #victory_points = {
+		# 	1591 3 
+		# }
 		# = RUS
 		1939.1.1 = {
 			buildings = {

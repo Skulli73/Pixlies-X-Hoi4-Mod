@@ -28,9 +28,9 @@ state={
 			}
 		}
 		# = CHL
-		#victory_points = {
-			650 10
-		}
+		# #victory_points = {
+		# 	650 10
+		# }
 
 	}
 

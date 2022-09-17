@@ -19,9 +19,9 @@ state={
 			#industrial_complex = 5
 			#air_base = 3
 		}
-		#victory_points = {
-			10400 10
-		}
+		# #victory_points = {
+		# 	10400 10
+		# }
 		# = SAF
 	}
 

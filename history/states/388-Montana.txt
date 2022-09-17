@@ -14,9 +14,9 @@ state={
 			#infrastructure = 2
 		}
 		# = USA
-		#victory_points = {
-			4860 1 
-		}
+		# #victory_points = {
+		# 	4860 1 
+		# }
 
 	}
 

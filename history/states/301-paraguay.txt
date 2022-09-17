@@ -15,9 +15,9 @@ state={
 			#air_base = 1
 		}
 		# = PAR
-		#victory_points = {
-			2152 5 
-		}
+		# #victory_points = {
+		# 	2152 5 
+		# }
 
 	}
 

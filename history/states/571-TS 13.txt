@@ -11,9 +11,9 @@ state={
 			#infrastructure = 2
 			#arms_factory = 1
 		}
-		#victory_points = {
-			10696 3 
-		}
+		# #victory_points = {
+		# 	10696 3 
+		# }
 		# = RUS
 		1939.1.1 = {
 			buildings = {

@@ -9,9 +9,9 @@ state={
 		# = JAM
 		owner = CSA
 		add_core_of = CSA
-		#victory_points = {
-			12304 1 
-		}
+		# #victory_points = {
+		# 	12304 1 
+		# }
 		buildings = {
 			#infrastructure = 2
 			12304 = {

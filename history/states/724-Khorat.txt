@@ -16,9 +16,9 @@ state={
 		buildings = {
 			#infrastructure = 2
 		}
-		#victory_points = {
-			7236 1 
-		}
+		# #victory_points = {
+		# 	7236 1 
+		# }
 		# = SIA
 	}
 	

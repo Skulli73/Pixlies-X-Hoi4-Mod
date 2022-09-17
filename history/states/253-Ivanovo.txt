@@ -11,10 +11,10 @@ state={
 		buildings = {
 			#infrastructure = 3 #was: 5
 		}
-		# = RUS
-		#victory_points = {
-			6269 3
-		}
+		# # = RUS
+		# #victory_points = {
+		# 	6269 3
+		# }
 	}
 
 	provinces={

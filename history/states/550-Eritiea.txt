@@ -10,9 +10,9 @@ state=
 	{
 		owner = WIL# = ITA
 		# = ERI
-		#victory_points = {
-			12766 1
-		}
+		# #victory_points = {
+		# 	12766 1
+		# }
 		buildings = {
 			#infrastructure = 2
 			#air_base = 3

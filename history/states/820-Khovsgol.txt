@@ -10,12 +10,12 @@ state={
 		buildings = {
 			#infrastructure = 1
 		}
-		#victory_points = {
-			1791 1 #Darkhan
-		}
-		#victory_points = {
-			1834 1 #Erdenet
-		}
+		# #victory_points = {
+		# 	1791 1 #Darkhan
+		# }
+		# #victory_points = {
+		# 	1834 1 #Erdenet
+		# }
 		# = MON
 	}
 	manpower = 0#=88200

@@ -21,9 +21,9 @@ state={
 
 		}
 		# = NIC
-		#victory_points = {
-			12738 3
-		}
+		# #victory_points = {
+		# 	12738 3
+		# }
 
 	}
 

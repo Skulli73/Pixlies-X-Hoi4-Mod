@@ -18,19 +18,19 @@ state={
 			#arms_factory = 1
 			#industrial_complex = 1
 		}
-		# = MEX
-		#victory_points = {
-			12835 10
-		}
-		#victory_points = {
-			10769 5
-		}
-		##victory_points = {
-		#	2060 3
-		#}
-		##victory_points = {
-		#	12811 1
-		#}
+		# # = MEX
+		# #victory_points = {
+		# 	12835 10
+		# }
+		# #victory_points = {
+		# 	10769 5
+		# }
+		# ##victory_points = {
+		# #	2060 3
+		# #}
+		# ##victory_points = {
+		# #	12811 1
+		# #}
 
 	}
 

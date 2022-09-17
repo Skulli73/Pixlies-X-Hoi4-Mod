@@ -17,9 +17,9 @@ state={
 			#air_base = 1
 			#arms_factory = 1
 		}
-		#victory_points = {
-			7500 1 
-		}
+		# #victory_points = {
+		# 	7500 1 
+		# }
 		# = ARG
 	}
 

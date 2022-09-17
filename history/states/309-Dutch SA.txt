@@ -13,9 +13,9 @@ state={
 	history={
 		# = SUR
 		owner = WIL# = HOL
-		#victory_points = {
-			10906 1
-		}
+		# #victory_points = {
+		# 	10906 1
+		# }
 		buildings = {
 			#infrastructure = 2
 			#industrial_complex = 1

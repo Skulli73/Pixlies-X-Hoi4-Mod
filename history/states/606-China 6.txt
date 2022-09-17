@@ -14,9 +14,9 @@ state={
 			#industrial_complex = 1
 
 		}
-		#victory_points = {
-			7222 1 
-		}
+		# #victory_points = {
+		# 	7222 1 
+		# }
 		1938.10.25 = {
 			controller = WIL# = JAP
 			buildings = {

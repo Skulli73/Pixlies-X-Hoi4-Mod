@@ -297,6 +297,7 @@ on_actions = {
 							state = PREV
 						}
 					}
+					set_state_flag = CSA_resource_rights
 				}
 			}
 

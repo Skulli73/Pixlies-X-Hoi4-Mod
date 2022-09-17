@@ -21,9 +21,9 @@ state={
 			}
 		}
 		# = BRA
-		#victory_points = {
-			12853 1 
-		}
+		# #victory_points = {
+		# 	12853 1 
+		# }
 
 	}
 

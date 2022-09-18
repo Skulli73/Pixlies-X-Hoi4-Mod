@@ -121,7 +121,6 @@ guiTypes = {
 			x = 225
 			y = 100
 		}
-		orientation = RIGHT
 		iconType = {
 			name = "recognizes_exiles_flag" 
 			quadTextureSprite = "GFX_flag_small2" 
@@ -151,7 +150,7 @@ guiTypes = {
 			x = -75
 			y = 15
 		}
-		orientation = LEFT
+		orientation = UPPER_LEFT
 		iconType = {
 			name = "recognizes_neither_both_flag" 
 			quadTextureSprite = "GFX_flag_small2" 

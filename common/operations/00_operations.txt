@@ -3050,14 +3050,8 @@ FGE_operation_free_geo = { ### 0 1/35
 		 	random_character = {
 		 		limit = { is_character = geo }
 		 		set_nationality = FGE
-		 		operative_leader_event = {
-		 			id = gge.100
-		 			hours = 2
-		 		}
+		 		
 		 	}
-		 }
-		 geo = {
-			
 		 }
 		 ROOT = {
 			clr_country_flag = geo_still_alive
@@ -3074,19 +3068,16 @@ FGE_operation_free_geo = { ### 0 1/35
 			random_character = {
 				limit = { is_character = geo }
 				set_nationality = FGE
-				operative_leader_event = {
-					id = gge.100
-					hours = 2
-				}
+				
 			}
 		}
 		ROOT = {
 		   clr_country_flag = geo_still_alive
 		   set_country_flag = geo_freed
 		   news_event = {
-			id = gge.101
-			days = 1
-	   }
+			   id = gge.101
+			   days = 1
+		  }
 		}
 	}
 

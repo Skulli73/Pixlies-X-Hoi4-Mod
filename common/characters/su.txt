@@ -38,7 +38,7 @@ characters = {
 	geo_temp_1 = {
 		name = "GeoDoesGames"
 		portraits = {
-			civillian = {
+			civilian = {
 				large = "gfx/leaders/CSA/geo.dds"
 			}
 			army = {

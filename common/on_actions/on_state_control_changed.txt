@@ -51,9 +51,6 @@ on_actions = {
 						set_nationality = FGE
 					}
 				}
-				geo = {
-				
-				}
 				ROOT = {
 					#add_political_power = 1
 					clr_country_flag = geo_still_alive

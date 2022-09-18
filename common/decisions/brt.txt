@@ -2,7 +2,7 @@ brt_collapse = {
 	brt_collapse_mission = {
 		days_mission_timeout = 200
 		available = {
-			always = false
+			always = no
 		}
 		fire_only_once = yes
 		allowed = {

@@ -2,7 +2,7 @@ characters = {
 	geo = {
 		name = "GeoDoesGames"
 		portraits = {
-			civillian = {
+			civilian = {
 				large = "gfx/leaders/CSA/geo.dds"
 			}
 			army = {

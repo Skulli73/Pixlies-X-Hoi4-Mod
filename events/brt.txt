@@ -31,7 +31,7 @@ country_event = {
 		recognize_fge_effect = yes
 		add_popularity = {
 			ideology = democratic
-			elections_allowed = yes
+			popularity = 0.6
 		}
 		start_civil_war = {
 			ruling_party = democratic
@@ -67,7 +67,11 @@ country_event = {
 				transfer_state = PREV
 			}
 		}
-		recgonize_gme_effect = yes 
+		recognize_gme_effect = yes 
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.6
+		}
 		start_civil_war = {
 			ideology = democratic
 			ruling_party = fascism

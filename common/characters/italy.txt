@@ -2,7 +2,7 @@ characters = {
      nikiblago08 = {
 		name = "nikiblago08"
 		portraits = {
-			civillian = {
+			civilian = {
 				large = "gfx/leaders/ILY/niki.dds"
 			}
 		}

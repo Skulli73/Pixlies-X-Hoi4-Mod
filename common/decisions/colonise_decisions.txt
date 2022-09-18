@@ -40,10 +40,7 @@ colonise = {
 					original_tag = ECD
 				}
 				OR = {
-					every_state = {
-						limit = {
-							is_core_of = ECD
-						}
+					all_core_state = {
 						is_owned_by = ECD
 					}
 					ECD = {
@@ -219,7 +216,6 @@ colonise = {
 			FROM = {
 				OR = {
 					industrial_complex > var:FROM.state_population
-					industrial_complex = var:FROM.state_population
 				}
 			}
 		}

@@ -49,7 +49,6 @@ units = {
 		division_template = "Supported Infantry Division"
 		start_equipment_factor = 1
 		start_experience_factor = 0.5
-		start_manpower_factor = 1
 		
 	}
 	division = {
@@ -61,7 +60,6 @@ units = {
         }
 		start_equipment_factor = 1
 		start_experience_factor = 0.5
-		start_manpower_factor = 1
 	}
 	division = {
 		location = 3485
@@ -72,7 +70,6 @@ units = {
         }
 		start_equipment_factor = 1
 		start_experience_factor = 0.5
-		start_manpower_factor = 1
 	}
 	division = {
 		location = 6512
@@ -83,7 +80,6 @@ units = {
         }
 		start_equipment_factor = 1
 		start_experience_factor = 0.5
-		start_manpower_factor = 1
 	}
 	division = {
 		location = 9457
@@ -94,7 +90,6 @@ units = {
         }
 		start_equipment_factor = 1
 		start_experience_factor = 0.5
-		start_manpower_factor = 1
 	}
 	division = {
 		location = 6534
@@ -105,6 +100,5 @@ units = {
         }
 		start_equipment_factor = 1
 		start_experience_factor = 0.5
-		start_manpower_factor = 1
 	}
 }

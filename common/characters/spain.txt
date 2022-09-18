@@ -2,7 +2,7 @@ characters = {
 	maurice = {
 		name = "TAMaurice"
 		portraits = {
-			civillian = {
+			civilian = {
 				large = "gfx/leaders/ESP/maurice.dds"
 			}
 			army = {
@@ -19,11 +19,8 @@ characters = {
 			allowed = {
 				original_tag = ESP
 			}
-			allowed_civil_war = {
-				has_government = democratic
-			}
 			available = {
-				has_ideas = maurice_head_of_state
+				has_idea = maurice_head_of_state
 			}
 			traits = {
 				
@@ -49,8 +46,10 @@ characters = {
 			logistics_skill = 0
 			visible = {
 				OR = {
-					has_country_leader = "TAMAurice"
-					has_ideas = maurice_head_of_state
+					has_country_leader = {
+						character = maurice
+					}
+					has_idea = maurice_head_of_state
 				}
 			}
 		}
@@ -58,7 +57,7 @@ characters = {
 	birb = {
 		name = "Karl"
 		portraits = {
-			civillian = {
+			civilian = {
 				large = "gfx/leaders/ESP/birb.dds"
 			}
 			army = {
@@ -75,11 +74,8 @@ characters = {
 			allowed = {
 				original_tag = ESP
 			}
-			allowed_civil_war = {
-				has_government = democratic
-			}
 			available = {
-				has_ideas = karl_head_of_state
+				has_idea = birb_head_of_state
 			}
 			traits = {
 				

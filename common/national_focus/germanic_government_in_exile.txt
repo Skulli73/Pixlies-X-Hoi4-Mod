@@ -493,6 +493,9 @@ focus_tree = {
 		prerequisite = {
 			focus = FGE_middle_eastern_and_caucasian_connections
 		}
+		mutually_exclusive = {
+			focus = FGE_gather_spanish_support
+		}
 		completion_reward = {
 			TRL = {
 				country_event = {
@@ -1403,11 +1406,11 @@ focus_tree = {
 							is_core_of = ROOT
 							is_on_continent = europe
 						}
-						add_extra_state_shared_building_slots = yes
+						add_extra_state_shared_building_slots = 1
 						add_building_construction = {
 							type = industrial_complex
 							level = 1
-							instant_construction = yes
+							instant_build = yes
 						}
 					}
 				}
@@ -1445,7 +1448,7 @@ focus_tree = {
 						add_building_construction = {
 							type = arms_factory
 							level = 1
-							instant_construction = yes
+							instant_build = yes
 						}
 					}
 				}
@@ -1699,7 +1702,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			create_faction = "European Union"
-			unlock_decision_category_tooltip = eu_expansion
+			unlock_decision_category_tooltip = FGE_eu_decisions
 		}
 	}
 	focus = {
@@ -1718,7 +1721,7 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
-			unlock_decision_category_tooltip = enforce_republicanism
+			unlock_decision_category_tooltip = FGE_enforce_republicanism
 		}
 	}
 	focus = {

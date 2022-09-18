@@ -174,31 +174,31 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 4391;12526;impassable;-1;-1;-1;-1;-1;;pamir mountains
 3314;6336;sea;2752;2885;1578;2890;1581;;Afsluitdijk
 394;14;sea;2455;-1;-1;-1;-1;;Denmark-Norway Bridge
-1913;7622;sea;170;-1;-1;-1;-1;;Florida-Cuba Bridge
-7590;1594;sea;53;-1;-1;-1;-1;;Cuba-Haiti Bridge
-7660;1440;sea;53;-1;-1;-1;-1;;Dominica-Puerto Rico Bridge
-12299;12168;sea;72;-1;-1;-1;-1;;Malaya-Sumatra
-4211;4409;sea;72;-1;-1;-1;-1;;Borneo-Sumatra
-10181;1098;sea;80;-1;-1;-1;-1;;Borneo-Sulawesi
-10153;1419;sea;93;-1;-1;-1;-1;;Moluccas-North Sulawesi
-4493;7369;sea;93;-1;-1;-1;-1;;Moluccas-Central Sulawesi
-10409;12386;sea;91;-1;-1;-1;-1;;Moluccas-Papua 1
-10141;4468;sea;84;-1;-1;-1;-1;;Moluccas-Papua 2
-12457;1410;sea;82;-1;-1;-1;-1;;Papua-Australia
-10219;13001;sea;93;-1;-1;-1;-1;;Timur-Sundra
-10276;12178;sea;91;-1;-1;-1;-1;;Timur-Australia
-4135;9945;sea;68;-1;-1;-1;-1;;Gibraltar
-6979;11767;sea;168;-1;-1;-1;-1;;Albania-Italy
-925;3943;sea;168;-1;-1;-1;-1;;Zara-Italy
-9458;6449;sea;18;-1;-1;-1;-1;;English Channel 1
-3501;11548;sea;18;-1;-1;-1;-1;;English Channel 2
-3379;6350;sea;43;-1;-1;-1;-1;;Irish Sea 1
-285;11361;sea;43;-1;-1;-1;-1;;Irish Sea 2
-10011;1054;sea;76;-1;-1;-1;-1;;Japan-Korea
-1104;1150;sea;77;-1;-1;-1;-1;;Manchuria-China
-1088;11984;sea;69;-1;-1;-1;-1;;Cyprus-Levant 1
-1108;11984;sea;69;-1;-1;-1;-1;;Cyprus-Levant 2
-7193;4008;sea;69;-1;-1;-1;-1;;Cyprus-Anatolia
-12715;4600;sea;53;-1;-1;-1;-1;;Yucatan-Cuna
-13012;11106;sea;53;-1;-1;-1;-1;;Trinidad-Windward
+1913;7622;sea;6805;-1;-1;-1;-1;;Florida-Cuba Bridge
+7590;1594;sea;5658;-1;-1;-1;-1;;Cuba-Haiti Bridge
+7660;1440;sea;5557;-1;-1;-1;-1;;Dominica-Puerto Rico Bridge
+12299;12168;sea;5539;-1;-1;-1;-1;;Malaya-Sumatra
+4211;4409;sea;5641;-1;-1;-1;-1;;Borneo-Sumatra
+10181;1098;sea;8822;-1;-1;-1;-1;;Borneo-Sulawesi
+10153;1419;sea;5294;-1;-1;-1;-1;;Moluccas-North Sulawesi
+4493;7369;sea;4899;-1;-1;-1;-1;;Moluccas-Central Sulawesi
+10409;12386;sea;5320;-1;-1;-1;-1;;Moluccas-Papua 1
+10141;4468;sea;8898;-1;-1;-1;-1;;Moluccas-Papua 2
+12457;1410;sea;8921;-1;-1;-1;-1;;Papua-Australia
+10219;13001;sea;5414;-1;-1;-1;-1;;Timur-Sundra
+10276;12178;sea;5438;-1;-1;-1;-1;;Timur-Australia
+4135;9945;sea;5407;-1;-1;-1;-1;;Gibraltar
+6979;11767;sea;5864;-1;-1;-1;-1;;Albania-Italy
+925;3943;sea;5812;-1;-1;-1;-1;;Zara-Italy
+9458;6449;sea;2895;-1;-1;-1;-1;;English Channel 1
+3501;11548;sea;13004;-1;-1;-1;-1;;English Channel 2
+3379;6350;sea;8340;-1;-1;-1;-1;;Irish Sea 1
+285;11361;sea;4212;-1;-1;-1;-1;;Irish Sea 2
+10011;1054;sea;2708;-1;-1;-1;-1;;Japan-Korea
+1104;1150;sea;8445;-1;-1;-1;-1;;Manchuria-China
+1088;11984;sea;6419;-1;-1;-1;-1;;Cyprus-Levant 1
+1108;11984;sea;6419;-1;-1;-1;-1;;Cyprus-Levant 2
+7193;4008;sea;6419;-1;-1;-1;-1;;Cyprus-Anatolia
+12715;4600;sea;5735;-1;-1;-1;-1;;Yucatan-Cuba
+13012;11106;sea;2597;-1;-1;-1;-1;;Trinidad-Windward
 -1;-1;;-1;-1;-1;-1;-1;-1

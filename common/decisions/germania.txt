@@ -10,9 +10,7 @@ FGE_GME_resistance = {
 			}
 			has_completed_focus = FGE_coordinate_resistance
 			NOT = {
-				limit = {
-					has_war_with = GME
-				}
+				has_war_with = GME
 			}
 		}
 		allowed = {

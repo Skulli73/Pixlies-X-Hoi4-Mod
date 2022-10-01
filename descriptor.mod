@@ -8,5 +8,8 @@ tags={
 }
 name="Pixlies X Hoi4 Mod"
 replace_path="gfx/loadingscreens"
-supported_version="1.11.*"
+replace_path="history/states"
+replace_path="map/strategicregions"
+replace_path="common/on_actions"
+supported_version="1.12.*"
 remote_file_id="2857952950"

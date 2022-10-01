@@ -6,7 +6,7 @@ state={
 	}
 
 	history={
-		owner = GME
+		owner = CSA
 		add_core_of = GME
 		victory_points = {
 			391 40 

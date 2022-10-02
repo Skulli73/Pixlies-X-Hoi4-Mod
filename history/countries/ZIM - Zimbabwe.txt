@@ -1,13 +1,35 @@
-﻿capital = 636
+﻿capital = 545
 
-#oob = ""
+oob = "ZIM_1936"
 
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
+	tech_mountaineers = 1
 }
 
-set_convoys = 20
+set_convoys = 5
+
+recruit_character = ZIM_acr
+recruit_character = ZIM_stc
+recruit_character = ZIM_awt
+recruit_character = ZIM_pot
+recruit_character = ZIM_mt
+recruit_character = ZIM_ncm
+recruit_character = ZIM_nt
+recruit_character = ZIM_acd2
+recruit_character = ZIM_fascist_guy
+recruit_character = ZIM_ncs
+recruit_character = ZIM_nccr
+recruit_character = ZIM_aco2
+recruit_character = ZIM_communist_guy
+recruit_character = ZIM_ai2
+recruit_character = ZIM_ar
+recruit_character = ZIM_coi
+recruit_character = ZIM_acas
+recruit_character = ZIM_acgs
+recruit_character = ZIM_aa2
+recruit_character = ZIM_democratic_guy
 
 1939.1.1 = {
 	#generic focuses
@@ -43,15 +65,24 @@ set_convoys = 20
 		dispersed_industry2 = 1
 	}
 }
+
+# A colongy of Italy in 1939, however if independent it would have the same politics as in 1936
 set_politics = {
-	ruling_party = democratic
+	ruling_party = neutrality
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = yes
 }
 set_popularities = {
-	democratic = 50
-	fascism = 6
-	communism = 6
-	neutrality = 38
+	neutrality = 100
+}
+
+create_country_leader = {
+	name = " Marcus James Hugins"
+	picture = GFX_portrait__Marcus_James_Hugins
+	expire = "1965.1.1"
+	ideology = nazism
+	traits = { 
+		prince_of_terror
+	}
 }

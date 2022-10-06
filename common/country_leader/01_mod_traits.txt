@@ -1,0 +1,11 @@
+leader_traits = {
+	acting_pm = {
+		random = no
+		political_power_factor = -0.5
+	}
+	recent_assasination_attempt = {
+		random = no
+		political_power_factor = -0.25
+		stability_weekly = -0.0025
+	}
+}

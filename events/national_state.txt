@@ -1,0 +1,205 @@
+add_namespace = nsg
+country_event = {
+	id = nsg.1
+	title = nsg.1.t
+	desc = nsg.1.d
+	is_triggered_only = yes
+	option = {
+		name = nsg.1.a
+		army_experience = 20
+		GME_remove_10_csa_trust = yes
+		GME_remove_20_authority = yes
+	}
+}
+country_event = {
+	id = nsg.2
+	title = nsg.2.t
+	desc = nsg.2.d
+	is_triggered_only = yes
+	option = {
+		name = nsg.2.a
+		army_experience = 10
+		GME_remove_15_csa_trust = yes
+	}
+}
+country_event = {
+	id = nsg.3
+	title = nsg.3.t
+	desc = nsg.3.d
+	is_triggered_only = yes
+	option = {
+		name = nsg.3.a
+		army_experience = 10
+		FROM = {
+			transfer_state_to = GME
+		}
+		delete_unit = {
+			state = FROM
+		}
+	}
+}
+country_event = {
+	id = nsg.4
+	title = nsg.4.t
+	desc = nsg.4.d
+	is_triggered_only = yes
+	option = {
+		name = nsg.4.a
+		army_experience = 20
+		FROM = {
+			transfer_state_to = GME
+		}
+	}
+}
+country_event = {
+	id = nsg.5
+	title = nsg.5.t
+	desc = nsg.5.d
+	is_triggered_only = yes
+	option = {
+		name = nsg.5.a
+		GME = {
+			country_event = {
+				id = nsg.1
+			}
+			annex_country = {
+				target = ROOT
+				transfer_troops = yes
+			}
+		}
+	}
+}
+country_event = {
+	id = nsg.6
+	title = nsg.6.t
+	desc = nsg.6.d
+	is_triggered_only = yes
+	option = { 
+		name = nsg.6.a
+		GME = {
+			country_event = {
+				id = nsg.2
+			}
+			annex_country = {
+				target = ROOT
+				transfer_troops = yes
+			}
+		}
+	}
+}
+country_event = { #su - ns demands independence
+	id = nsg.7
+	title = nsg.7.t
+	desc = nsg.7.d
+	is_triggered_only = yes
+	option = { 
+		name = nsg.7.a
+		end_puppet = GME
+		GME = {
+			random_character = {
+				limit = { is_character = alternis }
+				set_nationality = CSA
+			}
+		}
+		GME = {
+			leave_faction = yes
+			set_cosmetic_tag = GME_NEUTRALITY_GRYN
+		}
+		IF = {
+			limit = {
+				7 = {
+					OWNER = {
+						OR = {
+							is_subject_of = ROOT
+							tag = ROOT
+						}
+					}
+				}
+			}
+			7 = {
+				transfer_state_to = GME
+			}
+		}
+	}
+	option = { 
+		name = nsg.7.b
+		ai_chance = {
+			factor = 100
+		}
+		hidden_effect = {
+			news_event = {
+				id = nsg.8
+				days = 1
+			}
+		}
+		GME = {
+			set_cosmetic_tag = GME_NEUTRALITY_GRYN
+			set_temp_variable = {
+				fascism_neutrality_ratio = party_popularity@fascism
+			}
+			set_temp_variable = {
+				fascism_plus_neutrality = party_popularity@fascism
+			}
+			add_to_temp_variable = {
+				fascism_plus_neutrality = party_popularity@neutrality
+			}
+			divide_temp_variable = {
+				fascism_neutrality_ratio = fascism_plus_neutrality
+			}
+			promote_character = alternis
+			start_civil_war = {
+				ruling_party = neutrality
+				ideology = fascism
+				size =var:fascism_neutrality_ratio
+				keep_unit_leaders_trigger = {
+					NOT = {
+						is_character = alternis
+					}
+				}
+				states_filter = {
+					OR = {
+						region = 21
+						any_neighbor_state = {
+							region = 21
+						}
+						region = 5
+						state = 28
+						state = 42
+					}
+				}
+				states = {
+					7 36 35 6 34 8 29 28 42 50 3 151 153 152 52 53 29
+				}
+				ROOT = {
+					add_to_war = {
+						targeted_alliance = PREV
+						enemy = FROM
+						hostility_reason = asked_to_join
+					}
+				}
+			}
+		}
+	}
+}
+news_event = {
+	id = nsg.8
+	title = nsg.8.t
+	desc = nsg.8.d
+	major = yes
+	picture = GFX_news_event_su_flag_burn
+	is_triggered_only = yes
+	option = {
+		name = nsg.8.a
+		trigger = {
+			is_in_faction_with = CSA
+		}
+	}
+	option = {
+		name = nsg.8.b
+		trigger = {
+			tag = GME
+			has_war_with = CSA
+		}
+	}
+	
+}

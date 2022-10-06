@@ -1573,6 +1573,7 @@ GME_state_of_the_national_state = {
 		}
 	}
 	GME_take_control_over_resources = {
+
 		state_target = yes
 		cost = 50
 		days_remove = 25
@@ -1669,6 +1670,85 @@ GME_state_of_the_national_state = {
 					}
 				}
 			}
+		}
+	}
+	GME_attack_occupying_forces = {
+		state_target = yes
+		allowed = {
+			original_tag = GME
+
+		}
+		visible = {
+			is_subject_of = CSA
+			has_completed_focus = GME_attack_occupying_forces
+		}
+		available = {
+			is_subject_of = CSA
+			has_completed_focus = GME_attack_occupying_forces
+			GM2 = {
+				exists = no
+			}
+		}
+		target_trigger = {
+			is_owned_and_controlled_by = ROOT
+			CSA = {
+				divisions_in_state = {
+					size > 0
+					state = FROM
+				}
+			}
+			FROM = {
+				any_neighbor_state = {
+					is_owned_and_controlled_by = ROOT
+				}
+			}
+		}
+		days_remove = 1
+		cost = 75
+		complete_effect = {
+			ROOT = {
+				add_popularity = {
+					ideology = neutrality
+					popularity = 0.05
+				}
+			}
+			FROM = {
+				transfer_state_to = CSA
+				random_neighbor_state = {
+					limit = {
+						is_owned_and_controlled_by = ROOT
+					}
+					
+					transfer_state_to = GM2
+					ROOT = {
+						transfer_units_fraction = {
+							target = GM2
+							size = 0.5
+							keep_unit_leaders_trigger = {
+								always = yes
+							}
+						}
+					}
+					start_border_war = {
+						change_state_after_war = no
+						attacker = {
+							state = THIS
+							num_provinces = 4
+							on_win = nsg.5
+							on_lose = nsg.6
+						}
+									
+						defender = {
+							state = FROM
+							num_provinces = 4
+							on_win = nsg.4
+							on_lose = nsg.3
+						}
+					}
+				}
+			}
+			
+				
 		}
 	}
 }

@@ -151,6 +151,20 @@ characters = {
 				small = "gfx/interface/ideas/GME/alternis.dds"
 			}
 		}
+		country_leader = {
+			ideology = nazism
+			traits = {
+				the_foreign_connection
+				fascist_orchestrator
+			}
+		}
+		corps_commander = {
+			skill = 3
+			attack_skill = 4
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+		}
 		advisor = {
 			slot = head_of_state
 			idea_token = alternis_head_of_state

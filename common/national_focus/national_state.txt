@@ -287,4 +287,30 @@ focus_tree = {
 			custom_effect_tooltip = GME_attack_occupying_forces_tt
 		}
 	}
+	focus = {
+		id = GME_demand_su_leave
+		icon = GFX_focus_liberate_germania
+		cost = 10
+		x = -1
+		y = 1
+		relative_position_id = GME_take_control_over_resources
+		available = {
+			has_idea = GME_very_low_authority
+			neutrality > 0.4
+		}
+		prerequisite = {
+			focus = GME_take_control_over_resources
+			focus = GME_attack_occupying_forces
+			focus = GME_refuse_extraction_collaboration
+			focus = GME_strike_in_the_factories
+		}
+		completion_reward = {
+			OVERLORD = {
+				country_event = {
+					id = nsg.7
+					hours = 6
+				}
+			}
+		}
+	}
 }

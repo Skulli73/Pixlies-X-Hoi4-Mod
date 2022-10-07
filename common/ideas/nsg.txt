@@ -277,5 +277,27 @@ ideas = {
 				add_ideas = GME_medium_authority
 			}
 		}
+		GME_secret_service = {
+			name = GME_secret_service
+			picture = generic_spy_intel
+			modifier = {
+				operative_slot = 2
+			}
+		}
+		GME_crack_down_on_political_dissidents = {
+			name = GME_crack_down_on_political_dissidents
+			picture = generic_democracy_banned
+			modifier = {
+				democratic_drift = -0.05
+				communism_drift = -0.05
+			}
+		}
+		GME_mass_conscription = {
+			name = GME_mass_conscription
+			picture = chi_forced_conscription
+			modifier = {
+				conscription = 0.03
+			}
+		}
 	}
 }

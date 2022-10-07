@@ -215,9 +215,6 @@ country_event = { #vnz join back gme
 			factor = 50
 		}
 		every_character = {
-			limit = {
-				has_nationality = VNZ
-			}
 			set_nationality = GME
 		}
 		GME = {
@@ -247,9 +244,6 @@ country_event = { #vnz join back gme
 			factor = 50
 		}
 		every_character = {
-			limit = {
-				has_nationality = VNZ
-			}
 			set_nationality = GME
 		}
 		CSA = {

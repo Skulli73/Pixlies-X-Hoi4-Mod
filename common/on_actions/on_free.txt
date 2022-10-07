@@ -1,0 +1,27 @@
+on_actions = {
+	on_subject_free = {
+		effect = {
+			IF = {
+				limit = {
+					ROOT = {
+						original_tag = GME
+						NOT = {
+							has_war_with = FROM
+						}
+					}
+					FROM = {
+						original_tag = CSA
+					}
+				}
+				FROM = {
+					every_owned_state = {
+						limit = {
+							state = 7
+						}
+						transfer_state_to = ROOT
+					}
+				}
+			}
+		}
+	}
+}

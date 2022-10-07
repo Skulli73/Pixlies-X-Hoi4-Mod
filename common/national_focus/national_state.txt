@@ -11,7 +11,7 @@ focus_tree = {
 		id = GME_placate_the_su
 		icon = GFX_focus_CZE_german_puppet
 		cost = 10
-		x = 5
+		x = 2
 		y = 0
 		mutually_exclusive = {
 			focus = GME_resist_the_su
@@ -29,7 +29,7 @@ focus_tree = {
 		id = GME_resist_the_su
 		icon = GFX_focus_liberate_germania
 		cost = 10
-		x = 25
+		x = 45
 		y = 0
 		available = {
 			is_subject_of = CSA
@@ -54,7 +54,7 @@ focus_tree = {
 		id = GME_help_in_construction_of_atlanta
 		icon = GFX_goal_generic_construct_civilian
 		cost = 7.5
-		x = -5
+		x = -2
 		y = 1
 		available = {
 			is_subject_of = CSA
@@ -88,7 +88,7 @@ focus_tree = {
 		id = GME_expand_su_resource_rights
 		icon = GFX_focus_generic_steel
 		cost = 4
-		x = -3
+		x = 0
 		y = 1
 		available = {
 			is_subject_of = CSA
@@ -117,7 +117,7 @@ focus_tree = {
 		id = GME_expand_su_quotas
 		icon = GFX_goal_generic_trade
 		cost = 8
-		x = -1
+		x = 2
 		y = 1
 		available = {
 			is_subject_of = CSA
@@ -141,7 +141,7 @@ focus_tree = {
 		id = GME_send_political_prisoners_to_su
 		icon = GFX_goal_generic_production
 		cost = 8
-		x = -2
+		x = -1
 		y = 2
 		available = {
 			is_subject_of = CSA
@@ -177,7 +177,7 @@ focus_tree = {
 		id = GME_harsh_punishment_for_partisans
 		icon = GFX_goal_generic_small_arms
 		cost = 8
-		x = -4
+		x = 1
 		y = 2
 		available = {
 			is_subject_of = CSA
@@ -390,7 +390,7 @@ focus_tree = {
 			is_subject_of = CSA
 		}
 		relative_position_id = GME_placate_the_su 
-		x = 9
+		x = 16
 		y = 1
 		mutually_exclusive = {
 			focus = GME_divert_power_to_gryn
@@ -412,7 +412,7 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = GME_cooperate_with_the_overseeer
 		}
-		x = 11
+		x = 18
 		y = 1
 		prerequisite = {
 			focus = GME_placate_the_su
@@ -454,6 +454,429 @@ focus_tree = {
 		completion_reward = {
 			GME_add_10_authority = yes
 			custom_effect_tooltip = GME_form_a_new_government_tt
+		}
+	}
+	focus = {
+		id = GME_abolish_the_national_assembly
+		icon = GFX_focus_usa_voter_registration_act
+		cost = 4
+		relative_position_id = GME_cooperate_with_the_overseeer
+		prerequisite = {
+			focus = GME_cooperate_with_the_overseeer
+			focus = GME_divert_power_to_gryn
+		}
+		mutually_exclusive = {
+			focus = GME_facade_parliament
+		}
+		x = 0
+		y = 1
+		completion_reward = {
+			GME_add_5_authority = yes
+		}
+	}
+	focus = {
+		id = GME_facade_parliament
+		icon = GFX_focus_SWI_dissolve_the_federal_council
+		cost = 4
+		relative_position_id = GME_cooperate_with_the_overseeer
+		prerequisite = {
+			focus = GME_cooperate_with_the_overseeer
+			focus = GME_divert_power_to_gryn
+		}
+		mutually_exclusive = {
+			focus = GME_abolish_the_national_assembly
+		}
+		x = 2
+		y = 1
+		completion_reward = {
+			every_country = {
+				custom_effect_tooltip = shift_towards_nsg
+				set_temp_variable = {
+					random_temp = random
+				}
+				divide_variable = {
+					random_temp = -4
+				}
+				add_to_variable = {
+					germania_opinion = var:random_temp
+				}
+			}
+		}
+	}
+	focus = {
+		id = GME_gain_foreign_recognition
+		icon = GFX_goal_generic_dangerous_deal
+		cost = 7.5
+		relative_position_id = GME_form_a_new_government
+		prerequisite = {
+			focus = GME_form_a_new_government
+		}
+		prerequisite = {
+			focus = GME_abolish_the_national_assembly
+			focus = GME_facade_parliament
+		}
+		x = 0
+		y = 1
+		completion_reward = {
+			every_country = {
+				custom_effect_tooltip = shift_towards_nsg
+				set_temp_variable = {
+					random_temp = random
+				}
+				divide_variable = {
+					random_temp = -4
+				}
+				add_to_variable = {
+					germania_opinion = var:random_temp
+				}
+			}
+		}
+	}
+	focus = {
+		id = GME_improve_relations_with_japan
+		icon = GFX_focus_chi_collaboration_with_the_japanese
+		cost = 5
+		relative_position_id = GME_gain_foreign_recognition
+		prerequisite = {
+			focus = GME_gain_foreign_recognition
+		}
+		x = -1
+		y = 1
+		completion_reward = {
+			JPN = {
+				custom_effect_tooltip = shift_towards_nsg
+				add_to_variable = {
+					germania_opinion = -0.5
+				}
+			}
+		}
+	}
+	focus = {
+		id = GME_intervene_in_the_british_civil_war
+		icon = GFX_focus_attack_britain
+		cost = 8
+		relative_position_id = GME_gain_foreign_recognition
+		prerequisite = {
+			focus = GME_gain_foreign_recognition
+		}
+		x = 1
+		y = 1
+		completion_reward = {
+			add_ideas = FGE_intervene_in_uk
+		}
+	}
+	focus = {
+		id = GME_deal_with_the_devil
+		icon = GFX_focus_chi_mission_to_the_soviet_union
+		cost = 5
+		relative_position_id = GME_improve_relations_with_japan
+		prerequisite = {
+			focus = GME_intervene_in_the_british_civil_war
+			focus = GME_improve_relations_with_japan
+		}
+		x = 1
+		y = 1
+		completion_reward = {
+			GME_remove_5_csa_trust = yes
+			RUS = {
+				custom_effect_tooltip = shift_towards_nsg
+				add_to_variable = {
+					germania_opinion = -0.5
+				}
+			}
+		}
+	}
+	focus = {
+		id = GME_government_propaganda
+		icon = GFX_goal_generic_propaganda
+		cost = 10
+		relative_position_id = GME_abolish_town_privileges
+		x = -2
+		y = 1
+		prerequisite = {
+			focus = GME_abolish_town_privileges
+		}
+		prerequisite = {
+			focus = GME_abolish_the_national_assembly
+			focus = GME_facade_parliament
+		}
+		completion_reward = {
+			add_popularity = {
+				ideology = var:current_party_ideology_group
+				popularity = 0.4
+			}
+			add_political_power = 100
+			IF = {
+				limit = {
+					is_subject_of = CSA
+				}
+				GME_add_5_csa_trust = yes
+				GME_add_5_authority = yes
+			}
+		}
+	}
+	focus = {
+		id = GME_war_propaganda
+		icon = GFX_goal_generic_propaganda
+		cost = 10
+		relative_position_id = GME_government_propaganda
+		x = 0
+		y = 1
+		available = {
+			has_war = yes
+		}
+		prerequisite = {
+			focus = GME_government_propaganda
+		}
+		completion_reward = {
+			add_war_support = 0.4
+			IF = {
+				limit = {
+					is_subject_of = CSA
+				}
+				GME_add_5_csa_trust = yes
+				GME_add_5_authority = yes
+			}
+		}
+	}
+	focus = {
+		id = GME_found_a_secret_service
+		icon = GFX_focus_generic_secret_service_agency
+		cost = 10
+		relative_position_id = GME_abolish_town_privileges
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = GME_abolish_town_privileges
+		}
+		prerequisite = {
+			focus = GME_abolish_the_national_assembly
+			focus = GME_facade_parliament
+		}
+		completion_reward = {
+			add_ideas = GME_secret_service
+			IF = {
+				limit = {
+					is_subject_of = CSA
+				}
+				GME_add_5_csa_trust = yes
+				GME_add_5_authority = yes
+			}
+		}
+	}
+	focus = {
+		id = GME_crack_down_on_political_dissidents
+		icon = GFX_focus_generic_national_security
+		cost = 10
+		relative_position_id = GME_found_a_secret_service
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = GME_found_a_secret_service
+		}
+		completion_reward = {
+			add_ideas = GME_crack_down_on_political_dissidents
+			IF = {
+				limit = {
+					is_subject_of = CSA
+				}
+				GME_add_5_csa_trust = yes
+				GME_add_10_authority = yes
+			}
+		}
+	}
+	focus = {
+		id = GME_mass_conscription
+		icon = GFX_focus_SOV_mobilization_plan
+		cost = 10
+		relative_position_id = GME_abolish_town_privileges
+		x = 2
+		y = 1
+		prerequisite = {
+			focus = GME_abolish_town_privileges
+		}
+		prerequisite = {
+			focus = GME_abolish_the_national_assembly
+			focus = GME_facade_parliament
+		}
+		completion_reward = {
+			add_ideas = GME_mass_conscription
+		}
+	}
+	focus = {
+		id = GME_military_police
+		icon = GFX_focus_eng_move_to_secure_the_dominions
+		cost = 10
+		relative_position_id = GME_mass_conscription
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = GME_mass_conscription
+		}
+		completion_reward = {
+			GME_add_10_authority = yes
+			add_tech_bonus = {
+				bonus = 2
+				uses = 2
+				category = military_police_tech
+			}
+		}
+	}
+	focus = {
+		id = GME_nationalize_industry
+		icon = GFX_focus_generic_annex_country
+		cost = 1
+		relative_position_id = GME_abolish_town_privileges
+		x = -6
+		y = 1
+		mutually_exclusive = {
+			focus = GME_private_economy
+		}
+		prerequisite = {
+			focus = GME_abolish_town_privileges
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GME_private_economy
+		icon = GFX_goal_generic_positive_trade_relations
+		cost = 1
+		relative_position_id = GME_abolish_town_privileges
+		x = -10
+		y = 1
+		mutually_exclusive = {
+			focus = GME_nationalize_industry
+		}
+		prerequisite = {
+			focus = GME_abolish_town_privileges
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = GME_repair_berlin
+		icon = GFX_goal_continuous_repairments
+		cost = 7.5
+		relative_position_id = GME_private_economy
+		x = 2
+		y = 1
+		prerequisite = {
+			focus = GME_private_economy
+			focus = GME_nationalize_industry
+		}
+		available = {
+			64 = {
+				state_population > 1
+				is_controlled_by = ROOT
+			}
+		}
+		completion_reward = {
+			add_victory_points = {
+				province = 6521
+				value = 5
+			}
+			64 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = GME_reichsautobahn
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 7.5
+		relative_position_id = GME_nationalize_industry
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = GME_nationalize_industry
+		}
+		available = {
+			
+		}
+		completion_reward = {
+			every_controlled_state = {
+				limit = {
+					is_core_of = ROOT
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = GME_repair_the_heavy_water_facility
+		icon = GFX_goal_generic_construct_civilian
+		cost = 10
+		relative_position_id = GME_reichsautobahn
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = GME_reichsautobahn
+		}
+		available = {
+			110 = {
+				is_controlled_by = ROOT
+			}
+		}
+		completion_reward = {
+			110 = {
+				add_extra_state_shared_building_slots = 6
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = GME_merge_greater_aachen
+		icon = GFX_focus_SOV_merge_plants
+		cost = 4
+		relative_position_id = GME_nationalize_industry
+		x = 2
+		y = 1
+		prerequisite = {
+			focus = GME_nationalize_industry
+		}
+		available = {
+			
+		}
+		completion_reward = {
+			add_political_power = 100
+			every_controlled_state = {
+				limit = {
+					is_core_of = ROOT
+					OR = {
+						state = 51
+						state = 35
+						state = 57
+						state = 7
+						state = 36
+					}
+				}
+				set_building_level = {
+					type = infrastructure
+					level = 5
+					instant_build = yes
+				}
+			}
 		}
 	}
 }

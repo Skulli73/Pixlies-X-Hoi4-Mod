@@ -259,6 +259,14 @@ FGE_return_home = {
 				}
 				set_cosmetic_tag = GME
 			}
+			CSA = {
+				every_owned_state = {
+					limit = {
+						state = 7
+					}
+					set_state_owner_to = ROOT
+				}
+			}
 			hidden_effect = {
 				every_core_state = {
 					remove_core_of = GME
@@ -1239,7 +1247,11 @@ FGE_GME_recognition = {
 			factor = 0
 			modifier = {
 				add = 100
-				surrender_progress > 0.74
+				GME = {
+					check_variable = {
+						CSA_trust < 5
+					}
+				}
 			}
 		}
 		complete_effect = {
@@ -1762,6 +1774,10 @@ GME_state_of_the_national_state = {
 					CSA_trust > 0
 				}
 			}
+			has_war_with = FGE
+			NOT = {
+				is_subject_of = CSA
+			}
 		}
 		activation = {
 				check_variable = {
@@ -1769,6 +1785,9 @@ GME_state_of_the_national_state = {
 				}
 				is_subject_of = CSA
 				tag = GME
+				NOT = {
+					has_war_with = FGE
+				}
 		}
 		is_bad = yes
 		timeout_effect = {
@@ -1845,6 +1864,9 @@ GME_state_of_the_national_state = {
 			}
 		}
 	}
+	
+}
+political_actions = {
 	GME_end_VNZ_exile = {
 		cost = 100
 		targets = {VNZ}

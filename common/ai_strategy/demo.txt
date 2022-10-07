@@ -229,3 +229,34 @@ BRT_join_FGE = {
 		value = 10000
 	}
 }
+CSA_garrison_GME = {
+	allowed = {
+		original_tag = CSA
+	}
+	enable = {
+		GME = {
+			is_subject_of = ROOT
+		}
+		NOT = {
+			has_war_with = FGE
+		}
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = force_defend_ally_borders
+		id = FGE
+		value = 100
+	}
+	# ai_strategy = {
+	# 	type = prepare_for_war
+	# 	id = FGE
+	# 	value = 100
+	# }
+	ai_strategy = {
+		type = put_unit_buffers
+		ratio = 0.5
+		states = {
+			51 35  57 36 56 42 8 34 6
+		}
+	}
+}

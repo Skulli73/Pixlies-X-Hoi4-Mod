@@ -236,6 +236,7 @@ country_event = { #vnz join back gme
 		}
 		307 = {
 			add_manpower = -6
+			add_core_of = GME
 		}
 	}
 	option = {
@@ -265,6 +266,7 @@ country_event = { #vnz join back gme
 		}
 		307 = {
 			add_manpower = -6
+			add_core_of = GME
 		}
 	}
 	option = {

@@ -75,7 +75,7 @@ ideas = {
 			available = {
 				is_subject_of = CSA
 				check_variable = {
-					csa_trust < 0.5
+					csa_trust < 0.4
 				}
 			}
 			modifier = {
@@ -94,7 +94,7 @@ ideas = {
 			available = {
 				is_subject_of = CSA
 				check_variable = {
-					csa_trust > 0.49
+					csa_trust > 0.39
 				}
 				check_variable = {
 					csa_trust < 0.75
@@ -112,7 +112,7 @@ ideas = {
 					ELSE_IF = {
 						limit = {
 							check_variable = {
-								csa_trust < 0.5
+								csa_trust < 0.4
 							}
 						}
 						add_ideas = GME_su_distrust

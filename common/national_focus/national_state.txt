@@ -494,7 +494,7 @@ focus_tree = {
 				set_temp_variable = {
 					random_temp = random
 				}
-				divide_variable = {
+				divide_temp_variable = {
 					random_temp = -4
 				}
 				add_to_variable = {
@@ -523,7 +523,7 @@ focus_tree = {
 				set_temp_variable = {
 					random_temp = random
 				}
-				divide_variable = {
+				divide_temp_variable = {
 					random_temp = -4
 				}
 				add_to_variable = {

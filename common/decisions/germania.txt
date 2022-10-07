@@ -379,8 +379,10 @@ FGE_destroy_CSA = {
 						state = 493
 						state = 306
 						state = 695
+						is_core_of = VNZ
 					}
 					is_owned_by = WIL
+					
 				}
 				transfer_state_to = ROOT
 			}
@@ -1428,7 +1430,7 @@ FGE_ecuador_conflict = {
 GME_state_of_the_national_state = {
 	GME_factory_strike = {
 		state_target = yes
-		cost = 25
+		cost = 12.5
 		days_remove = 25
 		target_array = owned_controlled_states
 		modifier = {
@@ -1487,7 +1489,7 @@ GME_state_of_the_national_state = {
 	}
 	GME_refuse_resource_extraction = {
 		state_target = yes
-		cost = 25
+		cost = 12.5
 		days_remove = 25
 		target_array = owned_controlled_states
 		modifier = {
@@ -1575,7 +1577,7 @@ GME_state_of_the_national_state = {
 	GME_take_control_over_resources = {
 
 		state_target = yes
-		cost = 50
+		cost = 25
 		days_remove = 25
 		target_array = owned_controlled_states
 		allowed = { 
@@ -1690,7 +1692,6 @@ GME_state_of_the_national_state = {
 			}
 		}
 		target_trigger = {
-			is_owned_and_controlled_by = ROOT
 			CSA = {
 				divisions_in_state = {
 					size > 0
@@ -1698,14 +1699,15 @@ GME_state_of_the_national_state = {
 				}
 			}
 			FROM = {
+				is_owned_and_controlled_by = ROOT
 				any_neighbor_state = {
 					is_owned_and_controlled_by = ROOT
 				}
 			}
 		}
 		days_remove = 1
-		cost = 75
-		complete_effect = {
+		cost = 40
+		remove_effect = {
 			ROOT = {
 				add_popularity = {
 					ideology = neutrality
@@ -1749,6 +1751,117 @@ GME_state_of_the_national_state = {
 			}
 			
 				
+		}
+	}
+	GME_su_fires_government = {
+		days_mission_timeout = 100
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = GME_su_fires_government_tt
+				check_variable = {
+					CSA_trust > 0
+				}
+			}
+		}
+		activation = {
+				check_variable = {
+					CSA_trust < 0
+				}
+				is_subject_of = CSA
+				tag = GME
+		}
+		is_bad = yes
+		timeout_effect = {
+			complete_national_focus = GME_resist_the_su
+			add_popularity = {
+				ideology = neutrality
+				popularity = -0.15
+			}
+			IF = {
+				limit = {
+					NOT = {
+						has_completed_focus = GME_resist_the_su
+					}
+				}
+					promote_character = {
+						character = gryn
+						ideology = despotism
+					}
+			}
+			CSA = {
+				hidden_effect = {
+					news_event = {
+						id = nsg.8
+						days = 1
+					}
+				}
+				GME = {
+					set_cosmetic_tag = GME_NEUTRALITY_GRYN
+					set_temp_variable = {
+						fascism_neutrality_ratio = party_popularity@fascism
+					}
+					set_temp_variable = {
+						fascism_plus_neutrality = party_popularity@fascism
+					}
+					add_to_temp_variable = {
+						fascism_plus_neutrality = party_popularity@neutrality
+					}
+					divide_temp_variable = {
+						fascism_neutrality_ratio = fascism_plus_neutrality
+					}
+					promote_character = alternis
+					start_civil_war = {
+						ruling_party = neutrality
+						ideology = fascism
+						size =var:fascism_neutrality_ratio
+						keep_unit_leaders_trigger = {
+							NOT = {
+								is_character = alternis
+							}
+						}
+						states_filter = {
+							OR = {
+								region = 21
+								any_neighbor_state = {
+									region = 21
+								}
+								region = 5
+								state = 28
+								state = 42
+							}
+						}
+						states = {
+							7 36 35 6 34 8 29 28 42 50 3 151 153 152 52 53 29
+						}
+						CSA = {
+							add_to_war = {
+								targeted_alliance = PREV
+								enemy = FROM
+								hostility_reason = asked_to_join
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	GME_end_VNZ_exile = {
+		cost = 100
+		targets = {VNZ}
+		fire_only_once = yes
+		visible = {
+			has_completed_focus = GME_form_a_new_government
+		}
+		allowed = {
+			original_tag = GME
+		}
+		complete_effect = {
+			FROM = {
+				country_event = {
+					id = nsg.9
+					hours = 6
+				}
+			}
 		}
 	}
 }

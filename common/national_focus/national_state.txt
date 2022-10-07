@@ -20,16 +20,24 @@ focus_tree = {
 			add_ideas = GME_placate_the_su
 			GME_add_5_csa_trust = yes
 		}
+		ai_will_do = {
+			factor = 100
+		}
 	}
 
 	focus = {
 		id = GME_resist_the_su
 		icon = GFX_focus_liberate_germania
 		cost = 10
-		x = 15
+		x = 25
 		y = 0
 		available = {
 			is_subject_of = CSA
+		}
+		bypass = {
+			NOT = {
+				is_subject_of = CSA
+			}
 		}
 		mutually_exclusive = {
 			focus = GME_placate_the_su
@@ -196,9 +204,17 @@ focus_tree = {
 	focus = {
 		id = GME_passive_resistance
 		icon = GFX_goal_continuous_boost_freedom
-		cost = 10
+		cost = 5
 		x = -2
 		y = 1
+		available = {
+			is_subject_of = CSA
+		}
+		bypass = {
+			NOT = {
+				is_subject_of = CSA
+			}
+		}
 		relative_position_id = GME_resist_the_su
 		prerequisite = {
 			focus = GME_resist_the_su
@@ -215,9 +231,17 @@ focus_tree = {
 	focus = {
 		id = GME_active_resistance
 		icon = GFX_focus_generic_support_the_left_right
-		cost = 10
+		cost = 5
 		x = 2
 		y = 1
+		available = {
+			is_subject_of = CSA
+		}
+		bypass = {
+			NOT = {
+				is_subject_of = CSA
+			}
+		}
 		relative_position_id = GME_resist_the_su
 		prerequisite = {
 			focus = GME_resist_the_su
@@ -234,9 +258,17 @@ focus_tree = {
 	focus = {
 		id = GME_strike_in_the_factories
 		icon = GFX_goal_generic_demand_territory
-		cost = 10
+		cost = 5
 		x = -1
 		y = 1
+		available = {
+			is_subject_of = CSA
+		}
+		bypass = {
+			NOT = {
+				is_subject_of = CSA
+			}
+		}
 		relative_position_id = GME_passive_resistance
 		prerequisite = {
 			focus = GME_passive_resistance
@@ -248,9 +280,17 @@ focus_tree = {
 	focus = {
 		id = GME_refuse_extraction_collaboration
 		icon = GFX_focus_spr_the_anti_fascist_workers_revolution
-		cost = 10
+		cost = 5
 		x = 1
 		y = 1
+		available = {
+			is_subject_of = CSA
+		}
+		bypass = {
+			NOT = {
+				is_subject_of = CSA
+			}
+		}
 		relative_position_id = GME_passive_resistance
 		prerequisite = {
 			focus = GME_passive_resistance
@@ -262,9 +302,17 @@ focus_tree = {
 	focus = {
 		id = GME_take_control_over_resources
 		icon = GFX_focus_generic_steel
-		cost = 10
+		cost = 5
 		x = -1
 		y = 1
+		available = {
+			is_subject_of = CSA
+		}
+		bypass = {
+			NOT = {
+				is_subject_of = CSA
+			}
+		}
 		relative_position_id = GME_active_resistance
 		prerequisite = {
 			focus = GME_active_resistance
@@ -276,9 +324,17 @@ focus_tree = {
 	focus = {
 		id = GME_attack_occupying_forces
 		icon = GFX_focus_generic_manpower
-		cost = 10
+		cost = 5
 		x = 1
 		y = 1
+		available = {
+			is_subject_of = CSA
+		}
+		bypass = {
+			NOT = {
+				is_subject_of = CSA
+			}
+		}
 		relative_position_id = GME_active_resistance
 		prerequisite = {
 			focus = GME_active_resistance
@@ -290,9 +346,18 @@ focus_tree = {
 	focus = {
 		id = GME_demand_su_leave
 		icon = GFX_focus_liberate_germania
-		cost = 10
+		cost = 5
 		x = -1
 		y = 1
+		available = {
+			is_subject_of = CSA
+		}
+		bypass = {
+			NOT = {
+				is_subject_of = CSA
+			}
+			has_war_with = CSA
+		}
 		relative_position_id = GME_take_control_over_resources
 		available = {
 			has_idea = GME_very_low_authority
@@ -305,12 +370,90 @@ focus_tree = {
 			focus = GME_strike_in_the_factories
 		}
 		completion_reward = {
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.15
+			}
 			OVERLORD = {
 				country_event = {
 					id = nsg.7
 					hours = 6
 				}
 			}
+		}
+	}
+	focus = {
+		id = GME_cooperate_with_the_overseeer
+		icon = GFX_focus_generic_diplomatic_treaty
+		cost = 7.5
+		available = {
+			is_subject_of = CSA
+		}
+		relative_position_id = GME_placate_the_su 
+		x = 9
+		y = 1
+		mutually_exclusive = {
+			focus = GME_divert_power_to_gryn
+		}
+		prerequisite = {
+			focus = GME_placate_the_su
+			focus = GME_resist_the_su
+		}
+		completion_reward = {
+			GME_remove_10_authority = yes
+			GME_add_10_csa_trust = yes
+		}
+	}
+	focus = {
+		id = GME_divert_power_to_gryn
+		icon = GFX_focus_generic_military_dictatorship
+		cost = 7.5
+		relative_position_id = GME_placate_the_su 
+		mutually_exclusive = {
+			focus = GME_cooperate_with_the_overseeer
+		}
+		x = 11
+		y = 1
+		prerequisite = {
+			focus = GME_placate_the_su
+			focus = GME_resist_the_su
+		}
+		completion_reward = {
+			GME_add_10_authority = yes
+			GME_remove_10_csa_trust = yes
+		}
+	}
+	focus = {
+		id = GME_abolish_town_privileges
+		icon = GFX_focus_renounce_the_treaty_of_trianon
+		cost = 10
+		relative_position_id = GME_cooperate_with_the_overseeer 
+		prerequisite = {
+			focus = GME_cooperate_with_the_overseeer
+			focus = GME_divert_power_to_gryn
+		}
+		x = -2
+		y = 1
+		completion_reward = {
+			GME_add_10_authority = yes
+			add_political_power = 100
+			add_stability = -0.05
+		}
+	}
+	focus = {
+		id = GME_form_a_new_government
+		icon = GFX_focus_generic_improve_the_administration
+		cost = 10
+		relative_position_id = GME_cooperate_with_the_overseeer 
+		prerequisite = {
+			focus = GME_cooperate_with_the_overseeer
+			focus = GME_divert_power_to_gryn
+		}
+		x = 4
+		y = 1
+		completion_reward = {
+			GME_add_10_authority = yes
+			custom_effect_tooltip = GME_form_a_new_government_tt
 		}
 	}
 }

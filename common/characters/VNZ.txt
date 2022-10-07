@@ -1,0 +1,84 @@
+characters = {
+	blitz = {
+		name = "Blitz"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/VNZ/blitz.dds"
+			}
+			army = {
+				large = "gfx/leaders/VNZ/blitz.dds"
+				small = "gfx/interface/ideas/VNZ/blitz.dds"
+			}
+		}
+		country_leader = {
+			ideology = nazism
+			traits = {
+				exiled
+				eager_collaborator
+			}
+		}
+		country_leader = {
+			ideology = centrism
+			traits = {
+				exiled
+				eager_collaborator
+			}
+		}
+		advisor = {
+			slot = minister_of_defense
+			idea_token = blitz_minister_of_defense
+			traits = {
+				eager_collaborator
+			}
+			available = {
+				IF = {
+					limit = {
+						original_tag = GME
+					}
+					has_completed_focus = GME_form_a_new_government
+				}
+			}
+		}
+	}
+	physic = {
+		name = "Physic"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/VNZ/physic.dds"
+			}
+			army = {
+				large = "gfx/leaders/VNZ/physic.dds"
+				small = "gfx/interface/ideas/VNZ/physic.dds"
+			}
+		}
+		country_leader = {
+			ideology = nazism
+			traits = {
+				exiled
+				tenacious_negotiator
+			}
+		}
+		country_leader = {
+			ideology = centrism
+			traits = {
+				exiled
+				tenacious_negotiator
+			}
+		}
+		advisor = {
+			slot = minister_of_foreign_affairs
+			idea_token = physic_minister_of_foreign_affairs
+			traits = {
+				tenacious_negotiator
+			}
+			available = {
+				IF = {
+					limit = {
+						original_tag = GME
+					}
+					has_completed_focus = GME_form_a_new_government
+				}
+			}
+		}
+	}
+}

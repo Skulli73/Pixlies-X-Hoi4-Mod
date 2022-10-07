@@ -203,3 +203,120 @@ news_event = {
 	}
 	
 }
+country_event = { #vnz join back gme
+	id = nsg.9
+	title = nsg.9.t
+	desc = nsg.9.d
+	
+	is_triggered_only = yes
+	option = {
+		name = nsg.9.a
+		ai_chance = {
+			factor = 50
+		}
+		every_character = {
+			limit = {
+				has_nationality = VNZ
+			}
+			set_nationality = GME
+		}
+		GME = {
+			annex_country = {
+				target = ROOT
+				transfer_troops = yes
+			}
+		}
+		hidden_effect = {
+			CSA = {
+				news_event = {
+					id = nsg.10
+					hours = 6
+				}
+			}
+		}
+		64 = {
+			add_manpower = 6
+		}
+		307 = {
+			add_manpower = -6
+		}
+	}
+	option = {
+		name = nsg.9.b
+		ai_chance = {
+			factor = 50
+		}
+		every_character = {
+			limit = {
+				has_nationality = VNZ
+			}
+			set_nationality = GME
+		}
+		CSA = {
+			annex_country = {
+				target = ROOT
+				transfer_troops = yes
+			}
+		}
+		hidden_effect = {
+			CSA = {
+				news_event = {
+					id = nsg.11
+					hours = 6
+				}
+			}
+		}
+		64 = {
+			add_manpower =6
+		}
+		307 = {
+			add_manpower = -6
+		}
+	}
+	option = {
+		nsg.9.c 
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+news_event = {
+	id = nsg.10
+	title = nsg.10.t
+	desc = nsg.10.d
+	is_triggered_only = yes
+	major = yes
+	picture = GFX_news_event_generic_sign_treaty1
+	option = {
+		name = nsg.10.a
+		trigger = {
+			is_in_faction_with = GME
+		}
+	}
+	option = {
+		name = nsg.10.b
+		trigger = {
+			NOT = {is_in_faction_with = GME}
+		}
+	}
+}
+news_event = {
+	id = nsg.11
+	title = nsg.10.t
+	desc = nsg.11.d
+	is_triggered_only = yes
+	major = yes
+	picture = GFX_news_event_generic_sign_treaty1
+	option = {
+		name = nsg.10.a
+		trigger = {
+			is_in_faction_with = GME
+		}
+	}
+	option = {
+		name = nsg.10.b
+		trigger = {
+			NOT = {is_in_faction_with = GME}
+		}
+	}
+}

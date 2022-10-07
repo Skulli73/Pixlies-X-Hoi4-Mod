@@ -458,6 +458,7 @@ characters = {
 			traits = {
 				eager_collaborator
 				anti_democrat
+				dictator
 			}
 		}
 		country_leader = {
@@ -473,6 +474,29 @@ characters = {
 			defense_skill = 2
 			planning_skill = 1
 			logistics_skill = 1
+		}
+	}
+	gamingboy = {
+		name = "TheGamingboy2006"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/GME/gamingboy.dds"
+			}
+			army = {
+				large = "gfx/leaders/GME/gamingboy.dds"
+				small = "gfx/interface/ideas/GME/gamingboy.dds"
+			}
+		}
+		advisor = {
+			slot = minister_of_internal_affairs
+			idea_token = gamingboy_minister_of_internal_affairs
+			traits = {
+				great_architect
+				
+			}
+			available = {
+				has_completed_focus = GME_form_a_new_government
+			}
 		}
 	}
 }

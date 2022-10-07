@@ -299,5 +299,12 @@ ideas = {
 				conscription = 0.03
 			}
 		}
+		GME_attract_private_investors = {
+			name = GME_attract_private_investors
+			picture = generic_economic_increase
+			modifier = {
+				consumer_goods_factor = -0.1
+			}
+		}
 	}
 }

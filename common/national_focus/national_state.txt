@@ -879,4 +879,54 @@ focus_tree = {
 			}
 		}
 	}
+	focus = {
+		id = GME_private_business_in_aachen
+		icon = GFX_goal_CSA_South_African_Economy_corrupt
+		cost = 10
+		relative_position_id = GME_private_economy
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = GME_private_economy
+		}
+		available = {
+			
+		}
+		completion_reward = {
+			every_controlled_state = {
+				limit = {
+					is_core_of = ROOT
+					OR = {
+						state = 51
+						state = 35
+						state = 57
+						state = 7
+						state = 36
+					}
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = GME_attract_private_investors
+		icon = GFX_CSA_Based_Liberalism
+		cost = 10
+		relative_position_id = GME_private_economy
+		x = -2
+		y = 1
+		prerequisite = {
+			focus = GME_private_economy
+		}
+		available = {
+			
+		}
+		completion_reward = {
+			add_ideas = GME_attract_private_investors
+		}
+	}
 }

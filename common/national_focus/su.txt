@@ -114,4 +114,217 @@ focus_tree = {
 		completion_reward = {
 		}
 	}
-}
+
+	focus = {
+		id = CSA_DifficultDecision
+		icon = GFX_focus_generic_monarchy_1
+		cost = 10
+		x = 0
+		y = 2
+		relative_position_id = CSA_TrollingInAtlanta
+		prerequisite = {
+			focus = CSA_KeepCalmAnd
+		}
+		prerequisite = {
+			focus = CSA_BlameItOnTheGerms
+		}
+		completion_reward = {
+		}
+	}
+
+	#[ReactionaryFocci]
+	focus = {
+		id = CSA_IllDoitMyself
+		icon = GFX_focus_generic_monarchy_1
+		cost = 10
+		x = -5
+		y = 1
+		relative_position_id = CSA_DifficultDecision
+		prerequisite = {
+			focus = CSA_DifficultDecision
+		}
+		completion_reward = {
+		}
+	}
+	
+	#[Communist/Liberal/ConservativeFocci]
+	focus = {
+		id = CSA_LetCongressHelp
+		icon = GFX_focus_generic_monarchy_1
+		cost = 10
+		x = 5
+		y = 1
+		relative_position_id = CSA_DifficultDecision
+		prerequisite = {
+			focus = CSA_DifficultDecision
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = CSA_BehindtheShadows
+		icon = GFX_focus_generic_monarchy_1
+		cost = 10
+		x = 0
+		y = 1
+		relative_position_id = CSA_LetCongressHelp
+		prerequisite = {
+			focus = CSA_LetCongressHelp
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = CSA_RevolutionaryCommitty
+		icon = GFX_focus_generic_monarchy_1
+		cost = 10
+		x = 0
+		y = 1
+		relative_position_id = CSA_BehindtheShadows
+		prerequisite = {
+			focus = CSA_BehindtheShadows
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = CSA_PoliticalPeace
+		icon = GFX_focus_generic_monarchy_1
+		cost = 10
+		x = -4
+		y = 1
+		relative_position_id = CSA_RevolutionaryCommitty
+		prerequisite = {
+			focus = CSA_RevolutionaryCommitty
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = CSA_ReinviteTheExiles
+		icon = GFX_focus_generic_monarchy_1
+		cost = 10
+		x = 1
+		y = 1
+		relative_position_id = CSA_PoliticalPeace
+		prerequisite = {
+			focus = CSA_PoliticalPeace
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = CSA_UnitedFront
+		icon = GFX_focus_generic_monarchy_1
+		cost = 10
+		x = 1
+		y = 1
+		relative_position_id = CSA_ReinviteTheExiles
+		prerequisite = {
+			focus = CSA_ReinviteTheExiles
+		}
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = CSA_MilitarySabotage
+		icon = GFX_focus_generic_monarchy_1
+		cost = 10
+		x = 0
+		y = 1
+		relative_position_id = CSA_RevolutionaryCommitty
+		prerequisite = {
+			focus = CSA_RevolutionaryCommitty
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = CSA_CovertActions
+		icon = GFX_focus_generic_monarchy_1
+		cost = 10
+		x = 0
+		y = 1
+		relative_position_id = CSA_MilitarySabotage
+		prerequisite = {
+			focus = CSA_MilitarySabotage
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = CSA_TrapsAgainstAtlanta
+		icon = GFX_focus_generic_monarchy_1
+		cost = 10
+		x = 0
+		y = 1
+		relative_position_id = CSA_CovertActions
+		prerequisite = {
+			focus = CSA_CovertActions
+		}
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = CSA_MisleadMatt
+		icon = GFX_focus_generic_monarchy_1
+		cost = 10
+		x = 4
+		y = 1
+		relative_position_id = CSA_RevolutionaryCommitty
+		prerequisite = {
+			focus = CSA_RevolutionaryCommitty
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = CSA_MeetWithGovernors
+		icon = GFX_focus_generic_monarchy_1
+		cost = 10
+		x = -1
+		y = 1
+		relative_position_id = CSA_MisleadMatt
+		prerequisite = {
+			focus = CSA_MisleadMatt
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = CSA_StormArmories
+		icon = GFX_focus_generic_monarchy_1
+		cost = 10
+		x = -1
+		y = 1
+		relative_position_id = CSA_MeetWithGovernors
+		prerequisite = {
+			focus = CSA_MeetWithGovernors
+		}
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = CSA_CastTheDie
+		icon = GFX_focus_generic_monarchy_1
+		cost = 10
+		x = 0
+		y = 1
+		relative_position_id = CSA_TrapsAgainstAtlanta
+		prerequisite = {
+			focus = CSA_StormArmories
+		}
+			prerequisite = {
+			focus = CSA_TrapsAgainstAtlanta
+		}
+			prerequisite = {
+			focus = CSA_UnitedFront
+		}
+		completion_reward = {
+		}
+	}
+
+}	

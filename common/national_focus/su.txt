@@ -306,7 +306,6 @@ focus_tree = {
 		completion_reward = {
 		}
 	}
-	
 	focus = {
 		id = CSA_CastTheDie
 		icon = GFX_focus_generic_monarchy_1
@@ -322,6 +321,65 @@ focus_tree = {
 		}
 			prerequisite = {
 			focus = CSA_UnitedFront
+		}
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = CSA_RevolutionaryInfighting
+		icon = GFX_focus_generic_monarchy_1
+		cost = 10
+		x = 0
+		y = 1
+		relative_position_id = CSA_CastTheDie
+		prerequisite = {
+			focus = CSA_CastTheDie
+		}
+		completion_reward = {
+		}
+	}
+
+	#CommieFocci
+	focus = {
+		id = CSA_CommiesTakeOver
+		icon = GFX_focus_generic_monarchy_1
+		cost = 10
+		x = 0
+		y = 1
+		relative_position_id = CSA_RevolutionaryInfighting
+		prerequisite = {
+			focus = CSA_RevolutionaryInfighting
+		}
+		completion_reward = {
+		}
+	}
+
+	#LibFocci
+	focus = {
+		id = CSA_LibsTakeOver
+		icon = GFX_focus_generic_monarchy_1
+		cost = 10
+		x = 10
+		y = 1
+		relative_position_id = CSA_RevolutionaryInfighting
+		prerequisite = {
+			focus = CSA_RevolutionaryInfighting
+		}
+		completion_reward = {
+		}
+	}
+
+	#ConservativeFocci
+	focus = {
+		id = CSA_SalTakesOver
+		icon = GFX_focus_generic_monarchy_1
+		cost = 10
+		x = 20
+		y = 1
+		relative_position_id = CSA_RevolutionaryInfighting
+		prerequisite = {
+			focus = CSA_RevolutionaryInfighting
 		}
 		completion_reward = {
 		}

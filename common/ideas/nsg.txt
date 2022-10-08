@@ -306,5 +306,20 @@ ideas = {
 				consumer_goods_factor = -0.1
 			}
 		}
+		GME_defensive_focus = {
+			name = GME_defensive_focus
+			picture = yug_federal_defense_council
+			modifier = {
+				ai_focus_defense_factor = 0.5
+				defence = 0.2
+			}
+		}
+		GME_fortification_effort = {
+			name = GME_fortification_effort
+			picture = generic_fortify_the_borders
+			modifier = {
+				production_speed_bunker_factor = 0.5
+			}
+		}
 	}
 }

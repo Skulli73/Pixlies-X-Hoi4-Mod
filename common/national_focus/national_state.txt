@@ -929,4 +929,179 @@ focus_tree = {
 			add_ideas = GME_attract_private_investors
 		}
 	}
+
+	focus = {
+		id = GME_reorganize_the_military
+		icon = GFX_focus_chi_army_reform
+		cost = 10
+		relative_position_id = GME_resist_the_su
+		x = -12
+		y = 1
+		prerequisite = {
+			focus = GME_resist_the_su
+			focus = GME_placate_the_su
+		}
+		available = {
+			
+		}
+		completion_reward = {
+			army_experience = 20
+		}
+	}
+	focus = {
+		id = GME_defensive_focus
+		icon = GFX_goal_generic_defence
+		cost = 10
+		relative_position_id = GME_reorganize_the_military
+		x = -1
+		y = 1
+		prerequisite = {
+			focus = GME_reorganize_the_military
+		}
+		available = {
+			
+		}
+		completion_reward = {
+			add_ideas = GME_defensive_focus
+		}
+	}
+	focus = {
+		id = GME_fortification_effort
+		icon = GFX_goal_generic_fortify_city
+		cost = 5
+		relative_position_id = GME_defensive_focus
+		x = -2
+		y = 1
+		prerequisite = {
+			focus = GME_defensive_focus
+		}
+		available = {
+			
+		}
+		completion_reward = {
+			add_ideas = GME_fortification_effort
+		}
+	}
+	focus = {
+		id = GME_fortify_france
+		icon = GFX_focus_SWI_fortify_border_with_france
+		cost = 10
+		relative_position_id = GME_fortification_effort
+		x = -1
+		y = 1
+		prerequisite = {
+			focus = GME_fortification_effort
+		}
+		available = {
+			
+		}
+		bypass = {
+			has_war_with = FGE
+		}
+		completion_reward = {
+			every_owned_state = {
+				limit = {
+					is_core_of = BRT
+					any_neighbor_state = {
+						is_controlled_by = FGE
+					}
+				}
+				add_building_construction = {
+					type = bunker
+					level = 5
+					instant_build = yes
+					province = {
+						all_provinces = yes
+						limit_to_border = yes
+					}
+				}
+			}
+		}
+	}
+	focus = {
+		id = GME_fortify_the_alps
+		icon = GFX_focus_GRE_a_land_of_mountains
+		cost = 10
+		relative_position_id = GME_fortify_france
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = GME_fortify_france
+		}
+		prerequisite = {
+			focus = GME_fortify_against_poland
+		}
+		available = {
+			
+		}
+		bypass = {
+			OR = {
+				has_war_with = TRL
+				has_war_with = ILY
+				AND = {
+					ILY = {
+						has_capitulated = yes
+					}
+					has_war_with = FGE
+				}
+			}
+		}
+		completion_reward = {
+			every_owned_state = {
+				limit = {
+					region = 21
+					any_neighbor_state = {
+						OR = {
+							is_controlled_by = ILY
+							is_controlled_by = TRL
+						}
+					}
+				}
+				add_building_construction = {
+					type = bunker
+					level = 5
+					instant_build = yes
+					province = {
+						all_provinces = yes
+						limit_to_border = yes
+					}
+				}
+			}
+		}
+	}
+	focus = {
+		id = GME_fortify_against_poland
+		icon = GFX_goal_generic_construct_military
+		cost = 10
+		relative_position_id = GME_fortification_effort
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = GME_fortification_effort
+		}
+		available = {
+			
+		}
+		bypass = {
+			has_war_with = ZAP
+		}
+		completion_reward = {
+			every_owned_state = {
+				limit = {
+					any_neighbor_state = {
+						is_controlled_by = ZAP
+					}
+				}
+				add_building_construction = {
+					type = bunker
+					level = 5
+					instant_build = yes
+					province = {
+						all_provinces = yes
+						limit_to_border = yes
+					}
+				}
+			}
+		}
+	}
 }

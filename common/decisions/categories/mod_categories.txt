@@ -90,6 +90,6 @@ GME_state_of_the_national_state = {
 		original_tag = GME
 	}
 	visible = {
-		is_subject_of = CSA
+		
 	}
 }

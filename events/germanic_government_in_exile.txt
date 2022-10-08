@@ -1805,6 +1805,13 @@ news_event = {
 		trigger = {
 			is_in_faction_with = GME
 		}
+		IF = {
+			limit = {
+				original_tag = GME
+				is_subject_of = CSA
+			}
+			GME_remove_5_csa_trust = yes
+		}
 	}
 	option = {
 		name = gge.1000.c
@@ -1848,6 +1855,13 @@ news_event = {
 		name = gge.1003.b
 		trigger = {
 			is_in_faction_with = GME
+		}
+		IF = {
+			limit = {
+				original_tag = GME
+				is_subject_of = CSA
+			}
+			GME_remove_15_csa_trust = yes
 		}
 	}
 	option = {
@@ -1899,6 +1913,13 @@ news_event = {
 		trigger = {
 			is_in_faction_with = GME
 		}
+		IF = {
+			limit = {
+				original_tag = GME
+				is_subject_of = CSA
+			}
+			GME_remove_10_csa_trust = yes
+		}
 	}
 	option = {
 		name = gge.1004.c
@@ -1948,6 +1969,13 @@ news_event = {
 		name = gge.1005.b
 		trigger = {
 			is_in_faction_with = GME
+		}
+		IF = {
+			limit = {
+				original_tag = GME
+				is_subject_of = CSA
+			}
+			GME_remove_10_csa_trust = yes
 		}
 	}
 	option = {
@@ -1999,6 +2027,13 @@ news_event = {
 		trigger = {
 			is_in_faction_with = GME
 		}
+		IF = {
+			limit = {
+				original_tag = GME
+				is_subject_of = CSA
+			}
+			GME_remove_10_csa_trust = yes
+		}
 	}
 	option = {
 		name = gge.1006.c
@@ -2048,6 +2083,13 @@ news_event = {
 		name = gge.1007.b
 		trigger = {
 			is_in_faction_with = GME
+		}
+		IF = {
+			limit = {
+				original_tag = GME
+				is_subject_of = CSA
+			}
+			GME_remove_10_csa_trust = yes
 		}
 	}
 	option = {

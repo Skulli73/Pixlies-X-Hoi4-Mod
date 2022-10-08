@@ -85,3 +85,6 @@ set_politics = {
 set_popularities = {
 	neutrality = 100
 }
+recruit_character = blitz
+recruit_character = physic
+promote_character = blitz

@@ -75,7 +75,7 @@ ideas = {
 			available = {
 				is_subject_of = CSA
 				check_variable = {
-					csa_trust < 0.5
+					csa_trust < 0.4
 				}
 			}
 			modifier = {
@@ -94,7 +94,7 @@ ideas = {
 			available = {
 				is_subject_of = CSA
 				check_variable = {
-					csa_trust > 0.49
+					csa_trust > 0.39
 				}
 				check_variable = {
 					csa_trust < 0.75
@@ -112,7 +112,7 @@ ideas = {
 					ELSE_IF = {
 						limit = {
 							check_variable = {
-								csa_trust < 0.5
+								csa_trust < 0.4
 							}
 						}
 						add_ideas = GME_su_distrust
@@ -275,6 +275,50 @@ ideas = {
 			}
 			on_remove = {
 				add_ideas = GME_medium_authority
+			}
+		}
+		GME_secret_service = {
+			name = GME_secret_service
+			picture = generic_spy_intel
+			modifier = {
+				operative_slot = 2
+			}
+		}
+		GME_crack_down_on_political_dissidents = {
+			name = GME_crack_down_on_political_dissidents
+			picture = generic_democracy_banned
+			modifier = {
+				democratic_drift = -0.05
+				communism_drift = -0.05
+			}
+		}
+		GME_mass_conscription = {
+			name = GME_mass_conscription
+			picture = chi_forced_conscription
+			modifier = {
+				conscription = 0.03
+			}
+		}
+		GME_attract_private_investors = {
+			name = GME_attract_private_investors
+			picture = generic_economic_increase
+			modifier = {
+				consumer_goods_factor = -0.1
+			}
+		}
+		GME_defensive_focus = {
+			name = GME_defensive_focus
+			picture = yug_federal_defense_council
+			modifier = {
+				ai_focus_defense_factor = 0.5
+				defence = 0.2
+			}
+		}
+		GME_fortification_effort = {
+			name = GME_fortification_effort
+			picture = generic_fortify_the_borders
+			modifier = {
+				production_speed_bunker_factor = 0.5
 			}
 		}
 	}

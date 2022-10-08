@@ -142,9 +142,41 @@ on_actions = {
 				}
 				FROM = {
 					annex_country = {
-						target = ZAP
-						transfer_troops = yes
+						target = ROOT
+						transfer_troops = no
 					}
+				}
+			}
+			IF = {
+				limit = {
+					ROOT = {
+						original_tag = GME
+						has_government = fascism
+					}
+					FROM = {
+						tag = GME
+						has_government = neutrality
+					}
+				}
+				ROOT = {
+					OVERLORD = {
+						every_state = {
+							limit = {
+										is_owned_by = PREV
+										is_core_of = FROM
+							}
+							transfer_state_to = FROM
+						}
+						
+					}
+				}
+				FROM = {
+					annex_country = {
+						target = ROOT
+					}
+				}
+				CSA = {
+					white_peace = GME
 				}
 			}
 		}

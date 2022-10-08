@@ -1,0 +1,30 @@
+# possible - filters out achivements on game start so we dont have to check everything all the 
+#time
+## happened - checks if achivement happened
+#
+unique_id = mod_achievements 
+
+
+fourth_reichs_the_charm = {
+	
+	possible = {
+		always = yes
+	}
+	happened = {
+		original_tag = FGE
+		has_completed_focus = FGE_unite_eu
+		controls_state = 126
+		controls_state = 16
+		controls_state = 41
+		controls_state = 112
+		controls_state = 159
+		controls_state = 2
+		controls_state = 43
+		controls_state = 10
+		controls_state = 9
+		controls_state = 219
+		controls_state = 111
+		controls_state = 797
+		controls_state = 51
+	}
+}

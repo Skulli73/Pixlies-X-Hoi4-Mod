@@ -38,7 +38,7 @@ focus_tree = {
 		bypass = { has_country_flag = matt_failed_assasination }
 		x = 10
 		y = 0
-		cost = 10
+		cost = 2
 		#ai_will_do = {
 		#	factor = 1
 		#}
@@ -49,7 +49,7 @@ focus_tree = {
 		}
 
 		prerequisite = { }
-		cost = 10
+		cost = 2
 
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
@@ -61,7 +61,7 @@ focus_tree = {
 	focus = {
 		id = CSA_GetHot_KeepMoving
 		icon = GFX_focus_generic_monarchy_1
-		cost = 10
+		cost = 2
 		x = 0
 		y = 1
 		relative_position_id = CSA_atEveryone_AtlantaIsBuild
@@ -74,7 +74,7 @@ focus_tree = {
 	focus = {
 		id = CSA_TrollingInAtlanta
 		icon = GFX_focus_generic_monarchy_1
-		cost = 10
+		cost = 2
 		x = 0
 		y = 1
 		relative_position_id = CSA_GetHot_KeepMoving
@@ -87,7 +87,7 @@ focus_tree = {
 	focus = {
 		id = CSA_KeepCalmAnd
 		icon = GFX_focus_generic_monarchy_1
-		cost = 10
+		cost = 2
 		x = -1
 		y = 1
 		relative_position_id = CSA_TrollingInAtlanta
@@ -100,7 +100,7 @@ focus_tree = {
 	focus = {
 		id = CSA_BlameItOnTheGerms
 		icon = GFX_focus_generic_monarchy_1
-		cost = 10
+		cost = 2
 		x = 1
 		y = 1
 		relative_position_id = CSA_TrollingInAtlanta
@@ -118,7 +118,7 @@ focus_tree = {
 	focus = {
 		id = CSA_DifficultDecision
 		icon = GFX_focus_generic_monarchy_1
-		cost = 10
+		cost = 2
 		x = 0
 		y = 2
 		relative_position_id = CSA_TrollingInAtlanta
@@ -136,7 +136,7 @@ focus_tree = {
 	focus = {
 		id = CSA_IllDoitMyself
 		icon = GFX_focus_generic_monarchy_1
-		cost = 10
+		cost = 2
 		x = -5
 		y = 1
 		relative_position_id = CSA_DifficultDecision
@@ -151,7 +151,7 @@ focus_tree = {
 	focus = {
 		id = CSA_LetCongressHelp
 		icon = GFX_focus_generic_monarchy_1
-		cost = 10
+		cost = 2
 		x = 5
 		y = 1
 		relative_position_id = CSA_DifficultDecision
@@ -164,7 +164,7 @@ focus_tree = {
 	focus = {
 		id = CSA_BehindtheShadows
 		icon = GFX_focus_generic_monarchy_1
-		cost = 10
+		cost = 2
 		x = 0
 		y = 1
 		relative_position_id = CSA_LetCongressHelp
@@ -177,7 +177,7 @@ focus_tree = {
 	focus = {
 		id = CSA_RevolutionaryCommitty
 		icon = GFX_focus_generic_monarchy_1
-		cost = 10
+		cost = 2
 		x = 0
 		y = 1
 		relative_position_id = CSA_BehindtheShadows
@@ -190,7 +190,7 @@ focus_tree = {
 	focus = {
 		id = CSA_PoliticalPeace
 		icon = GFX_focus_generic_monarchy_1
-		cost = 10
+		cost = 2
 		x = -4
 		y = 1
 		relative_position_id = CSA_RevolutionaryCommitty
@@ -203,7 +203,7 @@ focus_tree = {
 	focus = {
 		id = CSA_ReinviteTheExiles
 		icon = GFX_focus_generic_monarchy_1
-		cost = 10
+		cost = 2
 		x = 1
 		y = 1
 		relative_position_id = CSA_PoliticalPeace
@@ -216,7 +216,7 @@ focus_tree = {
 	focus = {
 		id = CSA_UnitedFront
 		icon = GFX_focus_generic_monarchy_1
-		cost = 10
+		cost = 2
 		x = 1
 		y = 1
 		relative_position_id = CSA_ReinviteTheExiles
@@ -230,7 +230,7 @@ focus_tree = {
 	focus = {
 		id = CSA_MilitarySabotage
 		icon = GFX_focus_generic_monarchy_1
-		cost = 10
+		cost = 2
 		x = 0
 		y = 1
 		relative_position_id = CSA_RevolutionaryCommitty
@@ -243,7 +243,7 @@ focus_tree = {
 	focus = {
 		id = CSA_CovertActions
 		icon = GFX_focus_generic_monarchy_1
-		cost = 10
+		cost = 2
 		x = 0
 		y = 1
 		relative_position_id = CSA_MilitarySabotage
@@ -256,7 +256,7 @@ focus_tree = {
 	focus = {
 		id = CSA_TrapsAgainstAtlanta
 		icon = GFX_focus_generic_monarchy_1
-		cost = 10
+		cost = 2
 		x = 0
 		y = 1
 		relative_position_id = CSA_CovertActions
@@ -270,7 +270,7 @@ focus_tree = {
 	focus = {
 		id = CSA_MisleadMatt
 		icon = GFX_focus_generic_monarchy_1
-		cost = 10
+		cost = 2
 		x = 4
 		y = 1
 		relative_position_id = CSA_RevolutionaryCommitty
@@ -283,7 +283,7 @@ focus_tree = {
 	focus = {
 		id = CSA_MeetWithGovernors
 		icon = GFX_focus_generic_monarchy_1
-		cost = 10
+		cost = 2
 		x = -1
 		y = 1
 		relative_position_id = CSA_MisleadMatt
@@ -296,7 +296,7 @@ focus_tree = {
 	focus = {
 		id = CSA_StormArmories
 		icon = GFX_focus_generic_monarchy_1
-		cost = 10
+		cost = 2
 		x = -1
 		y = 1
 		relative_position_id = CSA_MeetWithGovernors
@@ -309,7 +309,7 @@ focus_tree = {
 	focus = {
 		id = CSA_CastTheDie
 		icon = GFX_focus_generic_monarchy_1
-		cost = 10
+		cost = 2
 		x = 0
 		y = 1
 		relative_position_id = CSA_TrapsAgainstAtlanta
@@ -329,7 +329,7 @@ focus_tree = {
 	focus = {
 		id = CSA_RevolutionaryInfighting
 		icon = GFX_focus_generic_monarchy_1
-		cost = 10
+		cost = 2
 		x = 0
 		y = 1
 		relative_position_id = CSA_CastTheDie
@@ -344,7 +344,7 @@ focus_tree = {
 	focus = {
 		id = CSA_CommiesTakeOver
 		icon = GFX_focus_generic_monarchy_1
-		cost = 10
+		cost = 2
 		x = 0
 		y = 1
 		relative_position_id = CSA_RevolutionaryInfighting
@@ -359,8 +359,8 @@ focus_tree = {
 	focus = {
 		id = CSA_LibsTakeOver
 		icon = GFX_focus_generic_monarchy_1
-		cost = 10
-		x = 10
+		cost = 2
+		x = 20
 		y = 1
 		relative_position_id = CSA_RevolutionaryInfighting
 		prerequisite = {
@@ -374,8 +374,8 @@ focus_tree = {
 	focus = {
 		id = CSA_SalTakesOver
 		icon = GFX_focus_generic_monarchy_1
-		cost = 10
-		x = 20
+		cost = 2
+		x = 40
 		y = 1
 		relative_position_id = CSA_RevolutionaryInfighting
 		prerequisite = {
@@ -384,5 +384,111 @@ focus_tree = {
 		completion_reward = {
 		}
 	}
-
+	focus = {
+		id = CSA_NegotiationsWithOldGuard
+		icon = GFX_focus_generic_monarchy_1
+		cost = 2
+		x = 0
+		y = 1
+		relative_position_id = CSA_SalTakesOver
+		prerequisite = {
+			focus = CSA_SalTakesOver
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = CSA_ReworkMattcobristSystem
+		icon = GFX_focus_generic_monarchy_1
+		cost = 2
+		x = -1
+		y = 1
+		relative_position_id = CSA_NegotiationsWithOldGuard
+		prerequisite = {
+			focus = CSA_NegotiationsWithOldGuard
+		}
+		completion_reward = {
+		}
+	}
+		focus = {
+		id = CSA_PeaceWithDirectorate
+		icon = GFX_focus_generic_monarchy_1
+		cost = 2
+		x = 1
+		y = 1
+		relative_position_id = CSA_NegotiationsWithOldGuard
+		prerequisite = {
+			focus = CSA_NegotiationsWithOldGuard
+		}
+		completion_reward = {
+		}
+	}
+		focus = {
+		id = CSA_AuthoritarianDemocracy
+		icon = GFX_focus_generic_monarchy_1
+		cost = 2
+		x = 1
+		y = 1
+		relative_position_id = CSA_ReworkMattcobristSystem
+		prerequisite = {
+			focus = CSA_ReworkMattcobristSystem
+		}
+		prerequisite = {
+			focus = CSA_PeaceWithDirectorate
+		}
+		completion_reward = {
+		}
+	}
+		focus = {
+		id = CSA_ReinforceCongressPower
+		icon = GFX_focus_generic_monarchy_1
+		cost = 2
+		x = -6
+		y = 1
+		relative_position_id = CSA_AuthoritarianDemocracy
+		prerequisite = {
+			focus = CSA_AuthoritarianDemocracy
+		}
+		completion_reward = {
+		}
+	}
+		focus = {
+		id = CSA_APresidentialSystem
+		icon = GFX_focus_generic_monarchy_1
+		cost = 2
+		x = -2
+		y = 1
+		relative_position_id = CSA_AuthoritarianDemocracy
+		prerequisite = {
+			focus = CSA_AuthoritarianDemocracy
+		}
+		completion_reward = {
+		}
+	}
+		focus = {
+		id = CSA_QuestionOfTheEconomy
+		icon = GFX_focus_generic_monarchy_1
+		cost = 2
+		x = 2
+		y = 1
+		relative_position_id = CSA_AuthoritarianDemocracy
+		prerequisite = {
+			focus = CSA_AuthoritarianDemocracy
+		}
+		completion_reward = {
+		}
+	}
+		focus = {
+		id = CSA_RevolutionaryInsurgency
+		icon = GFX_focus_generic_monarchy_1
+		cost = 2
+		x = 6
+		y = 1
+		relative_position_id = CSA_AuthoritarianDemocracy
+		prerequisite = {
+			focus = CSA_AuthoritarianDemocracy
+		}
+		completion_reward = {
+		}
+	}
 }	

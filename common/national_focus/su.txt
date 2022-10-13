@@ -443,11 +443,50 @@ focus_tree = {
 		id = CSA_ReinforceCongressPower
 		icon = GFX_focus_generic_monarchy_1
 		cost = 2
-		x = -6
+		x = -7
 		y = 1
 		relative_position_id = CSA_AuthoritarianDemocracy
 		prerequisite = {
 			focus = CSA_AuthoritarianDemocracy
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = CSA_PreserveOldIdeas
+		icon = GFX_focus_generic_monarchy_1
+		cost = 2
+		x = 1
+		y = 1
+		relative_position_id = CSA_ReinforceCongressPower
+		prerequisite = {
+			focus = CSA_ReinforceCongressPower
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = CSA_UtilizeNewIdeas
+		icon = GFX_focus_generic_monarchy_1
+		cost = 2
+		x = 1
+		y = 1
+		relative_position_id = CSA_PreserveOldIdeas
+		prerequisite = {
+			focus = CSA_PreserveOldIdeas
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = CSA_ItsAllGoodMan
+		icon = GFX_focus_generic_monarchy_1
+		cost = 2
+		x = 1
+		y = 1
+		relative_position_id = CSA_UtilizeNewIdeas
+		prerequisite = {
+			focus = CSA_UtilizeNewIdeas
 		}
 		completion_reward = {
 		}
@@ -491,4 +530,18 @@ focus_tree = {
 		completion_reward = {
 		}
 	}
+		focus = {
+		id = CSA_RevolutionaryInsurgency
+		icon = GFX_focus_generic_monarchy_1
+		cost = 2
+		x = 6
+		y = 1
+		relative_position_id = CSA_AuthoritarianDemocracy
+		prerequisite = {
+			focus = CSA_AuthoritarianDemocracy
+		}
+		completion_reward = {
+		}
+	}
+
 }	

@@ -131,8 +131,6 @@ country_event = {
 							is_owned_by = FGE
 						}
 					}
-					state = 144
-					state = 143
 				}
 			}
 			transfer_state_to = ROOT 

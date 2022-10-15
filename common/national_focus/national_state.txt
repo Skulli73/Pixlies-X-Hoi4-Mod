@@ -13,9 +13,6 @@ focus_tree = {
 		cost = 10
 		x = 2
 		y = 0
-		mutually_exclusive = {
-			focus = GME_resist_the_su
-		}
 		completion_reward = {
 			add_ideas = GME_placate_the_su
 			GME_add_5_csa_trust = yes
@@ -38,9 +35,6 @@ focus_tree = {
 			NOT = {
 				is_subject_of = CSA
 			}
-		}
-		mutually_exclusive = {
-			focus = GME_placate_the_su
 		}
 		completion_reward = {
 			promote_character = {
@@ -955,6 +949,9 @@ focus_tree = {
 		relative_position_id = GME_reorganize_the_military
 		x = -1
 		y = 1
+		mutually_exclusive = {
+			focus = GME_offensive_focus
+		}
 		prerequisite = {
 			focus = GME_reorganize_the_military
 		}
@@ -987,7 +984,7 @@ focus_tree = {
 		icon = GFX_focus_SWI_fortify_border_with_france
 		cost = 10
 		relative_position_id = GME_fortification_effort
-		x = -1
+		x = -2
 		y = 1
 		prerequisite = {
 			focus = GME_fortification_effort
@@ -1074,7 +1071,7 @@ focus_tree = {
 		icon = GFX_goal_generic_construct_military
 		cost = 10
 		relative_position_id = GME_fortification_effort
-		x = 1
+		x = 0
 		y = 1
 		prerequisite = {
 			focus = GME_fortification_effort
@@ -1101,6 +1098,279 @@ focus_tree = {
 						limit_to_border = yes
 					}
 				}
+			}
+		}
+	}
+	focus = {
+		id = GME_offensive_focus
+		icon = GFX_focus_focus_fra_maquis
+		cost = 10
+		relative_position_id = GME_reorganize_the_military
+		x = 1
+		y = 1
+		mutually_exclusive = {
+			focus = GME_defensive_focus
+		}
+		prerequisite = {
+			focus = GME_reorganize_the_military
+		}
+		available = {
+			
+		}
+		completion_reward = {
+			add_ideas = GME_offensive_focus
+		}
+	}
+	focus = {
+		id = GME_construct_mils
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 10
+		relative_position_id = GME_offensive_focus
+		x = 2
+		y = 1
+		prerequisite = {
+			focus = GME_offensive_focus
+		}
+		available = {
+			
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = ROOT
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					instant_build = yes
+					type = arms_factory
+					level = 3
+				}
+			}
+		}
+	}
+	focus = {
+		id = GME_armoured_focus
+		icon = GFX_goal_generic_army_tanks
+		cost = 10
+		relative_position_id = GME_construct_mils
+		x = 2
+		y = 1
+		prerequisite = {
+			focus = GME_construct_mils
+		}
+		available = {
+			
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				category = armor 
+				bonus = 0.75
+				uses = 2
+			}
+		}
+	}
+	focus = {
+		id = GME_infantry_focus
+		icon = GFX_focus_ETH_freedom_at_gunpoint
+		cost = 10
+		relative_position_id = GME_construct_mils
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = GME_construct_mils
+		}
+		available = {
+			
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				category = infantry_weapons 
+				bonus = 0.75
+				uses = 2
+			}
+		}
+	}
+	focus = {
+		id = GME_secure_baltic_hedgemony
+		icon = GFX_focus_SOV_reinforce_western_naval_bases
+		cost = 5
+		relative_position_id = GME_defensive_focus
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = GME_defensive_focus
+			focus = GME_offensive_focus
+		}
+		available = {
+			
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				category = naval_equipment 
+				bonus = 0.75
+				uses = 2
+			}
+			navy_experience = 15
+		}
+	}
+	focus = {
+		id = GME_take_norway
+		icon = GFX_focus_generic_attack_norway
+		cost = 4
+		relative_position_id = GME_secure_baltic_hedgemony
+		x = -1
+		y = 1
+		prerequisite = {
+			focus = GME_secure_baltic_hedgemony
+		}
+		available = {
+			OR = {
+				143 = {
+					is_owned_by = WIL
+				}
+				144 = {
+					is_owned_by = WIL
+				}
+			}
+		}
+		bypass = {
+			OR = {
+				AND = {
+					143 = {
+						OR = {
+							is_owned_by = ROOT
+							is_owned_by = FGE
+							is_controlled_by = ROOT
+							is_controlled_by = FGE
+						}
+					}
+					144 = {
+						OR = {
+							is_owned_by = ROOT
+							is_owned_by = FGE
+							is_controlled_by = ROOT
+							is_controlled_by = FGE
+						}
+					}
+				}
+			}
+		}
+		completion_reward = {
+			WIL = {
+				every_owned_state = {
+					limit = {
+						OR = {
+							state = 143
+							state = 144
+						}
+					}
+					add_core_of = ROOT
+					transfer_state_to = ROOT
+				}
+			}
+		}
+	}
+	focus = {
+		id = GME_occupy_finland
+		icon = GFX_focus_generic_attack_finland
+		cost = 10
+		relative_position_id = GME_take_norway
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = GME_take_norway
+		}
+		available = {
+			any_country = {
+				has_war_with = ROOT
+				OR = {
+					controls_state = 195
+					controls_state = 208
+					controls_state = 813
+					controls_state = 812
+					controls_state = 811
+					controls_state = 13
+					controls_state = 12
+					controls_state = 808
+					controls_state = 809
+					controls_state = 190
+					controls_state = 189
+					controls_state = 188
+					controls_state = 763
+					controls_state = 5
+					controls_state = 85
+					controls_state = 807
+					controls_state = 63
+					
+					controls_state = 111
+					controls_state = 146
+					controls_state = 149
+					controls_state = 148
+				}
+			}
+		}
+		bypass = {
+			FNL = {
+				exists = no
+			}
+		}
+		completion_reward = {
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = FNL
+			}
+		}
+	}
+	focus = {
+		id = GME_build_dockyards
+		icon = GFX_goal_generic_construct_naval_dockyard
+		cost = 5
+		relative_position_id = GME_secure_baltic_hedgemony
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = GME_secure_baltic_hedgemony
+		}
+		available = {
+			any_controlled_state = {
+				is_coastal = yes
+			}
+		}
+		completion_reward = {
+			random_controlled_state = {
+				limit = {
+					is_coastal = yes
+				}
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					instant_build = yes
+					type = dockyard
+					level = 4
+				}
+			}
+		}
+	}
+	focus = {
+		id = GME_build_ships
+		icon = GFX_goal_generic_navy_battleship
+		cost = 5
+		relative_position_id = GME_build_dockyards
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = GME_build_dockyards
+		}
+		available = {
+			any_controlled_state = {
+				is_coastal = yes
+			}
+		}
+		completion_reward = {
+			navy_experience = 20
+			add_tech_bonus = {
+				category = naval_equipment 
+				bonus = 1.25
+				uses = 2
 			}
 		}
 	}

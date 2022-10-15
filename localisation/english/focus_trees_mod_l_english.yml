@@ -198,3 +198,5 @@ GME_add_25_csa_trust:0 "Add §G25%§! §YTrust by [CSA.GetNameWithFlag]§!"
 
 shift_towards_nsg:0 "Will §Gget closer§! to §Yrecognizing§! the [GME.GetFlag] §YNational State§!"
 shift_towards_gge_tt:0 "Will §Gget closer§! to §Yrecognizing§! the [FGE.GetFlag] §YExiles§!"
+
+FGE_smaller_ministries_denied:0 "An important law was denied by the §YNational Assembly§!"

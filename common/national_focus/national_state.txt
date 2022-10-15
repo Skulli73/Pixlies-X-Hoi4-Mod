@@ -605,8 +605,9 @@ focus_tree = {
 					is_subject_of = CSA
 				}
 				GME_add_5_csa_trust = yes
-				GME_add_5_authority = yes
+				
 			}
+			GME_add_5_authority = yes
 		}
 	}
 	focus = {
@@ -629,8 +630,9 @@ focus_tree = {
 					is_subject_of = CSA
 				}
 				GME_add_5_csa_trust = yes
-				GME_add_5_authority = yes
+				
 			}
+			GME_add_5_authority = yes
 		}
 	}
 	focus = {
@@ -675,8 +677,10 @@ focus_tree = {
 					is_subject_of = CSA
 				}
 				GME_add_5_csa_trust = yes
-				GME_add_10_authority = yes
+				
+
 			}
+			GME_add_10_authority = yes
 		}
 	}
 	focus = {
@@ -1372,6 +1376,25 @@ focus_tree = {
 				bonus = 1.25
 				uses = 2
 			}
+		}
+	}
+	focus = {
+		id = GME_independence
+		icon = GFX_focus_liberate_germania
+		cost = 0.2
+		x = 25
+		y = 7
+		available = {
+			is_subject = no
+			NOT = {
+				has_war_with = CSA
+			}
+		}
+		completion_reward = {
+			add_political_power = 100
+		}
+		ai_will_do = {
+			factor = 10000
 		}
 	}
 }

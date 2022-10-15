@@ -116,7 +116,7 @@ FGE_focus_europe = {
 	ai_strategy = {
 		type = prepare_for_war
 		id = GME
-		value = 100
+		value = 1000
 	}
 }
 FGE_invade_GME = {
@@ -258,5 +258,66 @@ CSA_garrison_GME = {
 		states = {
 			51 35  57 36 56 42 8 34 6
 		}
+	}
+}
+CSA_garrison_GME_war = {
+	allowed = {
+		original_tag = CSA
+	}
+	enable = {
+		GME = {
+			is_in_faction_with = ROOT
+			has_war_with = FGE
+		}
+		has_war_with = FGE
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = force_defend_ally_borders
+		id = FGE
+		value = 1000
+	}
+}
+FGE_send_vol_BRT = {
+	allowed = {
+		original_tag = FGE
+	}
+	enable = {
+		FGE = {
+			has_government = democratic
+		}
+		BR1 = {
+			exists = yes
+		}
+		BR1 = {
+			has_civil_war = yes
+		}
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = BR1
+		value = 1000
+	}
+}
+FGE_send_troops_to_ecd = {
+	enable = {
+		original_tag = FGE
+	}
+	abort_when_not_enabled = yes
+	available = {
+		ECD = {
+			exists = yes
+		}
+		any_controlled_state = {
+			any_neighbor_state = {
+				is_controlled_by = ECD
+			}
+		}
+	}
+	ai_strategy = {
+		type = prepare_for_war
+		id = "ECD"			
+		value = 750 
 	}
 }

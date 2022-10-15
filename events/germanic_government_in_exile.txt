@@ -328,6 +328,30 @@ news_event = {
 	option = {
 		name = gge.17.b
 		leave_faction = yes
+		IF = {
+			limit = {
+				OR = {
+					has_war_with = CSA
+					has_war_with = GME
+				}
+			}
+			white_peace = CSA
+			white_peace = GME
+		}
+		add_opinion_modifier = {
+			target = FGE
+			modifier = faction_traitor
+		}
+		add_opinion_modifier = {
+			target = FGE
+			modifier = faction_traitor
+		}
+		FGE = {
+			add_opinion_modifier = {
+				target = ZAP
+				modifier = faction_traitor
+			}
+		}
 		trigger = {
 			tag = ZAP
 		}

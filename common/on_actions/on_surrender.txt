@@ -12,6 +12,22 @@ on_actions = {
 				}
 				every_country = {
 					limit = {
+						original_tag = ILY
+						has_war_with = ROOT
+					}
+					every_state = {
+						limit = {
+							is_owned_by = ROOT
+							OR = {
+								is_core_of = PREV
+								is_claimed_by = PREV
+							}
+						}
+						transfer_state_to = PREV
+					}
+				}
+				every_country = {
+					limit = {
 						is_in_faction_with = FGE
 					}
 					every_state = {
@@ -177,6 +193,30 @@ on_actions = {
 				}
 				CSA = {
 					white_peace = GME
+				}
+			}
+		}
+	}
+	on_peaceconference_ended = {
+		effect = {
+			IF = {
+				limit = {
+					FROM = {
+						original_tag = TRL
+						has_government = fascism
+						is_subject = no
+					}
+				}
+				FROM = {
+					random_other_country = {
+						limit = {
+							original_tag = TRL
+						}
+						annex_country = {
+							target = PREV
+							transfer_troops = no
+						}
+					}
 				}
 			}
 		}

@@ -166,3 +166,11 @@ MOT = {
 	variable = generic_operation_target
 }
 
+BR1 = {
+	original_tag = BRT
+	has_government = democratic
+}
+BR2 = {
+	original_tag = BRT
+	has_government = fascism
+}

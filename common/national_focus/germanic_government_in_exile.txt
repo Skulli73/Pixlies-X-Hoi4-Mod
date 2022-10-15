@@ -1326,6 +1326,14 @@ focus_tree = {
 						OR = {
 							region = 22
 							state = 73
+							state = 88
+							state = 91
+							state = 89
+							state = 73
+							state = 664
+							state = 71
+							state = 70
+							state = 72
 						}
 					}
 					add_core_of = ZAP

@@ -76,6 +76,30 @@ peace_action_modifiers = {
         cost_multiplier = 0.95
     }
 
+    # Turulks
+    generic_occupies_state = {
+        category = occupation
+        peace_action_type = { take_states puppet liberate }
+
+        enable = {
+            FROM.FROM.FROM = { is_owned_by = TRL }
+            ROOT = {
+               OR = {
+                is_major = yes
+                original_tag = ZAP
+                original_tag = FGE
+                original_tag = RUS
+                original_tag = BYZ
+                original_tag = ILY
+               }
+               capital_scope = {
+                is_on_continent = europe
+               }
+            }
+        }
+        cost_multiplier = 0.25
+    }
+
 
     ### Ideology
 

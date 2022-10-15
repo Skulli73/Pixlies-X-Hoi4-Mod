@@ -98,6 +98,27 @@ on_actions = {
                     global.recognizes_fge_amount = 1
                 }
             }
+
+            IF = {
+                limit = {
+                    GME = {
+                        NOT = {
+                            is_subject_of = CSA
+                        }
+                    }
+                }
+                GME = {
+                    every_owned_state = {
+                        limit = {
+                            has_state_flag  = CSA_resource_rights
+                        }
+                        CSA = {
+                            remove_resource_rights = PREV
+                            clr_state_flag = CSA_resource_rights
+                        }
+                    }
+                }
+            }
         }
     }
 }

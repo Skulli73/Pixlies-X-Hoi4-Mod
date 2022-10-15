@@ -321,5 +321,12 @@ ideas = {
 				production_speed_bunker_factor = 0.5
 			}
 		}
+		GME_offensive_focus = {
+			name = GME_offensive_focus
+			picture = generic_infantry_equipment_manufacturer_2
+			modifier = {
+				offence = 0.2
+			}
+		}
 	}
 }

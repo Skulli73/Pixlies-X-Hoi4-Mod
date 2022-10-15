@@ -112,4 +112,29 @@ demo = {
 			}
 		}
 	} 
+	ILY_claim_italy = {
+		allowed = {
+			original_tag = ILY
+		}
+		available = {
+			is_subject = no
+		}
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 10000
+		}
+		complete_effect = {
+			every_state = {
+				limit = {
+					OR = {
+						region = 23
+						state = 114
+						state = 1
+					}
+				}
+				add_core_of = ROOT
+				add_claim_by = ROOT
+			}
+		}
+	}
 }

@@ -316,3 +316,61 @@ news_event = {
 		}
 	}
 }
+country_event = {
+	id = nsg.12
+	title = nsg.12.t
+	desc = nsg.12.d
+	is_triggered_only = yes
+	option = {
+		name = nsg.12.a
+		ai_chance = {
+			factor = 100
+		}
+		set_global_flag = GME_TRL_deal
+		add_to_faction = FROM
+		add_to_war = {
+			targeted_alliance = FROM
+			enemy = CSA
+			hostility_reason = asked_to_join
+		}
+		hidden_effect = {
+			news_event = {
+				id = nsg.13
+				days = 1 
+			}
+		}
+	}
+	option = {
+		name = nsg.12.b
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+news_event = {
+	id = nsg.13
+	title = nsg.13.t
+	desc = nsg.13.d
+	is_triggered_only = yes
+	major = yes
+	picture = GFX_news_event_003
+	option = {
+		name = nsg.13.a
+		trigger = {
+			is_in_faction_with = TRL
+		}
+	}
+	option = {
+		name = nsg.13.b
+		trigger = {
+			is_in_faction_with = CSA
+		}
+	}
+	option = {
+		name = nsg.13.c
+		trigger = {
+			NOT = {is_in_faction_with = TRL}
+			NOT = {is_in_faction_with = CSA}
+		}
+	}
+}

@@ -2,6 +2,9 @@ demo = {
 	TRL_wargoal_CSA = {
 		available = {
 			date > 53.01.26
+			NOT = {
+				is_in_faction_with = GME
+			}
 		}
 		allowed = {
 			tag = TRL
@@ -42,7 +45,7 @@ demo = {
 		days_remove = 25
 		war_with_on_remove = ILY
 		remove_effect = {
-			create_wargoal = {
+			declare_war_on = {
 				target = ILY
 				type = annex_everything
 			}
@@ -112,6 +115,101 @@ demo = {
 			}
 		}
 	} 
+	WIL_gme_civil_war_end = {
+		ai_will_do = {
+			factor = 1000000
+		}
+		available = {
+			GME = {
+				has_civil_war = yes
+			}
+			any_country = {
+				original_tag = GME
+				NOT = {
+					tag = GME
+				}
+				has_capitulated = yes
+			}
+		}
+		allowed = {
+			original_tag = WIL
+		}
+		complete_effect = {
+			IF = {
+				limit = {
+					has_global_flag = GME_TRL_deal
+				}
+				IF = {
+					limit = {
+						ILY = {
+							is_subject_of = CSA
+						}
+					}
+					TRL = {
+						annex_country = {
+							target = ILY
+							transfer_troops = no
+						}
+					}
+				}
+				every_country = {
+					limit = {
+						original_tag = GME
+					}
+					every_owned_state = {
+						limit = {
+							OR = {
+								is_core_of = TRL
+								is_claimed_by = TRL
+								region = 21
+								is_core_of = ILY
+								state = 52
+								state = 53
+								state = 54
+								state = 50
+							}
+						}
+						transfer_state_to = TRL
+					}
+				 }
+			}
+			random_country = {
+				limit = {
+					is_subject_of = CSA
+					original_tag = GME
+				}
+				OVERLORD = {
+					
+					every_owned_state = {
+						limit = {
+							OR = {
+								is_core_of = FROM
+								is_on_continent = europe
+							}
+						}
+						transfer_state_to = GME
+					}
+					
+				}
+				GME = {
+					annex_country = {
+						target = PREV
+						transfer_troops = no
+					}
+				}
+			}
+			every_country = {
+				limit = {
+					OR = {
+						original_tag = GME
+						original_tag = TRL
+					}
+				}
+				white_peace = CSA
+			}
+			
+		}
+	}
 	ILY_claim_italy = {
 		allowed = {
 			original_tag = ILY

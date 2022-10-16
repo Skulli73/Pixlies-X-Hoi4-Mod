@@ -1379,6 +1379,32 @@ focus_tree = {
 		}
 	}
 	focus = {
+		id = GME_appeal_for_turul_help
+		icon = GFX_focus_CZE_german_puppet
+		cost = 0.5
+		x = 0
+		y = 1
+		relative_position_id = GME_demand_su_leave
+		prerequisite = {
+			focus = GME_demand_su_leave
+		}
+		available = {
+			has_war_with = CSA
+		}
+		completion_reward = {
+			TRL = {
+				country_event = {
+					id = nsg.12
+					days = 1
+				}
+			}
+			custom_effect_tooltip = GME_appeal_for_turul_help_tt
+		}
+		ai_will_do = {
+			factor = 10000
+		}
+	}
+	focus = {
 		id = GME_independence
 		icon = GFX_focus_liberate_germania
 		cost = 0.2

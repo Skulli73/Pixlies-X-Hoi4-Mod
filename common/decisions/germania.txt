@@ -142,8 +142,8 @@ FGE_return_home = {
 			}
 		}
 		timeout_effect = {
-			add_war_support = -0.05
-			add_stability = -0.05
+			add_war_support = -0.15
+			add_stability = -0.15
 			every_country = {
 				custom_effect_tooltip = shift_towards_ns_tt
 				set_temp_variable = {
@@ -159,8 +159,8 @@ FGE_return_home = {
 			IF = {
 				limit = {
 					OR = {
-						has_stability < 0.05
-						has_war_support < 0.05
+						has_stability < 0.25
+						has_war_support < 0.25
 					}
 				}
 				every_owned_state = {
@@ -200,7 +200,7 @@ FGE_return_home = {
 				}
 			}
 			custom_effect_tooltip = FGE_growing_discontent_tt
-		}
+		} 
 	}
 	
 	FGE_invade_national_state = {
@@ -224,14 +224,15 @@ FGE_return_home = {
 			factor = 100000
 			modifier = {
 				factor = 0
-				NOT = {
-					TRL = {
-						OR = {
-							has_war_with = GME
-							has_war_with = CSA
+					AND = {
+						TRL = {
+							NOT = {
+								has_war_with = GME
+								has_war_with = CSA
+							}
 						}
+						date < 53.5.7
 					}
-				}
 			}
 		}
 	}
@@ -242,8 +243,13 @@ FGE_return_home = {
 				GME = {
 					exists = no
 				}
-				GME = {
-					has_capitulated = yes
+				AND = {
+					GME = {
+						has_capitulated = yes
+					}
+					GME = {
+						has_war_with = ROOT
+					}
 				}
 			}
 		}
@@ -1768,15 +1774,17 @@ GME_state_of_the_national_state = {
 	GME_su_fires_government = {
 		days_mission_timeout = 100
 		available = {
-			custom_trigger_tooltip = {
-				tooltip = GME_su_fires_government_tt
-				check_variable = {
-					CSA_trust > 0
+			OR = {
+				custom_trigger_tooltip = {
+					tooltip = GME_su_fires_government_tt
+					check_variable = {
+						CSA_trust > 0
+					}
 				}
-			}
-			has_war_with = FGE
-			NOT = {
-				is_subject_of = CSA
+				has_war_with = FGE
+				NOT = {
+					is_subject_of = CSA
+				} 
 			}
 		}
 		activation = {
@@ -1864,7 +1872,30 @@ GME_state_of_the_national_state = {
 			}
 		}
 	}
-	
+	GME_become_trl_puppet = {
+		days_mission_timeout = 100
+		available = {
+			NOT = {
+				has_war_with = CSA
+			}
+		}
+		fire_only_once = yes
+		activation = {
+			is_in_faction_with = TRL
+			has_global_flag = GME_TRL_deal
+			has_war_with = CSA
+			is_subject = no
+		}
+		timeout_effect = {
+			TRL = {
+				puppet = {
+					target = ROOT
+					end_wars = no
+					end_civil_wars = no
+				}
+			}
+		}
+	}
 }
 political_actions = {
 	GME_end_VNZ_exile = {

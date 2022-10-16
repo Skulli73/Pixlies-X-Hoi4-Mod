@@ -163,38 +163,7 @@ on_actions = {
 					}
 				}
 			}
-			IF = {
-				limit = {
-					ROOT = {
-						original_tag = GME
-						has_government = fascism
-					}
-					FROM = {
-						tag = GME
-						has_government = neutrality
-					}
-				}
-				ROOT = {
-					OVERLORD = {
-						every_state = {
-							limit = {
-										is_owned_by = PREV
-										is_core_of = FROM
-							}
-							transfer_state_to = FROM
-						}
-						
-					}
-				}
-				FROM = {
-					annex_country = {
-						target = ROOT
-					}
-				}
-				CSA = {
-					white_peace = GME
-				}
-			}
+			
 		}
 	}
 	on_peaceconference_ended = {

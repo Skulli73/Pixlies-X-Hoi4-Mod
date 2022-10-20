@@ -328,5 +328,14 @@ ideas = {
 				offence = 0.2
 			}
 		}
+		GME_expansionism = {
+			name = GME_expansionism
+			picture = ast_volunteer_defence_corps
+			modifier = {
+				justify_war_goal_time = -0.3
+				generate_wargoal_tension = -0.5
+				war_support_factor = 0.25
+			}
+		}
 	}
 }

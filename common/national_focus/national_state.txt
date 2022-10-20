@@ -1569,4 +1569,265 @@ focus_tree = {
 			add_ideas = blitz_head_of_state
 		}
 	}
+	focus = {
+		id = GME_expansionism
+		icon = GFX_focus_usa_focus_on_europe
+		cost =5
+		x = 0
+		y = 1
+		relative_position_id = GME_a_second_in_command
+		prerequisite = {
+			focus = GME_a_second_in_command
+		}
+		available = {
+			
+		}
+		completion_reward = {
+			add_ideas = GME_expansionism
+		}
+	}
+	focus = {
+		id = GME_war_with_zapadoslavia
+		icon = GFX_focus_POL_prepare_for_the_inevitable
+		cost =10
+		x = -2
+		y = 1
+		relative_position_id = GME_expansionism
+		prerequisite = {
+			focus = GME_expansionism
+		}
+		available = {
+			
+		}
+		bypass = {
+			ZAP = {
+				OR = {
+					has_war_with = ROOT
+					exists = no
+					is_in_faction_with = ROOT
+					is_subject_of = ROOT
+				}
+			}
+		}
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = ZAP
+			}
+		}
+	}
+	focus = {
+		id = GME_cross_the_channel
+		icon = GFX_focus_attack_britain
+		cost =10
+		x = 2
+		y = 1
+		relative_position_id = GME_expansionism
+		prerequisite = {
+			focus = GME_expansionism
+		}
+		available = {
+			
+		}
+		bypass = {
+			BRT = {
+				OR = {
+					has_war_with = ROOT
+					exists = no
+					is_in_faction_with = ROOT
+					is_subject_of = ROOT
+				}
+			}
+		}
+		completion_reward = {
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = BRT
+			}
+		}
+	}
+	focus = {
+		id = GME_cross_the_alps
+		icon = GFX_focus_attack_italy
+		cost =10
+		x = 0
+		y = 1
+		relative_position_id = GME_expansionism
+		prerequisite = {
+			focus = GME_expansionism
+		}
+		available = {
+			
+		}
+		bypass = {
+			ILY = {
+				OR = {
+					has_war_with = ROOT
+					exists = no
+					is_in_faction_with = ROOT
+					is_subject_of = ROOT
+				}
+			}
+		}
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = ILY
+			}
+			every_state = {
+				limit = {
+					is_core_of = ILY
+				}
+				add_core_of = ROOT
+			}
+		}
+	}
+	focus = {
+		id = GME_backstab_the_turuls
+		icon = GFX_goal_generic_attack_allies
+		cost =10
+		x =4
+		y = 1
+		relative_position_id = GME_expansionism
+		prerequisite = {
+			focus = GME_expansionism
+		}
+		prerequisite = {
+			focus = GME_side_with_the_turuls
+		}
+		available = {
+			
+		}
+		bypass = {
+		}
+		completion_reward = {
+			IF = {
+				limit = {
+					is_subject_of = TRL
+				}
+				TRL = {
+					end_puppet = ROOT
+				}
+			}
+			IF = {
+				limit = {
+					is_in_faction_with = TRL
+				}
+				leave_faction = yes
+				create_faction = "Germanic Sphere"
+			}
+			4 = {
+				add_core_of = ROOT
+			}
+			102 = {
+				add_core_of = ROOT
+			}
+			736 = {
+				add_core_of = ROOT
+			}
+			every_state = {
+				limit = {
+					is_owned_by = TRL
+					is_core_of = ILY
+				}
+				add_core_of = ROOT
+			}
+			declare_war_on = {
+				target = TRL
+				type = puppet_wargoal_focus
+			}
+		}
+	}
+	focus = {
+		id = GME_cross_the_alps
+		icon = GFX_focus_attack_italy
+		cost =10
+		x = 0
+		y = 1
+		relative_position_id = GME_expansionism
+		prerequisite = {
+			focus = GME_expansionism
+		}
+		available = {
+			
+		}
+		bypass = {
+			ILY = {
+				OR = {
+					has_war_with = ROOT
+					exists = no
+					is_in_faction_with = ROOT
+					is_subject_of = ROOT
+				}
+			}
+		}
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = ILY
+			}
+			every_state = {
+				limit = {
+					is_core_of = ILY
+				}
+				add_core_of = ROOT
+			}
+		}
+	}
+	focus = {
+		id = GME_war_with_turuls
+		icon = GFX_goal_generic_major_war
+		cost =10
+		x =-4
+		y = 1
+		relative_position_id = GME_expansionism
+		prerequisite = {
+			focus = GME_expansionism
+		}
+		prerequisite = {
+			focus = GME_side_with_the_su
+		}
+		available = {
+			
+		}
+		bypass = {
+		}
+		completion_reward = {
+			IF = {
+				limit = {
+					is_subject_of = TRL
+				}
+				TRL = {
+					end_puppet = ROOT
+				}
+			}
+			IF = {
+				limit = {
+					is_in_faction_with = TRL
+				}
+				leave_faction = yes
+				create_faction = "Germanic Sphere"
+			}
+			4 = {
+				add_core_of = ROOT
+			}
+			102 = {
+				add_core_of = ROOT
+			}
+			736 = {
+				add_core_of = ROOT
+			}
+			every_state = {
+				limit = {
+					is_owned_by = TRL
+					is_core_of = ILY
+				}
+				add_core_of = ROOT
+			}
+			declare_war_on = {
+				target = TRL
+				type = puppet_wargoal_focus
+			}
+		}
+	}
 }

@@ -1423,4 +1423,150 @@ focus_tree = {
 			factor = 10000
 		}
 	}
+	focus = {
+		id = GME_side_with_the_turuls
+		icon = GFX_goal_generic_military_deal
+		cost = 5
+		x = 1
+		y = 1
+		relative_position_id = GME_independence
+		prerequisite = {
+			focus = GME_independence
+		}
+		available = {
+			is_in_faction = no
+		}
+		mutually_exclusive = {
+			focus = GME_side_with_the_su
+		}
+		ai_will_do = {
+			factor = 100
+			modifier = {
+				factor = 0
+				NOT = {
+					has_completed_focus = GME_demand_su_leave
+				}
+			}
+		}
+		bypass = {
+			is_in_faction_with = TRL
+		}
+		completion_reward = {
+			TRL = {
+				country_event = {
+					id = nsg.14
+					days = 1
+				}
+			}
+		}
+	}
+	focus = {
+		id = GME_side_with_the_su
+		icon = GFX_goal_generic_military_deal
+		cost = 5
+		x = -1
+		y = 1
+		relative_position_id = GME_independence
+		prerequisite = {
+			focus = GME_independence
+		}
+		mutually_exclusive = {
+			focus = GME_side_with_the_turuls
+		}
+		available = {
+			is_in_faction = no
+		}
+		ai_will_do = {
+			factor = 100
+			modifier = {
+				factor = 0
+					has_completed_focus = GME_demand_su_leave
+			}
+		}
+		bypass = {
+			is_in_faction_with = CSA
+		}
+		completion_reward = {
+			CSA = {
+				country_event = {
+					id = generic.2
+					days = 1
+				}
+			}
+		}
+	}
+	focus = {
+		id = GME_strengthen_authority
+		icon = GFX_focus_generic_military_dictatorship
+		cost = 5
+		x = -1
+		y = 1
+		relative_position_id = GME_side_with_the_turuls
+		prerequisite = {
+			focus = GME_side_with_the_su
+			focus = GME_side_with_the_turuls
+		}
+		available = {
+		}
+		completion_reward = {
+			GME_add_5_authority = yes
+		}
+	}
+	focus = {
+		id = GME_president_for_life
+		icon = GFX_goal_generic_political_pressure
+		cost =5
+		x = -1
+		y = 1
+		relative_position_id = GME_strengthen_authority
+		prerequisite = {
+			focus = GME_strengthen_authority
+		}
+		completion_reward = {
+			GME_add_10_authority = yes
+			custom_effect_tooltip = GME_president_for_life_tt
+		}
+	}
+	focus = {
+		id = GME_abolish_overseeer
+		icon = GFX_focus_renounce_the_treaty_of_trianon
+		cost =5
+		x = 1
+		y = 1
+		relative_position_id = GME_strengthen_authority
+		prerequisite = {
+			focus = GME_strengthen_authority
+		}
+		completion_reward = {
+			IF = {
+				limit = {
+					has_idea = alternis_head_of_state
+				}
+				remove_ideas = alternis_head_of_state
+			}
+			GME_add_10_authority = yes
+			custom_effect_tooltip = GME_abolish_overseeer_tt
+		}
+	}
+	focus = {
+		id = GME_a_second_in_command
+		icon = GFX_focus_generic_military_mission
+		cost =7.5
+		x = -1
+		y = 1
+		relative_position_id = GME_abolish_overseeer
+		prerequisite = {
+			focus = GME_abolish_overseeer
+		}
+		prerequisite = {
+			focus = GME_president_for_life
+		}
+		available = {
+			has_character = blitz
+		}
+		completion_reward = {
+			custom_effect_tooltip = GME_a_second_in_command_tt
+			add_ideas = blitz_head_of_state
+		}
+	}
 }

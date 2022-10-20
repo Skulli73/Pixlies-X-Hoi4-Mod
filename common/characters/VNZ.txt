@@ -39,6 +39,16 @@ characters = {
 				}
 			}
 		}
+		advisor = {
+			slot = head_of_state
+			idea_token = blitz_head_of_state
+			traits = {
+				former_pm
+			}
+			available = {
+				has_idea = blitz_head_of_state
+			}
+		}
 	}
 	physic = {
 		name = "Physic"

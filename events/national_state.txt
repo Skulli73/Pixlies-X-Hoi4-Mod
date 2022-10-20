@@ -423,11 +423,4 @@ country_event = {
 		}
 		add_idea = blitz_head_of_state
 	}
-	option = {
-		name = nsg.15.b
-		ai_chance = {
-			factor = 50
-		}
-		add_idea = physic_head_of_state
-	}
 }

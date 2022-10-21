@@ -236,3 +236,5 @@ GME_war_with_zapadoslavia:0 "Expand Eastwards"
 GME_cross_the_alps:0 "Cross the Alps"
 GME_cross_the_channel:0 "Cross the English Channel"
 GME_backstab_the_turuls:0 "Backstab [TRL.GetNameDEF]"
+
+GME_TRL_deal:0 "§Y[GME.GetNameDefCap]§! has signed a deal with §Y[TRL.GetNameDEF]§!."

@@ -1448,6 +1448,9 @@ FGE_ecuador_conflict = {
 GME_state_of_the_national_state = {
 	GME_factory_strike = {
 		state_target = yes
+		ai_will_do = {
+			factor = 20
+		}
 		cost = 12.5
 		days_remove = 25
 		target_array = owned_controlled_states
@@ -1510,6 +1513,9 @@ GME_state_of_the_national_state = {
 		cost = 12.5
 		days_remove = 25
 		target_array = owned_controlled_states
+		ai_will_do = {
+			factor = 20
+		}
 		modifier = {
 			local_factories = -1
 		}
@@ -1593,7 +1599,9 @@ GME_state_of_the_national_state = {
 		}
 	}
 	GME_take_control_over_resources = {
-
+		ai_will_do = {
+			factor = 20
+		}
 		state_target = yes
 		cost = 25
 		days_remove = 25
@@ -1693,6 +1701,9 @@ GME_state_of_the_national_state = {
 		}
 	}
 	GME_attack_occupying_forces = {
+		ai_will_do = {
+			factor = 20
+		}
 		state_target = yes
 		allowed = {
 			original_tag = GME
@@ -1723,9 +1734,19 @@ GME_state_of_the_national_state = {
 				}
 			}
 		}
-		days_remove = 1
 		cost = 40
-		remove_effect = {
+		complete_effect = {
+			IF = {
+				limit = {
+					FROM = {
+						OR = {
+							state = 57
+							state = 59
+						}
+					}
+				}
+				set_country_flag = 9_ad_flag
+			}
 			ROOT = {
 				add_popularity = {
 					ideology = neutrality

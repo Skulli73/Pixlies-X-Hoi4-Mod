@@ -297,18 +297,6 @@ focus_tree = {
 			focus = FGE_empower_the_emperor
 		}
 		available = {
-			NOT = {
-				OR = {
-					has_country_leader = {
-						character = fortressia
-						ruling_only = yes
-					}
-					has_country_leader = {
-						character = katz
-						ruling_only = yes
-					}
-				}
-			}
 		}
 		completion_reward = {
 			add_popularity = {
@@ -1869,29 +1857,30 @@ focus_tree = {
 			focus = FGE_ensure_germanic_dominance
 		}
 		completion_reward = {
-			every_owned_state = {
-				limit = {
-					OR = {
-						state = 9
-						state = 75
-						state = 74
-						state = 69
-						state = 67
-						state = 66
-						state = 762
-						state = 68
-						state = 86
-						state = 63
-						state = 807
-						state = 85
-						state = 5
-						state = 763
-						state = 72
-					}
-				}
-				add_claim_by = ROOT
-			}
+			
 			ZAP = {
+				every_owned_state = {
+					limit = {
+						OR = {
+							state = 9
+							state = 75
+							state = 74
+							state = 69
+							state = 67
+							state = 66
+							state = 762
+							state = 68
+							state = 86
+							state = 63
+							state = 807
+							state = 85
+							state = 5
+							state = 763
+							state = 72
+						}
+					}
+					add_claim_by = ROOT
+				}
 				country_event = {
 					id = gge.502
 					days = 1

@@ -8,7 +8,7 @@ unique_id = mod_achievements
 fourth_reichs_the_charm = {
 	
 	possible = {
-		always = yes
+		original_tag = FGE
 	}
 	happened = {
 		original_tag = FGE
@@ -26,5 +26,67 @@ fourth_reichs_the_charm = {
 		controls_state = 111
 		controls_state = 797
 		controls_state = 51
+	}
+}
+holy_roman_and_an_empire = {
+	
+	possible = {
+		original_tag = FGE
+	}
+	happened = {
+		original_tag = FGE
+		has_completed_focus = FGE_dei_gratia
+		controls_state = 2
+	}
+}
+banana_split = {
+	
+	possible = {
+		original_tag = CSA
+	}
+	happened = {
+		original_tag = CSA
+		controls_state = 219
+	}
+}
+i_promise_i_will_resign_soon = {
+	possible = {
+		original_tag = FGE
+	}
+	happened = {
+		original_tag = FGE
+		date > 60.01.01
+		has_country_leader = {
+			character = skulli73
+		}
+	}
+}
+9_ad_all_over_again = {
+	possible = {
+		original_tag = GME
+	}
+	happened = {
+		original_tag = GME
+		has_country_flag = 9_ad_flag
+	}
+}
+organization_of_unfree_nations = {
+	possible = {
+		
+	}
+	happened = {
+		is_in_faction_with = FGE
+		FGE = {
+			OR = {
+				AND = {
+					has_completed_focus = FGE_restore_the_ofn
+					NOT = {
+						has_completed_focus = FGE_federal_election
+					}
+				}
+				has_completed_focus = FGE_restore_the_ofn_2
+			}
+		}
+		num_subjects > 6
 	}
 }

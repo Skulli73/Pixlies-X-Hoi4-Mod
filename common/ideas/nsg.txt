@@ -230,13 +230,7 @@ ideas = {
 				}
 			}
 			on_remove = {
-				IF = {
-					limit = {
-						NOT = {
-							is_subject_of = CSA
-						}
-					}
-					ELSE_IF = {
+					IF = {
 						limit = {
 							check_variable = {
 								authority < 0.5
@@ -247,7 +241,6 @@ ideas = {
 							add_ideas = GME_large_authority
 						}
 					}
-				}
 			}
 		}
 		GME_large_authority = {

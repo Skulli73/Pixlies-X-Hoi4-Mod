@@ -102,6 +102,7 @@ country_event = {
 				}
 			}
 			transfer_state_to = ROOT 
+			add_claim_by = WIL
 		}
 		GME = {
 			country_event = {
@@ -133,6 +134,7 @@ country_event = {
 					}
 				}
 			}
+			add_claim_by = WIL
 			transfer_state_to = ROOT 
 		}
 	}

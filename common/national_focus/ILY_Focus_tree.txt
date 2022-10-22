@@ -100,7 +100,7 @@ focus_tree = {
 			focus = ILY_For_The_Independence
 		}
 		completion_reward = {
-			add_stability = 0.5
+			add_stability = 0.1
 			ILY = {
 				country_event = {
 					id = ily.33
@@ -133,5 +133,54 @@ focus_tree = {
 			}
 		}
 	}
-	
-	
+	focus = {
+		id = ILY_Democracy_Will_Win
+		icon = GFX_focus_generic_italy_first
+		cost = 10
+		x = 19
+		y = 5
+		prerequisite = {
+			focus = ILY_A_Imminent_Civil_War
+		}
+		available = { 
+		has_war = no
+		}
+		completion_reward = {
+			random_controlled_state = {
+				limit = {
+				  is_core_of = ROOT
+				}
+				create_unit = {
+				  division = "name = \"Cemicie Nere\" division_template = \"Supported Infantry Division\" start_experience_factor = 0.5"
+				  owner = ROOT
+				}
+				create_unit = {
+				  division = "name = \"Cemicie Nere\" division_template = \"Supported Infantry Division\" start_experience_factor = 0.5"
+				  owner = ROOT
+				}
+				create_unit = {
+				  division = "name = \"Cemicie Nere\" division_template = \"Supported Infantry Division\" start_experience_factor = 0.5"
+				  owner = ROOT
+				}
+			  }
+			   
+		}
+	}
+	focus = {
+	    id = ILY_Hail_Niki_And_Hail_Matt
+	    icon = GFX_focus_generic_military_mission
+	    cost = 10
+	    x=15
+	    y = 3
+	    prerequisite = {
+	        focus = ILY_Fascism_is_getting_out_of_hand
+		}
+        completion_reward = {
+	        ILY = {
+	        country_event = {
+	            id = ily.34
+			    hours = 6
+			}
+	    }
+    }
+}	

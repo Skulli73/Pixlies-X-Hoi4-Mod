@@ -38,3 +38,17 @@ news_event = {
 		name = ily.33.a			
 	}
 }
+country_event = {
+	id = ily.34
+	title = ily.34.t
+	desc = ily.34.d
+	is_triggered_only = yes
+	option = {
+		name = ily.34.a
+		diplomatic_relation = {
+			country = CSA
+	        relation = military_access
+	        active = Yes
+			}
+		}
+    }

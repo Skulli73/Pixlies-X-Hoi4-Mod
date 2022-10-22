@@ -285,7 +285,11 @@ FGE_return_home = {
 						every_state = {
 							limit = {
 								AND = {
-									NOT = {is_controlled_by = FGE}
+									NOT = {
+										CONTROLLER = {
+											is_in_faction_with = FGE
+										}
+									}
 									is_owned_by = GME
 								}
 							}

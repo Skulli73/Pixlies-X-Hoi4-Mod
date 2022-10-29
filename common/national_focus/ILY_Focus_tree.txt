@@ -151,15 +151,27 @@ focus_tree = {
 				  is_core_of = ROOT
 				}
 				create_unit = {
-				  division = "name = \"Cemicie Nere\" division_template = \"Supported Infantry Division\" start_experience_factor = 0.5"
+				  division = "name = \"Camicie Nere\" division_template = \"Supported Infantry Division\" start_experience_factor = 0.5"
 				  owner = ROOT
 				}
 				create_unit = {
-				  division = "name = \"Cemicie Nere\" division_template = \"Supported Infantry Division\" start_experience_factor = 0.5"
+				  division = "name = \"Camicie Nere\" division_template = \"Supported Infantry Division\" start_experience_factor = 0.5"
 				  owner = ROOT
 				}
 				create_unit = {
-				  division = "name = \"Cemicie Nere\" division_template = \"Supported Infantry Division\" start_experience_factor = 0.5"
+				  division = "name = \"Camicie Nere\" division_template = \"Supported Infantry Division\" start_experience_factor = 0.5"
+				  owner = ROOT
+				}
+				create_unit = {
+				  division = "name = \"Camicie Nere\" division_template = \"Supported Infantry Division\" start_experience_factor = 0.5"
+				  owner = ROOT
+				}
+				create_unit = {
+				  division = "name = \"Camicie Nere\" division_template = \"Supported Infantry Division\" start_experience_factor = 0.5"
+				  owner = ROOT
+				}
+				create_unit = {
+				  division = "name = \"Camicie Nere\" division_template = \"Supported Infantry Division\" start_experience_factor = 0.5"
 				  owner = ROOT
 				}
 			  }
@@ -183,4 +195,32 @@ focus_tree = {
 			}
 	    }
     }
-}	
+    focus = {
+	    id = ILY_Torino_Mia_Amata
+	    icon = GFX_focus_generic_military_mission
+	    cost = 10
+	    x=10
+	    y = 0
+		completion_reward = {
+			add_building_construction = {
+            type = arms_factory
+            level = 4
+            instant_build = yes
+			province = 6780
+			}
+		}
+	}
+	focus = {
+	    id = ILY_La_Forza_Dell'_Impero_Italico
+	    icon = GFX_focus_generic_military_mission
+	    cost = 10
+	    x=9
+	    y = 2
+		completion_reward = {
+		add_tech_bonus = {
+        bonus = 0.5
+        uses = 1
+        category = infantry_tech
+        }
+	}
+}

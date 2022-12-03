@@ -388,6 +388,17 @@ FGE_destroy_CSA = {
 		ai_will_do = {
 			factor = 10000
 		}
+		available = {
+			any_state = {
+				is_core_of = ECD
+				OWNER = {
+					OR = {
+						tag = ROOT
+						is_subject_of = ROOT
+					}
+				}
+			}
+		}
 		days_remove = 15
 		remove_effect = {
 			every_state = {
@@ -629,10 +640,18 @@ FGE_destroy_CSA = {
 		available = {
 			OR = {
 				315 = {
-					is_controlled_by = ROOT
+					CONTROLLER = {
+						OR = {
+							is_in_faction_with = ROOT
+							tag = ROOT
+						}
+					}
 				}
 				365 = {
-					is_controlled_by = ROOT
+					OR = {
+						is_in_faction_with = ROOT
+						tag = ROOT
+					}
 				}
 			}
 			has_character = geo
@@ -643,8 +662,14 @@ FGE_destroy_CSA = {
 		fire_only_once = yes
 		days_remove = 10
 		remove_effect = {
-			every_controlled_state = {
+			every_state = {
 				limit = {
+					CONTROLLER = {
+						OR = {
+							tag = ROOT
+							is_in_faction_with = ROOT
+						}
+					}
 					is_owned_by = CSA
 					OR = {
 						is_on_continent = north_america
@@ -1943,6 +1968,84 @@ political_actions = {
 		}
 		ai_will_do = {
 			factor = 10000
+		}
+	}
+	FGE_ecuadorian_autonomy = {
+		cost = 100
+		available = {
+			ECD = {
+				exists = no
+			}
+			any_owned_state = {
+				is_core_of = ECD
+			}
+		}
+		allowed = {
+			original_tag = FGE
+		}
+		fire_only_once = yes
+		complete_effect = {
+			release_puppet = ECD
+			set_autonomy = {
+				target = ECD
+				autonomy_state = autonomy_integrated_puppet
+			}
+		}
+	}
+	FGE_expand_ecuador = {
+		available = {
+			ECD = {
+				is_subject_of = ROOT
+			}
+			any_controlled_state = {
+				OR = {
+					state = 493
+					state = 306
+				}
+			}
+		}
+		allowed = {
+			original_tag = FGE
+		}
+		fire_only_once = yes
+		complete_effect = {
+			every_controlled_state = {
+				limit = {
+					OR = {
+						state = 493
+						state = 306
+					}
+				}
+				transfer_state_to = ECD
+			}
+		}
+	}
+	FGE_expand_venezuela = {
+		available = {
+			VNZ = {
+				is_subject_of = ROOT
+			}
+			any_controlled_state = {
+				OR = {
+					state = 489
+					state = 695
+				}
+			}
+		}
+		allowed = {
+			original_tag = FGE
+		}
+		fire_only_once = yes
+		complete_effect = {
+			every_controlled_state = {
+				limit = {
+					OR = {
+						state = 489
+						state = 695
+					}
+				}
+				transfer_state_to = VNZ
+			}
 		}
 	}
 }

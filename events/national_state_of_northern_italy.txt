@@ -35,6 +35,23 @@ news_event = {
 	picture = GFX_news_event_italian_civil_war
 	is_triggered_only = yes
 	option = {
-		name = ily.33.a			
+		name = ily.33.a	
+		add_ideas = { 
+		    A_disunited_Italy_1
+		} 		
 	}
 }
+country_event = {
+	id = ily.34
+	title = ily.34.t
+	desc = ily.34.d
+	is_triggered_only = yes
+	option = {
+		name = ily.34.a
+		diplomatic_relation = {
+			country = CSA
+	        relation = military_access
+	        active = Yes
+			}
+		}
+	}

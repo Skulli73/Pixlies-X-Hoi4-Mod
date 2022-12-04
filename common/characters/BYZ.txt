@@ -1,0 +1,22 @@
+characters = {
+	vill_vill = {
+		name = "Vill_vill"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/BYZ/vill.dds"
+				small = "gfx/leaders/BYZ/vill.dds"
+			}
+			 army = {
+			 	large = "gfx/leaders/BYZ/vill.dds" # GFX_portrait_ETH_haile_selassie_field_marshal
+			 	small = "gfx/leaders/BYZ/vill.dds"
+
+			 }
+		}
+		country_leader = {
+			ideology = despotism
+			expire = "1965.1.1.1"
+			traits = {  }
+			id = -1
+		}
+	}
+}

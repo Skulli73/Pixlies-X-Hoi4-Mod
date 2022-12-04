@@ -9,6 +9,16 @@ bookmarks = {
 		GME = {
 			ideology = fascism
 			history = GME_history
+			ideas = {
+				GME_low_authority
+				GME_su_distrust
+				gme_germania_recognition2
+			}
+			focuses = {
+				GME_placate_the_su
+				GME_demand_su_leave
+				GME_independence
+			}
 		}
 		CSA = {
 			ideology = fascism
@@ -17,6 +27,16 @@ bookmarks = {
 		FGE = {
 			ideology = democratic
 			history = FGE_history
+			ideas = {
+				inefficient_government_1
+				fge_germania_recognition3
+
+			}
+			focuses = {
+				FGE_operation_broken_star
+				FGE_bypass_the_national_assembly
+				FGE_new_pm
+			}
 		}
 		JPN = {
 			ideology = neutrality

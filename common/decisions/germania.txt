@@ -1731,7 +1731,7 @@ GME_state_of_the_national_state = {
 	}
 	GME_attack_occupying_forces = {
 		ai_will_do = {
-			factor = 20
+			factor = 2000
 		}
 		state_target = yes
 		allowed = {
@@ -1971,7 +1971,6 @@ political_actions = {
 		}
 	}
 	FGE_ecuadorian_autonomy = {
-		cost = 100
 		available = {
 			ECD = {
 				exists = no
@@ -1990,6 +1989,9 @@ political_actions = {
 				target = ECD
 				autonomy_state = autonomy_integrated_puppet
 			}
+		}
+		ai_will_do = {
+			factor = 100
 		}
 	}
 	FGE_expand_ecuador = {
@@ -2019,6 +2021,9 @@ political_actions = {
 				transfer_state_to = ECD
 			}
 		}
+		ai_will_do = {
+			factor = 100
+		}
 	}
 	FGE_expand_venezuela = {
 		available = {
@@ -2046,6 +2051,9 @@ political_actions = {
 				}
 				transfer_state_to = VNZ
 			}
+		}
+		ai_will_do = {
+			factor = 100
 		}
 	}
 }

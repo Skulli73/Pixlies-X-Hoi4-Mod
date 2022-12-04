@@ -87,6 +87,12 @@ FGE_ecuador_conflict = {
 		}
 	}
 	visible = {
+		ECD = {
+			NOT = {
+				is_in_faction_with = FGE
+				is_subject = yes
+			}
+		}
 	}
 }
 GME_state_of_the_national_state = {

@@ -1,0 +1,286 @@
+add_namespace = su_collapse
+country_event = { #that one kaiser leaves
+	id = su_collapse.1
+	title = su_collapse.1.t
+	desc = su_collapse.1.d
+	is_triggered_only = yes
+	option =  {
+		name = su_collapse.1.a
+		effect_tooltip = {
+			retire_character = thatonekaiser
+			retire_character = geo
+		}
+		hidden_effect = {
+			thatonekaiser = {
+				set_nationality = CSA
+			}
+			geo = {
+				set_nationality = CSA
+			}
+			CSA = {
+				country_event = {
+					id = su_collapse.2
+					days = 10
+				}
+			}
+		}
+	}
+}
+country_event = { #that one kaiser arrives
+	id = su_collapse.2
+	title = su_collapse.2.t
+	desc = su_collapse.2.d
+	is_triggered_only = yes
+	option =  {
+		name = su_collapse.2.a
+		create_dynamic_country = {
+			original_tag = CSA
+			inherit_technology = CSA
+			
+			
+			set_politics = {
+				ruling_party = democratic
+				elections_allowed = yes
+			}
+			set_popularities = {
+				democratic = 30
+				neutrality = 25
+				communism = 15
+				fascism = 30
+			}
+			CSA = {
+				every_character = {
+					limit = {
+						OR = {
+							is_character = thatonekaiser
+							is_character = geo
+						}
+					}
+					set_nationality = PREVPREV
+				}
+			}
+			promote_character = thatonekaiser
+			set_party_name = {
+				ideology = democratic
+				name = "National Liberation Front"
+				long_name = "National Liberation Front"
+			}
+			IF = {
+				limit = {
+					361 = {
+						is_owned_by = CSA
+					}
+				}
+				361 = {
+					transfer_state_to = PREV
+					teleport_armies = {
+						limit = {
+							always = yes
+						}
+						to_state_array = owned_controlled_states
+					}
+				} 	
+				ELSE = {
+					CSA = {
+						random_owned_state = {
+							limit = {
+								is_core_of = CSA
+							}
+							transfer_state_to = PREVPREV
+						}
+					}
+				}
+			} 
+			declare_war_on = {
+				target = CSA
+				type = civil_war
+			}
+			CSA = {
+				transfer_units_fraction= {
+					target = PREV
+					size = 0.3
+					stockpile_ratio = 0.3
+					army_ratio = 0.4
+					navy_ratio = 0.1
+					air_ratio = 0.25
+					keep_unit_leaders_trigger = {
+						always = yes
+					}
+				}
+			}
+		}
+		random_country = {
+			limit = {
+				has_character = thatonekaiser
+			}
+			random_character = {
+				limit = {
+					is_character = thatonekaiser
+				}
+				PREV = {
+					add_country_leader_role = {
+						character = PREV
+						promote_leader = yes
+						country_leader = {
+							ideology = socialism
+							expire = "1965.1.1.1"
+							traits = { democratic_crusader exiled_revolutionary }
+						}
+					}
+				}
+			}
+		}
+
+		hidden_effect = {
+			country_event = {
+				id = su_collapse.3
+				days = 5
+			}
+		}
+	}
+}
+country_event = { #virginia secedes hidden effect
+	id = su_collapse.3
+	title = su_collapse.3.t
+	desc = su.collapse.3.d
+	hidden = yes
+	is_triggered_only = yes
+	option = {
+		name = su_collapse.3.a
+		IF = {
+			limit = {
+				any_country = {
+					original_tag = CSA
+					has_government = democratic
+				}
+			}
+			country_event = {
+				id = su_collapse.4
+			}
+			country_event = {
+				id = su_collapse.5
+				days = 50
+			}
+		}
+	}
+}
+country_event = {
+	id = su_collapse.4
+	title = su_collapse.4.t
+	desc = su_collapse.4.d
+	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+			every_owned_state = {
+				limit = {
+					is_core_of = VIR
+				}
+				random_country = {
+					limit = {
+						original_tag = CSA
+						has_government = democratic
+					}
+					transfer_state = PREV
+					ROOT = {
+						transfer_units_fraction = {
+							target = PREV
+							size = 0.2
+							stockpile_ratio = 0.2
+							army_ratio = 0.2
+							navy_ratio = 0.05
+							air_ratio = 0.125
+							keep_unit_leaders_trigger = {
+								always = yes
+							}
+						}
+					}
+				}
+				teleport_armies = {
+					limit = {
+						OR = {
+							tag = ROOT
+							is_in_faction_with = ROOT
+							is_subject_of = ROOT
+						}
+					}
+					to_state_array = owned_controlled_states
+				}
+			}
+		}
+	}
+	option = {
+		name = su_collapse.4.a
+	}
+}
+country_event = { #virginia secedes hidden effect
+	id = su_collapse.5
+	title = su_collapse.5.t
+	desc = su.collapse.5.d
+	hidden = yes
+	is_triggered_only = yes
+	option = {
+		name = su_collapse.3.a
+		IF = {
+			limit = {
+				any_country = {
+					original_tag = CSA
+					has_government = democratic
+				}
+			}
+			country_event = {
+				id = su_collapse.6
+			}
+		}
+	}
+}
+country_event = {
+	id = su_collapse.6
+	title = su_collapse.6.t
+	desc = su_collapse.6.d
+	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+			every_owned_state = {
+				limit = {
+					OR = {
+						region = 53
+						region = 170
+					}
+				}
+				transfer_state_to = CUB
+				add_core_of = CUB
+				
+				teleport_armies = {
+					limit = {
+						OR = {
+							tag = ROOT
+							is_in_faction_with = ROOT
+							is_subject_of = ROOT
+						}
+					}
+					to_state_array = owned_controlled_states
+				}
+				CUB = {
+					declare_war_on = {
+						target = ROOT
+						type = civil_war
+					}
+				}
+			}
+			transfer_units_fraction = {
+				target = CUB
+				size = 0.2
+							stockpile_ratio = 0.2
+							army_ratio = 0.2
+							navy_ratio = 0.05
+							air_ratio = 0.125
+				keep_unit_leaders_trigger = {
+					always = yes
+				}
+			}
+		}
+	}
+	option = {
+		name = su_collapse.6.a
+	}
+}

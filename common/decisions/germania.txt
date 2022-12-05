@@ -212,11 +212,18 @@ FGE_return_home = {
 			has_completed_focus = FGE_operation_broken_star
 		}
 		days_remove = 25
-		war_with_on_remove = FGE
+		war_with_on_remove = GME
 		remove_effect = {
-			declare_war_on = {
-				target = GME
-				type = annex_everything
+			every_country = {
+				limit = {
+					original_tag = GME
+				}
+				ROOT = {
+					declare_war_on = {
+						target = GME
+						type = annex_everything
+					}
+				}
 			}
 			add_threat = 70
 		}
@@ -1475,6 +1482,27 @@ FGE_ecuador_conflict = {
 	}
 }
 GME_state_of_the_national_state = {
+	GME_annex_civil_war = {
+		allowed = {
+			original_tag = GME
+		}
+		visible = {
+			is_subject_of = CSA
+			has_war_with = GME
+			GME = {
+				has_capitulated = yes
+			}
+		}
+		complete_effect = {
+			annex_country = {
+				target = GME
+				transfer_troops = no
+			}
+		}
+		ai_will_do = {
+			factor = 1000
+		}
+	}
 	GME_factory_strike = {
 		state_target = yes
 		ai_will_do = {
@@ -1741,6 +1769,7 @@ GME_state_of_the_national_state = {
 		visible = {
 			is_subject_of = CSA
 			has_completed_focus = GME_attack_occupying_forces
+			has_war = no
 		}
 		available = {
 			is_subject_of = CSA

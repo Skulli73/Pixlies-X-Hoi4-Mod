@@ -46,5 +46,6 @@ add_ideas = ace_minister_of_foreign_affairs
 recruit_character = atalius
 recruit_character = fortressia
 recruit_character = phantom
+recruit_character = thatonekaiser
 inherit_technology = CSA
 recruit_character = geo_temp_1

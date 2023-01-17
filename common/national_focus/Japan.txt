@@ -1,0 +1,20 @@
+### search_filters = {FOCUS_FILTER_POLITICAL}
+### search_filters = {FOCUS_FILTER_RESEARCH}
+### search_filters = {FOCUS_FILTER_INDUSTRY}
+### search_filters = {FOCUS_FILTER_STABILITY}
+### search_filters = {FOCUS_FILTER_WAR_SUPPORT}
+### search_filters = {FOCUS_FILTER_MANPOWER}
+### search_filters = {FOCUS_FILTER_ANNEXATION}
+### search_filters = {FOCUS_FILTER_CSA_CONGRESS}
+### search_filters = {THE_EMPEROR}
+### search_filters = {PARLIAEMNT}
+### search_filters = {SOUTHEREN_UNION_AND_GERMANIA}
+### search_filters = {SPAIN_AND_FIJI}
+
+focus_tree = {
+        id = Japan_focus
+        
+        country = {
+            factor = 0
+       
+//TODO-Tree

@@ -1,0 +1,82 @@
+### search_filters = {FOCUS_FILTER_POLITICAL}
+### search_filters = {FOCUS_FILTER_RESEARCH}
+### search_filters = {FOCUS_FILTER_INDUSTRY}
+### search_filters = {FOCUS_FILTER_STABILITY}
+### search_filters = {FOCUS_FILTER_WAR_SUPPORT}
+### search_filters = {FOCUS_FILTER_MANPOWER}
+### search_filters = {FOCUS_FILTER_ANNEXATION}
+### search_filters = {FOCUS_FILTER_CSA_CONGRESS}
+### search_filters = {PRODDUCTION_OF_FIJI_WATER}
+### search_filters = {DEVLOPMENT}
+### search_filters = {SOUTHEREN_UNION_AND_GERMANIA}
+### search_filters = {SPAIN_AND_JAPAN}
+
+focus_tree = {
+        id = Fiji_focus
+        
+        country = {
+            factor = 0
+
+                modifier = {
+			add = 10
+			tag = FJI
+                 }
+	}
+	continuous_focus_position = { x = 50 y = 1600 }
+	default = yes
+focus = {
+		id = FJI_Renewing_research_efforts
+		icon = //TODO
+		bypass = { }
+		x = 10
+		y = 0
+		cost = 2
+		#ai_will_do = {
+		#	factor = 1
+		#}
+
+		available_if_capitulated = no
+
+		bypass = {	
+		}
+
+		prerequisite = { }
+		cost = 1
+
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+	focus = {
+		id = FJI_Expand_the_Papua_territory 
+		icon = //TODO
+		cost = 2
+		x = 0
+		y = 1
+		relative_position_id = FJI_Expand_the_Papua_territory 
+		prerequisite = {
+			focus = FJI_Expand_the_Papua_territory 
+		}
+		completion_reward = { //TODO gain states on Papua
+		}
+
+focus = {
+		id = FJI_Pacific_allince  
+		icon = //TODO
+		cost = 10
+		x = -1
+		y = 1
+		relative_position_id = FGE_bypass_the_national_assembly
+		prerequisite = {
+			focus = FJI_Pacific_allince
+		}
+		completion_reward = { //TODO Faction Created
+			}
+			FGE_decrease_inefficient_government = yes
+			set_global_flag = FJI_Japan JPN_FIji
+      		                              	}
+		            	            }     
+		                 }
+	         }
+}

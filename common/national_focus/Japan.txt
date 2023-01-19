@@ -1,0 +1,64 @@
+### search_filters = {FOCUS_FILTER_POLITICAL}
+### search_filters = {FOCUS_FILTER_RESEARCH}
+### search_filters = {FOCUS_FILTER_INDUSTRY}
+### search_filters = {FOCUS_FILTER_STABILITY}
+### search_filters = {FOCUS_FILTER_WAR_SUPPORT}
+### search_filters = {FOCUS_FILTER_MANPOWER}
+### search_filters = {FOCUS_FILTER_ANNEXATION}
+### search_filters = {FOCUS_FILTER_CSA_CONGRESS}
+### search_filters = {THE_EMPEROR}
+### search_filters = {PARLIAEMNT}
+### search_filters = {SOUTHEREN_UNION_AND_GERMANIA}
+### search_filters = {SPAIN_AND_FIJI}
+
+focus_tree = {
+        id = Japan_focus
+        
+        country = {
+            factor = 0
+
+                modifier = {
+			add = 10
+			tag = JPN
+                 }
+	}
+	continuous_focus_position = { x = 50 y = 1600 }
+	default = yes
+focus = {
+		id = JPNRebuilding_from_neutrality
+		icon = //TODO
+		bypass = { }
+		x = 10
+		y = 0
+		cost = 2
+		#ai_will_do = {
+		#	factor = 1
+		#}
+
+		available_if_capitulated = no
+
+		bypass = {	
+		}
+
+		prerequisite = { }
+		cost = 1
+
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		completion_reward = {
+			add_political_power = 145
+		}
+	}
+	focus = {
+		id = JPNRebuilding_our_ambitions
+		icon = //TODO
+		cost = 2
+		x = 0
+		y = 1
+		relative_position_id = JPNRebuilding_from_neutrality
+		prerequisite = {
+			focus = Rebuilding_our_ambitions
+		}
+		completion_reward = { //TODO cliams on the Phillipeans 
+		}
+	}
+}

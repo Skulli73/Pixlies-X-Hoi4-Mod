@@ -46,7 +46,7 @@ focus_tree = {
 			
 		}
 	}
-    focus = {
+        focus = {
 		id = ILY_With_The_Union
 		icon = GFX_focus_POL_beck_ribbentrop
 		cost = 10
@@ -117,7 +117,7 @@ focus_tree = {
             }
 		}	
 	}
-    focus = {
+        focus = {
 		id = ILY_Fascism_is_getting_out_of_hand
 		icon = GFX_focus_generic_military_mission
 		cost = 10
@@ -151,28 +151,29 @@ focus_tree = {
 				  is_core_of = ROOT
 				}
 				create_unit = {
-				  division = "name = \"Camicie Nere\" division_template = \"Supported Infantry Division\" start_experience_factor = 0.5"
-				  owner = ROOT
+					division = "name = \"Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.5"
+					owner = ILY
+				}
 				}
 				create_unit = {
-				  division = "name = \"Camicie Nere\" division_template = \"Supported Infantry Division\" start_experience_factor = 0.5"
-				  owner = ROOT
+					division = "name = \"Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.5"
+					owner = ILY
 				}
 				create_unit = {
-				  division = "name = \"Camicie Nere\" division_template = \"Supported Infantry Division\" start_experience_factor = 0.5"
-				  owner = ROOT
+					division = "name = \"Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.5"
+					owner = ILY
 				}
 				create_unit = {
-				  division = "name = \"Camicie Nere\" division_template = \"Supported Infantry Division\" start_experience_factor = 0.5"
-				  owner = ROOT
+					division = "name = \"Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.5"
+					owner = ILY
 				}
 				create_unit = {
-				  division = "name = \"Camicie Nere\" division_template = \"Supported Infantry Division\" start_experience_factor = 0.5"
-				  owner = ROOT
+					division = "name = \"Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.5"
+					owner = ILY
 				}
 				create_unit = {
-				  division = "name = \"Camicie Nere\" division_template = \"Supported Infantry Division\" start_experience_factor = 0.5"
-				  owner = ROOT
+					division = "name = \"Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.5"
+					owner = ILY
 				}
 			  }
 			   
@@ -194,7 +195,7 @@ focus_tree = {
 			    hours = 6
 			}
 	    }
-    }
+	}
     focus = {
 	    id = ILY_Torino_Mia_Amata
 	    icon = GFX_focus_generic_military_mission
@@ -223,4 +224,5 @@ focus_tree = {
         category = infantry_tech
         }
 	}
+}
 }

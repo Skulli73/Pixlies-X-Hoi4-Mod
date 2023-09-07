@@ -36,7 +36,7 @@ focus_tree = {
 		id = CSA_atEveryone_AtlantaIsBuild
 		icon = GFX_goal_generic_amphibious_assault
 		bypass = { has_country_flag = matt_failed_assasination }
-		x = 10
+		x = 20
 		y = 0
 		cost = 2
 		#ai_will_do = {
@@ -134,30 +134,376 @@ focus_tree = {
 
 	#[ReactionaryFocci]
 	focus = {
-		id = CSA_IllDoitMyself
+		id = CSA_NPA
 		icon = GFX_focus_generic_monarchy_1
 		cost = 2
-		x = -5
+		x = -6
 		y = 1
 		relative_position_id = CSA_DifficultDecision
 		prerequisite = {
 			focus = CSA_DifficultDecision
+		}
+		mutually_exclusive = {
+		focus = CSA_NPR
+		}				
+		completion_reward = {
+		}
+	}
+
+
+	#LiberalProblems
+
+		focus = {
+		id = CSA_LibtardProblem
+		icon = GFX_focus_generic_monarchy_1
+		cost = 2
+		x = -4
+		y = 1
+		relative_position_id = CSA_NPA
+		prerequisite = {
+			focus = CSA_NPA
 		}
 		completion_reward = {
 		}
 	}
-	
-	#[Communist/Liberal/ConservativeFocci]
-	focus = {
-		id = CSA_LetCongressHelp
+		focus = {
+		id = CSA_DirtOnLibs
 		icon = GFX_focus_generic_monarchy_1
 		cost = 2
-		x = 5
+		x = 0
+		y = 1
+		relative_position_id = CSA_LibtardProblem
+		prerequisite = {
+			focus = CSA_LibtardProblem
+		}
+		completion_reward = {
+		}
+	}
+		focus = {
+		id = CSA_NegotiationsWithLibs
+		icon = GFX_focus_generic_monarchy_1
+		cost = 2
+		x = 0
+		y = 1
+		relative_position_id = CSA_DirtOnLibs
+		prerequisite = {
+			focus = CSA_DirtOnLibs
+		}
+		completion_reward = {
+		}
+	}	
+		focus = {
+		id = CSA_UnitedParty
+		icon = GFX_focus_generic_monarchy_1
+		cost = 2
+		x = 0
+		y = 1
+		relative_position_id = CSA_NegotiationsWithLibs
+		prerequisite = {
+			focus = CSA_NegotiationsWithLibs
+		}		
+		completion_reward = {
+		}
+	}
+		focus = {
+		id = CSA_WeakCongresStrongMatt
+		icon = GFX_focus_generic_monarchy_1
+		cost = 2
+		x = 0
+		y = 1
+		relative_position_id = CSA_UnitedParty
+		prerequisite = {
+			focus = CSA_UnitedParty
+		}
+		completion_reward = {
+		}
+	}
+
+		#Econ
+		focus = {
+		id = CSA_ExpandEcon
+		icon = GFX_focus_generic_monarchy_1
+		cost = 2
+		x = 4
+		y = 1
+		relative_position_id = CSA_NPA
+		prerequisite = {
+			focus = CSA_NPA
+		}
+		completion_reward = {
+		}
+	}
+		focus = {
+		id = CSA_IntreventionistEcon
+		icon = GFX_focus_generic_monarchy_1
+		cost = 2
+		x = -1
+		y = 1
+		relative_position_id = CSA_ExpandEcon
+		prerequisite = {
+			focus = CSA_ExpandEcon
+		}
+		mutually_exclusive = {
+			focus = CSA_NoStepOnSnekEcon
+		}				
+		completion_reward = {
+		}
+	}	
+		focus = {
+		id = CSA_NoStepOnSnekEcon
+		icon = GFX_focus_generic_monarchy_1
+		cost = 2
+		x = 1
+		y = 1
+		relative_position_id = CSA_ExpandEcon
+		prerequisite = {
+			focus = CSA_ExpandEcon
+		}
+		mutually_exclusive = {
+			focus = CSA_IntreventionistEcon
+		}		
+		completion_reward = {
+		}
+	}	
+		focus = {
+		id = CSA_NationaliseStuff
+		icon = GFX_focus_generic_monarchy_1
+		cost = 2
+		x = 0
+		y = 1
+		relative_position_id = CSA_IntreventionistEcon
+		prerequisite = {
+			focus = CSA_IntreventionistEcon
+		}
+		completion_reward = {
+		}
+	}	
+		focus = {
+		id = CSA_DeregulateEcon
+		icon = GFX_focus_generic_monarchy_1
+		cost = 2
+		x = 0
+		y = 1
+		relative_position_id = CSA_NoStepOnSnekEcon
+		prerequisite = {
+			focus = CSA_NoStepOnSnekEcon
+		}
+		completion_reward = {
+		}
+	}		
+		focus = {
+		id = CSA_EconSecured
+		icon = GFX_focus_generic_monarchy_1
+		cost = 2
+		x = 0
+		y = 1
+		relative_position_id = CSA_NationaliseStuff
+		prerequisite = {
+			focus = CSA_NationaliseStuff
+		}
+		prerequisite = {
+			focus = CSA_DeregulateEcon
+		}		
+		completion_reward = {
+		}
+	}	
+		focus = {
+		id = CSA_PMCAustin
+		icon = GFX_focus_generic_monarchy_1
+		cost = 2
+		x = 0
+		y = 2
+		relative_position_id = CSA_NoStepOnSnekEcon
+		prerequisite = {
+			focus = CSA_NationaliseStuff
+		}
+		prerequisite = {
+			focus = CSA_DeregulateEcon
+		}		
+		completion_reward = {
+		}
+	}			
+		focus = {
+		id = CSA_TotalWar
+		icon = GFX_focus_generic_monarchy_1
+		cost = 2
+		x = -1
+		y = 1
+		relative_position_id = CSA_PMCAustin
+		prerequisite = {
+			focus = CSA_EconSecured
+		}
+		prerequisite = {
+			focus = CSA_PMCAustin
+		}			
+		completion_reward = {
+		}
+	}
+	
+		#CIA
+		focus = {
+		id = CSA_CIAMachine
+		icon = GFX_focus_generic_monarchy_1
+		cost = 2
+		x = 0
+		y = 1
+		relative_position_id = CSA_NPA
+		prerequisite = {
+			focus = CSA_NPA
+		}
+		completion_reward = {
+		}
+	}
+		focus = {
+		id = CSA_ExpandFunds
+		icon = GFX_focus_generic_monarchy_1
+		cost = 2
+		x = 0
+		y = 1
+		relative_position_id = CSA_CIAMachine
+		prerequisite = {
+			focus = CSA_CIAMachine
+		}
+		completion_reward = {
+		}
+	}
+		focus = {
+		id = CSA_LGBTQCIA_Psyop
+		icon = GFX_focus_generic_monarchy_1
+		cost = 2
+		x = -1
+		y = 1
+		relative_position_id = CSA_ExpandFunds
+		prerequisite = {
+			focus = CSA_ExpandFunds
+		}
+		completion_reward = {
+		}
+	}	
+		focus = {
+		id = CSA_TortureGDG
+		icon = GFX_focus_generic_monarchy_1
+		cost = 2
+		x = 1
+		y = 1
+		relative_position_id = CSA_ExpandFunds
+		prerequisite = {
+			focus = CSA_ExpandFunds
+		}
+		completion_reward = {
+		}
+	}	
+		focus = {
+		id = CSA_WWO
+		icon = GFX_focus_generic_monarchy_1
+		cost = 2
+		x = 0
+		y = 1
+		relative_position_id = CSA_LGBTQCIA_Psyop
+		prerequisite = {
+			focus = CSA_LGBTQCIA_Psyop
+		}
+		completion_reward = {
+		}
+	}	
+		focus = {
+		id = CSA_GDGExample
+		icon = GFX_focus_generic_monarchy_1
+		cost = 2
+		x = 0
+		y = 1
+		relative_position_id = CSA_TortureGDG
+		prerequisite = {
+			focus = CSA_TortureGDG
+		}
+		completion_reward = {
+		}
+	}		
+		focus = {
+		id = CSA_EndDissidents
+		icon = GFX_focus_generic_monarchy_1
+		cost = 2
+		x = 0
+		y = 3
+		relative_position_id = CSA_ExpandFunds
+		prerequisite = {
+			focus = CSA_WWO
+		}
+		prerequisite = {
+			focus = CSA_GDGExample
+		}		
+		completion_reward = {
+		}
+	}
+		focus = {
+		id = CSA_LoyaltySecured
+		icon = GFX_focus_generic_monarchy_1
+		cost = 2
+		x = -2
+		y = 1
+		relative_position_id = CSA_EndDissidents
+		prerequisite = {
+			focus = CSA_TotalWar
+		}
+		prerequisite = {
+			focus = CSA_WeakCongresStrongMatt
+		}		
+		prerequisite = {
+			focus = CSA_EndDissidents
+		}				
+		completion_reward = {
+		}		
+	}
+		focus = {
+		id = CSA_ProsperitySecured
+		icon = GFX_focus_generic_monarchy_1
+		cost = 2
+		x = 2
+		y = 1
+		relative_position_id = CSA_EndDissidents
+		prerequisite = {
+			focus = CSA_TotalWar
+		}
+		prerequisite = {
+			focus = CSA_WeakCongresStrongMatt
+		}		
+		prerequisite = {
+			focus = CSA_EndDissidents
+		}				
+		completion_reward = {
+		}		
+	}	
+		focus = {
+		id = CSA_SUSP
+		icon = GFX_focus_generic_monarchy_1
+		cost = 2
+		x = 2
+		y = 1
+		relative_position_id = CSA_LoyaltySecured
+		prerequisite = {
+			focus = CSA_LoyaltySecured
+		}
+		prerequisite = {
+			focus = CSA_ProsperitySecured
+		}		
+		completion_reward = {
+		}		
+	}		
+
+	#[Communist/Liberal/ConservativeFocci]
+	focus = {
+		id = CSA_NPR
+		icon = GFX_focus_generic_monarchy_1
+		cost = 2
+		x = 6
 		y = 1
 		relative_position_id = CSA_DifficultDecision
 		prerequisite = {
 			focus = CSA_DifficultDecision
 		}
+		mutually_exclusive = {
+		focus = CSA_NPA
+		}					
 		completion_reward = {
 		}
 	}
@@ -167,9 +513,9 @@ focus_tree = {
 		cost = 2
 		x = 0
 		y = 1
-		relative_position_id = CSA_LetCongressHelp
+		relative_position_id = CSA_NPR
 		prerequisite = {
-			focus = CSA_LetCongressHelp
+			focus = CSA_NPR
 		}
 		completion_reward = {
 		}

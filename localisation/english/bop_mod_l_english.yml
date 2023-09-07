@@ -1,0 +1,11 @@
+﻿l_english:
+TRL_bop:0 "Turul Balance of Power"
+TRL_government_side:0 "The Government"
+TRL_militarists:0 "The Military"
+TRL_government_control:0 "Government Control"
+TRL_balance:0 "Balanced Government and Military"
+TRL_militarist_incidents:0 "Militarist Border Incidents"
+TRL_military_coup:0 "Military Coup"
+TRL_government_side_tt:0 "§RYou cannot declare war through justification.§!"
+TRL_militarist_incidents_tt:0 "There might be §Yborder incidents§! between us and our neighbours which may §Yescalate§!."
+TRL_military_coup_tt:0 "A §Ycoup§! will happen, replacing §Y[TRL.getLeader]§! with a §YGeneral§! or §YField Marshal§!."

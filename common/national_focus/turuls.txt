@@ -1,0 +1,53 @@
+### search_filters = {FOCUS_FILTER_POLITICAL}
+### search_filters = {FOCUS_FILTER_RESEARCH}
+### search_filters = {FOCUS_FILTER_INDUSTRY}
+### search_filters = {FOCUS_FILTER_STABILITY}
+### search_filters = {FOCUS_FILTER_WAR_SUPPORT}
+### search_filters = {FOCUS_FILTER_MANPOWER}
+### search_filters = {FOCUS_FILTER_ANNEXATION}
+### search_filters = {FOCUS_FILTER_CSA_CONGRESS}
+
+### search_filters = {FOCUS_FILTER_POLITICAL}
+### search_filters = {FOCUS_FILTER_RESEARCH}
+### search_filters = {FOCUS_FILTER_INDUSTRY}
+### search_filters = {FOCUS_FILTER_STABILITY}
+### search_filters = {FOCUS_FILTER_WAR_SUPPORT}
+### search_filters = {FOCUS_FILTER_MANPOWER}
+### search_filters = {FOCUS_FILTER_ANNEXATION}
+### search_filters = {FOCUS_FILTER_CSA_CONGRESS}
+
+focus_tree = {
+	id = CSA_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = TRL
+		}
+	}
+	continuous_focus_position = { x = 50 y = 1600 }
+	default = no
+
+	focus = {
+		id = TRL_global_affairs
+		cost = 3
+		icon = GFX_goal_generic_political_pressure
+		x = 5
+		y = 0
+		available = {
+			is_in_faction = yes
+			NOT = {
+				is_in_faction_with = CSA
+			}
+		}
+		relative_position_id = CSA_the_construction_of_atlanta
+		# prerequisite = {
+		# 	focus = CSA_the_construction_of_atlanta
+		# }
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+}

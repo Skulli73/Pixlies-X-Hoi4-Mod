@@ -77,4 +77,8 @@ spriteTypes = {
 		name = GFX_GME_fortressia
 		texturefile = "gfx/leaders/GME/fortressia.dds"
 	}
+	spriteType = {
+		name = GFX_VNZ_blitz
+		texturefile = "gfx/leaders/VNZ/blitz.dds"
+	}
 }

@@ -25,3 +25,6 @@ set_popularities = {
 	neutrality = 60
 }
 inherit_technology = CSA
+puppet = BGA
+recruit_character = vill_vill
+promote_character = vill_vill

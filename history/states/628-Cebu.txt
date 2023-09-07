@@ -9,7 +9,7 @@ state=
 	history=
 	{
 		owner = ESP
-		add_core_of = ESP
+		#add_core_of = ESP
 		buildings = {
 			#infrastructure = 2
 			12118 = {

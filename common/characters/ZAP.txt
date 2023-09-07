@@ -1,0 +1,28 @@
+characters = {
+	czipsu = {
+		name = "Czipsu"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/ZAP/czipsu.dds"
+				small = "gfx/leaders/ZAP/czipsu.dds"
+			}
+			 army = {
+			 	large = "gfx/leaders/ZAP/czipsu.dds" # GFX_portrait_ETH_haile_selassie_field_marshal
+			 	small = "gfx/leaders/ZAP/czipsu.dds"
+
+			 }
+		}
+		country_leader = {
+			ideology = centrism
+			expire = "1965.1.1.1"
+			traits = {  }
+			id = -1
+		}
+		country_leader = {
+			ideology = conservatism
+			expire = "1965.1.1.1"
+			traits = {  }
+			id = -1
+		}
+	}
+}

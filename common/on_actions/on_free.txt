@@ -32,6 +32,20 @@ on_actions = {
 						transfer_state_to = ROOT
 					}
 				}
+				alternis = {
+					remove_trait = {
+						slot = head_of_state
+						trait = the_foreign_connection
+					}
+					remove_trait = {
+						slot = head_of_state
+						trait = fascist_orchestrator
+					}
+					add_trait = {
+						slot = head_of_state
+						trait = redundant_overseer
+					}
+				}
 			}
 		}
 	}

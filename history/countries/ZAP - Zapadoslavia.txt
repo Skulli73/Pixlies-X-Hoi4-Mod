@@ -28,4 +28,6 @@ set_popularities = {
 	democratic = 50
 	neutrality = 50
 }
+recruit_character = czipsu
+promote_character = czipsu
 inherit_technology = CSA

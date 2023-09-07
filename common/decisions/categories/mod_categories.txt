@@ -29,7 +29,13 @@ FGE_destroy_CSA = {
 		tag = FGE
 	}
 	visible = {
-		has_completed_focus = FGE_destroy_the_southern_union
+		OR = {
+			has_completed_focus = FGE_destroy_the_southern_union
+			AND = {
+				has_completed_focus = FGE_federal_election
+				has_war_with = CSA
+			}
+		}
 	}
 }
 FGE_eu_decisions = {
@@ -81,6 +87,12 @@ FGE_ecuador_conflict = {
 		}
 	}
 	visible = {
+		ECD = {
+			NOT = {
+				is_in_faction_with = FGE
+				is_subject = yes
+			}
+		}
 	}
 }
 GME_state_of_the_national_state = {

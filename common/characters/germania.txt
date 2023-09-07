@@ -140,6 +140,40 @@ characters = {
 			}
 		}
 	}
+	thatonekaiser = {
+		name = "ThatOneKaiser"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/GME/thatonekaiser.dds"
+			}
+			army = {
+				large = "gfx/leaders/GME/thatonekaiser.dds"
+				small = "gfx/interface/ideas/GME/thatonekaiser.dds"
+			}
+		}
+		country_leader = {
+			ideology = conservatism
+			traits = {
+				exiled_revolutionary
+				democratic_crusader
+			}
+			desc = THATONEKAISER_LEADER_DESC
+		}
+		corps_commander = {
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+			visible = {
+				ROOT = {
+					NOT = {
+						has_government = fascism
+					}
+				}
+			}
+		}
+	}
 	alternis = {
 		name = "Alternis"
 		portraits = {

@@ -374,3 +374,53 @@ news_event = {
 		}
 	}
 }
+country_event = {
+	id = nsg.14
+	title = nsg.14.t
+	desc = nsg.14.d
+	is_triggered_only = yes
+	option = {
+		name = nsg.14.a
+		ai_chance = {
+			factor = 100
+		}
+		set_global_flag = GME_TRL_deal
+		add_to_faction = FROM
+		FROM = {
+			every_owned_state = {
+				limit = {
+					OR = {
+						is_core_of = TRL
+						is_claimed_by = TRL
+						region = 21
+						is_core_of = ILY
+						state = 52
+						state = 53
+						state = 54
+						state = 50
+					}
+				}
+				transfer_state_to = TRL
+			}
+		}
+	}
+	option = {
+		name = nsg.14.b
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+country_event = {
+	id = nsg.15
+	title = nsg.15.t
+	desc = nsg.15.d
+	is_triggered_only = yes
+	option = {
+		name = nsg.15.a
+		ai_chance = {
+			factor = 50
+		}
+		add_idea = blitz_head_of_state
+	}
+}

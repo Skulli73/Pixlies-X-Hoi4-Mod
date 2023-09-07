@@ -256,7 +256,7 @@ CSA_garrison_GME = {
 		type = put_unit_buffers
 		ratio = 0.5
 		states = {
-			51 35  57 36 56 42 8 34 6
+			51 35 59 57 36 56 42 8 34 6
 		}
 	}
 }

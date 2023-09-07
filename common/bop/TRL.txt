@@ -1,0 +1,71 @@
+
+TRL_bop = {
+	initial_value = -0.8
+	left_side = TRL_government_side
+	right_side = TRL_militarists
+#	decision_category = GER_mefo_bills_category
+	range = {
+		id = TRL_balance
+		min = -0.3
+		max = 0.3
+		modifier = {
+			custom_modifier_tooltip = TRL_government_side_tt
+		}
+		on_activate = {
+			set_rule = {
+				can_not_declare_war = yes
+			}
+		}
+	}
+	side = {
+		id = TRL_government_side
+		icon = GFX_idea_generic_pp_unity_bonus
+		range = {
+			id = TRL_government_control
+			min = -1
+			max = -0.3
+			modifier = {
+				political_power_factor = 0.25
+				custom_modifier_tooltip = TRL_government_side_tt
+			}
+			on_activate = {
+				set_rule = {
+					can_not_declare_war = yes
+				}
+			}
+		}
+	}
+	side = {
+		id = TRL_militarists
+		icon = GFX_idea_generic_manpower_bonus
+		range = {
+			id = TRL_militarist_incidents
+			min = 0.3
+			max = 0.8
+			modifier = {
+				political_power_factor = -0.25
+				custom_modifier_tooltip = TRL_militarist_incidents_tt
+			}
+			on_activate = {
+				set_rule = {
+					can_not_declare_war = no
+				}
+			}
+		}
+		range = {
+			id = TRL_military_coup
+			min = 0.8
+			max = 1
+			modifier = {
+				political_power_factor = -0.5
+				custom_modifier_tooltip = TRL_military_coup_tt
+			}
+			on_activate = {
+				set_rule = {
+					can_not_declare_war = no
+				}
+			}
+		}
+	}
+}
+

@@ -667,6 +667,15 @@ country_event = {
 			id = gge.30
 			days = 1
 		}
+
+		hidden_effect = {
+			FGE = {
+				country_event = {
+					id = su_collapse.1
+					days = 60
+				}
+			}
+		}
 	}
 	option = {
 		name = gge.29.b

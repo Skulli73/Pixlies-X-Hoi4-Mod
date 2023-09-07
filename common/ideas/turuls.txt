@@ -1,0 +1,15 @@
+ideas = {
+	country = {
+		TRL_war_reliant_economy = {
+			name = TRL_war_reliant_economy
+			picture = chi_war_of_resistance
+			modifier = {
+				industrial_capacity_factory = -0.5
+				consumer_goods_factor = 0.25
+			}
+			available = {
+				is_subject_of = CSA
+			}
+		}
+	}
+}

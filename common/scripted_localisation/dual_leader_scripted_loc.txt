@@ -19,12 +19,42 @@ defined_text = {
 	text = {
 		trigger = {
 			OR = {
-				original_tag = GME
-				original_tag = FGE
+				AND = {
+					OR = {
+						original_tag = GME
+						original_tag = FGE
+					}
+					has_government = fascism
+				}
+				AND = {
+					original_tag = GME
+					has_government = neutrality
+				}
 			}
-			has_government = fascism
+			NOT = {
+				has_completed_focus = GME_president_for_life
+			}
 		}
-		localization_key = "Führer"
+		localization_key = "Leader"
+	}
+	text = {
+		trigger = {
+			OR = {
+				AND = {
+					OR = {
+						original_tag = GME
+						original_tag = FGE
+					}
+					has_government = fascism
+				}
+				AND = {
+					original_tag = GME
+					has_government = neutrality
+				}
+			}
+			has_completed_focus = GME_president_for_life
+		}
+		localization_key = "President for Life"
 	}
 	text = {
 		trigger = {
@@ -44,7 +74,6 @@ defined_text = {
 	text = {
 		trigger = {
 			OR = {
-				original_tag = GME
 				original_tag = FGE
 			}
 			OR = {
@@ -129,24 +158,42 @@ defined_text = {
 	text = {
 		trigger = {
 			OR = {
-				original_tag = GME
-				original_tag = FGE
+				AND = {
+					OR = {
+						original_tag = GME
+						original_tag = FGE
+					}
+					has_government = fascism
+				}
+				AND = {
+					original_tag = GME
+					has_government = neutrality
+				}
 			}
-			has_government = fascism
-			is_subject = no
+			NOT = {
+				has_completed_focus = GME_abolish_overseeer
+			}
 		}
-		localization_key = "Deputy-Führer"
+		localization_key = "Overseeer"
 	}
 	text = {
 		trigger = {
 			OR = {
-				original_tag = GME
-				original_tag = FGE
+				AND = {
+					OR = {
+						original_tag = GME
+						original_tag = FGE
+					}
+					has_government = fascism
+				}
+				AND = {
+					original_tag = GME
+					has_government = neutrality
+				}
 			}
-			has_government = fascism
-			is_subject = yes
+			has_completed_focus = GME_a_second_in_command
 		}
-		localization_key = "Overseeer"
+		localization_key = "Vice-President"
 	}
 	text = {
 		trigger = {
@@ -166,7 +213,6 @@ defined_text = {
 	text = {
 		trigger = {
 			OR = {
-				original_tag = GME
 				original_tag = FGE
 			}
 			OR = {
@@ -280,6 +326,12 @@ defined_text = {
 		localization_key = "Karl"
 	}
 	text = {
+		trigger = {
+			has_idea = blitz_head_of_state
+		}
+		localization_key = "BlitzDontCare" 
+	}
+	text = {
 		localization_key = DEFAULT_TITLE
 	}
 }
@@ -340,6 +392,12 @@ defined_text = {
 			has_idea = birb_head_of_state
 		}
 		localization_key = "GFX_ESP_birb"
+	}
+	text = {
+		trigger = {
+			has_idea = blitz_head_of_state
+		}
+		localization_key = "GFX_VNZ_blitz"
 	}
 	text = {
 		localization_key = "GFX_portrait_bg_blank"

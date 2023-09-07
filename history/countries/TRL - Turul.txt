@@ -8,9 +8,13 @@ set_convoys = 0
 
 add_ideas = {
 	all_adults_serve
-	war_economy
+	partial_economic_mobilisation
+	TRL_war_reliant_economy
 }
-
+set_power_balance = {
+	id = TRL_bop
+	set_default = yes
+}
 
 
 #Politics for 50.1.1
@@ -22,8 +26,8 @@ set_politics = {
 }
 set_popularities = {
 	democratic = 15
-	fascism = 60
-	neutrality = 25
+	fascism = 70
+	neutrality = 15
 }
 create_country_leader = {
 	name = "Xanax"

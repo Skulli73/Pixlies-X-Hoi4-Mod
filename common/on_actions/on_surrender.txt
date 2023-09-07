@@ -49,7 +49,10 @@ on_actions = {
 							}
 						}
 						NOT = {
-							has_global_flag = fge_trl_win
+							OR = {
+								has_global_flag = fge_trl_win
+								has_completed_focus = FGE_federal_election
+							}
 						}
 					}
 					FGE = {
@@ -64,6 +67,12 @@ on_actions = {
 							NOT = {
 								has_cosmetic_tag = FGE_REPUBLIC
 								has_government = neutrality
+							}
+							NOT = {
+								OR = {
+									has_global_flag = fge_trl_win
+									has_completed_focus = FGE_federal_election
+								}
 							}
 						}
 						set_global_flag = fge_trl_win

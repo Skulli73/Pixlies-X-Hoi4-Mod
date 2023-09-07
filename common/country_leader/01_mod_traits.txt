@@ -8,4 +8,17 @@ leader_traits = {
 		political_power_factor = -0.25
 		stability_weekly = -0.0025
 	}
+	former_pm = {
+		random = no
+		political_power_factor = 0.25
+		neutrality_drift = 0.03
+		fascism_drift = 0.03
+		resistance_target = -0.25
+	}
+	redundant_overseer = {
+		random = no
+		political_power_factor = -0.75
+		stability_weekly = -0.001
+		
+	}
 }

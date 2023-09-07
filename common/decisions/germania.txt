@@ -212,11 +212,18 @@ FGE_return_home = {
 			has_completed_focus = FGE_operation_broken_star
 		}
 		days_remove = 25
-		war_with_on_remove = FGE
+		war_with_on_remove = GME
 		remove_effect = {
-			declare_war_on = {
-				target = GME
-				type = annex_everything
+			every_country = {
+				limit = {
+					original_tag = GME
+				}
+				ROOT = {
+					declare_war_on = {
+						target = GME
+						type = annex_everything
+					}
+				}
 			}
 			add_threat = 70
 		}
@@ -285,7 +292,11 @@ FGE_return_home = {
 						every_state = {
 							limit = {
 								AND = {
-									NOT = {is_controlled_by = FGE}
+									NOT = {
+										CONTROLLER = {
+											is_in_faction_with = FGE
+										}
+									}
 									is_owned_by = GME
 								}
 							}
@@ -383,6 +394,17 @@ FGE_destroy_CSA = {
 		cost = 50
 		ai_will_do = {
 			factor = 10000
+		}
+		available = {
+			any_state = {
+				is_core_of = ECD
+				OWNER = {
+					OR = {
+						tag = ROOT
+						is_subject_of = ROOT
+					}
+				}
+			}
 		}
 		days_remove = 15
 		remove_effect = {
@@ -625,10 +647,18 @@ FGE_destroy_CSA = {
 		available = {
 			OR = {
 				315 = {
-					is_controlled_by = ROOT
+					CONTROLLER = {
+						OR = {
+							is_in_faction_with = ROOT
+							tag = ROOT
+						}
+					}
 				}
 				365 = {
-					is_controlled_by = ROOT
+					OR = {
+						is_in_faction_with = ROOT
+						tag = ROOT
+					}
 				}
 			}
 			has_character = geo
@@ -639,8 +669,14 @@ FGE_destroy_CSA = {
 		fire_only_once = yes
 		days_remove = 10
 		remove_effect = {
-			every_controlled_state = {
+			every_state = {
 				limit = {
+					CONTROLLER = {
+						OR = {
+							tag = ROOT
+							is_in_faction_with = ROOT
+						}
+					}
 					is_owned_by = CSA
 					OR = {
 						is_on_continent = north_america
@@ -1446,8 +1482,32 @@ FGE_ecuador_conflict = {
 	}
 }
 GME_state_of_the_national_state = {
+	GME_annex_civil_war = {
+		allowed = {
+			original_tag = GME
+		}
+		visible = {
+			is_subject_of = CSA
+			has_war_with = GME
+			GME = {
+				has_capitulated = yes
+			}
+		}
+		complete_effect = {
+			annex_country = {
+				target = GME
+				transfer_troops = no
+			}
+		}
+		ai_will_do = {
+			factor = 1000
+		}
+	}
 	GME_factory_strike = {
 		state_target = yes
+		ai_will_do = {
+			factor = 20
+		}
 		cost = 12.5
 		days_remove = 25
 		target_array = owned_controlled_states
@@ -1510,6 +1570,9 @@ GME_state_of_the_national_state = {
 		cost = 12.5
 		days_remove = 25
 		target_array = owned_controlled_states
+		ai_will_do = {
+			factor = 20
+		}
 		modifier = {
 			local_factories = -1
 		}
@@ -1593,7 +1656,9 @@ GME_state_of_the_national_state = {
 		}
 	}
 	GME_take_control_over_resources = {
-
+		ai_will_do = {
+			factor = 20
+		}
 		state_target = yes
 		cost = 25
 		days_remove = 25
@@ -1693,6 +1758,9 @@ GME_state_of_the_national_state = {
 		}
 	}
 	GME_attack_occupying_forces = {
+		ai_will_do = {
+			factor = 2000
+		}
 		state_target = yes
 		allowed = {
 			original_tag = GME
@@ -1701,6 +1769,7 @@ GME_state_of_the_national_state = {
 		visible = {
 			is_subject_of = CSA
 			has_completed_focus = GME_attack_occupying_forces
+			has_war = no
 		}
 		available = {
 			is_subject_of = CSA
@@ -1723,9 +1792,19 @@ GME_state_of_the_national_state = {
 				}
 			}
 		}
-		days_remove = 1
 		cost = 40
-		remove_effect = {
+		complete_effect = {
+			IF = {
+				limit = {
+					FROM = {
+						OR = {
+							state = 57
+							state = 59
+						}
+					}
+				}
+				set_country_flag = 9_ad_flag
+			}
 			ROOT = {
 				add_popularity = {
 					ideology = neutrality
@@ -1918,6 +1997,92 @@ political_actions = {
 		}
 		ai_will_do = {
 			factor = 10000
+		}
+	}
+	FGE_ecuadorian_autonomy = {
+		available = {
+			ECD = {
+				exists = no
+			}
+			any_owned_state = {
+				is_core_of = ECD
+			}
+		}
+		allowed = {
+			original_tag = FGE
+		}
+		fire_only_once = yes
+		complete_effect = {
+			release_puppet = ECD
+			set_autonomy = {
+				target = ECD
+				autonomy_state = autonomy_integrated_puppet
+			}
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	FGE_expand_ecuador = {
+		available = {
+			ECD = {
+				is_subject_of = ROOT
+			}
+			any_controlled_state = {
+				OR = {
+					state = 493
+					state = 306
+				}
+			}
+		}
+		allowed = {
+			original_tag = FGE
+		}
+		fire_only_once = yes
+		complete_effect = {
+			every_controlled_state = {
+				limit = {
+					OR = {
+						state = 493
+						state = 306
+					}
+				}
+				transfer_state_to = ECD
+			}
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	FGE_expand_venezuela = {
+		available = {
+			VNZ = {
+				is_subject_of = ROOT
+			}
+			any_controlled_state = {
+				OR = {
+					state = 489
+					state = 695
+				}
+			}
+		}
+		allowed = {
+			original_tag = FGE
+		}
+		fire_only_once = yes
+		complete_effect = {
+			every_controlled_state = {
+				limit = {
+					OR = {
+						state = 489
+						state = 695
+					}
+				}
+				transfer_state_to = VNZ
+			}
+		}
+		ai_will_do = {
+			factor = 100
 		}
 	}
 }

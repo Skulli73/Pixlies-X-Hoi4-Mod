@@ -100,9 +100,6 @@ FGE_invite_soviets_desc:0 "Due to Turul control of Ukraine, the Soviet Union des
 FGE_demand_territorial_concessions:0 "Demand Territorial Concessions"
 FGE_demand_territorial_concessions_desc:0 "Many member-states of the OFN wish to have land occupied by the Turul Empire. If we demand the Turul Empire to hand the land over it would force them to either give us land or give us a good reason for war."
 
-CSA_New_dawn_SU:0 "Atlantas Final Touches"
-CSA_New_dawn_SU_desc:0 "After the end of the Southern Union-Germanian War, we have decided to continue with old plans of the construction of the great Capital of Atlanta. Of course we did use some Slave labor to help build the capital, but the capital was built in a month and now it is almost finished and we shall now give it some final touches for the hearth of this bright empire."
-
 FGE_rebuild_the_country:0 "Rebuild the Country"
 FGE_rebuild_the_country_desc:0 "Our country got damaged by the traiterous nationalists and is left in ruins. It is time for us to rebuild our country so that our population can truely return home."
 FGE_migrate_our_industry:0 "Migrate our Industry"
@@ -245,3 +242,55 @@ CSA_constitute_the_conference_of_governors:0 "Constitute the Conference of Gover
 CSA_martial_law_in_germania:0 "Martial Law in the National State"
 CSA_martial_law_in_germania_tt:0 "\nWill §Ychoose§! the §YResist Occupation by the Southern Union§! path of their focus tree."
 unlock_new_parts_focus_tree_tt:0 "The §YFocus Tree§! will be expanded."
+
+#SU
+CSA_atEveryone_AtlantaIsBuild:0 "Atlantas Final Touches"
+CSA_atEveryone_AtlantaIsBuild_desc:0 "After the end of the Southern Union-Germanian War, not only we have decided to continue with old plans of the construction of the great Capital of Atlanta, but also the Industrialization of the Union. Of course we did use some Prisoner labor to help build the capital and Total Slavery Abolitionists are very mad, but the capital was built in a month and now it is almost finished and we shall now give it some final touches for the hearth of this bright empire."
+CSA_GetHot_KeepMoving:0 "Get Hot, Keep Moving"
+CSA_GetHot_KeepMoving_desc:0 "Get Hot, Keep Moving."
+CSA_TrollingInAtlanta:0 "Commotion in Atlanta"
+CSA_TrollingInAtlanta_desc:0 "Commotion in Atlanta."
+CSA_KeepCalmAnd:0 "Everything is Fine!"
+CSA_KeepCalmAnd_desc:0 "Everything is Fine!"
+CSA_BlameItOnTheGerms:0 "It was the Germans!"
+CSA_BlameItOnTheGerms_desc:0 "It was the Germans!"
+CSA_DifficultDecision:0 "Extraordinary Session of Congress"
+CSA_DifficultDecision_desc:0 "Extraordinary Session of Congress"
+
+#SUFASC
+CSA_NPA:0 "Needless Plan Accepted"
+CSA_NPA_desc:0 "Needless Plan Accepted"
+
+#SUFASCLIBProblem
+CSA_LibtardProblem:0 "Problems with the Liberal Wing"
+CSA_LibtardProblem_desc:0 "."
+CSA_DirtOnLibs:0 "Dig up Dirt on Them"
+CSA_DirtOnLibs_desc:0 "."
+CSA_NegotiationsWithLibs:0 "Give ''Ceo'' a Vacation"
+CSA_NegotiationsWithLibs_desc:0 "."
+CSA_UnitedParty:0 "A United Party"
+CSA_UnitedParty_desc:0 "."
+CSA_WeakCongresStrongMatt:0 "Intimidate Congress"
+CSA_WeakCongresStrongMatt_desc:0
+
+#SUFASCECON
+CSA_ExpandEcon:0 "Our Common Economic Pains"
+CSA_ExpandEcon_desc:0 "."
+CSA_IntreventionistEcon:0 "Interventionism Wins"
+CSA_IntreventionistEcon_desc:0 "."
+CSA_NoStepOnSnekEcon:0 "Laissez-Faire Ideals Top"
+CSA_NoStepOnSnekEcon_desc:0 "."
+CSA_NationaliseStuff:0 "Nationalize Key Industries"
+CSA_NationaliseStuff_desc:0 "."
+CSA_DeregulateEcon:0 "Deregulate and Privatize"
+CSA_DeregulateEcon_desc:0 "."
+CSA_EconSecured:0 "Security in Our Economy"
+CSA_EconSecured_desc:0 "."
+CSA_PMCAustin:0 "PMC Austin"
+CSA_PMCAustin_desc:0 "."
+CSA_TotalWar:0 "Do You Want Total War?"
+CSA_TotalWar_desc:0 "."
+
+##SULIBPCCOM
+CSA_NPR:0 "Needless Plan Rejected"
+CSA_NPR_desc:0 "Needless Plan Rejected"

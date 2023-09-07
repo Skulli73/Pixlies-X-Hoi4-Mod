@@ -26,8 +26,8 @@ set_politics = {
 }
 set_popularities = {
 	democratic = 15
-	fascism = 60
-	neutrality = 25
+	fascism = 70
+	neutrality = 15
 }
 create_country_leader = {
 	name = "Xanax"

@@ -43,6 +43,17 @@ focus_tree = {
 			}
 			GME_remove_5_csa_trust = yes
 		}
+		ai_will_do = {
+			factor = 1000
+			modifier = {
+				factor = 0
+				NOT = {
+					CSA = {
+						has_completed_focus = CSA_martial_law_in_germania
+					}
+				}
+			}
+		}
 	}
 	focus = {
 		id = GME_help_in_construction_of_atlanta

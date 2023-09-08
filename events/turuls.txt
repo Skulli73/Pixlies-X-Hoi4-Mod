@@ -1,0 +1,113 @@
+add_namespace = turul
+country_event = { #coup
+	id = turul.1
+	title = turul.1.t
+	desc = turul.1.d
+	is_triggered_only = yes
+	option =  {
+		name = turul.1.a
+		add_stability = -0.3
+		add_political_power = -300
+		
+		
+		set_power_balance = {
+			id = TRL_bop
+			set_default = yes
+		}
+		IF = {
+			limit = {
+				any_owned_state = {
+					NOT = {
+						is_controlled_by = ROOT
+					}
+				}
+			}
+			create_dynamic_country = {
+				original_tag = ROOT
+				set_politics = {
+					ruling_party = fascism
+					elections_allowed = no
+				}
+				set_popularities = {
+					fascism = 100
+				}
+				random_state = {
+					limit = {
+						NOT = {
+							is_controlled_by = ROOT
+						}
+						is_owned_by = ROOT
+					}
+					set_state_owner_to = PREV
+					CONTROLLER = {
+						puppet = PREV.PREV
+					}
+				}
+			}
+			TRL = {
+				every_character = {
+					limit = {
+						is_country_leader = yes
+					}
+					set_nationality = TR2
+					add_country_leader_role = {
+						character = THIS
+						promote_leader = yes
+						country_leader = {
+							ideology = socialism
+							expire = "1965.1.1.1"
+							traits = { 
+		
+							 }
+						}
+					}
+					add_country_leader_role = {
+						character = THIS
+						promote_leader = yes
+						country_leader = {
+							ideology = despotism
+							expire = "1965.1.1.1"
+							traits = { 
+		
+							 }
+						}
+					}
+					add_country_leader_role = {
+						character = THIS
+						promote_leader = yes
+						country_leader = {
+							ideology = anarcho_communism
+							expire = "1965.1.1.1"
+							traits = { 
+		
+							 }
+						}
+					}
+				}
+			}
+			
+		}
+		random_character = {
+			limit = {
+				OR = {
+					is_army_leader = yes
+					is_army_chief = yes
+				}
+				NOT = {
+					is_country_leader = yes
+				}
+			}
+			add_country_leader_role = {
+				character = THIS
+				promote_leader = yes
+				country_leader = {
+					ideology = nazism
+					expire = "1965.1.1.1"
+					traits = { 
+
+					 }
+				}
+			}
+		}
+	}
+}

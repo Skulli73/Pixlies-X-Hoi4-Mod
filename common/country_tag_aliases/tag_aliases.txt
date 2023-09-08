@@ -174,3 +174,9 @@ BR2 = {
 	original_tag = BRT
 	has_government = fascism
 }
+TR2 = {
+	original_tag = TRL
+	NOT = {
+		tag = TRL
+	}
+}

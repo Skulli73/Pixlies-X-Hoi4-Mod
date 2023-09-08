@@ -50,4 +50,18 @@ focus_tree = {
 			add_political_power = 100
 		}
 	}
+	focus = {
+		id = TRL_raid_soviets
+		cost = 10
+		icon = GFX_focus_generic_provoke_border_clashes
+		x = -5
+		y = 1
+		prerequisite = {
+			focus = TRL_global_affairs
+		}
+		relative_position_id = TRL_global_affairs
+		completion_reward = {
+
+		}
+	}
 }

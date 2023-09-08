@@ -523,11 +523,11 @@ focus_tree = {
 		id = CSA_constitute_the_conference_of_governors
 		cost = 6
 		icon = GFX_focus_SWI_embrace_panoramaheim
-		x = 0
+		x = 5
 		y = 1
-		relative_position_id = CSA_NPR
+		relative_position_id = CSA_atEveryone_AtlantaIsBuild
 		prerequisite = {
-			focus = CSA_NPR
+			focus = CSA_atEveryone_AtlantaIsBuild
 		}
 		completion_reward = {
 			add_ideas = conference_of_governors

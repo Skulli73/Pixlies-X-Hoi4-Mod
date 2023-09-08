@@ -35,12 +35,6 @@ country_event = { # turuls unally su - su
 	is_triggered_only = yes
 	option = {
 		name = demo.02.a
-		hidden_effect = {
-			country_event = {
-				id = demo.04
-				days = 30
-			}
-		}
 	}
 }
 news_event = { # turuls unally su - news
@@ -77,8 +71,6 @@ country_event = { # assasination attempt on matt - su
 		add_stability = -0.5
 		set_country_flag = matt_failed_assasination
 		complete_national_focus = CSA_Matt_Dies_Tragically_JK
-		mark_focus_tree_layout_dirty = yes
-		custom_effect_tooltip = unlock_new_parts_focus_tree_tt
 	}
 }
 news_event = { # assasination attempt on matt - news

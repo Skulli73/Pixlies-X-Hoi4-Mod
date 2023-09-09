@@ -105,3 +105,10 @@ GME_state_of_the_national_state = {
 		
 	}
 }
+TRL_raiding = {
+	priority = 300
+	visible_when_empty = yes
+	allowed = {
+		original_tag = TRL
+	}
+}

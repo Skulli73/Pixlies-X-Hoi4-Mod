@@ -109,5 +109,58 @@ country_event = { #coup
 				}
 			}
 		}
+		news_event = {
+			id = turul.2
+			hours = 6
+		}
+	}
+}
+news_event = {
+	id = turul.2
+	title = turul.2.t
+	desc = turul.2.d
+	is_triggered_only = yes
+	picture = GFX_news_event_german_reichstag_ruins
+	option = {
+		name = turul.2.a
+	}
+}
+country_event = { #sucessful raid
+	id = turul.3
+	title = turul.3.t
+	desc = turul.3.d
+	is_triggered_only = yes
+	option = {
+		name = turul.3.a
+		add_political_power = 200
+		add_power_balance_value = {
+			id = TRL_bop
+			value = -0.1
+			tooltip_side = TRL_government_side
+		}
+		FROM.FROM.FROM = {
+			add_state_modifier = TRL_raided_state
+		}
+		remove_ideas = TRL_war_reliant_economy
+		add_timed_idea = {
+			idea = TRL_furfilled_war_reliant_economy
+			days = 60
+		}
+	}
+}
+country_event = { #failed raid
+	id = turul.4
+	title = turul.4.t
+	desc = turul.4.d
+	is_triggered_only = yes
+	option = {
+		name = turul.3.a
+		add_political_power = -200
+		add_stability = -0.025
+		add_power_balance_value = {
+			id = TRL_bop
+			value = 0.3
+			tooltip_side = TRL_militarists
+		}
 	}
 }

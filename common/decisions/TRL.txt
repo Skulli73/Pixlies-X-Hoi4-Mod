@@ -1,0 +1,64 @@
+TRL_raiding = {
+	TRL_raid_soviets = {
+		cost = 50
+		days_remove = 50
+		war_with_on_remove = SOV
+		state_target = yes
+		target_trigger = {
+			FROM = {
+				is_owned_by = RUS
+				is_controlled_by = RUS
+				any_neighbor_state = {
+					is_controlled_by = ROOT
+					is_owned_by = ROOT
+				}
+			}
+		}
+		visible = {
+			NOT = { 
+				has_war_with = RUS
+			}
+		}
+		complete_effect = {
+			set_country_flag = TRL_raiding
+		}
+		remove_effect = {
+			clr_country_flag = TRL_raiding
+			FROM = {
+				random_neighbor_state = {
+					limit = {
+						is_controlled_by = ROOT
+						is_owned_by = ROOT
+					}
+					ROOT = {
+						start_border_war = {
+							change_state_after_war = no
+							attacker = {
+								state = PREV
+								num_provinces = 4
+								on_win = turul.3
+								on_lose = turul.4
+							}	
+							defender = {
+								state = FROM
+								num_provinces = 4
+								on_win = wtt_border_conflict_won_defender.1
+								on_lose =wtt_border_conflict_lost_defender.1
+							}
+						}
+					}
+				}
+			}
+		}
+		available = {
+			has_idea = TRL_war_reliant_economy
+			NOT = {
+				has_country_flag = TRL_raiding
+				has_border_war_with = SOV
+			}
+		}
+		ai_will_do = {
+			factor = 200
+		}
+	}
+}

@@ -1,0 +1,6 @@
+TRL_raided_state = {
+	enable = { always = yes }
+	icon = GFX_modifier_attrition
+
+	
+}

@@ -64,6 +64,10 @@ TRL_bop = {
 				set_rule = {
 					can_not_declare_war = no
 				}
+				country_event = {
+					id = turul.1
+					days = 1
+				}
 			}
 		}
 	}

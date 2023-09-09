@@ -7,8 +7,16 @@ ideas = {
 				industrial_capacity_factory = -0.5
 				consumer_goods_factor = 0.25
 			}
-			available = {
-				is_subject_of = CSA
+			
+		}
+		TRL_furfilled_war_reliant_economy = {
+			name = TRL_furfilled_war_reliant_economy
+			picture = chi_war_of_resistance
+			modifier = {
+				
+			}
+			on_remove = {
+				add_ideas = TRL_war_reliant_economy
 			}
 		}
 	}

@@ -31,9 +31,10 @@ focus_tree = {
 	default = no
 
 	### STARTING FOCUS ###
+
 	focus = {
 		id = CSA_atEveryone_AtlantaIsBuild
-		icon = GFX_goal_generic_amphibious_assault
+		icon = GFX_focus_generic_improve_the_administration
 		bypass = { has_country_flag = matt_failed_assasination }
 		x = 20
 		y = 0
@@ -52,9 +53,39 @@ focus_tree = {
 
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
-			add_political_power = 100
-			 
-		
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = ROOT
+					is_on_continent = north_america
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			add_victory_points = {
+				Province = 7552
+				Value = 2
+			}	
+			add_victory_points = {
+				Province = 7797
+				Value = 2
+			}			
+			add_victory_points = {
+				Province = 1843
+				Value = 1
+			}				
+				add_victory_points = {
+				Province = 10337
+				Value = 1
+			}			
 		}
 	}
 	focus = {
@@ -68,6 +99,7 @@ focus_tree = {
 			focus = CSA_atEveryone_AtlantaIsBuild
 		}
 		completion_reward = {
+			add_political_power = 100		
 		}
 	}
 	focus = {
@@ -81,6 +113,7 @@ focus_tree = {
 			focus = CSA_GetHot_KeepMoving
 		}
 		completion_reward = {
+			country_event = demo.04
 		}
 	}
 	focus = {
@@ -116,7 +149,7 @@ focus_tree = {
 
 	focus = {
 		id = CSA_DifficultDecision
-		icon = GFX_focus_generic_monarchy_1
+		icon = GFX_focus_ETH_re-convene_the_parliament
 		cost = 2
 		x = 0
 		y = 2
@@ -134,7 +167,7 @@ focus_tree = {
 	#[ReactionaryFocci]
 	focus = {
 		id = CSA_NPA
-		icon = GFX_focus_generic_monarchy_1
+		icon = GFX_focus_hol_the_foundations_of_defense
 		cost = 2
 		x = -6
 		y = 1
@@ -492,7 +525,7 @@ focus_tree = {
 	#[Communist/Liberal/ConservativeFocci]
 	focus = {
 		id = CSA_NPR
-		icon = GFX_focus_generic_monarchy_1
+		icon = GFX_focus_spa_the_war_of_vengeance
 		cost = 2
 		x = 6
 		y = 1
@@ -504,54 +537,149 @@ focus_tree = {
 		focus = CSA_NPA
 		}					
 		completion_reward = {
-			365 = {
-				add_extra_state_shared_building_slots = 4
-				add_building_construction = {
-					type = infrastructure
-					level = 3
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = industrial_complex
-					level = 4
-					instant_build = yes
-				}
-			}
 		}
 	}
 	focus = {
-		id = CSA_constitute_the_conference_of_governors
-		cost = 6
-		icon = GFX_focus_SWI_embrace_panoramaheim
-		x = 5
+		id = CSA_RevolutionaryCommittee
+		icon = GFX_focus_generic_monarchy_1
+		cost = 2
+		x = 0
 		y = 1
-		relative_position_id = CSA_atEveryone_AtlantaIsBuild
+		relative_position_id = CSA_NPR
 		prerequisite = {
-			focus = CSA_atEveryone_AtlantaIsBuild
+			focus = CSA_NPR
 		}
 		completion_reward = {
-			add_ideas = conference_of_governors
 		}
 	}
 	focus = {
-		id = CSA_martial_law_in_germania
-		cost = 10
-		icon = GFX_focus_eng_move_to_secure_the_dominions
-		x = 1
+		id = CSA_RecallExiles
+		icon = GFX_focus_generic_monarchy_1
+		cost = 2
+		x = -2
 		y = 1
-		relative_position_id = CSA_constitute_the_conference_of_governors
+		relative_position_id = CSA_RevolutionaryCommittee
 		prerequisite = {
-			focus = CSA_constitute_the_conference_of_governors
+			focus = CSA_RevolutionaryCommittee
 		}
-		allow_branch = {
-			has_country_flag = matt_failed_assasination
-		} 
 		completion_reward = {
-			GME = {
-				add_ideas = CSA_martial_law
-				GME_remove_10_csa_trust = yes
-				custom_effect_tooltip = CSA_martial_law_in_germania_tt
-			}
+		}
+	}
+	focus = {
+		id = CSA_ContactMilitary
+		icon = GFX_focus_generic_monarchy_1
+		cost = 2
+		x = 0
+		y = 1
+		relative_position_id = CSA_RevolutionaryCommittee
+		prerequisite = {
+			focus = CSA_RevolutionaryCommittee
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = CSA_FermentParanoia
+		icon = GFX_focus_generic_monarchy_1
+		cost = 2
+		x = 2
+		y = 1
+		relative_position_id = CSA_RevolutionaryCommittee
+		prerequisite = {
+			focus = CSA_RevolutionaryCommittee
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = CSA_UnitedFront
+		icon = GFX_focus_generic_monarchy_1
+		cost = 2
+		x = 0
+		y = 2
+		relative_position_id = CSA_RevolutionaryCommittee
+		prerequisite = {
+			focus = CSA_RecallExiles
+		}
+		prerequisite = {
+			focus = CSA_ContactMilitary
+		}
+		prerequisite = {
+			focus = CSA_FermentParanoia
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = CSA_CaribbeanRevolt
+		icon = GFX_focus_generic_monarchy_1
+		cost = 2
+		x = 0
+		y = 1
+		relative_position_id = CSA_UnitedFront
+		prerequisite = {
+			focus = CSA_UnitedFront
+		}
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = CSA_RevolutionaryInfighting
+		icon = GFX_focus_generic_monarchy_1
+		cost = 2
+		x = 0
+		y = 1
+		relative_position_id = CSA_CaribbeanRevolt
+		prerequisite = {
+			focus = CSA_CaribbeanRevolt
+		}
+		completion_reward = {
+		}
+	}
+
+	#CommieFocci
+	focus = {
+		id = CSA_CommiesTakeOver
+		icon = GFX_focus_generic_monarchy_1
+		cost = 2
+		x = 0
+		y = 1
+		relative_position_id = CSA_RevolutionaryInfighting
+		prerequisite = {
+			focus = CSA_RevolutionaryInfighting
+		}
+		completion_reward = {
+		}
+	}
+
+	#LibFocci
+	focus = {
+		id = CSA_Sleep_CivGov
+		icon = GFX_focus_generic_monarchy_1
+		cost = 2
+		x = 20
+		y = 1
+		relative_position_id = CSA_RevolutionaryInfighting
+		prerequisite = {
+			focus = CSA_RevolutionaryInfighting
+		}
+		completion_reward = {
+		}
+	}
+
+	#ConservativeFocci
+	focus = {
+		id = CSA_Ceo_MilitaryJunta
+		icon = GFX_focus_generic_monarchy_1
+		cost = 2
+		x = 40
+		y = 1
+		relative_position_id = CSA_RevolutionaryInfighting
+		prerequisite = {
+			focus = CSA_RevolutionaryInfighting
+		}
+		completion_reward = {
 		}
 	}
 }

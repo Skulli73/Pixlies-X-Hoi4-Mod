@@ -22,7 +22,7 @@ focus_tree = {
 	default = no
 
 
-	focus = {
+    focus = {
 		id = ILY_Recover_From_The_War
 		icon = GFX_focus_focus_fra_maquis
 		x = 17
@@ -46,7 +46,7 @@ focus_tree = {
 			
 		}
 	}
-        focus = {
+    focus = {
 		id = ILY_With_The_Union
 		icon = GFX_focus_POL_beck_ribbentrop
 		cost = 10
@@ -68,7 +68,7 @@ focus_tree = {
 			}
 		}
 	}
-	focus = {
+    focus = {
 		id = ILY_For_The_Independence
 		icon = GFX_focus_generic_italy_first
 		cost = 10
@@ -90,7 +90,7 @@ focus_tree = {
 			}
 		}
 	}
-	focus = {
+    focus = {
 		id = ILY_A_Imminent_Civil_War
 		icon = GFX_focus_generic_italy_first
 		cost = 10
@@ -117,7 +117,7 @@ focus_tree = {
             }
 		}	
 	}
-        focus = {
+    focus = {
 		id = ILY_Fascism_is_getting_out_of_hand
 		icon = GFX_focus_generic_military_mission
 		cost = 10
@@ -133,7 +133,7 @@ focus_tree = {
 			}
 		}
 	}
-	focus = {
+    focus = {
 		id = ILY_Democracy_Will_Win
 		icon = GFX_focus_generic_italy_first
 		cost = 10
@@ -151,35 +151,34 @@ focus_tree = {
 				  is_core_of = ROOT
 				}
 				create_unit = {
-					division = "name = \"Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.5"
-					owner = ILY
-				}
-				}
-				create_unit = {
-					division = "name = \"Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.5"
+					division = "name = \"1a Brigata Nazionale Italiana\" division_template = \"Divisione Italiana\" start_experience_factor = 0.5"
 					owner = ILY
 				}
 				create_unit = {
-					division = "name = \"Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.5"
+					division = "name = \"1a Brigata Nazionale Italiana\" division_template = \"Divisione Italiana\" start_experience_factor = 0.5"
 					owner = ILY
 				}
 				create_unit = {
-					division = "name = \"Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.5"
+					division = "name = \"1a Brigata Nazionale Italiana\" division_template = \"Divisione Italiana\" start_experience_factor = 0.5"
 					owner = ILY
 				}
 				create_unit = {
-					division = "name = \"Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.5"
+					division = "name = \"1a Brigata Nazionale Italiana\" division_template = \"Divisione Italiana\" start_experience_factor = 0.5"
 					owner = ILY
 				}
 				create_unit = {
-					division = "name = \"Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.5"
+					division = "name = \"1a Brigata Nazionale Italiana\" division_template = \"Divisione Italiana\" start_experience_factor = 0.5"
+					owner = ILY
+				}
+				create_unit = {
+					division = "name = \"1a Brigata Nazionale Italiana\" division_template = \"Divisione Italiana\" start_experience_factor = 0.5"
 					owner = ILY
 				}
 			  }
 			   
 		}
 	}
-	focus = {
+    focus = {
 	    id = ILY_Hail_Niki_And_Hail_Matt
 	    icon = GFX_focus_generic_military_mission
 	    cost = 10
@@ -193,6 +192,7 @@ focus_tree = {
 	        country_event = {
 	            id = ily.34
 			    hours = 6
+				}
 			}
 	    }
 	}
@@ -211,8 +211,8 @@ focus_tree = {
 			}
 		}
 	}
-	focus = {
-	    id = ILY_La_Forza_Dell'_Impero_Italico
+    focus = {
+	     id = ILY_La_Forza_Dell'_Impero_Italico
 	    icon = GFX_focus_generic_military_mission
 	    cost = 10
 	    x = 9
@@ -225,4 +225,4 @@ focus_tree = {
         }
 	}
 }
-}
+

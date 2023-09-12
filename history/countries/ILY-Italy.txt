@@ -36,3 +36,34 @@ create_country_leader = {
 	}
 }
 inherit_technology = CSA
+#OOB FOR TROOPS#
+oob = "ILY_Units"
+division_template = {
+	name = "Divisione Italiana"
+	division_names_group = "ILY_DIV_0_0"
+	regiments = {
+		infantry = {x = 0 y = 0}
+		infantry = {x = 0 y = 1}
+        infantry = {x = 1 y = 0}
+        infantry = {x = 1 y = 1}
+	}
+}
+
+#Spawn units
+units = {
+	division = {
+		name = "1a Brigata Nazionale Italiana"
+		location = 3780  # Lombardy
+		division_template = "Divisione Italiana"
+	}
+	division = {
+		name = "2a Brigata Nazionale Italiana"
+		location = 6788  # Piedmont
+		division_template = "Divisione Italiana"
+	}
+	division = {
+		name = "3a Brigada Nazionale Italiana"
+		location = 11584  # Veneto
+		division_template = "Divisione Italiana"
+	}
+}

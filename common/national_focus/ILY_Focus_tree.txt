@@ -146,38 +146,11 @@ focus_tree = {
 		has_war = no
 		}
 		completion_reward = {
-			random_controlled_state = {
-				limit = {
-				  is_core_of = ROOT
-				}
-				create_unit = {
-					division = "name = \"1a Brigata Nazionale Italiana\" division_template = \"Divisione Italiana\" start_experience_factor = 0.5"
-					owner = ILY
-				}
-				create_unit = {
-					division = "name = \"1a Brigata Nazionale Italiana\" division_template = \"Divisione Italiana\" start_experience_factor = 0.5"
-					owner = ILY
-				}
-				create_unit = {
-					division = "name = \"1a Brigata Nazionale Italiana\" division_template = \"Divisione Italiana\" start_experience_factor = 0.5"
-					owner = ILY
-				}
-				create_unit = {
-					division = "name = \"1a Brigata Nazionale Italiana\" division_template = \"Divisione Italiana\" start_experience_factor = 0.5"
-					owner = ILY
-				}
-				create_unit = {
-					division = "name = \"1a Brigata Nazionale Italiana\" division_template = \"Divisione Italiana\" start_experience_factor = 0.5"
-					owner = ILY
-				}
-				create_unit = {
-					division = "name = \"1a Brigata Nazionale Italiana\" division_template = \"Divisione Italiana\" start_experience_factor = 0.5"
-					owner = ILY
-				}
-			  }
-			   
+			load_obb = ILY_Units
+			    
+		   }
 		}
-	}
+	}  
     focus = {
 	    id = ILY_Hail_Niki_And_Hail_Matt
 	    icon = GFX_focus_generic_military_mission

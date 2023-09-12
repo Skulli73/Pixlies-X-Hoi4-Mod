@@ -146,9 +146,8 @@ focus_tree = {
 		has_war = no
 		}
 		completion_reward = {
-			load_obb = ILY_Units
-			    
-		   }
+			load_oob = ILY_Units
+			 }
 		}
 	}  
     focus = {

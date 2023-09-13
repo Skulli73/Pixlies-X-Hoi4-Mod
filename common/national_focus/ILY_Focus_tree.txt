@@ -184,7 +184,7 @@ focus_tree = {
 		}
 	}
     focus = {
-	     id = ILY_La_Forza_Dell'_Impero_Italico
+	    id = ILY_La_Forza_Dell'_Impero_Italico
 	    icon = GFX_focus_generic_military_mission
 	    cost = 10
 	    x = 9

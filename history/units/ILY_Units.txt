@@ -16,21 +16,21 @@ units = {
 		name = "1a Brigata Nazionale Italiana"
 		location = 3780  # Lombardy
 		division_template = "Divisione Italiana"
-		start\_experience\_factor = 1.0
-        start\_equipment\_factor = 1.0
+		start_experience_factor = 1.0
+        start_equipment_factor = 1.0
 	}
 	division = {
 		name = "2a Brigata Nazionale Italiana"
 		location = 6788  # Piedmont
 		division_template = "Divisione Italiana"
-		start\_experience\_factor = 1.0
-        start\_equipment\_factor = 1.0
+		start_experience_factor = 1.0
+        start_equipment_factor = 1.0
 	}
 	division = {
 		name = "3a Brigada Nazionale Italiana"
 		location = 11584  # Veneto
 		division_template = "Divisione Italiana"
-		start\_experience\_factor = 1.0
-        start\_equipment\_factor = 1.0
+		start_experience_factor = 1.0
+        start_equipment_factor = 1.0
 	}
 }

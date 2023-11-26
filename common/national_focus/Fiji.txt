@@ -48,7 +48,7 @@ focus = {
 			add_research_slot = 1
 		}
 	}
-	focus = {
+focus = {
 		id = FJI_Expand_the_Papua_territory 
 		icon = //TODO
 		cost = 2

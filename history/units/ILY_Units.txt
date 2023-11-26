@@ -1,6 +1,6 @@
 #Create units
 division_template = {
-	name = "Infantry Division"
+	name = "Divisione Italiana"
 	division_names_group = "ILY_DIV_0_0"
 	regiments = {
 		infantry = {x = 0 y = 0}
@@ -12,4 +12,37 @@ division_template = {
 
 #Spawn units
 units = {
+division= {	
+
+	name = "1a Fanteria"
+    location = 3780
+    division_template = "Infantry Division"
+    start_experience_factor = 0.8
+    start_equipment_factor = 0.8
+
+ }
+ division= {	
+
+	name = "1a Fanteria"
+    location = 3780
+    division_template = "Infantry Division"
+    start_experience_factor = 0.8
+    start_equipment_factor = 0.8
+ }
+ division= {	
+
+	name = "1a Fanteria"
+    location = 6788
+    division_template = "Infantry Division"
+    start_experience_factor = 0.8
+    start_equipment_factor = 0.8
+ }
+ division= {	
+
+	name = "1a Fanteria"
+    location = 6788
+    division_template = "Infantry Division"
+    start_experience_factor = 0.8
+    start_equipment_factor = 0.8
+ }
 }

@@ -2,7 +2,7 @@
 capital = 59
 set_research_slots = 3
 set_stability = 0.25
-set_war_support = 0.3
+set_war_support = 0.7
 set_convoys = 0
 
 
@@ -36,3 +36,76 @@ create_country_leader = {
 	}
 }
 inherit_technology = CSA
+
+units = {
+division= {	
+
+	name = "1a Fanteria"
+    location = 3780
+    division_template = "Infantry Division"
+    start_experience_factor = 0.8
+    start_equipment_factor = 0.8
+
+ }
+ division= {	
+
+	name = "1a Fanteria"
+    location = 3780
+    division_template = "Infantry Division"
+    start_experience_factor = 0.8
+    start_equipment_factor = 0.8
+ }
+ division= {	
+
+	name = "1a Fanteria"
+    location = 6788
+    division_template = "Infantry Division"
+    start_experience_factor = 0.8
+    start_equipment_factor = 0.8
+ }
+ division= {	
+
+	name = "1a Fanteria"
+    location = 6788
+    division_template = "Infantry Division"
+    start_experience_factor = 0.8
+    start_equipment_factor = 0.8
+ }
+}
+#OOB FOR UNITS
+oob = "ILY_Units"
+units = {
+division= {	
+
+	name = "1a Fanteria"
+    location = 3780
+    division_template = "Infantry Division"
+    start_experience_factor = 0.8
+    start_equipment_factor = 0.8
+
+ }
+ division= {	
+
+	name = "1a Fanteria"
+    location = 3780
+    division_template = "Infantry Division"
+    start_experience_factor = 0.8
+    start_equipment_factor = 0.8
+ }
+ division= {	
+
+	name = "1a Fanteria"
+    location = 6788
+    division_template = "Infantry Division"
+    start_experience_factor = 0.8
+    start_equipment_factor = 0.8
+ }
+ division= {	
+
+	name = "1a Fanteria"
+    location = 6788
+    division_template = "Infantry Division"
+    start_experience_factor = 0.8
+    start_equipment_factor = 0.8
+ }
+}
